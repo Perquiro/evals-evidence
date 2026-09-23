@@ -1,0 +1,70 @@
+{
+  "catalogs": [
+    {
+      "revision": "60a9831e-7b8a-4f88-91bc-3b1d822bb782",
+      "coverage": {
+        "actors": 1,
+        "surfaces": 1,
+        "journeys": 0,
+        "observations": 1,
+        "evidence": 0,
+        "scenarios": 0,
+        "tests": 0,
+        "surfacesWithoutObservations": 0,
+        "journeysWithoutAcceptedScenarios": 0,
+        "acceptedScenariosWithoutTests": 0
+      },
+      "entries": {
+        "items": [
+          {
+            "kind": "actor",
+            "id": "a4171df9-e554-441a-8a34-bed2c6306c1d",
+            "name": "Employee"
+          },
+          {
+            "kind": "surface",
+            "id": "1172a52c-aecb-4ace-841c-b1e8a193006f",
+            "name": "Sign in",
+            "locator": "/",
+            "testFolder": "sign-in"
+          }
+        ],
+        "complete": true
+      },
+      "storedRelationships": {
+        "items": [],
+        "complete": true
+      }
+    }
+  ],
+  "contexts": [
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "1172a52c-aecb-4ace-841c-b1e8a193006f"
+        },
+        "productVersions": {
+          "scope": "all",
+          "values": []
+        },
+        "observations": {
+          "mode": "records",
+          "actorIds": [
+            "a4171df9-e554-441a-8a34-bed2c6306c1d"
+          ],
+          "journeyScope": "both"
+        }
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "MCP error -32602: Input validation error: Invalid arguments for tool read_knowledge_context: Unrecognized key: \"values\" at productVersions\nInvalid discriminator value. Expected 'none' | 'summaries' | 'records' at observations.detail"
+          }
+        ],
+        "isError": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "requestToken": "335de1d9-1fc6-4f11-92f8-970e95099ae3",
+  "surfaceId": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "returned", "name": "Book returned message", "kind": "information" },
+    { "key": "catalog", "name": "Catalog", "kind": "link" },
+    { "key": "loans", "name": "Loans", "kind": "link" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "POST /loans/201/return returned 200 OK with 'Book returned' for bookId 102 and links to /catalog and /loans.",
+      "looks": [
+        { "item": { "key": "returned" }, "kind": "offered" },
+        { "item": { "key": "catalog" }, "kind": "offered" },
+        { "item": { "key": "loans" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Retained evaluation record
+
+The [live HR comparison](curated/typesafe-hr-execution-348/REPORT.md) for #348 retains all eight frozen ordinary/advised executions, anonymous grades, adjudication, raw evidence and accounting. The overall result is inconclusive: pair two failed the quality criterion, three ordinary runs lacked a completed Employee workflow, advised mean elapsed time was higher, and complete cost remains unknown. The report recommends no rollout or savings claim from this pilot.
+
+The [advised Explore walkthrough](curated/advised-explore-346/REPORT.md) for #346 retains an interactive advised trace, an ordinary batch smoke, their exact exercised skill and executable MCP replays against a controlled HTTP Product. It covers use, override, refresh, no selection and fallback; it makes no live quality or efficiency claim.
+
+The [active TypeSafe HR comparison protocol](curated/typesafe-hr-protocol-347-v3/PROTOCOL.md) freezes the paired ordinary/advised procedure for #348. Its [rehearsal report](curated/typesafe-hr-protocol-347-v3/REPORT.md) checks evidence grading and cost accounting with controlled traces. Revision 3 rejects unfinished launch receipts and verifies hashed preflight evidence before launch and live reporting. The [first freeze](curated/typesafe-hr-protocol-347/REPORT.md) and [revision 2](curated/typesafe-hr-protocol-347-v2/REPORT.md) remain historical evidence. The neighboring [original pre-trial](curated/typesafe-pretrial-2026-09-17/REPORT.md) and [harder cases](curated/typesafe-hardcases-2026-09-17/REPORT.md) retain their original bytes, failures and limitations. [Reproduction limits](curated/typesafe-hr-protocol-347-v3/REPRODUCE.md#preserved-script-limitations) cover their machine-local paths and missing-counter assumptions. Those protocol and synthetic records do not claim a completed live comparison.
+
+This branch keeps the Create, Generate and Run skill improvements, plus a compact record of the manager-value pilot. The shipped Explore skill remains compatible with this branch's runtime.
+
+The [early review](curated/manager-value-2026-09-10/REPORT.md) covers eight completed BugBusters HR trials, two per configuration. The user stopped the remaining work. One active trial was interrupted and eleven never started. The results are descriptive; the planned five-block analysis is incomplete.
+
+The retained files include the [protocol](curated/manager-value-2026-09-10/PROTOCOL.md), [scoring rules](curated/manager-value-2026-09-10/SCORING.md), [inventory](curated/manager-value-2026-09-10/inventory.json), frozen instructions, results, both initial grades and final adjudications for all eight completed trials. [CURATION.json](CURATION.json) records the source location, byte count and SHA-256 of every copied file. Git preserves these snapshot bytes without newline conversion.
+
+The [state-aware-v2 Explore skill](curated/manager-value-2026-09-10/inputs/state-aware-v2/SKILL.md) is preserved as an experimental replacement. It requires the supporting runtime's `read_explore`, `record_inspection` and mutation-attempt APIs. The evaluated runtime commit was `f507314358fc548c08244c7185f13e48dd87b734`. Deliver that support and focused verification together before installing v2 as the shipped skill. This pilot used v2 in every arm and does not establish its effect relative to the old Explore skill.
+
+The frozen stop-reviewer and Create inputs are retained to explain the experiment. They do not install a manager role or change product model defaults. Optional-Journey and main Surface proposals were removed from this branch.
+
+Raw traces, candidate Projects, runtime copies, older experiments and execution scripts remain in their original local `evals/<experiment>/` directories, excluded from Git. Windows denied renaming the full evaluation directory, so the raw record was retained in place. The old ZIP is archived locally at `.local-eval-archive/2026-09-10/evals.zip`, also excluded from Git. The ignored archive also contains a recovery copy of the discarded working-tree diff.
+
+Reports and grades retain their original citations and hashes. References to raw files resolve against the original experiment directory identified by each curation receipt. The curated record alone cannot replay the experiment or recheck every trace citation; those operations require the local raw archive. The copied Create input is under `inputs/create/SKILL.md`; its original source was the runtime path listed in the frozen-input manifest.
+
+Only this README, the curation manifest, byte-preservation attributes and `curated/` are included from `evals/`. Raw execution state is excluded from the PR.

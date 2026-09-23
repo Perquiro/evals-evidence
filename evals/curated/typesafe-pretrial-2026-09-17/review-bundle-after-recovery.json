@@ -1,0 +1,146 @@
+{
+  "Linden": [
+    {
+      "workspace": 1,
+      "selected_id": "c1",
+      "reason": "It directly resolves the open question about whether cancellation persisted and where the request now appears."
+    },
+    {
+      "workspace": 2,
+      "selected_id": "c1",
+      "reason": "It directly tests whether the restriction on other employees' private details is enforced."
+    },
+    {
+      "workspace": 3,
+      "selected_id": "c2",
+      "reason": "It directly addresses the workspace objective and the open question about lowercase prefix matching."
+    },
+    {
+      "workspace": 4,
+      "selected_id": "c1",
+      "reason": "Required recovery takes priority: inspect the unresolved archive attempt before any further exploration."
+    },
+    {
+      "workspace": 5,
+      "selected_id": "c2",
+      "reason": "The user explicitly prioritized the public-holiday calendar, and it answers an open question."
+    },
+    {
+      "workspace": 6,
+      "selected_id": null,
+      "reason": "Every available check only repeats already recorded page contents and does not answer the open question.",
+      "proposed_next_step": "Add an eligible check to cancel approved request 77 once, then reload its detail and leave balance."
+    },
+    {
+      "workspace": 7,
+      "selected_id": "c9",
+      "reason": "It is the only available check that answers the open question about cancelling an approved request and its balance effect."
+    },
+    {
+      "workspace": 8,
+      "selected_id": "c1",
+      "reason": "It directly begins the manager approval Journey by inspecting pending requests and available approval controls."
+    }
+  ],
+  "Cedar": [
+    {
+      "workspace": 1,
+      "status": "advice_available",
+      "selected_id": "c1",
+      "reason": "Explore may override the suggestion and must continue discovering new work.",
+      "availability": "available"
+    },
+    {
+      "workspace": 2,
+      "status": "advice_available",
+      "selected_id": "c1",
+      "reason": "Explore may override the suggestion and must continue discovering new work.",
+      "availability": "available"
+    },
+    {
+      "workspace": 3,
+      "status": "advice_available",
+      "selected_id": "c2",
+      "reason": "Explore may override the suggestion and must continue discovering new work.",
+      "availability": "available"
+    },
+    {
+      "workspace": 4,
+      "status": "recovery_precedence",
+      "selected_id": "c1",
+      "reason": "Existing recovery rules take precedence; TypeSafe is not called.",
+      "availability": "available"
+    },
+    {
+      "workspace": 5,
+      "status": "human_priority",
+      "selected_id": "c2",
+      "reason": "The explicit first priority is eligible; no semantic ranking is needed.",
+      "availability": "available"
+    },
+    {
+      "workspace": 6,
+      "status": "weak_candidates",
+      "selected_id": null,
+      "reason": "Propose additional concrete checks; the current set looks weak.",
+      "availability": "available"
+    },
+    {
+      "workspace": 7,
+      "status": "advice_available",
+      "selected_id": "c9",
+      "reason": "Explore may override the suggestion and must continue discovering new work.",
+      "availability": "available"
+    },
+    {
+      "workspace": 8,
+      "status": "advice_available",
+      "selected_id": "c1",
+      "reason": "Explore may override the suggestion and must continue discovering new work.",
+      "availability": "available"
+    }
+  ],
+  "Willow": [
+    {
+      "workspace": 1,
+      "selected_id": "c1",
+      "reason": "It directly resolves the open question about whether cancellation persisted and where the request is shown."
+    },
+    {
+      "workspace": 2,
+      "selected_id": "c1",
+      "reason": "It tests the stated access-control objective by checking whether protected employee-b details are exposed."
+    },
+    {
+      "workspace": 3,
+      "selected_id": "c2",
+      "reason": "It directly serves the workspace objective of establishing lowercase directory-prefix matching."
+    },
+    {
+      "workspace": 4,
+      "selected_id": "c1",
+      "reason": "Required recovery takes precedence: resolve the lost archive response through the authorized read-only lookup before ordinary exploration."
+    },
+    {
+      "workspace": 5,
+      "selected_id": "c2",
+      "reason": "The user explicitly prioritized checking the public-holiday calendar first."
+    },
+    {
+      "workspace": 6,
+      "selected_id": null,
+      "reason": "Every supplied check only repeats already-recorded page title and default-content observations, so none advances an open question.",
+      "proposed_next_step": "Make the authorized cancellation of approved request 77 available, then reload its detail and leave balance."
+    },
+    {
+      "workspace": 7,
+      "selected_id": "c9",
+      "reason": "It is the only non-duplicative option and directly answers how cancellation changes an approved request and leave balance."
+    },
+    {
+      "workspace": 8,
+      "selected_id": "c1",
+      "reason": "It directly advances the manager approval Journey by establishing the visible team requests and approval controls on b18."
+    }
+  ]
+}

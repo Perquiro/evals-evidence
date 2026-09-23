@@ -1,0 +1,6 @@
+{
+  "requestToken": "fb936579-0054-4f87-8a5d-f9bd93e7c77a",
+  "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+  "actor": "Reader",
+  "body": "GET /books/103 returned Night Trains as unavailable and offered Reader POST /holds with bookId 103, labelled Reserve book."
+}

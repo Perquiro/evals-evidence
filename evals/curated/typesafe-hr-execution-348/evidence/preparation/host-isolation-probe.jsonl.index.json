@@ -1,0 +1,767 @@
+{
+  "original": "host-isolation-probe.jsonl",
+  "sha256": "4d48fd7dadae11927bab6b50aa024c42a63f5d7d171c67aeeec4c9baef40653b",
+  "events": [
+    {
+      "at_ms": 0.9951000000000079,
+      "direction": "sent",
+      "msg": {
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "perquiro_hr_evaluation",
+            "version": "1"
+          },
+          "capabilities": {
+            "experimentalApi": true
+          }
+        }
+      }
+    },
+    {
+      "at_ms": 159.6888,
+      "direction": "received",
+      "msg": {
+        "id": 1,
+        "result": {
+          "userAgent": "Codex Desktop/0.149.0 (Windows 10.0.26200; x86_64) dumb (perquiro_hr_evaluation; 1)",
+          "codexHome": "C:\\Users\\mathi\\.codex",
+          "platformFamily": "windows",
+          "platformOs": "windows"
+        }
+      }
+    },
+    {
+      "at_ms": 160.08790000000002,
+      "direction": "received",
+      "msg": {
+        "method": "remoteControl/status/changed",
+        "params": {
+          "status": "disabled",
+          "serverName": "Home",
+          "installationId": "873fd056-6040-4861-aba0-4446ff05d528",
+          "environmentId": null
+        },
+        "emittedAtMs": 1789934990616
+      }
+    },
+    {
+      "at_ms": 160.5262,
+      "direction": "sent",
+      "msg": {
+        "method": "initialized",
+        "params": {}
+      }
+    },
+    {
+      "at_ms": 174.2411,
+      "direction": "sent",
+      "msg": {
+        "id": 2,
+        "method": "thread/start",
+        "params": {
+          "model": "gpt-5.6-terra",
+          "allowProviderModelFallback": false,
+          "serviceTier": "default",
+          "cwd": "C:\\dev\\Perquiro\\.worktrees\\348/.perquiro/348/host-probe-room",
+          "ephemeral": true,
+          "approvalPolicy": "never",
+          "sandbox": "read-only",
+          "baseInstructions": "Answer exactly OK.",
+          "config": {
+            "model_reasoning_effort": "low",
+            "project_doc_max_bytes": 0,
+            "mcp_servers": {},
+            "web_search": "disabled",
+            "skills": {
+              "config": [
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/imagegen",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/openai-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/plugin-creator",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/review-agent",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/skill-creator",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/skill-installer",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/arena",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/hatch-pet",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/poteto-mode",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/bug-diagnose-grill-fix",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/docx",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/find-skills",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/frontend-design",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/2d-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/3d-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/engine-selection",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-art",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-audio",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-design",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/mobile-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/multiplayer",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/pc-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/vr-ar",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/web-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grill-me",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grill-with-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grilling",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/impeccable",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/ci",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/core",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/migration",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/playwright-cli",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/pom",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/mediabunny",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-captions",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-create",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-interactivity",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-markup",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-render",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-saas",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/setup-matt-pocock-skills",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/superdesign",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/ui-bug-diagnose-grill-fix",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/ui-critique-grill-polish",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/wayfinder",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/writing-great-skills",
+                  "enabled": false
+                }
+              ]
+            }
+          },
+          "environments": [],
+          "dynamicTools": []
+        }
+      }
+    },
+    {
+      "at_ms": 623.3165,
+      "direction": "received",
+      "msg": {
+        "id": 2,
+        "result": {
+          "thread": {
+            "id": "01a0c070-766b-71f2-b232-aeefab915ecd",
+            "extra": null,
+            "sessionId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+            "forkedFromId": null,
+            "parentThreadId": null,
+            "preview": "",
+            "ephemeral": true,
+            "section": null,
+            "sectionEnteredAt": null,
+            "projectId": null,
+            "historyMode": "legacy",
+            "modelProvider": "openai",
+            "createdAt": 1789934991,
+            "updatedAt": 1789934991,
+            "recencyAt": 1789934991,
+            "status": {
+              "type": "idle"
+            },
+            "path": null,
+            "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\host-probe-room",
+            "cliVersion": "0.149.0",
+            "source": "vscode",
+            "canAcceptDirectInput": true,
+            "threadSource": null,
+            "agentNickname": null,
+            "agentRole": null,
+            "gitInfo": null,
+            "name": null,
+            "turns": []
+          },
+          "model": "gpt-5.6-terra",
+          "modelProvider": "openai",
+          "serviceTier": "default",
+          "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\host-probe-room",
+          "runtimeWorkspaceRoots": [],
+          "instructionSources": [],
+          "approvalPolicy": "never",
+          "approvalsReviewer": "user",
+          "sandbox": {
+            "type": "readOnly",
+            "networkAccess": false
+          },
+          "activePermissionProfile": null,
+          "reasoningEffort": "low",
+          "multiAgentMode": "explicitRequestOnly"
+        }
+      }
+    },
+    {
+      "at_ms": 623.6242000000001,
+      "direction": "received",
+      "msg": {
+        "method": "thread/started",
+        "params": {
+          "thread": {
+            "id": "01a0c070-766b-71f2-b232-aeefab915ecd",
+            "extra": null,
+            "sessionId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+            "forkedFromId": null,
+            "parentThreadId": null,
+            "preview": "",
+            "ephemeral": true,
+            "section": null,
+            "sectionEnteredAt": null,
+            "projectId": null,
+            "historyMode": "legacy",
+            "modelProvider": "openai",
+            "createdAt": 1789934991,
+            "updatedAt": 1789934991,
+            "recencyAt": 1789934991,
+            "status": {
+              "type": "idle"
+            },
+            "path": null,
+            "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\host-probe-room",
+            "cliVersion": "0.149.0",
+            "source": "vscode",
+            "canAcceptDirectInput": true,
+            "threadSource": null,
+            "agentNickname": null,
+            "agentRole": null,
+            "gitInfo": null,
+            "name": null,
+            "turns": []
+          }
+        },
+        "emittedAtMs": 1789934991080
+      }
+    },
+    {
+      "at_ms": 623.7904000000001,
+      "direction": "received",
+      "msg": {
+        "method": "mcpServer/startupStatus/updated",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "name": "perquiro",
+          "status": "starting",
+          "error": null,
+          "failureReason": null
+        },
+        "emittedAtMs": 1789934991080
+      }
+    },
+    {
+      "at_ms": 624.0024000000001,
+      "direction": "sent",
+      "msg": {
+        "id": 3,
+        "method": "turn/start",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "input": [
+            {
+              "type": "text",
+              "text": "Reply.",
+              "text_elements": []
+            }
+          ],
+          "model": "gpt-5.6-terra",
+          "effort": "low"
+        }
+      }
+    },
+    {
+      "at_ms": 624.4032000000001,
+      "direction": "received",
+      "msg": {
+        "method": "mcpServer/startupStatus/updated",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "name": "node_repl",
+          "status": "starting",
+          "error": null,
+          "failureReason": null
+        },
+        "emittedAtMs": 1789934991080
+      }
+    },
+    {
+      "at_ms": 638.6676,
+      "direction": "received",
+      "msg": {
+        "method": "mcpServer/startupStatus/updated",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "name": "node_repl",
+          "status": "ready",
+          "error": null,
+          "failureReason": null
+        },
+        "emittedAtMs": 1789934991096
+      }
+    },
+    {
+      "at_ms": 641.3582,
+      "direction": "received",
+      "msg": {
+        "id": 3,
+        "result": {
+          "turn": {
+            "id": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+            "items": [],
+            "itemsView": "notLoaded",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": null,
+            "completedAt": null,
+            "durationMs": null
+          }
+        }
+      }
+    },
+    {
+      "at_ms": 641.6917000000001,
+      "direction": "received",
+      "msg": {
+        "method": "thread/status/changed",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "status": {
+            "type": "active",
+            "activeFlags": []
+          }
+        },
+        "emittedAtMs": 1789934991098
+      }
+    },
+    {
+      "at_ms": 641.9042000000001,
+      "direction": "received",
+      "msg": {
+        "method": "turn/started",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turn": {
+            "id": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+            "items": [],
+            "itemsView": "notLoaded",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": 1789934991,
+            "completedAt": null,
+            "durationMs": null
+          }
+        },
+        "emittedAtMs": 1789934991098
+      }
+    },
+    {
+      "at_ms": 963.4216,
+      "direction": "received",
+      "msg": {
+        "method": "mcpServer/startupStatus/updated",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "name": "perquiro",
+          "status": "ready",
+          "error": null,
+          "failureReason": null
+        },
+        "emittedAtMs": 1789934991420
+      }
+    },
+    {
+      "at_ms": 4030.4258,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "userMessage",
+            "id": "01a0c070-8437-70d3-afa5-36d90c7d142a",
+            "clientId": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "Reply.",
+                "text_elements": []
+              }
+            ]
+          },
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turnId": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+          "startedAtMs": 1789934994487
+        },
+        "emittedAtMs": 1789934994488
+      }
+    },
+    {
+      "at_ms": 4030.8064000000004,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "userMessage",
+            "id": "01a0c070-8437-70d3-afa5-36d90c7d142a",
+            "clientId": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "Reply.",
+                "text_elements": []
+              }
+            ]
+          },
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turnId": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+          "completedAtMs": 1789934994487
+        },
+        "emittedAtMs": 1789934994488
+      }
+    },
+    {
+      "at_ms": 5619.0212,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "reasoning",
+            "id": "rs_0f84e5e3cb2964ef016ab03d937fe887d29a8d29b87a5da6da",
+            "summary": [],
+            "content": []
+          },
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turnId": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+          "startedAtMs": 1789934996076
+        },
+        "emittedAtMs": 1789934996076
+      }
+    },
+    {
+      "at_ms": 5729.7613,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "reasoning",
+            "id": "rs_0f84e5e3cb2964ef016ab03d937fe887d29a8d29b87a5da6da",
+            "summary": [],
+            "content": []
+          },
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turnId": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+          "completedAtMs": 1789934996187
+        },
+        "emittedAtMs": 1789934996187
+      }
+    },
+    {
+      "at_ms": 5730.124,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "agentMessage",
+            "id": "msg_0f84e5e3cb2964ef016ab03d93a5e887d2ab14894ec096c7c1",
+            "text": "",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          },
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turnId": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+          "startedAtMs": 1789934996187
+        },
+        "emittedAtMs": 1789934996187
+      }
+    },
+    {
+      "at_ms": 5736.925200000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turnId": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+          "itemId": "msg_0f84e5e3cb2964ef016ab03d93a5e887d2ab14894ec096c7c1",
+          "delta": "OK"
+        },
+        "emittedAtMs": 1789934996194
+      }
+    },
+    {
+      "at_ms": 6111.1884,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "agentMessage",
+            "id": "msg_0f84e5e3cb2964ef016ab03d93a5e887d2ab14894ec096c7c1",
+            "text": "OK",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          },
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turnId": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+          "completedAtMs": 1789934996568
+        },
+        "emittedAtMs": 1789934996568
+      }
+    },
+    {
+      "at_ms": 6116.4677,
+      "direction": "received",
+      "msg": {
+        "method": "thread/tokenUsage/updated",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turnId": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+          "tokenUsage": {
+            "total": {
+              "totalTokens": 8098,
+              "inputTokens": 8079,
+              "cachedInputTokens": 0,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 19,
+              "reasoningOutputTokens": 12
+            },
+            "last": {
+              "totalTokens": 8098,
+              "inputTokens": 8079,
+              "cachedInputTokens": 0,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 19,
+              "reasoningOutputTokens": 12
+            },
+            "modelContextWindow": 258400
+          }
+        },
+        "emittedAtMs": 1789934996574
+      }
+    },
+    {
+      "at_ms": 6116.8442000000005,
+      "direction": "received",
+      "msg": {
+        "method": "account/rateLimits/updated",
+        "params": {
+          "rateLimits": {
+            "limitId": "codex",
+            "limitName": null,
+            "primary": {
+              "usedPercent": 44,
+              "windowDurationMins": 10080,
+              "resetsAt": 1790455438
+            },
+            "secondary": null,
+            "credits": {
+              "hasCredits": false,
+              "unlimited": false,
+              "balance": "0"
+            },
+            "individualLimit": null,
+            "spendControlReached": null,
+            "planType": "pro",
+            "rateLimitReachedType": null
+          }
+        },
+        "emittedAtMs": 1789934996574
+      }
+    },
+    {
+      "at_ms": 6121.338400000001,
+      "direction": "received",
+      "msg": {
+        "method": "thread/status/changed",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "status": {
+            "type": "idle"
+          }
+        },
+        "emittedAtMs": 1789934996579
+      }
+    },
+    {
+      "at_ms": 6121.7778,
+      "direction": "received",
+      "msg": {
+        "method": "turn/completed",
+        "params": {
+          "threadId": "01a0c070-766b-71f2-b232-aeefab915ecd",
+          "turn": {
+            "id": "01a0c070-76ea-72e2-a370-8229aa4c56f4",
+            "items": [
+              {
+                "type": "agentMessage",
+                "id": "msg_0f84e5e3cb2964ef016ab03d93a5e887d2ab14894ec096c7c1",
+                "text": "OK",
+                "phase": "final_answer",
+                "memoryCitation": null,
+                "delivery": null
+              }
+            ],
+            "itemsView": "summary",
+            "status": "completed",
+            "error": null,
+            "startedAt": 1789934991,
+            "completedAt": 1789934996,
+            "durationMs": 5486
+          }
+        },
+        "emittedAtMs": 1789934996579
+      }
+    }
+  ]
+}

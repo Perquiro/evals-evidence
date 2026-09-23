@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:63829/dashboard",
+  "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Emily\" [level=1]\n  - text: Leave balance 18 days Pending leave requests 0\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\"",
+  "actionId": "action-6",
+  "admitted": 4,
+  "remaining": 56
+}

@@ -1,0 +1,283 @@
+{
+  "checks": [
+    {
+      "id": "HR01",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Event 29 shows the shell navigation for Emily only. The inventory requires that navigation for each of the three configured Actors, and no trace event shows the other two Actors."
+    },
+    {
+      "id": "HR02",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No event in the trace records an employee directly loading a higher-privilege page or its access result."
+    },
+    {
+      "id": "HR03",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The trace contains no directory search action or settled directory rows."
+    },
+    {
+      "id": "HR04",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The trace contains no directory department-filter action or result."
+    },
+    {
+      "id": "HR05",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No deliberately unmatched directory search or settled empty-state result was observed."
+    },
+    {
+      "id": "HR06",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No sortable directory column was clicked, including no twice-clicked-header sequence."
+    },
+    {
+      "id": "HR07",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No directory paging sequence, page boundary, displayed total, or row identities was observed."
+    },
+    {
+      "id": "HR08",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee detail page was opened or directly reloaded."
+    },
+    {
+      "id": "HR09",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Events 55-67 select 2026-09-15 followed by 2026-09-16, not an end date before the start date."
+    },
+    {
+      "id": "HR10",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Events 65-67 show a 2026-09-15 through 2026-09-16 interval with Duration: 2 days. This is useful duration evidence, but it is not the required Friday-to-Monday case."
+    },
+    {
+      "id": "HR11",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          29,
+          84,
+          85,
+          88
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "31d9d9ba-47ea-423a-9395-4f81ed68b32b",
+            "9403441f-d3a5-42e9-b620-d182c4289a7a",
+            "96c5a690-72b9-4b3c-b775-55513c1af905"
+          ],
+          "eventIds": [
+            29,
+            84,
+            85,
+            88
+          ]
+        }
+      ],
+      "rationale": "The initial employee dashboard reports no pending leave (29). One Submit request action creates pending id 3 (84-85), and the settled history contains one pending request plus an older approved request (88). Saved Observations 31d9d9ba..., 9403441f... and 96c5a690... retain the initial pending count, creation and resulting history. All writes occurred before minute 10."
+    },
+    {
+      "id": "HR12",
+      "seen": true,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          84,
+          85,
+          88
+        ]
+      ],
+      "savedSupportSets": [],
+      "rationale": "Seen: events 84, 85 and 88 show submission and complete displayed history details, including the rendered Sep 15 through Sep 15 date range. Saved support is partial: Observation 96c5a690-72b9-4b3c-b775-55513c1af905 records type, two days, pending status and no comment but omits the displayed date interval. No final Observation retains that interval. API dates Sep 15 through Sep 16 cannot substitute for the differing UI result. This omission is not an unsupported claim."
+    },
+    {
+      "id": "HR13",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "After the successful submission, events 88-89 settle on /leave; the trace does not return to the new-leave form to record its field values."
+    },
+    {
+      "id": "HR14",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No manager session, approvals queue, requester, or pending-request identity was observed."
+    },
+    {
+      "id": "HR15",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No manager approval or rejection decision, immediate confirmation aftermath, or settled queue state was observed."
+    },
+    {
+      "id": "HR16",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No rejection attempt without a comment or resulting dialog was observed."
+    },
+    {
+      "id": "HR17",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Events 84-89 establish an employee-created pending request only; there is no manager decision and no employee readback after such a decision."
+    },
+    {
+      "id": "HR18",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No HR-administrator onboarding personal-step validation was observed."
+    },
+    {
+      "id": "HR19",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding job-details step or pre-load and settled selector states were observed."
+    },
+    {
+      "id": "HR20",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding data-entry, advance, back-navigation, or restored field values were observed."
+    },
+    {
+      "id": "HR21",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding review submission, directory appearance, or headcount change was observed."
+    },
+    {
+      "id": "HR22",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The dashboard offers a Fill timesheet link in event 29, but no employee timesheet hours or weekly total was observed."
+    },
+    {
+      "id": "HR23",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee timesheet draft save and subsequent reload was observed."
+    },
+    {
+      "id": "HR24",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee timesheet submission or attempted later edit was observed."
+    },
+    {
+      "id": "HR25",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile field was changed and saved."
+    },
+    {
+      "id": "HR26",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile name or photo save, or immediate header identity after a save, was observed."
+    },
+    {
+      "id": "HR27",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile save followed by a reload was observed."
+    }
+  ],
+  "unsupportedClaims": [],
+  "scenarios": [],
+  "notes": [
+    "Adjudicated coverage: seen 2/27, saved 1/27, directly Journey-linked 0/27. These values apply at minutes 10, 20 and 40 and final close.",
+    "Both independent initial grades credited HR12 as saved. Both subsequent evidence reviews agreed that the omitted displayed date range makes saved HR12 partial. Initial grades and reconsideration notes are preserved.",
+    "HR11 support was strengthened to include the initial pending count and settled history, without changing credit or checkpoints.",
+    "No unsupported material saved claim was found. The evaluator-visible date discrepancy was not preserved as such by the candidate.",
+    "No Scenarios were proposed. Every final Observation has an empty journeyIds list, although one Journey relates the Surfaces."
+  ]
+}

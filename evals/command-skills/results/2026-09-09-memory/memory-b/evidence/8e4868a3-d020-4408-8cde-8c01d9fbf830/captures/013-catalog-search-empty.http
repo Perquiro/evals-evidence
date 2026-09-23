@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"books":[],"search":{"href":"/catalog?q=<title>","field":"q"},"message":"No books found","clear":"/catalog"}

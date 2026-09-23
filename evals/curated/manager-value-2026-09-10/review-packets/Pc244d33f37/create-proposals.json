@@ -1,0 +1,70 @@
+[
+  {
+    "event": 149,
+    "proposal": {
+      "requestToken": "[redacted]",
+      "journeyGroups": [
+        {
+          "journeyId": "d09da352-c0eb-46ed-931a-f6b07e209e7a",
+          "why": "Why now: Emily's Engineering filter produced a bounded all-Engineering result and changed pagination, giving a concrete directory behavior to decide. Observations: #6 (Emily.dawson).",
+          "scenarios": [
+            {
+              "name": "Filter the employee directory by Engineering",
+              "gherkin": "Given Emily.dawson is viewing the employee directory\nWhen Emily.dawson selects Engineering in the department filter\nThen the directory displays 8 employees and every rendered row is in Engineering\nAnd pagination shows Page 1 of 1 with Previous and Next disabled",
+              "surfaces": [
+                {
+                  "surfaceId": "e070ef62-d3b4-4e36-bc6a-adff37ca3a5c",
+                  "platform": "browser"
+                }
+              ],
+              "actors": [
+                "Emily.dawson"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "result": {
+      "id": "4fbafebe-81ec-459e-9783-6a9d9c5e30f6",
+      "status": "open",
+      "createdAt": "2026-09-10T15:31:05.903Z",
+      "kind": "create",
+      "journeyGroups": [
+        {
+          "journeyId": "d09da352-c0eb-46ed-931a-f6b07e209e7a",
+          "journeyName": "Browse employee directory",
+          "why": "Why now: Emily's Engineering filter produced a bounded all-Engineering result and changed pagination, giving a concrete directory behavior to decide. Observations: #6 (Emily.dawson).",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "6008906f-d401-4fef-8582-aa84a0abaf19",
+                "journeyId": "d09da352-c0eb-46ed-931a-f6b07e209e7a",
+                "journeyName": "Browse employee directory",
+                "name": "Filter the employee directory by Engineering",
+                "gherkin": "Given Emily.dawson is viewing the employee directory\nWhen Emily.dawson selects Engineering in the department filter\nThen the directory displays 8 employees and every rendered row is in Engineering\nAnd pagination shows Page 1 of 1 with Previous and Next disabled",
+                "surfaces": [
+                  {
+                    "surfaceId": "e070ef62-d3b4-4e36-bc6a-adff37ca3a5c",
+                    "surfaceName": "Employee directory",
+                    "platform": "browser"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "848e69d6-3f40-41a4-96b6-57fc681dde8a",
+                    "actorName": "Emily.dawson"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T15:31:05.904Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "revision": "eac60c42-31c1-48d7-91d0-b2b233afb923",
+    "selection": {
+      "surfaceId": "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5",
+      "actorIds": [
+        "61409925-dde8-4f75-9801-942d22518b3d",
+        "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5",
+      "name": "Service desk",
+      "locator": "GET /desk",
+      "createdAt": "2026-09-09T06:02:31.798Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "1c8074b5-8668-43c6-8cb8-67322053c063",
+          "surfaceId": "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5",
+          "name": "Check in a book",
+          "kind": "action",
+          "createdAt": "2026-09-09T06:03:37.741Z"
+        },
+        {
+          "id": "28a103a3-2931-4eb3-be7e-f6fc37f96f65",
+          "surfaceId": "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5",
+          "name": "Pending returns",
+          "kind": "information",
+          "createdAt": "2026-09-09T06:03:37.741Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "3ceda2c0-9fc7-4695-be44-76d2b466b344",
+            "seq": 23,
+            "surfaceId": "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "GET /desk offered a Check in a book action at POST /desk/returns with bookId 103 and listed Night Trains as the pending return.",
+            "createdAt": "2026-09-09T06:03:37.741Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "1c8074b5-8668-43c6-8cb8-67322053c063"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "28a103a3-2931-4eb3-be7e-f6fc37f96f65"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "27703b86-70df-42f9-a769-2f285e574d85",
+            "seq": 24,
+            "surfaceId": "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "The desk listed Night Trains as pending return and offered POST /desk/returns with bookId 103; no request has been sent yet.",
+            "createdAt": "2026-09-09T06:04:06.271Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "1c8074b5-8668-43c6-8cb8-67322053c063"
+              },
+              "kind": "attempting",
+              "resourceRef": "book:103"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "d3e61d25-981b-405d-a037-802f1c7cb219",
+            "seq": 26,
+            "surfaceId": "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "POST /desk/returns with bookId 103 returned 'Book checked in' and href /books/103.",
+            "createdAt": "2026-09-09T06:05:07.556Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "1c8074b5-8668-43c6-8cb8-67322053c063"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "27703b86-70df-42f9-a769-2f285e574d85"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "1c8074b5-8668-43c6-8cb8-67322053c063",
+            "surfaceId": "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5",
+            "name": "Check in a book",
+            "kind": "action",
+            "createdAt": "2026-09-09T06:03:37.741Z"
+          },
+          "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "d3e61d25-981b-405d-a037-802f1c7cb219"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 1,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 1
+    }
+  }
+]

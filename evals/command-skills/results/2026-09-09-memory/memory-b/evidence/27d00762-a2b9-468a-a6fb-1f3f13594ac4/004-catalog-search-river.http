@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"books":[{"id":"101","title":"River Atlas","available":true,"href":"/books/101"}],"search":{"href":"/catalog?q=<title>","field":"q"}}

@@ -1,0 +1,14 @@
+{
+  "requestToken": "bd3d664c-f1b4-45e7-97a7-b9664a87a8f2",
+  "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "A fresh GET /desk still offers Check in a book with the advertised JSON value {\"bookId\":\"103\"} for Night Trains (book 103). A replacement request using that exact JSON value has not been sent.",
+      "look": { "item": { "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339" }, "kind": "attempting", "resourceRef": "book:103", "repeat": { "kind": "non_execution", "reason": "The prior numeric-body request was reconciled as not executed after its 404 response and fresh pending-return read.", "serves": { "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339" } } }
+    }
+  ]
+}

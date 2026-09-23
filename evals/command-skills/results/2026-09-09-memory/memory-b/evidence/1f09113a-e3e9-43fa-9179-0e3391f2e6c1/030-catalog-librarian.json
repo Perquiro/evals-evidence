@@ -1,0 +1,1 @@
+{"books":[{"id":"101","title":"River Atlas","available":true,"href":"/books/101"},{"id":"102","title":"Garden Notes","available":true,"href":"/books/102"},{"id":"103","title":"Night Trains","available":false,"href":"/books/103"}],"search":{"href":"/catalog?q=<title>","field":"q"}}

@@ -1,0 +1,20 @@
+{"op":"mcp","name":"read_setup"}
+{"op":"mcp","name":"read_explore_continuation"}
+{"op":"mcp","name":"read_knowledge_catalog"}
+{"op":"mcp","name":"list_open_reviews"}
+{"op":"mcp","name":"read_follow_on_work"}
+{"op":"phase","phase":"product_interaction"}
+{"op":"product","path":"/","bind":"homeProduct"}
+{"op":"phase","phase":"recording"}
+{"op":"mcp","name":"record_surface","arguments":{"name":"Home","locator":"GET /"},"bind":"home"}
+{"op":"mcp","name":"record_inspection","arguments":{"surfaceId":"@home/id","actorId":"@actor","platform":"api","items":[{"key":"profile","name":"Profile","kind":"link"},{"key":"directory","name":"Directory","kind":"link"}],"reports":[{"kind":"inventory","body":"GET / returned links to profile and directory.","looks":[{"kind":"offered","item":{"key":"profile"}},{"kind":"offered","item":{"key":"directory"}}]}]},"bind":"homeInventory"}
+{"op":"phase","phase":"ordinary_planning"}
+{"op":"decision","value":{"decision":"ordinary","chosenCandidateId":"directory","actionId":"ordinary-directory","reason":"The directory link offers a concrete unanswered employee-information question. Ordinary mode chooses it without requesting advice.","modelSettings":"Same ongoing host as advised walkthrough; no model/effort change requested","hostModel":null,"hostUsage":null}}
+{"op":"phase","phase":"product_interaction"}
+{"op":"product","path":"/directory","bind":"directoryProduct"}
+{"op":"phase","phase":"recording"}
+{"op":"mcp","name":"record_inspection","arguments":{"surfaceId":"@home/id","actorId":"@actor","platform":"api","items":[],"reports":[{"kind":"action","body":"GET /directory returned employees Ada and Lee.","look":{"kind":"exercised","item":{"id":"@homeInventory/items/1/id"}}}]},"bind":"directoryOutcome"}
+{"op":"decision","value":{"actionId":"ordinary-directory","outcome":"@directoryProduct","observationId":"@directoryOutcome/observations/0/id","itemId":"@homeInventory/items/1/id","lookKind":"exercised"}}
+{"op":"mcp","name":"read_explore","arguments":{"surfaceId":"@home/id","actorIds":["@actor"],"platform":"api","productVersions":{"scope":"unknown"}},"bind":"finalHome"}
+{"op":"decision","value":{"stopReason":"Ordinary-mode smoke complete; profile remains unexplored","hostModel":null,"hostUsage":null,"accountingNote":"A controlled smoke, not an equal-budget quality or efficiency comparison. No advice calls."}}
+{"op":"close"}

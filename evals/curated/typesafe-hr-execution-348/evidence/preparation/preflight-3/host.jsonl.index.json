@@ -1,0 +1,1280 @@
+{
+  "original": "preflight-3/host.jsonl",
+  "sha256": "235b96527b8f5277862165eac54c365c9cb3a64e46cc0a30c0f079faa26c74fa",
+  "events": [
+    {
+      "at_ms": 0.29240000000027067,
+      "direction": "sent",
+      "msg": {
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "perquiro_hr_evaluation",
+            "version": "1"
+          },
+          "capabilities": {
+            "experimentalApi": true
+          }
+        }
+      }
+    },
+    {
+      "at_ms": 405.65200000000004,
+      "direction": "received",
+      "msg": {
+        "id": 1,
+        "result": {
+          "userAgent": "Codex Desktop/0.149.0 (Windows 10.0.26200; x86_64) dumb (perquiro_hr_evaluation; 1)",
+          "codexHome": "C:\\Users\\mathi\\.codex",
+          "platformFamily": "windows",
+          "platformOs": "windows"
+        }
+      }
+    },
+    {
+      "at_ms": 406.01920000000064,
+      "direction": "sent",
+      "msg": {
+        "method": "initialized",
+        "params": {}
+      }
+    },
+    {
+      "at_ms": 436.9225000000006,
+      "direction": "sent",
+      "msg": {
+        "id": 2,
+        "method": "thread/start",
+        "params": {
+          "model": "gpt-5.6-terra",
+          "allowProviderModelFallback": false,
+          "serviceTier": "default",
+          "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-3\\project",
+          "ephemeral": true,
+          "approvalPolicy": "never",
+          "sandbox": "read-only",
+          "baseInstructions": "You are a preflight examiner. Use only the supplied probe tool, then report its result. Do not explore any Product.",
+          "config": {
+            "model_reasoning_effort": "low",
+            "project_doc_max_bytes": 0,
+            "mcp_servers": {
+              "node_repl": {
+                "enabled": false
+              },
+              "perquiro": {
+                "enabled": false
+              }
+            },
+            "web_search": "disabled",
+            "skills": {
+              "config": [
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/imagegen",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/openai-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/plugin-creator",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/review-agent",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/skill-creator",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/skill-installer",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/arena",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/hatch-pet",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/poteto-mode",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/bug-diagnose-grill-fix",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/docx",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/find-skills",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/frontend-design",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/2d-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/3d-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/engine-selection",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-art",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-audio",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-design",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/mobile-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/multiplayer",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/pc-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/vr-ar",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/web-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grill-me",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grill-with-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grilling",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/impeccable",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/ci",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/core",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/migration",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/playwright-cli",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/pom",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/mediabunny",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-captions",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-create",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-interactivity",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-markup",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-render",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-saas",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/setup-matt-pocock-skills",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/superdesign",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/ui-bug-diagnose-grill-fix",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/ui-critique-grill-polish",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/wayfinder",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/writing-great-skills",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-3/project/.agents/skills/perquiro-create",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-3/project/.agents/skills/perquiro-explore",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-3/project/.agents/skills/perquiro-generate",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-3/project/.agents/skills/perquiro-investigate",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-3/project/.agents/skills/perquiro-run",
+                  "enabled": false
+                }
+              ]
+            }
+          },
+          "environments": [],
+          "dynamicTools": [
+            {
+              "type": "function",
+              "name": "probe",
+              "description": "Return a fixed preflight receipt.",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "value"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "at_ms": 437.72789999999986,
+      "direction": "received",
+      "msg": {
+        "method": "configWarning",
+        "params": {
+          "summary": "Project-local config, hooks, and exec policies are disabled in the following folders until the project is trusted, but skills still load.\n    1. C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-3\\project\\.codex\n       To load project-local config, hooks, and exec policies, add c:\\dev\\perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-3\\project as a trusted project in C:\\Users\\mathi\\.codex\\config.toml.\n",
+          "details": null
+        },
+        "emittedAtMs": 1789936770010
+      }
+    },
+    {
+      "at_ms": 438.03369999999995,
+      "direction": "received",
+      "msg": {
+        "method": "remoteControl/status/changed",
+        "params": {
+          "status": "disabled",
+          "serverName": "Home",
+          "installationId": "873fd056-6040-4861-aba0-4446ff05d528",
+          "environmentId": null
+        },
+        "emittedAtMs": 1789936770010
+      }
+    },
+    {
+      "at_ms": 1083.9298,
+      "direction": "received",
+      "msg": {
+        "id": 2,
+        "result": {
+          "thread": {
+            "id": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+            "extra": null,
+            "sessionId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+            "forkedFromId": null,
+            "parentThreadId": null,
+            "preview": "",
+            "ephemeral": true,
+            "section": null,
+            "sectionEnteredAt": null,
+            "projectId": null,
+            "historyMode": "legacy",
+            "modelProvider": "openai",
+            "createdAt": 1789936770,
+            "updatedAt": 1789936770,
+            "recencyAt": 1789936770,
+            "status": {
+              "type": "idle"
+            },
+            "path": null,
+            "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-3\\project",
+            "cliVersion": "0.149.0",
+            "source": "vscode",
+            "canAcceptDirectInput": true,
+            "threadSource": null,
+            "agentNickname": null,
+            "agentRole": null,
+            "gitInfo": null,
+            "name": null,
+            "turns": []
+          },
+          "model": "gpt-5.6-terra",
+          "modelProvider": "openai",
+          "serviceTier": "default",
+          "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-3\\project",
+          "runtimeWorkspaceRoots": [],
+          "instructionSources": [],
+          "approvalPolicy": "never",
+          "approvalsReviewer": "user",
+          "sandbox": {
+            "type": "readOnly",
+            "networkAccess": false
+          },
+          "activePermissionProfile": null,
+          "reasoningEffort": "low",
+          "multiAgentMode": "explicitRequestOnly"
+        }
+      }
+    },
+    {
+      "at_ms": 1084.3216000000011,
+      "direction": "received",
+      "msg": {
+        "method": "thread/started",
+        "params": {
+          "thread": {
+            "id": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+            "extra": null,
+            "sessionId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+            "forkedFromId": null,
+            "parentThreadId": null,
+            "preview": "",
+            "ephemeral": true,
+            "section": null,
+            "sectionEnteredAt": null,
+            "projectId": null,
+            "historyMode": "legacy",
+            "modelProvider": "openai",
+            "createdAt": 1789936770,
+            "updatedAt": 1789936770,
+            "recencyAt": 1789936770,
+            "status": {
+              "type": "idle"
+            },
+            "path": null,
+            "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-3\\project",
+            "cliVersion": "0.149.0",
+            "source": "vscode",
+            "canAcceptDirectInput": true,
+            "threadSource": null,
+            "agentNickname": null,
+            "agentRole": null,
+            "gitInfo": null,
+            "name": null,
+            "turns": []
+          }
+        },
+        "emittedAtMs": 1789936770690
+      }
+    },
+    {
+      "at_ms": 1084.6970000000001,
+      "direction": "sent",
+      "msg": {
+        "id": 3,
+        "method": "mcpServerStatus/list",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "cursor": null,
+          "detail": "toolsAndAuthOnly"
+        }
+      }
+    },
+    {
+      "at_ms": 1093.460000000001,
+      "direction": "received",
+      "msg": {
+        "id": 3,
+        "result": {
+          "data": [
+            {
+              "name": "node_repl",
+              "pluginId": null,
+              "serverInfo": null,
+              "tools": {},
+              "resources": [],
+              "resourceTemplates": [],
+              "authStatus": "unsupported"
+            },
+            {
+              "name": "perquiro",
+              "pluginId": null,
+              "serverInfo": null,
+              "tools": {},
+              "resources": [],
+              "resourceTemplates": [],
+              "authStatus": "unsupported"
+            }
+          ],
+          "nextCursor": null
+        }
+      }
+    },
+    {
+      "at_ms": 1093.9748,
+      "direction": "sent",
+      "msg": {
+        "id": 4,
+        "method": "turn/start",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "input": [
+            {
+              "type": "text",
+              "text": "Call probe with value hello. Then report whether you have any tool that can read arbitrary files or execute a shell. Do not infer tool availability from prose.",
+              "text_elements": []
+            }
+          ],
+          "model": "gpt-5.6-terra",
+          "effort": "low"
+        }
+      }
+    },
+    {
+      "at_ms": 1109.0933999999997,
+      "direction": "received",
+      "msg": {
+        "id": 4,
+        "result": {
+          "turn": {
+            "id": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+            "items": [],
+            "itemsView": "notLoaded",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": null,
+            "completedAt": null,
+            "durationMs": null
+          }
+        }
+      }
+    },
+    {
+      "at_ms": 1109.4871000000003,
+      "direction": "received",
+      "msg": {
+        "method": "thread/status/changed",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "status": {
+            "type": "active",
+            "activeFlags": []
+          }
+        },
+        "emittedAtMs": 1789936770716
+      }
+    },
+    {
+      "at_ms": 1109.7517000000007,
+      "direction": "received",
+      "msg": {
+        "method": "turn/started",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turn": {
+            "id": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+            "items": [],
+            "itemsView": "notLoaded",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": 1789936770,
+            "completedAt": null,
+            "durationMs": null
+          }
+        },
+        "emittedAtMs": 1789936770716
+      }
+    },
+    {
+      "at_ms": 2435.6247999999996,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "userMessage",
+            "id": "01a0c08b-a3ca-74c0-b3ab-ac3c3fa97b1a",
+            "clientId": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "Call probe with value hello. Then report whether you have any tool that can read arbitrary files or execute a shell. Do not infer tool availability from prose.",
+                "text_elements": []
+              }
+            ]
+          },
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "startedAtMs": 1789936772042
+        },
+        "emittedAtMs": 1789936772042
+      }
+    },
+    {
+      "at_ms": 2436.1072000000004,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "userMessage",
+            "id": "01a0c08b-a3ca-74c0-b3ab-ac3c3fa97b1a",
+            "clientId": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "Call probe with value hello. Then report whether you have any tool that can read arbitrary files or execute a shell. Do not infer tool availability from prose.",
+                "text_elements": []
+              }
+            ]
+          },
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "completedAtMs": 1789936772042
+        },
+        "emittedAtMs": 1789936772042
+      }
+    },
+    {
+      "at_ms": 3487.968500000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "reasoning",
+            "id": "rs_00bf9a56676e6ba6016ab044848ac487d2a1a7f00c817d670e",
+            "summary": [],
+            "content": []
+          },
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "startedAtMs": 1789936773095
+        },
+        "emittedAtMs": 1789936773095
+      }
+    },
+    {
+      "at_ms": 5113.0036,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "reasoning",
+            "id": "rs_00bf9a56676e6ba6016ab044848ac487d2a1a7f00c817d670e",
+            "summary": [],
+            "content": []
+          },
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "completedAtMs": 1789936774720
+        },
+        "emittedAtMs": 1789936774720
+      }
+    },
+    {
+      "at_ms": 5955.3441,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "dynamicToolCall",
+            "id": "exec-8a9fc9d5-f7a4-4e72-bbdc-b77b00d1c7a6",
+            "namespace": null,
+            "tool": "probe",
+            "arguments": {
+              "value": "hello"
+            },
+            "status": "inProgress",
+            "contentItems": null,
+            "success": null,
+            "durationMs": null
+          },
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "startedAtMs": 1789936775562
+        },
+        "emittedAtMs": 1789936775562
+      }
+    },
+    {
+      "at_ms": 5956.2176,
+      "direction": "received",
+      "msg": {
+        "method": "item/tool/call",
+        "id": 0,
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "callId": "exec-8a9fc9d5-f7a4-4e72-bbdc-b77b00d1c7a6",
+          "namespace": null,
+          "tool": "probe",
+          "arguments": {
+            "value": "hello"
+          }
+        }
+      }
+    },
+    {
+      "at_ms": 5956.8503,
+      "direction": "sent",
+      "msg": {
+        "id": 0,
+        "result": {
+          "success": true,
+          "contentItems": [
+            {
+              "type": "inputText",
+              "text": "{\"received\":\"hello\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "at_ms": 5958.1219,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "dynamicToolCall",
+            "id": "exec-8a9fc9d5-f7a4-4e72-bbdc-b77b00d1c7a6",
+            "namespace": null,
+            "tool": "probe",
+            "arguments": {
+              "value": "hello"
+            },
+            "status": "completed",
+            "contentItems": [
+              {
+                "type": "inputText",
+                "text": "{\"received\":\"hello\"}"
+              }
+            ],
+            "success": true,
+            "durationMs": 2
+          },
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "completedAtMs": 1789936775565
+        },
+        "emittedAtMs": 1789936775565
+      }
+    },
+    {
+      "at_ms": 5959.9156,
+      "direction": "received",
+      "msg": {
+        "method": "thread/tokenUsage/updated",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "tokenUsage": {
+            "total": {
+              "totalTokens": 7288,
+              "inputTokens": 7221,
+              "cachedInputTokens": 0,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 67,
+              "reasoningOutputTokens": 37
+            },
+            "last": {
+              "totalTokens": 7288,
+              "inputTokens": 7221,
+              "cachedInputTokens": 0,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 67,
+              "reasoningOutputTokens": 37
+            },
+            "modelContextWindow": 258400
+          }
+        },
+        "emittedAtMs": 1789936775567
+      }
+    },
+    {
+      "at_ms": 5960.3379,
+      "direction": "received",
+      "msg": {
+        "method": "account/rateLimits/updated",
+        "params": {
+          "rateLimits": {
+            "limitId": "codex",
+            "limitName": null,
+            "primary": {
+              "usedPercent": 46,
+              "windowDurationMins": 10080,
+              "resetsAt": 1790455438
+            },
+            "secondary": null,
+            "credits": {
+              "hasCredits": false,
+              "unlimited": false,
+              "balance": "0"
+            },
+            "individualLimit": null,
+            "spendControlReached": null,
+            "planType": "pro",
+            "rateLimitReachedType": null
+          }
+        },
+        "emittedAtMs": 1789936775567
+      }
+    },
+    {
+      "at_ms": 6826.079800000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "agentMessage",
+            "id": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+            "text": "",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          },
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "startedAtMs": 1789936776432
+        },
+        "emittedAtMs": 1789936776433
+      }
+    },
+    {
+      "at_ms": 6827.0054,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "Probe"
+        },
+        "emittedAtMs": 1789936776433
+      }
+    },
+    {
+      "at_ms": 6858.1684000000005,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " result"
+        },
+        "emittedAtMs": 1789936776465
+      }
+    },
+    {
+      "at_ms": 6963.275800000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": ":"
+        },
+        "emittedAtMs": 1789936776569
+      }
+    },
+    {
+      "at_ms": 6978.918200000002,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " `"
+        },
+        "emittedAtMs": 1789936776586
+      }
+    },
+    {
+      "at_ms": 6994.188500000002,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "{\""
+        },
+        "emittedAtMs": 1789936776601
+      }
+    },
+    {
+      "at_ms": 6994.7762999999995,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "received"
+        },
+        "emittedAtMs": 1789936776601
+      }
+    },
+    {
+      "at_ms": 7090.117199999999,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "\":\""
+        },
+        "emittedAtMs": 1789936776696
+      }
+    },
+    {
+      "at_ms": 7093.888700000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "hello"
+        },
+        "emittedAtMs": 1789936776701
+      }
+    },
+    {
+      "at_ms": 7094.462400000002,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "\""
+        },
+        "emittedAtMs": 1789936776701
+      }
+    },
+    {
+      "at_ms": 7303.943400000002,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "}`"
+        },
+        "emittedAtMs": 1789936776910
+      }
+    },
+    {
+      "at_ms": 7304.5931,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "\n\n"
+        },
+        "emittedAtMs": 1789936776910
+      }
+    },
+    {
+      "at_ms": 7305.016700000002,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "I"
+        },
+        "emittedAtMs": 1789936776910
+      }
+    },
+    {
+      "at_ms": 7305.321099999999,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " have"
+        },
+        "emittedAtMs": 1789936776910
+      }
+    },
+    {
+      "at_ms": 7317.026200000002,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " no"
+        },
+        "emittedAtMs": 1789936776923
+      }
+    },
+    {
+      "at_ms": 7349.784600000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " tool"
+        },
+        "emittedAtMs": 1789936776956
+      }
+    },
+    {
+      "at_ms": 7350.3143,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " evidence"
+        },
+        "emittedAtMs": 1789936776956
+      }
+    },
+    {
+      "at_ms": 7388.784300000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " of"
+        },
+        "emittedAtMs": 1789936776995
+      }
+    },
+    {
+      "at_ms": 7437.5731,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " arbitrary"
+        },
+        "emittedAtMs": 1789936777042
+      }
+    },
+    {
+      "at_ms": 7474.1438,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " file"
+        },
+        "emittedAtMs": 1789936777081
+      }
+    },
+    {
+      "at_ms": 7508.177099999999,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " reading"
+        },
+        "emittedAtMs": 1789936777115
+      }
+    },
+    {
+      "at_ms": 7555.943499999999,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " or"
+        },
+        "emittedAtMs": 1789936777163
+      }
+    },
+    {
+      "at_ms": 7589.168,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " shell"
+        },
+        "emittedAtMs": 1789936777196
+      }
+    },
+    {
+      "at_ms": 7630.802700000002,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": " execution"
+        },
+        "emittedAtMs": 1789936777237
+      }
+    },
+    {
+      "at_ms": 7631.7907,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "itemId": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+          "delta": "."
+        },
+        "emittedAtMs": 1789936777239
+      }
+    },
+    {
+      "at_ms": 7797.259400000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "agentMessage",
+            "id": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+            "text": "Probe result: `{\"received\":\"hello\"}`\n\nI have no tool evidence of arbitrary file reading or shell execution.",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          },
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "completedAtMs": 1789936777404
+        },
+        "emittedAtMs": 1789936777404
+      }
+    },
+    {
+      "at_ms": 7832.668500000002,
+      "direction": "received",
+      "msg": {
+        "method": "thread/tokenUsage/updated",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turnId": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+          "tokenUsage": {
+            "total": {
+              "totalTokens": 14634,
+              "inputTokens": 14539,
+              "cachedInputTokens": 6912,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 95,
+              "reasoningOutputTokens": 37
+            },
+            "last": {
+              "totalTokens": 7346,
+              "inputTokens": 7318,
+              "cachedInputTokens": 6912,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 28,
+              "reasoningOutputTokens": 0
+            },
+            "modelContextWindow": 258400
+          }
+        },
+        "emittedAtMs": 1789936777439
+      }
+    },
+    {
+      "at_ms": 7833.234200000001,
+      "direction": "received",
+      "msg": {
+        "method": "account/rateLimits/updated",
+        "params": {
+          "rateLimits": {
+            "limitId": "codex",
+            "limitName": null,
+            "primary": {
+              "usedPercent": 46,
+              "windowDurationMins": 10080,
+              "resetsAt": 1790455438
+            },
+            "secondary": null,
+            "credits": {
+              "hasCredits": false,
+              "unlimited": false,
+              "balance": "0"
+            },
+            "individualLimit": null,
+            "spendControlReached": null,
+            "planType": "pro",
+            "rateLimitReachedType": null
+          }
+        },
+        "emittedAtMs": 1789936777439
+      }
+    },
+    {
+      "at_ms": 7851.388199999999,
+      "direction": "received",
+      "msg": {
+        "method": "thread/status/changed",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "status": {
+            "type": "idle"
+          }
+        },
+        "emittedAtMs": 1789936777458
+      }
+    },
+    {
+      "at_ms": 7857.0918,
+      "direction": "received",
+      "msg": {
+        "method": "turn/completed",
+        "params": {
+          "threadId": "01a0c08b-9dc9-7112-aba1-aab74199aab1",
+          "turn": {
+            "id": "01a0c08b-9e8e-7d61-b2bf-8abce662976a",
+            "items": [
+              {
+                "type": "agentMessage",
+                "id": "msg_00bf9a56676e6ba6016ab04487e83887d2874fb6c8789042b7",
+                "text": "Probe result: `{\"received\":\"hello\"}`\n\nI have no tool evidence of arbitrary file reading or shell execution.",
+                "phase": "final_answer",
+                "memoryCitation": null,
+                "delivery": null
+              }
+            ],
+            "itemsView": "summary",
+            "status": "completed",
+            "error": null,
+            "startedAt": 1789936770,
+            "completedAt": 1789936777,
+            "durationMs": 6750
+          }
+        },
+        "emittedAtMs": 1789936777458
+      }
+    }
+  ]
+}

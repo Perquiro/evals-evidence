@@ -1,0 +1,169 @@
+{
+  "W01": {
+    "seqs": [
+      13
+    ],
+    "journeyRelated": true,
+    "reason": "Initial three-book availability fact linked to Browse the catalog."
+  },
+  "W02": {
+    "seqs": [
+      23
+    ],
+    "journeyRelated": true,
+    "reason": "Actual River query and matching book."
+  },
+  "W03": {
+    "seqs": [
+      24
+    ],
+    "journeyRelated": true,
+    "reason": "Actual no-match query, empty result and exact message."
+  },
+  "W04": {
+    "seqs": [
+      25
+    ],
+    "journeyRelated": true,
+    "reason": "Explicit clear recovery and restored initial availability."
+  },
+  "W05": {
+    "seqs": [
+      17
+    ],
+    "journeyRelated": true,
+    "reason": "Reader available book and advertised reservation."
+  },
+  "W06": {
+    "seqs": [
+      18
+    ],
+    "journeyRelated": true,
+    "reason": "Reader unavailable book under the shared parameterized Surface."
+  },
+  "W07": {
+    "seqs": [
+      19
+    ],
+    "journeyRelated": true,
+    "reason": "Initial empty holds and message."
+  },
+  "W08": {
+    "seqs": [
+      33
+    ],
+    "journeyRelated": true,
+    "reason": "Created reservation 301 is durable as a plain Observation; its separate attempting Look is still unresolved."
+  },
+  "W09": {
+    "seqs": [
+      6,
+      32
+    ],
+    "journeyRelated": true,
+    "reason": "Actual 409 body saved. Earlier malformed request is distinct and remains an unresolved attempt on a renamed item."
+  },
+  "W10": {
+    "seqs": [
+      3,
+      31
+    ],
+    "journeyRelated": true,
+    "reason": "Actual empty body and 422 rejection saved twice through structured and plain reports."
+  },
+  "W11": {
+    "seqs": [
+      38
+    ],
+    "journeyRelated": true,
+    "reason": "Actual duplicate reservation conflict linked to Reserve a book."
+  },
+  "W12": {
+    "seqs": [],
+    "reason": "Created hold appears in the request-27 capture, but no final Observation records that readback."
+  },
+  "W13": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Cancellation advertised in the later holds response; summary leaves it untried after exhausting 40 requests."
+  },
+  "W14": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Cancellation readback cannot complete without the missed cancellation."
+  },
+  "W15": {
+    "seqs": [
+      26,
+      27,
+      28
+    ],
+    "journeyRelated": true,
+    "reason": "Related Review a loan Journey retains the initial date/count and both actions in separate facts."
+  },
+  "W16": {
+    "seqs": [
+      45
+    ],
+    "journeyRelated": true,
+    "reason": "Renewal result saved under Review a loan, but actual POST endpoint is absent."
+  },
+  "W17": {
+    "seqs": [
+      47
+    ],
+    "journeyRelated": true,
+    "reason": "Exact limit error saved under Review a loan, but on the source GET Surface."
+  },
+  "W18": {
+    "seqs": [
+      49
+    ],
+    "journeyRelated": true,
+    "reason": "Related loan Journey retains return outcome and book identity; actual POST endpoint is absent."
+  },
+  "W19": {
+    "seqs": [],
+    "reason": "Request-37 capture contains the post-return empty loan list; final Knowledge has no corresponding outcome fact."
+  },
+  "W20": {
+    "seqs": [
+      16
+    ],
+    "journeyRelated": true,
+    "reason": "Reader 403 desk denial and exact message."
+  },
+  "W21": {
+    "seqs": [
+      21,
+      22
+    ],
+    "journeyRelated": true,
+    "reason": "Librarian pending book and check-in action saved separately under the check-in Journey."
+  },
+  "W22": {
+    "seqs": [
+      40
+    ],
+    "journeyRelated": true,
+    "reason": "Actual required-book check-in rejection."
+  },
+  "W23": {
+    "seqs": [
+      34
+    ],
+    "journeyRelated": true,
+    "reason": "Successful check-in plain fact is durable, while its separate attempting Look remains unresolved."
+  },
+  "W24": {
+    "seqs": [
+      42
+    ],
+    "journeyRelated": true,
+    "reason": "Actual repeated check-in conflict."
+  },
+  "W25": {
+    "seqs": [],
+    "reason": "Reader's request-30 detail capture establishes availability after check-in, but no final Observation records it. The earlier catalog fact and final Librarian detail are different evidence."
+  }
+}

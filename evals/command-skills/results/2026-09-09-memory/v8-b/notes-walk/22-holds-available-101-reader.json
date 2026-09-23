@@ -1,0 +1,19 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://127.0.0.1:54824/holds",
+    "actor": "Reader",
+    "body": {
+      "bookId": "101"
+    }
+  },
+  "status": 201,
+  "body": {
+    "id": "301",
+    "bookId": "101",
+    "title": "River Atlas",
+    "links": {
+      "reservations": "/holds"
+    }
+  }
+}

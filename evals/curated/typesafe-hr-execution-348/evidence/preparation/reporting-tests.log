@@ -1,0 +1,21 @@
+✔ a failed report build retains its error and partial output without changing its input (12.163ms)
+✔ missing report inputs are retained as an inconclusive attempt (1.0319ms)
+✔ complete independent judgment is accepted (0.9077ms)
+✔ missing, duplicate and unknown checklist decisions are rejected (1.1668ms)
+✔ wrong reviewer, empty zero rationale and fabricated evidence are rejected (0.774ms)
+✔ zero decisions retain their reason and partial support without becoming credit (0.1218ms)
+✔ host accounting differences cumulative counters and ignores repeated totals (1.6608ms)
+✔ missing or backwards cumulative classifications stay unknown (0.2611ms)
+✔ host-reported failure remains an unpriced attempt (0.1903ms)
+✔ usage without delivered model output is not labeled a usable success (0.1601ms)
+✔ a delivered tool-call response stays usable when a later turn attempt fails (0.2543ms)
+✔ separate independent review binds to the exact packet and report (0.5288ms)
+✔ wrong identity, stale report, and unresolved review cannot pass delivery (0.9729ms)
+ℹ tests 13
+ℹ suites 0
+ℹ pass 13
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 664.295

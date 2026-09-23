@@ -1,0 +1,18 @@
+{
+  "requestToken": "c7b20dd4-ce1f-4df2-8e15-dd13a9529f94",
+  "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+  "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+  "journeyId": "c2784df2-b4c8-4d3b-bf8a-c14a2eaf6bb1",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "GET /catalog?q=Garden returned 200 with only Garden Notes (id 102) and available true.",
+      "look": {
+        "item": { "id": "fa64b3ec-6227-4c61-b150-f62291411624" },
+        "kind": "exercised"
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "request": {"method": "GET", "url": "http://127.0.0.1:54824/desk", "actor": "Librarian"},
+  "status": 200,
+  "body": {"checkIn": {"label": "Check in a book", "method": "POST", "href": "/desk/returns", "json": {"bookId": "103"}}, "pendingReturns": [{"bookId": "103", "title": "Night Trains"}]}
+}

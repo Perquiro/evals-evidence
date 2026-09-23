@@ -1,0 +1,28 @@
+[
+  {
+    "id": "pair-1-ordinary",
+    "passed": true,
+    "hostVisibleUsageRecords": 38,
+    "unattributed": 0,
+    "totals": {
+      "input": 1435482,
+      "cached_input": 1358592,
+      "cache_write_input": 0,
+      "output": 8283,
+      "reasoning_output": 1033
+    }
+  },
+  {
+    "id": "pair-1-advised",
+    "passed": true,
+    "hostVisibleUsageRecords": 34,
+    "unattributed": 4,
+    "totals": {
+      "input": 1223724,
+      "cached_input": 1153792,
+      "cache_write_input": 0,
+      "output": 12405,
+      "reasoning_output": 973
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "requestToken": "c1f4e14d-b7da-4ed7-8efe-214110c144a5",
+  "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "no-results", "name": "No books found message", "kind": "information" },
+    { "key": "clear-search", "name": "Clear catalog search", "kind": "link" }
+  ],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "GET /catalog?q=No such title returned 200 OK with no books, the message 'No books found', and a clear link to /catalog.",
+      "look": { "item": { "id": "cf725c9c-fb35-4c3e-b82c-befab61ac60c" }, "kind": "exercised" },
+      "capture": "pending"
+    }
+  ]
+}

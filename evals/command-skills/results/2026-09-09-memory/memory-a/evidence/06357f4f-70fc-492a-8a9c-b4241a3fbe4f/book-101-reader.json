@@ -1,0 +1,8 @@
+{
+  "id": "101",
+  "title": "River Atlas",
+  "available": true,
+  "actions": [
+    {"label": "Reserve book", "method": "POST", "href": "/holds", "json": {"bookId": "101"}, "actor": "Reader"}
+  ]
+}

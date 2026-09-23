@@ -1,0 +1,14 @@
+{
+  "markerVerdict": "failed: one blind repeat",
+  "falseReopens": 0,
+  "falsePending": 1,
+  "semanticAliases": "none identified; three row-specific book links",
+  "summary": "The early pilot retained 17 factual outcomes but only five with a related Journey. Event 53 repeated the unavailable-book POST from an error handler without a fresh accepted attempt. An unavailable-rule gap stayed pending because its result was attached to the parent action. The catalog defines three book-row link items. Three actual mutation endpoints were omitted as canonical Surfaces. Final uncertainty is zero, which does not erase the unsupported retry.",
+  "evidence": [
+    "metrics.json mutations events 52/53",
+    "item-audit.json",
+    "assessment.json",
+    "grading-notes.json"
+  ],
+  "limits": "False pending counts only the independently inventoried unavailable rule with an actual rejection saved against its parent. Unrelated untried checks stay pending correctly. No later ordinary inventory was found reopening a completed exact check. Semantic aliases require human judgment; the normalized duplicate audit is not that judgment."
+}

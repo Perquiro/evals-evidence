@@ -1,0 +1,14 @@
+{
+  "requestToken": "258cc3fa-b344-48a1-9e65-bce28d41a8a3",
+  "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following Catalog reached GET /catalog and returned River Atlas and Garden Notes as available, Night Trains as unavailable, and a title-search query field.",
+      "look": { "item": { "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6" }, "kind": "reached", "reachedSurfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7" }
+    }
+  ]
+}

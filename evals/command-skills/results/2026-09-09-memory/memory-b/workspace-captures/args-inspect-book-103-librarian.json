@@ -1,0 +1,21 @@
+{
+  "requestToken": "aa6c258d-e8ce-42cb-bf3a-e1d903397554",
+  "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [
+    { "key": "details", "name": "Book details", "kind": "information" },
+    { "key": "reserve", "name": "Reserve book", "kind": "action" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /books/103 returned 200 OK for Night Trains with available false. Its only action is Reserve book at POST /holds with {\"bookId\":\"103\"}, labelled for Reader.",
+      "looks": [
+        { "item": { "key": "details" }, "kind": "offered" },
+        { "item": { "key": "reserve" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

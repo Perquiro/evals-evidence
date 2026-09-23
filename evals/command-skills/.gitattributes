@@ -1,0 +1,4 @@
+# Retained evidence and variant snapshots must keep their original bytes.
+# HTTP captures and original candidate output may contain meaningful whitespace.
+results/** -text -whitespace linguist-generated=true
+variants/** -text -whitespace

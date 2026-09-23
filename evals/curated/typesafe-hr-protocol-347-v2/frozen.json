@@ -1,0 +1,29 @@
+{
+  "frozen_at": "2026-09-17T20:32:43.519Z",
+  "purpose": "Issue #347, before live scored executions",
+  "hashes": {
+    "candidate.md": "04ddd3f717c8910c9e37bab6b6084f50c22aecf77d3f73222d9e712c05c50c53",
+    "checklist.json": "17df907019c06077a0b24dcc7df330ae8f4750f6d21aa0b5b705a86b776f6766",
+    "CONTRACT.md": "8c65c5039ab2b037849b7b8308a733ba1ad16324f53d2467dc16e6b544958903",
+    "evaluate.mjs": "46c658a8da1a03e27fc43d1cff589d35a1456e190beb43cc1cea74356053f5bc",
+    "evaluate.test.mjs": "bc89bfd3939112a2bbab19dee1d4a34592e4f4612bebe0e2e68734e0eadb010a",
+    "fixed-date.cjs": "fe560dca7ad47322a426f89d6d4a267e2e311177cec562f368184255288ff149",
+    "freeze.mjs": "28edc93fd3a4d63bdb60c6d27a2fffc0f9b8e44b954271e3fb6b8ae79bf26216",
+    "launch.template.json": "2d51aef111eabfeb7fbc10b23127ea116942690d32b60fceb85ef479901b3ce1",
+    "preservation.json": "d4fe332aebc3b4f37abdba6d26028c6e769127e8880265bf752032d19804402b",
+    "protocol.json": "8332467a0b6bc73c073acc1226a5338f1b8e1baac235735bce0d005a811c41ff",
+    "PROTOCOL.md": "19099617d67410fc53701fae0c06ef9a1840cd6adbe4b6a7f687ace11ef01de0",
+    "rates.json": "7482f03afe87416363755c5e6831471719f3215e68c3da703580c538b13505e7",
+    "rehearsal/absent-evidence.json": "d23a6e53ad12f537829a671cb93972a0034efec2d4bc360f28c6673da4035041",
+    "rehearsal/advised-success.json": "5a520ed1eae29aba9073a22ba870609b29ec17861f4f7527bd5e798244d1e142",
+    "rehearsal/expected.json": "fefd48b3b413f6df22ae11e0f78375c15c493a91c0c614ffd39c222ad4632b2c",
+    "rehearsal/ordinary-success.json": "5b9e48779365d07013ed2ec0d51ec2e578c89941f95b8cc9f02a8dddbbaf4ce6",
+    "rehearsal/override-fallback.json": "0014c1af97b3060dd648e92dfa020fe327761ca580e3420a2993fc452ae43c6b",
+    "rehearsal/packet.json": "8155fdab9e7e65ffb154cf33944ddbf74e4fbda8917124bd6592dfff6602e7e8",
+    "rehearse.mjs": "380cba772e0da96fec21607177382e322dd7c058f689117f9f5150ab76bea61f",
+    "REPRODUCE.md": "d3effcdc46f65fef2c9cae3c0669cc9c4c089fbe2b96c176c6cb19ae0fec8693",
+    "REVIEW.md": "0f17557f2decb204e20345299cb06078eb0a46d9542562f38571d88c08998d4e",
+    "SCHEMA.md": "3c4bfdf9673580e3ca30e0d5e93fc8bd1225e32e9a11a32dc2fbec27bc3d88c8",
+    "seed-receipt.mjs": "ff7887b5c3eea9d7eeb08f5d11890e2bbf61b6c4e80f3d517df15dd3a26d8ca4"
+  }
+}

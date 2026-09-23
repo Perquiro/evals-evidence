@@ -1,0 +1,20 @@
+{
+  "status": "host_decision",
+  "host": {
+    "status": "human_priority",
+    "precedence_ids": [
+      "c2"
+    ],
+    "reason": "The explicit first priority is eligible; no semantic ranking is needed."
+  },
+  "selected_id": "c2",
+  "latency_ms": 0.0,
+  "usage": null,
+  "api_calls": 0,
+  "case": "explicit_human_priority_over_access",
+  "method": "jev_choice",
+  "seed": null,
+  "started_utc": "2026-09-17T19:30:03.470009+00:00",
+  "total_selection_ms": 0.37590001011267304,
+  "state_sha256": "b1111669b6652f421ca9849016b22112f7c7e1aec40e6bd65b564a8332dbc2f9"
+}

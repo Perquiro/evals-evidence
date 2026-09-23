@@ -1,0 +1,466 @@
+[
+  {
+    "revision": "51972075-8266-494c-872b-d42081403606",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "actorIds": [
+        "dc327f7f-a9ff-451c-b205-986f165f998b",
+        "fea91b43-5998-4e2b-a232-38ec88e67c28"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "name": "Loan detail",
+      "locator": "GET /loans/:id",
+      "createdAt": "2026-09-09T07:05:51.282Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "3774a53f-06ab-49db-a3b1-578c1f6e1f05",
+          "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+          "name": "loan31-renew",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:20:58.874Z"
+        },
+        {
+          "id": "5da7bbd3-ae97-4672-affe-185c1ad35713",
+          "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+          "name": "loan33-repeat-renew",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:20:59.071Z"
+        },
+        {
+          "id": "1084ffdf-4766-4778-8bdf-1d97873c191e",
+          "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+          "name": "loan35-return",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:20:59.259Z"
+        },
+        {
+          "id": "373a01de-f0b4-48f0-a1e9-182dd6c61325",
+          "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+          "name": "loan36-repeat-return",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:20:59.441Z"
+        },
+        {
+          "id": "72aa94d8-d339-4651-91c1-bf5db5a63718",
+          "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+          "name": "loan39-renew-after-return",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:20:59.653Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "635efb83-d78c-4bc5-934e-04a36a69f33a",
+            "seq": 43,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "Loan detail was inspected for Reader; it offered renew and return actions with no JSON fields.",
+            "createdAt": "2026-09-09T07:20:58.874Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "3774a53f-06ab-49db-a3b1-578c1f6e1f05"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "43830840-20d9-4d9b-9ab9-77ccc6fe5d2f",
+            "seq": 44,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "Prepared reviewed POST /loans/201/renew.",
+            "createdAt": "2026-09-09T07:20:58.875Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "3774a53f-06ab-49db-a3b1-578c1f6e1f05"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /loans/201/renew"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "5680f8c9-2d87-48db-b355-74d5015276a1",
+            "seq": 45,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "POST /loans/201/renew returned 200 {\"id\":\"201\",\"renewals\":1,\"due\":\"2026-10-15\"}.",
+            "createdAt": "2026-09-09T07:20:58.982Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "3774a53f-06ab-49db-a3b1-578c1f6e1f05"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "43830840-20d9-4d9b-9ab9-77ccc6fe5d2f"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "d60c9dc7-f1f2-45b1-b183-371cb5a0f708",
+            "seq": 46,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "Prepared reviewed POST /loans/201/renew.",
+            "createdAt": "2026-09-09T07:20:59.072Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "5da7bbd3-ae97-4672-affe-185c1ad35713"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /loans/201/renew"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "140fbcec-187e-4b5f-a11c-562f3d4ea5c7",
+            "seq": 47,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "POST /loans/201/renew returned 409 {\"error\":\"Renewal limit reached\"}.",
+            "createdAt": "2026-09-09T07:20:59.165Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "5da7bbd3-ae97-4672-affe-185c1ad35713"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "d60c9dc7-f1f2-45b1-b183-371cb5a0f708"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "8885cbda-56b7-4aa6-a14b-250307442490",
+            "seq": 48,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "Prepared reviewed POST /loans/201/return.",
+            "createdAt": "2026-09-09T07:20:59.260Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "1084ffdf-4766-4778-8bdf-1d97873c191e"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /loans/201/return"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "b299bea4-5962-4dd1-a051-42c6d55dcf52",
+            "seq": 49,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "POST /loans/201/return returned 200 {\"message\":\"Book returned\",\"bookId\":\"102\",\"catalog\":\"/catalog\",\"loans\":\"/loans\"}.",
+            "createdAt": "2026-09-09T07:20:59.353Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "1084ffdf-4766-4778-8bdf-1d97873c191e"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "8885cbda-56b7-4aa6-a14b-250307442490"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "2591edb8-d6af-4655-9b55-5fa94305d22d",
+            "seq": 50,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "Prepared reviewed POST /loans/201/return.",
+            "createdAt": "2026-09-09T07:20:59.442Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "373a01de-f0b4-48f0-a1e9-182dd6c61325"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /loans/201/return"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "9e72de8c-4bc8-4860-b660-c3a7709848f7",
+            "seq": 51,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "POST /loans/201/return returned 404 {\"error\":\"Loan not found\"}.",
+            "createdAt": "2026-09-09T07:20:59.540Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "373a01de-f0b4-48f0-a1e9-182dd6c61325"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "2591edb8-d6af-4655-9b55-5fa94305d22d"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "028f6e02-25ff-4669-a1a3-f7b676490215",
+            "seq": 52,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "Prepared reviewed POST /loans/201/renew.",
+            "createdAt": "2026-09-09T07:20:59.653Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "72aa94d8-d339-4651-91c1-bf5db5a63718"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /loans/201/renew"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "2647a6f0-6a0c-475c-82bf-9a022c796c39",
+            "seq": 53,
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+            "body": "POST /loans/201/renew returned 404 {\"error\":\"Loan not found\"}.",
+            "createdAt": "2026-09-09T07:20:59.750Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "72aa94d8-d339-4651-91c1-bf5db5a63718"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "028f6e02-25ff-4669-a1a3-f7b676490215"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "3774a53f-06ab-49db-a3b1-578c1f6e1f05",
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "name": "loan31-renew",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:20:58.874Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "5680f8c9-2d87-48db-b355-74d5015276a1"
+          ]
+        },
+        {
+          "item": {
+            "id": "5da7bbd3-ae97-4672-affe-185c1ad35713",
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "name": "loan33-repeat-renew",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:20:59.071Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "140fbcec-187e-4b5f-a11c-562f3d4ea5c7"
+          ]
+        },
+        {
+          "item": {
+            "id": "1084ffdf-4766-4778-8bdf-1d97873c191e",
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "name": "loan35-return",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:20:59.259Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "b299bea4-5962-4dd1-a051-42c6d55dcf52"
+          ]
+        },
+        {
+          "item": {
+            "id": "373a01de-f0b4-48f0-a1e9-182dd6c61325",
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "name": "loan36-repeat-return",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:20:59.441Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "9e72de8c-4bc8-4860-b660-c3a7709848f7"
+          ]
+        },
+        {
+          "item": {
+            "id": "72aa94d8-d339-4651-91c1-bf5db5a63718",
+            "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+            "name": "loan39-renew-after-return",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:20:59.653Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "2647a6f0-6a0c-475c-82bf-9a022c796c39"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 5,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 5
+    }
+  }
+]

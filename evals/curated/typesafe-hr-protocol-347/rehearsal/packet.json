@@ -1,0 +1,774 @@
+{
+  "manifest": {
+    "ordinary-success.json": "5b9e48779365d07013ed2ec0d51ec2e578c89941f95b8cc9f02a8dddbbaf4ce6",
+    "advised-success.json": "aaa7aced3ba851424a27f708d3fc0352e208c3bd186e628adb935b59b076d07d",
+    "override-fallback.json": "0014c1af97b3060dd648e92dfa020fe327761ca580e3420a2993fc452ae43c6b",
+    "absent-evidence.json": "d23a6e53ad12f537829a671cb93972a0034efec2d4bc360f28c6673da4035041"
+  },
+  "traces": [
+    {
+      "kind": "controlled",
+      "id": "ordinary-success",
+      "pair": 1,
+      "arm": "ordinary",
+      "actor": "Employee:emily.dawson",
+      "elapsed_ms": 5000,
+      "status": "completed",
+      "product_requests": 5,
+      "call_ledger_complete": true,
+      "non_token_cost_usd": 0,
+      "accounting_note": "All counters and elapsed times are authored fixtures. No calls or Product actions ran.",
+      "phases": [
+        {
+          "phase": "ordinary_planning",
+          "start_ms": 0,
+          "end_ms": 500,
+          "call_ids": [
+            "planning"
+          ]
+        },
+        {
+          "phase": "product_interaction",
+          "start_ms": 500,
+          "end_ms": 4600,
+          "call_ids": []
+        },
+        {
+          "phase": "recording",
+          "start_ms": 4600,
+          "end_ms": 5000,
+          "call_ids": []
+        }
+      ],
+      "calls": [
+        {
+          "id": "planning",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 1000,
+            "cached_input": 200,
+            "cache_write_input": 100,
+            "output": 100,
+            "reasoning_output": 40
+          },
+          "actual_charge_usd": null,
+          "raw": "ordinary-success.json#/calls/0"
+        }
+      ],
+      "recommendations": [],
+      "overrides": [],
+      "actions": [
+        {
+          "id": "a0",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 4000,
+          "executed": true,
+          "outcome": "Valid Employee credentials opened the Employee dashboard.",
+          "raw": "ordinary-success.json#/actions/0"
+        },
+        {
+          "id": "a1",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 4100,
+          "executed": true,
+          "outcome": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+          "raw": "ordinary-success.json#/actions/1"
+        },
+        {
+          "id": "a2",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 4200,
+          "executed": true,
+          "outcome": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+          "raw": "ordinary-success.json#/actions/2"
+        }
+      ],
+      "observations": [
+        {
+          "id": "o0",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a0"
+          ],
+          "saved_ms": 4700,
+          "result": "Valid Employee credentials opened the Employee dashboard.",
+          "raw": "ordinary-success.json#/observations/0"
+        },
+        {
+          "id": "o1",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a1"
+          ],
+          "saved_ms": 4800,
+          "result": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+          "raw": "ordinary-success.json#/observations/1"
+        },
+        {
+          "id": "o2",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a1",
+            "a2"
+          ],
+          "saved_ms": 4900,
+          "result": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+          "raw": "ordinary-success.json#/observations/2"
+        }
+      ],
+      "grade": {
+        "reviewer": "controlled oracle reviewed independently before live execution",
+        "items": [
+          {
+            "item_id": "login",
+            "action_ids": [
+              "a0"
+            ],
+            "observation_ids": [
+              "o0"
+            ],
+            "rationale": "Valid Employee credentials opened the Employee dashboard."
+          },
+          {
+            "item_id": "leave-submit",
+            "action_ids": [
+              "a1"
+            ],
+            "observation_ids": [
+              "o1"
+            ],
+            "rationale": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending."
+          },
+          {
+            "item_id": "leave-readback",
+            "action_ids": [
+              "a1",
+              "a2"
+            ],
+            "observation_ids": [
+              "o1",
+              "o2"
+            ],
+            "rationale": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending."
+          }
+        ],
+        "behaviors": [
+          {
+            "id": "login",
+            "description": "Valid Employee credentials opened the Employee dashboard.",
+            "observation_ids": [
+              "o0"
+            ]
+          },
+          {
+            "id": "leave-submit",
+            "description": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+            "observation_ids": [
+              "o1"
+            ]
+          },
+          {
+            "id": "leave-readback",
+            "description": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+            "observation_ids": [
+              "o2"
+            ]
+          }
+        ],
+        "open_questions": [
+          "Does saving profile data persist after reload?"
+        ],
+        "unsupported_claims": []
+      }
+    },
+    {
+      "kind": "controlled",
+      "id": "advised-success",
+      "pair": 1,
+      "arm": "advised",
+      "actor": "Employee:emily.dawson",
+      "elapsed_ms": 4500,
+      "status": "completed",
+      "product_requests": 5,
+      "call_ledger_complete": true,
+      "non_token_cost_usd": 0,
+      "accounting_note": "All counters and elapsed times are authored fixtures. No calls or Product actions ran.",
+      "phases": [
+        {
+          "phase": "candidate_generation",
+          "start_ms": 0,
+          "end_ms": 500,
+          "call_ids": [
+            "candidates"
+          ]
+        },
+        {
+          "phase": "advice",
+          "start_ms": 500,
+          "end_ms": 1000,
+          "call_ids": [
+            "choice"
+          ]
+        },
+        {
+          "phase": "advice_handling",
+          "start_ms": 1000,
+          "end_ms": 1500,
+          "call_ids": [
+            "handle"
+          ]
+        },
+        {
+          "phase": "product_interaction",
+          "start_ms": 1500,
+          "end_ms": 4100,
+          "call_ids": []
+        },
+        {
+          "phase": "recording",
+          "start_ms": 4100,
+          "end_ms": 4500,
+          "call_ids": []
+        }
+      ],
+      "calls": [
+        {
+          "id": "candidates",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 1000,
+            "cached_input": 200,
+            "cache_write_input": 100,
+            "output": 100,
+            "reasoning_output": 40
+          },
+          "actual_charge_usd": null,
+          "raw": "advised-success.json#/calls/0"
+        },
+        {
+          "id": "choice",
+          "model": "jev-1.13.0",
+          "status": "ok",
+          "usage": {
+            "input": 1000,
+            "cached_input": 0,
+            "cache_write_input": 0,
+            "output": 50,
+            "reasoning_output": 0
+          },
+          "actual_charge_usd": null,
+          "raw": "advised-success.json#/calls/1"
+        },
+        {
+          "id": "handle",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 1000,
+            "cached_input": 200,
+            "cache_write_input": 100,
+            "output": 100,
+            "reasoning_output": 40
+          },
+          "actual_charge_usd": null,
+          "raw": "advised-success.json#/calls/2"
+        }
+      ],
+      "recommendations": [
+        {
+          "selected_id": "leave-submit",
+          "action_ids": [
+            "a1"
+          ],
+          "status": "available"
+        }
+      ],
+      "overrides": [],
+      "actions": [
+        {
+          "id": "a0",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 3500,
+          "executed": true,
+          "outcome": "Valid Employee credentials opened the Employee dashboard.",
+          "raw": "advised-success.json#/actions/0"
+        },
+        {
+          "id": "a1",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 3600,
+          "executed": true,
+          "outcome": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+          "raw": "advised-success.json#/actions/1"
+        },
+        {
+          "id": "a2",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 3700,
+          "executed": true,
+          "outcome": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+          "raw": "advised-success.json#/actions/2"
+        }
+      ],
+      "observations": [
+        {
+          "id": "o0",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a0"
+          ],
+          "saved_ms": 4200,
+          "result": "Valid Employee credentials opened the Employee dashboard.",
+          "raw": "advised-success.json#/observations/0"
+        },
+        {
+          "id": "o1",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a1"
+          ],
+          "saved_ms": 4300,
+          "result": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+          "raw": "advised-success.json#/observations/1"
+        },
+        {
+          "id": "o2",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a1",
+            "a2"
+          ],
+          "saved_ms": 4400,
+          "result": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+          "raw": "advised-success.json#/observations/2"
+        }
+      ],
+      "grade": {
+        "reviewer": "controlled oracle reviewed independently before live execution",
+        "items": [
+          {
+            "item_id": "login",
+            "action_ids": [
+              "a0"
+            ],
+            "observation_ids": [
+              "o0"
+            ],
+            "rationale": "Valid Employee credentials opened the Employee dashboard."
+          },
+          {
+            "item_id": "leave-submit",
+            "action_ids": [
+              "a1"
+            ],
+            "observation_ids": [
+              "o1"
+            ],
+            "rationale": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending."
+          },
+          {
+            "item_id": "leave-readback",
+            "action_ids": [
+              "a1",
+              "a2"
+            ],
+            "observation_ids": [
+              "o1",
+              "o2"
+            ],
+            "rationale": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending."
+          }
+        ],
+        "behaviors": [
+          {
+            "id": "login",
+            "description": "Valid Employee credentials opened the Employee dashboard.",
+            "observation_ids": [
+              "o0"
+            ]
+          },
+          {
+            "id": "leave-submit",
+            "description": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+            "observation_ids": [
+              "o1"
+            ]
+          },
+          {
+            "id": "leave-readback",
+            "description": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+            "observation_ids": [
+              "o2"
+            ]
+          }
+        ],
+        "open_questions": [
+          "Does saving profile data persist after reload?"
+        ],
+        "unsupported_claims": []
+      }
+    },
+    {
+      "kind": "controlled",
+      "id": "override-fallback",
+      "pair": 2,
+      "arm": "advised",
+      "actor": "Employee:emily.dawson",
+      "elapsed_ms": 6500,
+      "status": "completed",
+      "product_requests": 5,
+      "call_ledger_complete": true,
+      "non_token_cost_usd": 0,
+      "accounting_note": "All counters and elapsed times are authored fixtures. No calls or Product actions ran.",
+      "phases": [
+        {
+          "phase": "candidate_generation",
+          "start_ms": 0,
+          "end_ms": 500,
+          "call_ids": [
+            "candidates"
+          ]
+        },
+        {
+          "phase": "advice",
+          "start_ms": 500,
+          "end_ms": 1000,
+          "call_ids": [
+            "choice"
+          ]
+        },
+        {
+          "phase": "advice_handling",
+          "start_ms": 1000,
+          "end_ms": 1500,
+          "call_ids": [
+            "handle"
+          ]
+        },
+        {
+          "phase": "override",
+          "start_ms": 1500,
+          "end_ms": 1700,
+          "call_ids": []
+        },
+        {
+          "phase": "fallback",
+          "start_ms": 1700,
+          "end_ms": 2200,
+          "call_ids": [
+            "fallback"
+          ]
+        },
+        {
+          "phase": "product_interaction",
+          "start_ms": 2200,
+          "end_ms": 6100,
+          "call_ids": []
+        },
+        {
+          "phase": "recording",
+          "start_ms": 6100,
+          "end_ms": 6500,
+          "call_ids": []
+        }
+      ],
+      "calls": [
+        {
+          "id": "candidates",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 1000,
+            "cached_input": 200,
+            "cache_write_input": 100,
+            "output": 100,
+            "reasoning_output": 40
+          },
+          "actual_charge_usd": null,
+          "raw": "override-fallback.json#/calls/0"
+        },
+        {
+          "id": "choice",
+          "model": "jev-1.13.0",
+          "status": "HTTP 503",
+          "usage": null,
+          "actual_charge_usd": null,
+          "raw": "override-fallback.json#/calls/1"
+        },
+        {
+          "id": "handle",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 1000,
+            "cached_input": 200,
+            "cache_write_input": 100,
+            "output": 100,
+            "reasoning_output": 40
+          },
+          "actual_charge_usd": null,
+          "raw": "override-fallback.json#/calls/2"
+        },
+        {
+          "id": "fallback",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 1000,
+            "cached_input": 200,
+            "cache_write_input": 100,
+            "output": 100,
+            "reasoning_output": 40
+          },
+          "actual_charge_usd": null,
+          "raw": "override-fallback.json#/calls/3"
+        }
+      ],
+      "recommendations": [
+        {
+          "selected_id": "directory-search",
+          "action_ids": [],
+          "status": "available",
+          "note": "Authored host recommendation; no provider usage for this event."
+        },
+        {
+          "selected_id": null,
+          "status": "unavailable",
+          "call_id": "choice"
+        }
+      ],
+      "overrides": [
+        {
+          "selected_id": "directory-search",
+          "chosen_action_ids": [
+            "a1",
+            "a2"
+          ],
+          "reason": "Finish the unresolved leave submission and readback."
+        }
+      ],
+      "actions": [
+        {
+          "id": "a0",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 5500,
+          "executed": true,
+          "outcome": "Valid Employee credentials opened the Employee dashboard.",
+          "raw": "override-fallback.json#/actions/0"
+        },
+        {
+          "id": "a1",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 5600,
+          "executed": true,
+          "outcome": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+          "raw": "override-fallback.json#/actions/1"
+        },
+        {
+          "id": "a2",
+          "actor": "Employee:emily.dawson",
+          "dispatched_ms": 5700,
+          "executed": true,
+          "outcome": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+          "raw": "override-fallback.json#/actions/2"
+        }
+      ],
+      "observations": [
+        {
+          "id": "o0",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a0"
+          ],
+          "saved_ms": 6200,
+          "result": "Valid Employee credentials opened the Employee dashboard.",
+          "raw": "override-fallback.json#/observations/0"
+        },
+        {
+          "id": "o1",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a1"
+          ],
+          "saved_ms": 6300,
+          "result": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+          "raw": "override-fallback.json#/observations/1"
+        },
+        {
+          "id": "o2",
+          "actor": "Employee:emily.dawson",
+          "action_ids": [
+            "a1",
+            "a2"
+          ],
+          "saved_ms": 6400,
+          "result": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+          "raw": "override-fallback.json#/observations/2"
+        }
+      ],
+      "grade": {
+        "reviewer": "controlled oracle reviewed independently before live execution",
+        "items": [
+          {
+            "item_id": "login",
+            "action_ids": [
+              "a0"
+            ],
+            "observation_ids": [
+              "o0"
+            ],
+            "rationale": "Valid Employee credentials opened the Employee dashboard."
+          },
+          {
+            "item_id": "leave-submit",
+            "action_ids": [
+              "a1"
+            ],
+            "observation_ids": [
+              "o1"
+            ],
+            "rationale": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending."
+          },
+          {
+            "item_id": "leave-readback",
+            "action_ids": [
+              "a1",
+              "a2"
+            ],
+            "observation_ids": [
+              "o1",
+              "o2"
+            ],
+            "rationale": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending."
+          }
+        ],
+        "behaviors": [
+          {
+            "id": "login",
+            "description": "Valid Employee credentials opened the Employee dashboard.",
+            "observation_ids": [
+              "o0"
+            ]
+          },
+          {
+            "id": "leave-submit",
+            "description": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+            "observation_ids": [
+              "o1"
+            ]
+          },
+          {
+            "id": "leave-readback",
+            "description": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+            "observation_ids": [
+              "o2"
+            ]
+          }
+        ],
+        "open_questions": [
+          "Does saving profile data persist after reload?"
+        ],
+        "unsupported_claims": []
+      }
+    },
+    {
+      "kind": "controlled",
+      "id": "absent-evidence",
+      "pair": 2,
+      "arm": "ordinary",
+      "actor": "Employee:emily.dawson",
+      "elapsed_ms": 2000,
+      "status": "completed",
+      "product_requests": 0,
+      "call_ledger_complete": true,
+      "non_token_cost_usd": 0,
+      "accounting_note": "All counters and elapsed times are authored fixtures. No calls or Product actions ran.",
+      "phases": [
+        {
+          "phase": "ordinary_planning",
+          "start_ms": 0,
+          "end_ms": 500,
+          "call_ids": [
+            "planning"
+          ]
+        },
+        {
+          "phase": "product_interaction",
+          "start_ms": 500,
+          "end_ms": 1600,
+          "call_ids": []
+        },
+        {
+          "phase": "recording",
+          "start_ms": 1600,
+          "end_ms": 2000,
+          "call_ids": []
+        }
+      ],
+      "calls": [
+        {
+          "id": "planning",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": null,
+          "actual_charge_usd": null,
+          "raw": "absent-evidence.json#/calls/0"
+        }
+      ],
+      "recommendations": [
+        {
+          "selected_id": "login",
+          "status": "proposal only"
+        }
+      ],
+      "overrides": [],
+      "actions": [],
+      "observations": [],
+      "grade": {
+        "reviewer": "controlled oracle reviewed independently before live execution",
+        "items": [
+          {
+            "item_id": "login",
+            "action_ids": [
+              "a0"
+            ],
+            "observation_ids": [
+              "o0"
+            ],
+            "rationale": "Valid Employee credentials opened the Employee dashboard."
+          },
+          {
+            "item_id": "leave-submit",
+            "action_ids": [
+              "a1"
+            ],
+            "observation_ids": [
+              "o1"
+            ],
+            "rationale": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending."
+          },
+          {
+            "item_id": "leave-readback",
+            "action_ids": [
+              "a1",
+              "a2"
+            ],
+            "observation_ids": [
+              "o1",
+              "o2"
+            ],
+            "rationale": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending."
+          }
+        ],
+        "behaviors": [],
+        "open_questions": [
+          "Does saving profile data persist after reload?"
+        ],
+        "unsupported_claims": []
+      }
+    }
+  ],
+  "overhead_note": "No model or Product calls were made by this rehearsal. Authoring and independent review usage is not exposed by the current host and is unknown; it is outside these candidate fixtures."
+}

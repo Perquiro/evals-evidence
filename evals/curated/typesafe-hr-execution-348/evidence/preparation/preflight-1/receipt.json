@@ -1,0 +1,33 @@
+{
+  "kind": "unscored_preflight",
+  "origin": "http://127.0.0.1:58960",
+  "productPid": 28180,
+  "provider": [],
+  "emptyStorage": {
+    "cookies": [],
+    "origins": []
+  },
+  "signedOut": {
+    "url": "http://127.0.0.1:58960/login",
+    "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: password123\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+    "admitted": 0,
+    "events": [
+      {
+        "kind": "action",
+        "id": "action-1",
+        "args": {
+          "op": "navigate",
+          "path": "/"
+        },
+        "dispatched_ms": null,
+        "executed": true,
+        "result": {
+          "url": "http://127.0.0.1:58960/",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: password123\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "completed_ms": null
+      }
+    ]
+  },
+  "browserVersion": "151.0.7922.34"
+}

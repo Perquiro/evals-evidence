@@ -1,0 +1,60 @@
+{
+  "objective": "Explore this HR product: learn distinct behavior and complete meaningful Journeys, favoring checks that answer concrete open questions.",
+  "scope": {
+    "actor": "employee-a",
+    "build": "b17",
+    "environment": "isolated synthetic sandbox"
+  },
+  "observations": [
+    "The Profile page was opened in this same actor/build session and its page title and default contents were recorded.",
+    "The Directory page was opened in this same actor/build session and its page title and default contents were recorded.",
+    "The Leave list page was opened in this same actor/build session and its page title and default contents were recorded.",
+    "The Calendar page was opened in this same actor/build session and its page title and default contents were recorded.",
+    "The Notifications page was opened in this same actor/build session and its page title and default contents were recorded.",
+    "The Dashboard page was opened in this same actor/build session and its page title and default contents were recorded.",
+    "The Settings page was opened in this same actor/build session and its page title and default contents were recorded.",
+    "The Help page was opened in this same actor/build session and its page title and default contents were recorded.",
+    "Approved sandbox leave request 77 has a visible Cancel action. Its status and current leave balance were recorded. Cancellation after approval has never been exercised. No unresolved attempts exist."
+  ],
+  "open_questions": [
+    "What happens to an approved request and the leave balance after cancellation?"
+  ],
+  "candidates": [
+    {
+      "id": "c1",
+      "check": "Reopen the Profile page and read its title and default contents again."
+    },
+    {
+      "id": "c2",
+      "check": "Reopen the Directory page and read its title and default contents again."
+    },
+    {
+      "id": "c3",
+      "check": "Reopen the Leave list page and read its title and default contents again."
+    },
+    {
+      "id": "c4",
+      "check": "Reopen the Calendar page and read its title and default contents again."
+    },
+    {
+      "id": "c5",
+      "check": "Reopen the Notifications page and read its title and default contents again."
+    },
+    {
+      "id": "c6",
+      "check": "Reopen the Dashboard page and read its title and default contents again."
+    },
+    {
+      "id": "c7",
+      "check": "Reopen the Settings page and read its title and default contents again."
+    },
+    {
+      "id": "c8",
+      "check": "Reopen the Help page and read its title and default contents again."
+    },
+    {
+      "id": "c9",
+      "check": "For approved sandbox request 77, exercise the authorized Cancel action once, then reload its detail and leave balance to establish the resulting behavior."
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"id":"103","title":"Night Trains","available":false,"actions":[{"label":"Reserve book","method":"POST","href":"/holds","json":{"bookId":"103"},"actor":"Reader"}]}

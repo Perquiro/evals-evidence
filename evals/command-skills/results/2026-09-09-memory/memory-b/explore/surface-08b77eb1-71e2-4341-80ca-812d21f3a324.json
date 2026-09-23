@@ -1,0 +1,240 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+      "name": "GET /books/:id",
+      "locator": "GET /books/:id",
+      "createdAt": "2026-09-09T07:29:50.040Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "73c9368b-5435-4611-a701-a5410f514ae4",
+          "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+          "name": "Book details",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:30:23.155Z"
+        },
+        {
+          "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a",
+          "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+          "name": "Reserve book",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:30:23.155Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "c92514d1-a366-4532-9d0e-e53800a42d33",
+            "seq": 5,
+            "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "GET /books/101 returned River Atlas as available and offered the Reader-only action POST /holds with JSON bookId 101, labelled Reserve book.",
+            "createdAt": "2026-09-09T07:30:23.156Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "73c9368b-5435-4611-a701-a5410f514ae4"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "021d15b0-5825-4e22-8111-d77f260220e1",
+            "seq": 6,
+            "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "journeyId": "9a5db128-aff0-4d66-ae80-1882dce02823",
+            "body": "River Atlas was available, and GET /books/101 offered POST /holds with bookId 101 for Reader; no reservation request has been sent yet.",
+            "createdAt": "2026-09-09T07:30:50.485Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a"
+              },
+              "kind": "attempting",
+              "resourceRef": "book:101"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "2e14c153-99a5-427b-b88b-9f048942e9e4",
+            "seq": 8,
+            "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "journeyId": "9a5db128-aff0-4d66-ae80-1882dce02823",
+            "body": "POST /holds with bookId 101 returned 201 Created with reservation id 301 for River Atlas and a /holds link.",
+            "createdAt": "2026-09-09T07:32:08.379Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "action",
+            "capture": "pending",
+            "look": {
+              "item": {
+                "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "021d15b0-5825-4e22-8111-d77f260220e1"
+            }
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "0b3df177-a470-475d-8cc1-2ab845dd472e",
+            "seq": 51,
+            "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "GET /books/103 returned 200 OK for Night Trains with available false. Its only action is Reserve book at POST /holds with {\"bookId\":\"103\"}, labelled for Reader.",
+            "createdAt": "2026-09-09T08:00:44.565Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "73c9368b-5435-4611-a701-a5410f514ae4"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a",
+            "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+            "name": "Reserve book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:30:23.155Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "0b3df177-a470-475d-8cc1-2ab845dd472e"
+          ]
+        },
+        {
+          "item": {
+            "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a",
+            "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+            "name": "Reserve book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:30:23.155Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "2e14c153-99a5-427b-b88b-9f048942e9e4"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "c92514d1-a366-4532-9d0e-e53800a42d33",
+          "evidenceId": "fd0bbe00-a51e-49ae-83ca-90f091dd68b3"
+        },
+        {
+          "observationId": "2e14c153-99a5-427b-b88b-9f048942e9e4",
+          "evidenceId": "e23a9146-603f-4fcc-a538-03b3cee828f8"
+        },
+        {
+          "observationId": "0b3df177-a470-475d-8cc1-2ab845dd472e",
+          "evidenceId": "c938ab6c-91d3-4639-bb24-79d2e992a0ea"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 2,
+      "pending": 1,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 1
+    }
+  }
+]

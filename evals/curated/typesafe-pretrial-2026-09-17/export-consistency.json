@@ -1,0 +1,50 @@
+[
+  {
+    "case": "01_finish_journey",
+    "request_matches": true,
+    "questions_match": true,
+    "host_decision_matches": true
+  },
+  {
+    "case": "02_permissions_objective",
+    "request_matches": true,
+    "questions_match": true,
+    "host_decision_matches": true
+  },
+  {
+    "case": "03_search_objective",
+    "request_matches": true,
+    "questions_match": true,
+    "host_decision_matches": true
+  },
+  {
+    "case": "04_required_recovery",
+    "request_matches": true,
+    "questions_match": true,
+    "host_decision_matches": true
+  },
+  {
+    "case": "05_explicit_human_priority",
+    "request_matches": true,
+    "questions_match": true,
+    "host_decision_matches": true
+  },
+  {
+    "case": "06_existing_eight_only",
+    "request_matches": true,
+    "questions_match": true,
+    "host_decision_matches": true
+  },
+  {
+    "case": "07_explore_adds_candidate",
+    "request_matches": true,
+    "questions_match": true,
+    "host_decision_matches": true
+  },
+  {
+    "case": "08_actor_and_version_change",
+    "request_matches": true,
+    "questions_match": true,
+    "host_decision_matches": true
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {"workspace":1,"selected_id":"c1","reason":"It directly resolves the open question about whether cancellation persisted and where the request now appears."},
+  {"workspace":2,"selected_id":"c1","reason":"It directly tests whether the restriction on other employees' private details is enforced."},
+  {"workspace":3,"selected_id":"c2","reason":"It directly addresses the workspace objective and the open question about lowercase prefix matching."},
+  {"workspace":4,"selected_id":"c1","reason":"Required recovery takes priority: inspect the unresolved archive attempt before any further exploration."},
+  {"workspace":5,"selected_id":"c2","reason":"The user explicitly prioritized the public-holiday calendar, and it answers an open question."},
+  {"workspace":6,"selected_id":null,"reason":"Every available check only repeats already recorded page contents and does not answer the open question.","proposed_next_step":"Add an eligible check to cancel approved request 77 once, then reload its detail and leave balance."},
+  {"workspace":7,"selected_id":"c9","reason":"It is the only available check that answers the open question about cancelling an approved request and its balance effect."},
+  {"workspace":8,"selected_id":"c1","reason":"It directly begins the manager approval Journey by inspecting pending requests and available approval controls."}
+]

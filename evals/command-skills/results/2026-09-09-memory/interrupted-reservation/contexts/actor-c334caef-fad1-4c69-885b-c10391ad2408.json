@@ -1,0 +1,34 @@
+[
+  {
+    "revision": "000fd4eb-d53b-45cf-b489-78c97e4044ea",
+    "anchor": {
+      "kind": "actor",
+      "record": {
+        "id": "c334caef-fad1-4c69-885b-c10391ad2408",
+        "name": "Librarian",
+        "secretNames": [],
+        "createdAt": "2026-09-09T06:07:50.463Z"
+      }
+    },
+    "selection": {
+      "productVersions": {
+        "scope": "all"
+      },
+      "observations": {
+        "detail": "records",
+        "actorIds": [
+          "c334caef-fad1-4c69-885b-c10391ad2408"
+        ],
+        "scope": "both"
+      }
+    },
+    "storedRelationships": {
+      "items": [],
+      "complete": true
+    },
+    "projections": {
+      "items": [],
+      "complete": true
+    }
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+      "name": "memory-a",
+      "passed": true,
+      "observationsConfirmedInFinalPublicReads": 38,
+      "skillHash": "258045feca15f1bd068b5864d7357c1105a3f5fcd6f7ecb32578c1821594548b",
+      "fixtureFiles": 4,
+      "frozenOutcomes": 25
+    },
+    {
+      "name": "memory-b",
+      "passed": true,
+      "observationsConfirmedInFinalPublicReads": 61,
+      "skillHash": "42c1083d9919893164372944965e228bbbd0e63a6b9ff93ab2e5aaa5cbdbdfa0",
+      "fixtureFiles": 4,
+      "frozenOutcomes": 25
+    },
+    {
+      "name": "memory-c",
+      "passed": true,
+      "observationsConfirmedInFinalPublicReads": 60,
+      "skillHash": "42c1083d9919893164372944965e228bbbd0e63a6b9ff93ab2e5aaa5cbdbdfa0",
+      "fixtureFiles": 4,
+      "frozenOutcomes": 25
+    },
+    {
+      "name": "v8-a",
+      "passed": true,
+      "observationsConfirmedInFinalPublicReads": 30,
+      "skillHash": "4df221ad7fd338a88e78cab5c0fd498d314a9bed545a178be1b99fbbe9d7d956",
+      "fixtureFiles": 4,
+      "frozenOutcomes": 25
+    },
+    {
+      "name": "v8-b",
+      "passed": true,
+      "observationsConfirmedInFinalPublicReads": 53,
+      "skillHash": "4df221ad7fd338a88e78cab5c0fd498d314a9bed545a178be1b99fbbe9d7d956",
+      "fixtureFiles": 4,
+      "frozenOutcomes": 25
+    }
+  ],
+  "limits": "Checks bytes, immutable record fields and complete inventory shape. Semantic grading and causal interpretation remain human judgments in grading-notes.json and quality-notes.json."
+}

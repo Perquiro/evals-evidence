@@ -1,0 +1,14 @@
+{
+  "product": "willow-library",
+  "workspace": "C:\\Users\\mathi\\AppData\\Local\\Temp\\willow-library-cCPfEF",
+  "baseUrl": "http://127.0.0.1:63615",
+  "pid": 46064,
+  "startedAt": "2026-09-09T06:19:45.33Z",
+  "skillSha256": "42c1083d9919893164372944965e228bbbd0e63a6b9ff93ab2e5aaa5cbdbdfa0",
+  "gitHead": "85a52be427826c5632daaf63a1024c12e8d547f4",
+  "node": "v24.18.1",
+  "transport": "Real Perquiro MCP client/server over an HTTP-to-MCP bridge; synthetic local HTTP Product",
+  "setup": "Prepared through runSetup with scripted human answers; global CLI check skipped in fixture only",
+  "isolation": "Fresh temporary Git Project; same shared host/filesystem; candidate instructed to stay in assigned Project. Not an OS access boundary.",
+  "preDispatchSkillRefresh": "Installed skill updated to 73a93bf before any Agent dispatch. Original preparation bytes retained. Runtime backend remains preparation HEAD 85a52be (no Tests in this Product)."
+}

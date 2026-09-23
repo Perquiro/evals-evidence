@@ -1,0 +1,14 @@
+{
+  "requestToken": "b8fdb2fa-c1b0-4991-88bf-4ece46acdddf",
+  "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following Service desk reached GET /desk and returned the Librarian check-in action plus one pending return: Night Trains (book 103).",
+      "look": { "item": { "id": "5759e07a-93d5-4026-aec0-568240c75a7d" }, "kind": "reached", "reachedSurfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0" }
+    }
+  ]
+}

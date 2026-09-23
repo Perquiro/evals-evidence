@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://127.0.0.1:54824/loans/201/renew",
+    "actor": "Reader",
+    "body": {}
+  },
+  "status": 200,
+  "body": {
+    "id": "201",
+    "renewals": 1,
+    "due": "2026-10-15"
+  }
+}

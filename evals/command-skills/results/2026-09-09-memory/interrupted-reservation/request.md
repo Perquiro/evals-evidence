@@ -1,0 +1,1 @@
+Explore Willow Library and record useful Knowledge about what people can do and what happens. Use the available sessions. Keep this first pass to at most 40 Product requests, then tell me what you covered and what remains.

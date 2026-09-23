@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:54824/books/103",
+    "actor": "Librarian"
+  },
+  "status": 200,
+  "body": {
+    "id": "103",
+    "title": "Night Trains",
+    "available": true,
+    "actions": [
+      {
+        "label": "Reserve book",
+        "method": "POST",
+        "href": "/holds",
+        "json": {
+          "bookId": "103"
+        },
+        "actor": "Reader"
+      }
+    ]
+  }
+}

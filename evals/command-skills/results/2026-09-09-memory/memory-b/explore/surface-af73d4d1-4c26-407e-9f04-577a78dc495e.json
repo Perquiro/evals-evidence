@@ -1,0 +1,101 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "af73d4d1-4c26-407e-9f04-577a78dc495e",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "af73d4d1-4c26-407e-9f04-577a78dc495e",
+      "name": "POST /desk/returns",
+      "locator": "POST /desk/returns",
+      "createdAt": "2026-09-09T07:54:32.088Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "f54818eb-e75c-4f31-8b83-485ccf40b99c",
+          "surfaceId": "af73d4d1-4c26-407e-9f04-577a78dc495e",
+          "name": "Book not found error",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:54:55.038Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "e9ba40dd-336d-464e-892a-2676848623b4",
+            "seq": 44,
+            "surfaceId": "af73d4d1-4c26-407e-9f04-577a78dc495e",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "POST /desk/returns returned 404 Not Found with the error message 'Book not found' for the offered bookId 103 request.",
+            "createdAt": "2026-09-09T07:54:55.039Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "f54818eb-e75c-4f31-8b83-485ccf40b99c"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "e9ba40dd-336d-464e-892a-2676848623b4",
+          "evidenceId": "038098e0-ce94-478c-8bda-56783f8e4408"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

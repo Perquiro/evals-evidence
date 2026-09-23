@@ -1,0 +1,71 @@
+{
+  "reviewer": "/root",
+  "checklist_decisions": 136,
+  "initial_decision_agreement": 136,
+  "decision_changes": [],
+  "grader_a_transcription_correction": {
+    "original": "grades/grader-a-original.json",
+    "corrected": "grades/grader-a.json",
+    "from": "f096a438-f21-4ebe-8ee9-a1ba82dd1af6",
+    "to": "f096a438-f21c-4ebe-8ee9-a1ba82dd1af6",
+    "occurrences": 2,
+    "semantic_changes": false
+  },
+  "unsupported_claims": [
+    {
+      "sample": "sample-01",
+      "grader_a": [],
+      "grader_b": [
+        "Observation 6a5057a5-d439-4f86-b89e-45dbaa17e56a says the form was ready with 5–6 October dates, but the two date-fill actions were not executed and the later saved result shows both dates empty."
+      ],
+      "adjudicated": [],
+      "reason": "The original write marks this as kind action/look attempting and returns its ID in authorizedAttemptIds before the date-entry attempts. It states the intended upcoming request, not an executed successful submission. Later saved Observation2ebf00eb explicitly records empty-date validation and no creation. The marker earns no action credit.",
+      "raw": [
+        "raw/pair-3-advised/receipt.json#/events/37/args/reports/0"
+      ]
+    },
+    {
+      "sample": "sample-06",
+      "grader_a": [],
+      "grader_b": [
+        "Observation cff47209-547f-4227-85d8-26422f78dea0 says a future-dated request was ready, but the date-fill actions were not executed and observation d8603c83-e0e5-4f81-b06c-7c752ca9303f records both fields as empty."
+      ],
+      "adjudicated": [],
+      "reason": "The original is a write-ahead action/look attempting marker, not completion evidence. Its misleading date-readiness wording is also explicitly corrected by Observation d8603c83 through corrects.observationId and a reason saying those dates were not present. No unsupported successful submission is carried into the final evidence-backed summary; the marker earns no action credit. The initial grader packets retained both bodies but omitted correction/attempt-role metadata, which is a limitation of blinding.",
+      "raw": [
+        "raw/pair-1-ordinary/receipt.json#/events/30/args/reports/0",
+        "raw/pair-1-ordinary/receipt.json#/events/37/args/reports/0"
+      ]
+    }
+  ],
+  "behavior_reconciliation": {
+    "rule": "Use deduplicated executed action/outcome units consistently: authentication, actual validation, draft save, submission result, settled search, and an opened date picker. Visible-control inventory remains in the saved Observations and is not counted as tested operation. Counts are secondary descriptive summaries, not extra checklist credit.",
+    "changes": [
+      "Retain authentication for every sample, which grader B omitted.",
+      "Retain each captured empty-date validation and immediate draft save once, including omissions from initial selective summaries.",
+      "Separate sample-06 actual opened-calendar behavior from its failed direct-fill attempts; do not attribute valid credit to unexecuted action-8/action-9.",
+      "Retain both initial summaries unchanged; resulting counts do not alter any checklist or workflow result."
+    ],
+    "counts": {
+      "sample-01": 3,
+      "sample-02": 2,
+      "sample-03": 2,
+      "sample-04": 4,
+      "sample-05": 2,
+      "sample-06": 4,
+      "sample-07": 3,
+      "sample-08": 4
+    }
+  },
+  "readback_resolution": {
+    "samples": [
+      "sample-03"
+    ],
+    "items": [
+      "leave-submit",
+      "leave-readback"
+    ],
+    "basis": "snapshot-52 shows Vacation Sep29–30 and the evaluation reason. action-20 sends the sole successful POST /api/leave (request-7,201,id3). Navigation changes /leave/new to /leave, triggers a separate GET /api/leave (request-9), and action-21/snapshot-58 capture the settled history. Saved Observations 377a74a8-4a00-4109-9860-3621106c97e3 and 61122907-bbf1-457a-a89e-1fad57c85017 link submitted values to the new pending two-day row. This is actual post-navigation readback, not inference from the POST response. The displayed end-date discrepancy is actual Product behavior and does not remove exercise credit."
+  },
+  "sensitivity": "Retaining grader B's two historical-marker claims instead would add an unsupported claim to sample-01 and sample-06. That could additionally fail the pair-three claim constraint; it cannot establish the joint favorable result or repair the pair-two quality failure."
+}

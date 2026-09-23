@@ -1,0 +1,178 @@
+[
+  {
+    "revision": "1c0d0062-cea0-46c8-84d2-78d0bcbac04e",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+      "actorIds": [
+        "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+        "d6731181-6bdb-413a-8654-f770b2cbe3fc"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "9b5164db-d6ef-4629-a109-0115e0843a02",
+      "name": "GET /docs",
+      "locator": "GET /docs",
+      "createdAt": "2026-09-09T07:40:32.925Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "5b3a4adc-81b6-44a9-b4d1-a03b7e176eba",
+          "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+          "name": "Session authentication",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:41:14.623Z"
+        },
+        {
+          "id": "ff701889-f887-4108-9a72-8508a76e640f",
+          "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+          "name": "Response navigation",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:41:14.623Z"
+        },
+        {
+          "id": "7c466663-0865-4949-8cee-1a99eef73d1f",
+          "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+          "name": "Demo sessions",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:58:13.056Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "18db152c-0c9a-4562-84fc-4a99836e4239",
+            "seq": 2,
+            "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+            "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+            "body": "GET /docs states that Reader and Librarian are selected with the X-Actor header without credentials, and that clients should follow response links and actions; an empty JSON object is valid when an action lists no fields.",
+            "createdAt": "2026-09-09T07:41:14.624Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "5b3a4adc-81b6-44a9-b4d1-a03b7e176eba"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "ff701889-f887-4108-9a72-8508a76e640f"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "531e397d-d8ca-478b-8327-74d8331ece2d",
+            "seq": 48,
+            "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+            "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+            "body": "GET /docs stated that X-Actor selects the Reader or Librarian local demo session with no credentials, and that responses expose links and actions with HTTP methods and JSON fields; an empty object is valid when no fields are listed.",
+            "createdAt": "2026-09-09T07:58:13.056Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "7c466663-0865-4949-8cee-1a99eef73d1f"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "ff701889-f887-4108-9a72-8508a76e640f"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "78373b40-cbbc-40de-abf9-f176d1e649ba",
+            "seq": 60,
+            "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+            "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+            "body": "GET /docs stated that X-Actor selects the Reader or Librarian local demo session with no credentials, and that responses expose links and actions with HTTP methods and JSON fields; an empty object is valid when no fields are listed.",
+            "createdAt": "2026-09-09T08:07:22.141Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "7c466663-0865-4949-8cee-1a99eef73d1f"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "ff701889-f887-4108-9a72-8508a76e640f"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

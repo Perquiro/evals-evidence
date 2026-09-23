@@ -1,0 +1,1448 @@
+{
+  "generatedAt": "2026-09-10T17:35:25.969Z",
+  "complete": false,
+  "state": "paused",
+  "rows": [
+    {
+      "id": "C1",
+      "arm": "C",
+      "block": 1,
+      "status": "complete",
+      "explore": {
+        "elapsedMinutes": 16.973533333333332,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-6-astra/high": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 1621042,
+                "cached_input_tokens": 1562368,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 9189,
+                "reasoning_output_tokens": 698,
+                "total_tokens": 1630231
+              }
+            },
+            "gpt-5.6-terra/low": {
+              "agents": 2,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 3105315,
+                "cached_input_tokens": 3002368,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 13584,
+                "reasoning_output_tokens": 1872,
+                "total_tokens": 3118899
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": {
+        "elapsedMinutes": 2.486866666666667,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 428507,
+                "cached_input_tokens": 393472,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 3251,
+                "reasoning_output_tokens": 788,
+                "total_tokens": 431758
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "metrics": {
+        "productRequests": 3,
+        "browserActions": 8,
+        "browserErrors": 1,
+        "mcpCalls": 60,
+        "mcpErrors": 1,
+        "mcpByRole": {
+          "manager": 25,
+          "solo": 0,
+          "explore": 35
+        },
+        "observations": 13,
+        "journeys": 1,
+        "executions": 2,
+        "forcedReleases": 0
+      },
+      "scoring": {
+        "id": "C1",
+        "arm": "C",
+        "block": 1,
+        "checkpoints": {
+          "10": {
+            "seen": 2,
+            "saved": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 2,
+            "saved": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 2,
+            "saved": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 2,
+          "saved": 1,
+          "directlyJourneyLinked": 0,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 0,
+          "distinctGroundedBehaviorCount": 0
+        },
+        "reviewPacket": "P66c6cdb9c1"
+      }
+    },
+    {
+      "id": "D1",
+      "arm": "D",
+      "block": 1,
+      "status": "complete",
+      "explore": {
+        "elapsedMinutes": 42.698166666666665,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-6-astra/high": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 17456940,
+                "cached_input_tokens": 17231360,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 28833,
+                "reasoning_output_tokens": 3053,
+                "total_tokens": 17485773
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": {
+        "elapsedMinutes": 4.110716666666667,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 982680,
+                "cached_input_tokens": 884992,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 8030,
+                "reasoning_output_tokens": 1843,
+                "total_tokens": 990710
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "metrics": {
+        "productRequests": 30,
+        "browserActions": 47,
+        "browserErrors": 0,
+        "mcpCalls": 190,
+        "mcpErrors": 0,
+        "mcpByRole": {
+          "manager": 0,
+          "solo": 25,
+          "explore": 165
+        },
+        "observations": 116,
+        "journeys": 4,
+        "executions": 4,
+        "forcedReleases": 0
+      },
+      "scoring": {
+        "id": "D1",
+        "arm": "D",
+        "block": 1,
+        "checkpoints": {
+          "10": {
+            "seen": 4,
+            "saved": 4,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 8,
+            "saved": 7,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 14,
+            "saved": 11,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 14,
+          "saved": 12,
+          "directlyJourneyLinked": 5,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 5,
+          "distinctGroundedBehaviorCount": 5
+        },
+        "reviewPacket": "P8f4403b571"
+      }
+    },
+    {
+      "id": "A1",
+      "arm": "A",
+      "block": 1,
+      "status": "complete",
+      "explore": {
+        "elapsedMinutes": 11.706633333333333,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 4804374,
+                "cached_input_tokens": 4655104,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 18718,
+                "reasoning_output_tokens": 2698,
+                "total_tokens": 4823092
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": {
+        "elapsedMinutes": 3.4457833333333334,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 1098309,
+                "cached_input_tokens": 1037568,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 5566,
+                "reasoning_output_tokens": 1474,
+                "total_tokens": 1103875
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "metrics": {
+        "productRequests": 5,
+        "browserActions": 10,
+        "browserErrors": 0,
+        "mcpCalls": 165,
+        "mcpErrors": 1,
+        "mcpByRole": {
+          "manager": 0,
+          "solo": 28,
+          "explore": 137
+        },
+        "observations": 19,
+        "journeys": 3,
+        "executions": 3,
+        "forcedReleases": 0
+      },
+      "scoring": {
+        "id": "A1",
+        "arm": "A",
+        "block": 1,
+        "checkpoints": {
+          "10": {
+            "seen": 5,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 5,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 5,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 5,
+          "saved": 3,
+          "directlyJourneyLinked": 1,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 4,
+          "distinctGroundedBehaviorCount": 4
+        },
+        "reviewPacket": "P2932c4cee0"
+      }
+    },
+    {
+      "id": "B1",
+      "arm": "B",
+      "block": 1,
+      "status": "complete",
+      "explore": {
+        "elapsedMinutes": 11.177183333333334,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 4516467,
+                "cached_input_tokens": 4380672,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 16038,
+                "reasoning_output_tokens": 1463,
+                "total_tokens": 4532505
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": {
+        "elapsedMinutes": 2.3369833333333334,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 434168,
+                "cached_input_tokens": 381184,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 3339,
+                "reasoning_output_tokens": 820,
+                "total_tokens": 437507
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "metrics": {
+        "productRequests": 6,
+        "browserActions": 6,
+        "browserErrors": 0,
+        "mcpCalls": 75,
+        "mcpErrors": 1,
+        "mcpByRole": {
+          "manager": 0,
+          "solo": 12,
+          "explore": 63
+        },
+        "observations": 18,
+        "journeys": 1,
+        "executions": 3,
+        "forcedReleases": 0
+      },
+      "scoring": {
+        "id": "B1",
+        "arm": "B",
+        "block": 1,
+        "checkpoints": {
+          "10": {
+            "seen": 3,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 3,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 3,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 3,
+          "saved": 2,
+          "directlyJourneyLinked": 1,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 1,
+          "distinctGroundedBehaviorCount": 1
+        },
+        "reviewPacket": "P3adcd9fb99"
+      }
+    },
+    {
+      "id": "B2",
+      "arm": "B",
+      "block": 2,
+      "status": "complete",
+      "explore": {
+        "elapsedMinutes": 16.959783333333334,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 6160650,
+                "cached_input_tokens": 6004480,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 25355,
+                "reasoning_output_tokens": 2806,
+                "total_tokens": 6186005
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": {
+        "elapsedMinutes": 3.751733333333333,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 809101,
+                "cached_input_tokens": 733952,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 4524,
+                "reasoning_output_tokens": 948,
+                "total_tokens": 813625
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "metrics": {
+        "productRequests": 4,
+        "browserActions": 5,
+        "browserErrors": 0,
+        "mcpCalls": 71,
+        "mcpErrors": 1,
+        "mcpByRole": {
+          "manager": 0,
+          "solo": 40,
+          "explore": 31
+        },
+        "observations": 17,
+        "journeys": 3,
+        "executions": 3,
+        "forcedReleases": 0
+      },
+      "scoring": {
+        "id": "B2",
+        "arm": "B",
+        "block": 2,
+        "checkpoints": {
+          "10": {
+            "seen": 2,
+            "saved": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 4,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 4,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 4,
+          "saved": 3,
+          "directlyJourneyLinked": 1,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 1,
+          "distinctGroundedBehaviorCount": 1
+        },
+        "reviewPacket": "Pc244d33f37"
+      }
+    },
+    {
+      "id": "C2",
+      "arm": "C",
+      "block": 2,
+      "status": "complete",
+      "explore": {
+        "elapsedMinutes": 42.397416666666665,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-6-astra/high": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 6424427,
+                "cached_input_tokens": 6194944,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 20275,
+                "reasoning_output_tokens": 1817,
+                "total_tokens": 6444702
+              }
+            },
+            "gpt-5.6-terra/low": {
+              "agents": 5,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 8809842,
+                "cached_input_tokens": 8477184,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 49035,
+                "reasoning_output_tokens": 8543,
+                "total_tokens": 8858877
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": {
+        "elapsedMinutes": 2.811533333333333,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 451507,
+                "cached_input_tokens": 407296,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 5305,
+                "reasoning_output_tokens": 1065,
+                "total_tokens": 456812
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "metrics": {
+        "productRequests": 15,
+        "browserActions": 19,
+        "browserErrors": 0,
+        "mcpCalls": 281,
+        "mcpErrors": 3,
+        "mcpByRole": {
+          "manager": 51,
+          "solo": 0,
+          "explore": 230
+        },
+        "observations": 48,
+        "journeys": 3,
+        "executions": 5,
+        "forcedReleases": 0
+      },
+      "scoring": {
+        "id": "C2",
+        "arm": "C",
+        "block": 2,
+        "checkpoints": {
+          "10": {
+            "seen": 2,
+            "saved": 0,
+            "unsupportedClaims": 0,
+            "unsupportedRate": null
+          },
+          "20": {
+            "seen": 5,
+            "saved": 5,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 8,
+            "saved": 7,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 8,
+          "saved": 7,
+          "directlyJourneyLinked": 5,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 3,
+          "distinctGroundedBehaviorCount": 3
+        },
+        "reviewPacket": "Paedc4d4230"
+      }
+    },
+    {
+      "id": "A2",
+      "arm": "A",
+      "block": 2,
+      "status": "complete",
+      "explore": {
+        "elapsedMinutes": 9.7325,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 3111282,
+                "cached_input_tokens": 3004672,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 14035,
+                "reasoning_output_tokens": 1601,
+                "total_tokens": 3125317
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": {
+        "elapsedMinutes": 2.320116666666667,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 486639,
+                "cached_input_tokens": 442112,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 2997,
+                "reasoning_output_tokens": 792,
+                "total_tokens": 489636
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "metrics": {
+        "productRequests": 7,
+        "browserActions": 5,
+        "browserErrors": 0,
+        "mcpCalls": 49,
+        "mcpErrors": 1,
+        "mcpByRole": {
+          "manager": 0,
+          "solo": 11,
+          "explore": 38
+        },
+        "observations": 15,
+        "journeys": 2,
+        "executions": 2,
+        "forcedReleases": 0
+      },
+      "scoring": {
+        "id": "A2",
+        "arm": "A",
+        "block": 2,
+        "checkpoints": {
+          "10": {
+            "seen": 2,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 2,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 2,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 2,
+          "saved": 2,
+          "directlyJourneyLinked": 0,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 0,
+          "distinctGroundedBehaviorCount": 0
+        },
+        "reviewPacket": "P7c26ba677c"
+      }
+    },
+    {
+      "id": "D2",
+      "arm": "D",
+      "block": 2,
+      "status": "complete",
+      "explore": {
+        "elapsedMinutes": 43.93333333333333,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-6-astra/high": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 14035122,
+                "cached_input_tokens": 13729280,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 45233,
+                "reasoning_output_tokens": 4934,
+                "total_tokens": 14080355
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": {
+        "elapsedMinutes": 4.309916666666667,
+        "stopReason": "candidate_finished",
+        "exitCode": 0,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-5.6-terra/low": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 1503300,
+                "cached_input_tokens": 1405696,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 7758,
+                "reasoning_output_tokens": 1374,
+                "total_tokens": 1511058
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "metrics": {
+        "productRequests": 39,
+        "browserActions": 71,
+        "browserErrors": 1,
+        "mcpCalls": 285,
+        "mcpErrors": 2,
+        "mcpByRole": {
+          "manager": 0,
+          "solo": 52,
+          "explore": 233
+        },
+        "observations": 171,
+        "journeys": 5,
+        "executions": 5,
+        "forcedReleases": 0
+      },
+      "scoring": {
+        "id": "D2",
+        "arm": "D",
+        "block": 2,
+        "checkpoints": {
+          "10": {
+            "seen": 4,
+            "saved": 4,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 8,
+            "saved": 6,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 16,
+            "saved": 12,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 16,
+          "saved": 13,
+          "directlyJourneyLinked": 5,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 2,
+          "distinctGroundedBehaviorCount": 1
+        },
+        "reviewPacket": "Pf928489f31"
+      }
+    },
+    {
+      "id": "C3",
+      "arm": "C",
+      "block": 3,
+      "status": "interrupted",
+      "explore": {
+        "elapsedMinutes": 16.039183333333334,
+        "stopReason": "user_pause",
+        "exitCode": 1,
+        "hostModelVerified": true,
+        "ownershipViolation": false,
+        "unfinishedChildren": [
+          "01a08c5d-2047-7920-87d6-5a1ba91be37e"
+        ],
+        "usage": {
+          "byModelAndEffort": {
+            "gpt-6-astra/high": {
+              "agents": 1,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 1516849,
+                "cached_input_tokens": 1414400,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 5527,
+                "reasoning_output_tokens": 307,
+                "total_tokens": 1522376
+              }
+            },
+            "gpt-5.6-terra/low": {
+              "agents": 2,
+              "missingCounters": 0,
+              "counters": {
+                "input_tokens": 2983497,
+                "cached_input_tokens": 2855936,
+                "cache_write_input_tokens": 0,
+                "output_tokens": 20371,
+                "reasoning_output_tokens": 3344,
+                "total_tokens": 3003868
+              }
+            }
+          },
+          "billingCost": "unknown",
+          "note": "Provider session counters, not a billing estimate. Reasoning and cached tokens may be subsets; do not sum counter fields."
+        }
+      },
+      "create": null,
+      "metrics": {
+        "productRequests": 7,
+        "browserActions": 11,
+        "browserErrors": 0,
+        "mcpCalls": 74,
+        "mcpErrors": 2,
+        "mcpByRole": {
+          "manager": 20,
+          "solo": 0,
+          "explore": 54
+        },
+        "observations": 25,
+        "journeys": 2,
+        "executions": 2,
+        "forcedReleases": 1
+      },
+      "scoring": null
+    },
+    {
+      "id": "A3",
+      "arm": "A",
+      "block": 3,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "B3",
+      "arm": "B",
+      "block": 3,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "D3",
+      "arm": "D",
+      "block": 3,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "D4",
+      "arm": "D",
+      "block": 4,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "C4",
+      "arm": "C",
+      "block": 4,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "A4",
+      "arm": "A",
+      "block": 4,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "B4",
+      "arm": "B",
+      "block": 4,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "B5",
+      "arm": "B",
+      "block": 5,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "C5",
+      "arm": "C",
+      "block": 5,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "D5",
+      "arm": "D",
+      "block": 5,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    },
+    {
+      "id": "A5",
+      "arm": "A",
+      "block": 5,
+      "status": "pending",
+      "explore": null,
+      "create": null,
+      "metrics": null,
+      "scoring": null
+    }
+  ],
+  "scoring": {
+    "complete": false,
+    "expectedRuns": 20,
+    "gradedRuns": 8,
+    "missing": [
+      {
+        "id": "C3",
+        "reason": "adjudicated grade missing"
+      },
+      {
+        "id": "A3",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "B3",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "D3",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "D4",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "C4",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "A4",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "B4",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "B5",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "C5",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "D5",
+        "reason": "review packet missing"
+      },
+      {
+        "id": "A5",
+        "reason": "review packet missing"
+      }
+    ],
+    "runs": [
+      {
+        "id": "C1",
+        "arm": "C",
+        "block": 1,
+        "checkpoints": {
+          "10": {
+            "seen": 2,
+            "saved": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 2,
+            "saved": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 2,
+            "saved": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 2,
+          "saved": 1,
+          "directlyJourneyLinked": 0,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 0,
+          "distinctGroundedBehaviorCount": 0
+        },
+        "reviewPacket": "P66c6cdb9c1"
+      },
+      {
+        "id": "D1",
+        "arm": "D",
+        "block": 1,
+        "checkpoints": {
+          "10": {
+            "seen": 4,
+            "saved": 4,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 8,
+            "saved": 7,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 14,
+            "saved": 11,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 14,
+          "saved": 12,
+          "directlyJourneyLinked": 5,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 5,
+          "distinctGroundedBehaviorCount": 5
+        },
+        "reviewPacket": "P8f4403b571"
+      },
+      {
+        "id": "A1",
+        "arm": "A",
+        "block": 1,
+        "checkpoints": {
+          "10": {
+            "seen": 5,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 5,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 5,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 5,
+          "saved": 3,
+          "directlyJourneyLinked": 1,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 4,
+          "distinctGroundedBehaviorCount": 4
+        },
+        "reviewPacket": "P2932c4cee0"
+      },
+      {
+        "id": "B1",
+        "arm": "B",
+        "block": 1,
+        "checkpoints": {
+          "10": {
+            "seen": 3,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 3,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 3,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 3,
+          "saved": 2,
+          "directlyJourneyLinked": 1,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 1,
+          "distinctGroundedBehaviorCount": 1
+        },
+        "reviewPacket": "P3adcd9fb99"
+      },
+      {
+        "id": "B2",
+        "arm": "B",
+        "block": 2,
+        "checkpoints": {
+          "10": {
+            "seen": 2,
+            "saved": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 4,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 4,
+            "saved": 3,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 4,
+          "saved": 3,
+          "directlyJourneyLinked": 1,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 1,
+          "distinctGroundedBehaviorCount": 1
+        },
+        "reviewPacket": "Pc244d33f37"
+      },
+      {
+        "id": "C2",
+        "arm": "C",
+        "block": 2,
+        "checkpoints": {
+          "10": {
+            "seen": 2,
+            "saved": 0,
+            "unsupportedClaims": 0,
+            "unsupportedRate": null
+          },
+          "20": {
+            "seen": 5,
+            "saved": 5,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 8,
+            "saved": 7,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 8,
+          "saved": 7,
+          "directlyJourneyLinked": 5,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 3,
+          "distinctGroundedBehaviorCount": 3
+        },
+        "reviewPacket": "Paedc4d4230"
+      },
+      {
+        "id": "A2",
+        "arm": "A",
+        "block": 2,
+        "checkpoints": {
+          "10": {
+            "seen": 2,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 2,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 2,
+            "saved": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 2,
+          "saved": 2,
+          "directlyJourneyLinked": 0,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 0,
+          "distinctGroundedBehaviorCount": 0
+        },
+        "reviewPacket": "P7c26ba677c"
+      },
+      {
+        "id": "D2",
+        "arm": "D",
+        "block": 2,
+        "checkpoints": {
+          "10": {
+            "seen": 4,
+            "saved": 4,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "20": {
+            "seen": 8,
+            "saved": 6,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "40": {
+            "seen": 16,
+            "saved": 12,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          }
+        },
+        "final": {
+          "seen": 16,
+          "saved": 13,
+          "directlyJourneyLinked": 5,
+          "unsupportedClaims": 0,
+          "unsupportedRate": 0
+        },
+        "create": {
+          "proposedScenarios": 2,
+          "distinctGroundedBehaviorCount": 1
+        },
+        "reviewPacket": "Pf928489f31"
+      }
+    ],
+    "cost": "unknown"
+  },
+  "billingCost": "unknown"
+}

@@ -1,0 +1,30 @@
+{
+  "requestToken": "7672adbd-f993-4f6c-8ee3-19b196b43093",
+  "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following Documentation reached GET /docs and returned Reader and Librarian session guidance.",
+      "look": { "item": { "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc" }, "kind": "reached", "reachedSurfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85" }
+    },
+    {
+      "kind": "action",
+      "body": "Following Catalog reached GET /catalog and returned three listed books and search metadata.",
+      "look": { "item": { "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6" }, "kind": "reached", "reachedSurfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7" }
+    },
+    {
+      "kind": "action",
+      "body": "Following Account reached GET /account and returned Reader account links for reservations and loans.",
+      "look": { "item": { "id": "ce417e2d-882c-4392-9331-4d89f35e3144" }, "kind": "reached", "reachedSurfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c" }
+    },
+    {
+      "kind": "action",
+      "body": "Following Service desk as Reader reached GET /desk, which returned 403 Forbidden stating that the service desk requires Librarian.",
+      "look": { "item": { "id": "5759e07a-93d5-4026-aec0-568240c75a7d" }, "kind": "blocked", "reason": "GET /desk returned 403 Forbidden: Service desk requires Librarian." },
+      "capture": "pending"
+    }
+  ]
+}

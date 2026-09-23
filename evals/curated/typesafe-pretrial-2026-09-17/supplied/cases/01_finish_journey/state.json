@@ -1,0 +1,30 @@
+{
+  "objective": "Explore this HR product: learn distinct behavior and complete meaningful Journeys, favoring checks that answer concrete open questions.",
+  "scope": {
+    "actor": "employee-a",
+    "build": "b17",
+    "environment": "isolated synthetic sandbox"
+  },
+  "observations": [
+    "On b17, employee-a submitted leave request 77 and saw it Pending in the list.",
+    "Cancellation returned a success response, but request 77 has not been reloaded afterward. The attempt outcome was saved and no recovery is pending.",
+    "The current employee's profile name was opened and verified twice on b17."
+  ],
+  "open_questions": [
+    "Does cancellation persist after reload, and where does the cancelled request appear?"
+  ],
+  "candidates": [
+    {
+      "id": "c1",
+      "check": "Reload request 77 and inspect its status and its presence in active/history views."
+    },
+    {
+      "id": "c2",
+      "check": "Open the employee profile again and read the same displayed name."
+    },
+    {
+      "id": "c3",
+      "check": "Open the About page and read the application copyright text."
+    }
+  ]
+}

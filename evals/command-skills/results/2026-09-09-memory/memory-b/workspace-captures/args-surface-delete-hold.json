@@ -1,0 +1,5 @@
+{
+  "requestToken": "8eaa60c8-a3e5-43a5-b93a-ea3994a4fcf9",
+  "name": "DELETE /holds/:id",
+  "locator": "DELETE /holds/:id"
+}

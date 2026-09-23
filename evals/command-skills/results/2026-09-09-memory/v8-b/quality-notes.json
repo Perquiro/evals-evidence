@@ -1,0 +1,15 @@
+{
+  "markerVerdict": "failed despite thirteen ids",
+  "falseReopens": 0,
+  "falsePending": 0,
+  "semanticAliases": "one clear retry pair; other per-request names",
+  "summary": "The adapted v8 run saw 23 outcomes and durably saved 20, with three loan outcomes on the source GET Surface instead of their actual POST endpoints. Thirteen mutation calls mechanically match accepted ids, but generic preparation text does not ground preconditions. The malformed unavailable attempt was retried under a new item name without typed non-execution reconciliation. The original retry, successful reservation and successful check-in attempts remain unresolved. Its three observed readbacks without saved facts and stale summary count are retained.",
+  "evidence": [
+    "metrics.json mutations events 56/60/63/65",
+    "item-audit.json recovery",
+    "assessment.json W12/W19/W25",
+    "workspace-captures/",
+    "cut-evidence-stop.json"
+  ],
+  "limits": "Zero false pending means no separate completed check was shown pending due to ordinary inventory; the three unresolved attempts are true unresolved correlations and are counted separately. One clear semantic retry alias is a lower bound, not proof that every other request-specific name is appropriate."
+}

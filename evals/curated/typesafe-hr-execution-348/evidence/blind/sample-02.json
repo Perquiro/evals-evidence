@@ -1,0 +1,341 @@
+{
+  "sample": "sample-02",
+  "actions": [
+    {
+      "id": "action-2",
+      "ordinal": 1,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/0"
+    },
+    {
+      "id": "action-3",
+      "ordinal": 2,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/1"
+    },
+    {
+      "id": "action-4",
+      "ordinal": 3,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/2"
+    },
+    {
+      "id": "action-5",
+      "ordinal": 4,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/3"
+    },
+    {
+      "id": "snapshot-21",
+      "ordinal": 5,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/4"
+    },
+    {
+      "id": "action-6",
+      "ordinal": 6,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/5"
+    },
+    {
+      "id": "snapshot-30",
+      "ordinal": 7,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/6"
+    },
+    {
+      "id": "action-7",
+      "ordinal": 8,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/7"
+    },
+    {
+      "id": "action-8",
+      "ordinal": 9,
+      "executed": false,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/8"
+    },
+    {
+      "id": "action-9",
+      "ordinal": 10,
+      "executed": false,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/9"
+    },
+    {
+      "id": "action-10",
+      "ordinal": 11,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/10"
+    },
+    {
+      "id": "action-11",
+      "ordinal": 12,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/11"
+    },
+    {
+      "id": "snapshot-49",
+      "ordinal": 13,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/12"
+    },
+    {
+      "id": "action-12",
+      "ordinal": 14,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/13"
+    },
+    {
+      "id": "action-13",
+      "ordinal": 15,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-02-evidence.json#/browser/actions/14"
+    }
+  ],
+  "observations": [
+    {
+      "id": "19b1103b-26a8-4b39-a8c2-700b4d0c1b0b",
+      "body": "The signed-out employee portal displays Username and Password fields and a Sign in button.",
+      "context": {
+        "kind": "surface",
+        "id": "dfb17889-a337-4957-b30d-5727c266c270",
+        "name": "Sign in"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 1,
+      "raw": "sample-02-evidence.json#/knowledge/observations/0"
+    },
+    {
+      "id": "8c3dd172-e726-47f1-93fa-04e3013b19fd",
+      "body": "Username and Password fields are present and ready for the supplied Employee credentials.",
+      "context": {
+        "kind": "surface",
+        "id": "dfb17889-a337-4957-b30d-5727c266c270",
+        "name": "Sign in"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 1,
+      "raw": "sample-02-evidence.json#/knowledge/observations/1"
+    },
+    {
+      "id": "db8c1502-f392-4a29-9a06-399f5411acd0",
+      "body": "Signing in with the supplied Employee credentials opened the authenticated portal for Emily Dawson.",
+      "context": {
+        "kind": "surface",
+        "id": "dfb17889-a337-4957-b30d-5727c266c270",
+        "name": "Sign in"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 5,
+      "raw": "sample-02-evidence.json#/knowledge/observations/2"
+    },
+    {
+      "id": "bf79ee28-cd48-49f3-8ad4-fae90442031b",
+      "body": "Sign in reached Dashboard.",
+      "context": {
+        "kind": "surface",
+        "id": "dfb17889-a337-4957-b30d-5727c266c270",
+        "name": "Sign in"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 5,
+      "raw": "sample-02-evidence.json#/knowledge/observations/3"
+    },
+    {
+      "id": "4707b949-a7c9-40e1-ad0e-82b9ee1073f0",
+      "body": "Dashboard welcomes Emily Dawson, shows pending leave requests 0, and offers Directory, My Leave, Timesheet, My Profile, Request leave, Fill timesheet, and Log out.",
+      "context": {
+        "kind": "surface",
+        "id": "75d74024-a821-403c-b908-ade9bc7626a4",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 5,
+      "raw": "sample-02-evidence.json#/knowledge/observations/4"
+    },
+    {
+      "id": "46d0010d-b1d8-4f40-aa9d-7e02c1586340",
+      "body": "Opening My Leave displayed the Employee leave page.",
+      "context": {
+        "kind": "surface",
+        "id": "75d74024-a821-403c-b908-ade9bc7626a4",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 7,
+      "raw": "sample-02-evidence.json#/knowledge/observations/5"
+    },
+    {
+      "id": "f8e891c2-cafd-4fc7-9202-a4adf26e3d3e",
+      "body": "My Leave reached the My leave page.",
+      "context": {
+        "kind": "surface",
+        "id": "75d74024-a821-403c-b908-ade9bc7626a4",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 7,
+      "raw": "sample-02-evidence.json#/knowledge/observations/6"
+    },
+    {
+      "id": "0a7fdc11-81a4-406e-ad29-811e78a74a88",
+      "body": "Opening Timesheet displayed the Employee timesheet for the week of Sep 14, 2026.",
+      "context": {
+        "kind": "surface",
+        "id": "75d74024-a821-403c-b908-ade9bc7626a4",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 14,
+      "raw": "sample-02-evidence.json#/knowledge/observations/7"
+    },
+    {
+      "id": "b6a56aff-0bf0-4bca-88f0-74f4746c4b1c",
+      "body": "Timesheet reached Timesheet.",
+      "context": {
+        "kind": "surface",
+        "id": "75d74024-a821-403c-b908-ade9bc7626a4",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 14,
+      "raw": "sample-02-evidence.json#/knowledge/observations/8"
+    },
+    {
+      "id": "a2ae68e6-5bf9-4750-a889-136c05ef0ad6",
+      "body": "Opening My Profile displayed the Employee profile page.",
+      "context": {
+        "kind": "surface",
+        "id": "75d74024-a821-403c-b908-ade9bc7626a4",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 15,
+      "raw": "sample-02-evidence.json#/knowledge/observations/9"
+    },
+    {
+      "id": "0a582148-2b2f-469e-b5d7-c53b4c2fe7db",
+      "body": "My Profile reached My profile.",
+      "context": {
+        "kind": "surface",
+        "id": "75d74024-a821-403c-b908-ade9bc7626a4",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 15,
+      "raw": "sample-02-evidence.json#/knowledge/observations/10"
+    },
+    {
+      "id": "f82990b0-ee2d-4b26-b34f-72c4fdd1cd0e",
+      "body": "My leave offers New request, shows an available balance of 18 days, and lists an approved Vacation request for Aug 18-19, 2026 with manager comment Approved - enjoy!.",
+      "context": {
+        "kind": "surface",
+        "id": "7e4a511b-6494-4193-812b-f05d8403e9ae",
+        "name": "My leave"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 7,
+      "raw": "sample-02-evidence.json#/knowledge/observations/11"
+    },
+    {
+      "id": "2250334b-93c0-4623-9ff2-7a9047e6b1db",
+      "body": "Opening New request displayed the leave-request form.",
+      "context": {
+        "kind": "surface",
+        "id": "7e4a511b-6494-4193-812b-f05d8403e9ae",
+        "name": "My leave"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 8,
+      "raw": "sample-02-evidence.json#/knowledge/observations/12"
+    },
+    {
+      "id": "7c1759e0-57de-4bff-ae9d-be15feebdb33",
+      "body": "New request reached New leave request.",
+      "context": {
+        "kind": "surface",
+        "id": "7e4a511b-6494-4193-812b-f05d8403e9ae",
+        "name": "My leave"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 8,
+      "raw": "sample-02-evidence.json#/knowledge/observations/13"
+    },
+    {
+      "id": "8f5a8484-4fd0-49e1-8b14-756ce0edd665",
+      "body": "The form has Leave type with Vacation, Sick, and Personal options; required Start date and End date fields; Reason; Submit request; and Cancel.",
+      "context": {
+        "kind": "surface",
+        "id": "6faebe20-dc1d-4047-897f-b84c2007666c",
+        "name": "New leave request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 8,
+      "raw": "sample-02-evidence.json#/knowledge/observations/14"
+    },
+    {
+      "id": "12684d11-e72f-4ffe-a144-dfc889d390ab",
+      "body": "Vacation is selected and the leave-request form is ready for a one-day evaluation request on 2026-10-05.",
+      "context": {
+        "kind": "surface",
+        "id": "6faebe20-dc1d-4047-897f-b84c2007666c",
+        "name": "New leave request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 8,
+      "raw": "sample-02-evidence.json#/knowledge/observations/15"
+    },
+    {
+      "id": "902749ab-a118-411a-bec8-8d9dfa703952",
+      "body": "Submitting after entering the evaluation reason displayed Please fill in all required fields and stayed on New leave request; the date fields remained empty in the observed page.",
+      "context": {
+        "kind": "surface",
+        "id": "6faebe20-dc1d-4047-897f-b84c2007666c",
+        "name": "New leave request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 13,
+      "raw": "sample-02-evidence.json#/knowledge/observations/16"
+    },
+    {
+      "id": "26922501-4767-40d2-9990-7f7ea63734fa",
+      "body": "Timesheet shows a draft for the week of Sep 14, 2026 with seven daily hour inputs at 0, total 0 h, Save draft, and Submit week.",
+      "context": {
+        "kind": "surface",
+        "id": "fb0e6525-912e-4796-afa1-7110312a92ee",
+        "name": "Timesheet"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 14,
+      "raw": "sample-02-evidence.json#/knowledge/observations/17"
+    },
+    {
+      "id": "63adb1c3-9894-4c14-89c8-cd472bbf630b",
+      "body": "My profile offers Upload photo, editable Full name, Phone, and Emergency contact fields, a disabled read-only Email field, and Save changes.",
+      "context": {
+        "kind": "surface",
+        "id": "7edc06a8-3945-4377-a96d-cae69cd83850",
+        "name": "My profile"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 15,
+      "raw": "sample-02-evidence.json#/knowledge/observations/18"
+    }
+  ],
+  "evidence": "sample-02-evidence.json"
+}

@@ -1,0 +1,107 @@
+{
+  "product_date": "2026-09-17T12:00:00.000Z",
+  "seed_sha256": "8cde76f36bd76b055e2fee3fc2391ace595d94819a4b96d162f7b4e1eecdf83e",
+  "source_manifest": {
+    ".gitignore": "13075c61f119e0b4d2f2448359415bbbf8dea3448dd00ca62b857f3a02041a12",
+    "ANSWER_KEY.md": "7eb908b5596ecf26b93734c3d31ab7cbeba02bc69c9b9eff77574f7ea0c14233",
+    "docs/superpowers/specs/2026-07-28-era2-api-platform-design.md": "4ad0b9d4d2faea6eb24b609dadada918f7ddcf46537110036271f81da38ff3f8",
+    "index.html": "df0748570ea1d6c01c45acebc982055ebbffd5d83abb556fbab3ccf5edb397d5",
+    "package-lock.json": "b698001d0b8325bacad477e2983034552db22e209967d9c7e9330ab85dc216a2",
+    "package.json": "b2051a23fb8ab14ba9ec707b3bbdc38cc97e0030aafa78e5aadc4cf5c8cfc589",
+    "README.md": "3544934c3f4f169e9be59b0779cdbd10abdb5fbac1e0def06387506be3ce9340",
+    "server/index.js": "bbf2d72a1b75b226e732af32212a7c7f3153c4e034901220c20c79d0c67ec6bb",
+    "server/seed.js": "6f284449573cb5d320e2ae8a9ff42d11bcfa27a9b07bf650008de9f3dd754a35",
+    "src/api.js": "5ec6e3ae37db8e895bdeadf758eb0e5bc8b33fde2c0a6699bdfafaf033df0ceb",
+    "src/App.jsx": "3e5efebf74590787542307bd2753cc2d724795c0527c88c7496a561830e56dc2",
+    "src/auth.jsx": "82d3cdef6dbed0235eb656eb04ccff682ee9cfcd4690e78eeeb48ac3badd0fe0",
+    "src/components/DatePicker.jsx": "fc96c3758816ebf4e4e823ac20285162c892a0acc19779426de657c6f57af6ef",
+    "src/components/Layout.jsx": "0e476379bd87669fd04ad8945504df5d4525b2ae958f3d8a25a0f2dd3a5626cc",
+    "src/components/Modal.jsx": "d3068658e147559c833202dc91d6ad75354fbb33e641e9d28ee7bffab14c45e5",
+    "src/directoryCache.js": "7b3cf3d30184e6dee01107866ddd53904a1b7f6dc14c21df3dbcbb5240035ecf",
+    "src/main.jsx": "d65350464d72c4c96e6fee13a783d8700df0df362e6b40af58aed16f216af3b5",
+    "src/pages/Approvals.jsx": "b58b48de711d0f5e0724e6d146b65c82b3d0d74b9cc92bf40604cf93c3b685a1",
+    "src/pages/Dashboard.jsx": "d9fdd1c7eb36266533f8f5ab3795e8843a00791e94f2fa2210c80781e7c16864",
+    "src/pages/Directory.jsx": "c62ba890c8c43c0b41f33906766a6a95b94023f5d905ff148dbde199a739730c",
+    "src/pages/EmployeeDetail.jsx": "216fd59175ebe505475b5015e8c0768e61bc4bd0bac5b6be31b80b6ceca34587",
+    "src/pages/Leave.jsx": "5e5ed3a3dedf4db27d20e0d107aa9b9c1a86971b4bb2bc2f753923876a003324",
+    "src/pages/Login.jsx": "5ee75c7470fddc5bb9fcdeee3da16006daafcbbda32d33135d60dad63e721ccf",
+    "src/pages/NewLeave.jsx": "42348f75297206b863c6cdb0857579c4b25e560be2ee074d5a361116b9227d77",
+    "src/pages/Notifications.jsx": "c8c4ffc1b1b2b3b467d1c494b35b36fa3c22239f399d427bd8e3b63b33801865",
+    "src/pages/Onboarding.jsx": "35354bcc64c2bde52ff360441c5829e32a3e23f83611aee1343d4383def4b49e",
+    "src/pages/Profile.jsx": "ba367df81e908f106e5a6edd4a6c27247f548737bdd123e1984e263b35b71306",
+    "src/pages/Timesheet.jsx": "442d9130893d75c7f599ac47155c42ee03e6cdf0c892f019817eb3f9ed51e268",
+    "src/styles.css": "3d8107160ad8facc3e3bf7f26f46544d28bd75af5f88746e4ea5b6ef60a3f4c8",
+    "src/utils.js": "8490648cf5554713de218d7d2f82c7aad4fee50de2fff0fad2865ae97159adac",
+    "vite.config.js": "da343b0e8c1f119896de94daefdf3feb20b085f6cd0e7045423f1dbea628f5dd"
+  },
+  "build_manifest": {
+    "dist/assets/index-CiOd5S5f.js": "5004bbabe116abe1e092ff8694c75adcc35aabaef3d66b6527c24dd24ff723c6",
+    "dist/assets/index-D-g6-4_f.css": "3842a75d8a6c401024182a594757c0a9736f7cd1063934ea4bc2fa1024a6c8b3",
+    "dist/index.html": "a4bbb6e2130bf256c30ca708afbcb0968a3a47bf9281c88f3baef41c4e3c9547"
+  },
+  "product_source_sha256": "0043c990ecd58697cfe1099f3b640f9ab66eb84e7cf09ee1aba045b80f68cdb7",
+  "product_build_sha256": "0ce7da8b5f1853df3faa36439242db01c1d58f3fabe06d61e79a953abf9ed0f9",
+  "product_sha": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+  "server_instance_id": "22492:2026-09-20T21:43:27.094Z",
+  "server_started": "2026-09-20T21:43:27.094Z",
+  "project_id": "4e37f98f-3665-4d67-88f8-a6e58fc0fa77",
+  "project_path": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\live\\pair-3-ordinary\\project",
+  "browser_context_id": "4e1789be-b0b6-4174-a679-4fa55a3173c5",
+  "browser_version": "151.0.7922.34",
+  "empty_storage": true,
+  "empty_knowledge": true,
+  "signed_out": true,
+  "initial_capture": {
+    "url": "http://127.0.0.1:49911/login",
+    "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+    "admitted": 0,
+    "events": [
+      {
+        "kind": "action",
+        "id": "action-1",
+        "args": {
+          "op": "navigate",
+          "path": "/"
+        },
+        "dispatched_ms": null,
+        "executed": true,
+        "result": {
+          "url": "http://127.0.0.1:49911/",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "completed_ms": null
+      }
+    ]
+  },
+  "emptyKnowledge": {
+    "revision": "7b69ec46-789b-4660-a5ee-b81a72456771",
+    "coverage": {
+      "actors": 1,
+      "surfaces": 0,
+      "journeys": 0,
+      "observations": 0,
+      "evidence": 0,
+      "scenarios": 0,
+      "tests": 0,
+      "surfacesWithoutObservations": 0,
+      "journeysWithoutAcceptedScenarios": 0,
+      "acceptedScenariosWithoutTests": 0
+    },
+    "entries": {
+      "items": [
+        {
+          "kind": "actor",
+          "id": "99124221-244d-4722-92ba-08cb5bd20f9d",
+          "name": "Employee"
+        }
+      ],
+      "complete": true
+    },
+    "storedRelationships": {
+      "items": [],
+      "complete": true
+    }
+  },
+  "actor_id": "99124221-244d-4722-92ba-08cb5bd20f9d",
+  "fixed_product_date": "2026-09-17T12:00:00.000Z"
+}

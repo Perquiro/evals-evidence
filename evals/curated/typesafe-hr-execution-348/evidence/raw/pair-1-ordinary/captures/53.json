@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:57645/directory",
+  "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Employee directory\" [level=1]\n  - textbox \"Search by name…\"\n  - combobox:\n    - option \"All departments\" [selected]\n    - option \"Engineering\"\n    - option \"Sales\"\n    - option \"Marketing\"\n    - option \"Finance\"\n    - option \"HR\"\n  - text: Loading…\n  - table:\n    - rowgroup:\n      - row \"Name ▲ Department Title Email\":\n        - columnheader \"Name ▲\"\n        - columnheader \"Department\"\n        - columnheader \"Title\"\n        - columnheader \"Email\"\n    - rowgroup",
+  "actionId": "action-16",
+  "admitted": 9,
+  "remaining": 51
+}

@@ -1,0 +1,52 @@
+{
+  "productRequests": 9,
+  "mcpReads": 12,
+  "mcpWrites": 4,
+  "unclassifiedProductErrors": [],
+  "uniqueSuccessfulMcpWriteTokens": 4,
+  "failedMcpWrites": 0,
+  "schemaReads": 2,
+  "observations": 3,
+  "acceptedAttempts": 1,
+  "mutations": [
+    {
+      "event": 7,
+      "method": "POST",
+      "path": "/holds",
+      "actor": "Reader",
+      "status": 201,
+      "resultKind": "product",
+      "acceptedAttemptEvent": 6,
+      "attemptId": "2ed79e24-2c2b-4805-95a4-31958b0a311f"
+    }
+  ],
+  "mutationsWithoutMatchedAttempt": 0,
+  "elapsedMs": 779577,
+  "candidateActivitySpanMs": 631337,
+  "firstObservationDelayMs": 93,
+  "latency": {
+    "mcp": {
+      "samples": 16,
+      "totalMs": 414.5408999998908,
+      "medianMs": 25.790399999939837,
+      "p95Ms": 35.34919999999693
+    },
+    "product": {
+      "samples": 9,
+      "totalMs": 1.264800000222749,
+      "medianMs": 0.13129999999364372,
+      "p95Ms": 0.2581999999965774
+    },
+    "schema": {
+      "samples": 2,
+      "totalMs": 6.930300000007264,
+      "medianMs": 4.705700000049546,
+      "p95Ms": 4.705700000049546
+    }
+  },
+  "limitations": [
+    "Attempt matching uses the returned Actor and either METHOD/path Surface identity or the exact METHOD/path named in grounded preconditions. Every mapping needs human trace inspection; this is not semantic proof that a marker authorized an arbitrary request.",
+    "Elapsed time includes host scheduling and idle waits. Server latency excludes model reasoning and host tool/UI latency; absent samples mean unavailable.",
+    "Outcome durability and false reopens require grading against public final reads; Observation count is not outcome coverage."
+  ]
+}

@@ -1,0 +1,1648 @@
+{
+  "catalogPages": [
+    {
+      "args": {},
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"coverage\":{\"actors\":1,\"surfaces\":7,\"journeys\":1,\"observations\":11,\"evidence\":0,\"scenarios\":0,\"tests\":0,\"surfacesWithoutObservations\":0,\"journeysWithoutAcceptedScenarios\":1,\"acceptedScenariosWithoutTests\":0},\"entries\":{\"items\":[{\"kind\":\"actor\",\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},{\"kind\":\"surface\",\"id\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"name\":\"Login\",\"locator\":\"/login\",\"testFolder\":\"login\"},{\"kind\":\"surface\",\"id\":\"f2d36a83-c816-4fc4-b585-69d436db163b\",\"name\":\"Dashboard\",\"locator\":\"/dashboard\",\"testFolder\":\"dashboard\"},{\"kind\":\"surface\",\"id\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"name\":\"My Leave\",\"locator\":\"/leave\",\"testFolder\":\"my-leave\"},{\"kind\":\"surface\",\"id\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"name\":\"New Leave Request\",\"locator\":\"/leave/new\",\"testFolder\":\"new-leave-request\"},{\"kind\":\"surface\",\"id\":\"e72a596c-21ed-46fd-9d5e-54100d045d87\",\"name\":\"Timesheet\",\"locator\":\"/timesheet\",\"testFolder\":\"timesheet\"},{\"kind\":\"surface\",\"id\":\"dd60af34-f72a-4448-9bf3-86a2dcb68663\",\"name\":\"My Profile\",\"locator\":\"/profile\",\"testFolder\":\"my-profile\"},{\"kind\":\"surface\",\"id\":\"b58c10fa-ddae-47cc-92bc-62733339ea61\",\"name\":\"Directory\",\"locator\":\"/directory\",\"testFolder\":\"directory\"},{\"kind\":\"journey\",\"id\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"name\":\"Request leave\",\"surfaceCount\":3,\"testFolder\":\"request-leave\"}],\"complete\":true},\"storedRelationships\":{\"items\":[{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"position\":0},{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"position\":1},{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"position\":2}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "coverage": {
+          "actors": 1,
+          "surfaces": 7,
+          "journeys": 1,
+          "observations": 11,
+          "evidence": 0,
+          "scenarios": 0,
+          "tests": 0,
+          "surfacesWithoutObservations": 0,
+          "journeysWithoutAcceptedScenarios": 1,
+          "acceptedScenariosWithoutTests": 0
+        },
+        "entries": {
+          "items": [
+            {
+              "kind": "actor",
+              "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+              "name": "Employee"
+            },
+            {
+              "kind": "surface",
+              "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+              "name": "Login",
+              "locator": "/login",
+              "testFolder": "login"
+            },
+            {
+              "kind": "surface",
+              "id": "f2d36a83-c816-4fc4-b585-69d436db163b",
+              "name": "Dashboard",
+              "locator": "/dashboard",
+              "testFolder": "dashboard"
+            },
+            {
+              "kind": "surface",
+              "id": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+              "name": "My Leave",
+              "locator": "/leave",
+              "testFolder": "my-leave"
+            },
+            {
+              "kind": "surface",
+              "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+              "name": "New Leave Request",
+              "locator": "/leave/new",
+              "testFolder": "new-leave-request"
+            },
+            {
+              "kind": "surface",
+              "id": "e72a596c-21ed-46fd-9d5e-54100d045d87",
+              "name": "Timesheet",
+              "locator": "/timesheet",
+              "testFolder": "timesheet"
+            },
+            {
+              "kind": "surface",
+              "id": "dd60af34-f72a-4448-9bf3-86a2dcb68663",
+              "name": "My Profile",
+              "locator": "/profile",
+              "testFolder": "my-profile"
+            },
+            {
+              "kind": "surface",
+              "id": "b58c10fa-ddae-47cc-92bc-62733339ea61",
+              "name": "Directory",
+              "locator": "/directory",
+              "testFolder": "directory"
+            },
+            {
+              "kind": "journey",
+              "id": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "name": "Request leave",
+              "surfaceCount": 3,
+              "testFolder": "request-leave"
+            }
+          ],
+          "complete": true
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+              "position": 0
+            },
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+              "position": 1
+            },
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+              "position": 2
+            }
+          ],
+          "complete": true
+        }
+      }
+    }
+  ],
+  "contexts": [
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "71220e38-4f41-484c-ac94-ba1506766a56"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"name\":\"Login\",\"locator\":\"/login\",\"testFolder\":\"login\",\"createdAt\":\"2026-09-20T21:13:49.817Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"71220e38-4f41-484c-ac94-ba1506766a56\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"position\":0},{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"name\":\"Login\"},\"observations\":[{\"id\":\"9e835296-994b-4e5f-8a8f-324ab9a5552c\",\"seq\":1,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Login shows Username and Password fields and a Sign in button; demo accounts list emily.dawson as Employee.\",\"createdAt\":\"2026-09-20T21:14:02.188Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"905476a3-6e05-4bbd-9f93-16c3a8a2221a\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"e586e037-9957-43a5-b8e9-66ba7b36fa0d\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"cd0c9167-3526-4e77-891e-9c63e0d1c4ce\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}},{\"id\":\"bb4a5c12-5800-46de-9433-8d0f7aabd86c\",\"seq\":2,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"The signed-out Login page has empty Username and Password fields and Sign in is available.\",\"createdAt\":\"2026-09-20T21:14:24.357Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"action\",\"capture\":\"none\",\"look\":{\"item\":{\"id\":\"cd0c9167-3526-4e77-891e-9c63e0d1c4ce\"},\"kind\":\"attempting\",\"resourceRef\":\"session:employee\"}},\"support\":\"missing\"}},{\"id\":\"c3ac3ebe-b265-45e4-a545-a81cdad8c1e7\",\"seq\":3,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Signing in as emily.dawson reached the Employee dashboard, which identifies Emily Dawson and shows navigation.\",\"createdAt\":\"2026-09-20T21:14:54.515Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"action\",\"capture\":\"none\",\"look\":{\"item\":{\"id\":\"cd0c9167-3526-4e77-891e-9c63e0d1c4ce\"},\"kind\":\"exercised\",\"attemptObservationId\":\"bb4a5c12-5800-46de-9433-8d0f7aabd86c\"}},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"name\":\"Login\"},\"count\":3,\"firstSeq\":1,\"lastSeq\":3}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "anchor": {
+          "kind": "surface",
+          "record": {
+            "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+            "name": "Login",
+            "locator": "/login",
+            "testFolder": "login",
+            "createdAt": "2026-09-20T21:13:49.817Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "71220e38-4f41-484c-ac94-ba1506766a56"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+              "position": 0
+            },
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+                "name": "Login"
+              },
+              "observations": [
+                {
+                  "id": "9e835296-994b-4e5f-8a8f-324ab9a5552c",
+                  "seq": 1,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Login shows Username and Password fields and a Sign in button; demo accounts list emily.dawson as Employee.",
+                  "createdAt": "2026-09-20T21:14:02.188Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "905476a3-6e05-4bbd-9f93-16c3a8a2221a"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "e586e037-9957-43a5-b8e9-66ba7b36fa0d"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "cd0c9167-3526-4e77-891e-9c63e0d1c4ce"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                },
+                {
+                  "id": "bb4a5c12-5800-46de-9433-8d0f7aabd86c",
+                  "seq": 2,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "The signed-out Login page has empty Username and Password fields and Sign in is available.",
+                  "createdAt": "2026-09-20T21:14:24.357Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "action",
+                      "capture": "none",
+                      "look": {
+                        "item": {
+                          "id": "cd0c9167-3526-4e77-891e-9c63e0d1c4ce"
+                        },
+                        "kind": "attempting",
+                        "resourceRef": "session:employee"
+                      }
+                    },
+                    "support": "missing"
+                  }
+                },
+                {
+                  "id": "c3ac3ebe-b265-45e4-a545-a81cdad8c1e7",
+                  "seq": 3,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Signing in as emily.dawson reached the Employee dashboard, which identifies Emily Dawson and shows navigation.",
+                  "createdAt": "2026-09-20T21:14:54.515Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "action",
+                      "capture": "none",
+                      "look": {
+                        "item": {
+                          "id": "cd0c9167-3526-4e77-891e-9c63e0d1c4ce"
+                        },
+                        "kind": "exercised",
+                        "attemptObservationId": "bb4a5c12-5800-46de-9433-8d0f7aabd86c"
+                      }
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+                "name": "Login"
+              },
+              "count": 3,
+              "firstSeq": 1,
+              "lastSeq": 3
+            }
+          ],
+          "complete": true
+        }
+      }
+    },
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "f2d36a83-c816-4fc4-b585-69d436db163b"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "71220e38-4f41-484c-ac94-ba1506766a56"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"f2d36a83-c816-4fc4-b585-69d436db163b\",\"name\":\"Dashboard\",\"locator\":\"/dashboard\",\"testFolder\":\"dashboard\",\"createdAt\":\"2026-09-20T21:14:54.548Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"71220e38-4f41-484c-ac94-ba1506766a56\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"f2d36a83-c816-4fc4-b585-69d436db163b\",\"name\":\"Dashboard\"},\"observations\":[{\"id\":\"6e1feef5-9d16-46a2-9983-15261b0cca5a\",\"seq\":4,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Dashboard welcomes Emily and offers Directory, My Leave, Timesheet, My Profile, Request leave, Fill timesheet, and Log out. It shows pending leave requests 0; leave balance is loading.\",\"createdAt\":\"2026-09-20T21:15:10.024Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"3a56e820-5cbb-4985-99b6-ed6cea6ea4b8\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"379b2e7b-202f-46b2-91de-835d875dac83\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"e0ecc5ca-2f3a-4adf-a068-1da2e00edd31\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"85bc51e7-2ab6-4d1d-921a-78b63500996b\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"3d7e854d-4a37-40f3-86b0-b7a8e757d3f2\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"ad2dcb92-2515-4662-a9ac-89ac1a05b8ff\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"69adc5fc-a761-4147-b7e2-3184e5a7ba2f\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"f2d36a83-c816-4fc4-b585-69d436db163b\",\"name\":\"Dashboard\"},\"count\":1,\"firstSeq\":4,\"lastSeq\":4}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "anchor": {
+          "kind": "surface",
+          "record": {
+            "id": "f2d36a83-c816-4fc4-b585-69d436db163b",
+            "name": "Dashboard",
+            "locator": "/dashboard",
+            "testFolder": "dashboard",
+            "createdAt": "2026-09-20T21:14:54.548Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "71220e38-4f41-484c-ac94-ba1506766a56"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "f2d36a83-c816-4fc4-b585-69d436db163b",
+                "name": "Dashboard"
+              },
+              "observations": [
+                {
+                  "id": "6e1feef5-9d16-46a2-9983-15261b0cca5a",
+                  "seq": 4,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Dashboard welcomes Emily and offers Directory, My Leave, Timesheet, My Profile, Request leave, Fill timesheet, and Log out. It shows pending leave requests 0; leave balance is loading.",
+                  "createdAt": "2026-09-20T21:15:10.024Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "3a56e820-5cbb-4985-99b6-ed6cea6ea4b8"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "379b2e7b-202f-46b2-91de-835d875dac83"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "e0ecc5ca-2f3a-4adf-a068-1da2e00edd31"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "85bc51e7-2ab6-4d1d-921a-78b63500996b"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "3d7e854d-4a37-40f3-86b0-b7a8e757d3f2"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "ad2dcb92-2515-4662-a9ac-89ac1a05b8ff"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "69adc5fc-a761-4147-b7e2-3184e5a7ba2f"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "f2d36a83-c816-4fc4-b585-69d436db163b",
+                "name": "Dashboard"
+              },
+              "count": 1,
+              "firstSeq": 4,
+              "lastSeq": 4
+            }
+          ],
+          "complete": true
+        }
+      }
+    },
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "71220e38-4f41-484c-ac94-ba1506766a56"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"name\":\"My Leave\",\"locator\":\"/leave\",\"testFolder\":\"my-leave\",\"createdAt\":\"2026-09-20T21:16:31.574Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"71220e38-4f41-484c-ac94-ba1506766a56\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"position\":1},{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"name\":\"My Leave\"},\"observations\":[{\"id\":\"f52849a6-2708-4d3a-a623-e7d5907d25f6\",\"seq\":5,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"My leave shows available balance 18 days and request history with an approved Vacation entry dated Aug 18–19, 2026 for 3 days and manager comment “Approved – enjoy!”. It offers New request.\",\"createdAt\":\"2026-09-20T21:16:42.651Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"21d2761a-20cc-49b2-a474-3f418ddbee02\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"c413cdfd-d1d8-4e7e-bf67-bcae333061f0\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"8ce6fae3-e9e2-4504-a946-e567a1238302\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"name\":\"My Leave\"},\"count\":1,\"firstSeq\":5,\"lastSeq\":5}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "anchor": {
+          "kind": "surface",
+          "record": {
+            "id": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+            "name": "My Leave",
+            "locator": "/leave",
+            "testFolder": "my-leave",
+            "createdAt": "2026-09-20T21:16:31.574Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "71220e38-4f41-484c-ac94-ba1506766a56"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+              "position": 1
+            },
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+                "name": "My Leave"
+              },
+              "observations": [
+                {
+                  "id": "f52849a6-2708-4d3a-a623-e7d5907d25f6",
+                  "seq": 5,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "My leave shows available balance 18 days and request history with an approved Vacation entry dated Aug 18–19, 2026 for 3 days and manager comment “Approved – enjoy!”. It offers New request.",
+                  "createdAt": "2026-09-20T21:16:42.651Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "21d2761a-20cc-49b2-a474-3f418ddbee02"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "c413cdfd-d1d8-4e7e-bf67-bcae333061f0"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "8ce6fae3-e9e2-4504-a946-e567a1238302"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+                "name": "My Leave"
+              },
+              "count": 1,
+              "firstSeq": 5,
+              "lastSeq": 5
+            }
+          ],
+          "complete": true
+        }
+      }
+    },
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "71220e38-4f41-484c-ac94-ba1506766a56"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"name\":\"New Leave Request\",\"locator\":\"/leave/new\",\"testFolder\":\"new-leave-request\",\"createdAt\":\"2026-09-20T21:17:04.094Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"71220e38-4f41-484c-ac94-ba1506766a56\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"position\":2},{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"name\":\"New Leave Request\"},\"observations\":[{\"id\":\"94bde7dd-5add-4be1-81e6-fb86847cf35d\",\"seq\":6,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"New leave request offers Vacation, Sick, and Personal types; required Start date and End date; optional Reason; Submit request and Cancel. It states weekends are not counted toward leave.\",\"createdAt\":\"2026-09-20T21:17:19.320Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"a80f9307-4dfa-4ff0-812b-22876be94bb3\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"a287a880-7c46-459c-9f7c-90b70c136c3b\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"3569e7fc-c15b-416f-a816-5f1e8195223d\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"f48d5014-01d2-4a5c-844c-92bf75fc096e\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"6929e5a6-f440-4b31-9ea7-1e76b82d7a1f\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"0d8169d8-9c09-4541-b721-31d9d7e67c9e\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"3c7f0284-ca53-45ec-8237-a39cb73fed0d\"},\"ruleFor\":{\"id\":\"a287a880-7c46-459c-9f7c-90b70c136c3b\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}},{\"id\":\"9137f1ac-22bd-4339-9993-a252cf6c3cdd\",\"seq\":7,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"The New Leave Request form is open with no entered dates; submit will use Personal leave for Dec 14–15, 2026 and reason “Evaluation data — Employee Explore”.\",\"createdAt\":\"2026-09-20T21:17:47.607Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"action\",\"capture\":\"none\",\"look\":{\"item\":{\"id\":\"6929e5a6-f440-4b31-9ea7-1e76b82d7a1f\"},\"kind\":\"attempting\",\"resourceRef\":\"leave-request:evaluation-2026-12-14\"}},\"support\":\"missing\"}},{\"id\":\"10667adc-eff3-4d70-91c0-72f41bb88a5c\",\"seq\":8,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Submitting the Personal leave form after the date fields did not retain the attempted ISO values showed “Please fill in all required fields.” and remained on New leave request; no leave request was created.\",\"createdAt\":\"2026-09-20T21:18:45.905Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"action\",\"capture\":\"none\",\"look\":{\"item\":{\"id\":\"6929e5a6-f440-4b31-9ea7-1e76b82d7a1f\"},\"kind\":\"exercised\",\"attemptObservationId\":\"9137f1ac-22bd-4339-9993-a252cf6c3cdd\"}},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"name\":\"New Leave Request\"},\"count\":3,\"firstSeq\":6,\"lastSeq\":8}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "anchor": {
+          "kind": "surface",
+          "record": {
+            "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+            "name": "New Leave Request",
+            "locator": "/leave/new",
+            "testFolder": "new-leave-request",
+            "createdAt": "2026-09-20T21:17:04.094Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "71220e38-4f41-484c-ac94-ba1506766a56"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+              "position": 2
+            },
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+                "name": "New Leave Request"
+              },
+              "observations": [
+                {
+                  "id": "94bde7dd-5add-4be1-81e6-fb86847cf35d",
+                  "seq": 6,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "New leave request offers Vacation, Sick, and Personal types; required Start date and End date; optional Reason; Submit request and Cancel. It states weekends are not counted toward leave.",
+                  "createdAt": "2026-09-20T21:17:19.320Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "a80f9307-4dfa-4ff0-812b-22876be94bb3"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "a287a880-7c46-459c-9f7c-90b70c136c3b"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "3569e7fc-c15b-416f-a816-5f1e8195223d"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "f48d5014-01d2-4a5c-844c-92bf75fc096e"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "6929e5a6-f440-4b31-9ea7-1e76b82d7a1f"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "0d8169d8-9c09-4541-b721-31d9d7e67c9e"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "3c7f0284-ca53-45ec-8237-a39cb73fed0d"
+                          },
+                          "ruleFor": {
+                            "id": "a287a880-7c46-459c-9f7c-90b70c136c3b"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                },
+                {
+                  "id": "9137f1ac-22bd-4339-9993-a252cf6c3cdd",
+                  "seq": 7,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "The New Leave Request form is open with no entered dates; submit will use Personal leave for Dec 14–15, 2026 and reason “Evaluation data — Employee Explore”.",
+                  "createdAt": "2026-09-20T21:17:47.607Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "action",
+                      "capture": "none",
+                      "look": {
+                        "item": {
+                          "id": "6929e5a6-f440-4b31-9ea7-1e76b82d7a1f"
+                        },
+                        "kind": "attempting",
+                        "resourceRef": "leave-request:evaluation-2026-12-14"
+                      }
+                    },
+                    "support": "missing"
+                  }
+                },
+                {
+                  "id": "10667adc-eff3-4d70-91c0-72f41bb88a5c",
+                  "seq": 8,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Submitting the Personal leave form after the date fields did not retain the attempted ISO values showed “Please fill in all required fields.” and remained on New leave request; no leave request was created.",
+                  "createdAt": "2026-09-20T21:18:45.905Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "action",
+                      "capture": "none",
+                      "look": {
+                        "item": {
+                          "id": "6929e5a6-f440-4b31-9ea7-1e76b82d7a1f"
+                        },
+                        "kind": "exercised",
+                        "attemptObservationId": "9137f1ac-22bd-4339-9993-a252cf6c3cdd"
+                      }
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+                "name": "New Leave Request"
+              },
+              "count": 3,
+              "firstSeq": 6,
+              "lastSeq": 8
+            }
+          ],
+          "complete": true
+        }
+      }
+    },
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "e72a596c-21ed-46fd-9d5e-54100d045d87"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "71220e38-4f41-484c-ac94-ba1506766a56"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"e72a596c-21ed-46fd-9d5e-54100d045d87\",\"name\":\"Timesheet\",\"locator\":\"/timesheet\",\"testFolder\":\"timesheet\",\"createdAt\":\"2026-09-20T21:18:50.169Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"71220e38-4f41-484c-ac94-ba1506766a56\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"e72a596c-21ed-46fd-9d5e-54100d045d87\",\"name\":\"Timesheet\"},\"observations\":[{\"id\":\"449903e1-cc44-407b-940a-a40f33d5c6d2\",\"seq\":9,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Timesheet shows a draft for week of Sep 14, 2026 with Monday through Sunday hour inputs all at 0, total 0 h, and Save draft and Submit week actions.\",\"createdAt\":\"2026-09-20T21:19:06.515Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"075e3bb1-86e2-44ad-bea9-07d1fedf288b\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"6655ca0d-59c6-4387-ae85-c740538347ea\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"7d34831d-67eb-45d5-a4dc-bf7d975f661d\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"9bfb60ff-f280-4239-9b98-10d8352d5011\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"22e72712-9edf-4b48-bba3-e2e28fbbeba1\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"999ac5ce-24ed-438c-9e95-9545af245168\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"9f602705-e778-4267-974f-1eeacce53cf2\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"df2f67bf-accd-4dd4-bed6-57efadf67cf8\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"68eb92fa-f409-4dad-a5b0-134df8d5b061\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"e72a596c-21ed-46fd-9d5e-54100d045d87\",\"name\":\"Timesheet\"},\"count\":1,\"firstSeq\":9,\"lastSeq\":9}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "anchor": {
+          "kind": "surface",
+          "record": {
+            "id": "e72a596c-21ed-46fd-9d5e-54100d045d87",
+            "name": "Timesheet",
+            "locator": "/timesheet",
+            "testFolder": "timesheet",
+            "createdAt": "2026-09-20T21:18:50.169Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "71220e38-4f41-484c-ac94-ba1506766a56"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "e72a596c-21ed-46fd-9d5e-54100d045d87",
+                "name": "Timesheet"
+              },
+              "observations": [
+                {
+                  "id": "449903e1-cc44-407b-940a-a40f33d5c6d2",
+                  "seq": 9,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Timesheet shows a draft for week of Sep 14, 2026 with Monday through Sunday hour inputs all at 0, total 0 h, and Save draft and Submit week actions.",
+                  "createdAt": "2026-09-20T21:19:06.515Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "075e3bb1-86e2-44ad-bea9-07d1fedf288b"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "6655ca0d-59c6-4387-ae85-c740538347ea"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "7d34831d-67eb-45d5-a4dc-bf7d975f661d"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "9bfb60ff-f280-4239-9b98-10d8352d5011"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "22e72712-9edf-4b48-bba3-e2e28fbbeba1"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "999ac5ce-24ed-438c-9e95-9545af245168"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "9f602705-e778-4267-974f-1eeacce53cf2"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "df2f67bf-accd-4dd4-bed6-57efadf67cf8"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "68eb92fa-f409-4dad-a5b0-134df8d5b061"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "e72a596c-21ed-46fd-9d5e-54100d045d87",
+                "name": "Timesheet"
+              },
+              "count": 1,
+              "firstSeq": 9,
+              "lastSeq": 9
+            }
+          ],
+          "complete": true
+        }
+      }
+    },
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "dd60af34-f72a-4448-9bf3-86a2dcb68663"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "71220e38-4f41-484c-ac94-ba1506766a56"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"dd60af34-f72a-4448-9bf3-86a2dcb68663\",\"name\":\"My Profile\",\"locator\":\"/profile\",\"testFolder\":\"my-profile\",\"createdAt\":\"2026-09-20T21:19:31.298Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"71220e38-4f41-484c-ac94-ba1506766a56\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"dd60af34-f72a-4448-9bf3-86a2dcb68663\",\"name\":\"My Profile\"},\"observations\":[{\"id\":\"fcb4d320-483d-4722-a656-76a58661f786\",\"seq\":10,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"My profile displays editable Full name, Phone, and Emergency contact fields, an Upload photo action, and Save changes. Email is shown disabled/read-only.\",\"createdAt\":\"2026-09-20T21:19:46.501Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"6b124271-cadc-4216-8c1d-294046f23f7e\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"bf661fc0-3264-4e0c-919e-b36f9ff8926f\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"84c9953f-1529-4b8a-a7eb-34b02b76590c\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"185b36ee-b718-422d-8e51-1dac075373c1\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"5fef331d-5f9a-467a-af2b-b47111998c6e\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"176971e9-c9e4-4146-bc4e-ce97292aeab6\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"dd60af34-f72a-4448-9bf3-86a2dcb68663\",\"name\":\"My Profile\"},\"count\":1,\"firstSeq\":10,\"lastSeq\":10}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "anchor": {
+          "kind": "surface",
+          "record": {
+            "id": "dd60af34-f72a-4448-9bf3-86a2dcb68663",
+            "name": "My Profile",
+            "locator": "/profile",
+            "testFolder": "my-profile",
+            "createdAt": "2026-09-20T21:19:31.298Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "71220e38-4f41-484c-ac94-ba1506766a56"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "dd60af34-f72a-4448-9bf3-86a2dcb68663",
+                "name": "My Profile"
+              },
+              "observations": [
+                {
+                  "id": "fcb4d320-483d-4722-a656-76a58661f786",
+                  "seq": 10,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "My profile displays editable Full name, Phone, and Emergency contact fields, an Upload photo action, and Save changes. Email is shown disabled/read-only.",
+                  "createdAt": "2026-09-20T21:19:46.501Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "6b124271-cadc-4216-8c1d-294046f23f7e"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "bf661fc0-3264-4e0c-919e-b36f9ff8926f"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "84c9953f-1529-4b8a-a7eb-34b02b76590c"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "185b36ee-b718-422d-8e51-1dac075373c1"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "5fef331d-5f9a-467a-af2b-b47111998c6e"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "176971e9-c9e4-4146-bc4e-ce97292aeab6"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "dd60af34-f72a-4448-9bf3-86a2dcb68663",
+                "name": "My Profile"
+              },
+              "count": 1,
+              "firstSeq": 10,
+              "lastSeq": 10
+            }
+          ],
+          "complete": true
+        }
+      }
+    },
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "b58c10fa-ddae-47cc-92bc-62733339ea61"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "71220e38-4f41-484c-ac94-ba1506766a56"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"b58c10fa-ddae-47cc-92bc-62733339ea61\",\"name\":\"Directory\",\"locator\":\"/directory\",\"testFolder\":\"directory\",\"createdAt\":\"2026-09-20T21:19:52.298Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"71220e38-4f41-484c-ac94-ba1506766a56\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"b58c10fa-ddae-47cc-92bc-62733339ea61\",\"name\":\"Directory\"},\"observations\":[{\"id\":\"d9165682-8dc4-4e01-a837-ae129bd72166\",\"seq\":11,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Directory loads 28 employees, shows searchable name and department filters (Engineering, Sales, Marketing, Finance, HR), a sortable Name column, page 1 of 3, disabled Previous and enabled Next. Results show employee names, departments, titles, and email addresses.\",\"createdAt\":\"2026-09-20T21:20:18.572Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"ac0e5ae4-dd28-4f68-bfcf-90a9c7a90e78\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"2231260e-791f-4800-891d-303e87c2fc82\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"9582ab25-1f66-4453-abdb-feacf91b16c3\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"c0128846-27f9-4693-88e1-b96262935943\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"21c9f1c3-7ae4-4c01-9855-50915328d931\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"b58c10fa-ddae-47cc-92bc-62733339ea61\",\"name\":\"Directory\"},\"count\":1,\"firstSeq\":11,\"lastSeq\":11}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "anchor": {
+          "kind": "surface",
+          "record": {
+            "id": "b58c10fa-ddae-47cc-92bc-62733339ea61",
+            "name": "Directory",
+            "locator": "/directory",
+            "testFolder": "directory",
+            "createdAt": "2026-09-20T21:19:52.298Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "71220e38-4f41-484c-ac94-ba1506766a56"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "b58c10fa-ddae-47cc-92bc-62733339ea61",
+                "name": "Directory"
+              },
+              "observations": [
+                {
+                  "id": "d9165682-8dc4-4e01-a837-ae129bd72166",
+                  "seq": 11,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Directory loads 28 employees, shows searchable name and department filters (Engineering, Sales, Marketing, Finance, HR), a sortable Name column, page 1 of 3, disabled Previous and enabled Next. Results show employee names, departments, titles, and email addresses.",
+                  "createdAt": "2026-09-20T21:20:18.572Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "ac0e5ae4-dd28-4f68-bfcf-90a9c7a90e78"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "2231260e-791f-4800-891d-303e87c2fc82"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "9582ab25-1f66-4453-abdb-feacf91b16c3"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "c0128846-27f9-4693-88e1-b96262935943"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "21c9f1c3-7ae4-4c01-9855-50915328d931"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "b58c10fa-ddae-47cc-92bc-62733339ea61",
+                "name": "Directory"
+              },
+              "count": 1,
+              "firstSeq": 11,
+              "lastSeq": 11
+            }
+          ],
+          "complete": true
+        }
+      }
+    },
+    {
+      "args": {
+        "anchor": {
+          "kind": "journey",
+          "id": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "71220e38-4f41-484c-ac94-ba1506766a56"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"65afd8f6-1e45-4caf-b980-8af41714ae38\",\"anchor\":{\"kind\":\"journey\",\"record\":{\"id\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"name\":\"Request leave\",\"testFolder\":\"request-leave\",\"createdAt\":\"2026-09-20T21:20:18.604Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"71220e38-4f41-484c-ac94-ba1506766a56\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"position\":0,\"explanation\":{\"actions\":[{\"description\":\"Sign in as the Employee\",\"observationIds\":[\"bb4a5c12-5800-46de-9433-8d0f7aabd86c\",\"c3ac3ebe-b265-45e4-a545-a81cdad8c1e7\"],\"result\":{\"status\":\"observed\",\"description\":\"Reached Employee dashboard.\"}}]}},{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"position\":1,\"explanation\":{\"actions\":[{\"description\":\"Open My Leave\",\"observationIds\":[\"f52849a6-2708-4d3a-a623-e7d5907d25f6\"],\"result\":{\"status\":\"observed\",\"description\":\"Viewed balance and request history.\"}}]}},{\"kind\":\"journey_surface\",\"journeyId\":\"7e23b7ce-c2d8-43cd-9521-611abfcbb41c\",\"surfaceId\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"position\":2,\"explanation\":{\"actions\":[{\"description\":\"Submit leave form with missing required dates\",\"observationIds\":[\"94bde7dd-5add-4be1-81e6-fb86847cf35d\",\"10667adc-eff3-4d70-91c0-72f41bb88a5c\"],\"result\":{\"status\":\"observed\",\"description\":\"Stayed on form with required-fields message; no request was created.\"}}]}},{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"name\":\"Login\"},\"observations\":[{\"id\":\"9e835296-994b-4e5f-8a8f-324ab9a5552c\",\"seq\":1,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Login shows Username and Password fields and a Sign in button; demo accounts list emily.dawson as Employee.\",\"createdAt\":\"2026-09-20T21:14:02.188Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"905476a3-6e05-4bbd-9f93-16c3a8a2221a\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"e586e037-9957-43a5-b8e9-66ba7b36fa0d\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"cd0c9167-3526-4e77-891e-9c63e0d1c4ce\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}},{\"id\":\"bb4a5c12-5800-46de-9433-8d0f7aabd86c\",\"seq\":2,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"The signed-out Login page has empty Username and Password fields and Sign in is available.\",\"createdAt\":\"2026-09-20T21:14:24.357Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"action\",\"capture\":\"none\",\"look\":{\"item\":{\"id\":\"cd0c9167-3526-4e77-891e-9c63e0d1c4ce\"},\"kind\":\"attempting\",\"resourceRef\":\"session:employee\"}},\"support\":\"missing\"}},{\"id\":\"c3ac3ebe-b265-45e4-a545-a81cdad8c1e7\",\"seq\":3,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Signing in as emily.dawson reached the Employee dashboard, which identifies Emily Dawson and shows navigation.\",\"createdAt\":\"2026-09-20T21:14:54.515Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"action\",\"capture\":\"none\",\"look\":{\"item\":{\"id\":\"cd0c9167-3526-4e77-891e-9c63e0d1c4ce\"},\"kind\":\"exercised\",\"attemptObservationId\":\"bb4a5c12-5800-46de-9433-8d0f7aabd86c\"}},\"support\":\"missing\"}}]},{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"name\":\"My Leave\"},\"observations\":[{\"id\":\"f52849a6-2708-4d3a-a623-e7d5907d25f6\",\"seq\":5,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"My leave shows available balance 18 days and request history with an approved Vacation entry dated Aug 18–19, 2026 for 3 days and manager comment “Approved – enjoy!”. It offers New request.\",\"createdAt\":\"2026-09-20T21:16:42.651Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"21d2761a-20cc-49b2-a474-3f418ddbee02\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"c413cdfd-d1d8-4e7e-bf67-bcae333061f0\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"8ce6fae3-e9e2-4504-a946-e567a1238302\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}}]},{\"kind\":\"observations\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"name\":\"New Leave Request\"},\"observations\":[{\"id\":\"94bde7dd-5add-4be1-81e6-fb86847cf35d\",\"seq\":6,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"New leave request offers Vacation, Sick, and Personal types; required Start date and End date; optional Reason; Submit request and Cancel. It states weekends are not counted toward leave.\",\"createdAt\":\"2026-09-20T21:17:19.320Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"a80f9307-4dfa-4ff0-812b-22876be94bb3\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"a287a880-7c46-459c-9f7c-90b70c136c3b\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"3569e7fc-c15b-416f-a816-5f1e8195223d\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"f48d5014-01d2-4a5c-844c-92bf75fc096e\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"6929e5a6-f440-4b31-9ea7-1e76b82d7a1f\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"0d8169d8-9c09-4541-b721-31d9d7e67c9e\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"3c7f0284-ca53-45ec-8237-a39cb73fed0d\"},\"ruleFor\":{\"id\":\"a287a880-7c46-459c-9f7c-90b70c136c3b\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}},{\"id\":\"9137f1ac-22bd-4339-9993-a252cf6c3cdd\",\"seq\":7,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"The New Leave Request form is open with no entered dates; submit will use Personal leave for Dec 14–15, 2026 and reason “Evaluation data — Employee Explore”.\",\"createdAt\":\"2026-09-20T21:17:47.607Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"action\",\"capture\":\"none\",\"look\":{\"item\":{\"id\":\"6929e5a6-f440-4b31-9ea7-1e76b82d7a1f\"},\"kind\":\"attempting\",\"resourceRef\":\"leave-request:evaluation-2026-12-14\"}},\"support\":\"missing\"}},{\"id\":\"10667adc-eff3-4d70-91c0-72f41bb88a5c\",\"seq\":8,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"Submitting the Personal leave form after the date fields did not retain the attempted ISO values showed “Please fill in all required fields.” and remained on New leave request; no leave request was created.\",\"createdAt\":\"2026-09-20T21:18:45.905Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"action\",\"capture\":\"none\",\"look\":{\"item\":{\"id\":\"6929e5a6-f440-4b31-9ea7-1e76b82d7a1f\"},\"kind\":\"exercised\",\"attemptObservationId\":\"9137f1ac-22bd-4339-9993-a252cf6c3cdd\"}},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"8176eee5-3185-4c4d-bbc1-a4a5317de3da\",\"name\":\"Login\"},\"count\":3,\"firstSeq\":1,\"lastSeq\":3},{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"7bb1ff6c-53b0-4f64-a77b-1a819eab41ed\",\"name\":\"My Leave\"},\"count\":1,\"firstSeq\":5,\"lastSeq\":5},{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"71220e38-4f41-484c-ac94-ba1506766a56\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"4fae7b8b-72c8-419c-a886-ca9c53c8ef80\",\"name\":\"New Leave Request\"},\"count\":3,\"firstSeq\":6,\"lastSeq\":8}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "65afd8f6-1e45-4caf-b980-8af41714ae38",
+        "anchor": {
+          "kind": "journey",
+          "record": {
+            "id": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+            "name": "Request leave",
+            "testFolder": "request-leave",
+            "createdAt": "2026-09-20T21:20:18.604Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "71220e38-4f41-484c-ac94-ba1506766a56"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+              "position": 0,
+              "explanation": {
+                "actions": [
+                  {
+                    "description": "Sign in as the Employee",
+                    "observationIds": [
+                      "bb4a5c12-5800-46de-9433-8d0f7aabd86c",
+                      "c3ac3ebe-b265-45e4-a545-a81cdad8c1e7"
+                    ],
+                    "result": {
+                      "status": "observed",
+                      "description": "Reached Employee dashboard."
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+              "position": 1,
+              "explanation": {
+                "actions": [
+                  {
+                    "description": "Open My Leave",
+                    "observationIds": [
+                      "f52849a6-2708-4d3a-a623-e7d5907d25f6"
+                    ],
+                    "result": {
+                      "status": "observed",
+                      "description": "Viewed balance and request history."
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "kind": "journey_surface",
+              "journeyId": "7e23b7ce-c2d8-43cd-9521-611abfcbb41c",
+              "surfaceId": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+              "position": 2,
+              "explanation": {
+                "actions": [
+                  {
+                    "description": "Submit leave form with missing required dates",
+                    "observationIds": [
+                      "94bde7dd-5add-4be1-81e6-fb86847cf35d",
+                      "10667adc-eff3-4d70-91c0-72f41bb88a5c"
+                    ],
+                    "result": {
+                      "status": "observed",
+                      "description": "Stayed on form with required-fields message; no request was created."
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+                "name": "Login"
+              },
+              "observations": [
+                {
+                  "id": "9e835296-994b-4e5f-8a8f-324ab9a5552c",
+                  "seq": 1,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Login shows Username and Password fields and a Sign in button; demo accounts list emily.dawson as Employee.",
+                  "createdAt": "2026-09-20T21:14:02.188Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "905476a3-6e05-4bbd-9f93-16c3a8a2221a"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "e586e037-9957-43a5-b8e9-66ba7b36fa0d"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "cd0c9167-3526-4e77-891e-9c63e0d1c4ce"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                },
+                {
+                  "id": "bb4a5c12-5800-46de-9433-8d0f7aabd86c",
+                  "seq": 2,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "The signed-out Login page has empty Username and Password fields and Sign in is available.",
+                  "createdAt": "2026-09-20T21:14:24.357Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "action",
+                      "capture": "none",
+                      "look": {
+                        "item": {
+                          "id": "cd0c9167-3526-4e77-891e-9c63e0d1c4ce"
+                        },
+                        "kind": "attempting",
+                        "resourceRef": "session:employee"
+                      }
+                    },
+                    "support": "missing"
+                  }
+                },
+                {
+                  "id": "c3ac3ebe-b265-45e4-a545-a81cdad8c1e7",
+                  "seq": 3,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Signing in as emily.dawson reached the Employee dashboard, which identifies Emily Dawson and shows navigation.",
+                  "createdAt": "2026-09-20T21:14:54.515Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "action",
+                      "capture": "none",
+                      "look": {
+                        "item": {
+                          "id": "cd0c9167-3526-4e77-891e-9c63e0d1c4ce"
+                        },
+                        "kind": "exercised",
+                        "attemptObservationId": "bb4a5c12-5800-46de-9433-8d0f7aabd86c"
+                      }
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+                "name": "My Leave"
+              },
+              "observations": [
+                {
+                  "id": "f52849a6-2708-4d3a-a623-e7d5907d25f6",
+                  "seq": 5,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "My leave shows available balance 18 days and request history with an approved Vacation entry dated Aug 18–19, 2026 for 3 days and manager comment “Approved – enjoy!”. It offers New request.",
+                  "createdAt": "2026-09-20T21:16:42.651Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "21d2761a-20cc-49b2-a474-3f418ddbee02"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "c413cdfd-d1d8-4e7e-bf67-bcae333061f0"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "8ce6fae3-e9e2-4504-a946-e567a1238302"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+                "name": "New Leave Request"
+              },
+              "observations": [
+                {
+                  "id": "94bde7dd-5add-4be1-81e6-fb86847cf35d",
+                  "seq": 6,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "New leave request offers Vacation, Sick, and Personal types; required Start date and End date; optional Reason; Submit request and Cancel. It states weekends are not counted toward leave.",
+                  "createdAt": "2026-09-20T21:17:19.320Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "inventory",
+                      "capture": "none",
+                      "looks": [
+                        {
+                          "item": {
+                            "id": "a80f9307-4dfa-4ff0-812b-22876be94bb3"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "a287a880-7c46-459c-9f7c-90b70c136c3b"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "3569e7fc-c15b-416f-a816-5f1e8195223d"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "f48d5014-01d2-4a5c-844c-92bf75fc096e"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "6929e5a6-f440-4b31-9ea7-1e76b82d7a1f"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "0d8169d8-9c09-4541-b721-31d9d7e67c9e"
+                          },
+                          "kind": "offered"
+                        },
+                        {
+                          "item": {
+                            "id": "3c7f0284-ca53-45ec-8237-a39cb73fed0d"
+                          },
+                          "ruleFor": {
+                            "id": "a287a880-7c46-459c-9f7c-90b70c136c3b"
+                          },
+                          "kind": "offered"
+                        }
+                      ]
+                    },
+                    "support": "missing"
+                  }
+                },
+                {
+                  "id": "9137f1ac-22bd-4339-9993-a252cf6c3cdd",
+                  "seq": 7,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "The New Leave Request form is open with no entered dates; submit will use Personal leave for Dec 14–15, 2026 and reason “Evaluation data — Employee Explore”.",
+                  "createdAt": "2026-09-20T21:17:47.607Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "action",
+                      "capture": "none",
+                      "look": {
+                        "item": {
+                          "id": "6929e5a6-f440-4b31-9ea7-1e76b82d7a1f"
+                        },
+                        "kind": "attempting",
+                        "resourceRef": "leave-request:evaluation-2026-12-14"
+                      }
+                    },
+                    "support": "missing"
+                  }
+                },
+                {
+                  "id": "10667adc-eff3-4d70-91c0-72f41bb88a5c",
+                  "seq": 8,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "Submitting the Personal leave form after the date fields did not retain the attempted ISO values showed “Please fill in all required fields.” and remained on New leave request; no leave request was created.",
+                  "createdAt": "2026-09-20T21:18:45.905Z",
+                  "inspection": {
+                    "platform": "browser",
+                    "report": {
+                      "kind": "action",
+                      "capture": "none",
+                      "look": {
+                        "item": {
+                          "id": "6929e5a6-f440-4b31-9ea7-1e76b82d7a1f"
+                        },
+                        "kind": "exercised",
+                        "attemptObservationId": "9137f1ac-22bd-4339-9993-a252cf6c3cdd"
+                      }
+                    },
+                    "support": "missing"
+                  }
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+                "name": "Login"
+              },
+              "count": 3,
+              "firstSeq": 1,
+              "lastSeq": 3
+            },
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+                "name": "My Leave"
+              },
+              "count": 1,
+              "firstSeq": 5,
+              "lastSeq": 5
+            },
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "71220e38-4f41-484c-ac94-ba1506766a56",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+                "name": "New Leave Request"
+              },
+              "count": 3,
+              "firstSeq": 6,
+              "lastSeq": 8
+            }
+          ],
+          "complete": true
+        }
+      }
+    }
+  ]
+}

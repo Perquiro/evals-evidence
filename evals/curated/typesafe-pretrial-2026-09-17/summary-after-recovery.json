@@ -1,0 +1,53 @@
+{
+  "traces": 24,
+  "api_calls": 18,
+  "statuses": {
+    "advice_available": 15,
+    "recovery_precedence": 3,
+    "human_priority": 3,
+    "weak_candidates": 3
+  },
+  "http_statuses": {
+    "None": 18
+  },
+  "request_latency_ms": {
+    "min": 767.6,
+    "median": 813.45,
+    "max": 2198.5
+  },
+  "latency_interpretation": "Successful API-call elapsed time, including client/network overhead, not full Explore latency.",
+  "fixture_expectations_met": 24,
+  "fixture_expectations_not_met": 0,
+  "fixture_expectations_unavailable": 0,
+  "usage_reported_calls": 18,
+  "reported_input_tokens": 38184,
+  "reported_output_tokens": 2760,
+  "ordinary_planners": {
+    "a": {
+      "selections": [
+        "c1",
+        "c1",
+        "c2",
+        "c1",
+        "c2",
+        null,
+        "c9",
+        "c1"
+      ]
+    },
+    "b": {
+      "selections": [
+        "c1",
+        "c1",
+        "c2",
+        "c1",
+        "c2",
+        null,
+        "c9",
+        "c1"
+      ]
+    }
+  },
+  "estimated_reported_input_cost_usd": 0.001603728,
+  "billing_note": "Published rate estimate for reported input only, not an invoice. Unknown usage on failed requests is not zero. Agent cost excluded."
+}

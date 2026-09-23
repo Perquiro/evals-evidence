@@ -1,0 +1,20 @@
+{
+  "requestToken": "86e6c677-1e6b-40ce-8c72-6617e16e45cc",
+  "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [
+    { "key": "demo-sessions", "name": "Demo sessions", "kind": "information" },
+    { "key": "response-navigation", "name": "Response navigation", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /docs stated that X-Actor selects the Reader or Librarian local demo session with no credentials, and that responses expose links and actions with HTTP methods and JSON fields; an empty object is valid when no fields are listed.",
+      "looks": [
+        { "item": { "key": "demo-sessions" }, "kind": "offered" },
+        { "item": { "key": "response-navigation" }, "kind": "offered" }
+      ]
+    }
+  ]
+}

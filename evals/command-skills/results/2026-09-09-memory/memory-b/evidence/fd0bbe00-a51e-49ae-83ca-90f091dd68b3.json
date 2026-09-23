@@ -1,0 +1,19 @@
+{
+  "id": "fd0bbe00-a51e-49ae-83ca-90f091dd68b3",
+  "kind": "agent_reported",
+  "containerPath": ".perquiro/evidence/fd0bbe00-a51e-49ae-83ca-90f091dd68b3/",
+  "createdAt": "2026-09-09T07:40:18.118Z",
+  "observationIds": [
+    "c92514d1-a366-4532-9d0e-e53800a42d33",
+    "e9ef3265-edde-4922-a208-40e84825371b",
+    "925a0c5a-289e-4e35-9231-b7bb0faed144",
+    "65b2c707-de1f-4c79-bce5-ff0d5cc9d454",
+    "e7f91063-aaa5-43d2-802c-ca6eeb13187d",
+    "2e493d65-66c0-4b00-abba-76707f8803e1",
+    "fdb641a4-4082-4fb5-95cd-02141cb61baa",
+    "54b3a8b5-ab01-49b6-82c1-3434806a9e09",
+    "e1f616cb-3827-4a8e-bf2e-06d67466c6fe",
+    "9914bc96-dc78-474c-be9e-c768b2541add",
+    "7b9a73b7-44cb-4a72-839d-ebb522d9fef4"
+  ]
+}

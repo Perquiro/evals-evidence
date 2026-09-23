@@ -1,0 +1,5 @@
+{
+  "request": {"method": "GET", "url": "http://127.0.0.1:54824/books/102", "actor": "Reader"},
+  "status": 200,
+  "body": {"id": "102", "title": "Garden Notes", "available": false, "actions": [{"label": "Reserve book", "method": "POST", "href": "/holds", "json": {"bookId": "102"}, "actor": "Reader"}]}
+}

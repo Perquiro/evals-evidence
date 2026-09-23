@@ -1,0 +1,501 @@
+{
+  "original": "app-server-probe.raw.json",
+  "sha256": "dbc87584374112a219db5942b367f73d49c4e4978c27c531d05007e62cca7f08",
+  "events": [
+    {
+      "direction": "sent",
+      "msg": {
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "perquiro_eval_preflight",
+            "version": "1"
+          },
+          "capabilities": {
+            "experimentalApi": true
+          }
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "id": 1,
+        "result": {
+          "userAgent": "Codex Desktop/0.149.0 (Windows 10.0.26200; x86_64) dumb (perquiro_eval_preflight; 1)",
+          "codexHome": "C:\\Users\\mathi\\.codex",
+          "platformFamily": "windows",
+          "platformOs": "windows"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "remoteControl/status/changed",
+        "params": {
+          "status": "disabled",
+          "serverName": "Home",
+          "installationId": "873fd056-6040-4861-aba0-4446ff05d528",
+          "environmentId": null
+        },
+        "emittedAtMs": 1789934591293
+      }
+    },
+    {
+      "direction": "sent",
+      "msg": {
+        "method": "initialized",
+        "params": {}
+      }
+    },
+    {
+      "direction": "sent",
+      "msg": {
+        "id": 2,
+        "method": "thread/start",
+        "params": {
+          "model": "gpt-5.6-terra",
+          "allowProviderModelFallback": false,
+          "serviceTier": "default",
+          "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\host-probe-room",
+          "ephemeral": true,
+          "approvalPolicy": "never",
+          "sandbox": "read-only",
+          "baseInstructions": "Respond to the supplied request. Do not use tools.",
+          "config": {
+            "model_reasoning_effort": "low",
+            "project_doc_max_bytes": 0,
+            "mcp_servers": {},
+            "web_search": "disabled"
+          },
+          "environments": [],
+          "dynamicTools": []
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "id": 2,
+        "result": {
+          "thread": {
+            "id": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+            "extra": null,
+            "sessionId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+            "forkedFromId": null,
+            "parentThreadId": null,
+            "preview": "",
+            "ephemeral": true,
+            "section": null,
+            "sectionEnteredAt": null,
+            "projectId": null,
+            "historyMode": "legacy",
+            "modelProvider": "openai",
+            "createdAt": 1789934591,
+            "updatedAt": 1789934591,
+            "recencyAt": 1789934591,
+            "status": {
+              "type": "idle"
+            },
+            "path": null,
+            "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\host-probe-room",
+            "cliVersion": "0.149.0",
+            "source": "vscode",
+            "canAcceptDirectInput": true,
+            "threadSource": null,
+            "agentNickname": null,
+            "agentRole": null,
+            "gitInfo": null,
+            "name": null,
+            "turns": []
+          },
+          "model": "gpt-5.6-terra",
+          "modelProvider": "openai",
+          "serviceTier": "default",
+          "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\host-probe-room",
+          "runtimeWorkspaceRoots": [],
+          "instructionSources": [],
+          "approvalPolicy": "never",
+          "approvalsReviewer": "user",
+          "sandbox": {
+            "type": "readOnly",
+            "networkAccess": false
+          },
+          "activePermissionProfile": null,
+          "reasoningEffort": "low",
+          "multiAgentMode": "explicitRequestOnly"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "thread/started",
+        "params": {
+          "thread": {
+            "id": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+            "extra": null,
+            "sessionId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+            "forkedFromId": null,
+            "parentThreadId": null,
+            "preview": "",
+            "ephemeral": true,
+            "section": null,
+            "sectionEnteredAt": null,
+            "projectId": null,
+            "historyMode": "legacy",
+            "modelProvider": "openai",
+            "createdAt": 1789934591,
+            "updatedAt": 1789934591,
+            "recencyAt": 1789934591,
+            "status": {
+              "type": "idle"
+            },
+            "path": null,
+            "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\host-probe-room",
+            "cliVersion": "0.149.0",
+            "source": "vscode",
+            "canAcceptDirectInput": true,
+            "threadSource": null,
+            "agentNickname": null,
+            "agentRole": null,
+            "gitInfo": null,
+            "name": null,
+            "turns": []
+          }
+        },
+        "emittedAtMs": 1789934591845
+      }
+    },
+    {
+      "direction": "sent",
+      "msg": {
+        "id": 3,
+        "method": "turn/start",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "input": [
+            {
+              "type": "text",
+              "text": "Return exactly OK.",
+              "text_elements": []
+            }
+          ],
+          "model": "gpt-5.6-terra",
+          "effort": "low"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "mcpServer/startupStatus/updated",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "name": "node_repl",
+          "status": "starting",
+          "error": null,
+          "failureReason": null
+        },
+        "emittedAtMs": 1789934591845
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "mcpServer/startupStatus/updated",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "name": "perquiro",
+          "status": "starting",
+          "error": null,
+          "failureReason": null
+        },
+        "emittedAtMs": 1789934591845
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "id": 3,
+        "result": {
+          "turn": {
+            "id": "01a0c06a-5f67-7052-9db4-20e724f58613",
+            "items": [],
+            "itemsView": "notLoaded",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": null,
+            "completedAt": null,
+            "durationMs": null
+          }
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "thread/status/changed",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "status": {
+            "type": "active",
+            "activeFlags": []
+          }
+        },
+        "emittedAtMs": 1789934591861
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "turn/started",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "turn": {
+            "id": "01a0c06a-5f67-7052-9db4-20e724f58613",
+            "items": [],
+            "itemsView": "notLoaded",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": 1789934591,
+            "completedAt": null,
+            "durationMs": null
+          }
+        },
+        "emittedAtMs": 1789934591861
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "mcpServer/startupStatus/updated",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "name": "node_repl",
+          "status": "ready",
+          "error": null,
+          "failureReason": null
+        },
+        "emittedAtMs": 1789934591863
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "mcpServer/startupStatus/updated",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "name": "perquiro",
+          "status": "ready",
+          "error": null,
+          "failureReason": null
+        },
+        "emittedAtMs": 1789934592127
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "userMessage",
+            "id": "01a0c06a-65b7-7420-b935-1232b2c9a5a3",
+            "clientId": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "Return exactly OK.",
+                "text_elements": []
+              }
+            ]
+          },
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "turnId": "01a0c06a-5f67-7052-9db4-20e724f58613",
+          "startedAtMs": 1789934593463
+        },
+        "emittedAtMs": 1789934593463
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "userMessage",
+            "id": "01a0c06a-65b7-7420-b935-1232b2c9a5a3",
+            "clientId": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "Return exactly OK.",
+                "text_elements": []
+              }
+            ]
+          },
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "turnId": "01a0c06a-5f67-7052-9db4-20e724f58613",
+          "completedAtMs": 1789934593463
+        },
+        "emittedAtMs": 1789934593463
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "agentMessage",
+            "id": "msg_0ee7ba8b5c6d038e016ab03c021d8087d29b218946e5b04613",
+            "text": "",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          },
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "turnId": "01a0c06a-5f67-7052-9db4-20e724f58613",
+          "startedAtMs": 1789934594659
+        },
+        "emittedAtMs": 1789934594659
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "turnId": "01a0c06a-5f67-7052-9db4-20e724f58613",
+          "itemId": "msg_0ee7ba8b5c6d038e016ab03c021d8087d29b218946e5b04613",
+          "delta": "OK"
+        },
+        "emittedAtMs": 1789934594661
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "agentMessage",
+            "id": "msg_0ee7ba8b5c6d038e016ab03c021d8087d29b218946e5b04613",
+            "text": "OK",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          },
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "turnId": "01a0c06a-5f67-7052-9db4-20e724f58613",
+          "completedAtMs": 1789934595359
+        },
+        "emittedAtMs": 1789934595359
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "thread/tokenUsage/updated",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "turnId": "01a0c06a-5f67-7052-9db4-20e724f58613",
+          "tokenUsage": {
+            "total": {
+              "totalTokens": 8093,
+              "inputTokens": 8088,
+              "cachedInputTokens": 0,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 5,
+              "reasoningOutputTokens": 0
+            },
+            "last": {
+              "totalTokens": 8093,
+              "inputTokens": 8088,
+              "cachedInputTokens": 0,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 5,
+              "reasoningOutputTokens": 0
+            },
+            "modelContextWindow": 258400
+          }
+        },
+        "emittedAtMs": 1789934595370
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "account/rateLimits/updated",
+        "params": {
+          "rateLimits": {
+            "limitId": "codex",
+            "limitName": null,
+            "primary": {
+              "usedPercent": 44,
+              "windowDurationMins": 10080,
+              "resetsAt": 1790455438
+            },
+            "secondary": null,
+            "credits": {
+              "hasCredits": false,
+              "unlimited": false,
+              "balance": "0"
+            },
+            "individualLimit": null,
+            "spendControlReached": null,
+            "planType": "pro",
+            "rateLimitReachedType": null
+          }
+        },
+        "emittedAtMs": 1789934595370
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "thread/status/changed",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "status": {
+            "type": "idle"
+          }
+        },
+        "emittedAtMs": 1789934595374
+      }
+    },
+    {
+      "direction": "received",
+      "msg": {
+        "method": "turn/completed",
+        "params": {
+          "threadId": "01a0c06a-5efc-7fd1-a584-c5f1b326f8d1",
+          "turn": {
+            "id": "01a0c06a-5f67-7052-9db4-20e724f58613",
+            "items": [
+              {
+                "type": "agentMessage",
+                "id": "msg_0ee7ba8b5c6d038e016ab03c021d8087d29b218946e5b04613",
+                "text": "OK",
+                "phase": "final_answer",
+                "memoryCitation": null,
+                "delivery": null
+              }
+            ],
+            "itemsView": "summary",
+            "status": "completed",
+            "error": null,
+            "startedAt": 1789934591,
+            "completedAt": 1789934595,
+            "durationMs": 3520
+          }
+        },
+        "emittedAtMs": 1789934595374
+      }
+    }
+  ]
+}

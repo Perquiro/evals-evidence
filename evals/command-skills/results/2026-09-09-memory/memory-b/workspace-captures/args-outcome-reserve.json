@@ -1,0 +1,16 @@
+{
+  "requestToken": "42aef0e7-75f4-4cd3-963b-770dbb0be2eb",
+  "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "journeyId": "9a5db128-aff0-4d66-ae80-1882dce02823",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "POST /holds with bookId 101 returned 201 Created with reservation id 301 for River Atlas and a /holds link.",
+      "look": { "item": { "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a" }, "kind": "exercised", "attemptObservationId": "021d15b0-5825-4e22-8111-d77f260220e1" },
+      "capture": "pending"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "requestToken": "1ed9e0e9-c45e-40df-aa2b-7346aa2f98c7",
+  "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [
+    { "key": "checkin", "name": "Check in a book", "kind": "action" },
+    { "key": "pending", "name": "Pending returns", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /desk returned 200 OK with a Check in a book POST action to /desk/returns, prefilled with bookId 103, and Pending returns listing Night Trains (book 103).",
+      "looks": [
+        { "item": { "key": "checkin" }, "kind": "offered" },
+        { "item": { "key": "pending" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

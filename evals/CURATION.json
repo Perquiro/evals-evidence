@@ -1,0 +1,460 @@
+{
+  "createdAt": "2026-09-10T18:03:22.4490697Z",
+  "branch": "codex/skill-completeness-evals",
+  "rawArchive": "Original evals experiment directories, excluded from Git; Windows denied their directory rename.",
+  "zipArchive": ".local-eval-archive/2026-09-10/evals.zip",
+  "archivedOriginalZipSha256": "825d70127ca053d79e320d0e2e635dfbb773d49c8e111172b62205a22e7d4d1f",
+  "completedReviewedRuns": 8,
+  "files": [
+    {
+      "path": "curated/manager-value-2026-09-10/REPORT.md",
+      "archivePath": "evals/manager-value-2026-09-10/REPORT.md",
+      "sha256": "4f367a75d573ab29125ff5258f31b9bd03afc5b800efb414dba5afe38f549c1d",
+      "bytes": 12452
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/PROTOCOL.md",
+      "archivePath": "evals/manager-value-2026-09-10/PROTOCOL.md",
+      "sha256": "18fd97ced719bd14f7eaa617ef9a3d7f053699fa95ae2abde779e53927edc493",
+      "bytes": 10253
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/SCORING.md",
+      "archivePath": "evals/manager-value-2026-09-10/SCORING.md",
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0",
+      "bytes": 5566
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/inventory.json",
+      "archivePath": "evals/manager-value-2026-09-10/inventory.json",
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230",
+      "bytes": 8470
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/config.json",
+      "archivePath": "evals/manager-value-2026-09-10/config.json",
+      "sha256": "bc8afbcc320064b57767bb73931e9fb02d2e2044cd37aaf3f095813c39c749dc",
+      "bytes": 5949
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/frozen-inputs.json",
+      "archivePath": "evals/manager-value-2026-09-10/frozen-inputs.json",
+      "sha256": "36a77f961bea7d74d05834c33d0f06b5da64a53605eadb1c131ac7357b6677ac",
+      "bytes": 50362
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/early-review-data.json",
+      "archivePath": "evals/manager-value-2026-09-10/early-review-data.json",
+      "sha256": "8649225fb39106ea8703c7d8bb2a62ddc9bd7652d2bd63345158cf9d56237441",
+      "bytes": 6967
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/report-data.json",
+      "archivePath": "evals/manager-value-2026-09-10/report-data.json",
+      "sha256": "35477ec69f2b06a1444a786026919a682eef8589e5e03671133bd4447135a14c",
+      "bytes": 38551
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/grading-sensitivity.json",
+      "archivePath": "evals/manager-value-2026-09-10/grading-sensitivity.json",
+      "sha256": "e11c240c13ad8dd86235bb8c9715088f2aace5afdd48d50382e29e869710bcfc",
+      "bytes": 34181
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/OPERATIONAL-NOTES.md",
+      "archivePath": "evals/manager-value-2026-09-10/OPERATIONAL-NOTES.md",
+      "sha256": "e7e51c716852fcc027f7dd8c0dd2a8b569706ec95d948ac2ec19f243305eee5e",
+      "bytes": 9678
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/GRADING-OPERATIONS.md",
+      "archivePath": "evals/manager-value-2026-09-10/GRADING-OPERATIONS.md",
+      "sha256": "2e180a31316ef8b1a2b1dd9b51b2fd4d3d281ce6aa0e3332e10bea0086c126ef",
+      "bytes": 8861
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/artifact-verification.json",
+      "archivePath": "evals/manager-value-2026-09-10/artifact-verification.json",
+      "sha256": "46181206d3e56f48325442a7dd2f130d280e5872e7e7a681b04389369b16c27c",
+      "bytes": 5100
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/wrap-up-verification.json",
+      "archivePath": "evals/manager-value-2026-09-10/wrap-up-verification.json",
+      "sha256": "03ca8e907dc0906308dcd29ddce8694d5434d2158c77331a84285efd9e442c82",
+      "bytes": 9041
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/final-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/final-review.md",
+      "sha256": "a6940afe32fd9cdcf440b1a1632de23c71f5da148ab39711c0c45bf6050fb9b2",
+      "bytes": 589
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/RUN-STATE.json",
+      "archivePath": "evals/manager-value-2026-09-10/RUN-STATE.json",
+      "sha256": "de8b5e2bdfaa4f95e5f824e1624fbdd6fad049b2fec76df449926b810c231400",
+      "bytes": 14617
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/inputs/state-aware-v2/SKILL.md",
+      "archivePath": "evals/manager-value-2026-09-10/inputs/state-aware-v2/SKILL.md",
+      "sha256": "9b9148d18e83c0e94a0559c1abb58caa5e2e91679aac0a784ad6d286ec8d74c0",
+      "bytes": 9171
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/inputs/stop-reviewer/SKILL.md",
+      "archivePath": "evals/manager-value-2026-09-10/inputs/stop-reviewer/SKILL.md",
+      "sha256": "415400973c0be0bd7f3379385e4b767324525d77c884ffeb9607b743f2dbd9ea",
+      "bytes": 3711
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/inputs/create/SKILL.md",
+      "archivePath": "evals/manager-value-2026-09-10/runtime/src/setup/command-skills/create/SKILL.md",
+      "sha256": "2615284b660f19b28117321f4e02b4b5fffd2548a7f2a4b9c0e4b2c8d4136eba",
+      "bytes": 16128
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P66c6cdb9c1/adjudication.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P66c6cdb9c1/adjudication.md",
+      "sha256": "198335aa1bed97efc3cf6af5031429195c9dda98ee8d1b2a5a8c57bbd2ab6833",
+      "bytes": 2601
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P66c6cdb9c1/create-proposals.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P66c6cdb9c1/create-proposals.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P66c6cdb9c1/grade.independent.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P66c6cdb9c1/grade.independent.json",
+      "sha256": "9fd4e62f9ad099626b87a669ed793a61fbc7ca110e4daecdc87e4b006103d76f",
+      "bytes": 7395
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P66c6cdb9c1/grade.initial.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P66c6cdb9c1/grade.initial.json",
+      "sha256": "83312773feed991fa79a753a0037f7f230c52a479e271a32adab1266ebbded41",
+      "bytes": 9409
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P66c6cdb9c1/grade.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P66c6cdb9c1/grade.json",
+      "sha256": "d5e6e6a7a78a173f73d2c9366df860dfca41a1d5c7e7a660944ea0c1f9b7e843",
+      "bytes": 10034
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P66c6cdb9c1/hr12-independent-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P66c6cdb9c1/hr12-independent-review.md",
+      "sha256": "98d7c6f838fdb1f8a9345c006f17b1dbfd1712fb68d251e0c2ca598fe7e25637",
+      "bytes": 1815
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P66c6cdb9c1/hr12-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P66c6cdb9c1/hr12-review.md",
+      "sha256": "3173ace659b0c79f62e6ede26fa22b1b5c2a8dafa1fe6c7aa6be14f9ab1491e8",
+      "bytes": 1886
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/adjudication.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/adjudication.md",
+      "sha256": "92687817a47843743cfd5167b78833703dcb753d1eac45a2604acd56225ee97f",
+      "bytes": 4974
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/boundary-independent-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/boundary-independent-review.md",
+      "sha256": "2b3703c04fc1d905dcb83c12507f7986562a0bf2ab5c6e8640b9aacc57298460",
+      "bytes": 3895
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/boundary-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/boundary-review.md",
+      "sha256": "fd73a6864483562efd01614d9ef26e5b7b756028b20a7ae5bfa3c818d1b7b165",
+      "bytes": 3356
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/create-proposals.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/create-proposals.json",
+      "sha256": "10d7ac454e648f4beb41118d39a3e9b3f06eb0b12aa42a91687782595b420029",
+      "bytes": 18789
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/direct-link-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/direct-link-review.md",
+      "sha256": "2e4fd596f2966627bcd0f7e2a4de71c0dbaa92c31ca77cd378e0e4ddea38a6f7",
+      "bytes": 2181
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/grade.independent.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/grade.independent.json",
+      "sha256": "d4e16211afcdfa96dd5fb6590759fb059d718ad30287c13c0abd7c129aaab08b",
+      "bytes": 11873
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/grade.initial.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/grade.initial.json",
+      "sha256": "2a44e40958b03140fe0cb41e172315f26166d03d43f4ef3c69a5657242d4deb4",
+      "bytes": 11022
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/grade.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/grade.json",
+      "sha256": "fcfa7d5a5e58e7691885fb465ce14ed8ceceb0e825f30a4cf6753c7a07063fc6",
+      "bytes": 19587
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/loading-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/loading-review.md",
+      "sha256": "60d5036265c4121b98361a2d4881d460cbe721cf1a09a80cdb8eef5e732c37bb",
+      "bytes": 1654
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P8f4403b571/navigation-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P8f4403b571/navigation-review.md",
+      "sha256": "23c31cf5ceeee52ee44e9bca55940ac5a5b211da66133ebb03bbe62bfb460f24",
+      "bytes": 2089
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/adjudication.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/adjudication.md",
+      "sha256": "cf80962fb474284cd1b705d911121c253c20b76f6cc6e1649a1c0dc22f374a2c",
+      "bytes": 3514
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/create-proposals.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/create-proposals.json",
+      "sha256": "57530821f6bf066be1a74ac562eba758e525326b77dce1aff6fba79b0f65b050",
+      "bytes": 9814
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/grade.independent.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/grade.independent.json",
+      "sha256": "20d5ee4c7063c5b55024218417a1622d0cce94b7f87be42bfaae3a8ef47a12f0",
+      "bytes": 11625
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/grade.independent.submitted.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/grade.independent.submitted.json",
+      "sha256": "2cfa08bb881120794c7df59fd7478b7ea3fd991cd62f5d5f7bf59fea606f1830",
+      "bytes": 10486
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/grade.initial.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/grade.initial.json",
+      "sha256": "82444fb53b65201ecd2813697c70a931903469132f83bce9a6024da20e5dfcd6",
+      "bytes": 8662
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/grade.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/grade.json",
+      "sha256": "4c24b6d0338ca0079f539822ece2cf374c6694f6e476d68aa7624eb243986403",
+      "bytes": 11683
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/navigation-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/navigation-review.md",
+      "sha256": "1e030d6cb454b2b954c6482c5ecd5f99671ed7d4adac4ae4b3d75ecd5d2ea830",
+      "bytes": 1785
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/product-role-independent-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/product-role-independent-review.md",
+      "sha256": "072d53d28074e0d7252888be91ef1d9e6f44889b0a7fbdc332bf93caa438ed39",
+      "bytes": 700
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P2932c4cee0/product-role-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P2932c4cee0/product-role-review.md",
+      "sha256": "017dcd71d0fc62fda5116f976acf8088521d852431917e182cd2b5b90bc80007",
+      "bytes": 1067
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P3adcd9fb99/adjudication.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P3adcd9fb99/adjudication.md",
+      "sha256": "63c6c207c3c50acd5fdb558d0e6afa610d4885f76abdbd35a9df2b4da953aa43",
+      "bytes": 2089
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P3adcd9fb99/create-proposals.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P3adcd9fb99/create-proposals.json",
+      "sha256": "b761ea7726a7f733c4f6ed26f7ff7a762b93a5ac43af231db7b00d084a4019a9",
+      "bytes": 3466
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P3adcd9fb99/grade.independent.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P3adcd9fb99/grade.independent.json",
+      "sha256": "893be05d1d110e128ac742fa9a69ec639bc6038924b3da08cd124e627412bd5b",
+      "bytes": 8518
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P3adcd9fb99/grade.initial.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P3adcd9fb99/grade.initial.json",
+      "sha256": "11039447228a24587c150cc9c8b3a2344600d1f96fb7320f7cd63ef901344b63",
+      "bytes": 8697
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P3adcd9fb99/grade.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P3adcd9fb99/grade.json",
+      "sha256": "11039447228a24587c150cc9c8b3a2344600d1f96fb7320f7cd63ef901344b63",
+      "bytes": 8697
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pc244d33f37/adjudication.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pc244d33f37/adjudication.md",
+      "sha256": "615325a09248cc09889353ae198fd595b7bbc71d7d8425f7a91d8ae6469ac8c8",
+      "bytes": 2209
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pc244d33f37/create-proposals.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pc244d33f37/create-proposals.json",
+      "sha256": "73c410a207a4f3400e4d400f57dc5c31f831c185821f56f946b213c61ed444a0",
+      "bytes": 2939
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pc244d33f37/grade.independent.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pc244d33f37/grade.independent.json",
+      "sha256": "6d42ac449ab4c1cfc37086110578c4bcaafc502a7d04ce86ebad9c0f06360f8e",
+      "bytes": 8897
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pc244d33f37/grade.initial.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pc244d33f37/grade.initial.json",
+      "sha256": "8fd24904111fa7cfc6194d1d54642e3a316bb14cf5b87483d265a40f2b805b47",
+      "bytes": 8655
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pc244d33f37/grade.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pc244d33f37/grade.json",
+      "sha256": "8fd24904111fa7cfc6194d1d54642e3a316bb14cf5b87483d265a40f2b805b47",
+      "bytes": 8655
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Paedc4d4230/adjudication.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Paedc4d4230/adjudication.md",
+      "sha256": "b70e3887cba314430ae6cc651364e36270c00e61e57beaab74813c4e7d891dbf",
+      "bytes": 4061
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Paedc4d4230/boundary-independent-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Paedc4d4230/boundary-independent-review.md",
+      "sha256": "73e15b120cf8fa2cdc216141622883646a7cf68b37308f1fbbb1f0fb0879df75",
+      "bytes": 4429
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Paedc4d4230/boundary-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Paedc4d4230/boundary-review.md",
+      "sha256": "49b7025a6d34a4d8f225b289c5fc4a953e589bd11f342272d81b3476a1daf467",
+      "bytes": 4435
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Paedc4d4230/create-proposals.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Paedc4d4230/create-proposals.json",
+      "sha256": "f92b74616963a0538a3a5ba24c0a858c2c85552f49b34f917346a51a1c84e1d7",
+      "bytes": 8071
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Paedc4d4230/grade.independent.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Paedc4d4230/grade.independent.json",
+      "sha256": "50513fa6d94e95cbd7fac586e644dc91f3117eadb1efa39e302c260bb660e918",
+      "bytes": 13427
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Paedc4d4230/grade.initial.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Paedc4d4230/grade.initial.json",
+      "sha256": "6709d8808b06e8d7212d543da323f35259b83c2cd3cb6ad9ad509716e2b60b0f",
+      "bytes": 12228
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Paedc4d4230/grade.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Paedc4d4230/grade.json",
+      "sha256": "20911bac3febef88b57673363011a774a6903f39197e747cfc57acf874fc7647",
+      "bytes": 15538
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P7c26ba677c/adjudication.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P7c26ba677c/adjudication.md",
+      "sha256": "dff022ade16c74d3ef096b1326a79b1bac84d6d5c300386b67bb04718c88e129",
+      "bytes": 2454
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P7c26ba677c/create-proposals.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P7c26ba677c/create-proposals.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P7c26ba677c/grade.independent.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P7c26ba677c/grade.independent.json",
+      "sha256": "62ffdff63f2195092fa6f52c000eecbb088d2a8189dce9450a558f5e9a19d720",
+      "bytes": 6773
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P7c26ba677c/grade.initial.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P7c26ba677c/grade.initial.json",
+      "sha256": "aa53b79f5efc10a2d325e29e5ac6025c32b5470d6318a4f639281c577d523c0f",
+      "bytes": 7141
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P7c26ba677c/grade.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P7c26ba677c/grade.json",
+      "sha256": "2a49d934255c70f52b52512f7ceefb248c01b352511877bb40a9fb9ec76ca7e4",
+      "bytes": 10184
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/P7c26ba677c/history-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/P7c26ba677c/history-review.md",
+      "sha256": "513a93eacd650a82fb4373f7786c86b954b89582ba2d405abb3a13893a31da58",
+      "bytes": 1749
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pf928489f31/adjudication.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pf928489f31/adjudication.md",
+      "sha256": "36f83a92f3024583815514bf5c766b75a7b02882b8ee21ca2b7e90a5473879c9",
+      "bytes": 3505
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pf928489f31/boundary-independent-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pf928489f31/boundary-independent-review.md",
+      "sha256": "9afc5c849f72c0a4163e9a9e170ee5d82ee7f394b492f39d398611f9f4cdfd56",
+      "bytes": 5332
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pf928489f31/boundary-review.md",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pf928489f31/boundary-review.md",
+      "sha256": "3f7072eeb833fc559c62ebce9fde4e4e7d92e17f8545281a7dfadbc76af7a419",
+      "bytes": 3588
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pf928489f31/create-proposals.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pf928489f31/create-proposals.json",
+      "sha256": "d21f1ce49c600203b2af415e556bca932c36e67daa7113792e702f638d23438b",
+      "bytes": 8946
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pf928489f31/grade.independent.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pf928489f31/grade.independent.json",
+      "sha256": "889ac3dedf5de4fd4e3411aef3fafddcbe03839cfc5bfc36436b4bd9abc426e1",
+      "bytes": 14411
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pf928489f31/grade.independent.submitted.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pf928489f31/grade.independent.submitted.json",
+      "sha256": "5eef715c505b98d6e4bad7aa8c2dde9faf3fbdeaf3612a318c889b293b32c0c0",
+      "bytes": 14413
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pf928489f31/grade.initial.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pf928489f31/grade.initial.json",
+      "sha256": "b90d59dbf520ab0c1cca476d846f8f9ae9454fc305eaf5708b2bebfbf4fab923",
+      "bytes": 12398
+    },
+    {
+      "path": "curated/manager-value-2026-09-10/review-packets/Pf928489f31/grade.json",
+      "archivePath": "evals/manager-value-2026-09-10/review-packets/Pf928489f31/grade.json",
+      "sha256": "9eb6cad65ff30252343367654cd6ccacb26e0d4e16cd8b757f7cf621eb8ea279",
+      "bytes": 19403
+    }
+  ]
+}

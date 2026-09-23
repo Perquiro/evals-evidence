@@ -1,0 +1,14 @@
+{
+  "requestToken": "50b57fa0-2fa1-4ec0-a825-909b0f5a4b4f",
+  "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+  "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /desk with X-Actor Reader returned 403 Forbidden with error Service desk requires Librarian.",
+      "looks": []
+    }
+  ]
+}

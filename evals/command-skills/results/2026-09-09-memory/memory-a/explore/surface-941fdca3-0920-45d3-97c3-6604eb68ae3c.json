@@ -1,0 +1,181 @@
+[
+  {
+    "revision": "eac60c42-31c1-48d7-91d0-b2b233afb923",
+    "selection": {
+      "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+      "actorIds": [
+        "61409925-dde8-4f75-9801-942d22518b3d",
+        "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+      "name": "Loans",
+      "locator": "GET /loans",
+      "createdAt": "2026-09-09T05:53:50.221Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "6216a5e9-6645-4368-b74f-1e1642046ef9",
+          "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+          "name": "Loans list",
+          "kind": "information",
+          "createdAt": "2026-09-09T05:54:05.311Z"
+        },
+        {
+          "id": "1d54766c-4c40-46ca-b406-355701d7a613",
+          "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+          "name": "Garden Notes",
+          "kind": "link",
+          "createdAt": "2026-09-09T05:54:05.311Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "71851440-1d35-4d6f-9076-f6b58673f1c6",
+            "seq": 11,
+            "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+            "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+            "body": "GET /loans returned loan 201 for Garden Notes and a link to /loans/201.",
+            "createdAt": "2026-09-09T05:54:05.312Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "6216a5e9-6645-4368-b74f-1e1642046ef9"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "1d54766c-4c40-46ca-b406-355701d7a613"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "d8d60c1e-d8bf-4fdf-8e90-c0ee379ea717",
+            "seq": 21,
+            "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "GET /loans returned one loan: Garden Notes with id 201 and href /loans/201.",
+            "createdAt": "2026-09-09T06:03:37.477Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "6216a5e9-6645-4368-b74f-1e1642046ef9"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "1d54766c-4c40-46ca-b406-355701d7a613"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "1d54766c-4c40-46ca-b406-355701d7a613",
+            "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+            "name": "Garden Notes",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:54:05.311Z"
+          },
+          "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "71851440-1d35-4d6f-9076-f6b58673f1c6"
+          ]
+        },
+        {
+          "item": {
+            "id": "1d54766c-4c40-46ca-b406-355701d7a613",
+            "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+            "name": "Garden Notes",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:54:05.311Z"
+          },
+          "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "d8d60c1e-d8bf-4fdf-8e90-c0ee379ea717"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "71851440-1d35-4d6f-9076-f6b58673f1c6",
+          "evidenceId": "5528e0a2-78bb-4357-b9e7-91b304be2b67"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 2,
+      "pending": 2,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

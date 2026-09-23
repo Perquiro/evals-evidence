@@ -1,0 +1,269 @@
+{
+  "checks": [
+    {
+      "id": "HR01",
+      "seen": true,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [[28, 96, 119]],
+      "savedSupportSets": [],
+      "rationale": "Raw dashboard captures record each configured Actor's full navigation. Final Knowledge fully lists Emily's navigation but only says that Michael's includes Approvals and Hannah's includes Onboarding."
+    },
+    {
+      "id": "HR02",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee direct visit to a higher-privilege page was captured."
+    },
+    {
+      "id": "HR03",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No name-search action was captured."
+    },
+    {
+      "id": "HR04",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [[53, 55]],
+      "savedSupportSets": [{
+        "observationIds": ["5fe1e2bc-2616-493b-b54f-32591cbe125b"],
+        "eventIds": [53, 55]
+      }],
+      "rationale": "Emily selected Engineering; the settled directory showed eight Engineering employees on one page. The saved Observation is linked to the relevant directory Journey."
+    },
+    {
+      "id": "HR05",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No deliberately unmatched name search was captured."
+    },
+    {
+      "id": "HR06",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No sortable header was clicked twice."
+    },
+    {
+      "id": "HR07",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The directory was not paged through to a boundary."
+    },
+    {
+      "id": "HR08",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee detail was opened and directly loaded or refreshed."
+    },
+    {
+      "id": "HR09",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No invalid reversed leave-date range was entered."
+    },
+    {
+      "id": "HR10",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No Friday-to-Monday leave interval was entered."
+    },
+    {
+      "id": "HR11",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No valid leave request was submitted."
+    },
+    {
+      "id": "HR12",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No newly submitted leave request was read from history."
+    },
+    {
+      "id": "HR13",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The run did not return to the new-leave form after a successful submission."
+    },
+    {
+      "id": "HR14",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [[103, 106]],
+      "savedSupportSets": [{
+        "observationIds": ["db7b373c-1ec5-42cd-93b3-e2b19ae5784a", "7bf98f54-180c-493a-8c46-cb058f788379"],
+        "eventIds": [103, 106]
+      }],
+      "rationale": "Michael opened Approvals and the settled queue showed the pending George Tanaka Vacation request with its dates, duration, and reason."
+    },
+    {
+      "id": "HR15",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No approval or rejection was dispatched, so neither immediate nor settled queue aftermath was observed."
+    },
+    {
+      "id": "HR16",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No rejection without a comment was attempted."
+    },
+    {
+      "id": "HR17",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee-created leave request was decided by a manager and read back by the employee."
+    },
+    {
+      "id": "HR18",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The personal onboarding step was opened, but no invalid advance was attempted."
+    },
+    {
+      "id": "HR19",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The job-details step and its initial loading and settled selector states were not observed."
+    },
+    {
+      "id": "HR20",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding data was advanced and revisited."
+    },
+    {
+      "id": "HR21",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No review submission, directory result, or pre/post headcount was observed."
+    },
+    {
+      "id": "HR22",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee entered hours across all seven days."
+    },
+    {
+      "id": "HR23",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee timesheet draft was saved and reloaded."
+    },
+    {
+      "id": "HR24",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No timesheet was submitted and no later edit was attempted."
+    },
+    {
+      "id": "HR25",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile field was changed and saved."
+    },
+    {
+      "id": "HR26",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile name or photo was changed and saved."
+    },
+    {
+      "id": "HR27",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile save was followed by a reload."
+    }
+  ],
+  "unsupportedClaims": [],
+  "scenarios": [
+    {
+      "id": "7758aed8-c721-4db8-a51e-f58030b9a6ec",
+      "grounded": true,
+      "distinctBehaviorKey": "employee-directory:Engineering-filter:8-employees-page-1-of-1",
+      "observationIds": ["5fe1e2bc-2616-493b-b54f-32591cbe125b", "eaeeeee2-4b38-42a0-8837-5b28423167c3"],
+      "unsupportedOutcomes": [],
+      "rationale": "The saved browser Observation establishes Emily's selected department and displayed result; the saved API Observation establishes the matching successful request and pagination facts. Both were saved before Scenario creation."
+    }
+  ],
+  "notes": [
+    "Totals: seen 3/27; saved 2/27; directly Journey-linked 1/27; unsupported material claims 0.",
+    "At 10, 20, and 40 minutes, saved coverage is 2/27: HR04 and HR14. HR01 is seen by minute 10 but not saved because final manager and HR summaries omit the complete navigation item lists.",
+    "The only proposal is grounded. No material claim is unsupported; omitted navigation detail is incomplete saved coverage, not an unsupported claim."
+  ]
+}

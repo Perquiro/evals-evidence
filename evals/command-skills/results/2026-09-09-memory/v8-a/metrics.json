@@ -1,0 +1,123 @@
+{
+  "productRequests": 30,
+  "mcpReads": 21,
+  "mcpWrites": 52,
+  "unclassifiedProductErrors": [],
+  "uniqueSuccessfulMcpWriteTokens": 52,
+  "failedMcpWrites": 0,
+  "schemaReads": 4,
+  "observations": 30,
+  "acceptedAttempts": 0,
+  "reconciledWithoutDispatch": [],
+  "mutations": [
+    {
+      "event": 48,
+      "method": "POST",
+      "path": "/loans/201/renew",
+      "actor": "Reader",
+      "status": 200,
+      "resultKind": "product",
+      "acceptedAttemptEvent": null,
+      "attemptId": null
+    },
+    {
+      "event": 49,
+      "method": "POST",
+      "path": "/loans/201/renew",
+      "actor": "Reader",
+      "status": 409,
+      "resultKind": "product",
+      "acceptedAttemptEvent": null,
+      "attemptId": null
+    },
+    {
+      "event": 51,
+      "method": "POST",
+      "path": "/holds",
+      "actor": "Reader",
+      "status": 422,
+      "resultKind": "product",
+      "acceptedAttemptEvent": null,
+      "attemptId": null
+    },
+    {
+      "event": 52,
+      "method": "POST",
+      "path": "/holds",
+      "actor": "Reader",
+      "status": 409,
+      "resultKind": "product",
+      "acceptedAttemptEvent": null,
+      "attemptId": null
+    },
+    {
+      "event": 55,
+      "method": "POST",
+      "path": "/holds",
+      "actor": "Reader",
+      "status": 201,
+      "resultKind": "product",
+      "acceptedAttemptEvent": null,
+      "attemptId": null
+    },
+    {
+      "event": 56,
+      "method": "POST",
+      "path": "/holds",
+      "actor": "Reader",
+      "status": 409,
+      "resultKind": "product",
+      "acceptedAttemptEvent": null,
+      "attemptId": null
+    },
+    {
+      "event": 58,
+      "method": "DELETE",
+      "path": "/holds/301",
+      "actor": "Reader",
+      "status": 200,
+      "resultKind": "product",
+      "acceptedAttemptEvent": null,
+      "attemptId": null
+    },
+    {
+      "event": 60,
+      "method": "DELETE",
+      "path": "/holds/301",
+      "actor": "Reader",
+      "status": 404,
+      "resultKind": "product",
+      "acceptedAttemptEvent": null,
+      "attemptId": null
+    }
+  ],
+  "mutationsWithoutMatchedAttempt": 8,
+  "elapsedMs": 3024969,
+  "candidateActivitySpanMs": 2721402,
+  "firstObservationDelayMs": 2643184,
+  "latency": {
+    "mcp": {
+      "samples": 73,
+      "totalMs": 2045.3176999985517,
+      "medianMs": 27.44260000018403,
+      "p95Ms": 35.3550999998115
+    },
+    "product": {
+      "samples": 30,
+      "totalMs": 4.021699999502744,
+      "medianMs": 0.12410000001545995,
+      "p95Ms": 0.19849999999860302
+    },
+    "schema": {
+      "samples": 4,
+      "totalMs": 15.846899999996822,
+      "medianMs": 3.210900000005495,
+      "p95Ms": 7.263299999998708
+    }
+  },
+  "limitations": [
+    "Attempt matching uses the returned Actor and either METHOD/path Surface identity or the exact METHOD/path named in grounded preconditions. Every mapping needs human trace inspection; this is not semantic proof that a marker authorized an arbitrary request.",
+    "Elapsed time includes host scheduling and idle waits. Server latency excludes model reasoning and host tool/UI latency; absent samples mean unavailable.",
+    "Outcome durability and false reopens require grading against public final reads; Observation count is not outcome coverage."
+  ]
+}

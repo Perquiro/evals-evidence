@@ -1,0 +1,56 @@
+{"op":"mcp","name":"read_setup"}
+{"op":"mcp","name":"read_explore_continuation"}
+{"op":"mcp","name":"read_knowledge_catalog"}
+{"op":"mcp","name":"list_open_reviews"}
+{"op":"mcp","name":"read_follow_on_work"}
+{"op":"phase","phase":"product_interaction"}
+{"op":"product","path":"/","bind":"homeProduct"}
+{"op":"phase","phase":"recording"}
+{"op":"mcp","name":"record_surface","arguments":{"name":"Home","locator":"GET /"},"bind":"home"}
+{"op":"mcp","name":"record_inspection","arguments":{"surfaceId":"@home/id","actorId":"@actor","platform":"api","items":[{"key":"profile","name":"Profile","kind":"link"},{"key":"directory","name":"Directory","kind":"link"}],"reports":[{"kind":"inventory","body":"GET / returned links to profile and directory.","looks":[{"kind":"offered","item":{"key":"profile"}},{"kind":"offered","item":{"key":"directory"}}]}]},"bind":"homeInventory"}
+{"op":"phase","phase":"candidate_generation"}
+{"op":"decision","value":{"objective":"Learn available profile and employee information","productPurpose":"Read-only employee self-service fixture","planningWorkReplaced":"Choose between inspecting profile and directory; no full host ranking performed","hostUsage":null,"hostModel":null}}
+{"op":"provider","choice":"profile"}
+{"op":"phase","phase":"advice"}
+{"op":"mcp","name":"advise_explore","arguments":{"context":{"actorId":"@actor","platform":"api","productVersion":{"kind":"unknown"}},"objective":"Learn available profile and employee information","productPurpose":"Read-only employee self-service fixture","observedDependencies":null,"candidates":[{"id":"profile","check":"GET /profile","question":"What profile information and follow-up checks exist?","eligibility":{"status":"eligible"},"target":{"surfaceId":"@home/id","itemId":"@homeInventory/items/0/id"}},{"id":"directory","check":"GET /directory","question":"Which employees are visible?","eligibility":{"status":"eligible"},"target":{"surfaceId":"@home/id","itemId":"@homeInventory/items/1/id"}}]},"bind":"firstAdvice"}
+{"op":"decision","value":{"decision":"use","candidateId":"profile","advice":"@firstAdvice","actionId":"a-profile","reason":"Inspecting the offered Profile link fits the objective and may reveal new questions."}}
+{"op":"phase","phase":"product_interaction"}
+{"op":"product","path":"/profile","bind":"profileProduct"}
+{"op":"phase","phase":"recording"}
+{"op":"mcp","name":"record_inspection","arguments":{"surfaceId":"@home/id","actorId":"@actor","platform":"api","items":[],"reports":[{"kind":"action","body":"GET /profile returned phone 555-0100 and recovery and preferences links.","look":{"kind":"exercised","item":{"id":"@homeInventory/items/0/id"}}}]},"bind":"profileOutcome"}
+{"op":"mcp","name":"record_surface","arguments":{"name":"Profile","locator":"GET /profile"},"bind":"profile"}
+{"op":"mcp","name":"record_inspection","arguments":{"surfaceId":"@profile/id","actorId":"@actor","platform":"api","items":[{"key":"recovery","name":"Recovery","kind":"link"},{"key":"preferences","name":"Preferences","kind":"link"}],"reports":[{"kind":"inventory","body":"GET /profile returned phone 555-0100 and links to recovery and preferences.","looks":[{"kind":"offered","item":{"key":"recovery"}},{"kind":"offered","item":{"key":"preferences"}}]}]},"bind":"profileInventory"}
+{"op":"decision","value":{"actionId":"a-profile","outcome":"@profileProduct","observationId":"@profileOutcome/observations/0/id","itemId":"@homeInventory/items/0/id","lookKind":"exercised"}}
+{"op":"phase","phase":"candidate_generation"}
+{"op":"mcp","name":"read_explore_continuation"}
+{"op":"decision","value":{"refreshReason":"Profile revealed two new links; recorded new Observations and changed objective to understand phone recovery.","planningWorkReplaced":"Order newly discovered recovery and preferences checks; retain unfinished directory check."}}
+{"op":"provider","choice":"preferences"}
+{"op":"phase","phase":"advice"}
+{"op":"mcp","name":"advise_explore","arguments":{"context":{"actorId":"@actor","platform":"api","productVersion":{"kind":"unknown"}},"objective":"Understand the discovered recovery phone before remaining employee information","productPurpose":"Read-only employee self-service fixture","observedDependencies":[{"description":"Profile exposes a recovery link beside a phone value.","observationIds":["@profileInventory/observations/0/id"]}],"candidates":[{"id":"recovery","check":"GET /recovery","question":"What recovery phone and verification state are shown?","eligibility":{"status":"eligible"},"target":{"surfaceId":"@profile/id","itemId":"@profileInventory/items/0/id"}},{"id":"preferences","check":"GET /preferences","question":"Which notification preferences are shown?","eligibility":{"status":"eligible"},"target":{"surfaceId":"@profile/id","itemId":"@profileInventory/items/1/id"}},{"id":"directory","check":"GET /directory","question":"Which employees are visible?","eligibility":{"status":"eligible"},"target":{"surfaceId":"@home/id","itemId":"@homeInventory/items/1/id"}}]},"bind":"refreshedAdvice"}
+{"op":"decision","value":{"decision":"override","suggestedCandidateId":"preferences","chosenCandidateId":"recovery","advice":"@refreshedAdvice","actionId":"a-recovery","reason":"Recovery information answers the newly focused phone question before notification preferences. No required recovery or human-priority result is being overridden.","extraHostPlanning":"Compare recovery question against preference suggestion."}}
+{"op":"phase","phase":"product_interaction"}
+{"op":"product","path":"/recovery","bind":"recoveryProduct"}
+{"op":"phase","phase":"recording"}
+{"op":"mcp","name":"record_inspection","arguments":{"surfaceId":"@profile/id","actorId":"@actor","platform":"api","items":[],"reports":[{"kind":"action","body":"GET /recovery returned recoveryPhone 555-0100 and verified false.","look":{"kind":"exercised","item":{"id":"@profileInventory/items/0/id"}}}]},"bind":"recoveryOutcome"}
+{"op":"decision","value":{"actionId":"a-recovery","outcome":"@recoveryProduct","observationId":"@recoveryOutcome/observations/0/id","itemId":"@profileInventory/items/0/id","lookKind":"exercised"}}
+{"op":"phase","phase":"candidate_generation"}
+{"op":"mcp","name":"read_explore_continuation"}
+{"op":"provider","choice":"none"}
+{"op":"phase","phase":"advice"}
+{"op":"mcp","name":"advise_explore","arguments":{"context":{"actorId":"@actor","platform":"api","productVersion":{"kind":"unknown"}},"objective":"Learn remaining employee information","productPurpose":"Read-only employee self-service fixture","observedDependencies":null,"candidates":[{"id":"preferences","check":"GET /preferences","question":"Which notification preferences are shown?","eligibility":{"status":"eligible"},"target":{"surfaceId":"@profile/id","itemId":"@profileInventory/items/1/id"}}]},"bind":"noSelection"}
+{"op":"decision","value":{"decision":"no_selection","advice":"@noSelection","reason":"No supplied preference check was selected. Directory remains useful and unanswered; this is not full exploration.","remainingQuestions":["Which employees are visible?","Which notification preferences are shown?"]}}
+{"op":"phase","phase":"candidate_generation"}
+{"op":"provider","choice":"unavailable"}
+{"op":"phase","phase":"advice"}
+{"op":"mcp","name":"advise_explore","arguments":{"context":{"actorId":"@actor","platform":"api","productVersion":{"kind":"unknown"}},"objective":"Learn remaining employee information","productPurpose":"Read-only employee self-service fixture","observedDependencies":null,"candidates":[{"id":"directory","check":"GET /directory","question":"Which employees are visible?","eligibility":{"status":"eligible"},"target":{"surfaceId":"@home/id","itemId":"@homeInventory/items/1/id"}}]},"bind":"failedAdvice"}
+{"op":"phase","phase":"fallback"}
+{"op":"decision","value":{"decision":"fallback","advice":"@failedAdvice","chosenCandidateId":"directory","actionId":"a-directory","reason":"Advice returned 503. Use ordinary planning for this group without retry; directory answers the remaining employee question.","extraHostPlanning":"Choose the still-unanswered directory check","hostUsage":null}}
+{"op":"phase","phase":"product_interaction"}
+{"op":"product","path":"/directory","bind":"directoryProduct"}
+{"op":"phase","phase":"recording"}
+{"op":"mcp","name":"record_inspection","arguments":{"surfaceId":"@home/id","actorId":"@actor","platform":"api","items":[],"reports":[{"kind":"action","body":"GET /directory returned employees Ada and Lee.","look":{"kind":"exercised","item":{"id":"@homeInventory/items/1/id"}}}]},"bind":"directoryOutcome"}
+{"op":"decision","value":{"actionId":"a-directory","outcome":"@directoryProduct","observationId":"@directoryOutcome/observations/0/id","itemId":"@homeInventory/items/1/id","lookKind":"exercised"}}
+{"op":"mcp","name":"read_explore","arguments":{"surfaceId":"@home/id","actorIds":["@actor"],"platform":"api","productVersions":{"scope":"unknown"}},"bind":"finalHome"}
+{"op":"mcp","name":"read_explore","arguments":{"surfaceId":"@profile/id","actorIds":["@actor"],"platform":"api","productVersions":{"scope":"unknown"}},"bind":"finalProfile"}
+{"op":"decision","value":{"stopReason":"Controlled walkthrough branches complete; not full Product exploration","remainingQuestions":["Which notification preferences are shown?"],"hostModel":null,"hostUsage":null,"accountingNote":"Elapsed phases include Agent/tool orchestration and deliberation between commands. Service diagnostics are a subtotal, not additional elapsed time. No live provider or economic comparison."}}
+{"op":"close"}

@@ -1,0 +1,20 @@
+{
+  "requestToken": "9dde4404-90a6-4c6e-91e6-2e1d18824f49",
+  "surfaceId": "cf913cbe-afcd-48f0-bc14-de81f4dc1c26",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "journeyId": "ff74dd11-5b88-40cd-8424-97db8ddc4640",
+  "platform": "api",
+  "items": [
+    { "key": "renewed-loan", "name": "Renewed loan", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "POST /loans/201/renew returned loan 201 with renewal count 1 and due date 2026-10-15.",
+      "looks": [
+        { "item": { "key": "renewed-loan" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

@@ -1,0 +1,797 @@
+{
+  "kind": "controlled",
+  "inputMode": "interactive",
+  "arm": "ordinary",
+  "status": "completed",
+  "host": {
+    "model": null,
+    "effort": null,
+    "usage": null,
+    "actualChargeUsd": null
+  },
+  "provider": "controlled HTTP response at the external fetch boundary; no live TypeSafe call",
+  "product": "local read-only synthetic HTTP fixture; not BugBusters HR",
+  "events": [
+    {
+      "kind": "command",
+      "startMs": 29707.565199999997,
+      "endMs": 29756.9446,
+      "phase": "orientation",
+      "command": {
+        "op": "mcp",
+        "name": "read_setup",
+        "resolvedArguments": {}
+      },
+      "result": {
+        "projectRoot": "C:\\Users\\mathi\\AppData\\Local\\Temp\\perquiro-knowledge-QP88Se",
+        "product": "Example Product",
+        "url": "http://127.0.0.1:49467",
+        "agent": "claude",
+        "evidenceMib": 64,
+        "actors": [
+          {
+            "id": "00000000-0000-4000-8000-00000000000a",
+            "name": "Admin",
+            "secretNames": [
+              "ADMIN_PASSWORD"
+            ],
+            "createdAt": "2026-09-01T12:00:00.001Z"
+          },
+          {
+            "id": "00000000-0000-4000-8000-00000000000b",
+            "name": "Guest",
+            "secretNames": [],
+            "createdAt": "2026-09-01T12:00:00.002Z"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 29757.809299999997,
+      "endMs": 29802.4835,
+      "phase": "orientation",
+      "command": {
+        "op": "mcp",
+        "name": "read_explore_continuation",
+        "resolvedArguments": {}
+      },
+      "result": null
+    },
+    {
+      "kind": "command",
+      "startMs": 29803.201399999998,
+      "endMs": 29846.9215,
+      "phase": "orientation",
+      "command": {
+        "op": "mcp",
+        "name": "read_knowledge_catalog",
+        "resolvedArguments": {}
+      },
+      "result": {
+        "revision": "9a35ebe4-b7ab-4a1c-9818-15a5a9d7e51e",
+        "coverage": {
+          "actors": 2,
+          "surfaces": 0,
+          "journeys": 0,
+          "observations": 0,
+          "evidence": 0,
+          "scenarios": 0,
+          "tests": 0,
+          "surfacesWithoutObservations": 0,
+          "journeysWithoutAcceptedScenarios": 0,
+          "acceptedScenariosWithoutTests": 0
+        },
+        "entries": {
+          "items": [
+            {
+              "kind": "actor",
+              "id": "00000000-0000-4000-8000-00000000000a",
+              "name": "Admin"
+            },
+            {
+              "kind": "actor",
+              "id": "00000000-0000-4000-8000-00000000000b",
+              "name": "Guest"
+            }
+          ],
+          "complete": true
+        },
+        "storedRelationships": {
+          "items": [],
+          "complete": true
+        }
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 29847.734,
+      "endMs": 29890.980799999998,
+      "phase": "orientation",
+      "command": {
+        "op": "mcp",
+        "name": "list_open_reviews",
+        "resolvedArguments": {}
+      },
+      "result": []
+    },
+    {
+      "kind": "command",
+      "startMs": 29892.1024,
+      "endMs": 29930.0003,
+      "phase": "orientation",
+      "command": {
+        "op": "mcp",
+        "name": "read_follow_on_work",
+        "resolvedArguments": {}
+      },
+      "result": []
+    },
+    {
+      "kind": "command",
+      "startMs": 29930.7228,
+      "endMs": 29930.8775,
+      "phase": "product_interaction",
+      "command": {
+        "op": "phase",
+        "phase": "product_interaction"
+      },
+      "result": {
+        "phase": "product_interaction"
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 29931.199399999998,
+      "endMs": 29957.2533,
+      "phase": "product_interaction",
+      "command": {
+        "op": "product",
+        "path": "/",
+        "bind": "homeProduct"
+      },
+      "result": {
+        "status": 200,
+        "body": {
+          "links": [
+            "profile",
+            "directory"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 29957.542699999998,
+      "endMs": 29957.5609,
+      "phase": "recording",
+      "command": {
+        "op": "phase",
+        "phase": "recording"
+      },
+      "result": {
+        "phase": "recording"
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 29957.784799999998,
+      "endMs": 30019.116299999998,
+      "phase": "recording",
+      "command": {
+        "op": "mcp",
+        "name": "record_surface",
+        "arguments": {
+          "name": "Home",
+          "locator": "GET /"
+        },
+        "bind": "home",
+        "resolvedArguments": {
+          "name": "Home",
+          "locator": "GET /",
+          "requestToken": "27c2249c-1fdf-42c7-aa9f-004dddd803ea"
+        }
+      },
+      "result": {
+        "id": "f41a1564-89df-416e-889f-08afdb01f617",
+        "name": "Home",
+        "locator": "GET /",
+        "testFolder": "home",
+        "createdAt": "2026-09-18T19:04:05.364Z"
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30020.4146,
+      "endMs": 30109.2224,
+      "phase": "recording",
+      "command": {
+        "op": "mcp",
+        "name": "record_inspection",
+        "arguments": {
+          "surfaceId": "@home/id",
+          "actorId": "@actor",
+          "platform": "api",
+          "items": [
+            {
+              "key": "profile",
+              "name": "Profile",
+              "kind": "link"
+            },
+            {
+              "key": "directory",
+              "name": "Directory",
+              "kind": "link"
+            }
+          ],
+          "reports": [
+            {
+              "kind": "inventory",
+              "body": "GET / returned links to profile and directory.",
+              "looks": [
+                {
+                  "kind": "offered",
+                  "item": {
+                    "key": "profile"
+                  }
+                },
+                {
+                  "kind": "offered",
+                  "item": {
+                    "key": "directory"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "bind": "homeInventory",
+        "resolvedArguments": {
+          "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+          "actorId": "00000000-0000-4000-8000-00000000000a",
+          "platform": "api",
+          "items": [
+            {
+              "key": "profile",
+              "name": "Profile",
+              "kind": "link"
+            },
+            {
+              "key": "directory",
+              "name": "Directory",
+              "kind": "link"
+            }
+          ],
+          "reports": [
+            {
+              "kind": "inventory",
+              "body": "GET / returned links to profile and directory.",
+              "looks": [
+                {
+                  "kind": "offered",
+                  "item": {
+                    "key": "profile"
+                  }
+                },
+                {
+                  "kind": "offered",
+                  "item": {
+                    "key": "directory"
+                  }
+                }
+              ]
+            }
+          ],
+          "requestToken": "ba45790c-a8dc-41d4-9730-289dfe74b9a1"
+        }
+      },
+      "result": {
+        "items": [
+          {
+            "key": "profile",
+            "id": "4dcc6721-9935-4288-9932-e60ceba64cc0",
+            "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+            "name": "Profile",
+            "kind": "link",
+            "createdAt": "2026-09-18T19:04:05.439Z"
+          },
+          {
+            "key": "directory",
+            "id": "cad2da19-0f40-4af0-b5e8-741e05a4e049",
+            "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+            "name": "Directory",
+            "kind": "link",
+            "createdAt": "2026-09-18T19:04:05.440Z"
+          }
+        ],
+        "observations": [
+          {
+            "id": "b45b8acf-8605-48c5-8e7a-da0da2c01585",
+            "seq": 1,
+            "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+            "actorId": "00000000-0000-4000-8000-00000000000a",
+            "body": "GET / returned links to profile and directory.",
+            "createdAt": "2026-09-18T19:04:05.450Z"
+          }
+        ],
+        "authorizedAttemptIds": []
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30109.7352,
+      "endMs": 30109.746499999997,
+      "phase": "ordinary_planning",
+      "command": {
+        "op": "phase",
+        "phase": "ordinary_planning"
+      },
+      "result": {
+        "phase": "ordinary_planning"
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30110.1279,
+      "endMs": 30110.1469,
+      "phase": "ordinary_planning",
+      "command": {
+        "op": "decision",
+        "value": {
+          "decision": "ordinary",
+          "chosenCandidateId": "directory",
+          "actionId": "ordinary-directory",
+          "reason": "The directory link offers a concrete unanswered employee-information question. Ordinary mode chooses it without requesting advice.",
+          "modelSettings": "Same ongoing host as advised walkthrough; no model/effort change requested",
+          "hostModel": null,
+          "hostUsage": null
+        }
+      },
+      "result": {
+        "decision": "ordinary",
+        "chosenCandidateId": "directory",
+        "actionId": "ordinary-directory",
+        "reason": "The directory link offers a concrete unanswered employee-information question. Ordinary mode chooses it without requesting advice.",
+        "modelSettings": "Same ongoing host as advised walkthrough; no model/effort change requested",
+        "hostModel": null,
+        "hostUsage": null
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30110.4303,
+      "endMs": 30110.439899999998,
+      "phase": "product_interaction",
+      "command": {
+        "op": "phase",
+        "phase": "product_interaction"
+      },
+      "result": {
+        "phase": "product_interaction"
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30110.9486,
+      "endMs": 30117.2877,
+      "phase": "product_interaction",
+      "command": {
+        "op": "product",
+        "path": "/directory",
+        "bind": "directoryProduct"
+      },
+      "result": {
+        "status": 200,
+        "body": {
+          "employees": [
+            "Ada",
+            "Lee"
+          ]
+        }
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30117.4724,
+      "endMs": 30117.4842,
+      "phase": "recording",
+      "command": {
+        "op": "phase",
+        "phase": "recording"
+      },
+      "result": {
+        "phase": "recording"
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30117.6501,
+      "endMs": 30187.6292,
+      "phase": "recording",
+      "command": {
+        "op": "mcp",
+        "name": "record_inspection",
+        "arguments": {
+          "surfaceId": "@home/id",
+          "actorId": "@actor",
+          "platform": "api",
+          "items": [],
+          "reports": [
+            {
+              "kind": "action",
+              "body": "GET /directory returned employees Ada and Lee.",
+              "look": {
+                "kind": "exercised",
+                "item": {
+                  "id": "@homeInventory/items/1/id"
+                }
+              }
+            }
+          ]
+        },
+        "bind": "directoryOutcome",
+        "resolvedArguments": {
+          "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+          "actorId": "00000000-0000-4000-8000-00000000000a",
+          "platform": "api",
+          "items": [],
+          "reports": [
+            {
+              "kind": "action",
+              "body": "GET /directory returned employees Ada and Lee.",
+              "look": {
+                "kind": "exercised",
+                "item": {
+                  "id": "cad2da19-0f40-4af0-b5e8-741e05a4e049"
+                }
+              }
+            }
+          ],
+          "requestToken": "1895f2ab-05d6-42b3-b4b8-47d6670ad3b9"
+        }
+      },
+      "result": {
+        "items": [],
+        "observations": [
+          {
+            "id": "dbda8fb6-2b14-48e8-b9f4-a0d4bbdfae3e",
+            "seq": 2,
+            "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+            "actorId": "00000000-0000-4000-8000-00000000000a",
+            "body": "GET /directory returned employees Ada and Lee.",
+            "createdAt": "2026-09-18T19:04:05.537Z"
+          }
+        ],
+        "authorizedAttemptIds": []
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30187.8304,
+      "endMs": 30187.9225,
+      "phase": "recording",
+      "command": {
+        "op": "decision",
+        "value": {
+          "actionId": "ordinary-directory",
+          "outcome": "@directoryProduct",
+          "observationId": "@directoryOutcome/observations/0/id",
+          "itemId": "@homeInventory/items/1/id",
+          "lookKind": "exercised"
+        }
+      },
+      "result": {
+        "actionId": "ordinary-directory",
+        "outcome": {
+          "status": 200,
+          "body": {
+            "employees": [
+              "Ada",
+              "Lee"
+            ]
+          }
+        },
+        "observationId": "dbda8fb6-2b14-48e8-b9f4-a0d4bbdfae3e",
+        "itemId": "cad2da19-0f40-4af0-b5e8-741e05a4e049",
+        "lookKind": "exercised"
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30188.099,
+      "endMs": 30249.331599999998,
+      "phase": "recording",
+      "command": {
+        "op": "mcp",
+        "name": "read_explore",
+        "arguments": {
+          "surfaceId": "@home/id",
+          "actorIds": [
+            "@actor"
+          ],
+          "platform": "api",
+          "productVersions": {
+            "scope": "unknown"
+          }
+        },
+        "bind": "finalHome",
+        "resolvedArguments": {
+          "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+          "actorIds": [
+            "00000000-0000-4000-8000-00000000000a"
+          ],
+          "platform": "api",
+          "productVersions": {
+            "scope": "unknown"
+          }
+        }
+      },
+      "result": {
+        "revision": "1b8461f5-9bd5-4855-86ca-4d9cafc2280e",
+        "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "selection": {
+          "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+          "actorIds": [
+            "00000000-0000-4000-8000-00000000000a"
+          ],
+          "platform": "api",
+          "productVersions": {
+            "scope": "unknown"
+          }
+        },
+        "surface": {
+          "id": "f41a1564-89df-416e-889f-08afdb01f617",
+          "name": "Home",
+          "locator": "GET /",
+          "testFolder": "home",
+          "createdAt": "2026-09-18T19:04:05.364Z"
+        },
+        "inventoryCoverage": {
+          "totalContexts": 1,
+          "establishedContexts": 1,
+          "missingContexts": 0,
+          "missingActorIds": []
+        },
+        "contexts": {
+          "items": [
+            {
+              "actorId": "00000000-0000-4000-8000-00000000000a",
+              "actorName": "Admin",
+              "retired": false,
+              "platform": "api",
+              "productVersion": null,
+              "inventory": {
+                "established": true,
+                "latestObservationId": "b45b8acf-8605-48c5-8e7a-da0da2c01585",
+                "latestReportEmpty": false
+              },
+              "counts": {
+                "knownChecks": 2,
+                "pending": 1,
+                "blocked": 0,
+                "unresolved": 0,
+                "suggested": 0,
+                "accountedFor": 1
+              }
+            }
+          ],
+          "complete": true
+        },
+        "inventory": {
+          "items": [
+            {
+              "id": "4dcc6721-9935-4288-9932-e60ceba64cc0",
+              "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+              "name": "Profile",
+              "kind": "link",
+              "createdAt": "2026-09-18T19:04:05.439Z"
+            },
+            {
+              "id": "cad2da19-0f40-4af0-b5e8-741e05a4e049",
+              "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+              "name": "Directory",
+              "kind": "link",
+              "createdAt": "2026-09-18T19:04:05.440Z"
+            }
+          ],
+          "complete": true
+        },
+        "history": {
+          "items": [
+            {
+              "observation": {
+                "id": "b45b8acf-8605-48c5-8e7a-da0da2c01585",
+                "seq": 1,
+                "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+                "actorId": "00000000-0000-4000-8000-00000000000a",
+                "body": "GET / returned links to profile and directory.",
+                "createdAt": "2026-09-18T19:04:05.450Z"
+              },
+              "platform": "api",
+              "support": "missing",
+              "report": {
+                "kind": "inventory",
+                "capture": "none",
+                "looks": [
+                  {
+                    "item": {
+                      "id": "4dcc6721-9935-4288-9932-e60ceba64cc0"
+                    },
+                    "kind": "offered"
+                  },
+                  {
+                    "item": {
+                      "id": "cad2da19-0f40-4af0-b5e8-741e05a4e049"
+                    },
+                    "kind": "offered"
+                  }
+                ]
+              },
+              "evidenceCount": 0
+            },
+            {
+              "observation": {
+                "id": "dbda8fb6-2b14-48e8-b9f4-a0d4bbdfae3e",
+                "seq": 2,
+                "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+                "actorId": "00000000-0000-4000-8000-00000000000a",
+                "body": "GET /directory returned employees Ada and Lee.",
+                "createdAt": "2026-09-18T19:04:05.537Z"
+              },
+              "platform": "api",
+              "support": "missing",
+              "report": {
+                "kind": "action",
+                "capture": "none",
+                "look": {
+                  "item": {
+                    "id": "cad2da19-0f40-4af0-b5e8-741e05a4e049"
+                  },
+                  "kind": "exercised"
+                }
+              },
+              "evidenceCount": 0
+            }
+          ],
+          "complete": true
+        },
+        "gaps": {
+          "items": [
+            {
+              "item": {
+                "id": "4dcc6721-9935-4288-9932-e60ceba64cc0",
+                "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+                "name": "Profile",
+                "kind": "link",
+                "createdAt": "2026-09-18T19:04:05.439Z"
+              },
+              "actorId": "00000000-0000-4000-8000-00000000000a",
+              "platform": "api",
+              "productVersion": null,
+              "state": "pending",
+              "reason": "This named check has supporting Looks but no exercised result in this context.",
+              "accountedFor": false,
+              "supportingObservationIds": [
+                "b45b8acf-8605-48c5-8e7a-da0da2c01585"
+              ]
+            },
+            {
+              "item": {
+                "id": "cad2da19-0f40-4af0-b5e8-741e05a4e049",
+                "surfaceId": "f41a1564-89df-416e-889f-08afdb01f617",
+                "name": "Directory",
+                "kind": "link",
+                "createdAt": "2026-09-18T19:04:05.440Z"
+              },
+              "actorId": "00000000-0000-4000-8000-00000000000a",
+              "platform": "api",
+              "productVersion": null,
+              "state": "exercised",
+              "reason": "This exact check has an attributed result in this context.",
+              "accountedFor": true,
+              "supportingObservationIds": [
+                "dbda8fb6-2b14-48e8-b9f4-a0d4bbdfae3e"
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "recovery": {
+          "items": [],
+          "complete": true
+        },
+        "accessHints": {
+          "items": [],
+          "complete": true
+        },
+        "coverageClues": {
+          "items": [],
+          "complete": true
+        },
+        "testVerification": {
+          "items": [],
+          "complete": true
+        },
+        "evidenceLinks": {
+          "items": [],
+          "complete": true
+        },
+        "counts": {
+          "knownChecks": 2,
+          "pending": 1,
+          "blocked": 0,
+          "unresolved": 0,
+          "suggested": 0,
+          "accountedFor": 1
+        }
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30250.161099999998,
+      "endMs": 30250.178799999998,
+      "phase": "recording",
+      "command": {
+        "op": "decision",
+        "value": {
+          "stopReason": "Ordinary-mode smoke complete; profile remains unexplored",
+          "hostModel": null,
+          "hostUsage": null,
+          "accountingNote": "A controlled smoke, not an equal-budget quality or efficiency comparison. No advice calls."
+        }
+      },
+      "result": {
+        "stopReason": "Ordinary-mode smoke complete; profile remains unexplored",
+        "hostModel": null,
+        "hostUsage": null,
+        "accountingNote": "A controlled smoke, not an equal-budget quality or efficiency comparison. No advice calls."
+      }
+    },
+    {
+      "kind": "command",
+      "startMs": 30253.3053,
+      "endMs": 30253.3259,
+      "phase": "recording",
+      "command": {
+        "op": "close"
+      },
+      "result": {
+        "closed": true
+      }
+    }
+  ],
+  "phases": [
+    {
+      "phase": "orientation",
+      "startMs": 0,
+      "endMs": 29930.8446
+    },
+    {
+      "phase": "product_interaction",
+      "startMs": 29930.8446,
+      "endMs": 29957.544299999998
+    },
+    {
+      "phase": "recording",
+      "startMs": 29957.544299999998,
+      "endMs": 30109.736699999998
+    },
+    {
+      "phase": "ordinary_planning",
+      "startMs": 30109.736699999998,
+      "endMs": 30110.4313
+    },
+    {
+      "phase": "product_interaction",
+      "startMs": 30110.4313,
+      "endMs": 30117.473899999997
+    },
+    {
+      "phase": "recording",
+      "startMs": 30117.473899999997,
+      "endMs": 30266.3927
+    }
+  ],
+  "skillSha256": "b642a7772a9a8893ebf6e401f62c68da25eae55a1ee81a0c6b14ea1834b38abe",
+  "elapsedMs": 30266.3927
+}

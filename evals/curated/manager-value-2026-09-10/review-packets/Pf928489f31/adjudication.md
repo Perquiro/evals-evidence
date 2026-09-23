@@ -1,0 +1,17 @@
+# Adjudication
+
+Two fresh reviewers independently graded this anonymous packet. Their original grades and subsequent boundary-review.md and boundary-independent-review.md are retained. The independent submission had two Observation ID typos; its exact submitted bytes remain in grade.independent.submitted.json, and only those identifiers were corrected for mechanical validation.
+
+Root inspected every saved Observation, all browser actions, relevant raw responses and both imported Evidence PNGs. All 39 copied API request/response records and all 17 copied input-preparation UI records matched their original trace input and result. This verifies faithful copies; semantic coverage still requires the complete frozen action and outcome.
+
+HR15 is seen but not saved. Raw event 171 closes the final confirmation dialog but still shows George pending in the immediate queue. The independent boundary note inaccurately calls this a confirmation-dialog state; the raw snapshot is authoritative. The API decision and later empty queue do not preserve that immediate pending queue. Both reviewers acknowledge the missing saved state. HR19 likewise retains seen-only credit because saved records omit the initial loading selectors.
+
+HR01 remains seen-only because Michael’s complete navigation is absent from saved Knowledge. Hannah’s full navigation does appear in copied input-preparation UI; the initial grade’s Hannah rationale was corrected. HR23 retains saved credit from the negative draft save and draft reload. The later linked save, submit, reload sequence verifies submitted state and cannot provide direct linkage for draft persistence.
+
+HR03, HR04, HR05 and HR07 retain direct Journey credit. Their complete later support sets link to Onboard an employee, which explicitly includes directory readback and the directory surfaces. The inventory’s task label need not equal the Journey name. HR21 also has complete directly linked baseline 28, creation and directory total 29 evidence. HR07’s final necessary Observation was saved 137 milliseconds after minute forty, so it qualifies only in final coverage.
+
+The onboarding Scenario is not fully grounded under its literal statement that the employee directory shows the selected equipment: neither the browser row nor detail shows equipment. Saved API responses do contain the selected equipment. Interpreting directory as the API-backed record would make that proposal grounded, but the proposal’s wording and listed Surfaces do not make that reading explicit. This ambiguity changes secondary grounded proposals from one to two; it does not change Knowledge coverage or unsupported Knowledge claims. The timesheet Scenario is grounded in saved hours, submission and the reloaded lock, even though the wider inventory check requiring an actual later edit attempt was not completed.
+
+Final mechanically derived results: {"checkpoints":{"10":{"seen":4,"saved":4,"unsupportedClaims":0,"unsupportedRate":0},"20":{"seen":8,"saved":6,"unsupportedClaims":0,"unsupportedRate":0},"40":{"seen":16,"saved":12,"unsupportedClaims":0,"unsupportedRate":0}},"final":{"seen":16,"saved":13,"directlyJourneyLinked":5,"unsupportedClaims":0,"unsupportedRate":0},"create":{"proposedScenarios":2,"distinctGroundedBehaviorCount":1}}
+
+The initial and independent grades overcredited saved coverage through omitted transient states. Their original values remain available for sensitivity analysis. No candidate Knowledge or Scenario was repaired during grading.

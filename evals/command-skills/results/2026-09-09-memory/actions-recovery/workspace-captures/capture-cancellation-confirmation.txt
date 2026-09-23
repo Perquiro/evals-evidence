@@ -1,0 +1,3 @@
+Reservation details cancellation confirmation
+Route: /reservations/42/cancel
+Status: cancelled

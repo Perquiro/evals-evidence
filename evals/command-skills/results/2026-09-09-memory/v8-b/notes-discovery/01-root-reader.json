@@ -1,0 +1,5 @@
+{
+  "request": {"method": "GET", "url": "http://127.0.0.1:54824/", "actor": "Reader"},
+  "status": 200,
+  "body": {"product": "Willow Library", "environment": "Local disposable development service. All data is synthetic.", "docs": "/docs", "links": {"catalog": "/catalog", "account": "/account", "serviceDesk": "/desk"}}
+}

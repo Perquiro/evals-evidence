@@ -1,0 +1,880 @@
+[
+  {
+    "revision": "eac60c42-31c1-48d7-91d0-b2b233afb923",
+    "anchor": {
+      "kind": "actor",
+      "record": {
+        "id": "61409925-dde8-4f75-9801-942d22518b3d",
+        "name": "Reader",
+        "secretNames": [],
+        "createdAt": "2026-09-09T05:45:14.999Z"
+      }
+    },
+    "selection": {
+      "productVersions": {
+        "scope": "all"
+      },
+      "observations": {
+        "detail": "records",
+        "actorIds": [
+          "61409925-dde8-4f75-9801-942d22518b3d"
+        ],
+        "scope": "both"
+      }
+    },
+    "storedRelationships": {
+      "items": [
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "name": "Catalog"
+          },
+          "observations": [
+            {
+              "id": "80f7a1cb-61d6-4d78-bcf7-d323f45f4fd8",
+              "seq": 1,
+              "body": "GET /catalog returned River Atlas as available, Garden Notes and Night Trains as unavailable, links for all three books, and a q title-search field.",
+              "createdAt": "2026-09-09T05:47:10.976Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "1edb02cf-b92b-4e8c-b676-905bcfb9c43b"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "111a3000-5bca-4984-95df-06669e63161b"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "93ea54eb-117b-406e-8ce4-5a3577c6d073"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "df5b6c4d-0802-4c44-8ab3-406671f8923f"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "df664979-9202-41e0-a801-34cddb921fb9"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f",
+            "name": "Book details"
+          },
+          "observations": [
+            {
+              "id": "15f6b2c6-977e-4c29-b9f8-d5ccbc7666be",
+              "seq": 2,
+              "body": "GET /books/101 returned River Atlas as available and offered Reader a POST /holds Reserve book action with bookId 101.",
+              "createdAt": "2026-09-09T05:48:17.374Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "bd21e1a1-ba6a-4a27-b7cd-5d558171811a"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "4359fcde-ad3c-409b-9b6e-5d1141722e88"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "5553da97-62f9-4d89-9831-7b5068b1b7f8",
+              "seq": 3,
+              "body": "River Atlas was available and exposed POST /holds with bookId 101 for Reader; no request had been dispatched when this check was saved.",
+              "createdAt": "2026-09-09T05:49:08.696Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "4359fcde-ad3c-409b-9b6e-5d1141722e88"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "book:101"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "71a2d5ee-7c8a-4844-bbf3-2ea72f5249b7",
+              "seq": 4,
+              "body": "POST /holds with bookId 101 returned reservation 301 for River Atlas and linked to /holds.",
+              "createdAt": "2026-09-09T05:49:51.902Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "pending",
+                  "look": {
+                    "item": {
+                      "id": "4359fcde-ad3c-409b-9b6e-5d1141722e88"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "5553da97-62f9-4d89-9831-7b5068b1b7f8"
+                  }
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "45c31841-e71d-40f6-a8d1-d1b5d7c5c3c7",
+              "seq": 13,
+              "body": "GET /books/102 returned Garden Notes as unavailable while still offering Reader the POST /holds Reserve book action with bookId 102.",
+              "createdAt": "2026-09-09T05:55:34.075Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "none",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "4359fcde-ad3c-409b-9b6e-5d1141722e88"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "b5f96b99-0853-442d-9c5e-b0b8dd636a7f"
+                      },
+                      "ruleFor": {
+                        "id": "4359fcde-ad3c-409b-9b6e-5d1141722e88"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "62233628-61b6-4c47-b3c3-5ab4359ff6ea",
+              "seq": 14,
+              "body": "Garden Notes was unavailable and exposed POST /holds with bookId 102; no request had been dispatched when this availability-specific check was saved.",
+              "createdAt": "2026-09-09T05:55:34.078Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "4359fcde-ad3c-409b-9b6e-5d1141722e88"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "book:102",
+                    "repeat": {
+                      "kind": "changed",
+                      "reason": "Garden Notes has a different availability state and serves the separately recorded availability branch.",
+                      "serves": {
+                        "id": "b5f96b99-0853-442d-9c5e-b0b8dd636a7f"
+                      }
+                    }
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "c39621dc-a46b-412a-91dd-128b95792d73",
+              "seq": 15,
+              "body": "POST /holds with bookId 102 returned HTTP 409 with error 'Book is unavailable'.",
+              "createdAt": "2026-09-09T05:56:13.326Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "pending",
+                  "look": {
+                    "item": {
+                      "id": "4359fcde-ad3c-409b-9b6e-5d1141722e88"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "62233628-61b6-4c47-b3c3-5ab4359ff6ea"
+                  }
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "61583ea3-66ac-4a8c-a51e-5325a18f01ea",
+              "seq": 37,
+              "body": "After return, GET /books/102 showed Garden Notes as available and offered Reader POST /holds with bookId 102.",
+              "createdAt": "2026-09-09T06:33:44.703Z"
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+            "name": "Create hold"
+          },
+          "observations": [
+            {
+              "id": "a38e2221-9c03-47fc-bea4-ae109beee314",
+              "seq": 5,
+              "body": "POST /holds returned created hold 301 for River Atlas and a Reservations link to /holds.",
+              "createdAt": "2026-09-09T05:50:24.505Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "507ad4fd-173f-4565-8b3d-0d06be758085"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "46049dca-17a4-44d1-a17a-63e5ccd69d1a"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "3cb15245-0004-42cb-9918-d157ab22ab06",
+            "name": "Holds"
+          },
+          "observations": [
+            {
+              "id": "4d20a5d5-30b2-4632-9d58-a1f97cbf44d9",
+              "seq": 6,
+              "body": "GET /holds returned Reader's hold 301 for River Atlas and offered DELETE /holds/301 to cancel it.",
+              "createdAt": "2026-09-09T05:51:11.230Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "365a2b4b-33a4-430c-951d-6d145446ba1a"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "648fc6b5-9063-4ff9-bef3-fa81770f5360"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "6aa32f4a-d87b-41e7-a4c9-ab8b2065dddc",
+              "seq": 7,
+              "body": "Hold 301 for River Atlas was present and offered DELETE /holds/301; no request had been dispatched when this check was saved.",
+              "createdAt": "2026-09-09T05:52:01.972Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "648fc6b5-9063-4ff9-bef3-fa81770f5360"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "hold:301"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "d80acd2f-7d79-4c89-80f2-aae32403016f",
+              "seq": 8,
+              "body": "DELETE /holds/301 returned the message 'Reservation cancelled'.",
+              "createdAt": "2026-09-09T05:52:30.810Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "pending",
+                  "look": {
+                    "item": {
+                      "id": "648fc6b5-9063-4ff9-bef3-fa81770f5360"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "6aa32f4a-d87b-41e7-a4c9-ab8b2065dddc"
+                  }
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "4229a994-3b2a-4c0d-80b2-4e23c58d782f",
+              "seq": 35,
+              "body": "GET /holds returned an empty holds array and the message 'No reservations'.",
+              "createdAt": "2026-09-09T06:33:44.454Z"
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "306f8333-55e0-457d-813b-b8b915da8915",
+            "name": "Cancel hold"
+          },
+          "observations": [
+            {
+              "id": "0a09b1a0-a296-4e4b-a10b-7b71c59a66a0",
+              "seq": 9,
+              "surfaceId": "3cb15245-0004-42cb-9918-d157ab22ab06",
+              "body": "After cancellation, GET /holds returned an empty holds array and the message 'No reservations'.",
+              "createdAt": "2026-09-09T05:53:01.687Z"
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "d5283162-89a7-477e-937c-404ad87e72a9",
+            "name": "Account"
+          },
+          "observations": [
+            {
+              "id": "bb6168f7-f277-4c78-891c-506ee1cb8d7e",
+              "seq": 10,
+              "body": "GET /account identified the session as Reader and linked to Reservations at /holds and Loans at /loans.",
+              "createdAt": "2026-09-09T05:53:35.006Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "d7f9a201-0b82-4219-a82c-fdc9b0c46eae"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "48d8ea02-5c4b-4902-b446-7f730ea651f8"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "22c71426-a8fb-4a61-af37-8f33213a7fec"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+            "name": "Loans"
+          },
+          "observations": [
+            {
+              "id": "71851440-1d35-4d6f-9076-f6b58673f1c6",
+              "seq": 11,
+              "body": "GET /loans returned loan 201 for Garden Notes and a link to /loans/201.",
+              "createdAt": "2026-09-09T05:54:05.312Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "6216a5e9-6645-4368-b74f-1e1642046ef9"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "1d54766c-4c40-46ca-b406-355701d7a613"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "name": "Loan details"
+          },
+          "observations": [
+            {
+              "id": "fc2f27f8-9dc1-4eb1-971e-2a345cf468ee",
+              "seq": 12,
+              "body": "GET /loans/201 returned Garden Notes with zero renewals and due date 2026-10-01, offering Reader POST actions to renew or return the loan.",
+              "createdAt": "2026-09-09T05:54:42.469Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "5e60ca02-032e-4dcb-83d0-533a40035adc"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "4dc8a337-16c9-42a1-8e60-6081803486cf",
+            "name": "Search catalog"
+          },
+          "observations": [
+            {
+              "id": "36324916-f028-44fa-9168-1b24480d97f1",
+              "seq": 16,
+              "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+              "body": "GET /catalog?q=River returned only River Atlas and retained the q title-search field.",
+              "createdAt": "2026-09-09T05:56:59.340Z"
+            },
+            {
+              "id": "1cd3cff7-dcb5-4762-8883-99300df483d0",
+              "seq": 38,
+              "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+              "body": "GET /catalog?q=Garden returned only Garden Notes, marked available, and retained the q title-search field.",
+              "createdAt": "2026-09-09T06:33:44.789Z"
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "d9c79cc5-9102-4c01-880f-de542275c16b",
+            "name": "View loan details"
+          },
+          "observations": [
+            {
+              "id": "2323e623-d2b2-4fdd-af4e-b8d64c27032e",
+              "seq": 30,
+              "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+              "body": "GET /loans/201 showed Garden Notes with zero renewals and offered Reader POST /loans/201/renew; no request has been sent yet.",
+              "createdAt": "2026-09-09T06:29:56.845Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "loan:201"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "f4668802-9f13-45c9-98d4-51a5aa7fab0e",
+              "seq": 31,
+              "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+              "body": "POST /loans/201/renew returned loan 201 with renewals 1 and due date 2026-10-15.",
+              "createdAt": "2026-09-09T06:30:16.200Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "2323e623-d2b2-4fdd-af4e-b8d64c27032e"
+                  }
+                },
+                "support": "missing"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "038a4900-1628-499d-b546-a4c95a785f5e",
+            "name": "Return book"
+          },
+          "observations": [
+            {
+              "id": "aeef5aa2-05a9-40a3-8a53-d5bcc56ec6fa",
+              "seq": 32,
+              "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+              "body": "GET /loans/201 showed Garden Notes with one renewal and offered Reader POST /loans/201/return; no request has been sent yet.",
+              "createdAt": "2026-09-09T06:31:26.162Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "loan:201"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "6531a2e4-fca5-4066-bc1d-a55839b1bbc9",
+              "seq": 33,
+              "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+              "body": "POST /loans/201/return returned 'Book returned' for book 102 and linked to /catalog and /loans.",
+              "createdAt": "2026-09-09T06:31:52.199Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "aeef5aa2-05a9-40a3-8a53-d5bcc56ec6fa"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "4b3027b8-c527-42a2-8715-aa52fa32186c",
+              "seq": 34,
+              "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+              "body": "After returning loan 201, GET /catalog listed River Atlas, Garden Notes, and Night Trains as available.",
+              "createdAt": "2026-09-09T06:33:44.370Z"
+            },
+            {
+              "id": "e21003a7-a4e7-4d5f-b06a-00221dff60e1",
+              "seq": 36,
+              "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+              "body": "After returning loan 201, GET /loans returned an empty loans array and the message 'No loans'.",
+              "createdAt": "2026-09-09T06:33:44.617Z"
+            }
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "projections": {
+      "items": [
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "name": "Catalog"
+          },
+          "count": 1,
+          "firstSeq": 1,
+          "lastSeq": 1
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f",
+            "name": "Book details"
+          },
+          "count": 7,
+          "firstSeq": 2,
+          "lastSeq": 37
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+            "name": "Create hold"
+          },
+          "count": 1,
+          "firstSeq": 5,
+          "lastSeq": 5
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "3cb15245-0004-42cb-9918-d157ab22ab06",
+            "name": "Holds"
+          },
+          "count": 4,
+          "firstSeq": 6,
+          "lastSeq": 35
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "306f8333-55e0-457d-813b-b8b915da8915",
+            "name": "Cancel hold"
+          },
+          "count": 1,
+          "firstSeq": 9,
+          "lastSeq": 9
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "d5283162-89a7-477e-937c-404ad87e72a9",
+            "name": "Account"
+          },
+          "count": 1,
+          "firstSeq": 10,
+          "lastSeq": 10
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+            "name": "Loans"
+          },
+          "count": 1,
+          "firstSeq": 11,
+          "lastSeq": 11
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "name": "Loan details"
+          },
+          "count": 1,
+          "firstSeq": 12,
+          "lastSeq": 12
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "4dc8a337-16c9-42a1-8e60-6081803486cf",
+            "name": "Search catalog"
+          },
+          "count": 2,
+          "firstSeq": 16,
+          "lastSeq": 38
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "d9c79cc5-9102-4c01-880f-de542275c16b",
+            "name": "View loan details"
+          },
+          "count": 2,
+          "firstSeq": 30,
+          "lastSeq": 31
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "61409925-dde8-4f75-9801-942d22518b3d",
+            "name": "Reader"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "038a4900-1628-499d-b546-a4c95a785f5e",
+            "name": "Return book"
+          },
+          "count": 4,
+          "firstSeq": 32,
+          "lastSeq": 36
+        }
+      ],
+      "complete": true
+    }
+  }
+]

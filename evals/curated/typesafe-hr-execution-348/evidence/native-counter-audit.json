@@ -1,0 +1,197 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "id": "pair-1-ordinary",
+      "source": "raw/pair-1-ordinary/host.jsonl",
+      "sha256": "60151a2aeaa5aee53185835cfbd09662b12caaa8c8b2ce723af8bad33a48ea00",
+      "native_updates": 38,
+      "normalized_records": 38,
+      "non_ok_records": 0,
+      "normalized_totals": {
+        "input": 1435482,
+        "cached_input": 1358592,
+        "cache_write_input": 0,
+        "output": 8283,
+        "reasoning_output": 1033
+      },
+      "native_final": {
+        "totalTokens": 1443765,
+        "inputTokens": 1435482,
+        "cachedInputTokens": 1358592,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 8283,
+        "reasoningOutputTokens": 1033
+      },
+      "all_fields_match": true
+    },
+    {
+      "id": "pair-1-advised",
+      "source": "raw/pair-1-advised/host.jsonl",
+      "sha256": "eaf310f6208043d3107cfe03898888d8cccc335fde0a81edc4956fba136cccec",
+      "native_updates": 34,
+      "normalized_records": 34,
+      "non_ok_records": 4,
+      "normalized_totals": {
+        "input": 1223724,
+        "cached_input": 1153792,
+        "cache_write_input": 0,
+        "output": 12405,
+        "reasoning_output": 973
+      },
+      "native_final": {
+        "totalTokens": 1236129,
+        "inputTokens": 1223724,
+        "cachedInputTokens": 1153792,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 12405,
+        "reasoningOutputTokens": 973
+      },
+      "all_fields_match": true
+    },
+    {
+      "id": "pair-2-advised",
+      "source": "raw/pair-2-advised/host.jsonl",
+      "sha256": "10b0a280366c83ce6d3da7d7feccfba1756a85bf1f3c7f93d358e994c3ef6747",
+      "native_updates": 32,
+      "normalized_records": 30,
+      "non_ok_records": 2,
+      "normalized_totals": {
+        "input": 1073934,
+        "cached_input": 1020416,
+        "cache_write_input": 0,
+        "output": 9812,
+        "reasoning_output": 741
+      },
+      "native_final": {
+        "totalTokens": 1083746,
+        "inputTokens": 1073934,
+        "cachedInputTokens": 1020416,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 9812,
+        "reasoningOutputTokens": 741
+      },
+      "all_fields_match": true
+    },
+    {
+      "id": "pair-2-ordinary",
+      "source": "raw/pair-2-ordinary/host.jsonl",
+      "sha256": "fe14b1a6c29117633d65eee22dc519e0c77854b9f00e554b3c790097a46e09e7",
+      "native_updates": 49,
+      "normalized_records": 49,
+      "non_ok_records": 3,
+      "normalized_totals": {
+        "input": 2044696,
+        "cached_input": 1920256,
+        "cache_write_input": 0,
+        "output": 10460,
+        "reasoning_output": 1363
+      },
+      "native_final": {
+        "totalTokens": 2055156,
+        "inputTokens": 2044696,
+        "cachedInputTokens": 1920256,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 10460,
+        "reasoningOutputTokens": 1363
+      },
+      "all_fields_match": true
+    },
+    {
+      "id": "pair-3-advised",
+      "source": "raw/pair-3-advised/host.jsonl",
+      "sha256": "59ac3f76639c2b402e90aff23074b6ef0350c5050d2850dee9e9b5f225faf6bd",
+      "native_updates": 38,
+      "normalized_records": 38,
+      "non_ok_records": 0,
+      "normalized_totals": {
+        "input": 1453466,
+        "cached_input": 1373952,
+        "cache_write_input": 0,
+        "output": 10405,
+        "reasoning_output": 712
+      },
+      "native_final": {
+        "totalTokens": 1463871,
+        "inputTokens": 1453466,
+        "cachedInputTokens": 1373952,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 10405,
+        "reasoningOutputTokens": 712
+      },
+      "all_fields_match": true
+    },
+    {
+      "id": "pair-3-ordinary",
+      "source": "raw/pair-3-ordinary/host.jsonl",
+      "sha256": "efc5bcc46cefdac7b76c1edb42515ff228299c91eb0f1d5a69aed41384f6d5f5",
+      "native_updates": 37,
+      "normalized_records": 37,
+      "non_ok_records": 0,
+      "normalized_totals": {
+        "input": 1328809,
+        "cached_input": 1257472,
+        "cache_write_input": 0,
+        "output": 7479,
+        "reasoning_output": 615
+      },
+      "native_final": {
+        "totalTokens": 1336288,
+        "inputTokens": 1328809,
+        "cachedInputTokens": 1257472,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7479,
+        "reasoningOutputTokens": 615
+      },
+      "all_fields_match": true
+    },
+    {
+      "id": "pair-4-ordinary",
+      "source": "raw/pair-4-ordinary/host.jsonl",
+      "sha256": "50e70f5ecbc021f168f7a516583601e978cc63b0384d4860862179dbc9cf6d89",
+      "native_updates": 43,
+      "normalized_records": 43,
+      "non_ok_records": 0,
+      "normalized_totals": {
+        "input": 1541455,
+        "cached_input": 1478912,
+        "cache_write_input": 0,
+        "output": 7544,
+        "reasoning_output": 940
+      },
+      "native_final": {
+        "totalTokens": 1548999,
+        "inputTokens": 1541455,
+        "cachedInputTokens": 1478912,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 7544,
+        "reasoningOutputTokens": 940
+      },
+      "all_fields_match": true
+    },
+    {
+      "id": "pair-4-advised",
+      "source": "raw/pair-4-advised/host.jsonl",
+      "sha256": "f95d6782dbb23db732a705762e24feb30edab43b31d54616846ab31c487bfcd6",
+      "native_updates": 62,
+      "normalized_records": 62,
+      "non_ok_records": 3,
+      "normalized_totals": {
+        "input": 3165449,
+        "cached_input": 3077632,
+        "cache_write_input": 0,
+        "output": 13438,
+        "reasoning_output": 1334
+      },
+      "native_final": {
+        "totalTokens": 3178887,
+        "inputTokens": 3165449,
+        "cachedInputTokens": 3077632,
+        "cacheWriteInputTokens": 0,
+        "outputTokens": 13438,
+        "reasoningOutputTokens": 1334
+      },
+      "all_fields_match": true
+    }
+  ]
+}

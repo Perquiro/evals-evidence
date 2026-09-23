@@ -1,0 +1,52 @@
+[
+  {
+    "case_id": "signed_out_login_over_public_features",
+    "chosen_id": "c1",
+    "reason": "A b21 Employee login outcome is unobserved and is needed to reach private self-service behavior; the public features already have recorded content."
+  },
+  {
+    "case_id": "proven_login_leave_persistence",
+    "chosen_id": "c1",
+    "reason": "Login already succeeded in this session, while cancellation has no readback and leaves a concrete Leave Journey question open."
+  },
+  {
+    "case_id": "stale_build_error_new_build_login",
+    "chosen_id": "c1",
+    "reason": "The recorded error came from b20 and an expired link; employee-a's login result on the current b22 build is still unknown."
+  },
+  {
+    "case_id": "verify_session_wide_access_loss",
+    "chosen_id": "c1",
+    "reason": "A second private Surface can distinguish a session-wide access loss from a Leave-only redirect before work continues on the saved draft."
+  },
+  {
+    "case_id": "profile_update_final_readback",
+    "chosen_id": "c1",
+    "reason": "The phone update reported success but has no final readback; notification preferences are a separate, unstarted behavior."
+  },
+  {
+    "case_id": "incomplete_purpose_discriminating_check",
+    "chosen_id": "c1",
+    "reason": "The observed Leave entry establishes whether an Employee Journey starts there without assuming a payroll, benefits, or approval dependency."
+  },
+  {
+    "case_id": "required_recovery_over_login_suspicion",
+    "chosen_id": "c1",
+    "reason": "The contact update has an unresolved saved attempt, and the host marks its read-only recovery check as required; login failure is only a future concern."
+  },
+  {
+    "case_id": "explicit_human_priority_over_access",
+    "chosen_id": "c2",
+    "reason": "The confirmation-panel check is eligible and carries the explicit human priority; no recovery is pending."
+  },
+  {
+    "case_id": "ineligible_high_impact_filtered",
+    "chosen_id": "c2",
+    "reason": "The identity-provider check is ineligible. Reloading request 88 is eligible and answers the unresolved cancellation result."
+  },
+  {
+    "case_id": "no_new_question_decline_discover",
+    "chosen_id": null,
+    "reason": "Every supplied check repeats behavior established in the same actor, build, and session. There is no open question or new evidence, so Explore should discover another candidate."
+  }
+]

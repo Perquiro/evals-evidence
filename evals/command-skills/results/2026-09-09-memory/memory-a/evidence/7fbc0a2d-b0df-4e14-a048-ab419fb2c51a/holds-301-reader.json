@@ -1,0 +1,5 @@
+{
+  "holds": [
+    {"id": "301", "bookId": "101", "title": "River Atlas", "cancel": {"method": "DELETE", "href": "/holds/301"}}
+  ]
+}

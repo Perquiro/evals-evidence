@@ -1,0 +1,277 @@
+{
+  "revision": "974b0c23-8d67-4a2b-9501-a02ffa727996",
+  "coverage": {
+    "actors": 2,
+    "surfaces": 13,
+    "journeys": 6,
+    "observations": 30,
+    "evidence": 2,
+    "scenarios": 0,
+    "tests": 0,
+    "surfacesWithoutObservations": 1,
+    "journeysWithoutAcceptedScenarios": 6,
+    "acceptedScenariosWithoutTests": 0
+  },
+  "entries": [
+    {
+      "kind": "actor",
+      "id": "40477a91-5970-4862-94d2-e1955c1f4610",
+      "name": "Reader"
+    },
+    {
+      "kind": "actor",
+      "id": "dd4f772a-7769-4f91-be34-b3f6e63cc9d3",
+      "name": "Librarian"
+    },
+    {
+      "kind": "surface",
+      "id": "0fe87801-e64f-44c0-90df-9dd28a22c990",
+      "name": "Root",
+      "locator": "GET /"
+    },
+    {
+      "kind": "surface",
+      "id": "fedc154a-90fa-42ed-815b-f108a6acf1fd",
+      "name": "Documentation",
+      "locator": "GET /docs"
+    },
+    {
+      "kind": "surface",
+      "id": "082ee6c4-2e29-4d2e-a4e5-a333741c0a6d",
+      "name": "Catalog",
+      "locator": "GET /catalog"
+    },
+    {
+      "kind": "surface",
+      "id": "349e1e44-025d-43ba-b218-7be6ab30a04e",
+      "name": "Book detail",
+      "locator": "GET /books/:id"
+    },
+    {
+      "kind": "surface",
+      "id": "c3bd982a-15a2-49cd-9d1b-fd350ce15264",
+      "name": "Account",
+      "locator": "GET /account"
+    },
+    {
+      "kind": "surface",
+      "id": "0d5921a9-0609-485e-a7f2-7b340c3961bd",
+      "name": "Reservations",
+      "locator": "GET /holds"
+    },
+    {
+      "kind": "surface",
+      "id": "62e19dad-451d-4bf5-8454-7d134dfae75c",
+      "name": "Reserve book",
+      "locator": "POST /holds"
+    },
+    {
+      "kind": "surface",
+      "id": "b9d93349-1b5b-44fd-88b9-01300b34df6a",
+      "name": "Loans",
+      "locator": "GET /loans"
+    },
+    {
+      "kind": "surface",
+      "id": "675e411d-697d-4a1c-807c-c35a1c3d266f",
+      "name": "Loan detail",
+      "locator": "GET /loans/:id"
+    },
+    {
+      "kind": "surface",
+      "id": "3d485a8e-33af-464f-b04d-4ce73071d80f",
+      "name": "Service desk",
+      "locator": "GET /desk"
+    },
+    {
+      "kind": "surface",
+      "id": "3b0c2aad-cfc3-411d-b234-7c9da0d28ae9",
+      "name": "Check in a book",
+      "locator": "POST /desk/returns"
+    },
+    {
+      "kind": "surface",
+      "id": "e9abf3f8-a4f4-495d-a979-e885da721d62",
+      "name": "Renew loan",
+      "locator": "POST /loans/:id/renew"
+    },
+    {
+      "kind": "surface",
+      "id": "6df88b92-59ab-4387-86e3-a2682e7ed617",
+      "name": "Cancel reservation",
+      "locator": "DELETE /holds/:id"
+    },
+    {
+      "kind": "journey",
+      "id": "795e01fa-9448-442b-8bf6-43a91093b828",
+      "name": "Find a book",
+      "surfaceCount": 2,
+      "testFolder": "find-a-book"
+    },
+    {
+      "kind": "journey",
+      "id": "6dc55e98-02da-4dc2-824f-12d1d67bc188",
+      "name": "View loans",
+      "surfaceCount": 2,
+      "testFolder": "view-loans"
+    },
+    {
+      "kind": "journey",
+      "id": "8de9c4c9-747d-47ab-94e8-3ca7aadb1ec6",
+      "name": "Reserve a book",
+      "surfaceCount": 3,
+      "testFolder": "reserve-a-book"
+    },
+    {
+      "kind": "journey",
+      "id": "35613818-36be-4a1e-a711-0d156129abba",
+      "name": "Check in a book",
+      "surfaceCount": 3,
+      "testFolder": "check-in-a-book"
+    },
+    {
+      "kind": "journey",
+      "id": "b0b71ff3-d5c1-4f24-96a2-73fc9119084f",
+      "name": "Renew a loan",
+      "surfaceCount": 4,
+      "testFolder": "renew-a-loan"
+    },
+    {
+      "kind": "journey",
+      "id": "dafa2c0b-ebe9-428b-8204-b1087b502bfe",
+      "name": "Cancel a reservation",
+      "surfaceCount": 5,
+      "testFolder": "cancel-a-reservation"
+    },
+    {
+      "kind": "evidence",
+      "id": "3704fa5d-c316-4f2d-8f85-e65270cd7191",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T06:46:22.578Z",
+      "linkedObservationCount": 10
+    },
+    {
+      "kind": "evidence",
+      "id": "cd8b89a6-d8a3-4a45-917a-c2bc099f64d2",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T06:46:22.679Z",
+      "linkedObservationCount": 20
+    }
+  ],
+  "storedRelationships": [
+    {
+      "kind": "journey_surface",
+      "journeyId": "795e01fa-9448-442b-8bf6-43a91093b828",
+      "surfaceId": "082ee6c4-2e29-4d2e-a4e5-a333741c0a6d",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "795e01fa-9448-442b-8bf6-43a91093b828",
+      "surfaceId": "349e1e44-025d-43ba-b218-7be6ab30a04e",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "6dc55e98-02da-4dc2-824f-12d1d67bc188",
+      "surfaceId": "b9d93349-1b5b-44fd-88b9-01300b34df6a",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "6dc55e98-02da-4dc2-824f-12d1d67bc188",
+      "surfaceId": "675e411d-697d-4a1c-807c-c35a1c3d266f",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "8de9c4c9-747d-47ab-94e8-3ca7aadb1ec6",
+      "surfaceId": "349e1e44-025d-43ba-b218-7be6ab30a04e",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "8de9c4c9-747d-47ab-94e8-3ca7aadb1ec6",
+      "surfaceId": "62e19dad-451d-4bf5-8454-7d134dfae75c",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "8de9c4c9-747d-47ab-94e8-3ca7aadb1ec6",
+      "surfaceId": "0d5921a9-0609-485e-a7f2-7b340c3961bd",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "35613818-36be-4a1e-a711-0d156129abba",
+      "surfaceId": "3d485a8e-33af-464f-b04d-4ce73071d80f",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "35613818-36be-4a1e-a711-0d156129abba",
+      "surfaceId": "3d485a8e-33af-464f-b04d-4ce73071d80f",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "35613818-36be-4a1e-a711-0d156129abba",
+      "surfaceId": "349e1e44-025d-43ba-b218-7be6ab30a04e",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "b0b71ff3-d5c1-4f24-96a2-73fc9119084f",
+      "surfaceId": "675e411d-697d-4a1c-807c-c35a1c3d266f",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "b0b71ff3-d5c1-4f24-96a2-73fc9119084f",
+      "surfaceId": "e9abf3f8-a4f4-495d-a979-e885da721d62",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "b0b71ff3-d5c1-4f24-96a2-73fc9119084f",
+      "surfaceId": "e9abf3f8-a4f4-495d-a979-e885da721d62",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "b0b71ff3-d5c1-4f24-96a2-73fc9119084f",
+      "surfaceId": "675e411d-697d-4a1c-807c-c35a1c3d266f",
+      "position": 3
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "dafa2c0b-ebe9-428b-8204-b1087b502bfe",
+      "surfaceId": "0d5921a9-0609-485e-a7f2-7b340c3961bd",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "dafa2c0b-ebe9-428b-8204-b1087b502bfe",
+      "surfaceId": "6df88b92-59ab-4387-86e3-a2682e7ed617",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "dafa2c0b-ebe9-428b-8204-b1087b502bfe",
+      "surfaceId": "0d5921a9-0609-485e-a7f2-7b340c3961bd",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "dafa2c0b-ebe9-428b-8204-b1087b502bfe",
+      "surfaceId": "6df88b92-59ab-4387-86e3-a2682e7ed617",
+      "position": 3
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "dafa2c0b-ebe9-428b-8204-b1087b502bfe",
+      "surfaceId": "0d5921a9-0609-485e-a7f2-7b340c3961bd",
+      "position": 4
+    }
+  ]
+}

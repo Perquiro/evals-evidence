@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"holds":[{"id":"301","bookId":"101","title":"River Atlas","cancel":{"method":"DELETE","href":"/holds/301"}}]}

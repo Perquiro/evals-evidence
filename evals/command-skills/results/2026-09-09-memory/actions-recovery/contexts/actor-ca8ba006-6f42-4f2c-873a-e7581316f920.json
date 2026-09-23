@@ -1,0 +1,534 @@
+[
+  {
+    "revision": "bfbc1b96-d03e-4390-addd-dbeefdc1a404",
+    "anchor": {
+      "kind": "actor",
+      "record": {
+        "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+        "name": "Customer",
+        "secretNames": [],
+        "createdAt": "2026-09-09T07:09:15.170Z"
+      }
+    },
+    "selection": {
+      "productVersions": {
+        "scope": "all"
+      },
+      "observations": {
+        "detail": "records",
+        "actorIds": [
+          "ca8ba006-6f42-4f2c-873a-e7581316f920"
+        ],
+        "scope": "both"
+      }
+    },
+    "storedRelationships": {
+      "items": [
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "name": "Customer"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+            "name": "Reserve"
+          },
+          "observations": [
+            {
+              "id": "b75f769a-2bb5-4664-a0f1-b706389ebfaa",
+              "seq": 1,
+              "productVersion": "2.5",
+              "body": "The Reserve page offers a Reserve submit button. Current Product state says there is no reservation and version is 2.5.",
+              "createdAt": "2026-09-09T07:09:15.563Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "none",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "8106671b-1f96-43be-9d59-be236ab0a54d"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "c4525266-4748-430c-b217-0d8dba9c97e0",
+              "seq": 2,
+              "productVersion": "2.5",
+              "body": "Reserve is offered and the current Product state has no reservation immediately before POST /reservations.",
+              "createdAt": "2026-09-09T07:09:15.592Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "8106671b-1f96-43be-9d59-be236ab0a54d"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "reservation:42"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "027786e1-6a66-4493-8260-86071e1ada26",
+              "seq": 3,
+              "productVersion": "2.5",
+              "body": "Reconciliation GET /api/reservations/42 returned id 42, state active, reservationCount 1, and version 2.5; the prior Reserve attempt completed.",
+              "createdAt": "2026-09-09T07:28:03.870Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "action",
+                  "capture": "pending",
+                  "look": {
+                    "item": {
+                      "id": "8106671b-1f96-43be-9d59-be236ab0a54d"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "c4525266-4748-430c-b217-0d8dba9c97e0"
+                  }
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "name": "Customer"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "486a9b5c-239f-493f-b4a5-4d969c96a430",
+            "name": "Reservation details"
+          },
+          "observations": [
+            {
+              "id": "827e2a9e-9dbb-494e-81b9-ba04d0b46eb1",
+              "seq": 4,
+              "productVersion": "2.5",
+              "body": "Reservation details for reservation 42 shows Status: active and an Actions control.",
+              "createdAt": "2026-09-09T07:29:30.788Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "none",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "06ba58c7-18ef-492c-9b5c-eb9353ecd0a1"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "f281f757-cd11-46a6-869b-7c375f200b76"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "a2c9617b-b8ae-46a2-bbd9-b42cd8a2ac9d",
+              "seq": 5,
+              "productVersion": "2.5",
+              "body": "Opening Actions revealed Cancel, Edit, and Download on Reservation details.",
+              "createdAt": "2026-09-09T07:30:08.212Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "f281f757-cd11-46a6-869b-7c375f200b76"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "486a9b5c-239f-493f-b4a5-4d969c96a430"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "7f6da376-b78b-479d-b190-48c5515adb80",
+              "seq": 6,
+              "productVersion": "2.5",
+              "body": "The opened Actions menu offers Cancel, Edit, and Download.",
+              "createdAt": "2026-09-09T07:30:08.216Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "none",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "cc2f429b-952d-45d2-a1d3-6169e0c620d5"
+                      },
+                      "revealedVia": {
+                        "id": "f281f757-cd11-46a6-869b-7c375f200b76"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "17845c67-6808-4e48-9ba3-8155ba1b046b"
+                      },
+                      "revealedVia": {
+                        "id": "f281f757-cd11-46a6-869b-7c375f200b76"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "ce9ee92e-e049-4228-928e-2302710a82c6"
+                      },
+                      "revealedVia": {
+                        "id": "f281f757-cd11-46a6-869b-7c375f200b76"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "edec65fa-b653-40b1-bcca-61a8fb70584c",
+              "seq": 7,
+              "productVersion": "2.5",
+              "body": "Selecting Cancel opened a cancellation form while reservation 42 remained active.",
+              "createdAt": "2026-09-09T07:30:42.901Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "cc2f429b-952d-45d2-a1d3-6169e0c620d5"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "486a9b5c-239f-493f-b4a5-4d969c96a430"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "93967cf6-c11c-4a9c-a505-4c6d1221bcd7",
+              "seq": 8,
+              "productVersion": "2.5",
+              "body": "The cancellation form shows an empty visible Reason field marked required and a Confirm cancellation control.",
+              "createdAt": "2026-09-09T07:30:42.910Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "none",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "298a5426-a18c-42d8-8772-74801bf27a64"
+                      },
+                      "revealedVia": {
+                        "id": "cc2f429b-952d-45d2-a1d3-6169e0c620d5"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "6d169408-2459-4c18-8324-582bb3800589"
+                      },
+                      "revealedVia": {
+                        "id": "cc2f429b-952d-45d2-a1d3-6169e0c620d5"
+                      },
+                      "ruleFor": {
+                        "id": "298a5426-a18c-42d8-8772-74801bf27a64"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "b0d4bc20-8bed-4de2-9db3-c5e64f2da31e"
+                      },
+                      "revealedVia": {
+                        "id": "cc2f429b-952d-45d2-a1d3-6169e0c620d5"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "ceebf851-8d4e-4e5e-a782-c183f9e49284",
+              "seq": 9,
+              "productVersion": "2.5",
+              "body": "Reason is visible, empty, and invalid immediately before attempting Confirm cancellation for the empty-Reason validation branch.",
+              "createdAt": "2026-09-09T07:31:05.991Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "6d169408-2459-4c18-8324-582bb3800589"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "reservation:42"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "cb492d73-a3bd-4eb7-802e-da1a93101a9d",
+              "seq": 10,
+              "productVersion": "2.5",
+              "body": "Clicking Confirm cancellation with empty Reason kept the cancellation form visible; the Reason input remained invalid with browser validation message \"Please fill out this field.\", and Status remained active.",
+              "createdAt": "2026-09-09T07:31:35.123Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "action",
+                  "capture": "pending",
+                  "look": {
+                    "item": {
+                      "id": "6d169408-2459-4c18-8324-582bb3800589"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "ceebf851-8d4e-4e5e-a782-c183f9e49284"
+                  }
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "966dbc2f-c758-4567-a3e9-40793cce9e55",
+              "seq": 11,
+              "productVersion": "2.5",
+              "body": "Reservation 42 is active and the visible required Reason field contains \"Plans changed\" immediately before Confirm cancellation.",
+              "createdAt": "2026-09-09T07:32:08.707Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "b0d4bc20-8bed-4de2-9db3-c5e64f2da31e"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "reservation:42"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "f806416b-4dad-4761-b358-69b9025598a7",
+              "seq": 13,
+              "productVersion": "2.5",
+              "body": "Confirm cancellation navigated to /reservations/42/cancel, where the page displays Status: cancelled.",
+              "createdAt": "2026-09-09T07:33:41.769Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "action",
+                  "capture": "pending",
+                  "look": {
+                    "item": {
+                      "id": "b0d4bc20-8bed-4de2-9db3-c5e64f2da31e"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "966dbc2f-c758-4567-a3e9-40793cce9e55"
+                  }
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "name": "Customer"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "f23c4636-be1e-4c66-abbe-46d434f5e30f",
+            "name": "Cancellation confirmation"
+          },
+          "observations": [
+            {
+              "id": "7aea2e47-6cf1-4e39-b415-741e2964911d",
+              "seq": 12,
+              "body": "Cancellation confirmation at /reservations/42/cancel displays Status: cancelled.",
+              "createdAt": "2026-09-09T07:33:02.025Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "none",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "354f6968-040a-4fbe-80d1-9b48d3f364d7"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "missing"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "name": "Customer"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+            "name": "GET /api/reservations/:id"
+          },
+          "observations": [
+            {
+              "id": "9b30b3c2-4c23-4d0a-bedf-83cde702392c",
+              "seq": 14,
+              "productVersion": "2.5",
+              "body": "GET /api/reservations/42 returned id 42, state cancelled, reservationCount 1, and version 2.5 after cancellation.",
+              "createdAt": "2026-09-09T07:34:58.626Z",
+              "inspection": {
+                "platform": "browser",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "3c5226ae-11a3-4380-b1f4-d3f14e92de2f"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "9c0f69c2-a190-4fd7-bd81-619991096e75"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "97ff1a93-3aa5-45c2-8b8f-d95644c149a4"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "6b9f3214-7baa-4330-b78c-9790b1a66b7b"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "projections": {
+      "items": [
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "name": "Customer"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+            "name": "Reserve"
+          },
+          "count": 3,
+          "firstSeq": 1,
+          "lastSeq": 3
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "name": "Customer"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "486a9b5c-239f-493f-b4a5-4d969c96a430",
+            "name": "Reservation details"
+          },
+          "count": 9,
+          "firstSeq": 4,
+          "lastSeq": 13
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "name": "Customer"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "f23c4636-be1e-4c66-abbe-46d434f5e30f",
+            "name": "Cancellation confirmation"
+          },
+          "count": 1,
+          "firstSeq": 12,
+          "lastSeq": 12
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "name": "Customer"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+            "name": "GET /api/reservations/:id"
+          },
+          "count": 1,
+          "firstSeq": 14,
+          "lastSeq": 14
+        }
+      ],
+      "complete": true
+    }
+  }
+]

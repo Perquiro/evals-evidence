@@ -1,0 +1,16 @@
+{
+  "requestToken": "99ab0577-3eb0-4560-8f42-a39cfc9e8bba",
+  "surfaceId": "f3b3143d-758b-4105-a001-03577e407fa2",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "journeyId": "ff74dd11-5b88-40cd-8424-97db8ddc4640",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "POST /loans/201/renew returned 200 OK with renewal count 1 and due date 2026-10-15.",
+      "look": { "item": { "id": "285ec759-8a35-46b4-bb00-4efd8ff3e60b" }, "kind": "exercised", "attemptObservationId": "b3881236-8524-4537-a8b9-9ff267f1bc78" },
+      "capture": "pending"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "graders": [
+    {
+      "identity": "/root/blind_grader_a",
+      "configured_model": "gpt-5.6-terra",
+      "effort": "high",
+      "input": "blind/",
+      "output": "grades/grader-a.json"
+    },
+    {
+      "identity": "/root/blind_grader_b",
+      "configured_model": "gpt-5.6-terra",
+      "effort": "high",
+      "input": "blind/",
+      "output": "grades/grader-b.json"
+    }
+  ],
+  "fresh_context": true,
+  "independent_initial_outputs": true,
+  "shared_model_family": true,
+  "limitation": "Two configured instances of the same model family are not two independent human judges. Grade input omits planning metadata; adjudication can consult original labeled records for provenance and correction semantics.",
+  "adjudicator": "/root",
+  "result_reviewer": "/root/driver_spec"
+}

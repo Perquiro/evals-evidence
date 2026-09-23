@@ -1,0 +1,6 @@
+{
+  "requestToken": "4938a0b7-3d31-41bc-884f-645949fdec09",
+  "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+  "actor": "Reader",
+  "body": "After returning loan 201, GET /books/102 returned Garden Notes as available and offered Reader POST /holds with bookId 102."
+}

@@ -1,0 +1,302 @@
+{
+  "itemCount": 15,
+  "normalizedDuplicateGroups": [],
+  "items": [
+    {
+      "id": "3911e7b8-43f3-45a6-b6ff-cf3ccc0016df",
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "name": "bookId",
+      "kind": "field",
+      "createdAt": "2026-09-09T07:06:53.324Z",
+      "surface": "POST /holds"
+    },
+    {
+      "id": "bdef7670-ecc7-4147-97e8-4734ce00b4f7",
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "name": "Reserve book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:06:53.325Z",
+      "surface": "POST /holds"
+    },
+    {
+      "id": "fdc2de5c-71d1-4139-a4c0-4837183c7276",
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "name": "Reserve unavailable book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:08:34.503Z",
+      "surface": "POST /holds"
+    },
+    {
+      "id": "f6564d32-bd6d-40d8-8e93-09c4a911f53c",
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "name": "Retry reserve unavailable book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:10:37.504Z",
+      "surface": "POST /holds"
+    },
+    {
+      "id": "12d09c8b-d9fb-4d2c-ae66-edf5977f1f9c",
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "name": "Reserve available book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:11:18.315Z",
+      "surface": "POST /holds"
+    },
+    {
+      "id": "0f5f925e-e000-4173-854a-68978d61c13c",
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "name": "Gap action 26-repeat-hold-101",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:20:29.049Z",
+      "surface": "POST /holds"
+    },
+    {
+      "id": "fae9f6bc-9a58-4eb4-a4b7-180b5adc4890",
+      "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "name": "bookId",
+      "kind": "field",
+      "createdAt": "2026-09-09T07:11:46.531Z",
+      "surface": "POST /desk/returns"
+    },
+    {
+      "id": "40d5b9f4-2426-41f9-b265-adf99132820f",
+      "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "name": "Check in a book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:11:46.532Z",
+      "surface": "POST /desk/returns"
+    },
+    {
+      "id": "5994b467-3bad-4b7f-9774-5bdf3a654b72",
+      "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "name": "Gap action 28-checkin-empty",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:20:29.267Z",
+      "surface": "POST /desk/returns"
+    },
+    {
+      "id": "fa84040b-c991-4732-bf1b-d5e020d02966",
+      "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "name": "Gap action 29-repeat-checkin-103",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:20:29.454Z",
+      "surface": "POST /desk/returns"
+    },
+    {
+      "id": "3774a53f-06ab-49db-a3b1-578c1f6e1f05",
+      "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "name": "loan31-renew",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:20:58.874Z",
+      "surface": "GET /loans/:id"
+    },
+    {
+      "id": "5da7bbd3-ae97-4672-affe-185c1ad35713",
+      "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "name": "loan33-repeat-renew",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:20:59.071Z",
+      "surface": "GET /loans/:id"
+    },
+    {
+      "id": "1084ffdf-4766-4778-8bdf-1d97873c191e",
+      "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "name": "loan35-return",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:20:59.259Z",
+      "surface": "GET /loans/:id"
+    },
+    {
+      "id": "373a01de-f0b4-48f0-a1e9-182dd6c61325",
+      "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "name": "loan36-repeat-return",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:20:59.441Z",
+      "surface": "GET /loans/:id"
+    },
+    {
+      "id": "72aa94d8-d339-4651-91c1-bf5db5a63718",
+      "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "name": "loan39-renew-after-return",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:20:59.653Z",
+      "surface": "GET /loans/:id"
+    }
+  ],
+  "gaps": [
+    {
+      "itemId": "bdef7670-ecc7-4147-97e8-4734ce00b4f7",
+      "name": "Reserve book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "9bcfb05b-010e-423e-a021-aadafc3a7dc8"
+      ]
+    },
+    {
+      "itemId": "fdc2de5c-71d1-4139-a4c0-4837183c7276",
+      "name": "Reserve unavailable book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "unresolved",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "f193b235-1aca-483f-84de-61fe5c5b6942"
+      ]
+    },
+    {
+      "itemId": "f6564d32-bd6d-40d8-8e93-09c4a911f53c",
+      "name": "Retry reserve unavailable book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "6c9c9c1c-572b-4f9f-9794-02b5b38fd6b5"
+      ]
+    },
+    {
+      "itemId": "12d09c8b-d9fb-4d2c-ae66-edf5977f1f9c",
+      "name": "Reserve available book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "unresolved",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "eb975598-1bcb-4bd5-8a87-5d537b678072"
+      ]
+    },
+    {
+      "itemId": "0f5f925e-e000-4173-854a-68978d61c13c",
+      "name": "Gap action 26-repeat-hold-101",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "351d5ace-8a81-4e16-a495-f31cb715f7fa"
+      ]
+    },
+    {
+      "itemId": "40d5b9f4-2426-41f9-b265-adf99132820f",
+      "name": "Check in a book",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "unresolved",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "30d6eb60-541c-4c94-9103-ac163444cbcb"
+      ]
+    },
+    {
+      "itemId": "5994b467-3bad-4b7f-9774-5bdf3a654b72",
+      "name": "Gap action 28-checkin-empty",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "6d8addaf-377b-4596-97c0-f469153aa5ca"
+      ]
+    },
+    {
+      "itemId": "fa84040b-c991-4732-bf1b-d5e020d02966",
+      "name": "Gap action 29-repeat-checkin-103",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "e9f4ec7c-b864-4bd1-8bb5-e04c32f0ef9b"
+      ]
+    },
+    {
+      "itemId": "3774a53f-06ab-49db-a3b1-578c1f6e1f05",
+      "name": "loan31-renew",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "5680f8c9-2d87-48db-b355-74d5015276a1"
+      ]
+    },
+    {
+      "itemId": "5da7bbd3-ae97-4672-affe-185c1ad35713",
+      "name": "loan33-repeat-renew",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "140fbcec-187e-4b5f-a11c-562f3d4ea5c7"
+      ]
+    },
+    {
+      "itemId": "1084ffdf-4766-4778-8bdf-1d97873c191e",
+      "name": "loan35-return",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "b299bea4-5962-4dd1-a051-42c6d55dcf52"
+      ]
+    },
+    {
+      "itemId": "373a01de-f0b4-48f0-a1e9-182dd6c61325",
+      "name": "loan36-repeat-return",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "9e72de8c-4bc8-4860-b660-c3a7709848f7"
+      ]
+    },
+    {
+      "itemId": "72aa94d8-d339-4651-91c1-bf5db5a63718",
+      "name": "loan39-renew-after-return",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "2647a6f0-6a0c-475c-82bf-9a022c796c39"
+      ]
+    }
+  ],
+  "recovery": [
+    {
+      "id": "f193b235-1aca-483f-84de-61fe5c5b6942",
+      "seq": 4,
+      "body": "Prepared the reviewed unavailable-state reservation request for the discovered unavailable book 102 before any later change."
+    },
+    {
+      "id": "eb975598-1bcb-4bd5-8a87-5d537b678072",
+      "seq": 7,
+      "body": "Prepared the reviewed successful reservation request for the discovered available book 101."
+    },
+    {
+      "id": "30d6eb60-541c-4c94-9103-ac163444cbcb",
+      "seq": 9,
+      "body": "Prepared the reviewed Librarian check-in request for the pending return book 103."
+    }
+  ],
+  "limits": "This enumerates final typed state and normalized duplicate candidates. Semantic aliases, false pending/reopened checks and unsupported repeats require human comparison with the actual trace. No such conclusions are inferred from a zero exact-duplicate count."
+}

@@ -1,0 +1,19 @@
+{
+  "requestToken": "52d8c4d2-c68e-4f60-b430-1395e8df93f0",
+  "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "no-loans", "name": "No loans message", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "After return, GET /loans returned no loans and the message 'No loans'.",
+      "looks": [
+        { "item": { "key": "no-loans" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

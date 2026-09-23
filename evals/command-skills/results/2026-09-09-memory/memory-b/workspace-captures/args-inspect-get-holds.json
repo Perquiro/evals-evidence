@@ -1,0 +1,21 @@
+{
+  "requestToken": "559fdc7c-6c80-4374-b8d5-8cfc73da766b",
+  "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "hold", "name": "River Atlas reservation", "kind": "information" },
+    { "key": "cancel", "name": "Cancel reservation", "kind": "action" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /holds returned reservation 301 for River Atlas (bookId 101) and offered DELETE /holds/301 to cancel it.",
+      "looks": [
+        { "item": { "key": "hold" }, "kind": "offered" },
+        { "item": { "key": "cancel" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

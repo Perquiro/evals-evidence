@@ -1,0 +1,53 @@
+{
+  "boundary": "Product accepted reservation before host read response body",
+  "inventoryRequest": {
+    "requestToken": "3bed91f1-89c2-4d0c-8352-babd7ad35499",
+    "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+    "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+    "platform": "api",
+    "items": [
+      {
+        "key": "reserve",
+        "name": "Reserve River Atlas",
+        "kind": "action"
+      }
+    ],
+    "reports": [
+      {
+        "kind": "inventory",
+        "body": "River Atlas book 101 is available and offers POST /holds with bookId 101. Reader has no reservations.",
+        "looks": [
+          {
+            "kind": "offered",
+            "item": {
+              "key": "reserve"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "attemptRequest": {
+    "requestToken": "347832ed-3bac-4dd1-9453-0ed31318db74",
+    "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+    "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+    "platform": "api",
+    "items": [],
+    "reports": [
+      {
+        "kind": "action",
+        "body": "River Atlas 101 is available and Reader has no reservations immediately before the request.",
+        "look": {
+          "kind": "attempting",
+          "item": {
+            "id": "6684b1f0-b543-43d7-ba36-df01c13a5b7f"
+          },
+          "resourceRef": "book:101; Reader holds"
+        }
+      }
+    ]
+  },
+  "attemptId": "2ed79e24-2c2b-4805-95a4-31958b0a311f",
+  "productPostCountBeforeResume": 1,
+  "source": "7813481998542201e46a6f88362895d818bd3ab5"
+}

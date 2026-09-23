@@ -1,0 +1,14 @@
+{
+  "requestToken": "b7692534-d5f6-4e90-b430-4f41bd1884b5",
+  "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "GET /desk currently lists Night Trains as pending return with bookId 103 and offers Check in a book at POST /desk/returns. The check-in request has not been sent.",
+      "look": { "item": { "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339" }, "kind": "attempting", "resourceRef": "book:103" }
+    }
+  ]
+}

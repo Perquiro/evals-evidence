@@ -1,0 +1,15 @@
+{
+  "requestToken": "c11db074-214a-4ba3-b2a7-b6233d532268",
+  "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "GET /catalog?q=River Atlas returned one result: River Atlas (id 101), marked available.",
+      "look": { "item": { "id": "cf725c9c-fb35-4c3e-b82c-befab61ac60c" }, "kind": "reached", "reachedSurfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7" },
+      "capture": "pending"
+    }
+  ]
+}

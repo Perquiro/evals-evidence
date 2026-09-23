@@ -1,0 +1,336 @@
+[
+  {
+    "revision": "eac60c42-31c1-48d7-91d0-b2b233afb923",
+    "selection": {
+      "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+      "actorIds": [
+        "61409925-dde8-4f75-9801-942d22518b3d",
+        "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+      "name": "Loan details",
+      "locator": "GET /loans/:id",
+      "createdAt": "2026-09-09T05:54:26.420Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "5e60ca02-032e-4dcb-83d0-533a40035adc",
+          "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+          "name": "Loan details",
+          "kind": "information",
+          "createdAt": "2026-09-09T05:54:42.468Z"
+        },
+        {
+          "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80",
+          "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+          "name": "Renew loan",
+          "kind": "action",
+          "createdAt": "2026-09-09T05:54:42.468Z"
+        },
+        {
+          "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d",
+          "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+          "name": "Return book",
+          "kind": "action",
+          "createdAt": "2026-09-09T05:54:42.468Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "fc2f27f8-9dc1-4eb1-971e-2a345cf468ee",
+            "seq": 12,
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+            "body": "GET /loans/201 returned Garden Notes with zero renewals and due date 2026-10-01, offering Reader POST actions to renew or return the loan.",
+            "createdAt": "2026-09-09T05:54:42.469Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "5e60ca02-032e-4dcb-83d0-533a40035adc"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "8bd9c375-39e7-40b2-9bb4-0e56b97d31e8",
+            "seq": 22,
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "GET /loans/201 returned Garden Notes, book id 102, renewal count 0 and due date 2026-10-01. It advertised renewal and return actions whose actor was Reader.",
+            "createdAt": "2026-09-09T06:03:37.625Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "5e60ca02-032e-4dcb-83d0-533a40035adc"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "2323e623-d2b2-4fdd-af4e-b8d64c27032e",
+            "seq": 30,
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+            "journeyId": "d9c79cc5-9102-4c01-880f-de542275c16b",
+            "body": "GET /loans/201 showed Garden Notes with zero renewals and offered Reader POST /loans/201/renew; no request has been sent yet.",
+            "createdAt": "2026-09-09T06:29:56.845Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80"
+              },
+              "kind": "attempting",
+              "resourceRef": "loan:201"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "f4668802-9f13-45c9-98d4-51a5aa7fab0e",
+            "seq": 31,
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+            "journeyId": "d9c79cc5-9102-4c01-880f-de542275c16b",
+            "body": "POST /loans/201/renew returned loan 201 with renewals 1 and due date 2026-10-15.",
+            "createdAt": "2026-09-09T06:30:16.200Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "2323e623-d2b2-4fdd-af4e-b8d64c27032e"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "aeef5aa2-05a9-40a3-8a53-d5bcc56ec6fa",
+            "seq": 32,
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+            "journeyId": "038a4900-1628-499d-b546-a4c95a785f5e",
+            "body": "GET /loans/201 showed Garden Notes with one renewal and offered Reader POST /loans/201/return; no request has been sent yet.",
+            "createdAt": "2026-09-09T06:31:26.162Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d"
+              },
+              "kind": "attempting",
+              "resourceRef": "loan:201"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "6531a2e4-fca5-4066-bc1d-a55839b1bbc9",
+            "seq": 33,
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+            "journeyId": "038a4900-1628-499d-b546-a4c95a785f5e",
+            "body": "POST /loans/201/return returned 'Book returned' for book 102 and linked to /catalog and /loans.",
+            "createdAt": "2026-09-09T06:31:52.199Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "aeef5aa2-05a9-40a3-8a53-d5bcc56ec6fa"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80",
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "name": "Renew loan",
+            "kind": "action",
+            "createdAt": "2026-09-09T05:54:42.468Z"
+          },
+          "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "f4668802-9f13-45c9-98d4-51a5aa7fab0e"
+          ]
+        },
+        {
+          "item": {
+            "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d",
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "name": "Return book",
+            "kind": "action",
+            "createdAt": "2026-09-09T05:54:42.468Z"
+          },
+          "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "6531a2e4-fca5-4066-bc1d-a55839b1bbc9"
+          ]
+        },
+        {
+          "item": {
+            "id": "ec84802c-5fdf-4d34-a7c0-7ab2c830ca80",
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "name": "Renew loan",
+            "kind": "action",
+            "createdAt": "2026-09-09T05:54:42.468Z"
+          },
+          "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "8bd9c375-39e7-40b2-9bb4-0e56b97d31e8"
+          ]
+        },
+        {
+          "item": {
+            "id": "376869e6-3a6b-44e9-a8c6-3f14680cb36d",
+            "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+            "name": "Return book",
+            "kind": "action",
+            "createdAt": "2026-09-09T05:54:42.468Z"
+          },
+          "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "8bd9c375-39e7-40b2-9bb4-0e56b97d31e8"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "fc2f27f8-9dc1-4eb1-971e-2a345cf468ee",
+          "evidenceId": "24ffe363-7785-4779-b869-09545101992f"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 4,
+      "pending": 2,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 2
+    }
+  }
+]

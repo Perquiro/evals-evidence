@@ -1,0 +1,21 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:54824/holds",
+    "actor": "Reader"
+  },
+  "status": 200,
+  "body": {
+    "holds": [
+      {
+        "id": "301",
+        "bookId": "101",
+        "title": "River Atlas",
+        "cancel": {
+          "method": "DELETE",
+          "href": "/holds/301"
+        }
+      }
+    ]
+  }
+}

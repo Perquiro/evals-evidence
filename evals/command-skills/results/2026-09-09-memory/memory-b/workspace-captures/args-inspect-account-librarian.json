@@ -1,0 +1,23 @@
+{
+  "requestToken": "a3f80cc4-3347-497a-9bfa-1a6ec4b97b24",
+  "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [
+    { "key": "actor", "name": "Account actor", "kind": "information" },
+    { "key": "reservations", "name": "Reservations", "kind": "link" },
+    { "key": "loans", "name": "Loans", "kind": "link" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /account returned 200 OK with actor Librarian and links to GET /holds for reservations and GET /loans for loans.",
+      "looks": [
+        { "item": { "key": "actor" }, "kind": "offered" },
+        { "item": { "key": "reservations" }, "kind": "offered" },
+        { "item": { "key": "loans" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

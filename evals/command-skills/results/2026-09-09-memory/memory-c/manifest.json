@@ -1,0 +1,14 @@
+{
+  "product": "willow-library",
+  "workspace": "C:\\Users\\mathi\\AppData\\Local\\Temp\\willow-library-weoSFi",
+  "baseUrl": "http://127.0.0.1:52476",
+  "pid": 32004,
+  "startedAt": "2026-09-09T06:56:23.746Z",
+  "skillSha256": "42c1083d9919893164372944965e228bbbd0e63a6b9ff93ab2e5aaa5cbdbdfa0",
+  "gitHead": "",
+  "node": "v24.18.1",
+  "transport": "Real Perquiro MCP client/server over an HTTP-to-MCP bridge; synthetic local HTTP Product",
+  "setup": "Prepared through runSetup with scripted human answers; global CLI check skipped in fixture only",
+  "isolation": "Fresh temporary Git Project; same shared host/filesystem; candidate instructed to stay in assigned Project. Not an OS access boundary.",
+  "finishedAt": "2026-09-09T08:09:14.000Z"
+}

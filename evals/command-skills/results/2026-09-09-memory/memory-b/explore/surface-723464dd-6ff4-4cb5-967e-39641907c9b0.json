@@ -1,0 +1,223 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+      "name": "GET /desk",
+      "locator": "GET /desk",
+      "createdAt": "2026-09-09T07:35:53.634Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339",
+          "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+          "name": "Check in a book",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:53:11.683Z"
+        },
+        {
+          "id": "e19b29f0-3993-479f-8c88-a9111dcb5c36",
+          "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+          "name": "Pending returns",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:53:11.683Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "7b1046f9-81be-451e-b157-b35ea0bcde1e",
+            "seq": 13,
+            "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "GET /desk returned 403 Forbidden with the message 'Service desk requires Librarian'; no Reader-visible contents were returned.",
+            "createdAt": "2026-09-09T07:36:49.691Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": []
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "677fbd9b-8c6f-4f3c-86b2-1172da6adb1b",
+            "seq": 41,
+            "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "GET /desk returned 200 OK with a Check in a book POST action to /desk/returns, prefilled with bookId 103, and Pending returns listing Night Trains (book 103).",
+            "createdAt": "2026-09-09T07:53:11.684Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "e19b29f0-3993-479f-8c88-a9111dcb5c36"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "b1e2bc5f-cb60-48fb-8df3-b918ad9507d5",
+            "seq": 42,
+            "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "GET /desk currently lists Night Trains as pending return with bookId 103 and offers Check in a book at POST /desk/returns. The check-in request has not been sent.",
+            "createdAt": "2026-09-09T07:53:47.362Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339"
+              },
+              "kind": "attempting",
+              "resourceRef": "book:103"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "5ca1d29a-4551-4b5c-9426-0850bb7776ff",
+            "seq": 43,
+            "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "POST /desk/returns with the offered JSON body {\"bookId\":103} returned 404 Not Found with {\"error\":\"Book not found\"}.",
+            "createdAt": "2026-09-09T07:54:36.121Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "action",
+            "capture": "pending",
+            "look": {
+              "item": {
+                "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "b1e2bc5f-cb60-48fb-8df3-b918ad9507d5"
+            }
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339",
+            "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+            "name": "Check in a book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:53:11.683Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "5ca1d29a-4551-4b5c-9426-0850bb7776ff"
+          ]
+        },
+        {
+          "item": {
+            "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339",
+            "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+            "name": "Check in a book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:53:11.683Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "suggested",
+          "reason": "Historically named item; no grounded Look in this Actor, Platform and Product-version context.",
+          "accountedFor": false,
+          "supportingObservationIds": []
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "7b1046f9-81be-451e-b157-b35ea0bcde1e",
+          "evidenceId": "7bee473e-0213-4813-9eb5-df6a547de310"
+        },
+        {
+          "observationId": "677fbd9b-8c6f-4f3c-86b2-1172da6adb1b",
+          "evidenceId": "1bcc1c22-6fed-4537-9c67-86ec3312e963"
+        },
+        {
+          "observationId": "5ca1d29a-4551-4b5c-9426-0850bb7776ff",
+          "evidenceId": "038098e0-ce94-478c-8bda-56783f8e4408"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 2,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 1,
+      "accountedFor": 1
+    }
+  }
+]

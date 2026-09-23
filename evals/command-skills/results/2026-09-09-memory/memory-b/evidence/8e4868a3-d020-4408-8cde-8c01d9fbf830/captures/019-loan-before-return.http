@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"id":"201","bookId":"102","title":"Garden Notes","renewals":1,"due":"2026-10-15","actions":[{"label":"Renew loan","method":"POST","href":"/loans/201/renew","actor":"Reader"},{"label":"Return book","method":"POST","href":"/loans/201/return","actor":"Reader"}]}

@@ -1,0 +1,308 @@
+{
+  "sample": "sample-05",
+  "actions": [
+    {
+      "id": "action-2",
+      "ordinal": 1,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/0"
+    },
+    {
+      "id": "snapshot-9",
+      "ordinal": 2,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/1"
+    },
+    {
+      "id": "action-3",
+      "ordinal": 3,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/2"
+    },
+    {
+      "id": "action-4",
+      "ordinal": 4,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/3"
+    },
+    {
+      "id": "action-5",
+      "ordinal": 5,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/4"
+    },
+    {
+      "id": "snapshot-21",
+      "ordinal": 6,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/5"
+    },
+    {
+      "id": "action-6",
+      "ordinal": 7,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/6"
+    },
+    {
+      "id": "snapshot-30",
+      "ordinal": 8,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/7"
+    },
+    {
+      "id": "action-7",
+      "ordinal": 9,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/8"
+    },
+    {
+      "id": "snapshot-35",
+      "ordinal": 10,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/9"
+    },
+    {
+      "id": "action-8",
+      "ordinal": 11,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/10"
+    },
+    {
+      "id": "action-9",
+      "ordinal": 12,
+      "executed": false,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/11"
+    },
+    {
+      "id": "action-10",
+      "ordinal": 13,
+      "executed": false,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/12"
+    },
+    {
+      "id": "action-11",
+      "ordinal": 14,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/13"
+    },
+    {
+      "id": "action-12",
+      "ordinal": 15,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/14"
+    },
+    {
+      "id": "snapshot-49",
+      "ordinal": 16,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/15"
+    },
+    {
+      "id": "action-13",
+      "ordinal": 17,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/16"
+    },
+    {
+      "id": "snapshot-52",
+      "ordinal": 18,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/17"
+    },
+    {
+      "id": "action-14",
+      "ordinal": 19,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/18"
+    },
+    {
+      "id": "snapshot-59",
+      "ordinal": 20,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/19"
+    },
+    {
+      "id": "action-15",
+      "ordinal": 21,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/20"
+    },
+    {
+      "id": "snapshot-63",
+      "ordinal": 22,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/21"
+    },
+    {
+      "id": "action-16",
+      "ordinal": 23,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/22"
+    },
+    {
+      "id": "snapshot-65",
+      "ordinal": 24,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-05-evidence.json#/browser/actions/23"
+    }
+  ],
+  "observations": [
+    {
+      "id": "9e835296-994b-4e5f-8a8f-324ab9a5552c",
+      "body": "Login shows Username and Password fields and a Sign in button; demo accounts list emily.dawson as Employee.",
+      "context": {
+        "kind": "surface",
+        "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 2,
+      "raw": "sample-05-evidence.json#/knowledge/observations/0"
+    },
+    {
+      "id": "bb4a5c12-5800-46de-9433-8d0f7aabd86c",
+      "body": "The signed-out Login page has empty Username and Password fields and Sign in is available.",
+      "context": {
+        "kind": "surface",
+        "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 2,
+      "raw": "sample-05-evidence.json#/knowledge/observations/1"
+    },
+    {
+      "id": "c3ac3ebe-b265-45e4-a545-a81cdad8c1e7",
+      "body": "Signing in as emily.dawson reached the Employee dashboard, which identifies Emily Dawson and shows navigation.",
+      "context": {
+        "kind": "surface",
+        "id": "8176eee5-3185-4c4d-bbc1-a4a5317de3da",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 6,
+      "raw": "sample-05-evidence.json#/knowledge/observations/2"
+    },
+    {
+      "id": "6e1feef5-9d16-46a2-9983-15261b0cca5a",
+      "body": "Dashboard welcomes Emily and offers Directory, My Leave, Timesheet, My Profile, Request leave, Fill timesheet, and Log out. It shows pending leave requests 0; leave balance is loading.",
+      "context": {
+        "kind": "surface",
+        "id": "f2d36a83-c816-4fc4-b585-69d436db163b",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 6,
+      "raw": "sample-05-evidence.json#/knowledge/observations/3"
+    },
+    {
+      "id": "f52849a6-2708-4d3a-a623-e7d5907d25f6",
+      "body": "My leave shows available balance 18 days and request history with an approved Vacation entry dated Aug 18–19, 2026 for 3 days and manager comment “Approved – enjoy!”. It offers New request.",
+      "context": {
+        "kind": "surface",
+        "id": "7bb1ff6c-53b0-4f64-a77b-1a819eab41ed",
+        "name": "My Leave"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 8,
+      "raw": "sample-05-evidence.json#/knowledge/observations/4"
+    },
+    {
+      "id": "94bde7dd-5add-4be1-81e6-fb86847cf35d",
+      "body": "New leave request offers Vacation, Sick, and Personal types; required Start date and End date; optional Reason; Submit request and Cancel. It states weekends are not counted toward leave.",
+      "context": {
+        "kind": "surface",
+        "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+        "name": "New Leave Request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 10,
+      "raw": "sample-05-evidence.json#/knowledge/observations/5"
+    },
+    {
+      "id": "9137f1ac-22bd-4339-9993-a252cf6c3cdd",
+      "body": "The New Leave Request form is open with no entered dates; submit will use Personal leave for Dec 14–15, 2026 and reason “Evaluation data — Employee Explore”.",
+      "context": {
+        "kind": "surface",
+        "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+        "name": "New Leave Request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 10,
+      "raw": "sample-05-evidence.json#/knowledge/observations/6"
+    },
+    {
+      "id": "10667adc-eff3-4d70-91c0-72f41bb88a5c",
+      "body": "Submitting the Personal leave form after the date fields did not retain the attempted ISO values showed “Please fill in all required fields.” and remained on New leave request; no leave request was created.",
+      "context": {
+        "kind": "surface",
+        "id": "4fae7b8b-72c8-419c-a886-ca9c53c8ef80",
+        "name": "New Leave Request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 16,
+      "raw": "sample-05-evidence.json#/knowledge/observations/7"
+    },
+    {
+      "id": "449903e1-cc44-407b-940a-a40f33d5c6d2",
+      "body": "Timesheet shows a draft for week of Sep 14, 2026 with Monday through Sunday hour inputs all at 0, total 0 h, and Save draft and Submit week actions.",
+      "context": {
+        "kind": "surface",
+        "id": "e72a596c-21ed-46fd-9d5e-54100d045d87",
+        "name": "Timesheet"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 18,
+      "raw": "sample-05-evidence.json#/knowledge/observations/8"
+    },
+    {
+      "id": "fcb4d320-483d-4722-a656-76a58661f786",
+      "body": "My profile displays editable Full name, Phone, and Emergency contact fields, an Upload photo action, and Save changes. Email is shown disabled/read-only.",
+      "context": {
+        "kind": "surface",
+        "id": "dd60af34-f72a-4448-9bf3-86a2dcb68663",
+        "name": "My Profile"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 20,
+      "raw": "sample-05-evidence.json#/knowledge/observations/9"
+    },
+    {
+      "id": "d9165682-8dc4-4e01-a837-ae129bd72166",
+      "body": "Directory loads 28 employees, shows searchable name and department filters (Engineering, Sales, Marketing, Finance, HR), a sortable Name column, page 1 of 3, disabled Previous and enabled Next. Results show employee names, departments, titles, and email addresses.",
+      "context": {
+        "kind": "surface",
+        "id": "b58c10fa-ddae-47cc-92bc-62733339ea61",
+        "name": "Directory"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 24,
+      "raw": "sample-05-evidence.json#/knowledge/observations/10"
+    }
+  ],
+  "evidence": "sample-05-evidence.json"
+}

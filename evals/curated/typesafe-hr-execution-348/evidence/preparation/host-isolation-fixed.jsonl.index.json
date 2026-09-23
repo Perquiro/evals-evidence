@@ -1,0 +1,23 @@
+{
+  "original": "host-isolation-fixed.jsonl",
+  "sha256": "6dda8e4b8fc9ece60cb338a97e22c65bac4b81f050c816f012f1b2cf0e39c5b9",
+  "events": [
+    {
+      "at_ms": 0.45419999999998595,
+      "direction": "sent",
+      "msg": {
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "perquiro_hr_evaluation",
+            "version": "1"
+          },
+          "capabilities": {
+            "experimentalApi": true
+          }
+        }
+      }
+    }
+  ]
+}

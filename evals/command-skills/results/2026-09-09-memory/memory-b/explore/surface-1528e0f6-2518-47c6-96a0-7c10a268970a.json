@@ -1,0 +1,101 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "1528e0f6-2518-47c6-96a0-7c10a268970a",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "1528e0f6-2518-47c6-96a0-7c10a268970a",
+      "name": "DELETE /holds/:id",
+      "locator": "DELETE /holds/:id",
+      "createdAt": "2026-09-09T07:43:47.729Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "27b5c10f-5f1d-4225-ae11-c27187451819",
+          "surfaceId": "1528e0f6-2518-47c6-96a0-7c10a268970a",
+          "name": "Cancelled reservation message",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:44:32.216Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "0190c369-7877-41dd-ba54-0e0d309974ce",
+            "seq": 27,
+            "surfaceId": "1528e0f6-2518-47c6-96a0-7c10a268970a",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "DELETE /holds/301 returned 200 OK with the message 'Reservation cancelled'.",
+            "createdAt": "2026-09-09T07:44:32.216Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "27b5c10f-5f1d-4225-ae11-c27187451819"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "0190c369-7877-41dd-ba54-0e0d309974ce",
+          "evidenceId": "8e4868a3-d020-4408-8cde-8c01d9fbf830"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

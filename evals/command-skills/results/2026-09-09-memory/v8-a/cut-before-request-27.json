@@ -1,0 +1,27 @@
+{
+  "label": "before-request-27",
+  "beforeTime": "2026-09-09T06:38:27.452Z",
+  "lastEvent": 57,
+  "productRequests": 26,
+  "outcomesSeen": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "W11",
+    "W12",
+    "W15",
+    "W16",
+    "W17",
+    "W20",
+    "W21"
+  ],
+  "uniqueObservations": [],
+  "limitation": "This is a trace cut. Final public reads must still confirm the preserved immutable records; Observation count is not completed-outcome coverage."
+}

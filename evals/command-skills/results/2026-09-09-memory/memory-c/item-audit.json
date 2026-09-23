@@ -1,0 +1,858 @@
+{
+  "itemCount": 48,
+  "normalizedDuplicateGroups": [],
+  "items": [
+    {
+      "id": "e23e3ed3-a0d0-4f93-8de2-fc50b0c5343d",
+      "surfaceId": "29936bd4-accc-4e58-8f70-79683e5468e0",
+      "name": "Garden Notes",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:43:31.793Z",
+      "surface": "GET /books/102"
+    },
+    {
+      "id": "8c6a9768-2e93-488f-b512-ffb832202ee7",
+      "surfaceId": "29936bd4-accc-4e58-8f70-79683e5468e0",
+      "name": "Reserve book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:43:31.793Z",
+      "surface": "GET /books/102"
+    },
+    {
+      "id": "31cd1857-b21a-40c6-b1b5-d4b816c79caf",
+      "surfaceId": "29936bd4-accc-4e58-8f70-79683e5468e0",
+      "name": "Book status",
+      "kind": "information",
+      "createdAt": "2026-09-09T08:01:07.168Z",
+      "surface": "GET /books/102"
+    },
+    {
+      "id": "75906b3b-70a7-4619-aef1-d8012d5117a4",
+      "surfaceId": "29936bd4-accc-4e58-8f70-79683e5468e0",
+      "name": "Reader reservation",
+      "kind": "action",
+      "createdAt": "2026-09-09T08:01:07.168Z",
+      "surface": "GET /books/102"
+    },
+    {
+      "id": "51fb9b0d-3c3c-4b0f-8e3a-47843cca17b4",
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "name": "River Atlas",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:42:04.133Z",
+      "surface": "GET /catalog"
+    },
+    {
+      "id": "6598c04a-876a-4346-ba80-7ad287a1e941",
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "name": "Garden Notes",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:42:04.133Z",
+      "surface": "GET /catalog"
+    },
+    {
+      "id": "80198d52-3115-4cba-9465-ba092492837c",
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "name": "Night Trains",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:42:04.133Z",
+      "surface": "GET /catalog"
+    },
+    {
+      "id": "fa64b3ec-6227-4c61-b150-f62291411624",
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "name": "Title search",
+      "kind": "form",
+      "createdAt": "2026-09-09T07:42:04.133Z",
+      "surface": "GET /catalog"
+    },
+    {
+      "id": "79055435-f080-4445-9923-30f09f1428d1",
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "name": "q",
+      "kind": "field",
+      "createdAt": "2026-09-09T07:42:04.133Z",
+      "surface": "GET /catalog"
+    },
+    {
+      "id": "10332364-5994-45e9-8b18-b51b5596d056",
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "name": "Catalog books",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:59:41.163Z",
+      "surface": "GET /catalog"
+    },
+    {
+      "id": "d65c4c98-2d91-453f-a114-b2ff0c7ce272",
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "name": "Title search",
+      "kind": "field",
+      "createdAt": "2026-09-09T07:59:41.163Z",
+      "surface": "GET /catalog"
+    },
+    {
+      "id": "6f55c666-b5ed-4c7c-bbbc-95035a44cb15",
+      "surfaceId": "3f37c492-55a7-4978-b7f0-ff1d12dca3d2",
+      "name": "Night Trains",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:43:31.881Z",
+      "surface": "GET /books/103"
+    },
+    {
+      "id": "07668b1a-8198-4bcb-9a2b-b1c97a95a436",
+      "surfaceId": "3f37c492-55a7-4978-b7f0-ff1d12dca3d2",
+      "name": "Reserve book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:43:31.881Z",
+      "surface": "GET /books/103"
+    },
+    {
+      "id": "59dbee47-7d4a-4955-bcb5-2bf2539b66ec",
+      "surfaceId": "3f37c492-55a7-4978-b7f0-ff1d12dca3d2",
+      "name": "Book status",
+      "kind": "information",
+      "createdAt": "2026-09-09T08:00:25.999Z",
+      "surface": "GET /books/103"
+    },
+    {
+      "id": "a347a30c-9330-418c-b178-2ee09a11c565",
+      "surfaceId": "3f37c492-55a7-4978-b7f0-ff1d12dca3d2",
+      "name": "Reader reservation",
+      "kind": "action",
+      "createdAt": "2026-09-09T08:00:25.999Z",
+      "surface": "GET /books/103"
+    },
+    {
+      "id": "d85cc44d-ae7d-4061-8172-2a6fff55e8b7",
+      "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+      "name": "Librarian access",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:42:04.327Z",
+      "surface": "GET /desk"
+    },
+    {
+      "id": "b22fa42e-6ff3-4171-b69e-9387ae4c60c8",
+      "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+      "name": "Pending returns",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:55:47.449Z",
+      "surface": "GET /desk"
+    },
+    {
+      "id": "fe21b078-dabf-45de-b51f-c2d6fcff48ce",
+      "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+      "name": "Check in a book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:55:47.449Z",
+      "surface": "GET /desk"
+    },
+    {
+      "id": "81d3ea55-eada-4d3a-9fb1-796ba0374d05",
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "name": "Willow Library",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:40:32.827Z",
+      "surface": "GET /"
+    },
+    {
+      "id": "7979fd2c-c690-4020-ac6d-93e799d1346b",
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "name": "Documentation",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:40:32.828Z",
+      "surface": "GET /"
+    },
+    {
+      "id": "5afd31c1-503c-4f2b-9e9d-bba44d814440",
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "name": "Catalog",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:40:32.828Z",
+      "surface": "GET /"
+    },
+    {
+      "id": "d4cba19b-445f-4a0b-8641-6e2cd9ef6b24",
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "name": "Account",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:40:32.828Z",
+      "surface": "GET /"
+    },
+    {
+      "id": "124b663e-7684-4829-9d15-5c9bb01fb4ff",
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "name": "Service desk",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:40:32.828Z",
+      "surface": "GET /"
+    },
+    {
+      "id": "c180e0f1-6515-422a-8f72-5562ee425bed",
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "name": "Product identity",
+      "kind": "information",
+      "createdAt": "2026-09-09T08:02:42.058Z",
+      "surface": "GET /"
+    },
+    {
+      "id": "e8605b74-d3d6-43ab-bda5-69da09f34a4e",
+      "surfaceId": "5b14aa42-833c-4978-9edb-0d5d5b1e0dc1",
+      "name": "River Atlas",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:43:31.705Z",
+      "surface": "GET /books/101"
+    },
+    {
+      "id": "87e9a1ec-6db6-4033-a106-0e17c3f4db52",
+      "surfaceId": "5b14aa42-833c-4978-9edb-0d5d5b1e0dc1",
+      "name": "Reserve book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:43:31.705Z",
+      "surface": "GET /books/101"
+    },
+    {
+      "id": "7a18289b-1416-42c7-9483-0a0c1afff3c7",
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "name": "Garden Notes loan",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:44:59.891Z",
+      "surface": "GET /loans/201"
+    },
+    {
+      "id": "05901b3e-db48-4387-afa4-03618643a68b",
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "name": "Renew loan",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:44:59.891Z",
+      "surface": "GET /loans/201"
+    },
+    {
+      "id": "eb3848d2-b8e8-4e64-8290-8d8bbf4da11f",
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "name": "Return book",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:44:59.891Z",
+      "surface": "GET /loans/201"
+    },
+    {
+      "id": "5b3a4adc-81b6-44a9-b4d1-a03b7e176eba",
+      "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+      "name": "Session authentication",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:41:14.623Z",
+      "surface": "GET /docs"
+    },
+    {
+      "id": "ff701889-f887-4108-9a72-8508a76e640f",
+      "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+      "name": "Response navigation",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:41:14.623Z",
+      "surface": "GET /docs"
+    },
+    {
+      "id": "7c466663-0865-4949-8cee-1a99eef73d1f",
+      "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+      "name": "Demo sessions",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:58:13.056Z",
+      "surface": "GET /docs"
+    },
+    {
+      "id": "90c10561-0efc-4f9d-ac4d-8186a461d4ee",
+      "surfaceId": "9f335168-6ac7-4240-8e24-3eb62d958150",
+      "name": "Book returned",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:51:35.041Z",
+      "surface": "POST /loans/201/return"
+    },
+    {
+      "id": "967fbfe3-5bd9-41d5-af2c-caac76a57a82",
+      "surfaceId": "9f335168-6ac7-4240-8e24-3eb62d958150",
+      "name": "Catalog",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:51:35.041Z",
+      "surface": "POST /loans/201/return"
+    },
+    {
+      "id": "4145534c-b91a-4316-9f34-da416f49375c",
+      "surfaceId": "9f335168-6ac7-4240-8e24-3eb62d958150",
+      "name": "Loans",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:51:35.041Z",
+      "surface": "POST /loans/201/return"
+    },
+    {
+      "id": "70fed9a6-a0d9-403d-b83c-e9f8d7ef6409",
+      "surfaceId": "a2db31e6-b969-45fa-a830-0b6f18a87ddb",
+      "name": "Reader session",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:42:04.226Z",
+      "surface": "GET /account"
+    },
+    {
+      "id": "40d53c36-5c9d-4e8e-9ded-901057c83d51",
+      "surfaceId": "a2db31e6-b969-45fa-a830-0b6f18a87ddb",
+      "name": "Holds",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:42:04.226Z",
+      "surface": "GET /account"
+    },
+    {
+      "id": "a7596fff-1502-43d5-a130-57532cf32cc1",
+      "surfaceId": "a2db31e6-b969-45fa-a830-0b6f18a87ddb",
+      "name": "Loans",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:42:04.226Z",
+      "surface": "GET /account"
+    },
+    {
+      "id": "79db633b-4c27-4c26-97f3-397faacb43a5",
+      "surfaceId": "a2db31e6-b969-45fa-a830-0b6f18a87ddb",
+      "name": "Current actor",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:58:38.560Z",
+      "surface": "GET /account"
+    },
+    {
+      "id": "49e0cb3b-83af-401d-be8a-58988fb766ea",
+      "surfaceId": "a2db31e6-b969-45fa-a830-0b6f18a87ddb",
+      "name": "Reservations",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:58:38.560Z",
+      "surface": "GET /account"
+    },
+    {
+      "id": "c8055083-c7f1-42a6-85e2-e7b7d58dd584",
+      "surfaceId": "cb7059be-621d-4ccf-baf5-d47eedf3a1ac",
+      "name": "Reservation cancelled",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:48:48.097Z",
+      "surface": "DELETE /holds/301"
+    },
+    {
+      "id": "20cae2b8-519c-4ab6-8c25-b5d280510f8d",
+      "surfaceId": "cc358827-1734-4c85-b536-68428d8f2b5d",
+      "name": "No reservations",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:43:31.971Z",
+      "surface": "GET /holds"
+    },
+    {
+      "id": "78782390-b3ac-4839-9e57-6680a0df3ed6",
+      "surfaceId": "cc358827-1734-4c85-b536-68428d8f2b5d",
+      "name": "River Atlas reservation",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:48:12.070Z",
+      "surface": "GET /holds"
+    },
+    {
+      "id": "add27495-4179-4069-a1ab-7524ac0280a0",
+      "surfaceId": "cc358827-1734-4c85-b536-68428d8f2b5d",
+      "name": "Cancel River Atlas reservation",
+      "kind": "action",
+      "createdAt": "2026-09-09T07:48:12.070Z",
+      "surface": "GET /holds"
+    },
+    {
+      "id": "16563924-c5a9-473c-9ede-cee5940ba128",
+      "surfaceId": "d4af5ee2-2d6d-4ba5-b147-4a415fe1c238",
+      "name": "Book not found",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:57:26.175Z",
+      "surface": "POST /desk/returns"
+    },
+    {
+      "id": "4be50512-1cfa-4a32-bbdb-5b2a50aafff4",
+      "surfaceId": "ede4f426-9875-4ee4-9da5-7ee15123316f",
+      "name": "Garden Notes loan",
+      "kind": "link",
+      "createdAt": "2026-09-09T07:43:32.059Z",
+      "surface": "GET /loans"
+    },
+    {
+      "id": "d548fe14-05b1-4d65-890c-c853c42d72a5",
+      "surfaceId": "f138a1e3-67df-4e05-8075-ebc4289a3be4",
+      "name": "Book unavailable",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:46:45.642Z",
+      "surface": "POST /holds"
+    },
+    {
+      "id": "1fe1614f-a8cf-432a-90eb-a19bc609673e",
+      "surfaceId": "f138a1e3-67df-4e05-8075-ebc4289a3be4",
+      "name": "River Atlas reservation",
+      "kind": "information",
+      "createdAt": "2026-09-09T07:47:38.533Z",
+      "surface": "POST /holds"
+    }
+  ],
+  "gaps": [
+    {
+      "itemId": "8c6a9768-2e93-488f-b512-ffb832202ee7",
+      "name": "Reserve book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "fee8af15-bdca-4341-bb6f-477454c58c71"
+      ]
+    },
+    {
+      "itemId": "75906b3b-70a7-4619-aef1-d8012d5117a4",
+      "name": "Reader reservation",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "8c6a9768-2e93-488f-b512-ffb832202ee7",
+      "name": "Reserve book",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "75906b3b-70a7-4619-aef1-d8012d5117a4",
+      "name": "Reader reservation",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "60ab0978-4169-483f-8f12-faa4e1058754"
+      ]
+    },
+    {
+      "itemId": "51fb9b0d-3c3c-4b0f-8e3a-47843cca17b4",
+      "name": "River Atlas",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "ffbdea84-1348-4a09-ab7a-fba14df1916f"
+      ]
+    },
+    {
+      "itemId": "6598c04a-876a-4346-ba80-7ad287a1e941",
+      "name": "Garden Notes",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "35f75184-e7f8-4d4b-bdd1-d47aca75785f"
+      ]
+    },
+    {
+      "itemId": "80198d52-3115-4cba-9465-ba092492837c",
+      "name": "Night Trains",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "99e0fcf3-d087-433b-ab8f-51fa24f994d8"
+      ]
+    },
+    {
+      "itemId": "fa64b3ec-6227-4c61-b150-f62291411624",
+      "name": "Title search",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "0e335867-8dd8-4866-a770-848130992cda"
+      ]
+    },
+    {
+      "itemId": "51fb9b0d-3c3c-4b0f-8e3a-47843cca17b4",
+      "name": "River Atlas",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "6598c04a-876a-4346-ba80-7ad287a1e941",
+      "name": "Garden Notes",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "80198d52-3115-4cba-9465-ba092492837c",
+      "name": "Night Trains",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "fa64b3ec-6227-4c61-b150-f62291411624",
+      "name": "Title search",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "07668b1a-8198-4bcb-9a2b-b1c97a95a436",
+      "name": "Reserve book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "40357356-b623-48c9-af72-99967914de63"
+      ]
+    },
+    {
+      "itemId": "a347a30c-9330-418c-b178-2ee09a11c565",
+      "name": "Reader reservation",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "07668b1a-8198-4bcb-9a2b-b1c97a95a436",
+      "name": "Reserve book",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "a347a30c-9330-418c-b178-2ee09a11c565",
+      "name": "Reader reservation",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "ec07b9e8-2d2e-4caf-ab4d-f6d335a6bed1"
+      ]
+    },
+    {
+      "itemId": "fe21b078-dabf-45de-b51f-c2d6fcff48ce",
+      "name": "Check in a book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "fe21b078-dabf-45de-b51f-c2d6fcff48ce",
+      "name": "Check in a book",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "5aa74826-aeab-4ae6-9d9a-0c0d3f84c818"
+      ]
+    },
+    {
+      "itemId": "7979fd2c-c690-4020-ac6d-93e799d1346b",
+      "name": "Documentation",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "cfac3afd-2c51-496a-a4b6-c6fb6f71a02e"
+      ]
+    },
+    {
+      "itemId": "5afd31c1-503c-4f2b-9e9d-bba44d814440",
+      "name": "Catalog",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "5eaebbc4-69ba-462f-b661-73a666525601"
+      ]
+    },
+    {
+      "itemId": "d4cba19b-445f-4a0b-8641-6e2cd9ef6b24",
+      "name": "Account",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "305bc300-785b-4277-ba8d-b64cb2bbcafe"
+      ]
+    },
+    {
+      "itemId": "124b663e-7684-4829-9d15-5c9bb01fb4ff",
+      "name": "Service desk",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "47689194-2355-4707-941e-2ee3460d6306"
+      ]
+    },
+    {
+      "itemId": "7979fd2c-c690-4020-ac6d-93e799d1346b",
+      "name": "Documentation",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "5afd31c1-503c-4f2b-9e9d-bba44d814440",
+      "name": "Catalog",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "5064c465-d4d7-4bca-b0cf-46a0410b4ebc"
+      ]
+    },
+    {
+      "itemId": "d4cba19b-445f-4a0b-8641-6e2cd9ef6b24",
+      "name": "Account",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "5064c465-d4d7-4bca-b0cf-46a0410b4ebc"
+      ]
+    },
+    {
+      "itemId": "124b663e-7684-4829-9d15-5c9bb01fb4ff",
+      "name": "Service desk",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "5064c465-d4d7-4bca-b0cf-46a0410b4ebc"
+      ]
+    },
+    {
+      "itemId": "87e9a1ec-6db6-4033-a106-0e17c3f4db52",
+      "name": "Reserve book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "2b80e154-9f94-49b6-baac-623c6e59a2fd"
+      ]
+    },
+    {
+      "itemId": "05901b3e-db48-4387-afa4-03618643a68b",
+      "name": "Renew loan",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "fad2b85d-8618-4c35-96ad-b02a63258c29"
+      ]
+    },
+    {
+      "itemId": "eb3848d2-b8e8-4e64-8290-8d8bbf4da11f",
+      "name": "Return book",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "fddf4148-c65b-4aad-9740-45bc14964105"
+      ]
+    },
+    {
+      "itemId": "967fbfe3-5bd9-41d5-af2c-caac76a57a82",
+      "name": "Catalog",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "70427d77-2c9c-48f8-888e-2cac0fd2d72a"
+      ]
+    },
+    {
+      "itemId": "4145534c-b91a-4316-9f34-da416f49375c",
+      "name": "Loans",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "70427d77-2c9c-48f8-888e-2cac0fd2d72a"
+      ]
+    },
+    {
+      "itemId": "40d53c36-5c9d-4e8e-9ded-901057c83d51",
+      "name": "Holds",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "ab0f04e9-35fc-4daa-90d8-385cfcdc560c"
+      ]
+    },
+    {
+      "itemId": "a7596fff-1502-43d5-a130-57532cf32cc1",
+      "name": "Loans",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "9fa4bf10-caec-4a9e-ad27-010b0102cca8"
+      ]
+    },
+    {
+      "itemId": "49e0cb3b-83af-401d-be8a-58988fb766ea",
+      "name": "Reservations",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "40d53c36-5c9d-4e8e-9ded-901057c83d51",
+      "name": "Holds",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "a7596fff-1502-43d5-a130-57532cf32cc1",
+      "name": "Loans",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "11b59336-f2db-47f2-8fa3-95295727bc82"
+      ]
+    },
+    {
+      "itemId": "49e0cb3b-83af-401d-be8a-58988fb766ea",
+      "name": "Reservations",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "pending",
+      "accountedFor": false,
+      "supportingObservationIds": [
+        "11b59336-f2db-47f2-8fa3-95295727bc82"
+      ]
+    },
+    {
+      "itemId": "add27495-4179-4069-a1ab-7524ac0280a0",
+      "name": "Cancel River Atlas reservation",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "exercised",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "30023c52-edf6-4357-9d70-37405cdd11da"
+      ]
+    },
+    {
+      "itemId": "add27495-4179-4069-a1ab-7524ac0280a0",
+      "name": "Cancel River Atlas reservation",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    },
+    {
+      "itemId": "4be50512-1cfa-4a32-bbdb-5b2a50aafff4",
+      "name": "Garden Notes loan",
+      "actor": "Reader",
+      "platform": "api",
+      "productVersion": null,
+      "state": "reached",
+      "accountedFor": true,
+      "supportingObservationIds": [
+        "50692122-72d2-40e6-a5e0-ea3097383b58"
+      ]
+    },
+    {
+      "itemId": "4be50512-1cfa-4a32-bbdb-5b2a50aafff4",
+      "name": "Garden Notes loan",
+      "actor": "Librarian",
+      "platform": "api",
+      "productVersion": null,
+      "state": "suggested",
+      "accountedFor": false,
+      "supportingObservationIds": []
+    }
+  ],
+  "recovery": [],
+  "limits": "This enumerates final typed state and normalized duplicate candidates. Semantic aliases, false pending/reopened checks and unsupported repeats require human comparison with the actual trace. No such conclusions are inferred from a zero exact-duplicate count."
+}

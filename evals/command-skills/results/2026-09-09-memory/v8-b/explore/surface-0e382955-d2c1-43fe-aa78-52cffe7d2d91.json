@@ -1,0 +1,62 @@
+[
+  {
+    "revision": "51972075-8266-494c-872b-d42081403606",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "0e382955-d2c1-43fe-aa78-52cffe7d2d91",
+      "actorIds": [
+        "dc327f7f-a9ff-451c-b205-986f165f998b",
+        "fea91b43-5998-4e2b-a232-38ec88e67c28"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "0e382955-d2c1-43fe-aa78-52cffe7d2d91",
+      "name": "Service desk",
+      "locator": "GET /desk",
+      "createdAt": "2026-09-09T07:05:51.814Z"
+    },
+    "inventory": {
+      "items": [],
+      "complete": true
+    },
+    "history": {
+      "items": [],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

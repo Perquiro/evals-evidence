@@ -1,0 +1,1274 @@
+{
+  "generatedAt": "2026-09-10T17:35:26.826Z",
+  "complete": false,
+  "reviewed": 8,
+  "rows": [
+    {
+      "id": "C1",
+      "arm": "C",
+      "block": 1,
+      "status": "reviewed",
+      "reviewPacket": "P66c6cdb9c1",
+      "measurements": {
+        "initial": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 2,
+            "saved": 2,
+            "directlyJourneyLinked": 0,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 0,
+            "distinctGroundedBehaviorCount": 0
+          }
+        },
+        "independent": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 2,
+            "saved": 2,
+            "directlyJourneyLinked": 0,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 0,
+            "distinctGroundedBehaviorCount": 0
+          }
+        },
+        "adjudicated": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 2,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 2,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 2,
+            "saved": 1,
+            "directlyJourneyLinked": 0,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 0,
+            "distinctGroundedBehaviorCount": 0
+          }
+        }
+      },
+      "initialDisagreements": [],
+      "initialToAdjudicated": [
+        {
+          "id": "HR12",
+          "field": "saved",
+          "from": true,
+          "to": false
+        }
+      ],
+      "independentToAdjudicated": [
+        {
+          "id": "HR12",
+          "field": "saved",
+          "from": true,
+          "to": false
+        }
+      ],
+      "sourceHashes": {
+        "grade.initial.json": "83312773feed991fa79a753a0037f7f230c52a479e271a32adab1266ebbded41",
+        "grade.independent.json": "9fd4e62f9ad099626b87a669ed793a61fbc7ca110e4daecdc87e4b006103d76f",
+        "grade.json": "d5e6e6a7a78a173f73d2c9366df860dfca41a1d5c7e7a660944ea0c1f9b7e843",
+        "adjudication.md": "198335aa1bed97efc3cf6af5031429195c9dda98ee8d1b2a5a8c57bbd2ab6833",
+        "hr12-independent-review.md": "98d7c6f838fdb1f8a9345c006f17b1dbfd1712fb68d251e0c2ca598fe7e25637",
+        "hr12-review.md": "3173ace659b0c79f62e6ede26fa22b1b5c2a8dafa1fe6c7aa6be14f9ab1491e8"
+      }
+    },
+    {
+      "id": "D1",
+      "arm": "D",
+      "block": 1,
+      "status": "reviewed",
+      "reviewPacket": "P8f4403b571",
+      "measurements": {
+        "initial": {
+          "checkpoints": {
+            "10": {
+              "seen": 4,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 8,
+              "saved": 8,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 13,
+              "saved": 12,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 13,
+            "saved": 13,
+            "directlyJourneyLinked": 8,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 5,
+            "distinctGroundedBehaviorCount": 5
+          }
+        },
+        "independent": {
+          "checkpoints": {
+            "10": {
+              "seen": 4,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 8,
+              "saved": 8,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 13,
+              "saved": 12,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 13,
+            "saved": 13,
+            "directlyJourneyLinked": 6,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 5,
+            "distinctGroundedBehaviorCount": 5
+          }
+        },
+        "adjudicated": {
+          "checkpoints": {
+            "10": {
+              "seen": 4,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 8,
+              "saved": 7,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 14,
+              "saved": 11,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 14,
+            "saved": 12,
+            "directlyJourneyLinked": 5,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 5,
+            "distinctGroundedBehaviorCount": 5
+          }
+        }
+      },
+      "initialDisagreements": [
+        {
+          "id": "HR09",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR17",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        }
+      ],
+      "initialToAdjudicated": [
+        {
+          "id": "HR09",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR15",
+          "field": "saved",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR17",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR19",
+          "field": "seen",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR21",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        }
+      ],
+      "independentToAdjudicated": [
+        {
+          "id": "HR15",
+          "field": "saved",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR19",
+          "field": "seen",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR21",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        }
+      ],
+      "sourceHashes": {
+        "grade.initial.json": "2a44e40958b03140fe0cb41e172315f26166d03d43f4ef3c69a5657242d4deb4",
+        "grade.independent.json": "d4e16211afcdfa96dd5fb6590759fb059d718ad30287c13c0abd7c129aaab08b",
+        "grade.json": "fcfa7d5a5e58e7691885fb465ce14ed8ceceb0e825f30a4cf6753c7a07063fc6",
+        "adjudication.md": "92687817a47843743cfd5167b78833703dcb753d1eac45a2604acd56225ee97f",
+        "boundary-independent-review.md": "2b3703c04fc1d905dcb83c12507f7986562a0bf2ab5c6e8640b9aacc57298460",
+        "boundary-review.md": "fd73a6864483562efd01614d9ef26e5b7b756028b20a7ae5bfa3c818d1b7b165",
+        "direct-link-review.md": "2e4fd596f2966627bcd0f7e2a4de71c0dbaa92c31ca77cd378e0e4ddea38a6f7",
+        "loading-review.md": "60d5036265c4121b98361a2d4881d460cbe721cf1a09a80cdb8eef5e732c37bb",
+        "navigation-review.md": "23c31cf5ceeee52ee44e9bca55940ac5a5b211da66133ebb03bbe62bfb460f24"
+      }
+    },
+    {
+      "id": "A1",
+      "arm": "A",
+      "block": 1,
+      "status": "reviewed",
+      "reviewPacket": "P2932c4cee0",
+      "measurements": {
+        "initial": {
+          "checkpoints": {
+            "10": {
+              "seen": 5,
+              "saved": 4,
+              "unsupportedClaims": 1,
+              "unsupportedRate": 0.25
+            },
+            "20": {
+              "seen": 5,
+              "saved": 4,
+              "unsupportedClaims": 1,
+              "unsupportedRate": 0.25
+            },
+            "40": {
+              "seen": 5,
+              "saved": 4,
+              "unsupportedClaims": 1,
+              "unsupportedRate": 0.25
+            }
+          },
+          "final": {
+            "seen": 5,
+            "saved": 4,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 1,
+            "unsupportedRate": 0.25
+          },
+          "create": {
+            "proposedScenarios": 4,
+            "distinctGroundedBehaviorCount": 4
+          }
+        },
+        "independent": {
+          "checkpoints": {
+            "10": {
+              "seen": 5,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 5,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 5,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 5,
+            "saved": 4,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 4,
+            "distinctGroundedBehaviorCount": 4
+          }
+        },
+        "adjudicated": {
+          "checkpoints": {
+            "10": {
+              "seen": 5,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 5,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 5,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 5,
+            "saved": 3,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 4,
+            "distinctGroundedBehaviorCount": 4
+          }
+        }
+      },
+      "initialDisagreements": [],
+      "initialToAdjudicated": [
+        {
+          "id": "HR01",
+          "field": "saved",
+          "from": true,
+          "to": false
+        }
+      ],
+      "independentToAdjudicated": [
+        {
+          "id": "HR01",
+          "field": "saved",
+          "from": true,
+          "to": false
+        }
+      ],
+      "sourceHashes": {
+        "grade.initial.json": "82444fb53b65201ecd2813697c70a931903469132f83bce9a6024da20e5dfcd6",
+        "grade.independent.json": "20d5ee4c7063c5b55024218417a1622d0cce94b7f87be42bfaae3a8ef47a12f0",
+        "grade.json": "4c24b6d0338ca0079f539822ece2cf374c6694f6e476d68aa7624eb243986403",
+        "adjudication.md": "cf80962fb474284cd1b705d911121c253c20b76f6cc6e1649a1c0dc22f374a2c",
+        "navigation-review.md": "1e030d6cb454b2b954c6482c5ecd5f99671ed7d4adac4ae4b3d75ecd5d2ea830",
+        "product-role-independent-review.md": "072d53d28074e0d7252888be91ef1d9e6f44889b0a7fbdc332bf93caa438ed39",
+        "product-role-review.md": "017dcd71d0fc62fda5116f976acf8088521d852431917e182cd2b5b90bc80007"
+      }
+    },
+    {
+      "id": "B1",
+      "arm": "B",
+      "block": 1,
+      "status": "reviewed",
+      "reviewPacket": "P3adcd9fb99",
+      "measurements": {
+        "initial": {
+          "checkpoints": {
+            "10": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 3,
+            "saved": 2,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 1,
+            "distinctGroundedBehaviorCount": 1
+          }
+        },
+        "independent": {
+          "checkpoints": {
+            "10": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 3,
+            "saved": 2,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 1,
+            "distinctGroundedBehaviorCount": 1
+          }
+        },
+        "adjudicated": {
+          "checkpoints": {
+            "10": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 3,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 3,
+            "saved": 2,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 1,
+            "distinctGroundedBehaviorCount": 1
+          }
+        }
+      },
+      "initialDisagreements": [],
+      "initialToAdjudicated": [],
+      "independentToAdjudicated": [],
+      "sourceHashes": {
+        "grade.initial.json": "11039447228a24587c150cc9c8b3a2344600d1f96fb7320f7cd63ef901344b63",
+        "grade.independent.json": "893be05d1d110e128ac742fa9a69ec639bc6038924b3da08cd124e627412bd5b",
+        "grade.json": "11039447228a24587c150cc9c8b3a2344600d1f96fb7320f7cd63ef901344b63",
+        "adjudication.md": "63c6c207c3c50acd5fdb558d0e6afa610d4885f76abdbd35a9df2b4da953aa43"
+      }
+    },
+    {
+      "id": "B2",
+      "arm": "B",
+      "block": 2,
+      "status": "reviewed",
+      "reviewPacket": "Pc244d33f37",
+      "measurements": {
+        "initial": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 4,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 4,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 4,
+            "saved": 3,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 1,
+            "distinctGroundedBehaviorCount": 1
+          }
+        },
+        "independent": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 4,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 4,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 4,
+            "saved": 3,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 1,
+            "distinctGroundedBehaviorCount": 1
+          }
+        },
+        "adjudicated": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 4,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 4,
+              "saved": 3,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 4,
+            "saved": 3,
+            "directlyJourneyLinked": 1,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 1,
+            "distinctGroundedBehaviorCount": 1
+          }
+        }
+      },
+      "initialDisagreements": [],
+      "initialToAdjudicated": [],
+      "independentToAdjudicated": [],
+      "sourceHashes": {
+        "grade.initial.json": "8fd24904111fa7cfc6194d1d54642e3a316bb14cf5b87483d265a40f2b805b47",
+        "grade.independent.json": "6d42ac449ab4c1cfc37086110578c4bcaafc502a7d04ce86ebad9c0f06360f8e",
+        "grade.json": "8fd24904111fa7cfc6194d1d54642e3a316bb14cf5b87483d265a40f2b805b47",
+        "adjudication.md": "615325a09248cc09889353ae198fd595b7bbc71d7d8425f7a91d8ae6469ac8c8"
+      }
+    },
+    {
+      "id": "C2",
+      "arm": "C",
+      "block": 2,
+      "status": "reviewed",
+      "reviewPacket": "Paedc4d4230",
+      "measurements": {
+        "initial": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 0,
+              "unsupportedClaims": 0,
+              "unsupportedRate": null
+            },
+            "20": {
+              "seen": 5,
+              "saved": 5,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 8,
+              "saved": 8,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 8,
+            "saved": 8,
+            "directlyJourneyLinked": 5,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 3,
+            "distinctGroundedBehaviorCount": 3
+          }
+        },
+        "independent": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 0,
+              "unsupportedClaims": 0,
+              "unsupportedRate": null
+            },
+            "20": {
+              "seen": 5,
+              "saved": 5,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 7,
+              "saved": 7,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 7,
+            "saved": 7,
+            "directlyJourneyLinked": 5,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 3,
+            "distinctGroundedBehaviorCount": 3
+          }
+        },
+        "adjudicated": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 0,
+              "unsupportedClaims": 0,
+              "unsupportedRate": null
+            },
+            "20": {
+              "seen": 5,
+              "saved": 5,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 8,
+              "saved": 7,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 8,
+            "saved": 7,
+            "directlyJourneyLinked": 5,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 3,
+            "distinctGroundedBehaviorCount": 3
+          }
+        }
+      },
+      "initialDisagreements": [
+        {
+          "id": "HR17",
+          "field": "seen",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR17",
+          "field": "saved",
+          "from": true,
+          "to": false
+        }
+      ],
+      "initialToAdjudicated": [
+        {
+          "id": "HR14",
+          "field": "directlyJourneyLinked",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR15",
+          "field": "saved",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR15",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        }
+      ],
+      "independentToAdjudicated": [
+        {
+          "id": "HR14",
+          "field": "directlyJourneyLinked",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR15",
+          "field": "saved",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR15",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR17",
+          "field": "seen",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR17",
+          "field": "saved",
+          "from": false,
+          "to": true
+        }
+      ],
+      "sourceHashes": {
+        "grade.initial.json": "6709d8808b06e8d7212d543da323f35259b83c2cd3cb6ad9ad509716e2b60b0f",
+        "grade.independent.json": "50513fa6d94e95cbd7fac586e644dc91f3117eadb1efa39e302c260bb660e918",
+        "grade.json": "20911bac3febef88b57673363011a774a6903f39197e747cfc57acf874fc7647",
+        "adjudication.md": "b70e3887cba314430ae6cc651364e36270c00e61e57beaab74813c4e7d891dbf",
+        "boundary-independent-review.md": "73e15b120cf8fa2cdc216141622883646a7cf68b37308f1fbbb1f0fb0879df75",
+        "boundary-review.md": "49b7025a6d34a4d8f225b289c5fc4a953e589bd11f342272d81b3476a1daf467"
+      }
+    },
+    {
+      "id": "A2",
+      "arm": "A",
+      "block": 2,
+      "status": "reviewed",
+      "reviewPacket": "P7c26ba677c",
+      "measurements": {
+        "initial": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 2,
+            "saved": 2,
+            "directlyJourneyLinked": 0,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 0,
+            "distinctGroundedBehaviorCount": 0
+          }
+        },
+        "independent": {
+          "checkpoints": {
+            "10": {
+              "seen": 1,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 1,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 1,
+              "saved": 1,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 1,
+            "saved": 1,
+            "directlyJourneyLinked": 0,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 0,
+            "distinctGroundedBehaviorCount": 0
+          }
+        },
+        "adjudicated": {
+          "checkpoints": {
+            "10": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 2,
+              "saved": 2,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 2,
+            "saved": 2,
+            "directlyJourneyLinked": 0,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 0,
+            "distinctGroundedBehaviorCount": 0
+          }
+        }
+      },
+      "initialDisagreements": [
+        {
+          "id": "HR12",
+          "field": "seen",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR12",
+          "field": "saved",
+          "from": true,
+          "to": false
+        }
+      ],
+      "initialToAdjudicated": [],
+      "independentToAdjudicated": [
+        {
+          "id": "HR12",
+          "field": "seen",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR12",
+          "field": "saved",
+          "from": false,
+          "to": true
+        }
+      ],
+      "sourceHashes": {
+        "grade.initial.json": "aa53b79f5efc10a2d325e29e5ac6025c32b5470d6318a4f639281c577d523c0f",
+        "grade.independent.json": "62ffdff63f2195092fa6f52c000eecbb088d2a8189dce9450a558f5e9a19d720",
+        "grade.json": "2a49d934255c70f52b52512f7ceefb248c01b352511877bb40a9fb9ec76ca7e4",
+        "adjudication.md": "dff022ade16c74d3ef096b1326a79b1bac84d6d5c300386b67bb04718c88e129",
+        "history-review.md": "513a93eacd650a82fb4373f7786c86b954b89582ba2d405abb3a13893a31da58"
+      }
+    },
+    {
+      "id": "D2",
+      "arm": "D",
+      "block": 2,
+      "status": "reviewed",
+      "reviewPacket": "Pf928489f31",
+      "measurements": {
+        "initial": {
+          "checkpoints": {
+            "10": {
+              "seen": 4,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 8,
+              "saved": 7,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 16,
+              "saved": 13,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 16,
+            "saved": 14,
+            "directlyJourneyLinked": 5,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 2,
+            "distinctGroundedBehaviorCount": 2
+          }
+        },
+        "independent": {
+          "checkpoints": {
+            "10": {
+              "seen": 4,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 8,
+              "saved": 7,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 16,
+              "saved": 14,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 16,
+            "saved": 15,
+            "directlyJourneyLinked": 2,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 2,
+            "distinctGroundedBehaviorCount": 2
+          }
+        },
+        "adjudicated": {
+          "checkpoints": {
+            "10": {
+              "seen": 4,
+              "saved": 4,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "20": {
+              "seen": 8,
+              "saved": 6,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            },
+            "40": {
+              "seen": 16,
+              "saved": 12,
+              "unsupportedClaims": 0,
+              "unsupportedRate": 0
+            }
+          },
+          "final": {
+            "seen": 16,
+            "saved": 13,
+            "directlyJourneyLinked": 5,
+            "unsupportedClaims": 0,
+            "unsupportedRate": 0
+          },
+          "create": {
+            "proposedScenarios": 2,
+            "distinctGroundedBehaviorCount": 1
+          }
+        }
+      },
+      "initialDisagreements": [
+        {
+          "id": "HR03",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR04",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR05",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR07",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR19",
+          "field": "saved",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR23",
+          "field": "directlyJourneyLinked",
+          "from": false,
+          "to": true
+        }
+      ],
+      "initialToAdjudicated": [
+        {
+          "id": "HR15",
+          "field": "saved",
+          "from": true,
+          "to": false
+        }
+      ],
+      "independentToAdjudicated": [
+        {
+          "id": "HR03",
+          "field": "directlyJourneyLinked",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR04",
+          "field": "directlyJourneyLinked",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR05",
+          "field": "directlyJourneyLinked",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR07",
+          "field": "directlyJourneyLinked",
+          "from": false,
+          "to": true
+        },
+        {
+          "id": "HR15",
+          "field": "saved",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR19",
+          "field": "saved",
+          "from": true,
+          "to": false
+        },
+        {
+          "id": "HR23",
+          "field": "directlyJourneyLinked",
+          "from": true,
+          "to": false
+        }
+      ],
+      "sourceHashes": {
+        "grade.initial.json": "b90d59dbf520ab0c1cca476d846f8f9ae9454fc305eaf5708b2bebfbf4fab923",
+        "grade.independent.json": "889ac3dedf5de4fd4e3411aef3fafddcbe03839cfc5bfc36436b4bd9abc426e1",
+        "grade.json": "9eb6cad65ff30252343367654cd6ccacb26e0d4e16cd8b757f7cf621eb8ea279",
+        "adjudication.md": "36f83a92f3024583815514bf5c766b75a7b02882b8ee21ca2b7e90a5473879c9",
+        "boundary-independent-review.md": "9afc5c849f72c0a4163e9a9e170ee5d82ee7f394b492f39d398611f9f4cdfd56",
+        "boundary-review.md": "3f7072eeb833fc559c62ebce9fde4e4e7d92e17f8545281a7dfadbc76af7a419"
+      }
+    },
+    {
+      "id": "C3",
+      "status": "pending_review"
+    },
+    {
+      "id": "A3",
+      "status": "pending"
+    },
+    {
+      "id": "B3",
+      "status": "pending"
+    },
+    {
+      "id": "D3",
+      "status": "pending"
+    },
+    {
+      "id": "D4",
+      "status": "pending"
+    },
+    {
+      "id": "C4",
+      "status": "pending"
+    },
+    {
+      "id": "A4",
+      "status": "pending"
+    },
+    {
+      "id": "B4",
+      "status": "pending"
+    },
+    {
+      "id": "B5",
+      "status": "pending"
+    },
+    {
+      "id": "C5",
+      "status": "pending"
+    },
+    {
+      "id": "D5",
+      "status": "pending"
+    },
+    {
+      "id": "A5",
+      "status": "pending"
+    }
+  ],
+  "note": "Initial judgments are retained to expose grading sensitivity. Initial unsupported claims may reflect corrected evidence-presentation defects; they are not claims about candidate quality after adjudication. Support-only citation changes are documented in per-packet adjudication notes. Pending reviews are not zero scores."
+}

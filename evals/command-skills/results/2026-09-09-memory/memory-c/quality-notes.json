@@ -1,0 +1,62 @@
+{
+  "markerVerdict": "six supported dispatches; one manual correlation",
+  "falseReopens": 0,
+  "falsePending": 6,
+  "semanticAliases": "at least four action/link/field pairs",
+  "summary": "The run saved sixteen factual outcomes, thirteen with related Journeys, but only five on canonical endpoint Surfaces. It retained one safe non-execution reconciliation after a client-command failure, then made the replacement POST; all six dispatched mutations have preceding accepted attempts and outcomes. Check-in still failed because numeric 103 replaced the advertised string. Three resource-specific book Surfaces, concrete loan/reservation endpoint names and item aliases weaken reuse. Six observed access steps remain pending because they were recorded as independent Surface facts rather than reached Looks. No exact item completion was reopened by ordinary inventory.",
+  "manualMutationAttribution": {
+    "productEvent": 124,
+    "acceptedAttemptEvent": 123,
+    "acceptedAttemptId": "ec92a4dc-15ad-4a7b-9195-c20d4e2a0019",
+    "resolvedWithoutDispatch": "8871419f-5537-4c90-a33e-5caa8a0afa36",
+    "outcome": "5aa74826-aeab-4ae6-9d9a-0c0d3f84c818",
+    "reason": "Events 121-123 save the first desk attempt, explicit non-execution and its accepted replacement on the same item and Actor. No Product request occurred between the first marker and reconciliation. Event 124 is the next request and event 127 names the replacement in its outcome. The replacement body refers to the prior desk context without repeating its METHOD/path, so the mechanical matcher correctly leaves it unmatched rather than borrowing the reconciled id."
+  },
+  "clearAliasPairs": [
+    {
+      "surface": "GET /books/102",
+      "kind": "action",
+      "names": [
+        "Reserve book",
+        "Reader reservation"
+      ]
+    },
+    {
+      "surface": "GET /books/103",
+      "kind": "action",
+      "names": [
+        "Reserve book",
+        "Reader reservation"
+      ]
+    },
+    {
+      "surface": "GET /account",
+      "kind": "link",
+      "names": [
+        "Holds",
+        "Reservations"
+      ]
+    },
+    {
+      "surface": "GET /catalog",
+      "kind": "field",
+      "names": [
+        "q",
+        "Title search"
+      ]
+    }
+  ],
+  "falsePendingBasis": [
+    "Librarian followed the root Catalog, Account and Service desk links, but the final root inventory has three pending link checks.",
+    "Librarian read the account's Reservations and Loans targets, but both named account links remain pending.",
+    "Reader followed the return response's Loans target and saved its empty list at seq 40, but the source POST-return Loans link remains pending."
+  ],
+  "evidence": [
+    "metrics.json",
+    "events.jsonl events 121-127",
+    "item-audit.json",
+    "assessment.json",
+    "SUMMARY-LIBRARIAN.md"
+  ],
+  "limits": "The alias count is a lower bound for clear operable items; information-item overlap is also visible. Distinct Actor history does not justify renaming the same Surface item. Semantic aliases can suggest redundant work without reopening the old item id. False pending here names omitted source-link attribution, not a defect in the derived state rules. The automated mutation-matching count remains one unmatched and is not rewritten to conceal this manual judgment."
+}

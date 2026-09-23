@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "product": "BugBusters HR",
+  "product_sha": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+  "actor": "Employee:emily.dawson",
+  "platform": "browser",
+  "model": "gpt-5.6-terra",
+  "effort": "low",
+  "service_tier": "standard",
+  "temperature": "host default; no override",
+  "product_requests": 60,
+  "execution_ms": 1800000,
+  "recording_grace_ms": 120000,
+  "paired_executions": 4,
+  "order": [["ordinary", "advised"], ["advised", "ordinary"], ["advised", "ordinary"], ["ordinary", "advised"]],
+  "max_action_deficit_per_pair": 1,
+  "critical_items": ["login"],
+  "fixed_product_date": "2026-09-17T12:00:00.000Z"
+}

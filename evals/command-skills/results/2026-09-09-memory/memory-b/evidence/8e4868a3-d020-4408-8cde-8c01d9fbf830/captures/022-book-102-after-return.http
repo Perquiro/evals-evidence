@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"id":"102","title":"Garden Notes","available":true,"actions":[{"label":"Reserve book","method":"POST","href":"/holds","json":{"bookId":"102"},"actor":"Reader"}]}

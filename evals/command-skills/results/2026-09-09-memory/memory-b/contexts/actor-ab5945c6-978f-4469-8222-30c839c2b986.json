@@ -1,0 +1,768 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "anchor": {
+      "kind": "actor",
+      "record": {
+        "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+        "name": "Librarian",
+        "secretNames": [],
+        "createdAt": "2026-09-09T06:19:45.123Z"
+      }
+    },
+    "selection": {
+      "productVersions": {
+        "scope": "all"
+      },
+      "observations": {
+        "detail": "records",
+        "actorIds": [
+          "ab5945c6-978f-4469-8222-30c839c2b986"
+        ],
+        "scope": "both"
+      }
+    },
+    "storedRelationships": {
+      "items": [
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "GET /"
+          },
+          "observations": [
+            {
+              "id": "724dbb51-1cda-4208-bd71-631e87146170",
+              "seq": 39,
+              "body": "GET / returned 200 OK with the Willow Library name, a local disposable-development environment label, and documentation, catalog, account, and service-desk links.",
+              "createdAt": "2026-09-09T07:52:18.634Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "366c3f32-4ce8-4eb9-9cbc-2699caee4758"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "ce417e2d-882c-4392-9331-4d89f35e3144"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "5759e07a-93d5-4026-aec0-568240c75a7d"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "12f9219d-6482-4560-9828-8f3d1483aab8",
+              "seq": 40,
+              "body": "Following Service desk reached GET /desk and returned the Librarian check-in action plus one pending return: Night Trains (book 103).",
+              "createdAt": "2026-09-09T07:53:07.647Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "5759e07a-93d5-4026-aec0-568240c75a7d"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "25d174ae-9481-4cd6-ba55-5a863fbcee3d",
+              "seq": 46,
+              "body": "Following Documentation reached GET /docs, which described selecting the Reader or Librarian session with X-Actor and following the HTTP method and JSON fields advertised by response actions.",
+              "createdAt": "2026-09-09T07:57:03.435Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "856f956c-4ae9-4726-884f-50adbbd92667",
+              "seq": 48,
+              "body": "Following Catalog reached GET /catalog and returned River Atlas and Garden Notes as available, Night Trains as unavailable, and a title-search query field.",
+              "createdAt": "2026-09-09T07:59:22.005Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "654bb33a-1246-44b4-aeba-3484cfd93c67",
+              "seq": 52,
+              "body": "Following Account reached GET /account and returned actor Librarian with reservations and loans links.",
+              "createdAt": "2026-09-09T08:01:34.793Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "ce417e2d-882c-4392-9331-4d89f35e3144"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c"
+                  }
+                },
+                "support": "missing"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+            "name": "GET /desk"
+          },
+          "observations": [
+            {
+              "id": "677fbd9b-8c6f-4f3c-86b2-1172da6adb1b",
+              "seq": 41,
+              "body": "GET /desk returned 200 OK with a Check in a book POST action to /desk/returns, prefilled with bookId 103, and Pending returns listing Night Trains (book 103).",
+              "createdAt": "2026-09-09T07:53:11.684Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "e19b29f0-3993-479f-8c88-a9111dcb5c36"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "b1e2bc5f-cb60-48fb-8df3-b918ad9507d5",
+              "seq": 42,
+              "body": "GET /desk currently lists Night Trains as pending return with bookId 103 and offers Check in a book at POST /desk/returns. The check-in request has not been sent.",
+              "createdAt": "2026-09-09T07:53:47.362Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "book:103"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "5ca1d29a-4551-4b5c-9426-0850bb7776ff",
+              "seq": 43,
+              "body": "POST /desk/returns with the offered JSON body {\"bookId\":103} returned 404 Not Found with {\"error\":\"Book not found\"}.",
+              "createdAt": "2026-09-09T07:54:36.121Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "pending",
+                  "look": {
+                    "item": {
+                      "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "b1e2bc5f-cb60-48fb-8df3-b918ad9507d5"
+                  }
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "3d5bea43-4df3-4414-863c-3153a0c9969f",
+              "seq": 45,
+              "body": "A fresh GET /desk after the 404 check-in response still returned Check in a book with bookId 103 and Pending returns listing Night Trains (book 103).",
+              "createdAt": "2026-09-09T07:56:03.944Z"
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "af73d4d1-4c26-407e-9f04-577a78dc495e",
+            "name": "POST /desk/returns"
+          },
+          "observations": [
+            {
+              "id": "e9ba40dd-336d-464e-892a-2676848623b4",
+              "seq": 44,
+              "body": "POST /desk/returns returned 404 Not Found with the error message 'Book not found' for the offered bookId 103 request.",
+              "createdAt": "2026-09-09T07:54:55.039Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "f54818eb-e75c-4f31-8b83-485ccf40b99c"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+            "name": "GET /docs"
+          },
+          "observations": [
+            {
+              "id": "66c6f6df-46f1-4b21-bd6b-26801e4245e3",
+              "seq": 47,
+              "body": "GET /docs returned 200 OK. It says to set X-Actor to Reader or Librarian without credentials, and to follow each action's advertised HTTP method and JSON fields; an empty object is valid when no fields are listed.",
+              "createdAt": "2026-09-09T07:57:07.398Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "eb9b946b-59d6-440e-bc68-6c40d79e2d4f"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "2145522c-02d7-4f8e-b9f8-7f9a9aa97c57"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+            "name": "GET /catalog"
+          },
+          "observations": [
+            {
+              "id": "189fcf6c-b4a8-4859-9d42-6f108a0cff47",
+              "seq": 49,
+              "body": "GET /catalog returned 200 OK with River Atlas (101) and Garden Notes (102) available, Night Trains (103) unavailable, book-detail links, and a q title-search field at /catalog?q=<title>.",
+              "createdAt": "2026-09-09T07:59:29.581Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "1d98cbbc-31d3-4b07-9aa5-54c7052b9b18"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "28a00e0b-f59a-4baa-950a-618e382ff684"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "f6956830-0bdd-4176-8a50-f19af2644417"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "a930998e-4bf8-47e9-9ddd-45d8a19f10ce"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "cf725c9c-fb35-4c3e-b82c-befab61ac60c"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "3143168a-bca7-43ad-9b25-727cebe7ec9c",
+              "seq": 50,
+              "body": "Following Night Trains reached GET /books/103, which returned the unavailable title and a Reserve book action labelled for Reader.",
+              "createdAt": "2026-09-09T08:00:39.717Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "f6956830-0bdd-4176-8a50-f19af2644417"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324"
+                  }
+                },
+                "support": "missing"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+            "name": "GET /books/:id"
+          },
+          "observations": [
+            {
+              "id": "0b3df177-a470-475d-8cc1-2ab845dd472e",
+              "seq": 51,
+              "body": "GET /books/103 returned 200 OK for Night Trains with available false. Its only action is Reserve book at POST /holds with {\"bookId\":\"103\"}, labelled for Reader.",
+              "createdAt": "2026-09-09T08:00:44.565Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "73c9368b-5435-4611-a701-a5410f514ae4"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "name": "GET /account"
+          },
+          "observations": [
+            {
+              "id": "595cb567-3754-44bc-a458-5bb5c436636f",
+              "seq": 53,
+              "body": "GET /account returned 200 OK with actor Librarian and links to GET /holds for reservations and GET /loans for loans.",
+              "createdAt": "2026-09-09T08:01:38.371Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "317689c1-4392-477e-a340-b80927bb684a"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "05f5649f-973c-4bff-966e-ceb0c47f403b"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            },
+            {
+              "id": "19eb5bc1-6b1a-4888-882f-5030d71cb8b1",
+              "seq": 54,
+              "body": "Following Reservations reached GET /holds, which returned an empty holds array and the message 'No reservations'.",
+              "createdAt": "2026-09-09T08:02:45.304Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "cf440980-fd89-4b01-95d3-2d751223190d",
+              "seq": 56,
+              "body": "Following Loans reached GET /loans, which returned an empty loans array and the message 'No loans'.",
+              "createdAt": "2026-09-09T08:03:33.952Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "05f5649f-973c-4bff-966e-ceb0c47f403b"
+                    },
+                    "kind": "reached",
+                    "reachedSurfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1"
+                  }
+                },
+                "support": "missing"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "name": "GET /holds"
+          },
+          "observations": [
+            {
+              "id": "25fc1993-445c-4126-83d2-977f2f7cd950",
+              "seq": 55,
+              "body": "GET /holds returned 200 OK with an empty holds array and the message 'No reservations'.",
+              "createdAt": "2026-09-09T08:02:48.922Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "31bb9246-9694-462e-9694-e1b2fd26c737"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+            "name": "GET /loans"
+          },
+          "observations": [
+            {
+              "id": "e25b3582-78cd-4cc0-a34c-e97cd308eef6",
+              "seq": 57,
+              "body": "GET /loans returned 200 OK with an empty loans array and the message 'No loans'.",
+              "createdAt": "2026-09-09T08:03:37.719Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "pending",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "ffb30dfa-4383-4a34-85a1-d389d5cea676"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "indexed"
+              }
+            }
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "projections": {
+      "items": [
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "GET /"
+          },
+          "count": 5,
+          "firstSeq": 39,
+          "lastSeq": 52
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+            "name": "GET /desk"
+          },
+          "count": 4,
+          "firstSeq": 41,
+          "lastSeq": 45
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "af73d4d1-4c26-407e-9f04-577a78dc495e",
+            "name": "POST /desk/returns"
+          },
+          "count": 1,
+          "firstSeq": 44,
+          "lastSeq": 44
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+            "name": "GET /docs"
+          },
+          "count": 1,
+          "firstSeq": 47,
+          "lastSeq": 47
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+            "name": "GET /catalog"
+          },
+          "count": 2,
+          "firstSeq": 49,
+          "lastSeq": 50
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+            "name": "GET /books/:id"
+          },
+          "count": 1,
+          "firstSeq": 51,
+          "lastSeq": 51
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "name": "GET /account"
+          },
+          "count": 3,
+          "firstSeq": 53,
+          "lastSeq": 56
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "name": "GET /holds"
+          },
+          "count": 1,
+          "firstSeq": 55,
+          "lastSeq": 55
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+            "name": "GET /loans"
+          },
+          "count": 1,
+          "firstSeq": 57,
+          "lastSeq": 57
+        }
+      ],
+      "complete": true
+    }
+  }
+]

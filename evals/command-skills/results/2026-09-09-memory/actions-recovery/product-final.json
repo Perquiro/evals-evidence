@@ -1,0 +1,36 @@
+{
+  "events": [
+    {
+      "kind": "state_read",
+      "state": "none",
+      "reservationCount": 0
+    },
+    {
+      "kind": "reserve",
+      "attemptId": "c4525266-4748-430c-b217-0d8dba9c97e0",
+      "reason": ""
+    },
+    {
+      "kind": "state_read",
+      "state": "active",
+      "reservationCount": 1
+    },
+    {
+      "kind": "cancel",
+      "attemptId": "966dbc2f-c758-4567-a3e9-40793cce9e55",
+      "reason": "Plans changed"
+    },
+    {
+      "kind": "state_read",
+      "state": "cancelled",
+      "reservationCount": 1
+    },
+    {
+      "kind": "state_read",
+      "state": "cancelled",
+      "reservationCount": 1
+    }
+  ],
+  "reservationCount": 1,
+  "state": "cancelled"
+}

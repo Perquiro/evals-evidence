@@ -1,0 +1,7 @@
+{
+  "requestToken": "b6e54f2f-54d8-432a-8b48-c79cdd5f3a30",
+  "surfaceId": "29936bd4-accc-4e58-8f70-79683e5468e0",
+  "actor": "Reader",
+  "journey": "Browse catalog",
+  "body": "GET /books/102 returned Garden Notes as available true and offered the Reader action Reserve book with POST /holds and bookId 102."
+}

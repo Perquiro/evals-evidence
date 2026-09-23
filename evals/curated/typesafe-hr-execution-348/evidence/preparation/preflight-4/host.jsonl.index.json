@@ -1,0 +1,1434 @@
+{
+  "original": "preflight-4/host.jsonl",
+  "sha256": "8a3e6b66f9a927ce01084bdc67d42211d1a581c6bfd3b8cba82e59c5a9e2bca6",
+  "events": [
+    {
+      "at_ms": 0.2746000000006461,
+      "direction": "sent",
+      "msg": {
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "perquiro_hr_evaluation",
+            "version": "1"
+          },
+          "capabilities": {
+            "experimentalApi": true
+          }
+        }
+      }
+    },
+    {
+      "at_ms": 486.7480000000005,
+      "direction": "received",
+      "msg": {
+        "id": 1,
+        "result": {
+          "userAgent": "Codex Desktop/0.149.0 (Windows 10.0.26200; x86_64) dumb (perquiro_hr_evaluation; 1)",
+          "codexHome": "C:\\Users\\mathi\\.codex",
+          "platformFamily": "windows",
+          "platformOs": "windows"
+        }
+      }
+    },
+    {
+      "at_ms": 487.1251000000002,
+      "direction": "sent",
+      "msg": {
+        "method": "initialized",
+        "params": {}
+      }
+    },
+    {
+      "at_ms": 522.0340000000006,
+      "direction": "sent",
+      "msg": {
+        "id": 2,
+        "method": "thread/start",
+        "params": {
+          "model": "gpt-5.6-terra",
+          "allowProviderModelFallback": false,
+          "serviceTier": "default",
+          "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-4\\project",
+          "ephemeral": true,
+          "approvalPolicy": "never",
+          "sandbox": "read-only",
+          "baseInstructions": "You are a preflight examiner. Use only the supplied probe tool, then report its result. Do not explore any Product.",
+          "config": {
+            "model_reasoning_effort": "low",
+            "project_doc_max_bytes": 0,
+            "mcp_servers": {
+              "node_repl": {
+                "enabled": false
+              },
+              "perquiro": {
+                "enabled": false
+              }
+            },
+            "web_search": "disabled",
+            "skills": {
+              "config": [
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/imagegen",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/openai-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/plugin-creator",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/review-agent",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/skill-creator",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/.system/skill-installer",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/arena",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/hatch-pet",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.codex/skills/poteto-mode",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/bug-diagnose-grill-fix",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/docx",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/find-skills",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/frontend-design",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/2d-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/3d-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/engine-selection",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-art",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-audio",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/game-design",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/mobile-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/multiplayer",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/pc-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/vr-ar",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/game-development/web-games",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grill-me",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grill-with-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/grilling",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/impeccable",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/ci",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/core",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/migration",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/playwright-cli",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill/pom",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/playwright-skill",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/mediabunny",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-captions",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-create",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-docs",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-interactivity",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-markup",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-render",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices/remotion-saas",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/remotion-best-practices",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/setup-matt-pocock-skills",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/superdesign",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/ui-bug-diagnose-grill-fix",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/ui-critique-grill-polish",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/wayfinder",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/Users/mathi/.agents/skills/writing-great-skills",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-4/project/.agents/skills/perquiro-create",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-4/project/.agents/skills/perquiro-explore",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-4/project/.agents/skills/perquiro-generate",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-4/project/.agents/skills/perquiro-investigate",
+                  "enabled": false
+                },
+                {
+                  "path": "C:/dev/Perquiro/.worktrees/348/.perquiro/348/preflight-4/project/.agents/skills/perquiro-run",
+                  "enabled": false
+                }
+              ]
+            }
+          },
+          "environments": [],
+          "dynamicTools": [
+            {
+              "type": "function",
+              "name": "probe",
+              "description": "Return a fixed preflight receipt.",
+              "inputSchema": {
+                "type": "object",
+                "properties": {
+                  "value": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "value"
+                ],
+                "additionalProperties": false
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "at_ms": 527.7119000000002,
+      "direction": "received",
+      "msg": {
+        "method": "configWarning",
+        "params": {
+          "summary": "Project-local config, hooks, and exec policies are disabled in the following folders until the project is trusted, but skills still load.\n    1. C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-4\\project\\.codex\n       To load project-local config, hooks, and exec policies, add c:\\dev\\perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-4\\project as a trusted project in C:\\Users\\mathi\\.codex\\config.toml.\n",
+          "details": null
+        },
+        "emittedAtMs": 1789937330315
+      }
+    },
+    {
+      "at_ms": 527.9881000000005,
+      "direction": "received",
+      "msg": {
+        "method": "remoteControl/status/changed",
+        "params": {
+          "status": "disabled",
+          "serverName": "Home",
+          "installationId": "873fd056-6040-4861-aba0-4446ff05d528",
+          "environmentId": null
+        },
+        "emittedAtMs": 1789937330315
+      }
+    },
+    {
+      "at_ms": 1093.3627000000006,
+      "direction": "received",
+      "msg": {
+        "id": 2,
+        "result": {
+          "thread": {
+            "id": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+            "extra": null,
+            "sessionId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+            "forkedFromId": null,
+            "parentThreadId": null,
+            "preview": "",
+            "ephemeral": true,
+            "section": null,
+            "sectionEnteredAt": null,
+            "projectId": null,
+            "historyMode": "legacy",
+            "modelProvider": "openai",
+            "createdAt": 1789937330,
+            "updatedAt": 1789937330,
+            "recencyAt": 1789937330,
+            "status": {
+              "type": "idle"
+            },
+            "path": null,
+            "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-4\\project",
+            "cliVersion": "0.149.0",
+            "source": "vscode",
+            "canAcceptDirectInput": true,
+            "threadSource": null,
+            "agentNickname": null,
+            "agentRole": null,
+            "gitInfo": null,
+            "name": null,
+            "turns": []
+          },
+          "model": "gpt-5.6-terra",
+          "modelProvider": "openai",
+          "serviceTier": "default",
+          "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-4\\project",
+          "runtimeWorkspaceRoots": [],
+          "instructionSources": [],
+          "approvalPolicy": "never",
+          "approvalsReviewer": "user",
+          "sandbox": {
+            "type": "readOnly",
+            "networkAccess": false
+          },
+          "activePermissionProfile": null,
+          "reasoningEffort": "low",
+          "multiAgentMode": "explicitRequestOnly"
+        }
+      }
+    },
+    {
+      "at_ms": 1093.7664000000004,
+      "direction": "received",
+      "msg": {
+        "method": "thread/started",
+        "params": {
+          "thread": {
+            "id": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+            "extra": null,
+            "sessionId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+            "forkedFromId": null,
+            "parentThreadId": null,
+            "preview": "",
+            "ephemeral": true,
+            "section": null,
+            "sectionEnteredAt": null,
+            "projectId": null,
+            "historyMode": "legacy",
+            "modelProvider": "openai",
+            "createdAt": 1789937330,
+            "updatedAt": 1789937330,
+            "recencyAt": 1789937330,
+            "status": {
+              "type": "idle"
+            },
+            "path": null,
+            "cwd": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\preflight-4\\project",
+            "cliVersion": "0.149.0",
+            "source": "vscode",
+            "canAcceptDirectInput": true,
+            "threadSource": null,
+            "agentNickname": null,
+            "agentRole": null,
+            "gitInfo": null,
+            "name": null,
+            "turns": []
+          }
+        },
+        "emittedAtMs": 1789937330922
+      }
+    },
+    {
+      "at_ms": 1094.3619000000008,
+      "direction": "sent",
+      "msg": {
+        "id": 3,
+        "method": "mcpServerStatus/list",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "cursor": null,
+          "detail": "toolsAndAuthOnly"
+        }
+      }
+    },
+    {
+      "at_ms": 1106.9768000000004,
+      "direction": "received",
+      "msg": {
+        "id": 3,
+        "result": {
+          "data": [
+            {
+              "name": "node_repl",
+              "pluginId": null,
+              "serverInfo": null,
+              "tools": {},
+              "resources": [],
+              "resourceTemplates": [],
+              "authStatus": "unsupported"
+            },
+            {
+              "name": "perquiro",
+              "pluginId": null,
+              "serverInfo": null,
+              "tools": {},
+              "resources": [],
+              "resourceTemplates": [],
+              "authStatus": "unsupported"
+            }
+          ],
+          "nextCursor": null
+        }
+      }
+    },
+    {
+      "at_ms": 1108.3973000000005,
+      "direction": "sent",
+      "msg": {
+        "id": 4,
+        "method": "turn/start",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "input": [
+            {
+              "type": "text",
+              "text": "Call probe with value hello. Then report whether you have any tool that can read arbitrary files or execute a shell. Do not infer tool availability from prose.",
+              "text_elements": []
+            }
+          ],
+          "model": "gpt-5.6-terra",
+          "effort": "low"
+        }
+      }
+    },
+    {
+      "at_ms": 1131.0834000000004,
+      "direction": "received",
+      "msg": {
+        "id": 4,
+        "result": {
+          "turn": {
+            "id": "01a0c094-2afa-7943-b597-6f84aedaf303",
+            "items": [],
+            "itemsView": "notLoaded",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": null,
+            "completedAt": null,
+            "durationMs": null
+          }
+        }
+      }
+    },
+    {
+      "at_ms": 1131.6816000000008,
+      "direction": "received",
+      "msg": {
+        "method": "thread/status/changed",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "status": {
+            "type": "active",
+            "activeFlags": []
+          }
+        },
+        "emittedAtMs": 1789937330960
+      }
+    },
+    {
+      "at_ms": 1132.0199000000002,
+      "direction": "received",
+      "msg": {
+        "method": "turn/started",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turn": {
+            "id": "01a0c094-2afa-7943-b597-6f84aedaf303",
+            "items": [],
+            "itemsView": "notLoaded",
+            "status": "inProgress",
+            "error": null,
+            "startedAt": 1789937330,
+            "completedAt": null,
+            "durationMs": null
+          }
+        },
+        "emittedAtMs": 1789937330960
+      }
+    },
+    {
+      "at_ms": 2524.2155000000002,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "userMessage",
+            "id": "01a0c094-3081-7052-b319-9191ed2088af",
+            "clientId": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "Call probe with value hello. Then report whether you have any tool that can read arbitrary files or execute a shell. Do not infer tool availability from prose.",
+                "text_elements": []
+              }
+            ]
+          },
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "startedAtMs": 1789937332353
+        },
+        "emittedAtMs": 1789937332353
+      }
+    },
+    {
+      "at_ms": 2524.5330000000013,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "userMessage",
+            "id": "01a0c094-3081-7052-b319-9191ed2088af",
+            "clientId": null,
+            "content": [
+              {
+                "type": "text",
+                "text": "Call probe with value hello. Then report whether you have any tool that can read arbitrary files or execute a shell. Do not infer tool availability from prose.",
+                "text_elements": []
+              }
+            ]
+          },
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "completedAtMs": 1789937332353
+        },
+        "emittedAtMs": 1789937332353
+      }
+    },
+    {
+      "at_ms": 3819.481100000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "reasoning",
+            "id": "rs_0f9fb755318d0fcf016ab046b5227487d2a276dd105b3ad613",
+            "summary": [],
+            "content": []
+          },
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "startedAtMs": 1789937333648
+        },
+        "emittedAtMs": 1789937333648
+      }
+    },
+    {
+      "at_ms": 4665.021500000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "reasoning",
+            "id": "rs_0f9fb755318d0fcf016ab046b5227487d2a276dd105b3ad613",
+            "summary": [],
+            "content": []
+          },
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "completedAtMs": 1789937334494
+        },
+        "emittedAtMs": 1789937334494
+      }
+    },
+    {
+      "at_ms": 5424.9519,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "dynamicToolCall",
+            "id": "exec-cef899ef-de78-4336-9eed-1e669f144b6f",
+            "namespace": null,
+            "tool": "probe",
+            "arguments": {
+              "value": "hello"
+            },
+            "status": "inProgress",
+            "contentItems": null,
+            "success": null,
+            "durationMs": null
+          },
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "startedAtMs": 1789937335254
+        },
+        "emittedAtMs": 1789937335254
+      }
+    },
+    {
+      "at_ms": 5425.249,
+      "direction": "received",
+      "msg": {
+        "method": "item/tool/call",
+        "id": 0,
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "callId": "exec-cef899ef-de78-4336-9eed-1e669f144b6f",
+          "namespace": null,
+          "tool": "probe",
+          "arguments": {
+            "value": "hello"
+          }
+        }
+      }
+    },
+    {
+      "at_ms": 5425.696600000001,
+      "direction": "sent",
+      "msg": {
+        "id": 0,
+        "result": {
+          "success": true,
+          "contentItems": [
+            {
+              "type": "inputText",
+              "text": "{\"received\":\"hello\"}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "at_ms": 5426.451500000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "dynamicToolCall",
+            "id": "exec-cef899ef-de78-4336-9eed-1e669f144b6f",
+            "namespace": null,
+            "tool": "probe",
+            "arguments": {
+              "value": "hello"
+            },
+            "status": "completed",
+            "contentItems": [
+              {
+                "type": "inputText",
+                "text": "{\"received\":\"hello\"}"
+              }
+            ],
+            "success": true,
+            "durationMs": 1
+          },
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "completedAtMs": 1789937335255
+        },
+        "emittedAtMs": 1789937335255
+      }
+    },
+    {
+      "at_ms": 5427.028900000001,
+      "direction": "received",
+      "msg": {
+        "method": "thread/tokenUsage/updated",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "tokenUsage": {
+            "total": {
+              "totalTokens": 7267,
+              "inputTokens": 7221,
+              "cachedInputTokens": 0,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 46,
+              "reasoningOutputTokens": 16
+            },
+            "last": {
+              "totalTokens": 7267,
+              "inputTokens": 7221,
+              "cachedInputTokens": 0,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 46,
+              "reasoningOutputTokens": 16
+            },
+            "modelContextWindow": 258400
+          }
+        },
+        "emittedAtMs": 1789937335256
+      }
+    },
+    {
+      "at_ms": 5427.329600000001,
+      "direction": "received",
+      "msg": {
+        "method": "account/rateLimits/updated",
+        "params": {
+          "rateLimits": {
+            "limitId": "codex",
+            "limitName": null,
+            "primary": {
+              "usedPercent": 47,
+              "windowDurationMins": 10080,
+              "resetsAt": 1790455438
+            },
+            "secondary": null,
+            "credits": {
+              "hasCredits": false,
+              "unlimited": false,
+              "balance": "0"
+            },
+            "individualLimit": null,
+            "spendControlReached": null,
+            "planType": "pro",
+            "rateLimitReachedType": null
+          }
+        },
+        "emittedAtMs": 1789937335256
+      }
+    },
+    {
+      "at_ms": 6919.5733,
+      "direction": "received",
+      "msg": {
+        "method": "item/started",
+        "params": {
+          "item": {
+            "type": "agentMessage",
+            "id": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+            "text": "",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          },
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "startedAtMs": 1789937336748
+        },
+        "emittedAtMs": 1789937336748
+      }
+    },
+    {
+      "at_ms": 6919.990300000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "Probe"
+        },
+        "emittedAtMs": 1789937336748
+      }
+    },
+    {
+      "at_ms": 6964.4853,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " result"
+        },
+        "emittedAtMs": 1789937336793
+      }
+    },
+    {
+      "at_ms": 7000.8276000000005,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": ":"
+        },
+        "emittedAtMs": 1789937336830
+      }
+    },
+    {
+      "at_ms": 7057.7551,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " `"
+        },
+        "emittedAtMs": 1789937336887
+      }
+    },
+    {
+      "at_ms": 7087.3662,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "{\""
+        },
+        "emittedAtMs": 1789937336916
+      }
+    },
+    {
+      "at_ms": 7087.8501,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "received"
+        },
+        "emittedAtMs": 1789937336916
+      }
+    },
+    {
+      "at_ms": 7124.337000000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "\":\""
+        },
+        "emittedAtMs": 1789937336953
+      }
+    },
+    {
+      "at_ms": 7162.487300000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "hello"
+        },
+        "emittedAtMs": 1789937336991
+      }
+    },
+    {
+      "at_ms": 7204.035400000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "\""
+        },
+        "emittedAtMs": 1789937337033
+      }
+    },
+    {
+      "at_ms": 7248.6954000000005,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "}`"
+        },
+        "emittedAtMs": 1789937337078
+      }
+    },
+    {
+      "at_ms": 7288.6275000000005,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "\n\n"
+        },
+        "emittedAtMs": 1789937337118
+      }
+    },
+    {
+      "at_ms": 7329.331100000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "No"
+        },
+        "emittedAtMs": 1789937337158
+      }
+    },
+    {
+      "at_ms": 7364.8235,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "—"
+        },
+        "emittedAtMs": 1789937337194
+      }
+    },
+    {
+      "at_ms": 7366.833500000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "based"
+        },
+        "emittedAtMs": 1789937337196
+      }
+    },
+    {
+      "at_ms": 7407.118700000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " only"
+        },
+        "emittedAtMs": 1789937337236
+      }
+    },
+    {
+      "at_ms": 7470.968200000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " on"
+        },
+        "emittedAtMs": 1789937337299
+      }
+    },
+    {
+      "at_ms": 7505.6569,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " tool"
+        },
+        "emittedAtMs": 1789937337334
+      }
+    },
+    {
+      "at_ms": 7544.9102,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " results"
+        },
+        "emittedAtMs": 1789937337374
+      }
+    },
+    {
+      "at_ms": 7587.367100000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": ","
+        },
+        "emittedAtMs": 1789937337416
+      }
+    },
+    {
+      "at_ms": 7587.8907,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " I"
+        },
+        "emittedAtMs": 1789937337416
+      }
+    },
+    {
+      "at_ms": 7629.283100000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " have"
+        },
+        "emittedAtMs": 1789937337458
+      }
+    },
+    {
+      "at_ms": 7672.776,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " no"
+        },
+        "emittedAtMs": 1789937337502
+      }
+    },
+    {
+      "at_ms": 7712.9251,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " evidence"
+        },
+        "emittedAtMs": 1789937337542
+      }
+    },
+    {
+      "at_ms": 7746.8063,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " of"
+        },
+        "emittedAtMs": 1789937337574
+      }
+    },
+    {
+      "at_ms": 7790.4568,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " a"
+        },
+        "emittedAtMs": 1789937337619
+      }
+    },
+    {
+      "at_ms": 8042.2008000000005,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " tool"
+        },
+        "emittedAtMs": 1789937337871
+      }
+    },
+    {
+      "at_ms": 8042.599100000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " to"
+        },
+        "emittedAtMs": 1789937337871
+      }
+    },
+    {
+      "at_ms": 8043.250900000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " read"
+        },
+        "emittedAtMs": 1789937337871
+      }
+    },
+    {
+      "at_ms": 8043.5746,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " arbitrary"
+        },
+        "emittedAtMs": 1789937337871
+      }
+    },
+    {
+      "at_ms": 8043.796700000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " files"
+        },
+        "emittedAtMs": 1789937337871
+      }
+    },
+    {
+      "at_ms": 8044.0813,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " or"
+        },
+        "emittedAtMs": 1789937337871
+      }
+    },
+    {
+      "at_ms": 8044.3325,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " execute"
+        },
+        "emittedAtMs": 1789937337871
+      }
+    },
+    {
+      "at_ms": 8081.2947,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " a"
+        },
+        "emittedAtMs": 1789937337910
+      }
+    },
+    {
+      "at_ms": 8140.295700000001,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": " shell"
+        },
+        "emittedAtMs": 1789937337969
+      }
+    },
+    {
+      "at_ms": 8156.4125,
+      "direction": "received",
+      "msg": {
+        "method": "item/agentMessage/delta",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "itemId": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+          "delta": "."
+        },
+        "emittedAtMs": 1789937337985
+      }
+    },
+    {
+      "at_ms": 8288.0826,
+      "direction": "received",
+      "msg": {
+        "method": "item/completed",
+        "params": {
+          "item": {
+            "type": "agentMessage",
+            "id": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+            "text": "Probe result: `{\"received\":\"hello\"}`\n\nNo—based only on tool results, I have no evidence of a tool to read arbitrary files or execute a shell.",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          },
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "completedAtMs": 1789937338117
+        },
+        "emittedAtMs": 1789937338117
+      }
+    },
+    {
+      "at_ms": 8304.2129,
+      "direction": "received",
+      "msg": {
+        "method": "thread/tokenUsage/updated",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turnId": "01a0c094-2afa-7943-b597-6f84aedaf303",
+          "tokenUsage": {
+            "total": {
+              "totalTokens": 14603,
+              "inputTokens": 14518,
+              "cachedInputTokens": 6912,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 85,
+              "reasoningOutputTokens": 16
+            },
+            "last": {
+              "totalTokens": 7336,
+              "inputTokens": 7297,
+              "cachedInputTokens": 6912,
+              "cacheWriteInputTokens": 0,
+              "outputTokens": 39,
+              "reasoningOutputTokens": 0
+            },
+            "modelContextWindow": 258400
+          }
+        },
+        "emittedAtMs": 1789937338133
+      }
+    },
+    {
+      "at_ms": 8304.7204,
+      "direction": "received",
+      "msg": {
+        "method": "account/rateLimits/updated",
+        "params": {
+          "rateLimits": {
+            "limitId": "codex",
+            "limitName": null,
+            "primary": {
+              "usedPercent": 47,
+              "windowDurationMins": 10080,
+              "resetsAt": 1790455438
+            },
+            "secondary": null,
+            "credits": {
+              "hasCredits": false,
+              "unlimited": false,
+              "balance": "0"
+            },
+            "individualLimit": null,
+            "spendControlReached": null,
+            "planType": "pro",
+            "rateLimitReachedType": null
+          }
+        },
+        "emittedAtMs": 1789937338133
+      }
+    },
+    {
+      "at_ms": 8310.611200000001,
+      "direction": "received",
+      "msg": {
+        "method": "thread/status/changed",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "status": {
+            "type": "idle"
+          }
+        },
+        "emittedAtMs": 1789937338139
+      }
+    },
+    {
+      "at_ms": 8311.431,
+      "direction": "received",
+      "msg": {
+        "method": "turn/completed",
+        "params": {
+          "threadId": "01a0c094-2a1b-76c0-8bc0-ecf881d7f193",
+          "turn": {
+            "id": "01a0c094-2afa-7943-b597-6f84aedaf303",
+            "items": [
+              {
+                "type": "agentMessage",
+                "id": "msg_0f9fb755318d0fcf016ab046b83bb087d2b6dc55bd7da3ae09",
+                "text": "Probe result: `{\"received\":\"hello\"}`\n\nNo—based only on tool results, I have no evidence of a tool to read arbitrary files or execute a shell.",
+                "phase": "final_answer",
+                "memoryCitation": null,
+                "delivery": null
+              }
+            ],
+            "itemsView": "summary",
+            "status": "completed",
+            "error": null,
+            "startedAt": 1789937330,
+            "completedAt": 1789937338,
+            "durationMs": 7191
+          }
+        },
+        "emittedAtMs": 1789937338139
+      }
+    }
+  ]
+}

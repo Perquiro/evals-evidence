@@ -1,0 +1,30 @@
+✔ the browser admits only the budgeted request and retains its delayed result (322.5348ms)
+✔ retained browser captures redact configured credentials (193.7724ms)
+✔ deadline denies even client-only actions and final capture survives the stop (150.5056ms)
+✔ automatic requests from one action cannot pass the admission cap (278.0022ms)
+✔ browser navigation cannot read evaluator files or an unrelated origin (123.5424ms)
+✔ public export keeps Observations beyond the first context page (2733.6266ms)
+✔ a reroute invalidates the model control even when initial settings match (1.2425ms)
+✔ a failed report build retains its error and partial output without changing its input (22.1054ms)
+✔ missing report inputs are retained as an inconclusive attempt (2.7772ms)
+✔ complete independent judgment is accepted (1.3439ms)
+✔ missing, duplicate and unknown checklist decisions are rejected (1.5838ms)
+✔ wrong reviewer, empty zero rationale and fabricated evidence are rejected (0.9764ms)
+✔ zero decisions retain their reason and partial support without becoming credit (0.1313ms)
+✔ host accounting differences cumulative counters and ignores repeated totals (2.0357ms)
+✔ missing or backwards cumulative classifications stay unknown (0.2014ms)
+✔ host-reported failure remains an unpriced attempt (0.1235ms)
+✔ usage without delivered model output is not labeled a usable success (0.1479ms)
+✔ a delivered tool-call response stays usable when a later turn attempt fails (0.1338ms)
+✔ preflight MCP envelopes distinguish usable advice from HTTP errors and invalid results (1.2222ms)
+✔ preparation JSONL citations preserve source hash and exact event index (4.4798ms)
+✔ separate independent review binds to the exact packet and report (0.8145ms)
+✔ wrong identity, stale report, and unresolved review cannot pass delivery (1.5392ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3351.4388

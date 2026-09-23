@@ -1,0 +1,1 @@
+{"checkIn":{"label":"Check in a book","method":"POST","href":"/desk/returns","json":{"bookId":"103"}},"pendingReturns":[{"bookId":"103","title":"Night Trains"}]}

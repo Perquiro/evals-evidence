@@ -1,0 +1,23 @@
+{
+  "requestToken": "a9e7a2de-10ee-40a3-85e5-a6ac2e067a99",
+  "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "The first check-in command was established as not executed because curl rejected its request data. The service desk precondition remains the listed Night Trains return for bookId 103; a corrected request has not been sent.",
+      "look": {
+        "item": { "id": "fe21b078-dabf-45de-b51f-c2d6fcff48ce" },
+        "kind": "attempting",
+        "resourceRef": "book:103",
+        "repeat": {
+          "kind": "non_execution",
+          "reason": "The first authorized check-in attempt did not reach the Product because the HTTP client rejected malformed request data.",
+          "serves": { "id": "fe21b078-dabf-45de-b51f-c2d6fcff48ce" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "W01": {
+    "seqs": [
+      1
+    ],
+    "reason": "Accurate initial catalog fact, saved before a Journey."
+  },
+  "W02": {
+    "seqs": [
+      16,
+      38
+    ],
+    "journeyRelated": true,
+    "reason": "Actual matching queries and results linked to Search catalog."
+  },
+  "W03": {
+    "seqs": [
+      29
+    ],
+    "reason": "Librarian's no-match fact is accurate but Surface-only."
+  },
+  "W04": {
+    "seqs": [],
+    "reason": "A full catalog response occurred after the no-match response, but the later return readback does not establish following Clear. Receipt matcher alone overstates intentional recovery."
+  },
+  "W05": {
+    "seqs": [
+      2
+    ],
+    "reason": "Available detail and offered action saved without a Journey."
+  },
+  "W06": {
+    "seqs": [
+      13
+    ],
+    "reason": "Unavailable detail saved without a Journey."
+  },
+  "W07": {
+    "seqs": [
+      35
+    ],
+    "reason": "Reader's empty collection saved Surface-only. Cancellation-linked earlier empty fact belongs to a different task."
+  },
+  "W08": {
+    "seqs": [
+      4,
+      5
+    ],
+    "reason": "Created identity saved on source and actual endpoint, both Surface-only."
+  },
+  "W09": {
+    "seqs": [
+      15
+    ],
+    "reason": "Conflict fact saved on the source action's Surface without Journey. A second identical HTTP request was sent without a fresh accepted attempt."
+  },
+  "W10": {
+    "considered": "unknown",
+    "reason": "Required-book rejection not exercised before shared budget ended."
+  },
+  "W11": {
+    "considered": "unknown",
+    "reason": "Duplicate reservation branch not exercised."
+  },
+  "W12": {
+    "seqs": [
+      6
+    ],
+    "reason": "Created reservation readback saved without Journey."
+  },
+  "W13": {
+    "seqs": [
+      8
+    ],
+    "reason": "Cancellation saved on source GET /holds without Journey; actual DELETE endpoint absent."
+  },
+  "W14": {
+    "seqs": [
+      9
+    ],
+    "journeyRelated": true,
+    "reason": "Exact cancellation readback linked to Cancel hold."
+  },
+  "W15": {
+    "seqs": [
+      12
+    ],
+    "reason": "Full initial due date and both actions saved without Journey. The later linked precondition omits the due date."
+  },
+  "W16": {
+    "seqs": [
+      31
+    ],
+    "journeyRelated": true,
+    "reason": "Actual renewal result linked to the loan-detail Journey. Meaning is related, but POST endpoint was not recorded."
+  },
+  "W17": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Reader continuation named renewal as remaining; no repeat-limit response was observed before return."
+  },
+  "W18": {
+    "seqs": [
+      33
+    ],
+    "journeyRelated": true,
+    "reason": "Return outcome linked to Return book; actual POST endpoint was not recorded."
+  },
+  "W19": {
+    "seqs": [
+      36
+    ],
+    "journeyRelated": true,
+    "reason": "Actual empty loans after return linked to Return book."
+  },
+  "W20": {
+    "considered": "unknown",
+    "reason": "Reader service-desk denial not exercised."
+  },
+  "W21": {
+    "seqs": [
+      23
+    ],
+    "reason": "Librarian desk action and pending book saved without Journey."
+  },
+  "W22": {
+    "considered": "unknown",
+    "reason": "Empty-book check-in branch not exercised."
+  },
+  "W23": {
+    "seqs": [
+      25,
+      26
+    ],
+    "reason": "Successful check-in saved on endpoint and source, neither Journey-linked."
+  },
+  "W24": {
+    "considered": "unknown",
+    "reason": "Repeated check-in rejection not exercised."
+  },
+  "W25": {
+    "considered": "unknown",
+    "reason": "Librarian readback exists, but frozen item requires Reader's GET /books/103 after check-in. Reader's later full catalog is not this request."
+  }
+}

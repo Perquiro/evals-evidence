@@ -1,0 +1,19 @@
+{
+  "requestToken": "4eb9e754-2c5a-4dc8-89c6-a1452f5bf372",
+  "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "garden-loan", "name": "Garden Notes loan", "kind": "link" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /loans listed Garden Notes as loan 201 and linked to /loans/201.",
+      "looks": [
+        { "item": { "key": "garden-loan" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

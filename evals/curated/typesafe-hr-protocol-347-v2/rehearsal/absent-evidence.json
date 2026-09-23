@@ -1,0 +1,15 @@
+{
+  "notice": "Authored controlled trace, not live evidence.",
+  "actions": [],
+  "observations": [],
+  "calls": [
+    {
+      "id": "planning",
+      "model": "gpt-5.6-terra",
+      "status": "ok",
+      "usage": null,
+      "actual_charge_usd": null,
+      "raw": "absent-evidence.json#/calls/0"
+    }
+  ]
+}

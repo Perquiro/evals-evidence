@@ -1,0 +1,47 @@
+{
+  "c1": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c2": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c3": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c4": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c5": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c6": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c7": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c8": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c9": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  }
+}

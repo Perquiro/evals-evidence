@@ -1,0 +1,115 @@
+{
+  "label": "evidence-stop",
+  "beforeTime": "2026-09-09T07:16:46.116Z",
+  "lastEvent": 67,
+  "productRequests": 25,
+  "outcomesSeen": [
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "W15",
+    "W20",
+    "W21",
+    "W23"
+  ],
+  "uniqueObservations": [
+    {
+      "event": 50,
+      "id": "0df68c94-d63e-4edd-9fe0-f7d2804b044b",
+      "seq": 1,
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "body": "POST /holds was inspected for Reader. The advertised reservation action supplies a required bookId field; Reader's holds were empty before this check.",
+      "createdAt": "2026-09-09T07:06:53.326Z"
+    },
+    {
+      "event": 50,
+      "id": "be97d9cc-25ed-4586-bc47-14b20e89bd31",
+      "seq": 2,
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "body": "Prepared the reviewed required-field validation request POST /holds with an empty JSON object while holds were empty.",
+      "createdAt": "2026-09-09T07:06:53.330Z"
+    },
+    {
+      "event": 52,
+      "id": "9bcfb05b-010e-423e-a021-aadafc3a7dc8",
+      "seq": 3,
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "body": "POST /holds with {} returned 422 and {\"error\":\"Book is required\"}.",
+      "createdAt": "2026-09-09T07:07:21.951Z"
+    },
+    {
+      "event": 55,
+      "id": "f193b235-1aca-483f-84de-61fe5c5b6942",
+      "seq": 4,
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "body": "Prepared the reviewed unavailable-state reservation request for the discovered unavailable book 102 before any later change.",
+      "createdAt": "2026-09-09T07:08:34.503Z"
+    },
+    {
+      "event": 59,
+      "id": "0af01f42-9934-46db-bb20-78bfab237441",
+      "seq": 5,
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "body": "After GET /books/102 confirmed it remained unavailable and GET /holds was empty, prepared the reviewer-approved fresh reservation request with bookId 102.",
+      "createdAt": "2026-09-09T07:10:37.505Z"
+    },
+    {
+      "event": 61,
+      "id": "6c9c9c1c-572b-4f9f-9794-02b5b38fd6b5",
+      "seq": 6,
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "body": "POST /holds with bookId 102 returned 409 and {\"error\":\"Book is unavailable\"}.",
+      "createdAt": "2026-09-09T07:10:58.466Z"
+    },
+    {
+      "event": 62,
+      "id": "eb975598-1bcb-4bd5-8a87-5d537b678072",
+      "seq": 7,
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "body": "Prepared the reviewed successful reservation request for the discovered available book 101.",
+      "createdAt": "2026-09-09T07:11:18.316Z"
+    },
+    {
+      "event": 64,
+      "id": "80aae4d4-64e3-4369-9d14-05cff0e3501c",
+      "seq": 8,
+      "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+      "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+      "body": "POST /desk/returns was inspected for Librarian. The service desk advertised a pending return for book 103 and a bookId field.",
+      "createdAt": "2026-09-09T07:11:46.532Z"
+    },
+    {
+      "event": 64,
+      "id": "30d6eb60-541c-4c94-9103-ac163444cbcb",
+      "seq": 9,
+      "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+      "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+      "body": "Prepared the reviewed Librarian check-in request for the pending return book 103.",
+      "createdAt": "2026-09-09T07:11:46.534Z"
+    }
+  ],
+  "limitation": "This is a trace cut. Final public reads must still confirm the preserved immutable records; Observation count is not completed-outcome coverage."
+}

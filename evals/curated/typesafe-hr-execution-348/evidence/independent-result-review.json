@@ -1,0 +1,39 @@
+{
+  "reviewer": "/root/driver_spec",
+  "gate": "APPROVED",
+  "packet_sha256": "e3ac1989bddabf290942561e0ebd02aff559e0660cc954de2c64d36eed6e83c1",
+  "report_sha256": "d2de1befe36f5b90f129a59f147ee97915c54861bb7574b44f3016937f3d1a01",
+  "checks": {
+    "independent_review_request_hashes_match_current_packet_and_report": true,
+    "frozen_evaluator_replay_matches_report_json": true,
+    "all_eight_live_traces_remain_comparability_verified": true,
+    "raw_controls_and_citations_remain_present_and_manifested": true,
+    "initial_grader_identities_match_the_frozen_launch": true,
+    "fresh_grader_context_and_separate_initial_outputs_are_recorded": true,
+    "checklist_decisions": 136,
+    "initial_credit_decision_agreement": 136,
+    "initial_credit_decision_disagreements": 0,
+    "adjudication_credit_decisions_match_both_initial_decisions": true,
+    "grader_a_original_is_retained": true,
+    "grader_a_transcription_correction_is_limited_to_one_malformed_observation_id_and_its_attribution_key": true,
+    "credited_checklist_items": 12,
+    "credited_items_have_executed_actions_and_saved_eligible_observations": true,
+    "eight_login_credits_have_successful_login_requests_and_saved_authenticated_results": true,
+    "both_directory_search_credits_have_executed_search_wait_actions_settled_employee_requests_and_saved_results": true,
+    "sample_03_leave_submit_has_the_successful_post_and_saved_submission_result": true,
+    "sample_03_leave_readback_has_a_separate_post_navigation_get_history_response_settled_history_action_and_saved_readback": true,
+    "the_two_initial_marker_claims_are_not_credited": true,
+    "marker_claim_adjudication_matches_raw_attempting_metadata_and_explicit_correction_where_present": true,
+    "zero_credit_items_have_explicit_rationales": true,
+    "comparison_decision_is_inconclusive_and_matches_the_final_quality_and_cost_constraints": true,
+    "phase_totals_cover_each_elapsed_interval": true,
+    "api_equivalent_totals_actual_charges_and_non_token_charges_remain_unknown_where_the_call_ledger_is_incomplete": true
+  },
+  "findings": [],
+  "limitations": [
+    "The two initial graders used fresh contexts and separate outputs, but both were configured instances of the same model family rather than independent human judges.",
+    "Anonymous packets omitted attempt-role and correction metadata. The final adjudication resolved the two resulting marker concerns against retained labeled raw evidence; the reconciliation preserves those sources and the sensitivity statement.",
+    "Host-visible counters support successive-delta estimates only. The transport-attempt ledger, attributable non-token charges, and actual charges remain incomplete or unavailable, so the report correctly keeps complete API-equivalent and actual cost totals unknown.",
+    "Phase intervals cover each execution, while usage is attributed to the declared phase at event arrival. The phase breakdown is an attribution estimate and most host usage is assigned to other."
+  ]
+}

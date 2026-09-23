@@ -1,0 +1,334 @@
+{
+  "sample": "sample-01",
+  "actions": [
+    {
+      "id": "action-2",
+      "ordinal": 1,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/0"
+    },
+    {
+      "id": "snapshot-9",
+      "ordinal": 2,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/1"
+    },
+    {
+      "id": "action-3",
+      "ordinal": 3,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/2"
+    },
+    {
+      "id": "action-4",
+      "ordinal": 4,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/3"
+    },
+    {
+      "id": "action-5",
+      "ordinal": 5,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/4"
+    },
+    {
+      "id": "snapshot-21",
+      "ordinal": 6,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/5"
+    },
+    {
+      "id": "action-6",
+      "ordinal": 7,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/6"
+    },
+    {
+      "id": "snapshot-25",
+      "ordinal": 8,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/7"
+    },
+    {
+      "id": "action-7",
+      "ordinal": 9,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/8"
+    },
+    {
+      "id": "snapshot-32",
+      "ordinal": 10,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/9"
+    },
+    {
+      "id": "action-8",
+      "ordinal": 11,
+      "executed": false,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/10"
+    },
+    {
+      "id": "action-9",
+      "ordinal": 12,
+      "executed": false,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/11"
+    },
+    {
+      "id": "action-10",
+      "ordinal": 13,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/12"
+    },
+    {
+      "id": "action-11",
+      "ordinal": 14,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/13"
+    },
+    {
+      "id": "snapshot-42",
+      "ordinal": 15,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/14"
+    },
+    {
+      "id": "action-12",
+      "ordinal": 16,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/15"
+    },
+    {
+      "id": "snapshot-47",
+      "ordinal": 17,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/16"
+    },
+    {
+      "id": "action-13",
+      "ordinal": 18,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/17"
+    },
+    {
+      "id": "action-14",
+      "ordinal": 19,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/18"
+    },
+    {
+      "id": "snapshot-54",
+      "ordinal": 20,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/19"
+    },
+    {
+      "id": "action-15",
+      "ordinal": 21,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/20"
+    },
+    {
+      "id": "snapshot-58",
+      "ordinal": 22,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/21"
+    },
+    {
+      "id": "action-16",
+      "ordinal": 23,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/22"
+    },
+    {
+      "id": "snapshot-63",
+      "ordinal": 24,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/23"
+    },
+    {
+      "id": "action-17",
+      "ordinal": 25,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/24"
+    },
+    {
+      "id": "snapshot-65",
+      "ordinal": 26,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-01-evidence.json#/browser/actions/25"
+    }
+  ],
+  "observations": [
+    {
+      "id": "e81839b8-3e85-4764-817c-917e1e364fea",
+      "body": "Signed-out Login displays Username and Password fields, a Sign in button, and Demo accounts listing Employee, Manager, and HR Admin usernames.",
+      "context": {
+        "kind": "surface",
+        "id": "5e372e8e-8356-4526-8e55-2ce8d795abd7",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 2,
+      "raw": "sample-01-evidence.json#/knowledge/observations/0"
+    },
+    {
+      "id": "880d4cd2-83f3-4e36-b64d-c4ac277caaa6",
+      "body": "The signed-out Login form is visible and ready for the provided Employee credentials.",
+      "context": {
+        "kind": "surface",
+        "id": "5e372e8e-8356-4526-8e55-2ce8d795abd7",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 2,
+      "raw": "sample-01-evidence.json#/knowledge/observations/1"
+    },
+    {
+      "id": "b3672fa9-222f-4aff-8f1b-41194910f583",
+      "body": "Sign in with the provided Employee credentials succeeded and displayed the Employee dashboard for Emily Dawson.",
+      "context": {
+        "kind": "surface",
+        "id": "5e372e8e-8356-4526-8e55-2ce8d795abd7",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 6,
+      "raw": "sample-01-evidence.json#/knowledge/observations/2"
+    },
+    {
+      "id": "e43be438-619a-4335-9152-760a65538324",
+      "body": "Employee Dashboard shows 18 days leave balance, 0 pending leave requests, 3 notifications, navigation to Directory, My Leave, Timesheet, and My Profile, quick links to Request leave and Fill timesheet, and Log out.",
+      "context": {
+        "kind": "surface",
+        "id": "97c6c3c8-4a57-4bde-a71a-fd7f37768fa0",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 8,
+      "raw": "sample-01-evidence.json#/knowledge/observations/3"
+    },
+    {
+      "id": "7a3f0a86-2528-4419-bee5-ea508d92290a",
+      "body": "New leave request offers Vacation, Sick, and Personal leave types; required Start date and End date fields; an optional Reason field; a rule that weekends are not counted; Submit request; and Cancel.",
+      "context": {
+        "kind": "surface",
+        "id": "399097d2-c86b-449e-8946-f6a678344e2f",
+        "name": "New leave request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 10,
+      "raw": "sample-01-evidence.json#/knowledge/observations/4"
+    },
+    {
+      "id": "6a5057a5-d439-4f86-b89e-45dbaa17e56a",
+      "body": "The new leave form is ready to submit a Vacation request for 5–6 October 2026 with reason 'Evaluation data — Explore leave workflow'.",
+      "context": {
+        "kind": "surface",
+        "id": "399097d2-c86b-449e-8946-f6a678344e2f",
+        "name": "New leave request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 10,
+      "raw": "sample-01-evidence.json#/knowledge/observations/5"
+    },
+    {
+      "id": "2ebf00eb-c786-4d22-ae0a-5fbc38500da5",
+      "body": "Submitting with empty Start date and End date displayed 'Please fill in all required fields.' and remained on New leave request; no leave request was created.",
+      "context": {
+        "kind": "surface",
+        "id": "399097d2-c86b-449e-8946-f6a678344e2f",
+        "name": "New leave request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 15,
+      "raw": "sample-01-evidence.json#/knowledge/observations/6"
+    },
+    {
+      "id": "01aeae0e-a0c5-47f1-a446-9a8530608dcf",
+      "body": "Timesheet shows a draft for the week of Sep 14, 2026 with seven daily hour inputs all at 0, total 0 h, Save draft, and Submit week.",
+      "context": {
+        "kind": "surface",
+        "id": "b5aea1c0-ede5-4ab8-b0da-cb3fef9993f5",
+        "name": "Timesheet"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 17,
+      "raw": "sample-01-evidence.json#/knowledge/observations/7"
+    },
+    {
+      "id": "b18e6e10-e53d-4274-8286-45cec0eccc89",
+      "body": "The Timesheet draft is editable and ready to save 1 evaluation hour on Monday for the week of Sep 14, 2026.",
+      "context": {
+        "kind": "surface",
+        "id": "b5aea1c0-ede5-4ab8-b0da-cb3fef9993f5",
+        "name": "Timesheet"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 17,
+      "raw": "sample-01-evidence.json#/knowledge/observations/8"
+    },
+    {
+      "id": "933f9e61-f329-4069-bca9-226dd1eafc2c",
+      "body": "Saving the timesheet draft with 1 evaluation hour on Monday succeeded and displayed 'Draft saved.' with total 1 h.",
+      "context": {
+        "kind": "surface",
+        "id": "b5aea1c0-ede5-4ab8-b0da-cb3fef9993f5",
+        "name": "Timesheet"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 20,
+      "raw": "sample-01-evidence.json#/knowledge/observations/9"
+    },
+    {
+      "id": "bff7bd01-f24e-4cfe-8da1-5a19f5cec5d6",
+      "body": "My profile offers Upload photo, editable Full name, Phone, and Emergency contact fields, a disabled read-only Email field, and Save changes.",
+      "context": {
+        "kind": "surface",
+        "id": "c6360d2a-ddfe-4ac7-83c7-5113121b1e82",
+        "name": "My profile"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 22,
+      "raw": "sample-01-evidence.json#/knowledge/observations/10"
+    },
+    {
+      "id": "94767a15-b312-4876-b122-380a72515ee0",
+      "body": "Employee directory offers name search, an All departments filter with Engineering, Sales, Marketing, Finance, and HR options, a table exposing name, department, title, and email, Name sorting, and pagination. It loaded 28 employees on page 1 of 3; Previous was disabled and Next was offered.",
+      "context": {
+        "kind": "surface",
+        "id": "34596d50-827f-4ab9-b05d-6abf0c53f589",
+        "name": "Employee directory"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 26,
+      "raw": "sample-01-evidence.json#/knowledge/observations/11"
+    }
+  ],
+  "evidence": "sample-01-evidence.json"
+}

@@ -1,0 +1,12 @@
+{
+  "workspace": "C:\\Users\\mathi\\AppData\\Local\\Temp\\reservation-recovery-KKhpQL",
+  "output": "C:\\dev\\Perquiro\\.perquiro\\worktrees\\253\\evals\\command-skills\\results\\2026-09-09-memory\\actions-recovery",
+  "productUrl": "http://127.0.0.1:59747",
+  "bridge": "http://127.0.0.1:54473",
+  "startedAt": "2026-09-09T07:09:15.725Z",
+  "skillSha256": "42c1083d9919893164372944965e228bbbd0e63a6b9ff93ab2e5aaa5cbdbdfa0",
+  "gitHead": "494b76f7243a8a1b6940a81cc94382e57a9095eb",
+  "sourceState": "HEAD plus extraction of the shared tested Product fixture and this proof adapter",
+  "node": "v24.18.1",
+  "finishedAt": "2026-09-09T07:40:37.135Z"
+}

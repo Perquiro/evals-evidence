@@ -1,0 +1,411 @@
+{
+  "label": "reader-handoff",
+  "beforeTime": "2026-09-09T07:52:15.5240000Z",
+  "lastEvent": 108,
+  "productRequests": 24,
+  "outcomesSeen": [
+    "W01",
+    "W02",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W12",
+    "W13",
+    "W14",
+    "W15",
+    "W16",
+    "W18",
+    "W19",
+    "W20"
+  ],
+  "uniqueObservations": [
+    {
+      "event": 9,
+      "id": "9a31c2fc-b88f-40e1-8848-4d5c93ca0332",
+      "seq": 1,
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "GET / returned the Willow Library local disposable development service and links to /docs, /catalog, /account, and /desk.",
+      "createdAt": "2026-09-09T07:40:32.830Z"
+    },
+    {
+      "event": 15,
+      "id": "18db152c-0c9a-4562-84fc-4a99836e4239",
+      "seq": 2,
+      "surfaceId": "9b5164db-d6ef-4629-a109-0115e0843a02",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "GET /docs states that Reader and Librarian are selected with the X-Actor header without credentials, and that clients should follow response links and actions; an empty JSON object is valid when an action lists no fields.",
+      "createdAt": "2026-09-09T07:41:14.624Z"
+    },
+    {
+      "event": 16,
+      "id": "cfac3afd-2c51-496a-a4b6-c6fb6f71a02e",
+      "seq": 3,
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "Following the Documentation link reached GET /docs, which returned its API-use instructions.",
+      "createdAt": "2026-09-09T07:41:14.713Z"
+    },
+    {
+      "event": 23,
+      "id": "5eaebbc4-69ba-462f-b661-73a666525601",
+      "seq": 4,
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "Following Catalog reached GET /catalog, which returned three books and a title search link.",
+      "createdAt": "2026-09-09T07:42:04.030Z"
+    },
+    {
+      "event": 23,
+      "id": "305bc300-785b-4277-ba8d-b64cb2bbcafe",
+      "seq": 5,
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "Following Account reached GET /account, which returned Reader's holds and loans links.",
+      "createdAt": "2026-09-09T07:42:04.034Z"
+    },
+    {
+      "event": 23,
+      "id": "47689194-2355-4707-941e-2ee3460d6306",
+      "seq": 6,
+      "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "Following Service desk reached GET /desk, which returned an error stating that the service desk requires Librarian.",
+      "createdAt": "2026-09-09T07:42:04.039Z"
+    },
+    {
+      "event": 24,
+      "id": "26c8ea49-a21e-49ef-b53b-bdbb4c54872e",
+      "seq": 7,
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "GET /catalog returned River Atlas (id 101, available), Garden Notes (id 102, unavailable), Night Trains (id 103, unavailable), and a title-search form at /catalog?q=<title> with field q.",
+      "createdAt": "2026-09-09T07:42:04.134Z"
+    },
+    {
+      "event": 25,
+      "id": "c56d2b8e-98bb-482e-9500-368ec25d84f4",
+      "seq": 8,
+      "surfaceId": "a2db31e6-b969-45fa-a830-0b6f18a87ddb",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "GET /account identified the current actor as Reader and offered /holds and /loans links.",
+      "createdAt": "2026-09-09T07:42:04.227Z"
+    },
+    {
+      "event": 26,
+      "id": "a619ab9f-2a03-4858-a90a-5f4ed217d14d",
+      "seq": 9,
+      "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "GET /desk with the Reader session returned an error: Service desk requires Librarian.",
+      "createdAt": "2026-09-09T07:42:04.328Z"
+    },
+    {
+      "event": 42,
+      "id": "ffbdea84-1348-4a09-ab7a-fba14df1916f",
+      "seq": 10,
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "c2784df2-b4c8-4d3b-bf8a-c14a2eaf6bb1",
+      "body": "Following River Atlas reached GET /books/101, which offered a Reader reservation action.",
+      "createdAt": "2026-09-09T07:43:31.608Z"
+    },
+    {
+      "event": 42,
+      "id": "35f75184-e7f8-4d4b-bdd1-d47aca75785f",
+      "seq": 11,
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "c2784df2-b4c8-4d3b-bf8a-c14a2eaf6bb1",
+      "body": "Following Garden Notes reached GET /books/102, which offered a Reader reservation action.",
+      "createdAt": "2026-09-09T07:43:31.611Z"
+    },
+    {
+      "event": 42,
+      "id": "99e0fcf3-d087-433b-ab8f-51fa24f994d8",
+      "seq": 12,
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "c2784df2-b4c8-4d3b-bf8a-c14a2eaf6bb1",
+      "body": "Following Night Trains reached GET /books/103, which offered a Reader reservation action.",
+      "createdAt": "2026-09-09T07:43:31.614Z"
+    },
+    {
+      "event": 43,
+      "id": "4850013d-f466-4977-8074-9dabd240fb4f",
+      "seq": 13,
+      "surfaceId": "5b14aa42-833c-4978-9edb-0d5d5b1e0dc1",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "c2784df2-b4c8-4d3b-bf8a-c14a2eaf6bb1",
+      "body": "GET /books/101 returned River Atlas as available and offered Reader POST /holds with bookId 101 to reserve it.",
+      "createdAt": "2026-09-09T07:43:31.705Z"
+    },
+    {
+      "event": 44,
+      "id": "fee8af15-bdca-4341-bb6f-477454c58c71",
+      "seq": 14,
+      "surfaceId": "29936bd4-accc-4e58-8f70-79683e5468e0",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "c2784df2-b4c8-4d3b-bf8a-c14a2eaf6bb1",
+      "body": "GET /books/102 returned Garden Notes as unavailable and offered Reader POST /holds with bookId 102 to reserve it.",
+      "createdAt": "2026-09-09T07:43:31.794Z"
+    },
+    {
+      "event": 45,
+      "id": "e8434056-011f-4bce-8b4f-a7689d3e349b",
+      "seq": 15,
+      "surfaceId": "3f37c492-55a7-4978-b7f0-ff1d12dca3d2",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "c2784df2-b4c8-4d3b-bf8a-c14a2eaf6bb1",
+      "body": "GET /books/103 returned Night Trains as unavailable and offered Reader POST /holds with bookId 103 to reserve it.",
+      "createdAt": "2026-09-09T07:43:31.882Z"
+    },
+    {
+      "event": 46,
+      "id": "d1e9a7f6-c76f-4a88-a9a6-e38f19f4c2f8",
+      "seq": 16,
+      "surfaceId": "cc358827-1734-4c85-b536-68428d8f2b5d",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "e84a8a5a-790c-418c-8abd-608825bb29fe",
+      "body": "GET /holds returned an empty holds array with message No reservations.",
+      "createdAt": "2026-09-09T07:43:31.972Z"
+    },
+    {
+      "event": 47,
+      "id": "76251d45-5e7b-4878-82f5-7c7461ac6093",
+      "seq": 17,
+      "surfaceId": "ede4f426-9875-4ee4-9da5-7ee15123316f",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "e84a8a5a-790c-418c-8abd-608825bb29fe",
+      "body": "GET /loans returned a Garden Notes loan with id 201 and link /loans/201.",
+      "createdAt": "2026-09-09T07:43:32.059Z"
+    },
+    {
+      "event": 52,
+      "id": "ab0f04e9-35fc-4daa-90d8-385cfcdc560c",
+      "seq": 18,
+      "surfaceId": "a2db31e6-b969-45fa-a830-0b6f18a87ddb",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "e84a8a5a-790c-418c-8abd-608825bb29fe",
+      "body": "Following Holds reached GET /holds, which reported no reservations.",
+      "createdAt": "2026-09-09T07:44:59.711Z"
+    },
+    {
+      "event": 52,
+      "id": "9fa4bf10-caec-4a9e-ad27-010b0102cca8",
+      "seq": 19,
+      "surfaceId": "a2db31e6-b969-45fa-a830-0b6f18a87ddb",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "e84a8a5a-790c-418c-8abd-608825bb29fe",
+      "body": "Following Loans reached GET /loans, which listed the Garden Notes loan.",
+      "createdAt": "2026-09-09T07:44:59.713Z"
+    },
+    {
+      "event": 53,
+      "id": "50692122-72d2-40e6-a5e0-ea3097383b58",
+      "seq": 20,
+      "surfaceId": "ede4f426-9875-4ee4-9da5-7ee15123316f",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "88836732-dbed-4997-a7c4-0111584b14b5",
+      "body": "Following the Garden Notes loan reached GET /loans/201, which offered renewal and return actions.",
+      "createdAt": "2026-09-09T07:44:59.803Z"
+    },
+    {
+      "event": 54,
+      "id": "9c9cea14-bb29-4b68-89ef-aeb2f1fa1487",
+      "seq": 21,
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "88836732-dbed-4997-a7c4-0111584b14b5",
+      "body": "GET /loans/201 returned the Garden Notes loan for bookId 102 with zero renewals and due date 2026-10-01; it offered Reader POST /loans/201/renew and POST /loans/201/return.",
+      "createdAt": "2026-09-09T07:44:59.891Z"
+    },
+    {
+      "event": 55,
+      "id": "efe6291a-f51a-4093-8377-e489eddcf9ab",
+      "seq": 22,
+      "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "c2784df2-b4c8-4d3b-bf8a-c14a2eaf6bb1",
+      "body": "Searching the catalog with q=River reached GET /catalog?q=River and returned only River Atlas as available.",
+      "createdAt": "2026-09-09T07:44:59.979Z"
+    },
+    {
+      "event": 57,
+      "id": "d24f917c-c2cf-4cd2-af4f-764b4d2e1e97",
+      "seq": 23,
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "88836732-dbed-4997-a7c4-0111584b14b5",
+      "body": "The Garden Notes loan is currently due 2026-10-01 with zero renewals; the next check will dispatch POST /loans/201/renew for loan:201.",
+      "createdAt": "2026-09-09T07:45:18.406Z"
+    },
+    {
+      "event": 59,
+      "id": "fad2b85d-8618-4c35-96ad-b02a63258c29",
+      "seq": 24,
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "88836732-dbed-4997-a7c4-0111584b14b5",
+      "body": "POST /loans/201/renew returned 200 with loan id 201, renewals 1, and due date 2026-10-15.",
+      "createdAt": "2026-09-09T07:45:33.746Z"
+    },
+    {
+      "event": 61,
+      "id": "92fe5f63-36b2-4940-a3dd-571fb454daf0",
+      "seq": 25,
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "88836732-dbed-4997-a7c4-0111584b14b5",
+      "body": "A subsequent GET /loans/201 returned renewals 1 and due date 2026-10-15, matching the renewal response.",
+      "createdAt": "2026-09-09T07:45:51.341Z"
+    },
+    {
+      "event": 64,
+      "id": "76a95376-02cc-4185-b0d7-916787128357",
+      "seq": 26,
+      "surfaceId": "3f37c492-55a7-4978-b7f0-ff1d12dca3d2",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "Night Trains is currently unavailable and offers Reader POST /holds with bookId 103; the next check will dispatch that request for book:103.",
+      "createdAt": "2026-09-09T07:46:12.264Z"
+    },
+    {
+      "event": 69,
+      "id": "03847e42-10dc-49df-9e07-3dd3f30754d2",
+      "seq": 27,
+      "surfaceId": "f138a1e3-67df-4e05-8075-ebc4289a3be4",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "POST /holds with bookId 103 returned 409 Conflict with error Book is unavailable.",
+      "createdAt": "2026-09-09T07:46:45.643Z"
+    },
+    {
+      "event": 70,
+      "id": "40357356-b623-48c9-af72-99967914de63",
+      "seq": 28,
+      "surfaceId": "3f37c492-55a7-4978-b7f0-ff1d12dca3d2",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "83bbf115-c6c0-43e8-9e40-1fdbabc88c94",
+      "body": "POST /holds with bookId 103 returned 409 Conflict with error Book is unavailable.",
+      "createdAt": "2026-09-09T07:46:54.460Z"
+    },
+    {
+      "event": 73,
+      "id": "7b7f565e-b6d2-4856-961c-c84a389931bc",
+      "seq": 29,
+      "surfaceId": "5b14aa42-833c-4978-9edb-0d5d5b1e0dc1",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "River Atlas is currently available and offers Reader POST /holds with bookId 101; the next check will dispatch that request for book:101.",
+      "createdAt": "2026-09-09T07:47:18.051Z"
+    },
+    {
+      "event": 76,
+      "id": "bba45328-a6df-4a08-8085-057ead953b4b",
+      "seq": 30,
+      "surfaceId": "f138a1e3-67df-4e05-8075-ebc4289a3be4",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "POST /holds with bookId 101 returned 201 Created with reservation id 301, title River Atlas, and reservations link /holds.",
+      "createdAt": "2026-09-09T07:47:38.534Z"
+    },
+    {
+      "event": 77,
+      "id": "2b80e154-9f94-49b6-baac-623c6e59a2fd",
+      "seq": 31,
+      "surfaceId": "5b14aa42-833c-4978-9edb-0d5d5b1e0dc1",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "23c21e3a-8997-4cd9-aa73-95221fd18bd3",
+      "body": "POST /holds with bookId 101 returned 201 Created with reservation id 301 and title River Atlas.",
+      "createdAt": "2026-09-09T07:47:48.903Z"
+    },
+    {
+      "event": 79,
+      "id": "e5f6b205-7ecc-40d4-8bd0-71668cb6f321",
+      "seq": 32,
+      "surfaceId": "cc358827-1734-4c85-b536-68428d8f2b5d",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "23c21e3a-8997-4cd9-aa73-95221fd18bd3",
+      "body": "After the creation response, GET /holds returned reservation 301 for River Atlas (bookId 101) and offered DELETE /holds/301 to cancel it.",
+      "createdAt": "2026-09-09T07:48:12.071Z"
+    },
+    {
+      "event": 81,
+      "id": "29a3024c-6191-4773-8c50-a2c859d89ece",
+      "seq": 33,
+      "surfaceId": "cc358827-1734-4c85-b536-68428d8f2b5d",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "23c21e3a-8997-4cd9-aa73-95221fd18bd3",
+      "body": "Reservation 301 for River Atlas is present and offers DELETE /holds/301; the next check will dispatch that request for hold:301.",
+      "createdAt": "2026-09-09T07:48:20.148Z"
+    },
+    {
+      "event": 85,
+      "id": "344c1043-be28-44f0-a464-7362ee1c1f23",
+      "seq": 34,
+      "surfaceId": "cb7059be-621d-4ccf-baf5-d47eedf3a1ac",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "DELETE /holds/301 returned 200 with message Reservation cancelled.",
+      "createdAt": "2026-09-09T07:48:48.098Z"
+    },
+    {
+      "event": 87,
+      "id": "30023c52-edf6-4357-9d70-37405cdd11da",
+      "seq": 35,
+      "surfaceId": "cc358827-1734-4c85-b536-68428d8f2b5d",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "74558802-05fb-4d7e-86fb-a7fe99be952f",
+      "body": "DELETE /holds/301 returned 200 with message Reservation cancelled.",
+      "createdAt": "2026-09-09T07:48:57.232Z"
+    },
+    {
+      "event": 89,
+      "id": "4fda21c7-c956-42bf-b2b4-e17c7ee7cce4",
+      "seq": 36,
+      "surfaceId": "cc358827-1734-4c85-b536-68428d8f2b5d",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "74558802-05fb-4d7e-86fb-a7fe99be952f",
+      "body": "A subsequent GET /holds returned an empty holds array with message No reservations after the cancellation response.",
+      "createdAt": "2026-09-09T07:49:15.079Z"
+    },
+    {
+      "event": 98,
+      "id": "d9f57432-9733-4c9e-9647-e338edd3f8e4",
+      "seq": 37,
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "88836732-dbed-4997-a7c4-0111584b14b5",
+      "body": "GET /loans/201 now shows Garden Notes with one renewal and due date 2026-10-15; the next check will dispatch POST /loans/201/return for loan:201.",
+      "createdAt": "2026-09-09T07:51:11.855Z"
+    },
+    {
+      "event": 102,
+      "id": "70427d77-2c9c-48f8-888e-2cac0fd2d72a",
+      "seq": 38,
+      "surfaceId": "9f335168-6ac7-4240-8e24-3eb62d958150",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "body": "POST /loans/201/return returned 200 with message Book returned, bookId 102, and links to /catalog and /loans.",
+      "createdAt": "2026-09-09T07:51:35.043Z"
+    },
+    {
+      "event": 103,
+      "id": "fddf4148-c65b-4aad-9740-45bc14964105",
+      "seq": 39,
+      "surfaceId": "9a276b74-a265-44a8-b524-85105de0330b",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "ea5a418d-4001-4694-a3c3-7e06defa4fc8",
+      "body": "POST /loans/201/return returned 200 with message Book returned and bookId 102.",
+      "createdAt": "2026-09-09T07:51:48.103Z"
+    },
+    {
+      "event": 105,
+      "id": "8afe3c90-1fcd-4d3b-b6c8-7c5a34bcdf50",
+      "seq": 40,
+      "surfaceId": "ede4f426-9875-4ee4-9da5-7ee15123316f",
+      "actorId": "862a4bae-17c9-4114-aa82-6b27dc67a9a6",
+      "journeyId": "ea5a418d-4001-4694-a3c3-7e06defa4fc8",
+      "body": "A subsequent GET /loans returned an empty loans array with message No loans after the return response.",
+      "createdAt": "2026-09-09T07:52:07.322Z"
+    }
+  ],
+  "limitation": "This is a trace cut. Final public reads must still confirm the preserved immutable records; Observation count is not completed-outcome coverage."
+}

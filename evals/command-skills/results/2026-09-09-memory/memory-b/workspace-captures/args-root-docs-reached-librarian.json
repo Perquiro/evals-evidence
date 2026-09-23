@@ -1,0 +1,14 @@
+{
+  "requestToken": "da4e75e6-15fa-4130-bf20-65153d35cd9c",
+  "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following Documentation reached GET /docs, which described selecting the Reader or Librarian session with X-Actor and following the HTTP method and JSON fields advertised by response actions.",
+      "look": { "item": { "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc" }, "kind": "reached", "reachedSurfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85" }
+    }
+  ]
+}

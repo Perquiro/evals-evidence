@@ -1,0 +1,27 @@
+{
+  "requestToken": "a13c362a-2a6c-4999-aed5-f5b8d006cb8b",
+  "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "river", "name": "River Atlas", "kind": "link" },
+    { "key": "garden", "name": "Garden Notes", "kind": "link" },
+    { "key": "night", "name": "Night Trains", "kind": "link" },
+    { "key": "query", "name": "Catalog search query", "kind": "field" },
+    { "key": "search", "name": "Search catalog", "kind": "action" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /catalog listed River Atlas (id 101) as available and Garden Notes (id 102) and Night Trains (id 103) as unavailable. It offered GET /catalog?q=<title> with the q field for search.",
+      "looks": [
+        { "item": { "key": "river" }, "kind": "offered" },
+        { "item": { "key": "garden" }, "kind": "offered" },
+        { "item": { "key": "night" }, "kind": "offered" },
+        { "item": { "key": "query" }, "kind": "offered" },
+        { "item": { "key": "search" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

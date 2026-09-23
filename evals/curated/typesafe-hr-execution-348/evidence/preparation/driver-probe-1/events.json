@@ -1,0 +1,152 @@
+[
+  {
+    "kind": "tool",
+    "name": "read_setup",
+    "args": {},
+    "callId": "exec-0b1cc596-3844-4005-91b1-130c2aca5ec7",
+    "started_ms": 7401.1603,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"projectRoot\":\"C:\\\\dev\\\\Perquiro\\\\.worktrees\\\\348\\\\.perquiro\\\\348\\\\driver-probe-1\\\\project\",\"product\":\"BugBusters HR\",\"url\":\"http://127.0.0.1:55621\",\"agent\":\"openai\",\"evidenceMib\":64,\"actors\":[{\"id\":\"a4171df9-e554-441a-8a34-bed2c6306c1d\",\"name\":\"Employee\",\"secretNames\":[\"EMPLOYEE_PASSWORD\"],\"createdAt\":\"2026-09-20T20:14:09.826Z\"}]}"
+        }
+      ]
+    },
+    "completed_ms": 7443.029500000001
+  },
+  {
+    "kind": "tool",
+    "name": "read_setup",
+    "args": {},
+    "callId": "exec-5a725103-4e6d-4b8e-999a-c5a5894cfbbe",
+    "started_ms": 10775.3607,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"projectRoot\":\"C:\\\\dev\\\\Perquiro\\\\.worktrees\\\\348\\\\.perquiro\\\\348\\\\driver-probe-1\\\\project\",\"product\":\"BugBusters HR\",\"url\":\"http://127.0.0.1:55621\",\"agent\":\"openai\",\"evidenceMib\":64,\"actors\":[{\"id\":\"a4171df9-e554-441a-8a34-bed2c6306c1d\",\"name\":\"Employee\",\"secretNames\":[\"EMPLOYEE_PASSWORD\"],\"createdAt\":\"2026-09-20T20:14:09.826Z\"}]}"
+        }
+      ]
+    },
+    "completed_ms": 10796.0457
+  },
+  {
+    "kind": "tool",
+    "name": "trial_note",
+    "args": {
+      "phase": "ordinary_planning",
+      "note": "Preflight scope is limited by the human: inspect the signed-out login page only, record its Surface and one grounded Observation, and do not log in or explore other functionality. Ordinary planning: navigate to the configured URL, snapshot the visible page, then record only the login Surface and observed form fact."
+    },
+    "callId": "exec-611c20fe-9312-46b6-97e5-ff2f8d99965f",
+    "started_ms": 18132.3585,
+    "result": {
+      "recorded": true
+    },
+    "completed_ms": 18132.3906
+  },
+  {
+    "kind": "tool",
+    "name": "browser_action",
+    "args": {
+      "op": "navigate",
+      "path": "http://127.0.0.1:55621"
+    },
+    "callId": "exec-96386c65-2f58-4055-9b46-30e12f3d781e",
+    "started_ms": 21764.2099,
+    "result": {
+      "url": "http://127.0.0.1:55621/",
+      "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: password123\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+      "actionId": "action-2",
+      "admitted": 0,
+      "remaining": 60,
+      "capturePath": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\driver-probe-1\\project\\captures\\4.json"
+    },
+    "completed_ms": 21796.5962
+  },
+  {
+    "kind": "tool",
+    "name": "record_surface",
+    "args": {
+      "requestToken": "54ba8c4b-b5cc-4ac2-a1be-b7e705d9b5d3",
+      "name": "Sign in",
+      "locator": "/"
+    },
+    "callId": "exec-68db3ee4-44e4-4668-99b7-9ba4044a723f",
+    "started_ms": 26614.1566,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"id\":\"1172a52c-aecb-4ace-841c-b1e8a193006f\",\"name\":\"Sign in\",\"locator\":\"/\",\"testFolder\":\"sign-in\",\"createdAt\":\"2026-09-20T20:14:36.927Z\"}"
+        }
+      ]
+    },
+    "completed_ms": 26644.6732
+  },
+  {
+    "kind": "tool",
+    "name": "record_inspection",
+    "args": {
+      "requestToken": "7237da98-2d2f-483f-b538-720531c5953c",
+      "surfaceId": "1172a52c-aecb-4ace-841c-b1e8a193006f",
+      "actorId": "a4171df9-e554-441a-8a34-bed2c6306c1d",
+      "platform": "browser",
+      "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+      "items": [
+        {
+          "key": "username",
+          "name": "Username",
+          "kind": "field"
+        },
+        {
+          "key": "password",
+          "name": "Password",
+          "kind": "field"
+        },
+        {
+          "key": "sign-in",
+          "name": "Sign in",
+          "kind": "action"
+        }
+      ],
+      "reports": [
+        {
+          "kind": "inventory",
+          "body": "The signed-out Sign in page shows Username and Password fields and a Sign in button.",
+          "looks": [
+            {
+              "kind": "offered",
+              "item": {
+                "key": "username"
+              }
+            },
+            {
+              "kind": "offered",
+              "item": {
+                "key": "password"
+              }
+            },
+            {
+              "kind": "offered",
+              "item": {
+                "key": "sign-in"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "callId": "exec-61348067-7320-4a58-a0bc-45d15e704fdd",
+    "started_ms": 40541.3578,
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"items\":[{\"key\":\"username\",\"id\":\"d83bf9f7-f7de-42e8-8637-9deb075f2d7a\",\"surfaceId\":\"1172a52c-aecb-4ace-841c-b1e8a193006f\",\"name\":\"Username\",\"kind\":\"field\",\"createdAt\":\"2026-09-20T20:14:50.872Z\"},{\"key\":\"password\",\"id\":\"ce293bce-8ce2-427a-a6d1-fc8fc972cbf0\",\"surfaceId\":\"1172a52c-aecb-4ace-841c-b1e8a193006f\",\"name\":\"Password\",\"kind\":\"field\",\"createdAt\":\"2026-09-20T20:14:50.872Z\"},{\"key\":\"sign-in\",\"id\":\"94795cb7-eedc-48af-88a9-c3cf4550f14a\",\"surfaceId\":\"1172a52c-aecb-4ace-841c-b1e8a193006f\",\"name\":\"Sign in\",\"kind\":\"action\",\"createdAt\":\"2026-09-20T20:14:50.872Z\"}],\"observations\":[{\"id\":\"769c8cff-81a5-4bd5-87fd-a322b149146d\",\"seq\":1,\"surfaceId\":\"1172a52c-aecb-4ace-841c-b1e8a193006f\",\"actorId\":\"a4171df9-e554-441a-8a34-bed2c6306c1d\",\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"The signed-out Sign in page shows Username and Password fields and a Sign in button.\",\"createdAt\":\"2026-09-20T20:14:50.876Z\"}],\"authorizedAttemptIds\":[]}"
+        }
+      ]
+    },
+    "completed_ms": 40594.852100000004
+  }
+]

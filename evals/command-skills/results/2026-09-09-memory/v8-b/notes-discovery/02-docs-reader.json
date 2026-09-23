@@ -1,0 +1,5 @@
+{
+  "request": {"method": "GET", "url": "http://127.0.0.1:54824/docs", "actor": "Reader"},
+  "status": 200,
+  "body": {"authentication": "Set X-Actor to Reader or Librarian, the available local demo sessions. No credentials are needed.", "navigation": "Follow links and actions in responses. Actions give their HTTP method and JSON fields. An empty object is valid when no fields are listed."}
+}

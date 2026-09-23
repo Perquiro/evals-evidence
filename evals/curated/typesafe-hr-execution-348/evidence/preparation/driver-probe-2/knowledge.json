@@ -1,0 +1,150 @@
+{
+  "catalogPages": [
+    {
+      "args": {},
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"30303f9e-24cf-4b41-9c2e-ec533e7c48e3\",\"coverage\":{\"actors\":1,\"surfaces\":1,\"journeys\":0,\"observations\":1,\"evidence\":0,\"scenarios\":0,\"tests\":0,\"surfacesWithoutObservations\":0,\"journeysWithoutAcceptedScenarios\":0,\"acceptedScenariosWithoutTests\":0},\"entries\":{\"items\":[{\"kind\":\"actor\",\"id\":\"621c9b28-5711-4dc8-a1f6-635438961ab6\",\"name\":\"Employee\"},{\"kind\":\"surface\",\"id\":\"5d2d42fe-e2b7-4702-b79b-da9fd4f53731\",\"name\":\"Login\",\"locator\":\"/login\",\"testFolder\":\"login\"}],\"complete\":true},\"storedRelationships\":{\"items\":[],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "30303f9e-24cf-4b41-9c2e-ec533e7c48e3",
+        "coverage": {
+          "actors": 1,
+          "surfaces": 1,
+          "journeys": 0,
+          "observations": 1,
+          "evidence": 0,
+          "scenarios": 0,
+          "tests": 0,
+          "surfacesWithoutObservations": 0,
+          "journeysWithoutAcceptedScenarios": 0,
+          "acceptedScenariosWithoutTests": 0
+        },
+        "entries": {
+          "items": [
+            {
+              "kind": "actor",
+              "id": "621c9b28-5711-4dc8-a1f6-635438961ab6",
+              "name": "Employee"
+            },
+            {
+              "kind": "surface",
+              "id": "5d2d42fe-e2b7-4702-b79b-da9fd4f53731",
+              "name": "Login",
+              "locator": "/login",
+              "testFolder": "login"
+            }
+          ],
+          "complete": true
+        },
+        "storedRelationships": {
+          "items": [],
+          "complete": true
+        }
+      }
+    }
+  ],
+  "contexts": [
+    {
+      "args": {
+        "anchor": {
+          "kind": "surface",
+          "id": "5d2d42fe-e2b7-4702-b79b-da9fd4f53731"
+        },
+        "productVersions": {
+          "scope": "all"
+        },
+        "observations": {
+          "detail": "records",
+          "actorIds": [
+            "621c9b28-5711-4dc8-a1f6-635438961ab6"
+          ],
+          "scope": "both"
+        }
+      },
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"30303f9e-24cf-4b41-9c2e-ec533e7c48e3\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"5d2d42fe-e2b7-4702-b79b-da9fd4f53731\",\"name\":\"Login\",\"locator\":\"/login\",\"testFolder\":\"login\",\"createdAt\":\"2026-09-20T20:40:52.266Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"621c9b28-5711-4dc8-a1f6-635438961ab6\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"observations\",\"actor\":{\"id\":\"621c9b28-5711-4dc8-a1f6-635438961ab6\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"5d2d42fe-e2b7-4702-b79b-da9fd4f53731\",\"name\":\"Login\"},\"observations\":[{\"id\":\"763ea1c0-8b74-4c90-94a5-9dbd8e5cd5c2\",\"seq\":1,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"The signed-out Login page shows Username and Password textboxes and a Sign in button.\",\"createdAt\":\"2026-09-20T20:40:59.848Z\"}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"621c9b28-5711-4dc8-a1f6-635438961ab6\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"5d2d42fe-e2b7-4702-b79b-da9fd4f53731\",\"name\":\"Login\"},\"count\":1,\"firstSeq\":1,\"lastSeq\":1}],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "30303f9e-24cf-4b41-9c2e-ec533e7c48e3",
+        "anchor": {
+          "kind": "surface",
+          "record": {
+            "id": "5d2d42fe-e2b7-4702-b79b-da9fd4f53731",
+            "name": "Login",
+            "locator": "/login",
+            "testFolder": "login",
+            "createdAt": "2026-09-20T20:40:52.266Z"
+          }
+        },
+        "selection": {
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "621c9b28-5711-4dc8-a1f6-635438961ab6"
+            ],
+            "scope": "both"
+          }
+        },
+        "storedRelationships": {
+          "items": [
+            {
+              "kind": "observations",
+              "actor": {
+                "id": "621c9b28-5711-4dc8-a1f6-635438961ab6",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "5d2d42fe-e2b7-4702-b79b-da9fd4f53731",
+                "name": "Login"
+              },
+              "observations": [
+                {
+                  "id": "763ea1c0-8b74-4c90-94a5-9dbd8e5cd5c2",
+                  "seq": 1,
+                  "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                  "body": "The signed-out Login page shows Username and Password textboxes and a Sign in button.",
+                  "createdAt": "2026-09-20T20:40:59.848Z"
+                }
+              ]
+            }
+          ],
+          "complete": true
+        },
+        "projections": {
+          "items": [
+            {
+              "kind": "observation_coverage",
+              "actor": {
+                "id": "621c9b28-5711-4dc8-a1f6-635438961ab6",
+                "name": "Employee"
+              },
+              "context": {
+                "kind": "surface",
+                "id": "5d2d42fe-e2b7-4702-b79b-da9fd4f53731",
+                "name": "Login"
+              },
+              "count": 1,
+              "firstSeq": 1,
+              "lastSeq": 1
+            }
+          ],
+          "complete": true
+        }
+      }
+    }
+  ]
+}

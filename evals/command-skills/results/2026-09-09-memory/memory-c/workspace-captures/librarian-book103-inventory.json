@@ -1,0 +1,20 @@
+{
+  "requestToken": "cded6ee7-2ac8-4ae0-bd2c-f92202620ddb",
+  "surfaceId": "3f37c492-55a7-4978-b7f0-ff1d12dca3d2",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [
+    { "key": "book-status", "name": "Book status", "kind": "information" },
+    { "key": "reader-reservation", "name": "Reader reservation", "kind": "action" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /books/103 identified Night Trains as unavailable. Its response included Reserve book as POST /holds with bookId 103 and actor Reader.",
+      "looks": [
+        { "item": { "key": "book-status" }, "kind": "offered" },
+        { "item": { "key": "reader-reservation" }, "kind": "offered" }
+      ]
+    }
+  ]
+}

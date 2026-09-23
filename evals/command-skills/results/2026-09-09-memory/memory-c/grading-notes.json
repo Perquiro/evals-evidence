@@ -1,0 +1,142 @@
+{
+  "W01": {
+    "seqs": [
+      7
+    ],
+    "reason": "The initial three-book catalog state is accurate, but its Observation was saved before a Journey."
+  },
+  "W02": {
+    "seqs": [
+      22,
+      57
+    ],
+    "journeyRelated": true,
+    "reason": "Matching River and Garden search results are linked to Browse catalog."
+  },
+  "W03": {
+    "reason": "No no-match query was sent within the shared budget."
+  },
+  "W04": {
+    "reason": "The empty-search branch and its Clear link were not discovered or exercised."
+  },
+  "W05": {
+    "seqs": [
+      13
+    ],
+    "journeyRelated": true,
+    "reason": "Browse catalog's ordered catalog-to-detail sequence supports inspecting the available book and its reservation action; the Surface is incorrectly resource-specific."
+  },
+  "W06": {
+    "seqs": [
+      14
+    ],
+    "journeyRelated": true,
+    "reason": "The borrowed Garden Notes detail and offered action are saved with Browse catalog, on a resource-specific Surface."
+  },
+  "W07": {
+    "seqs": [
+      16
+    ],
+    "journeyRelated": true,
+    "reason": "View account includes the account-to-reservations sequence and its initial empty-list outcome. This is a related combined account-inspection Journey."
+  },
+  "W08": {
+    "seqs": [
+      31
+    ],
+    "journeyRelated": true,
+    "reason": "The actual created reservation identity is linked to Reserve available book, but saved on source book detail; the endpoint fact at seq 30 is Surface-only."
+  },
+  "W09": {
+    "seqs": [
+      28
+    ],
+    "journeyRelated": true,
+    "reason": "Actual unavailable-book rejection is linked to Reserve unavailable book, on its source detail Surface; endpoint seq 27 is Surface-only."
+  },
+  "W10": {
+    "reason": "No required-book rejection was exercised."
+  },
+  "W11": {
+    "reason": "No duplicate-reservation branch was exercised before cancellation."
+  },
+  "W12": {
+    "seqs": [
+      32
+    ],
+    "journeyRelated": true,
+    "reason": "Created reservation 301 is read back and saved with Reserve available book on GET /holds."
+  },
+  "W13": {
+    "seqs": [
+      35
+    ],
+    "journeyRelated": true,
+    "reason": "Actual cancellation is linked to Cancel reservation, but on source GET /holds. Its endpoint is separately recorded with concrete id 301 and no Journey."
+  },
+  "W14": {
+    "seqs": [
+      36
+    ],
+    "journeyRelated": true,
+    "reason": "Empty holds after cancellation is saved with Cancel reservation."
+  },
+  "W15": {
+    "seqs": [
+      21
+    ],
+    "journeyRelated": true,
+    "reason": "Initial due date, zero renewals and both actions are saved with Manage loan; its GET Surface is resource-specific."
+  },
+  "W16": {
+    "seqs": [
+      24
+    ],
+    "journeyRelated": true,
+    "reason": "Actual changed renewal count and due date are linked to Manage loan on source GET. The POST renew endpoint was not recorded."
+  },
+  "W17": {
+    "reason": "The repeat-renewal limit was not exercised before return removed the loan."
+  },
+  "W18": {
+    "seqs": [
+      39
+    ],
+    "journeyRelated": true,
+    "reason": "Actual returned-book outcome is linked to Return loan on source GET; the separate POST endpoint fact is resource-specific and Surface-only."
+  },
+  "W19": {
+    "seqs": [
+      40
+    ],
+    "journeyRelated": true,
+    "reason": "Empty loans after return is saved with Return loan."
+  },
+  "W20": {
+    "seqs": [
+      59
+    ],
+    "reason": "Reader's actual403 and boundary are saved without a related Journey; the earlier seq 9 has the same limitation."
+  },
+  "W21": {
+    "seqs": [
+      41
+    ],
+    "reason": "Librarian's pending return and check-in action are accurate but Surface-only."
+  },
+  "W22": {
+    "reason": "The required-book check-in rejection was not exercised."
+  },
+  "W23": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "The advertised string id 103 was changed to numeric 103. The resulting404 does not establish successful check-in. A safe non-execution reconciliation handled an earlier client-command failure, but the actual POST still used the wrong type."
+  },
+  "W24": {
+    "reason": "The book was never checked in, and no already-available rejection was exercised."
+  },
+  "W25": {
+    "considered": "unknown",
+    "reason": "No successful check-in or Reader book103 readback after it exists. Reader's final book102 read is a different book."
+  }
+}

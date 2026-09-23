@@ -1,0 +1,19 @@
+{
+  "requestToken": "12a1d379-5f2c-4b49-8954-bfceff853b9b",
+  "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [
+    { "key": "empty", "name": "No reservations message", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /holds returned 200 OK with an empty holds array and the message 'No reservations'.",
+      "looks": [
+        { "item": { "key": "empty" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

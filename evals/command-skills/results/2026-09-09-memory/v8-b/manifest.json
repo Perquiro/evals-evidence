@@ -1,0 +1,17 @@
+{
+  "product": "willow-library",
+  "workspace": "C:\\Users\\mathi\\AppData\\Local\\Temp\\willow-library-oke1iX",
+  "baseUrl": "http://127.0.0.1:54824",
+  "pid": 48832,
+  "startedAt": "2026-09-09T06:26:43.374Z",
+  "skillSha256": "4df221ad7fd338a88e78cab5c0fd498d314a9bed545a178be1b99fbbe9d7d956",
+  "gitHead": "1ba4d9bd5567b4501095b982d45f299f22dd5a4b",
+  "node": "v24.18.1",
+  "transport": "Real Perquiro MCP client/server over an HTTP-to-MCP bridge; synthetic local HTTP Product",
+  "variantSource": "evals\\command-skills\\variants\\explore-delegated-v8\\SKILL.md",
+  "variantPreparation": "Real Setup first; evaluator then replaced only installed Explore bytes before candidate dispatch",
+  "baselineExploreSha256": "4af2b8011a88753139a6777a330d674538b9fab6cfa11f5dbe006c87abcf625c",
+  "setup": "Prepared through runSetup with scripted human answers; global CLI check skipped in fixture only",
+  "isolation": "Fresh temporary Git Project; same shared host/filesystem; candidate instructed to stay in assigned Project. Not an OS access boundary.",
+  "finishedAt": "2026-09-09T07:25:09.931Z"
+}

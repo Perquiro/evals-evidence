@@ -1,0 +1,20 @@
+{
+  "requestToken": "26543105-b835-4fd2-93c9-304157bce9b7",
+  "surfaceId": "29936bd4-accc-4e58-8f70-79683e5468e0",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [
+    { "key": "book-status", "name": "Book status", "kind": "information" },
+    { "key": "reader-reservation", "name": "Reader reservation", "kind": "action" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /books/102 identified Garden Notes as available. Its response included Reserve book as POST /holds with bookId 102 and actor Reader.",
+      "looks": [
+        { "item": { "key": "book-status" }, "kind": "offered" },
+        { "item": { "key": "reader-reservation" }, "kind": "offered" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "requestToken": "ad7e7b9b-a604-4784-b23a-9e078e8ad83f",
+  "surfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "authentication", "name": "Actor authentication guidance", "kind": "information" },
+    { "key": "navigation", "name": "Response navigation guidance", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /docs says the available local demo sessions are Reader and Librarian, selected with X-Actor and no credentials, and directs clients to follow response links and actions.",
+      "looks": [
+        { "item": { "key": "authentication" }, "kind": "offered" },
+        { "item": { "key": "navigation" }, "kind": "offered" }
+      ]
+    }
+  ]
+}

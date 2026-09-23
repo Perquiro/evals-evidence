@@ -1,0 +1,18 @@
+{
+  "requestToken": "12b450a0-f3fa-479b-aad7-a73b1189a79c",
+  "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "Before cancellation, GET /holds returned reservation 301 for River Atlas and offered DELETE /holds/301.",
+      "looks": [
+        { "item": { "id": "aae46175-9177-4a99-bcca-f7a9a9d3b2d6" }, "kind": "offered" },
+        { "item": { "id": "68e52679-3d64-4da0-8068-0cca8ea677f1" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

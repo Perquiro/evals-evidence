@@ -1,0 +1,132 @@
+[
+  {
+    "revision": "eac60c42-31c1-48d7-91d0-b2b233afb923",
+    "selection": {
+      "surfaceId": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+      "actorIds": [
+        "61409925-dde8-4f75-9801-942d22518b3d",
+        "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+      "name": "Create hold",
+      "locator": "POST /holds",
+      "createdAt": "2026-09-09T05:49:52.012Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "507ad4fd-173f-4565-8b3d-0d06be758085",
+          "surfaceId": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+          "name": "Created hold",
+          "kind": "information",
+          "createdAt": "2026-09-09T05:50:24.503Z"
+        },
+        {
+          "id": "46049dca-17a4-44d1-a17a-63e5ccd69d1a",
+          "surfaceId": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+          "name": "Reservations",
+          "kind": "link",
+          "createdAt": "2026-09-09T05:50:24.503Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "a38e2221-9c03-47fc-bea4-ae109beee314",
+            "seq": 5,
+            "surfaceId": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+            "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+            "body": "POST /holds returned created hold 301 for River Atlas and a Reservations link to /holds.",
+            "createdAt": "2026-09-09T05:50:24.505Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "507ad4fd-173f-4565-8b3d-0d06be758085"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "46049dca-17a4-44d1-a17a-63e5ccd69d1a"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "46049dca-17a4-44d1-a17a-63e5ccd69d1a",
+            "surfaceId": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+            "name": "Reservations",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:50:24.503Z"
+          },
+          "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "a38e2221-9c03-47fc-bea4-ae109beee314"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "a38e2221-9c03-47fc-bea4-ae109beee314",
+          "evidenceId": "f9786615-9cce-4871-9af2-efa5a8d51eff"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 1,
+      "pending": 1,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

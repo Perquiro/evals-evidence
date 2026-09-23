@@ -1,0 +1,333 @@
+[
+  {
+    "revision": "eac60c42-31c1-48d7-91d0-b2b233afb923",
+    "selection": {
+      "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+      "actorIds": [
+        "61409925-dde8-4f75-9801-942d22518b3d",
+        "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "6deef385-a34b-4ca1-8351-505d746b2386",
+      "name": "Catalog",
+      "locator": "GET /catalog",
+      "createdAt": "2026-09-09T05:46:43.070Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "1edb02cf-b92b-4e8c-b676-905bcfb9c43b",
+          "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+          "name": "Catalog results",
+          "kind": "information",
+          "createdAt": "2026-09-09T05:47:10.972Z"
+        },
+        {
+          "id": "111a3000-5bca-4984-95df-06669e63161b",
+          "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+          "name": "River Atlas",
+          "kind": "link",
+          "createdAt": "2026-09-09T05:47:10.973Z"
+        },
+        {
+          "id": "93ea54eb-117b-406e-8ce4-5a3577c6d073",
+          "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+          "name": "Garden Notes",
+          "kind": "link",
+          "createdAt": "2026-09-09T05:47:10.973Z"
+        },
+        {
+          "id": "df5b6c4d-0802-4c44-8ab3-406671f8923f",
+          "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+          "name": "Night Trains",
+          "kind": "link",
+          "createdAt": "2026-09-09T05:47:10.973Z"
+        },
+        {
+          "id": "df664979-9202-41e0-a801-34cddb921fb9",
+          "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+          "name": "Search by title",
+          "kind": "field",
+          "createdAt": "2026-09-09T05:47:10.973Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "80f7a1cb-61d6-4d78-bcf7-d323f45f4fd8",
+            "seq": 1,
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+            "body": "GET /catalog returned River Atlas as available, Garden Notes and Night Trains as unavailable, links for all three books, and a q title-search field.",
+            "createdAt": "2026-09-09T05:47:10.976Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "1edb02cf-b92b-4e8c-b676-905bcfb9c43b"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "111a3000-5bca-4984-95df-06669e63161b"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "93ea54eb-117b-406e-8ce4-5a3577c6d073"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "df5b6c4d-0802-4c44-8ab3-406671f8923f"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "df664979-9202-41e0-a801-34cddb921fb9"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "7a2c7172-353b-4016-a776-30067219f97e",
+            "seq": 17,
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "GET /catalog returned River Atlas as available and Garden Notes and Night Trains as unavailable; it also advertised a q title-search field.",
+            "createdAt": "2026-09-09T06:03:36.872Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "1edb02cf-b92b-4e8c-b676-905bcfb9c43b"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "111a3000-5bca-4984-95df-06669e63161b"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "93ea54eb-117b-406e-8ce4-5a3577c6d073"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "df5b6c4d-0802-4c44-8ab3-406671f8923f"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "df664979-9202-41e0-a801-34cddb921fb9"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "42d52d7f-ce88-4108-9eca-df9ae7879c66",
+            "seq": 29,
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "GET /catalog?q=River%20Atlas returned only River Atlas. GET /catalog?q=Unknown%20title returned an empty books array, message 'No books found', and clear href /catalog.",
+            "createdAt": "2026-09-09T06:06:08.561Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "df664979-9202-41e0-a801-34cddb921fb9"
+              },
+              "kind": "exercised"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "111a3000-5bca-4984-95df-06669e63161b",
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "name": "River Atlas",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:47:10.973Z"
+          },
+          "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "80f7a1cb-61d6-4d78-bcf7-d323f45f4fd8"
+          ]
+        },
+        {
+          "item": {
+            "id": "93ea54eb-117b-406e-8ce4-5a3577c6d073",
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "name": "Garden Notes",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:47:10.973Z"
+          },
+          "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "80f7a1cb-61d6-4d78-bcf7-d323f45f4fd8"
+          ]
+        },
+        {
+          "item": {
+            "id": "df5b6c4d-0802-4c44-8ab3-406671f8923f",
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "name": "Night Trains",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:47:10.973Z"
+          },
+          "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "80f7a1cb-61d6-4d78-bcf7-d323f45f4fd8"
+          ]
+        },
+        {
+          "item": {
+            "id": "111a3000-5bca-4984-95df-06669e63161b",
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "name": "River Atlas",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:47:10.973Z"
+          },
+          "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "7a2c7172-353b-4016-a776-30067219f97e"
+          ]
+        },
+        {
+          "item": {
+            "id": "93ea54eb-117b-406e-8ce4-5a3577c6d073",
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "name": "Garden Notes",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:47:10.973Z"
+          },
+          "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "7a2c7172-353b-4016-a776-30067219f97e"
+          ]
+        },
+        {
+          "item": {
+            "id": "df5b6c4d-0802-4c44-8ab3-406671f8923f",
+            "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+            "name": "Night Trains",
+            "kind": "link",
+            "createdAt": "2026-09-09T05:47:10.973Z"
+          },
+          "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "7a2c7172-353b-4016-a776-30067219f97e"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "80f7a1cb-61d6-4d78-bcf7-d323f45f4fd8",
+          "evidenceId": "5f030843-6d3f-4ef5-8320-dfbffe02b859"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 6,
+      "pending": 6,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

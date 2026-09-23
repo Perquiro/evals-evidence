@@ -1,0 +1,301 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+      "name": "GET /holds",
+      "locator": "GET /holds",
+      "createdAt": "2026-09-09T07:32:35.386Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "aae46175-9177-4a99-bcca-f7a9a9d3b2d6",
+          "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+          "name": "River Atlas reservation",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:33:09.140Z"
+        },
+        {
+          "id": "68e52679-3d64-4da0-8068-0cca8ea677f1",
+          "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+          "name": "Cancel reservation",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:33:09.140Z"
+        },
+        {
+          "id": "31bb9246-9694-462e-9694-e1b2fd26c737",
+          "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+          "name": "No reservations message",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:44:53.382Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "e9ef3265-edde-4922-a208-40e84825371b",
+            "seq": 9,
+            "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "GET /holds returned reservation 301 for River Atlas (bookId 101) and offered DELETE /holds/301 to cancel it.",
+            "createdAt": "2026-09-09T07:33:09.141Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "aae46175-9177-4a99-bcca-f7a9a9d3b2d6"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "68e52679-3d64-4da0-8068-0cca8ea677f1"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "b74a2cb0-61e3-4108-8ee7-1dcfab4b52fe",
+            "seq": 25,
+            "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "Before cancellation, GET /holds returned reservation 301 for River Atlas and offered DELETE /holds/301.",
+            "createdAt": "2026-09-09T07:43:16.600Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "aae46175-9177-4a99-bcca-f7a9a9d3b2d6"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "68e52679-3d64-4da0-8068-0cca8ea677f1"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "e367ab3d-97ee-4b29-9b83-e2faee774aab",
+            "seq": 26,
+            "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "Reservation 301 for River Atlas was present, and GET /holds offered DELETE /holds/301; no cancellation request has been sent yet.",
+            "createdAt": "2026-09-09T07:43:29.765Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "68e52679-3d64-4da0-8068-0cca8ea677f1"
+              },
+              "kind": "attempting",
+              "resourceRef": "hold:301"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "6b1250ef-ce75-471e-8a58-e0fbde040fe8",
+            "seq": 28,
+            "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "DELETE /holds/301 returned 200 OK with the message 'Reservation cancelled'.",
+            "createdAt": "2026-09-09T07:44:32.817Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "action",
+            "capture": "pending",
+            "look": {
+              "item": {
+                "id": "68e52679-3d64-4da0-8068-0cca8ea677f1"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "e367ab3d-97ee-4b29-9b83-e2faee774aab"
+            }
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "af966bf0-6c61-478c-945a-018f8f6c84c9",
+            "seq": 29,
+            "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "After cancellation, GET /holds returned no holds and the message 'No reservations'.",
+            "createdAt": "2026-09-09T07:44:53.383Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "31bb9246-9694-462e-9694-e1b2fd26c737"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "25fc1993-445c-4126-83d2-977f2f7cd950",
+            "seq": 55,
+            "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "GET /holds returned 200 OK with an empty holds array and the message 'No reservations'.",
+            "createdAt": "2026-09-09T08:02:48.922Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "31bb9246-9694-462e-9694-e1b2fd26c737"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "68e52679-3d64-4da0-8068-0cca8ea677f1",
+            "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "name": "Cancel reservation",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:33:09.140Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "suggested",
+          "reason": "Historically named item; no grounded Look in this Actor, Platform and Product-version context.",
+          "accountedFor": false,
+          "supportingObservationIds": []
+        },
+        {
+          "item": {
+            "id": "68e52679-3d64-4da0-8068-0cca8ea677f1",
+            "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+            "name": "Cancel reservation",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:33:09.140Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "6b1250ef-ce75-471e-8a58-e0fbde040fe8"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "e9ef3265-edde-4922-a208-40e84825371b",
+          "evidenceId": "fd0bbe00-a51e-49ae-83ca-90f091dd68b3"
+        },
+        {
+          "observationId": "b74a2cb0-61e3-4108-8ee7-1dcfab4b52fe",
+          "evidenceId": "8e4868a3-d020-4408-8cde-8c01d9fbf830"
+        },
+        {
+          "observationId": "6b1250ef-ce75-471e-8a58-e0fbde040fe8",
+          "evidenceId": "8e4868a3-d020-4408-8cde-8c01d9fbf830"
+        },
+        {
+          "observationId": "af966bf0-6c61-478c-945a-018f8f6c84c9",
+          "evidenceId": "8e4868a3-d020-4408-8cde-8c01d9fbf830"
+        },
+        {
+          "observationId": "25fc1993-445c-4126-83d2-977f2f7cd950",
+          "evidenceId": "9816a606-14a8-46f6-a869-ec4cb40ade22"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 2,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 1,
+      "accountedFor": 1
+    }
+  }
+]

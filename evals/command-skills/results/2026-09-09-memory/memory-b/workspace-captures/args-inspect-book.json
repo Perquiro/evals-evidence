@@ -1,0 +1,21 @@
+{
+  "requestToken": "4ff0a7b8-106d-49a1-9415-e4af9ac33c3c",
+  "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "book", "name": "Book details", "kind": "information" },
+    { "key": "reserve", "name": "Reserve book", "kind": "action" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /books/101 returned River Atlas as available and offered the Reader-only action POST /holds with JSON bookId 101, labelled Reserve book.",
+      "looks": [
+        { "item": { "key": "book" }, "kind": "offered" },
+        { "item": { "key": "reserve" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

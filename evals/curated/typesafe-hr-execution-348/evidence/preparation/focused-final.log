@@ -1,0 +1,14 @@
+✔ the browser admits only the budgeted request and retains its delayed result (912.7392ms)
+✔ retained browser captures redact configured credentials (581.6223ms)
+✔ deadline denies even client-only actions and final capture survives the stop (600.5088ms)
+✔ automatic requests from one action cannot pass the admission cap (573.4592ms)
+✔ browser navigation cannot read evaluator files or an unrelated origin (526.5848ms)
+✔ public export keeps Observations beyond the first context page (6261.6569ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7158.9332

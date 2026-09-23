@@ -1,0 +1,19 @@
+{
+  "requestToken": "e1335434-81f1-4aa1-a889-9ab8beeea91b",
+  "surfaceId": "1528e0f6-2518-47c6-96a0-7c10a268970a",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "cancelled", "name": "Cancelled reservation message", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "DELETE /holds/301 returned 200 OK with the message 'Reservation cancelled'.",
+      "looks": [
+        { "item": { "key": "cancelled" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

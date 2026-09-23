@@ -1,0 +1,15 @@
+{
+  "markerVerdict": "legacy: eight unmarked calls",
+  "falseReopens": "not applicable",
+  "falsePending": "not applicable",
+  "semanticAliases": "not applicable to items",
+  "summary": "Nineteen outcomes were seen and saved with related Journeys and canonical endpoint identity. Ten Product requests were left unused. No typed item inventory or attempt markers were written. Three Surface writes preceded a matching visit; POST desk returns was never visited. Product repeats exercised explicit duplicate, limit and already-cancelled branches. No blind response-fetch retry was identified. Recording waited until late evidence review, leaving zero committed Observations at both retained interruption cuts.",
+  "evidence": [
+    "assessment.json surfaces",
+    "metrics.json",
+    "cut-before-request-16.json",
+    "cut-before-request-27.json",
+    "notes/"
+  ],
+  "limits": "The frozen v8 workflow predates typed attempts. Absence of those markers is a capability difference, not a retroactive safety-rule score. Its current generated operating contract differs from the historical backend. Host reviewer-capacity interruptions dominate part of elapsed time."
+}

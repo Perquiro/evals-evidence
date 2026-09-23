@@ -1,0 +1,12 @@
+{
+  "c1": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  },
+  "c2": {
+    "eligible": true,
+    "requiredRecovery": false,
+    "humanPriority": 0
+  }
+}

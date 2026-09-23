@@ -1,0 +1,7 @@
+Reservation details cancellation form
+Status: active
+Reason value: empty
+Reason required: true
+Reason valid: false
+Validation message: Please fill out this field.
+Confirm cancellation left the form visible.

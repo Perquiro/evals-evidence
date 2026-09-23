@@ -1,0 +1,24 @@
+{
+  "requestToken": "e1060692-3949-4ca8-9d60-6d7a4145083a",
+  "surfaceId": "53dfe79b-db43-403a-a84e-7f130320ea63",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [
+    { "key": "product", "name": "Product identity", "kind": "information" },
+    { "key": "catalog", "name": "Catalog", "kind": "link" },
+    { "key": "account", "name": "Account", "kind": "link" },
+    { "key": "service-desk", "name": "Service desk", "kind": "link" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET / identified Willow Library as a local disposable development service with synthetic data. It linked Catalog, Account, and Service desk.",
+      "looks": [
+        { "item": { "key": "product" }, "kind": "offered" },
+        { "item": { "key": "catalog" }, "kind": "offered" },
+        { "item": { "key": "account" }, "kind": "offered" },
+        { "item": { "key": "service-desk" }, "kind": "offered" }
+      ]
+    }
+  ]
+}

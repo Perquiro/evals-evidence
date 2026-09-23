@@ -1,0 +1,331 @@
+{
+  "url": "http://127.0.0.1:58813/profile",
+  "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"My profile\" [level=1]\n  - text: ED\n  - button \"Upload photo\"\n  - text: Full name\n  - textbox: Emily Dawson\n  - text: Email (read-only)\n  - textbox [disabled]: emily.dawson@bugbusters.io\n  - text: Phone\n  - textbox: 555-0107\n  - text: Emergency contact\n  - textbox \"Name, phone number\": Robert Dawson, 555-0207\n  - button \"Save changes\"",
+  "admitted": 8,
+  "events": [
+    {
+      "kind": "action",
+      "id": "action-1",
+      "args": {
+        "op": "navigate",
+        "path": "/"
+      },
+      "dispatched_ms": null,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/",
+        "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+      },
+      "completed_ms": null
+    },
+    {
+      "kind": "action",
+      "id": "action-2",
+      "args": {
+        "op": "navigate"
+      },
+      "dispatched_ms": 8818.787100000001,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/undefined",
+        "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+      },
+      "completed_ms": 8851.848699999999
+    },
+    {
+      "kind": "action",
+      "id": "action-3",
+      "args": {
+        "op": "fill",
+        "role": "textbox",
+        "name": "Username",
+        "value": "emily.dawson"
+      },
+      "dispatched_ms": 76044.92229999999,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/login",
+        "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\": emily.dawson\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+      },
+      "completed_ms": 76056.34
+    },
+    {
+      "kind": "action",
+      "id": "action-4",
+      "args": {
+        "op": "fill",
+        "role": "textbox",
+        "name": "Password",
+        "value": "[REDACTED]"
+      },
+      "dispatched_ms": 76058.9865,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/login",
+        "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\": emily.dawson\n- text: Password\n- textbox \"Password\": [REDACTED]\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+      },
+      "completed_ms": 76065.79699999999
+    },
+    {
+      "kind": "action",
+      "id": "action-5",
+      "args": {
+        "op": "click",
+        "role": "button",
+        "name": "Sign in"
+      },
+      "dispatched_ms": 76067.75339999999,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/login",
+        "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Emily\" [level=1]\n  - text: Leave balance … Pending leave requests 0\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\""
+      },
+      "completed_ms": 76444.7521
+    },
+    {
+      "kind": "request",
+      "id": "request-1",
+      "method": "POST",
+      "url": "http://127.0.0.1:58813/api/login",
+      "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+      "at_ms": 76109.94609999999
+    },
+    {
+      "kind": "response",
+      "id": "request-1",
+      "status": 200,
+      "body": "{\"token\":\"[REDACTED]\",\"user\":{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}}",
+      "at_ms": 76430.09749999999
+    },
+    {
+      "kind": "request",
+      "id": "request-2",
+      "method": "GET",
+      "url": "http://127.0.0.1:58813/api/me",
+      "body": "null",
+      "at_ms": 76434.85759999999
+    },
+    {
+      "kind": "request",
+      "id": "request-3",
+      "method": "GET",
+      "url": "http://127.0.0.1:58813/api/leave",
+      "body": "null",
+      "at_ms": 76436.0048
+    },
+    {
+      "kind": "request",
+      "id": "request-4",
+      "method": "GET",
+      "url": "http://127.0.0.1:58813/api/notifications",
+      "body": "null",
+      "at_ms": 76436.3259
+    },
+    {
+      "kind": "response",
+      "id": "request-2",
+      "status": 200,
+      "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+      "at_ms": 76755.9255
+    },
+    {
+      "kind": "response",
+      "id": "request-3",
+      "status": 200,
+      "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]",
+      "at_ms": 76756.3857
+    },
+    {
+      "kind": "response",
+      "id": "request-4",
+      "status": 200,
+      "body": "{\"items\":[{\"id\":1,\"text\":\"Your vacation request was approved by Michael Reed.\",\"date\":\"2026-08-20\"},{\"id\":2,\"text\":\"Reminder: submit your timesheet for this week.\",\"date\":\"2026-09-14\"},{\"id\":3,\"text\":\"New company policy: remote work guidelines updated.\",\"date\":\"2026-09-16\"}],\"count\":3}",
+      "at_ms": 76756.54669999999
+    },
+    {
+      "kind": "action",
+      "id": "action-6",
+      "args": {
+        "op": "click",
+        "role": "link",
+        "name": "My Leave"
+      },
+      "dispatched_ms": 138185.99360000002,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/leave",
+        "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"My leave\" [level=1]\n  - link \"New request\":\n    - /url: /leave/new\n    - button \"New request\"\n  - text: Available balance 18 days Days are deducted when a request is approved.\n  - heading \"Request history\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Dates Days Type Status Manager comment\":\n        - columnheader \"Dates\"\n        - columnheader \"Days\"\n        - columnheader \"Type\"\n        - columnheader \"Status\"\n        - columnheader \"Manager comment\"\n    - rowgroup:\n      - row \"Aug 18, 2026 – Aug 19, 2026 3 Vacation approved Approved – enjoy!\":\n        - cell \"Aug 18, 2026 – Aug 19, 2026\"\n        - cell \"3\"\n        - cell \"Vacation\"\n        - cell \"approved\"\n        - cell \"Approved – enjoy!\""
+      },
+      "completed_ms": 138536.5478
+    },
+    {
+      "kind": "request",
+      "id": "request-5",
+      "method": "GET",
+      "url": "http://127.0.0.1:58813/api/me",
+      "body": "null",
+      "at_ms": 138207.37480000002
+    },
+    {
+      "kind": "request",
+      "id": "request-6",
+      "method": "GET",
+      "url": "http://127.0.0.1:58813/api/leave",
+      "body": "null",
+      "at_ms": 138207.818
+    },
+    {
+      "kind": "response",
+      "id": "request-5",
+      "status": 200,
+      "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+      "at_ms": 138520.8426
+    },
+    {
+      "kind": "response",
+      "id": "request-6",
+      "status": 200,
+      "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]",
+      "at_ms": 138521.27310000002
+    },
+    {
+      "kind": "action",
+      "id": "action-7",
+      "args": {
+        "op": "click",
+        "role": "link",
+        "name": "New request"
+      },
+      "dispatched_ms": 255830.0293,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/leave/new",
+        "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox\n  - button \"Submit request\"\n  - button \"Cancel\""
+      },
+      "completed_ms": 255855.8707
+    },
+    {
+      "kind": "action",
+      "id": "action-8",
+      "args": {
+        "op": "fill",
+        "role": "textbox",
+        "name": "Start date",
+        "value": "2026-10-05"
+      },
+      "dispatched_ms": 347968.3839,
+      "executed": false,
+      "error": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('textbox', { name: 'Start date', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <input readonly value=\"\" class=\"dtfin-irvozf\" placeholder=\"Start date\"/>\u001b[22m\n\u001b[2m    - fill(\"2026-10-05\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not editable\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not editable\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    10 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not editable\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "completed_ms": 352982.7243
+    },
+    {
+      "kind": "action",
+      "id": "action-9",
+      "args": {
+        "op": "fill",
+        "role": "textbox",
+        "name": "End date",
+        "value": "2026-10-05"
+      },
+      "dispatched_ms": 352985.283,
+      "executed": false,
+      "error": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('textbox', { name: 'End date', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <input readonly value=\"\" class=\"dtfin-42no3z\" placeholder=\"End date\"/>\u001b[22m\n\u001b[2m    - fill(\"2026-10-05\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not editable\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not editable\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    10 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not editable\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n",
+      "completed_ms": 357987.4742
+    },
+    {
+      "kind": "action",
+      "id": "action-10",
+      "args": {
+        "op": "fill",
+        "role": "textbox",
+        "index": 2,
+        "value": "EVALUATION DATA - leave workflow check"
+      },
+      "dispatched_ms": 357989.84990000003,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/leave/new",
+        "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox: EVALUATION DATA - leave workflow check\n  - button \"Submit request\"\n  - button \"Cancel\""
+      },
+      "completed_ms": 357997.347
+    },
+    {
+      "kind": "action",
+      "id": "action-11",
+      "args": {
+        "op": "click",
+        "role": "button",
+        "name": "Submit request"
+      },
+      "dispatched_ms": 358000.0551,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/leave/new",
+        "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox: EVALUATION DATA - leave workflow check\n  - text: Please fill in all required fields.\n  - button \"Submit request\"\n  - button \"Cancel\""
+      },
+      "completed_ms": 358032.1986
+    },
+    {
+      "kind": "action",
+      "id": "action-12",
+      "args": {
+        "op": "click",
+        "role": "link",
+        "name": "Timesheet"
+      },
+      "dispatched_ms": 398747.1645,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/timesheet",
+        "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Timesheet\" [level=1]\n  - heading \"Week of Sep 14, 2026\" [level=2]\n  - text: draft Mon\n  - spinbutton: \"0\"\n  - text: Tue\n  - spinbutton: \"0\"\n  - text: Wed\n  - spinbutton: \"0\"\n  - text: Thu\n  - spinbutton: \"0\"\n  - text: Fri\n  - spinbutton: \"0\"\n  - text: Sat\n  - spinbutton: \"0\"\n  - text: Sun\n  - spinbutton: \"0\"\n  - text: \"Total: 0 h\"\n  - button \"Save draft\"\n  - button \"Submit week\""
+      },
+      "completed_ms": 399087.3923
+    },
+    {
+      "kind": "request",
+      "id": "request-7",
+      "method": "GET",
+      "url": "http://127.0.0.1:58813/api/timesheet",
+      "body": "null",
+      "at_ms": 398761.8835
+    },
+    {
+      "kind": "response",
+      "id": "request-7",
+      "status": 200,
+      "body": "{\"weekStart\":\"2026-09-14\",\"days\":{\"mon\":0,\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":0,\"status\":\"draft\"}",
+      "at_ms": 399078.1204
+    },
+    {
+      "kind": "action",
+      "id": "action-13",
+      "args": {
+        "op": "click",
+        "role": "link",
+        "name": "My Profile"
+      },
+      "dispatched_ms": 464526.8894,
+      "executed": true,
+      "result": {
+        "url": "http://127.0.0.1:58813/profile",
+        "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"My profile\" [level=1]\n  - text: ED\n  - button \"Upload photo\"\n  - text: Full name\n  - textbox: Emily Dawson\n  - text: Email (read-only)\n  - textbox [disabled]: emily.dawson@bugbusters.io\n  - text: Phone\n  - textbox: 555-0107\n  - text: Emergency contact\n  - textbox \"Name, phone number\": Robert Dawson, 555-0207\n  - button \"Save changes\""
+      },
+      "completed_ms": 464855.7072
+    },
+    {
+      "kind": "request",
+      "id": "request-8",
+      "method": "GET",
+      "url": "http://127.0.0.1:58813/api/me",
+      "body": "null",
+      "at_ms": 464542.8804
+    },
+    {
+      "kind": "response",
+      "id": "request-8",
+      "status": 200,
+      "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+      "at_ms": 464850.026
+    }
+  ]
+}

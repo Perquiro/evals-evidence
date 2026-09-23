@@ -1,0 +1,21 @@
+{
+  "requestToken": "f907a58a-effd-4335-95e6-dd6ff950b45d",
+  "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+  "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+  "platform": "browser",
+  "productVersion": "2.5",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Reserve is offered and the current Product state has no reservation immediately before POST /reservations.",
+      "look": {
+        "kind": "attempting",
+        "item": {
+          "id": "8106671b-1f96-43be-9d59-be236ab0a54d"
+        },
+        "resourceRef": "reservation:42"
+      }
+    }
+  ]
+}

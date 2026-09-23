@@ -1,0 +1,19 @@
+{
+  "requestToken": "c0d24b9e-ea4b-4469-8045-2f0a2aa10104",
+  "surfaceId": "af73d4d1-4c26-407e-9f04-577a78dc495e",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [
+    { "key": "notfound", "name": "Book not found error", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "POST /desk/returns returned 404 Not Found with the error message 'Book not found' for the offered bookId 103 request.",
+      "looks": [
+        { "item": { "key": "notfound" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

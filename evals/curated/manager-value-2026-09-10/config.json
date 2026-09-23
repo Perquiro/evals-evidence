@@ -1,0 +1,272 @@
+{
+  "randomizationSeed": 20260910,
+  "requestLimit": 40,
+  "exploreMinutes": 40,
+  "recordingGraceMinutes": 5,
+  "createMinutes": 20,
+  "checkpointsMinutes": [
+    10,
+    20,
+    40
+  ],
+  "arms": {
+    "A": {
+      "name": "Terra solo",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": false
+    },
+    "B": {
+      "name": "Terra solo with review",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": true
+    },
+    "C": {
+      "name": "Astra manager with Terra explorers",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": true,
+      "checklist": true,
+      "workerModel": "gpt-5.6-terra",
+      "workerEffort": "low"
+    },
+    "D": {
+      "name": "Astra solo with review",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": false,
+      "checklist": true
+    }
+  },
+  "trials": [
+    {
+      "id": "C1",
+      "arm": "C",
+      "block": 1,
+      "name": "Astra manager with Terra explorers",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": true,
+      "checklist": true,
+      "workerModel": "gpt-5.6-terra",
+      "workerEffort": "low"
+    },
+    {
+      "id": "D1",
+      "arm": "D",
+      "block": 1,
+      "name": "Astra solo with review",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "A1",
+      "arm": "A",
+      "block": 1,
+      "name": "Terra solo",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": false
+    },
+    {
+      "id": "B1",
+      "arm": "B",
+      "block": 1,
+      "name": "Terra solo with review",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "B2",
+      "arm": "B",
+      "block": 2,
+      "name": "Terra solo with review",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "C2",
+      "arm": "C",
+      "block": 2,
+      "name": "Astra manager with Terra explorers",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": true,
+      "checklist": true,
+      "workerModel": "gpt-5.6-terra",
+      "workerEffort": "low"
+    },
+    {
+      "id": "A2",
+      "arm": "A",
+      "block": 2,
+      "name": "Terra solo",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": false
+    },
+    {
+      "id": "D2",
+      "arm": "D",
+      "block": 2,
+      "name": "Astra solo with review",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "C3",
+      "arm": "C",
+      "block": 3,
+      "name": "Astra manager with Terra explorers",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": true,
+      "checklist": true,
+      "workerModel": "gpt-5.6-terra",
+      "workerEffort": "low"
+    },
+    {
+      "id": "A3",
+      "arm": "A",
+      "block": 3,
+      "name": "Terra solo",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": false
+    },
+    {
+      "id": "B3",
+      "arm": "B",
+      "block": 3,
+      "name": "Terra solo with review",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "D3",
+      "arm": "D",
+      "block": 3,
+      "name": "Astra solo with review",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "D4",
+      "arm": "D",
+      "block": 4,
+      "name": "Astra solo with review",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "C4",
+      "arm": "C",
+      "block": 4,
+      "name": "Astra manager with Terra explorers",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": true,
+      "checklist": true,
+      "workerModel": "gpt-5.6-terra",
+      "workerEffort": "low"
+    },
+    {
+      "id": "A4",
+      "arm": "A",
+      "block": 4,
+      "name": "Terra solo",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": false
+    },
+    {
+      "id": "B4",
+      "arm": "B",
+      "block": 4,
+      "name": "Terra solo with review",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "B5",
+      "arm": "B",
+      "block": 5,
+      "name": "Terra solo with review",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "C5",
+      "arm": "C",
+      "block": 5,
+      "name": "Astra manager with Terra explorers",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": true,
+      "checklist": true,
+      "workerModel": "gpt-5.6-terra",
+      "workerEffort": "low"
+    },
+    {
+      "id": "D5",
+      "arm": "D",
+      "block": 5,
+      "name": "Astra solo with review",
+      "model": "gpt-6-astra",
+      "effort": "high",
+      "manager": false,
+      "checklist": true
+    },
+    {
+      "id": "A5",
+      "arm": "A",
+      "block": 5,
+      "name": "Terra solo",
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "manager": false,
+      "checklist": false
+    }
+  ],
+  "create": {
+    "model": "gpt-5.6-terra",
+    "effort": "low"
+  },
+  "activeTrials": 1,
+  "maxCandidateAgentsPerTrial": 2,
+  "threshold": {
+    "metric": "faithfully saved complete checks at equal 40-minute exploration allowance",
+    "relativeImprovement": 0.2,
+    "comparison": [
+      "C versus B",
+      "C versus D"
+    ],
+    "unsupportedClaims": "no increase in unsupported material claims per saved check",
+    "economicClaim": "unresolved without reliable comparable billing"
+  }
+}

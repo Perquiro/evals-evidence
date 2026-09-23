@@ -1,0 +1,151 @@
+[
+  {
+    "revision": "eac60c42-31c1-48d7-91d0-b2b233afb923",
+    "selection": {
+      "surfaceId": "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258",
+      "actorIds": [
+        "61409925-dde8-4f75-9801-942d22518b3d",
+        "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258",
+      "name": "Check in book",
+      "locator": "POST /desk/returns",
+      "createdAt": "2026-09-09T06:02:31.916Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "9442cbdd-77cd-49f6-8498-ad8890ad19ed",
+          "surfaceId": "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258",
+          "name": "Check-in confirmation",
+          "kind": "information",
+          "createdAt": "2026-09-09T06:05:00.047Z"
+        },
+        {
+          "id": "b9950bac-162e-497d-9c84-9247a33e3fce",
+          "surfaceId": "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258",
+          "name": "Night Trains",
+          "kind": "link",
+          "createdAt": "2026-09-09T06:05:00.047Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "78eae38b-eff3-4f80-859e-d2d812f1aead",
+            "seq": 25,
+            "surfaceId": "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "POST /desk/returns with bookId 103 returned 'Book checked in' and a link to /books/103.",
+            "createdAt": "2026-09-09T06:05:00.048Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "9442cbdd-77cd-49f6-8498-ad8890ad19ed"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "b9950bac-162e-497d-9c84-9247a33e3fce"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "783b5248-5443-47bf-b009-1907c7144b83",
+            "seq": 27,
+            "surfaceId": "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258",
+            "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+            "body": "Following the response href /books/103 reached Night Trains details, where available was true.",
+            "createdAt": "2026-09-09T06:06:08.452Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "b9950bac-162e-497d-9c84-9247a33e3fce"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "b9950bac-162e-497d-9c84-9247a33e3fce",
+            "surfaceId": "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258",
+            "name": "Night Trains",
+            "kind": "link",
+            "createdAt": "2026-09-09T06:05:00.047Z"
+          },
+          "actorId": "a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "783b5248-5443-47bf-b009-1907c7144b83"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 1,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 1
+    }
+  }
+]

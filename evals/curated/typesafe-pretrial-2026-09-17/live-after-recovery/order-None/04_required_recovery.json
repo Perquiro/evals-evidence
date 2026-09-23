@@ -1,0 +1,24 @@
+{
+  "case": "04_required_recovery",
+  "mode": "live",
+  "advisory_only": true,
+  "model_requested": "jev-1.13.0",
+  "rubric_version": "explore-ranking-v1",
+  "weights": {
+    "relevance": 0.4,
+    "information": 0.6
+  },
+  "weak_set_information_threshold": 1.5,
+  "shuffle_seed": null,
+  "input_sha256": "cc6a6b48bb4fca5965bda73c6880be54a1923611855500ee7dcc6cf84a5e5742",
+  "api_calls": 0,
+  "api_latency_ms": null,
+  "usage": null,
+  "request": null,
+  "status": "recovery_precedence",
+  "precedence_ids": [
+    "c1"
+  ],
+  "reason": "Existing recovery rules take precedence; TypeSafe is not called.",
+  "captured_transport": {}
+}

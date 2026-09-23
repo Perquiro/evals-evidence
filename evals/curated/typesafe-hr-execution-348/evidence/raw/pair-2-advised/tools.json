@@ -1,0 +1,2115 @@
+[
+  {
+    "name": "advise_explore",
+    "description": "Advisory next-check selection through TypeSafe. Ordinary trial mode skips this tool; advised mode requests it for each next group of checks with the same Explore model/settings. Submit concrete candidate IDs with host eligibility, open questions and explicit unknown context. Reference recorded Surface/items and Observations when known. Recovery, saved scope exclusions and explicit human priorities precede model selection. Returns selected, no_selection or unavailable with timing and known usage. You may override TypeSafe advice with a reason; required recovery and human instructions still apply. Unavailable advice permits ordinary planning within the same constraints; no_selection requires reconsidering useful work and does not establish completion. Creates no Knowledge or authorization and performs no Product action. Never include secrets. Refresh after objective, candidate, Actor, Platform, Product-version or Observation changes. Keep advice, decisions, outcomes and planning/fallback accounting separate in the trial trace; only grounded Product facts enter Knowledge.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "context": {
+          "type": "object",
+          "properties": {
+            "actorId": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uuid",
+                  "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "platform": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "browser",
+                    "api",
+                    "android",
+                    "ios"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "productVersion": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "const": "unknown"
+                    }
+                  },
+                  "required": [
+                    "kind"
+                  ],
+                  "additionalProperties": false
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "const": "exact"
+                    },
+                    "value": {
+                      "type": "string",
+                      "minLength": 1,
+                      "maxLength": 1000
+                    }
+                  },
+                  "required": [
+                    "kind",
+                    "value"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "required": [
+            "actorId",
+            "platform",
+            "productVersion"
+          ],
+          "additionalProperties": false
+        },
+        "objective": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "productPurpose": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observedDependencies": {
+          "anyOf": [
+            {
+              "maxItems": 16,
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "description": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 4000
+                  },
+                  "observationIds": {
+                    "minItems": 1,
+                    "maxItems": 16,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "format": "uuid",
+                      "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                    }
+                  }
+                },
+                "required": [
+                  "description",
+                  "observationIds"
+                ],
+                "additionalProperties": false
+              }
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "candidates": {
+          "maxItems": 32,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+              },
+              "check": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              },
+              "question": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              },
+              "eligibility": {
+                "oneOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "type": "string",
+                        "const": "eligible"
+                      }
+                    },
+                    "required": [
+                      "status"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "status": {
+                        "type": "string",
+                        "const": "excluded"
+                      },
+                      "reason": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 4000
+                      }
+                    },
+                    "required": [
+                      "status",
+                      "reason"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              },
+              "target": {
+                "type": "object",
+                "properties": {
+                  "surfaceId": {
+                    "type": "string",
+                    "format": "uuid",
+                    "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                  },
+                  "itemId": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "surfaceId"
+                ],
+                "additionalProperties": false
+              },
+              "recoveryObservationId": {
+                "type": "string",
+                "format": "uuid",
+                "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+              }
+            },
+            "required": [
+              "id",
+              "check",
+              "question",
+              "eligibility"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "requiredRecoveryCandidateId": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        },
+        "humanPriorityCandidateId": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+        }
+      },
+      "required": [
+        "context",
+        "objective",
+        "productPurpose",
+        "observedDependencies",
+        "candidates"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "openWorldHint": true
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "record_inspection",
+    "description": "Record a bounded structured inspection as part of Record Observation: stable Surface items, grounded inventory and distinct action reports commit together. First contact with a Surface/Actor/Platform/version needs inventory, explicitly empty when none was seen. Before a Product mutation save attempting with inspected preconditions and a non-secret resource reference. Only authorizedAttemptIds returned by a NEW write authorize dispatch in this host execution. Replay returns no new authority. Save an exercised outcome against its exact attempt Observation; reconcile uncertain actions by reading Product state before any repeat. No Review, Finding or Expected Behavior is created.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "surfaceId": {
+          "type": "string"
+        },
+        "actorId": {
+          "type": "string"
+        },
+        "journeyId": {
+          "type": "string"
+        },
+        "productVersion": {
+          "type": "string",
+          "maxLength": 1000
+        },
+        "platform": {
+          "type": "string",
+          "enum": [
+            "browser",
+            "api",
+            "android",
+            "ios"
+          ]
+        },
+        "items": {
+          "maxItems": 64,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 100
+              },
+              "name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 300
+              },
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "information",
+                  "form",
+                  "field",
+                  "action",
+                  "tab",
+                  "link",
+                  "rule"
+                ],
+                "description": "information and field inventory do not imply independent checks. Use form, action, tab, link or a named rule for exercisable behavior."
+              }
+            },
+            "required": [
+              "key",
+              "name",
+              "kind"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "reports": {
+          "minItems": 1,
+          "maxItems": 16,
+          "type": "array",
+          "items": {
+            "oneOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "inventory",
+                    "description": "Report kind. Supply looks, whose own kind is offered or absent; empty looks explicitly records empty inventory."
+                  },
+                  "body": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 12000
+                  },
+                  "looks": {
+                    "maxItems": 64,
+                    "type": "array",
+                    "items": {
+                      "oneOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "item": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string",
+                                      "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                    }
+                                  },
+                                  "required": [
+                                    "id"
+                                  ],
+                                  "additionalProperties": false
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "key": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 100,
+                                      "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                    }
+                                  },
+                                  "required": [
+                                    "key"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              ],
+                              "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                            },
+                            "revealedVia": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string",
+                                      "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                    }
+                                  },
+                                  "required": [
+                                    "id"
+                                  ],
+                                  "additionalProperties": false
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "key": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 100,
+                                      "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                    }
+                                  },
+                                  "required": [
+                                    "key"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              ],
+                              "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                            },
+                            "ruleFor": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string",
+                                      "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                    }
+                                  },
+                                  "required": [
+                                    "id"
+                                  ],
+                                  "additionalProperties": false
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "key": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 100,
+                                      "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                    }
+                                  },
+                                  "required": [
+                                    "key"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              ],
+                              "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                            },
+                            "kind": {
+                              "type": "string",
+                              "const": "offered",
+                              "description": "Inventory Look: available or advertised. The field is kind, not state."
+                            }
+                          },
+                          "required": [
+                            "item",
+                            "kind"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "item": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string",
+                                      "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                    }
+                                  },
+                                  "required": [
+                                    "id"
+                                  ],
+                                  "additionalProperties": false
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "key": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 100,
+                                      "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                    }
+                                  },
+                                  "required": [
+                                    "key"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              ],
+                              "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                            },
+                            "revealedVia": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string",
+                                      "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                    }
+                                  },
+                                  "required": [
+                                    "id"
+                                  ],
+                                  "additionalProperties": false
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "key": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 100,
+                                      "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                    }
+                                  },
+                                  "required": [
+                                    "key"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              ],
+                              "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                            },
+                            "ruleFor": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "string",
+                                      "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                    }
+                                  },
+                                  "required": [
+                                    "id"
+                                  ],
+                                  "additionalProperties": false
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "key": {
+                                      "type": "string",
+                                      "minLength": 1,
+                                      "maxLength": 100,
+                                      "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                    }
+                                  },
+                                  "required": [
+                                    "key"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              ],
+                              "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                            },
+                            "kind": {
+                              "type": "string",
+                              "const": "absent",
+                              "description": "Inventory Look: explicitly inspected and unavailable."
+                            }
+                          },
+                          "required": [
+                            "item",
+                            "kind"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ]
+                    }
+                  },
+                  "capture": {
+                    "default": "none",
+                    "type": "string",
+                    "enum": [
+                      "none",
+                      "pending"
+                    ]
+                  },
+                  "corrects": {
+                    "type": "object",
+                    "properties": {
+                      "observationId": {
+                        "type": "string"
+                      },
+                      "reason": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 2000
+                      }
+                    },
+                    "required": [
+                      "observationId",
+                      "reason"
+                    ],
+                    "additionalProperties": false,
+                    "description": "Explicitly correct an earlier erroneous claim in the same recorded context; retain its history. Does not declare or resolve a Product attempt."
+                  }
+                },
+                "required": [
+                  "kind",
+                  "body",
+                  "looks"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "const": "action",
+                    "description": "Report kind. Supply one look with its own kind: attempting, exercised, reached or blocked."
+                  },
+                  "body": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 12000
+                  },
+                  "look": {
+                    "oneOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "item": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "revealedVia": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "ruleFor": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "kind": {
+                            "type": "string",
+                            "const": "blocked"
+                          },
+                          "reason": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 2000
+                          },
+                          "attemptObservationId": {
+                            "type": "string"
+                          },
+                          "reconciliation": {
+                            "description": "Only with attemptObservationId and grounded proof that the Product action did not execute.",
+                            "type": "string",
+                            "const": "not_executed"
+                          }
+                        },
+                        "required": [
+                          "item",
+                          "kind",
+                          "reason"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "item": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "revealedVia": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "ruleFor": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "kind": {
+                            "type": "string",
+                            "const": "attempting"
+                          },
+                          "resourceRef": {
+                            "type": "string",
+                            "minLength": 1,
+                            "maxLength": 2000,
+                            "description": "Non-secret resource for the imminent attempt; the body records inspected preconditions, not an outcome."
+                          },
+                          "repeat": {
+                            "type": "object",
+                            "properties": {
+                              "kind": {
+                                "type": "string",
+                                "enum": [
+                                  "precondition",
+                                  "repetition",
+                                  "changed",
+                                  "non_execution"
+                                ]
+                              },
+                              "reason": {
+                                "type": "string",
+                                "minLength": 1,
+                                "maxLength": 2000
+                              },
+                              "serves": {
+                                "anyOf": [
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "id": {
+                                        "type": "string",
+                                        "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                      }
+                                    },
+                                    "required": [
+                                      "id"
+                                    ],
+                                    "additionalProperties": false
+                                  },
+                                  {
+                                    "type": "object",
+                                    "properties": {
+                                      "key": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "maxLength": 100,
+                                        "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                      }
+                                    },
+                                    "required": [
+                                      "key"
+                                    ],
+                                    "additionalProperties": false
+                                  }
+                                ],
+                                "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                              }
+                            },
+                            "required": [
+                              "kind",
+                              "reason",
+                              "serves"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "required": [
+                          "item",
+                          "kind",
+                          "resourceRef"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "item": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "revealedVia": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "ruleFor": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "kind": {
+                            "type": "string",
+                            "const": "exercised",
+                            "description": "Performed check and observed outcome. No reachedSurfaceId; record the destination as a separate reached Look."
+                          },
+                          "attemptObservationId": {
+                            "description": "Exact accepted attempting Observation id for this item, Actor and Platform. Correct a rejected outcome write against this same attempt without repeating the Product action.",
+                            "type": "string"
+                          },
+                          "contradictsRunId": {
+                            "type": "string",
+                            "format": "uuid",
+                            "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+                          }
+                        },
+                        "required": [
+                          "item",
+                          "kind"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "item": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "revealedVia": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "ruleFor": {
+                            "anyOf": [
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "string",
+                                    "description": "Canonical item UUID returned by an earlier inspection. Use this across calls."
+                                  }
+                                },
+                                "required": [
+                                  "id"
+                                ],
+                                "additionalProperties": false
+                              },
+                              {
+                                "type": "object",
+                                "properties": {
+                                  "key": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "maxLength": 100,
+                                    "description": "Request-local key defined in this request's items array. Earlier calls do not define keys here."
+                                  }
+                                },
+                                "required": [
+                                  "key"
+                                ],
+                                "additionalProperties": false
+                              }
+                            ],
+                            "description": "Use exactly {id: UUID} for a known item or {key: localKey} for an item defined in this request."
+                          },
+                          "kind": {
+                            "type": "string",
+                            "const": "reached"
+                          },
+                          "reachedSurfaceId": {
+                            "description": "Canonical destination Surface UUID, only on a reached Look after observing that destination. Never put this field on exercised.",
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "item",
+                          "kind"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  },
+                  "capture": {
+                    "default": "none",
+                    "type": "string",
+                    "enum": [
+                      "none",
+                      "pending"
+                    ]
+                  },
+                  "corrects": {
+                    "type": "object",
+                    "properties": {
+                      "observationId": {
+                        "type": "string"
+                      },
+                      "reason": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 2000
+                      }
+                    },
+                    "required": [
+                      "observationId",
+                      "reason"
+                    ],
+                    "additionalProperties": false,
+                    "description": "Explicitly correct an earlier erroneous claim in the same recorded context; retain its history. Does not declare or resolve a Product attempt."
+                  }
+                },
+                "required": [
+                  "kind",
+                  "body",
+                  "look"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "requestToken": {
+          "type": "string",
+          "description": "Caller-generated opaque token for this state-changing request, unique per new mutation in this Project. Retry a lost response with the same token and the same arguments; never reuse a token for a different request."
+        }
+      },
+      "required": [
+        "surfaceId",
+        "actorId",
+        "platform",
+        "items",
+        "reports",
+        "requestToken"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "additionalProperties": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "read_explore",
+    "description": "Read bounded Surface contents, Actor inventory contexts, typed inspection history, derived exact check states, access hints, recovery and Scenario/Test clues from one Knowledge revision. inventoryCoverage names selected Actors without an inventory; contexts distinguish missing from explicitly empty inventory by Platform and version without inventing checks. Explicit Actor and all/unknown/exact version selection never closes another context. Recovery includes unresolved attempts across filters. Continuations are bound to selection and revision; stale continuations require restarting the read. Inspect current Product state before following recorded access hints. Counts refer only to known named scope.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "surfaceId": {
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+        },
+        "itemId": {
+          "type": "string"
+        },
+        "actorIds": {
+          "minItems": 1,
+          "maxItems": 32,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uuid",
+            "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+          }
+        },
+        "platform": {
+          "type": "string",
+          "enum": [
+            "browser",
+            "api",
+            "android",
+            "ios"
+          ]
+        },
+        "productVersions": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "scope": {
+                  "type": "string",
+                  "const": "all"
+                }
+              },
+              "required": [
+                "scope"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "scope": {
+                  "type": "string",
+                  "const": "unknown"
+                }
+              },
+              "required": [
+                "scope"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "scope": {
+                  "type": "string",
+                  "const": "exact"
+                },
+                "values": {
+                  "minItems": 1,
+                  "maxItems": 32,
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 1000
+                  }
+                }
+              },
+              "required": [
+                "scope",
+                "values"
+              ],
+              "additionalProperties": false
+            }
+          ]
+        },
+        "continuations": {
+          "type": "object",
+          "properties": {
+            "inventory": {
+              "type": "string"
+            },
+            "contexts": {
+              "type": "string"
+            },
+            "history": {
+              "type": "string"
+            },
+            "gaps": {
+              "type": "string"
+            },
+            "recovery": {
+              "type": "string"
+            },
+            "accessHints": {
+              "type": "string"
+            },
+            "coverageClues": {
+              "type": "string"
+            },
+            "testVerification": {
+              "type": "string"
+            },
+            "evidenceLinks": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "surfaceId",
+        "actorIds",
+        "productVersions"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "read_explore_continuation",
+    "description": "Read the saved human Explore scope, current remaining checks, next authorized checks, recovery records and cumulative host limits. Read recovery before Product actions. Page all checks/recovery with the returned continuations. This does not authorize dispatch or assert that the selected Product version was observed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "continuations": {
+          "type": "object",
+          "properties": {
+            "checks": {
+              "type": "string"
+            },
+            "recovery": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "additionalProperties": false
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "list_open_reviews",
+    "description": "List open Reviews of every kind that need a human Decision. A Coverage Review carries ordered Journey or main Surface groups with each why and its Scenarios. A linked Create Review carries a flat source-mapped proposal. Both include every reported contradiction with the accepted Scenario's text and source feedback. Investigate Reviews include Findings and their current Decisions. Resumed Reviews link to their source. An empty list does not mean coverage is complete: deferred proposals remain in the human inbox and accepted Scenarios may still await Tests.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "read_follow_on_work",
+    "description": "Read Follow-on work left by human Decisions. Create work includes status (pending, claimed, completed), source Scenario ids, and its claiming Review when present. Revision sources include full Scenario text and send-back history with the exact reason, optional suggested wording, ruling key, Review, human, and time. Test repair includes status (pending, completed, cancelled), causal Finding and recorded Test ids, and completion or cancellation details, and sourceFinding with the body, Run id, Evidence ids, and human Decision even after its Review resolves. Product work includes its source Finding and Run, issue associations, readiness, and verification attempts. Read this before starting any command.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "record_surface",
+    "description": "Record one Surface the Agent saw: a reachable page, screen, or endpoint of the Product. Reuses the existing Surface when the locator matches; the stored name is kept. Returns the stored Surface with its id. Rejected when the name is blank, the locator is blank, the locator is an absolute URL, or the locator contains a query or fragment.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "requestToken": {
+          "type": "string",
+          "description": "Caller-generated opaque token for this state-changing request, unique per new mutation in this Project. Retry a lost response with the same token and the same arguments; never reuse a token for a different request."
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name of the Surface"
+        },
+        "locator": {
+          "type": "string",
+          "description": "How the Surface is reached: a page route pattern, METHOD /path, or screen name. Not an absolute URL, query or fragment"
+        }
+      },
+      "required": [
+        "requestToken",
+        "name",
+        "locator"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "record_journey",
+    "description": "Record one coherent task as ordered Surface visits with meaningful actions. Supply visits with supporting Observations, explicit results and return purposes, or surfaceIds for an account without explanations; never both. Recording an existing Journey name replaces its sequence and explanations together without changing its identity or prior Observations. Rejected when the name is empty, the sequence is empty, or any Surface id is unknown.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "requestToken": {
+          "type": "string",
+          "description": "Caller-generated opaque token for this state-changing request, unique per new mutation in this Project. Retry a lost response with the same token and the same arguments; never reuse a token for a different request."
+        },
+        "name": {
+          "type": "string",
+          "description": "Journey name. Lookup trims surrounding whitespace, applies Unicode NFC, and lowercases; internal spacing is significant. A Journey name never changes, so a corrected name is a new Journey."
+        },
+        "surfaceIds": {
+          "description": "Ordered Surface ids; the same Surface may repeat",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "visits": {
+          "description": "Ordered Surface visits. Several actions while staying on one Surface belong in one visit. Record supporting Observations first. Results describe what was observed, not Expected Behavior.",
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "returnPurpose": {
+                "type": "string"
+              },
+              "actions": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "description": {
+                      "type": "string"
+                    },
+                    "observationIds": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "result": {
+                      "oneOf": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "status": {
+                              "type": "string",
+                              "const": "observed"
+                            },
+                            "description": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "status",
+                            "description"
+                          ],
+                          "additionalProperties": false
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "status": {
+                              "type": "string",
+                              "const": "unobserved"
+                            }
+                          },
+                          "required": [
+                            "status"
+                          ],
+                          "additionalProperties": false
+                        }
+                      ]
+                    }
+                  },
+                  "required": [
+                    "description",
+                    "observationIds",
+                    "result"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "surfaceId": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "actions",
+              "surfaceId"
+            ],
+            "additionalProperties": false
+          }
+        }
+      },
+      "required": [
+        "requestToken",
+        "name"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "record_observation",
+    "description": "Record one grounded Observation of a Surface as a current Actor, optionally linked to a Journey and stamped with a Product version. Rejected when the Surface is unknown, the Actor is unknown or retired, the Journey name is not recorded, or the body is empty.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "requestToken": {
+          "type": "string",
+          "description": "Caller-generated opaque token for this state-changing request, unique per new mutation in this Project. Retry a lost response with the same token and the same arguments; never reuse a token for a different request."
+        },
+        "surfaceId": {
+          "type": "string",
+          "description": "Id of the observed Surface"
+        },
+        "actor": {
+          "type": "string",
+          "description": "Name of the current Actor that was used"
+        },
+        "journey": {
+          "description": "Journey name this Observation belongs to, if any",
+          "type": "string"
+        },
+        "productVersion": {
+          "description": "Product version as known to the caller; omit when unknown",
+          "type": "string"
+        },
+        "body": {
+          "type": "string",
+          "description": "The observed fact, stored as supplied"
+        }
+      },
+      "required": [
+        "requestToken",
+        "surfaceId",
+        "actor",
+        "body"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "import_evidence",
+    "description": "Import one completed capture as immutable Evidence. Give the absolute local path of an existing regular file or directory; Perquiro copies it into the Evidence store, indexes the copy, and leaves the source unchanged. Relative or missing paths, symbolic links, junctions, or special files anywhere in the source, sources inside or containing .perquiro, repeated or unknown Observation ids, and sources over the Project Evidence limit are rejected. Returns the stored Evidence with the exact Project-relative container path the Agent may inspect.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "requestToken": {
+          "type": "string",
+          "description": "Caller-generated opaque token for this state-changing request, unique per new mutation in this Project. Retry a lost response with the same token and the same arguments; never reuse a token for a different request."
+        },
+        "sourcePath": {
+          "type": "string",
+          "description": "Absolute local path to one completed regular file or directory"
+        },
+        "productVersion": {
+          "description": "Product version as known to the caller; omit when unknown",
+          "type": "string"
+        },
+        "observationIds": {
+          "description": "Ids of recorded Observations this Evidence supports",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "requestToken",
+        "sourcePath"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "read_evidence",
+    "description": "Read one Evidence item by id: kind, Product version, creation time, linked Observation ids, and the exact Project-relative container path the Agent may inspect. Only Evidence returned by Perquiro is Knowledge; do not enumerate .perquiro/evidence/.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "evidenceId": {
+          "type": "string",
+          "description": "Id of the Evidence to read"
+        }
+      },
+      "required": [
+        "evidenceId"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "read_setup",
+    "description": "Read Project Setup: projectRoot, product, url, agent, evidenceMib, and current and retired Actor identities, each with the environment-variable names (secretNames) its secrets live under. Secret values are never exposed.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "read_agent_models",
+    "description": "Read human model preferences and refresh account-scoped choices through the configured host. Includes exact identifiers, per-model capabilities, source, freshness and validation. This starts no inference or Product work and changes no preferences.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {},
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "read_knowledge_catalog",
+    "description": "Read a compact, revisioned Knowledge catalog with decision-grade coverage counts and canonical Actor, Surface, Journey, Evidence, Scenario, and Test identities plus their non-Observation stored relationships. It omits Observation ids and bodies, Scenario Gherkin, Test paths, and Evidence container paths. Follow each incomplete collection with its opaque continuation. Journey and Surface entries carry testFolder. An accepted Scenario without a test_scenario relationship is Generate's queue.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "entryContinuation": {
+          "description": "Opaque continuation for catalog entries",
+          "type": "string"
+        },
+        "relationshipContinuation": {
+          "description": "Opaque continuation for catalog storedRelationships",
+          "type": "string"
+        }
+      },
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "read_knowledge_context",
+    "description": "Read a typed, revisioned context bundle around one canonical Knowledge record. Product-version and Observation selection are always explicit. Stored relationships and deterministic projections are separate; this tool returns no semantic retrieval hints. Every bounded collection reports whether it is complete and supplies an opaque, revision-bound continuation when needed. A Scenario anchor returns its complete Scenario Gherkin and human ruling history, including feedback reasons and optional suggested wording. A Recorded Test anchor returns its current identity and path, a stored test_scenario relationship, and relatedScenario: the complete current linked Scenario, including Gherkin, actual status (accepted or withdrawn), and ruling history, from the same SQLite snapshot. This current record does not establish the state or conditions of an earlier Run; read its frozen selection and any original Product Finding source snapshot separately. No unrelated Scenario records, Observation bodies, or Project-wide catalog are added by default.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "anchor": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "actor"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "surface"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "journey"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "observation"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "evidence"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "scenario"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "id"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "kind": {
+                  "type": "string",
+                  "const": "test"
+                },
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "kind",
+                "id"
+              ],
+              "additionalProperties": false
+            }
+          ],
+          "description": "Canonical Knowledge record kind and id to read"
+        },
+        "productVersions": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "scope": {
+                  "type": "string",
+                  "const": "all"
+                }
+              },
+              "required": [
+                "scope"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "scope": {
+                  "type": "string",
+                  "const": "unknown"
+                }
+              },
+              "required": [
+                "scope"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "scope": {
+                  "type": "string",
+                  "const": "exact"
+                },
+                "values": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "required": [
+                "scope",
+                "values"
+              ],
+              "additionalProperties": false
+            }
+          ],
+          "description": "All versions, unknown version, or one or more exact opaque values"
+        },
+        "observations": {
+          "oneOf": [
+            {
+              "type": "object",
+              "properties": {
+                "detail": {
+                  "type": "string",
+                  "const": "none"
+                }
+              },
+              "required": [
+                "detail"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "detail": {
+                  "type": "string",
+                  "const": "summaries"
+                },
+                "actorIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "scope": {
+                  "type": "string",
+                  "enum": [
+                    "journey",
+                    "surface_without_journey",
+                    "both"
+                  ]
+                }
+              },
+              "required": [
+                "detail",
+                "actorIds",
+                "scope"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "object",
+              "properties": {
+                "detail": {
+                  "type": "string",
+                  "const": "records"
+                },
+                "actorIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "scope": {
+                  "type": "string",
+                  "enum": [
+                    "journey",
+                    "surface_without_journey",
+                    "both"
+                  ]
+                }
+              },
+              "required": [
+                "detail",
+                "actorIds",
+                "scope"
+              ],
+              "additionalProperties": false
+            }
+          ],
+          "description": "No Observations, grouped summaries, or grouped records for named Actors and scope"
+        },
+        "relationshipContinuation": {
+          "description": "Opaque continuation for storedRelationships",
+          "type": "string"
+        },
+        "projectionContinuation": {
+          "description": "Opaque continuation for projections",
+          "type": "string"
+        }
+      },
+      "required": [
+        "anchor",
+        "productVersions",
+        "observations"
+      ],
+      "$schema": "http://json-schema.org/draft-07/schema#"
+    },
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false
+    },
+    "execution": {
+      "taskSupport": "forbidden"
+    }
+  },
+  {
+    "name": "browser_action",
+    "description": "Operate the isolated Product browser. Locators use role/name or a CSS selector from observed UI, with optional zero-based index. snapshot returns current accessibility text. fill_secret fills the configured Employee password without exposing it. Each action returns a capturePath that import_evidence may consume. Requests and deadlines are enforced outside the Agent.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "op": {
+          "type": "string",
+          "enum": [
+            "navigate",
+            "snapshot",
+            "click",
+            "fill",
+            "fill_secret",
+            "select",
+            "press",
+            "check",
+            "wait_for"
+          ]
+        },
+        "path": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "selector": {
+          "type": "string"
+        },
+        "index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "exact": {
+          "type": "boolean"
+        },
+        "value": {
+          "type": "string"
+        },
+        "checked": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "op"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "trial_note",
+    "description": "Record your planning phase or decision for evaluation accounting. Call before candidate generation or ordinary planning, and retain chosen actions, advice overrides, fallback reasons and open questions. This creates no Knowledge or Evidence.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "phase": {
+          "type": "string",
+          "enum": [
+            "candidate_generation",
+            "ordinary_planning",
+            "advice_handling",
+            "override",
+            "fallback",
+            "recording",
+            "other"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "phase",
+        "note"
+      ],
+      "additionalProperties": false
+    }
+  },
+  {
+    "name": "read_project_file",
+    "description": "Read one of the two installed instruction files: AGENTS.md or .agents/skills/perquiro-explore/SKILL.md. No other file is readable.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "path": {
+          "type": "string",
+          "enum": [
+            "AGENTS.md",
+            ".agents/skills/perquiro-explore/SKILL.md"
+          ]
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "additionalProperties": false
+    }
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "requestToken": "d4a6b2d7-5814-4783-9a22-70bde2f08bcd",
+  "surfaceId": "f3b3143d-758b-4105-a001-03577e407fa2",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "loan", "name": "Loan details", "kind": "information" },
+    { "key": "renew", "name": "Renew loan", "kind": "action" },
+    { "key": "return", "name": "Return book", "kind": "action" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /loans/201 returned Garden Notes (bookId 102), renewal count 0, and due date 2026-10-01. It offered Reader-only POST actions to renew or return the loan.",
+      "looks": [
+        { "item": { "key": "loan" }, "kind": "offered" },
+        { "item": { "key": "renew" }, "kind": "offered" },
+        { "item": { "key": "return" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

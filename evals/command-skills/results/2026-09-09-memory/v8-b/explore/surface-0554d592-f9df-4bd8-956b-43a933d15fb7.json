@@ -1,0 +1,482 @@
+[
+  {
+    "revision": "51972075-8266-494c-872b-d42081403606",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "actorIds": [
+        "dc327f7f-a9ff-451c-b205-986f165f998b",
+        "fea91b43-5998-4e2b-a232-38ec88e67c28"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "name": "Reserve book",
+      "locator": "POST /holds",
+      "createdAt": "2026-09-09T07:05:52.376Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "3911e7b8-43f3-45a6-b6ff-cf3ccc0016df",
+          "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+          "name": "bookId",
+          "kind": "field",
+          "createdAt": "2026-09-09T07:06:53.324Z"
+        },
+        {
+          "id": "bdef7670-ecc7-4147-97e8-4734ce00b4f7",
+          "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+          "name": "Reserve book",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:06:53.325Z"
+        },
+        {
+          "id": "fdc2de5c-71d1-4139-a4c0-4837183c7276",
+          "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+          "name": "Reserve unavailable book",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:08:34.503Z"
+        },
+        {
+          "id": "f6564d32-bd6d-40d8-8e93-09c4a911f53c",
+          "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+          "name": "Retry reserve unavailable book",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:10:37.504Z"
+        },
+        {
+          "id": "12d09c8b-d9fb-4d2c-ae66-edf5977f1f9c",
+          "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+          "name": "Reserve available book",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:11:18.315Z"
+        },
+        {
+          "id": "0f5f925e-e000-4173-854a-68978d61c13c",
+          "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+          "name": "Gap action 26-repeat-hold-101",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:20:29.049Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "0df68c94-d63e-4edd-9fe0-f7d2804b044b",
+            "seq": 1,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "POST /holds was inspected for Reader. The advertised reservation action supplies a required bookId field; Reader's holds were empty before this check.",
+            "createdAt": "2026-09-09T07:06:53.326Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "3911e7b8-43f3-45a6-b6ff-cf3ccc0016df"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "bdef7670-ecc7-4147-97e8-4734ce00b4f7"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "be97d9cc-25ed-4586-bc47-14b20e89bd31",
+            "seq": 2,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "Prepared the reviewed required-field validation request POST /holds with an empty JSON object while holds were empty.",
+            "createdAt": "2026-09-09T07:06:53.330Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "bdef7670-ecc7-4147-97e8-4734ce00b4f7"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /holds body {}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "9bcfb05b-010e-423e-a021-aadafc3a7dc8",
+            "seq": 3,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "POST /holds with {} returned 422 and {\"error\":\"Book is required\"}.",
+            "createdAt": "2026-09-09T07:07:21.951Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "bdef7670-ecc7-4147-97e8-4734ce00b4f7"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "be97d9cc-25ed-4586-bc47-14b20e89bd31"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "f193b235-1aca-483f-84de-61fe5c5b6942",
+            "seq": 4,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "Prepared the reviewed unavailable-state reservation request for the discovered unavailable book 102 before any later change.",
+            "createdAt": "2026-09-09T07:08:34.503Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "fdc2de5c-71d1-4139-a4c0-4837183c7276"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /holds body {bookId:102}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "0af01f42-9934-46db-bb20-78bfab237441",
+            "seq": 5,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "After GET /books/102 confirmed it remained unavailable and GET /holds was empty, prepared the reviewer-approved fresh reservation request with bookId 102.",
+            "createdAt": "2026-09-09T07:10:37.505Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "f6564d32-bd6d-40d8-8e93-09c4a911f53c"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /holds body {bookId:102}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "6c9c9c1c-572b-4f9f-9794-02b5b38fd6b5",
+            "seq": 6,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "POST /holds with bookId 102 returned 409 and {\"error\":\"Book is unavailable\"}.",
+            "createdAt": "2026-09-09T07:10:58.466Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "f6564d32-bd6d-40d8-8e93-09c4a911f53c"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "0af01f42-9934-46db-bb20-78bfab237441"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "eb975598-1bcb-4bd5-8a87-5d537b678072",
+            "seq": 7,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "Prepared the reviewed successful reservation request for the discovered available book 101.",
+            "createdAt": "2026-09-09T07:11:18.316Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "12d09c8b-d9fb-4d2c-ae66-edf5977f1f9c"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /holds body {bookId:101}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "e436aa6c-4268-430c-b423-07cd14e7f128",
+            "seq": 37,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "Prepared reviewed Reader /holds action.",
+            "createdAt": "2026-09-09T07:20:29.049Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "0f5f925e-e000-4173-854a-68978d61c13c"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /holds body {\"bookId\":\"101\"}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "351d5ace-8a81-4e16-a495-f31cb715f7fa",
+            "seq": 38,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "POST /holds returned 409 {\"error\":\"Already reserved\"}.",
+            "createdAt": "2026-09-09T07:20:29.160Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "0f5f925e-e000-4173-854a-68978d61c13c"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "e436aa6c-4268-430c-b423-07cd14e7f128"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "bdef7670-ecc7-4147-97e8-4734ce00b4f7",
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "name": "Reserve book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:06:53.325Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "9bcfb05b-010e-423e-a021-aadafc3a7dc8"
+          ]
+        },
+        {
+          "item": {
+            "id": "fdc2de5c-71d1-4139-a4c0-4837183c7276",
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "name": "Reserve unavailable book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:08:34.503Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "unresolved",
+          "reason": "An accepted attempt has no reconciled outcome. Inspect current Product state before any repeat.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "f193b235-1aca-483f-84de-61fe5c5b6942"
+          ]
+        },
+        {
+          "item": {
+            "id": "f6564d32-bd6d-40d8-8e93-09c4a911f53c",
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "name": "Retry reserve unavailable book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:10:37.504Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "6c9c9c1c-572b-4f9f-9794-02b5b38fd6b5"
+          ]
+        },
+        {
+          "item": {
+            "id": "12d09c8b-d9fb-4d2c-ae66-edf5977f1f9c",
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "name": "Reserve available book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:11:18.315Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "unresolved",
+          "reason": "An accepted attempt has no reconciled outcome. Inspect current Product state before any repeat.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "eb975598-1bcb-4bd5-8a87-5d537b678072"
+          ]
+        },
+        {
+          "item": {
+            "id": "0f5f925e-e000-4173-854a-68978d61c13c",
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "name": "Gap action 26-repeat-hold-101",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:20:29.049Z"
+          },
+          "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "351d5ace-8a81-4e16-a495-f31cb715f7fa"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [
+        {
+          "observation": {
+            "id": "f193b235-1aca-483f-84de-61fe5c5b6942",
+            "seq": 4,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "Prepared the reviewed unavailable-state reservation request for the discovered unavailable book 102 before any later change.",
+            "createdAt": "2026-09-09T07:08:34.503Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "question": "Inspect the named resource's current Product state: did the accepted action occur? If not established, retain the uncertainty and record its concrete blocker.",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "fdc2de5c-71d1-4139-a4c0-4837183c7276"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /holds body {bookId:102}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "eb975598-1bcb-4bd5-8a87-5d537b678072",
+            "seq": 7,
+            "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+            "actorId": "dc327f7f-a9ff-451c-b205-986f165f998b",
+            "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "body": "Prepared the reviewed successful reservation request for the discovered available book 101.",
+            "createdAt": "2026-09-09T07:11:18.316Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "question": "Inspect the named resource's current Product state: did the accepted action occur? If not established, retain the uncertainty and record its concrete blocker.",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "12d09c8b-d9fb-4d2c-ae66-edf5977f1f9c"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /holds body {bookId:101}"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 5,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 2,
+      "suggested": 0,
+      "accountedFor": 3
+    }
+  }
+]

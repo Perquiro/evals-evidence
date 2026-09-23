@@ -1,0 +1,92 @@
+{
+  "entries": [
+    {
+      "kind": "actor",
+      "id": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+      "name": "Customer"
+    },
+    {
+      "kind": "surface",
+      "id": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+      "name": "Reserve",
+      "locator": "/reserve"
+    },
+    {
+      "kind": "surface",
+      "id": "486a9b5c-239f-493f-b4a5-4d969c96a430",
+      "name": "Reservation details",
+      "locator": "/reservations/:id"
+    },
+    {
+      "kind": "surface",
+      "id": "f23c4636-be1e-4c66-abbe-46d434f5e30f",
+      "name": "Cancellation confirmation",
+      "locator": "/reservations/:id/cancel"
+    },
+    {
+      "kind": "surface",
+      "id": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+      "name": "GET /api/reservations/:id",
+      "locator": "GET /api/reservations/:id"
+    },
+    {
+      "kind": "journey",
+      "id": "f7acf160-f797-4077-ac1c-fb723c1dfb07",
+      "name": "Reserve and cancel reservation",
+      "surfaceCount": 3,
+      "testFolder": "reserve-and-cancel-reservation"
+    },
+    {
+      "kind": "evidence",
+      "id": "1f8fd2c1-5076-464e-b6a1-d93ed2ce4db4",
+      "evidenceKind": "agent_reported",
+      "productVersion": "2.5",
+      "createdAt": "2026-09-09T07:28:25.219Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "6493e244-4396-4521-8574-f6cffc4aa5ba",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:34:05.068Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "090e31d0-763c-4eab-9397-4142eeafb452",
+      "evidenceKind": "agent_reported",
+      "productVersion": "2.5",
+      "createdAt": "2026-09-09T07:35:10.654Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "618905e4-b2ea-4090-9bc2-bf9d344208ec",
+      "evidenceKind": "agent_reported",
+      "productVersion": "2.5",
+      "createdAt": "2026-09-09T07:35:30.827Z",
+      "linkedObservationCount": 1
+    }
+  ],
+  "storedRelationships": [
+    {
+      "kind": "journey_surface",
+      "journeyId": "f7acf160-f797-4077-ac1c-fb723c1dfb07",
+      "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "f7acf160-f797-4077-ac1c-fb723c1dfb07",
+      "surfaceId": "486a9b5c-239f-493f-b4a5-4d969c96a430",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "f7acf160-f797-4077-ac1c-fb723c1dfb07",
+      "surfaceId": "f23c4636-be1e-4c66-abbe-46d434f5e30f",
+      "position": 2
+    }
+  ],
+  "revision": "bfbc1b96-d03e-4390-addd-dbeefdc1a404"
+}

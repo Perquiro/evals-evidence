@@ -1,0 +1,33 @@
+{
+  "authority": "53deabaeeda0d9c8643eda98eb4a95b2d3f36ce8",
+  "results": [
+    {
+      "path": "evals/command-skills/cases/explore/04-discover-library.inventory.json",
+      "exactBytes": false,
+      "equalWithLfLineEndings": true,
+      "sha256": "def22bf386a557e786a69ec4f2579d416c76c0c4f39554e182b5be757ca7756d",
+      "sourceSha256": "69437b4a3ae5bb80f11e0168920e2281deedd0227426e22e39e66fd66bb8ee12"
+    },
+    {
+      "path": "evals/command-skills/cases/explore/04-discover-library.md",
+      "exactBytes": false,
+      "equalWithLfLineEndings": true,
+      "sha256": "178bcb2d61b33e285253e00e456f180b0f35d31a53d1cf0a8d9eda43bebabc58",
+      "sourceSha256": "b4f447474ee642a2a337a863ad63543011ab77d1b1bd1f609e7bc37316ea3780"
+    },
+    {
+      "path": "evals/command-skills/variants/explore-delegated-v8/SKILL.md",
+      "exactBytes": true,
+      "equalWithLfLineEndings": true,
+      "sha256": "4df221ad7fd338a88e78cab5c0fd498d314a9bed545a178be1b99fbbe9d7d956",
+      "sourceSha256": "4df221ad7fd338a88e78cab5c0fd498d314a9bed545a178be1b99fbbe9d7d956"
+    },
+    {
+      "path": "evals/command-skills/scripts/library-product.mjs",
+      "exactBytes": false,
+      "equalWithLfLineEndings": true,
+      "sha256": "097bef8d75f4ecfcc0f7683d15aed60ec2a3e73fcbc28e98ed5ae7e31c1b11b9",
+      "sourceSha256": "b152d07b2c913acfd6f598efb0951114a151e167194f719ac7de5e42b691b6b7"
+    }
+  ]
+}

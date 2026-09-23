@@ -1,0 +1,179 @@
+[
+  {
+    "event": 432,
+    "proposal": {
+      "requestToken": "[redacted]",
+      "journeyGroups": [
+        {
+          "journeyId": "59d1eed9-5ff7-40bd-a66e-69c503679e5c",
+          "why": "Why now: Emily completed a dated Vacation submission that created a pending request and navigated to My leave, while an empty-date submission was client-side blocked. Observations: 5, 10, and 15 for Emily.dawson.",
+          "scenarios": [
+            {
+              "surfaces": [
+                {
+                  "platform": "browser",
+                  "surfaceId": "eaa19f40-8187-4fb8-abd8-f5548231ab87"
+                }
+              ],
+              "actors": [
+                "Emily.dawson"
+              ],
+              "gherkin": "Given Emily.dawson is on the New leave request form\nWhen she submits the form without a start date and an end date\nThen the form remains displayed with the message Please fill in all required fields.",
+              "name": "Require leave dates before submission"
+            },
+            {
+              "surfaces": [
+                {
+                  "platform": "browser",
+                  "surfaceId": "c2fc1950-0c5c-4c79-85e0-666a3303e08e"
+                },
+                {
+                  "platform": "browser",
+                  "surfaceId": "eaa19f40-8187-4fb8-abd8-f5548231ab87"
+                },
+                {
+                  "platform": "browser",
+                  "surfaceId": "8a9cdc8f-1645-4583-a409-32228412c0d3"
+                }
+              ],
+              "actors": [
+                "Emily.dawson"
+              ],
+              "gherkin": "Given Emily.dawson is on the New leave request form\nAnd Vacation is selected with start date 2026-09-15 and end date 2026-09-16\nWhen she submits the request\nThen My leave shows a pending Vacation request for 2 days",
+              "name": "Submit a dated Vacation leave request"
+            }
+          ]
+        },
+        {
+          "journeyId": "aaf0b73c-4066-4796-9368-a0794281b8f9",
+          "why": "Why now: The first approval action opened a confirmation, and final approval made Emily request 3 approved and removed it from pending approvals. Observations: 31, 37, and 43 for michael.reed.",
+          "scenarios": [
+            {
+              "surfaces": [
+                {
+                  "platform": "browser",
+                  "surfaceId": "7b057292-6c84-4060-80ca-20d3901f1022"
+                }
+              ],
+              "actors": [
+                "michael.reed"
+              ],
+              "gherkin": "Given michael.reed is viewing a pending Vacation request for Emily.dawson dated 2026-09-15 through 2026-09-16 in Manager approvals\nWhen he selects Approve and confirms approval\nThen the request is approved and no longer appears in pending approvals",
+              "name": "Confirm approval of a pending employee leave request"
+            }
+          ]
+        }
+      ]
+    },
+    "result": {
+      "id": "ffb61fa3-9940-490a-a12b-34a22aca7782",
+      "status": "open",
+      "createdAt": "2026-09-10T16:16:23.639Z",
+      "kind": "create",
+      "journeyGroups": [
+        {
+          "journeyId": "59d1eed9-5ff7-40bd-a66e-69c503679e5c",
+          "journeyName": "Emily submits a dated vacation leave request",
+          "why": "Why now: Emily completed a dated Vacation submission that created a pending request and navigated to My leave, while an empty-date submission was client-side blocked. Observations: 5, 10, and 15 for Emily.dawson.",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "d3a13c13-757a-41f0-8346-fb1c23e5a02f",
+                "journeyId": "59d1eed9-5ff7-40bd-a66e-69c503679e5c",
+                "journeyName": "Emily submits a dated vacation leave request",
+                "name": "Require leave dates before submission",
+                "gherkin": "Given Emily.dawson is on the New leave request form\nWhen she submits the form without a start date and an end date\nThen the form remains displayed with the message Please fill in all required fields.",
+                "surfaces": [
+                  {
+                    "surfaceId": "eaa19f40-8187-4fb8-abd8-f5548231ab87",
+                    "surfaceName": "New leave request",
+                    "platform": "browser"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "cb2bf7e4-463a-44af-8096-6113e62cae1a",
+                    "actorName": "Emily.dawson"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T16:16:23.639Z",
+                "history": []
+              },
+              "contradictions": []
+            },
+            {
+              "scenario": {
+                "id": "09011fa9-d989-41f4-a6ef-30ca65c1d499",
+                "journeyId": "59d1eed9-5ff7-40bd-a66e-69c503679e5c",
+                "journeyName": "Emily submits a dated vacation leave request",
+                "name": "Submit a dated Vacation leave request",
+                "gherkin": "Given Emily.dawson is on the New leave request form\nAnd Vacation is selected with start date 2026-09-15 and end date 2026-09-16\nWhen she submits the request\nThen My leave shows a pending Vacation request for 2 days",
+                "surfaces": [
+                  {
+                    "surfaceId": "c2fc1950-0c5c-4c79-85e0-666a3303e08e",
+                    "surfaceName": "Employee dashboard",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "eaa19f40-8187-4fb8-abd8-f5548231ab87",
+                    "surfaceName": "New leave request",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "8a9cdc8f-1645-4583-a409-32228412c0d3",
+                    "surfaceName": "My leave",
+                    "platform": "browser"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "cb2bf7e4-463a-44af-8096-6113e62cae1a",
+                    "actorName": "Emily.dawson"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T16:16:23.639Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        },
+        {
+          "journeyId": "aaf0b73c-4066-4796-9368-a0794281b8f9",
+          "journeyName": "Michael approves Emily request 3",
+          "why": "Why now: The first approval action opened a confirmation, and final approval made Emily request 3 approved and removed it from pending approvals. Observations: 31, 37, and 43 for michael.reed.",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "f695474b-d0fb-41dc-98a2-b865bf219598",
+                "journeyId": "aaf0b73c-4066-4796-9368-a0794281b8f9",
+                "journeyName": "Michael approves Emily request 3",
+                "name": "Confirm approval of a pending employee leave request",
+                "gherkin": "Given michael.reed is viewing a pending Vacation request for Emily.dawson dated 2026-09-15 through 2026-09-16 in Manager approvals\nWhen he selects Approve and confirms approval\nThen the request is approved and no longer appears in pending approvals",
+                "surfaces": [
+                  {
+                    "surfaceId": "7b057292-6c84-4060-80ca-20d3901f1022",
+                    "surfaceName": "Manager approvals",
+                    "platform": "browser"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "73c2f395-8cad-4f79-a290-95a22e2516f7",
+                    "actorName": "michael.reed"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T16:16:23.639Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

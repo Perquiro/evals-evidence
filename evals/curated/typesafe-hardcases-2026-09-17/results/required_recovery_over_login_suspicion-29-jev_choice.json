@@ -1,0 +1,20 @@
+{
+  "status": "host_decision",
+  "host": {
+    "status": "recovery_precedence",
+    "precedence_ids": [
+      "c4"
+    ],
+    "reason": "Existing recovery rules take precedence; TypeSafe is not called."
+  },
+  "selected_id": "c4",
+  "latency_ms": 0.0,
+  "usage": null,
+  "api_calls": 0,
+  "case": "required_recovery_over_login_suspicion",
+  "method": "jev_choice",
+  "seed": 29,
+  "started_utc": "2026-09-17T19:32:47.085175+00:00",
+  "total_selection_ms": 0.09849999332800508,
+  "state_sha256": "69bafed3b7a392eafd65d769ba7a37e819832ca6d76cc95a8398418a8b5d9ecb"
+}

@@ -1,0 +1,5 @@
+{
+  "requestToken": "9444c2e5-4c3e-4e6f-9256-1212f112e89f",
+  "name": "GET /loans/:id",
+  "locator": "GET /loans/:id"
+}

@@ -1,0 +1,14 @@
+{
+  "requestToken": "59843fa4-89ce-433b-bc27-4438a8c9ab10",
+  "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following Account reached GET /account and returned actor Librarian with reservations and loans links.",
+      "look": { "item": { "id": "ce417e2d-882c-4392-9331-4d89f35e3144" }, "kind": "reached", "reachedSurfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c" }
+    }
+  ]
+}

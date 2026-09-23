@@ -1,0 +1,7 @@
+{
+  "checked_files": 4069,
+  "checked_bytes": 30688273,
+  "credential_found": false,
+  "matching_files": [],
+  "scope": "Available raw/preparation artifact files and captures; excludes private Project state. Repeat against the final curated bundle before publishing."
+}

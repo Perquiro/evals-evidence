@@ -1,0 +1,51 @@
+[
+  {
+    "index": 0,
+    "http": 200,
+    "model": "jev-1.13.0",
+    "adviceMatchCount": 1,
+    "adviceStatus": "no_selection"
+  },
+  {
+    "index": 1,
+    "http": 200,
+    "model": "jev-1.13.0",
+    "adviceMatchCount": 1,
+    "adviceStatus": "selected"
+  },
+  {
+    "index": 2,
+    "http": 200,
+    "model": "jev-1.13.0",
+    "adviceMatchCount": 1,
+    "adviceStatus": "selected"
+  },
+  {
+    "index": 3,
+    "http": 200,
+    "model": "jev-1.13.0",
+    "adviceMatchCount": 1,
+    "adviceStatus": "selected"
+  },
+  {
+    "index": 4,
+    "http": 200,
+    "model": "jev-1.13.0",
+    "adviceMatchCount": 1,
+    "adviceStatus": "selected"
+  },
+  {
+    "index": 5,
+    "http": 200,
+    "model": "jev-1.13.0",
+    "adviceMatchCount": 1,
+    "adviceStatus": "selected"
+  },
+  {
+    "index": 6,
+    "http": 200,
+    "model": "jev-1.13.0",
+    "adviceMatchCount": 1,
+    "adviceStatus": "selected"
+  }
+]

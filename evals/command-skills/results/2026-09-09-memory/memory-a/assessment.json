@@ -1,0 +1,1005 @@
+{
+  "summary": {
+    "seen": 18,
+    "factRecorded": 17,
+    "durablyRecorded": 5,
+    "canonicalRecord": 3,
+    "total": 25,
+    "missed": [
+      "W10",
+      "W11",
+      "W17",
+      "W20",
+      "W22",
+      "W24",
+      "W25"
+    ],
+    "seenButUnrecorded": [
+      "W01",
+      "W03",
+      "W04",
+      "W05",
+      "W06",
+      "W07",
+      "W08",
+      "W09",
+      "W12",
+      "W13",
+      "W15",
+      "W21",
+      "W23"
+    ],
+    "productRequestsPerDurableOutcome": 8,
+    "mcpReadsPerDurableOutcome": 9,
+    "mcpWritesPerDurableOutcome": 13.4
+  },
+  "items": [
+    {
+      "id": "W01",
+      "priority": "core",
+      "task": "Find books",
+      "title": "Browse the full catalog",
+      "discovery": "Root catalog link",
+      "obligation": "Catalog includes the three books and their available/borrowed distinction.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Accurate initial catalog fact, saved before a Journey.",
+      "productEvents": [
+        7,
+        81,
+        143
+      ],
+      "facts": [
+        {
+          "observationId": "80f7a1cb-61d6-4d78-bcf7-d323f45f4fd8",
+          "observationSeq": 1,
+          "writeEvent": 10,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /catalog",
+          "body": "GET /catalog returned River Atlas as available, Garden Notes and Night Trains as unavailable, links for all three books, and a q title-search field."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W02",
+      "priority": "core",
+      "task": "Find books",
+      "title": "Find a matching title",
+      "discovery": "Catalog search field",
+      "obligation": "The actual query and matching result are stated.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": true,
+      "canonicalRecord": true,
+      "status": "completed and recorded",
+      "reason": "Actual matching queries and results linked to Search catalog.",
+      "productEvents": [
+        47,
+        107,
+        146
+      ],
+      "facts": [
+        {
+          "observationId": "36324916-f028-44fa-9168-1b24480d97f1",
+          "observationSeq": 16,
+          "writeEvent": 57,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /catalog",
+          "journey": "Search catalog",
+          "body": "GET /catalog?q=River returned only River Atlas and retained the q title-search field."
+        },
+        {
+          "observationId": "1cd3cff7-dcb5-4762-8883-99300df483d0",
+          "observationSeq": 38,
+          "writeEvent": 153,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /catalog",
+          "journey": "Search catalog",
+          "body": "GET /catalog?q=Garden returned only Garden Notes, marked available, and retained the q title-search field."
+        }
+      ],
+      "remaining": null
+    },
+    {
+      "id": "W03",
+      "priority": "core",
+      "task": "Find books",
+      "title": "Search with no matches",
+      "discovery": "Catalog search field",
+      "obligation": "A no-match query returns an empty result and the exact message.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Librarian's no-match fact is accurate but Surface-only.",
+      "productEvents": [
+        108
+      ],
+      "facts": [
+        {
+          "observationId": "42d52d7f-ce88-4108-9eca-df9ae7879c66",
+          "observationSeq": 29,
+          "writeEvent": 111,
+          "finalRead": "contexts/actor-a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf.json",
+          "actor": "Librarian",
+          "surface": "GET /catalog",
+          "body": "GET /catalog?q=River%20Atlas returned only River Atlas. GET /catalog?q=Unknown%20title returned an empty books array, message 'No books found', and clear href /catalog."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W04",
+      "priority": "secondary",
+      "task": "Find books",
+      "title": "Clear an empty search",
+      "discovery": "Clear link in no-match response",
+      "obligation": "Clearing the failed search restores the catalog, grounded in the actual sequence.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": false,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "A full catalog response occurred after the no-match response, but the later return readback does not establish following Clear. Receipt matcher alone overstates intentional recovery.",
+      "productEvents": [
+        143
+      ],
+      "facts": [],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W05",
+      "priority": "core",
+      "task": "Reserve a book",
+      "title": "Inspect an available book",
+      "discovery": "Catalog book links",
+      "obligation": "The book is available and offers a reservation action.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Available detail and offered action saved without a Journey.",
+      "productEvents": [
+        12
+      ],
+      "facts": [
+        {
+          "observationId": "15f6b2c6-977e-4c29-b9f8-d5ccbc7666be",
+          "observationSeq": 2,
+          "writeEvent": 14,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /books/:id",
+          "body": "GET /books/101 returned River Atlas as available and offered Reader a POST /holds Reserve book action with bookId 101."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W06",
+      "priority": "core",
+      "task": "Reserve a book",
+      "title": "Inspect a borrowed book",
+      "discovery": "Catalog book links",
+      "obligation": "A borrowed book is unavailable under the same parameterized Surface.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Unavailable detail saved without a Journey.",
+      "productEvents": [
+        48
+      ],
+      "facts": [
+        {
+          "observationId": "45c31841-e71d-40f6-a8d1-d1b5d7c5c3c7",
+          "observationSeq": 13,
+          "writeEvent": 51,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /books/:id",
+          "body": "GET /books/102 returned Garden Notes as unavailable while still offering Reader the POST /holds Reserve book action with bookId 102."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W07",
+      "priority": "secondary",
+      "task": "Reserve a book",
+      "title": "No reservations yet",
+      "discovery": "Account reservations link",
+      "obligation": "An empty reservations list shows No reservations.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Reader's empty collection saved Surface-only. Cancellation-linked earlier empty fact belongs to a different task.",
+      "productEvents": [
+        36,
+        145
+      ],
+      "facts": [
+        {
+          "observationId": "4229a994-3b2a-4c0d-80b2-4e23c58d782f",
+          "observationSeq": 35,
+          "writeEvent": 149,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /holds",
+          "body": "GET /holds returned an empty holds array and the message 'No reservations'."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W08",
+      "priority": "core",
+      "task": "Reserve a book",
+      "title": "Reserve an available book",
+      "discovery": "Book detail action",
+      "obligation": "Submitting an available book creates a reservation with its returned identity.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Created identity saved on source and actual endpoint, both Surface-only.",
+      "productEvents": [
+        19
+      ],
+      "facts": [
+        {
+          "observationId": "71a2d5ee-7c8a-4844-bbf3-2ea72f5249b7",
+          "observationSeq": 4,
+          "writeEvent": 21,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /books/:id",
+          "body": "POST /holds with bookId 101 returned reservation 301 for River Atlas and linked to /holds."
+        },
+        {
+          "observationId": "a38e2221-9c03-47fc-bea4-ae109beee314",
+          "observationSeq": 5,
+          "writeEvent": 23,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "POST /holds",
+          "body": "POST /holds returned created hold 301 for River Atlas and a Reservations link to /holds."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W09",
+      "priority": "core",
+      "task": "Reserve a book",
+      "title": "Borrowed book cannot be reserved",
+      "discovery": "Borrowed book detail action",
+      "obligation": "A reservation request for an unavailable book returns the conflict and exact message.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Conflict fact saved on the source action's Surface without Journey. A second identical HTTP request was sent without a fresh accepted attempt.",
+      "productEvents": [
+        52,
+        53
+      ],
+      "facts": [
+        {
+          "observationId": "c39621dc-a46b-412a-91dd-128b95792d73",
+          "observationSeq": 15,
+          "writeEvent": 54,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /books/:id",
+          "body": "POST /holds with bookId 102 returned HTTP 409 with error 'Book is unavailable'."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W10",
+      "priority": "secondary",
+      "task": "Reserve a book",
+      "title": "Reservation needs a book",
+      "discovery": "Reservation action's bookId field",
+      "obligation": "Omitting the book field produces the required-field error.",
+      "considered": "unknown",
+      "actionCompleted": "no",
+      "factRecorded": false,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "missed",
+      "reason": "Required-book rejection not exercised before shared budget ended.",
+      "productEvents": [],
+      "facts": [],
+      "remaining": "Omitting the book field produces the required-field error."
+    },
+    {
+      "id": "W11",
+      "priority": "secondary",
+      "task": "Reserve a book",
+      "title": "Duplicate reservation is rejected",
+      "discovery": "Repeat a completed reservation action",
+      "obligation": "Reserving an already reserved book returns Already reserved.",
+      "considered": "unknown",
+      "actionCompleted": "no",
+      "factRecorded": false,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "missed",
+      "reason": "Duplicate reservation branch not exercised.",
+      "productEvents": [],
+      "facts": [],
+      "remaining": "Reserving an already reserved book returns Already reserved."
+    },
+    {
+      "id": "W12",
+      "priority": "core",
+      "task": "Reserve a book",
+      "title": "Created reservation appears in account",
+      "discovery": "Reservations link returned by create",
+      "obligation": "The created reservation can be read back from the account list.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Created reservation readback saved without Journey.",
+      "productEvents": [
+        25
+      ],
+      "facts": [
+        {
+          "observationId": "4d20a5d5-30b2-4632-9d58-a1f97cbf44d9",
+          "observationSeq": 6,
+          "writeEvent": 27,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /holds",
+          "body": "GET /holds returned Reader's hold 301 for River Atlas and offered DELETE /holds/301 to cancel it."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W13",
+      "priority": "core",
+      "task": "Cancel a reservation",
+      "title": "Cancel a reservation",
+      "discovery": "Cancellation action on a listed reservation",
+      "obligation": "Cancellation of the selected reservation succeeds.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Cancellation saved on source GET /holds without Journey; actual DELETE endpoint absent.",
+      "productEvents": [
+        32
+      ],
+      "facts": [
+        {
+          "observationId": "d80acd2f-7d79-4c89-80f2-aae32403016f",
+          "observationSeq": 8,
+          "writeEvent": 33,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /holds",
+          "body": "DELETE /holds/301 returned the message 'Reservation cancelled'."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W14",
+      "priority": "core",
+      "task": "Cancel a reservation",
+      "title": "Cancellation removes the reservation",
+      "discovery": "Return to reservations list",
+      "obligation": "The cancelled reservation no longer appears; an empty list is shown.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": true,
+      "canonicalRecord": true,
+      "status": "completed and recorded",
+      "reason": "Exact cancellation readback linked to Cancel hold.",
+      "productEvents": [
+        36,
+        145
+      ],
+      "facts": [
+        {
+          "observationId": "0a09b1a0-a296-4e4b-a10b-7b71c59a66a0",
+          "observationSeq": 9,
+          "writeEvent": 37,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /holds",
+          "journey": "Cancel hold",
+          "body": "After cancellation, GET /holds returned an empty holds array and the message 'No reservations'."
+        }
+      ],
+      "remaining": null
+    },
+    {
+      "id": "W15",
+      "priority": "core",
+      "task": "Renew a loan",
+      "title": "Inspect the current loan",
+      "discovery": "Account loans link then loan detail link",
+      "obligation": "The current loan has an initial due date and renewal/return actions.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Full initial due date and both actions saved without Journey. The later linked precondition omits the due date.",
+      "productEvents": [
+        44,
+        130
+      ],
+      "facts": [
+        {
+          "observationId": "fc2f27f8-9dc1-4eb1-971e-2a345cf468ee",
+          "observationSeq": 12,
+          "writeEvent": 46,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /loans/:id",
+          "body": "GET /loans/201 returned Garden Notes with zero renewals and due date 2026-10-01, offering Reader POST actions to renew or return the loan."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W16",
+      "priority": "core",
+      "task": "Renew a loan",
+      "title": "Renew the loan",
+      "discovery": "Loan detail renewal action",
+      "obligation": "Renewal changes the due date and renewal count.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": true,
+      "canonicalRecord": false,
+      "status": "completed and recorded",
+      "reason": "Actual renewal result linked to the loan-detail Journey. Meaning is related, but POST endpoint was not recorded.",
+      "productEvents": [
+        132
+      ],
+      "facts": [
+        {
+          "observationId": "f4668802-9f13-45c9-98d4-51a5aa7fab0e",
+          "observationSeq": 31,
+          "writeEvent": 133,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /loans/:id",
+          "journey": "View loan details",
+          "body": "POST /loans/201/renew returned loan 201 with renewals 1 and due date 2026-10-15."
+        }
+      ],
+      "remaining": null
+    },
+    {
+      "id": "W17",
+      "priority": "core",
+      "task": "Renew a loan",
+      "title": "Renewal limit is enforced",
+      "discovery": "Repeat the renewal action",
+      "obligation": "A second renewal returns the conflict and exact limit message.",
+      "considered": "yes",
+      "actionCompleted": "no",
+      "factRecorded": false,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "considered, incomplete",
+      "reason": "Reader continuation named renewal as remaining; no repeat-limit response was observed before return.",
+      "productEvents": [],
+      "facts": [],
+      "remaining": "A second renewal returns the conflict and exact limit message."
+    },
+    {
+      "id": "W18",
+      "priority": "core",
+      "task": "Return a borrowed book",
+      "title": "Return the reader's book",
+      "discovery": "Loan detail return action",
+      "obligation": "The Reader's return succeeds for the borrowed book.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": true,
+      "canonicalRecord": false,
+      "status": "completed and recorded",
+      "reason": "Return outcome linked to Return book; actual POST endpoint was not recorded.",
+      "productEvents": [
+        139
+      ],
+      "facts": [
+        {
+          "observationId": "6531a2e4-fca5-4066-bc1d-a55839b1bbc9",
+          "observationSeq": 33,
+          "writeEvent": 140,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /loans/:id",
+          "journey": "Return book",
+          "body": "POST /loans/201/return returned 'Book returned' for book 102 and linked to /catalog and /loans."
+        }
+      ],
+      "remaining": null
+    },
+    {
+      "id": "W19",
+      "priority": "core",
+      "task": "Return a borrowed book",
+      "title": "Returned loan disappears",
+      "discovery": "Loans link returned by return action",
+      "obligation": "The returned loan no longer appears in the loans list.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": true,
+      "canonicalRecord": true,
+      "status": "completed and recorded",
+      "reason": "Actual empty loans after return linked to Return book.",
+      "productEvents": [
+        142
+      ],
+      "facts": [
+        {
+          "observationId": "e21003a7-a4e7-4d5f-b06a-00221dff60e1",
+          "observationSeq": 36,
+          "writeEvent": 151,
+          "finalRead": "contexts/actor-61409925-dde8-4f75-9801-942d22518b3d.json",
+          "actor": "Reader",
+          "surface": "GET /loans",
+          "journey": "Return book",
+          "body": "After returning loan 201, GET /loans returned an empty loans array and the message 'No loans'."
+        }
+      ],
+      "remaining": null
+    },
+    {
+      "id": "W20",
+      "priority": "core",
+      "task": "Check in a book",
+      "title": "Reader cannot access service desk",
+      "discovery": "Root service-desk link while Reader",
+      "obligation": "Reader receives a permission denial at the service desk.",
+      "considered": "unknown",
+      "actionCompleted": "no",
+      "factRecorded": false,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "missed",
+      "reason": "Reader service-desk denial not exercised.",
+      "productEvents": [],
+      "facts": [],
+      "remaining": "Reader receives a permission denial at the service desk."
+    },
+    {
+      "id": "W21",
+      "priority": "core",
+      "task": "Check in a book",
+      "title": "Librarian can access service desk",
+      "discovery": "Root service-desk link while Librarian",
+      "obligation": "Librarian sees the service desk and pending check-in work.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Librarian desk action and pending book saved without Journey.",
+      "productEvents": [
+        83,
+        105
+      ],
+      "facts": [
+        {
+          "observationId": "3ceda2c0-9fc7-4695-be44-76d2b466b344",
+          "observationSeq": 23,
+          "writeEvent": 98,
+          "finalRead": "contexts/actor-a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf.json",
+          "actor": "Librarian",
+          "surface": "GET /desk",
+          "body": "GET /desk offered a Check in a book action at POST /desk/returns with bookId 103 and listed Night Trains as the pending return."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W22",
+      "priority": "secondary",
+      "task": "Check in a book",
+      "title": "Check-in needs a book",
+      "discovery": "Check-in action's bookId field",
+      "obligation": "Check-in without a book returns the required-field error.",
+      "considered": "unknown",
+      "actionCompleted": "no",
+      "factRecorded": false,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "missed",
+      "reason": "Empty-book check-in branch not exercised.",
+      "productEvents": [],
+      "facts": [],
+      "remaining": "Check-in without a book returns the required-field error."
+    },
+    {
+      "id": "W23",
+      "priority": "core",
+      "task": "Check in a book",
+      "title": "Check in the pending book",
+      "discovery": "Service-desk check-in action",
+      "obligation": "Librarian successfully checks in the pending book.",
+      "considered": "yes",
+      "actionCompleted": "yes",
+      "factRecorded": true,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "seen but unrecorded",
+      "reason": "Successful check-in saved on endpoint and source, neither Journey-linked.",
+      "productEvents": [
+        100
+      ],
+      "facts": [
+        {
+          "observationId": "78eae38b-eff3-4f80-859e-d2d812f1aead",
+          "observationSeq": 25,
+          "writeEvent": 102,
+          "finalRead": "contexts/actor-a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf.json",
+          "actor": "Librarian",
+          "surface": "POST /desk/returns",
+          "body": "POST /desk/returns with bookId 103 returned 'Book checked in' and a link to /books/103."
+        },
+        {
+          "observationId": "d3e61d25-981b-405d-a037-802f1c7cb219",
+          "observationSeq": 26,
+          "writeEvent": 103,
+          "finalRead": "contexts/actor-a6b0d017-9e46-4e87-8ccf-ce5bc5b3fccf.json",
+          "actor": "Librarian",
+          "surface": "GET /desk",
+          "body": "POST /desk/returns with bookId 103 returned 'Book checked in' and href /books/103."
+        }
+      ],
+      "remaining": "Record the fact with its relevant Journey context."
+    },
+    {
+      "id": "W24",
+      "priority": "secondary",
+      "task": "Check in a book",
+      "title": "Repeated check-in is rejected",
+      "discovery": "Repeat the completed check-in action",
+      "obligation": "Repeating check-in returns the exact conflict message.",
+      "considered": "unknown",
+      "actionCompleted": "no",
+      "factRecorded": false,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "missed",
+      "reason": "Repeated check-in rejection not exercised.",
+      "productEvents": [],
+      "facts": [],
+      "remaining": "Repeating check-in returns the exact conflict message."
+    },
+    {
+      "id": "W25",
+      "priority": "core",
+      "task": "Check in a book",
+      "title": "Checked-in book becomes available",
+      "discovery": "Book link returned by check-in",
+      "obligation": "The Reader can observe the checked-in book as available.",
+      "considered": "unknown",
+      "actionCompleted": "no",
+      "factRecorded": false,
+      "durablyRecorded": false,
+      "canonicalRecord": false,
+      "status": "missed",
+      "reason": "Librarian readback exists, but frozen item requires Reader's GET /books/103 after check-in. Reader's later full catalog is not this request.",
+      "productEvents": [],
+      "facts": [],
+      "remaining": "The Reader can observe the checked-in book as available."
+    }
+  ],
+  "surfaces": [
+    {
+      "locator": "GET /catalog",
+      "recordedIds": [
+        "6deef385-a34b-4ca1-8351-505d746b2386"
+      ],
+      "visitedEvents": [
+        7,
+        47,
+        81,
+        107,
+        108,
+        143,
+        146
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ]
+    },
+    {
+      "locator": "GET /books/:id",
+      "recordedIds": [
+        "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f"
+      ],
+      "visitedEvents": [
+        12,
+        48,
+        84,
+        85,
+        86,
+        106,
+        144
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W05",
+        "W06"
+      ]
+    },
+    {
+      "locator": "GET /holds",
+      "recordedIds": [
+        "3cb15245-0004-42cb-9918-d157ab22ab06"
+      ],
+      "visitedEvents": [
+        25,
+        36,
+        87,
+        145
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W07",
+        "W12",
+        "W14"
+      ]
+    },
+    {
+      "locator": "POST /holds",
+      "recordedIds": [
+        "cf447cfd-b731-4e10-9d1d-e22ac5311fae"
+      ],
+      "visitedEvents": [
+        19,
+        52,
+        53
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W08",
+        "W09"
+      ]
+    },
+    {
+      "locator": "DELETE /holds/:id",
+      "recordedIds": [],
+      "visitedEvents": [
+        32
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W13"
+      ]
+    },
+    {
+      "locator": "GET /loans/:id",
+      "recordedIds": [
+        "0a263157-cf04-40df-8e29-58f7b001d4d6"
+      ],
+      "visitedEvents": [
+        44,
+        89,
+        130,
+        136
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W15"
+      ]
+    },
+    {
+      "locator": "POST /loans/:id/renew",
+      "recordedIds": [],
+      "visitedEvents": [
+        132
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W16"
+      ]
+    },
+    {
+      "locator": "POST /loans/:id/return",
+      "recordedIds": [],
+      "visitedEvents": [
+        139
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W18"
+      ]
+    },
+    {
+      "locator": "GET /loans",
+      "recordedIds": [
+        "941fdca3-0920-45d3-97c3-6604eb68ae3c"
+      ],
+      "visitedEvents": [
+        41,
+        88,
+        142
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W19"
+      ]
+    },
+    {
+      "locator": "GET /desk",
+      "recordedIds": [
+        "7e4e2163-6f55-4b8a-ad15-a1c3a9bd54c5"
+      ],
+      "visitedEvents": [
+        83,
+        105
+      ],
+      "recordedBeforeFirstVisit": [],
+      "outcomesSeen": [
+        "W21"
+      ]
+    },
+    {
+      "locator": "POST /desk/returns",
+      "recordedIds": [
+        "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258"
+      ],
+      "visitedEvents": [
+        100
+      ],
+      "recordedBeforeFirstVisit": [
+        {
+          "id": "ba0dba7d-9c81-4d4c-a19f-e23d7e49d258",
+          "event": 91
+        }
+      ],
+      "outcomesSeen": [
+        "W23"
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "task": "Find books",
+      "outcomes": [
+        "W01",
+        "W02",
+        "W03",
+        "W04"
+      ],
+      "journeys": [
+        "Search catalog"
+      ]
+    },
+    {
+      "task": "Reserve a book",
+      "outcomes": [
+        "W05",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10",
+        "W11",
+        "W12"
+      ],
+      "journeys": []
+    },
+    {
+      "task": "Cancel a reservation",
+      "outcomes": [
+        "W13",
+        "W14"
+      ],
+      "journeys": [
+        "Cancel hold"
+      ]
+    },
+    {
+      "task": "Renew a loan",
+      "outcomes": [
+        "W15",
+        "W16",
+        "W17"
+      ],
+      "journeys": [
+        "View loan details"
+      ]
+    },
+    {
+      "task": "Return a borrowed book",
+      "outcomes": [
+        "W18",
+        "W19"
+      ],
+      "journeys": [
+        "Return book"
+      ]
+    },
+    {
+      "task": "Check in a book",
+      "outcomes": [
+        "W20",
+        "W21",
+        "W22",
+        "W23",
+        "W24",
+        "W25"
+      ],
+      "journeys": []
+    }
+  ],
+  "supportingNavigation": [
+    {
+      "pathname": "/",
+      "events": [
+        5,
+        79
+      ]
+    },
+    {
+      "pathname": "/docs",
+      "events": [
+        6,
+        80
+      ]
+    },
+    {
+      "pathname": "/account",
+      "events": [
+        38,
+        82
+      ]
+    }
+  ],
+  "limits": "Human annotations judge factual sufficiency and related Journey meaning. Surface-only facts count separately; canonical endpoint quality is separate from frozen Journey-linked durability. No criteria or denominator changed."
+}

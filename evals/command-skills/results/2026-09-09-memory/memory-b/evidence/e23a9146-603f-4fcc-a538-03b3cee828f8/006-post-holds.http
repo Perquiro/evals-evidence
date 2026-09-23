@@ -1,0 +1,4 @@
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{"id":"301","bookId":"101","title":"River Atlas","links":{"reservations":"/holds"}}

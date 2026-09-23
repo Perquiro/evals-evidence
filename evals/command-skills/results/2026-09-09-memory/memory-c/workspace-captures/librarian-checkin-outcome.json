@@ -1,0 +1,18 @@
+{
+  "requestToken": "5ea4aa25-b00d-49bd-96f5-3456554ba034",
+  "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "The authorized POST /desk/returns request for bookId 103 returned HTTP 404 with JSON error Book not found.",
+      "look": {
+        "item": { "id": "fe21b078-dabf-45de-b51f-c2d6fcff48ce" },
+        "kind": "exercised",
+        "attemptObservationId": "ec92a4dc-15ad-4a7b-9195-c20d4e2a0019"
+      }
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "reviewer": "/root/blind_grader_a",
+  "samples": {
+    "sample-01": {
+      "items": [
+        {"item_id":"login","credit":true,"action_ids":["action-2","action-3","action-4","action-5"],"observation_ids":["880d4cd2-83f3-4e36-b64d-c4ac277caaa6","b3672fa9-222f-4aff-8f1b-41194910f583"],"rationale":"The signed-out form, Employee credential entry, successful submission, and Emily Dawson dashboard were captured."},
+        {"item_id":"invalid-login","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No invalid credential submission or saved authentication result was captured."},
+        {"item_id":"logout","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No logout and private-page revisit were captured."},
+        {"item_id":"directory-search","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The directory was opened but no name search and settled result were captured."},
+        {"item_id":"directory-filter","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No department filter combined with a name search was captured."},
+        {"item_id":"directory-empty","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No deliberately unmatched directory search was captured."},
+        {"item_id":"directory-sort","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No two clicks on one sortable header with both resulting orders were captured."},
+        {"item_id":"directory-detail","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No employee detail followed by reload or direct load was captured."},
+        {"item_id":"leave-invalid","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The captured validation submission had empty dates, not an end date before its start date."},
+        {"item_id":"leave-duration","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No Friday-through-Monday interval or displayed duration was captured."},
+        {"item_id":"leave-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No valid leave dates were entered and no valid leave submission occurred."},
+        {"item_id":"leave-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No newly submitted leave request was read from history after navigation or reload."},
+        {"item_id":"timesheet-total","credit":false,"action_ids":[],"observation_ids":[],"rationale":"Only Monday was set; seven valid day values including nonzero weekend hours were not entered."},
+        {"item_id":"timesheet-draft","credit":false,"action_ids":[],"observation_ids":[],"rationale":"A draft was saved, but no reload and post-reload values were captured."},
+        {"item_id":"timesheet-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No timesheet submission and later edit attempt were captured."},
+        {"item_id":"profile-save","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No changed profile field was saved."},
+        {"item_id":"profile-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No profile save followed by reload was captured."}
+      ],
+      "observation_actions": {
+        "880d4cd2-83f3-4e36-b64d-c4ac277caaa6":["action-2"],
+        "b3672fa9-222f-4aff-8f1b-41194910f583":["action-3","action-4","action-5"],
+        "2ebf00eb-c786-4d22-ae0a-5fbc38500da5":["action-10","action-11"],
+        "933f9e61-f329-4069-bca9-226dd1eafc2c":["action-13","action-14"]
+      },
+      "behaviors":[
+        {"id":"behavior-1","description":"Employee credentials authenticated Emily Dawson and opened the dashboard.","action_ids":["action-3","action-4","action-5"],"observation_ids":["b3672fa9-222f-4aff-8f1b-41194910f583"]},
+        {"id":"behavior-2","description":"Submitting a leave form with both required dates empty showed a required-fields message and stayed on the form.","action_ids":["action-10","action-11"],"observation_ids":["2ebf00eb-c786-4d22-ae0a-5fbc38500da5"]},
+        {"id":"behavior-3","description":"Saving a one-hour Monday timesheet draft displayed Draft saved and total 1 h.","action_ids":["action-13","action-14"],"observation_ids":["933f9e61-f329-4069-bca9-226dd1eafc2c"]}
+      ],
+      "open_questions":["Does the saved one-hour draft retain its value after a reload?"],
+      "unsupported_claims":[]
+    },
+    "sample-02": {
+      "items": [
+        {"item_id":"login","credit":true,"action_ids":["action-2","action-3","action-4","action-5"],"observation_ids":["19b1103b-26a8-4b39-a8c2-700b4d0c1b0b","db8c1502-f392-4a29-9a06-399f5411acd0"],"rationale":"The signed-out form and successful Employee authentication into Emily Dawson's portal were saved."},
+        {"item_id":"invalid-login","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No invalid credential submission or saved authentication result was captured."},
+        {"item_id":"logout","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No logout and private-page revisit were captured."},
+        {"item_id":"directory-search","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No name search and settled directory result were captured."},
+        {"item_id":"directory-filter","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No department filter combined with a name search was captured."},
+        {"item_id":"directory-empty","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No deliberately unmatched directory search was captured."},
+        {"item_id":"directory-sort","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No two clicks on one sortable header with both resulting orders were captured."},
+        {"item_id":"directory-detail","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No employee detail followed by reload or direct load was captured."},
+        {"item_id":"leave-invalid","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The validation attempt retained empty date fields; it did not submit an end-before-start interval."},
+        {"item_id":"leave-duration","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No Friday-through-Monday interval or displayed duration was captured."},
+        {"item_id":"leave-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The attempted leave submission had empty required dates and no valid request was created."},
+        {"item_id":"leave-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No newly submitted leave request was read from history after navigation or reload."},
+        {"item_id":"timesheet-total","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No seven-day hours entry with nonzero Saturday and Sunday values was captured."},
+        {"item_id":"timesheet-draft","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No draft save and reload were captured."},
+        {"item_id":"timesheet-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No timesheet submission and later edit attempt were captured."},
+        {"item_id":"profile-save","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No changed profile field was saved."},
+        {"item_id":"profile-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No profile save followed by reload was captured."}
+      ],
+      "observation_actions": {
+        "19b1103b-26a8-4b39-a8c2-700b4d0c1b0b":["action-2"],
+        "db8c1502-f392-4a29-9a06-399f5411acd0":["action-3","action-4","action-5"],
+        "902749ab-a118-411a-bec8-8d9dfa703952":["action-10","action-11"]
+      },
+      "behaviors":[
+        {"id":"behavior-1","description":"Employee credentials authenticated Emily Dawson and opened the authenticated portal.","action_ids":["action-3","action-4","action-5"],"observation_ids":["db8c1502-f392-4a29-9a06-399f5411acd0"]},
+        {"id":"behavior-2","description":"A leave submission with blank dates displayed the required-fields message and remained on the new-request page.","action_ids":["action-10","action-11"],"observation_ids":["902749ab-a118-411a-bec8-8d9dfa703952"]}
+      ],
+      "open_questions":["Can an entered leave date be retained and submitted through the available date control?"],
+      "unsupported_claims":[]
+    },
+    "sample-03": {
+      "items": [
+        {"item_id":"login","credit":true,"action_ids":["action-2","action-3","action-4","action-5"],"observation_ids":["0fd654d0-b9e4-4a58-a68f-d62be9140b31","ab9b1bc6-a2da-4393-80fd-e1fb3782a4b6"],"rationale":"The signed-out form and successful configured Employee sign-in were saved."},
+        {"item_id":"invalid-login","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No invalid credential submission or saved authentication result was captured."},
+        {"item_id":"logout","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No logout and private-page revisit were captured."},
+        {"item_id":"directory-search","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No name search and settled directory result were captured."},
+        {"item_id":"directory-filter","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No department filter combined with a name search was captured."},
+        {"item_id":"directory-empty","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No deliberately unmatched directory search was captured."},
+        {"item_id":"directory-sort","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No two clicks on one sortable header with both resulting orders were captured."},
+        {"item_id":"directory-detail","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No employee detail followed by reload or direct load was captured."},
+        {"item_id":"leave-invalid","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No end-before-start leave interval was submitted."},
+        {"item_id":"leave-duration","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The captured interval was September 29 through September 30, not Friday through Monday."},
+        {"item_id":"leave-submit","credit":true,"action_ids":["action-17","action-18","action-19","action-20"],"observation_ids":["377a74a8-4a00-4109-9860-3621106c97e3","61122907-bbf1-457a-a89e-1fad57c85017"],"rationale":"Date selections and one submit produced a pending two-day Vacation request; submitted values and the immediate history result were saved."},
+        {"item_id":"leave-readback","credit":true,"action_ids":["action-20","action-21"],"observation_ids":["61122907-bbf1-457a-a89e-1fad57c85017"],"rationale":"After submission, the My Leave history captured the linked pending Vacation request with displayed dates, two days, and pending status."},
+        {"item_id":"timesheet-total","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No seven-day hours entry with nonzero Saturday and Sunday values was captured."},
+        {"item_id":"timesheet-draft","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No draft save and reload were captured."},
+        {"item_id":"timesheet-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No timesheet submission and later edit attempt were captured."},
+        {"item_id":"profile-save","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No changed profile field was saved."},
+        {"item_id":"profile-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No profile save followed by reload was captured."}
+      ],
+      "observation_actions": {
+        "0fd654d0-b9e4-4a58-a68f-d62be9140b31":["action-2"],
+        "ab9b1bc6-a2da-4393-80fd-e1fb3782a4b6":["action-3","action-4","action-5"],
+        "377a74a8-4a00-4109-9860-3621106c97e3":["action-17","action-18","action-19"],
+        "61122907-bbf1-457a-a89e-1fad57c85017":["action-20","action-21"]
+      },
+      "behaviors":[
+        {"id":"behavior-1","description":"Employee credentials authenticated the Employee and displayed the dashboard.","action_ids":["action-3","action-4","action-5"],"observation_ids":["ab9b1bc6-a2da-4393-80fd-e1fb3782a4b6"]},
+        {"id":"behavior-2","description":"A September 29–30 Vacation submission produced a pending two-day request, while history displayed September 29 as both endpoints.","action_ids":["action-17","action-18","action-19","action-20","action-21"],"observation_ids":["377a74a8-4a00-4109-9860-3621106c97e3","61122907-bbf1-457a-a89e-1fad57c85017"]}
+      ],
+      "open_questions":["Why did history render September 29 as both endpoints when the saved submission result contained September 30 as the end date?"],
+      "unsupported_claims":[]
+    },
+    "sample-04": {
+      "items": [
+        {"item_id":"login","credit":true,"action_ids":["action-2","action-3","action-4","action-5"],"observation_ids":["1b90a53d-9779-49c1-9178-5875e2129b84","d9ade4b5-348d-4075-a24d-7d068869c764"],"rationale":"The signed-out form and successful Employee authentication to the dashboard were saved."},
+        {"item_id":"invalid-login","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No invalid credential submission or saved authentication result was captured."},
+        {"item_id":"logout","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No logout and private-page revisit were captured."},
+        {"item_id":"directory-search","credit":true,"action_ids":["action-19","action-20"],"observation_ids":["bf68e0c0-bf24-429b-a89a-d072d9f51095"],"rationale":"A name search for Emily Dawson was entered, the matching cell settled, and the saved result identified the single final row."},
+        {"item_id":"directory-filter","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No department filter combined with a name search was captured."},
+        {"item_id":"directory-empty","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No deliberately unmatched directory search was captured."},
+        {"item_id":"directory-sort","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No two clicks on one sortable header with both resulting orders were captured."},
+        {"item_id":"directory-detail","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No employee detail followed by reload or direct load was captured."},
+        {"item_id":"leave-invalid","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The validation submission used blank dates, not an end date before a start date."},
+        {"item_id":"leave-duration","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No Friday-through-Monday interval or displayed duration was captured."},
+        {"item_id":"leave-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No valid leave dates were submitted."},
+        {"item_id":"leave-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No newly submitted leave request was read from history after navigation or reload."},
+        {"item_id":"timesheet-total","credit":false,"action_ids":[],"observation_ids":[],"rationale":"Only Monday was entered; seven valid day values including nonzero weekend hours were not entered."},
+        {"item_id":"timesheet-draft","credit":false,"action_ids":[],"observation_ids":[],"rationale":"A draft was saved, but no reload and post-reload values were captured."},
+        {"item_id":"timesheet-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No timesheet submission and later edit attempt were captured."},
+        {"item_id":"profile-save","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No changed profile field was saved."},
+        {"item_id":"profile-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No profile save followed by reload was captured."}
+      ],
+      "observation_actions": {
+        "1b90a53d-9779-49c1-9178-5875e2129b84":["action-2"],
+        "d9ade4b5-348d-4075-a24d-7d068869c764":["action-3","action-4","action-5"],
+        "bf68e0c0-bf24-429b-a89a-d072d9f51095":["action-19","action-20"],
+        "a43e9ef3-3590-4348-95c5-9115384c3bbc":["action-6","action-7"],
+        "9ad10ff4-7725-4f6b-9c80-e90d32a87833":["action-14","action-15"]
+      },
+      "behaviors":[
+        {"id":"behavior-1","description":"Employee credentials opened the authenticated dashboard.","action_ids":["action-3","action-4","action-5"],"observation_ids":["d9ade4b5-348d-4075-a24d-7d068869c764"]},
+        {"id":"behavior-2","description":"A search for Emily Dawson settled to one Engineering Software Engineer row.","action_ids":["action-19","action-20"],"observation_ids":["bf68e0c0-bf24-429b-a89a-d072d9f51095"]},
+        {"id":"behavior-3","description":"Saving an eight-hour Monday draft displayed Draft saved with total 8 h.","action_ids":["action-14","action-15"],"observation_ids":["9ad10ff4-7725-4f6b-9c80-e90d32a87833"]}
+      ],
+      "open_questions":["Does the saved eight-hour draft persist after a reload?"],
+      "unsupported_claims":[]
+    },
+    "sample-05": {
+      "items": [
+        {"item_id":"login","credit":true,"action_ids":["action-2","action-3","action-4","action-5"],"observation_ids":["9e835296-994b-4e5f-8a8f-324ab9a5552c","c3ac3ebe-b265-45e4-a545-a81cdad8c1e7"],"rationale":"The signed-out form and successful Employee authentication into Emily Dawson's dashboard were saved."},
+        {"item_id":"invalid-login","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No invalid credential submission or saved authentication result was captured."},
+        {"item_id":"logout","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No logout and private-page revisit were captured."},
+        {"item_id":"directory-search","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No name search and settled directory result were captured."},
+        {"item_id":"directory-filter","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No department filter combined with a name search was captured."},
+        {"item_id":"directory-empty","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No deliberately unmatched directory search was captured."},
+        {"item_id":"directory-sort","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No two clicks on one sortable header with both resulting orders were captured."},
+        {"item_id":"directory-detail","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No employee detail followed by reload or direct load was captured."},
+        {"item_id":"leave-invalid","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The captured validation submission had empty dates, not an end date before its start date."},
+        {"item_id":"leave-duration","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No Friday-through-Monday interval or displayed duration was captured."},
+        {"item_id":"leave-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The Personal request attempt retained no dates and did not create a valid request."},
+        {"item_id":"leave-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No newly submitted leave request was read from history after navigation or reload."},
+        {"item_id":"timesheet-total","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No seven-day hours entry with nonzero Saturday and Sunday values was captured."},
+        {"item_id":"timesheet-draft","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No draft save and reload were captured."},
+        {"item_id":"timesheet-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No timesheet submission and later edit attempt were captured."},
+        {"item_id":"profile-save","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No changed profile field was saved."},
+        {"item_id":"profile-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No profile save followed by reload was captured."}
+      ],
+      "observation_actions": {
+        "9e835296-994b-4e5f-8a8f-324ab9a5552c":["action-2"],
+        "c3ac3ebe-b265-45e4-a545-a81cdad8c1e7":["action-3","action-4","action-5"],
+        "10667adc-eff3-4d70-91c0-72f41bb88a5c":["action-8","action-11","action-12"]
+      },
+      "behaviors":[
+        {"id":"behavior-1","description":"Employee credentials authenticated Emily Dawson and displayed the dashboard.","action_ids":["action-3","action-4","action-5"],"observation_ids":["c3ac3ebe-b265-45e4-a545-a81cdad8c1e7"]},
+        {"id":"behavior-2","description":"A Personal leave submission with empty date fields showed the required-fields message and did not create a request.","action_ids":["action-8","action-11","action-12"],"observation_ids":["10667adc-eff3-4d70-91c0-72f41bb88a5c"]}
+      ],
+      "open_questions":["Can a Personal leave request be submitted after dates are selected through the page's date control?"],
+      "unsupported_claims":[]
+    },
+    "sample-06": {
+      "items": [
+        {"item_id":"login","credit":true,"action_ids":["action-2","action-3","action-4","action-5"],"observation_ids":["2f16a8e6-ae62-453a-946b-b8074099dd5d","76ef1289-1f1a-4941-a385-be6cc6b5bbde"],"rationale":"The signed-out form and successful Employee sign-in to the dashboard were saved."},
+        {"item_id":"invalid-login","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No invalid credential submission or saved authentication result was captured."},
+        {"item_id":"logout","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No logout and private-page revisit were captured."},
+        {"item_id":"directory-search","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No name search and settled directory result were captured."},
+        {"item_id":"directory-filter","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No department filter combined with a name search was captured."},
+        {"item_id":"directory-empty","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No deliberately unmatched directory search was captured."},
+        {"item_id":"directory-sort","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No two clicks on one sortable header with both resulting orders were captured."},
+        {"item_id":"directory-detail","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No employee detail followed by reload or direct load was captured."},
+        {"item_id":"leave-invalid","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The validation submission had empty dates, not an end date before a start date."},
+        {"item_id":"leave-duration","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No Friday-through-Monday interval or displayed duration was captured."},
+        {"item_id":"leave-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No valid leave request was submitted."},
+        {"item_id":"leave-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No newly submitted leave request was read from history after navigation or reload."},
+        {"item_id":"timesheet-total","credit":false,"action_ids":[],"observation_ids":[],"rationale":"Only Monday was set; seven valid day values including nonzero weekend hours were not entered."},
+        {"item_id":"timesheet-draft","credit":false,"action_ids":[],"observation_ids":[],"rationale":"A draft was saved, but no reload and post-reload values were captured."},
+        {"item_id":"timesheet-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No timesheet submission and later edit attempt were captured."},
+        {"item_id":"profile-save","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No changed profile field was saved."},
+        {"item_id":"profile-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No profile save followed by reload was captured."}
+      ],
+      "observation_actions": {
+        "2f16a8e6-ae62-453a-946b-b8074099dd5d":["action-2"],
+        "76ef1289-1f1a-4941-a385-be6cc6b5bbde":["action-3","action-4","action-5"],
+        "d8603c83-e0e5-4f81-b06c-7c752ca9303f":["action-8","action-9","action-10","action-11"],
+        "3482e48d-da54-47a6-900e-501020d22700":["action-10","action-11"],
+        "40cac049-6759-4e75-9ea3-8602ed0acb64":["action-13","action-14"]
+      },
+      "behaviors":[
+        {"id":"behavior-1","description":"Employee credentials authenticated the Employee and opened the dashboard.","action_ids":["action-3","action-4","action-5"],"observation_ids":["76ef1289-1f1a-4941-a385-be6cc6b5bbde"]},
+        {"id":"behavior-2","description":"The date textboxes did not accept direct filling; submitting while both remained empty showed required-fields validation.","action_ids":["action-8","action-9","action-10","action-11"],"observation_ids":["d8603c83-e0e5-4f81-b06c-7c752ca9303f","3482e48d-da54-47a6-900e-501020d22700"]},
+        {"id":"behavior-3","description":"Saving a draft with Monday set to one recorded total 1 h and displayed Draft saved.","action_ids":["action-13","action-14"],"observation_ids":["40cac049-6759-4e75-9ea3-8602ed0acb64"]}
+      ],
+      "open_questions":["Does the saved one-hour draft retain its value after a reload?"],
+      "unsupported_claims":[]
+    },
+    "sample-07": {
+      "items": [
+        {"item_id":"login","credit":true,"action_ids":["action-2","action-3","action-4","action-5"],"observation_ids":["f096a438-f21-4ebe-8ee9-a1ba82dd1af6","9e7778cf-8243-42a9-a385-53bd62409b7b"],"rationale":"The signed-out form and successful configured Employee sign-in were saved."},
+        {"item_id":"invalid-login","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No invalid credential submission or saved authentication result was captured."},
+        {"item_id":"logout","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No logout and private-page revisit were captured."},
+        {"item_id":"directory-search","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No name search and settled directory result were captured."},
+        {"item_id":"directory-filter","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No department filter combined with a name search was captured."},
+        {"item_id":"directory-empty","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No deliberately unmatched directory search was captured."},
+        {"item_id":"directory-sort","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No two clicks on one sortable header with both resulting orders were captured."},
+        {"item_id":"directory-detail","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No employee detail followed by reload or direct load was captured."},
+        {"item_id":"leave-invalid","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The validation submission used blank dates, not an end date before a start date."},
+        {"item_id":"leave-duration","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No Friday-through-Monday interval or displayed duration was captured."},
+        {"item_id":"leave-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No valid leave request was submitted."},
+        {"item_id":"leave-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No newly submitted leave request was read from history after navigation or reload."},
+        {"item_id":"timesheet-total","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No seven-day hours entry with nonzero Saturday and Sunday values was captured."},
+        {"item_id":"timesheet-draft","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No draft save and reload were captured."},
+        {"item_id":"timesheet-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The week was submitted, but no later edit attempt was made; disabled controls alone do not fulfill the composite action."},
+        {"item_id":"profile-save","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No changed profile field was saved."},
+        {"item_id":"profile-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No profile save followed by reload was captured."}
+      ],
+      "observation_actions": {
+        "f096a438-f21-4ebe-8ee9-a1ba82dd1af6":["action-2"],
+        "9e7778cf-8243-42a9-a385-53bd62409b7b":["action-3","action-4","action-5"],
+        "7de766df-53ac-44b4-9877-e8f9e8bdaff1":["action-12","action-13"],
+        "2c1f6231-9c0d-4c0f-92b0-70309a9fb443":["action-17"]
+      },
+      "behaviors":[
+        {"id":"behavior-1","description":"Employee credentials authenticated the Employee and displayed the dashboard.","action_ids":["action-3","action-4","action-5"],"observation_ids":["9e7778cf-8243-42a9-a385-53bd62409b7b"]},
+        {"id":"behavior-2","description":"Submitting a zero-hour week succeeded, marked it submitted, and disabled inputs and submit controls.","action_ids":["action-17"],"observation_ids":["2c1f6231-9c0d-4c0f-92b0-70309a9fb443"]}
+      ],
+      "open_questions":["What happens if an edit is attempted after this submitted week?"],
+      "unsupported_claims":[]
+    },
+    "sample-08": {
+      "items": [
+        {"item_id":"login","credit":true,"action_ids":["action-2","action-3","action-4","action-5"],"observation_ids":["eac41095-d25e-46e9-b2b0-92380dc700fb","bce6b75b-358c-4a03-8d6d-587918ee2c77"],"rationale":"The signed-out root form and successful Employee authentication to the dashboard were saved."},
+        {"item_id":"invalid-login","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No invalid credential submission or saved authentication result was captured."},
+        {"item_id":"logout","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No logout and private-page revisit were captured."},
+        {"item_id":"directory-search","credit":true,"action_ids":["action-21","action-22"],"observation_ids":["999bd803-03b0-45bf-ae02-13f50cb97123"],"rationale":"A name search for Emily was entered; the later captured page showed the settled one-row Emily Dawson result and current search text."},
+        {"item_id":"directory-filter","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No department filter combined with a name search was captured."},
+        {"item_id":"directory-empty","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No deliberately unmatched directory search was captured."},
+        {"item_id":"directory-sort","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No two clicks on one sortable header with both resulting orders were captured."},
+        {"item_id":"directory-detail","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No employee detail followed by reload or direct load was captured."},
+        {"item_id":"leave-invalid","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No end-before-start leave interval was submitted."},
+        {"item_id":"leave-duration","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No Friday-through-Monday interval or displayed duration was captured."},
+        {"item_id":"leave-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No valid leave request was submitted."},
+        {"item_id":"leave-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No newly submitted leave request was read from history after navigation or reload."},
+        {"item_id":"timesheet-total","credit":false,"action_ids":[],"observation_ids":[],"rationale":"Only Monday was entered; seven valid day values including nonzero weekend hours were not entered."},
+        {"item_id":"timesheet-draft","credit":false,"action_ids":[],"observation_ids":[],"rationale":"A draft was saved, but no reload and post-reload values were captured."},
+        {"item_id":"timesheet-submit","credit":false,"action_ids":[],"observation_ids":[],"rationale":"The week was submitted, but no later edit attempt was made; disabled controls alone do not fulfill the composite action."},
+        {"item_id":"profile-save","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No changed profile field was saved."},
+        {"item_id":"profile-readback","credit":false,"action_ids":[],"observation_ids":[],"rationale":"No profile save followed by reload was captured."}
+      ],
+      "observation_actions": {
+        "eac41095-d25e-46e9-b2b0-92380dc700fb":["action-2"],
+        "bce6b75b-358c-4a03-8d6d-587918ee2c77":["action-3","action-4","action-5"],
+        "999bd803-03b0-45bf-ae02-13f50cb97123":["action-21","action-22"],
+        "519e96e6-f82f-4d3e-b613-d5d6ce2fc1a5":["action-17"]
+      },
+      "behaviors":[
+        {"id":"behavior-1","description":"Employee credentials authenticated the Employee and displayed the dashboard.","action_ids":["action-3","action-4","action-5"],"observation_ids":["bce6b75b-358c-4a03-8d6d-587918ee2c77"]},
+        {"id":"behavior-2","description":"A search for Emily settled to the single Emily Dawson directory row.","action_ids":["action-21","action-22"],"observation_ids":["999bd803-03b0-45bf-ae02-13f50cb97123"]},
+        {"id":"behavior-3","description":"Submitting the saved eight-hour week marked it submitted and disabled the hourly inputs and controls.","action_ids":["action-17"],"observation_ids":["519e96e6-f82f-4d3e-b613-d5d6ce2fc1a5"]}
+      ],
+      "open_questions":["What happens if an edit is attempted after this submitted week?"],
+      "unsupported_claims":[]
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "objective": "Explore whether the supplied restrictions on other employees' private details are enforced.",
+  "scope": {
+    "actor": "employee-a",
+    "build": "b17",
+    "environment": "isolated synthetic sandbox"
+  },
+  "observations": [
+    "In employee-a's b17 session, the directory shows employee-b's name. The product policy permits directory names but restricts other employees' private details.",
+    "It is unknown whether opening employee-b's private-details section returns protected fields.",
+    "Directory search behavior has not been exercised. Known fixture names include Alice Green and Alicia Brown.",
+    "The employee profile's displayed name has already been checked in this same context."
+  ],
+  "open_questions": [
+    "Can this employee retrieve another employee's protected details?",
+    "Does directory search match a lowercase name prefix?"
+  ],
+  "candidates": [
+    {
+      "id": "c1",
+      "check": "Using the current employee in the authorized sandbox, open employee-b's private-details section and inspect what is returned."
+    },
+    {
+      "id": "c2",
+      "check": "Search the directory for 'ali' and inspect whether Alice Green and Alicia Brown appear."
+    },
+    {
+      "id": "c3",
+      "check": "Open the employee profile and read the already-verified displayed name."
+    }
+  ]
+}

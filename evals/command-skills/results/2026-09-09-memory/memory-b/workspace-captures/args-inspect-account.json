@@ -1,0 +1,23 @@
+{
+  "requestToken": "15657817-f81f-4e18-bc5e-c6e475a09235",
+  "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "actor", "name": "Account actor", "kind": "information" },
+    { "key": "reservations", "name": "Reservations", "kind": "link" },
+    { "key": "loans", "name": "Loans", "kind": "link" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /account identified the current actor as Reader and linked to /holds for reservations and /loans for loans.",
+      "looks": [
+        { "item": { "key": "actor" }, "kind": "offered" },
+        { "item": { "key": "reservations" }, "kind": "offered" },
+        { "item": { "key": "loans" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

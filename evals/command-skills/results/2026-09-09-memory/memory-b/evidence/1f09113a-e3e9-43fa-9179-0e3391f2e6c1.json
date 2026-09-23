@@ -1,0 +1,9 @@
+{
+  "id": "1f09113a-e3e9-43fa-9179-0e3391f2e6c1",
+  "kind": "agent_reported",
+  "containerPath": ".perquiro/evidence/1f09113a-e3e9-43fa-9179-0e3391f2e6c1/",
+  "createdAt": "2026-09-09T07:59:44.167Z",
+  "observationIds": [
+    "189fcf6c-b4a8-4859-9d42-6f108a0cff47"
+  ]
+}

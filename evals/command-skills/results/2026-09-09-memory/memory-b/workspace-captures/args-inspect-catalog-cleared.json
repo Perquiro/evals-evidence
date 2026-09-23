@@ -1,0 +1,25 @@
+{
+  "requestToken": "41f31817-dac3-4934-b17f-53337d13d944",
+  "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "Clearing the catalog search returned River Atlas and Garden Notes as available and Night Trains as unavailable.",
+      "looks": [
+        { "item": { "id": "1d98cbbc-31d3-4b07-9aa5-54c7052b9b18" }, "kind": "offered" },
+        { "item": { "id": "28a00e0b-f59a-4baa-950a-618e382ff684" }, "kind": "offered" },
+        { "item": { "id": "f6956830-0bdd-4176-8a50-f19af2644417" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    },
+    {
+      "kind": "action",
+      "body": "Following the clear-search link reached GET /catalog and returned the full catalog.",
+      "look": { "item": { "id": "84ed69ba-0066-4392-b392-cd3a8a6bfb4e" }, "kind": "reached", "reachedSurfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7" },
+      "capture": "pending"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+      "name": "GET /loans",
+      "locator": "GET /loans",
+      "createdAt": "2026-09-09T07:34:10.339Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "60ab537b-461f-4c81-bfb9-e43adde0f48c",
+          "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+          "name": "Garden Notes loan",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:34:37.516Z"
+        },
+        {
+          "id": "ffb30dfa-4383-4a34-85a1-d389d5cea676",
+          "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+          "name": "No loans message",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:46:40.278Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "65b2c707-de1f-4c79-bce5-ff0d5cc9d454",
+            "seq": 11,
+            "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "GET /loans listed Garden Notes as loan 201 and linked to /loans/201.",
+            "createdAt": "2026-09-09T07:34:37.517Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "60ab537b-461f-4c81-bfb9-e43adde0f48c"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "219bee00-5f98-477e-8268-5a68f60cf672",
+            "seq": 34,
+            "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "After return, GET /loans returned no loans and the message 'No loans'.",
+            "createdAt": "2026-09-09T07:46:40.279Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "ffb30dfa-4383-4a34-85a1-d389d5cea676"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "e25b3582-78cd-4cc0-a34c-e97cd308eef6",
+            "seq": 57,
+            "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "GET /loans returned 200 OK with an empty loans array and the message 'No loans'.",
+            "createdAt": "2026-09-09T08:03:37.719Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "ffb30dfa-4383-4a34-85a1-d389d5cea676"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "60ab537b-461f-4c81-bfb9-e43adde0f48c",
+            "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+            "name": "Garden Notes loan",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:34:37.516Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "suggested",
+          "reason": "Historically named item; no grounded Look in this Actor, Platform and Product-version context.",
+          "accountedFor": false,
+          "supportingObservationIds": []
+        },
+        {
+          "item": {
+            "id": "60ab537b-461f-4c81-bfb9-e43adde0f48c",
+            "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+            "name": "Garden Notes loan",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:34:37.516Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "65b2c707-de1f-4c79-bce5-ff0d5cc9d454"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "65b2c707-de1f-4c79-bce5-ff0d5cc9d454",
+          "evidenceId": "fd0bbe00-a51e-49ae-83ca-90f091dd68b3"
+        },
+        {
+          "observationId": "219bee00-5f98-477e-8268-5a68f60cf672",
+          "evidenceId": "8e4868a3-d020-4408-8cde-8c01d9fbf830"
+        },
+        {
+          "observationId": "e25b3582-78cd-4cc0-a34c-e97cd308eef6",
+          "evidenceId": "5feaf9d4-657c-41e4-bce7-71e98869dbf7"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 2,
+      "pending": 1,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 1,
+      "accountedFor": 0
+    }
+  }
+]

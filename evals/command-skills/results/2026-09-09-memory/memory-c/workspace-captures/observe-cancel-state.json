@@ -1,0 +1,1 @@
+{"requestToken":"4beb0808-0ecf-45b7-b1cf-9e7f0428ebf4","surfaceId":"cc358827-1734-4c85-b536-68428d8f2b5d","actor":"Reader","journey":"Cancel reservation","body":"A subsequent GET /holds returned an empty holds array with message No reservations after the cancellation response."}

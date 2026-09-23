@@ -1,0 +1,5 @@
+{
+  "anchor": { "kind": "actor", "id": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae" },
+  "productVersions": { "scope": "all" },
+  "observations": { "detail": "summaries", "actorIds": ["feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"], "scope": "both" }
+}

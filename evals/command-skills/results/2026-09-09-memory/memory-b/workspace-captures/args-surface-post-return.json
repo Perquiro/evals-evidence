@@ -1,0 +1,5 @@
+{
+  "requestToken": "95b1e0ae-93b2-47e5-a1cc-b9af283ea65d",
+  "name": "POST /loans/:id/return",
+  "locator": "POST /loans/:id/return"
+}

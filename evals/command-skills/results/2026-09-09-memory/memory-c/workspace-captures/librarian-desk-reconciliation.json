@@ -1,0 +1,6 @@
+{
+  "requestToken": "7774e9e7-529c-4d9f-9aed-ce7438ad39ce",
+  "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+  "actor": "Librarian",
+  "body": "After the 404 check-in response, GET /desk still listed Night Trains (bookId 103) as the single pending return and still offered POST /desk/returns with bookId 103."
+}

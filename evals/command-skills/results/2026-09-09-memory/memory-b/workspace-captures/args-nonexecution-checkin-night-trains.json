@@ -1,0 +1,14 @@
+{
+  "requestToken": "0ec404bc-ce33-4234-a239-012335ecd4fc",
+  "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "The first check-in request used a numeric bookId and returned 404 Not Found. The following GET /desk still listed Night Trains (book 103) as pending, establishing that the check-in did not execute.",
+      "look": { "item": { "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339" }, "kind": "blocked", "attemptObservationId": "b1e2bc5f-cb60-48fb-8df3-b918ad9507d5", "reason": "The original request used a numeric bookId, while the offered action response supplied the string value \"103\"; its 404 response left the pending return in place.", "reconciliation": "not_executed" }
+    }
+  ]
+}

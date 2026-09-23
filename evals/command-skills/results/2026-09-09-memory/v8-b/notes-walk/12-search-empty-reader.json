@@ -1,0 +1,17 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:54824/catalog?q=not-a-real-title",
+    "actor": "Reader"
+  },
+  "status": 200,
+  "body": {
+    "books": [],
+    "search": {
+      "href": "/catalog?q=<title>",
+      "field": "q"
+    },
+    "message": "No books found",
+    "clear": "/catalog"
+  }
+}

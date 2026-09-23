@@ -1,0 +1,218 @@
+[
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"41f9b89b-a9f0-40b9-9510-2dd38de51b70\",\"seq\":10,\"surfaceId\":\"f934a261-24eb-4a35-8257-bfa9913799c9\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"body\":\"GET / identified Willow Library as a local disposable development service with synthetic data.\",\"createdAt\":\"2026-09-09T07:18:04.300Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"c0c4f783-afe8-47bc-8ec3-cd6fcd2d23e7\",\"seq\":11,\"surfaceId\":\"f934a261-24eb-4a35-8257-bfa9913799c9\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"body\":\"The root linked /docs, /catalog, /account, and /desk.\",\"createdAt\":\"2026-09-09T07:18:04.385Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"7d44bf4f-2473-46f4-bba7-fdc17b5214e1\",\"seq\":12,\"surfaceId\":\"fd0108e5-2e84-4492-99b7-df7f975544ff\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"body\":\"The documentation instructed clients to select the Reader or Librarian demo session with X-Actor and stated that no credentials are needed.\",\"createdAt\":\"2026-09-09T07:18:04.465Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"f4df2989-92ce-4430-9b70-cff3e6995472\",\"seq\":13,\"surfaceId\":\"a395f219-6eda-404f-856c-8b03df969732\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"1dea851a-ac85-4ec4-b6a7-54cf0d9c4bae\",\"body\":\"The initial catalog listed River Atlas (101) as available and Garden Notes (102) and Night Trains (103) as unavailable.\",\"createdAt\":\"2026-09-09T07:18:04.560Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"54666c1c-c6cf-4322-b8c9-2df74cdac735\",\"seq\":14,\"surfaceId\":\"a395f219-6eda-404f-856c-8b03df969732\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"89b84668-871b-41a6-bdd4-30beb4dd988d\",\"body\":\"The catalog advertised title search at GET /catalog?q=<title>.\",\"createdAt\":\"2026-09-09T07:18:04.650Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"9b4c5044-5716-492e-a508-a04d1e1d1533\",\"seq\":15,\"surfaceId\":\"449bf668-4b85-486f-9e4f-95491c7278db\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"body\":\"The Reader account linked reservations at /holds and loans at /loans.\",\"createdAt\":\"2026-09-09T07:18:04.732Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"5c120f96-9420-46c4-8c66-7101ef6a6c75\",\"seq\":16,\"surfaceId\":\"0e382955-d2c1-43fe-aa78-52cffe7d2d91\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"674b9edf-4606-4eff-92f8-889402becd57\",\"body\":\"GET /desk returned 403 with Service desk requires Librarian.\",\"createdAt\":\"2026-09-09T07:18:04.814Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"7af77973-a7a7-4070-a685-6948bbd6ba0e\",\"seq\":17,\"surfaceId\":\"2b095c91-dc97-4f7a-ac2c-6f57b7956d04\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"892cadc7-95fb-4242-9cd0-898877129e56\",\"body\":\"Available River Atlas (101) advertised Reader POST /holds with bookId 101 to reserve the book.\",\"createdAt\":\"2026-09-09T07:18:04.897Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"319e65ac-ccd1-48a7-8636-6b9b5ea93ce0\",\"seq\":18,\"surfaceId\":\"2b095c91-dc97-4f7a-ac2c-6f57b7956d04\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"892cadc7-95fb-4242-9cd0-898877129e56\",\"body\":\"Unavailable Garden Notes (102) advertised Reader POST /holds with bookId 102 to reserve the book.\",\"createdAt\":\"2026-09-09T07:18:04.976Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"04894ac8-7b88-49e9-8f9d-3d2d648b465b\",\"seq\":19,\"surfaceId\":\"a42995dc-8f3e-430e-8896-0b4156d2a296\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"892cadc7-95fb-4242-9cd0-898877129e56\",\"body\":\"The Reader's initial holds response was empty and said No reservations.\",\"createdAt\":\"2026-09-09T07:18:05.058Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"1820847c-5a6e-450d-940b-9dff3568a98b\",\"seq\":20,\"surfaceId\":\"aad1b645-863b-44e1-818a-50058aae072a\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"f229373a-b0ea-44ba-a5fe-8af03e35d90d\",\"body\":\"The Reader's initial loans response listed Garden Notes as loan 201.\",\"createdAt\":\"2026-09-09T07:18:05.142Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"631ae338-7506-4659-b71a-173143d970c7\",\"seq\":21,\"surfaceId\":\"0e382955-d2c1-43fe-aa78-52cffe7d2d91\",\"actorId\":\"fea91b43-5998-4e2b-a232-38ec88e67c28\",\"journeyId\":\"674b9edf-4606-4eff-92f8-889402becd57\",\"body\":\"The Librarian desk listed Night Trains (103) as a pending return.\",\"createdAt\":\"2026-09-09T07:18:05.224Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"8cd03020-2a2f-4c26-95be-be1db3aa3bbb\",\"seq\":22,\"surfaceId\":\"0e382955-d2c1-43fe-aa78-52cffe7d2d91\",\"actorId\":\"fea91b43-5998-4e2b-a232-38ec88e67c28\",\"journeyId\":\"674b9edf-4606-4eff-92f8-889402becd57\",\"body\":\"The Librarian desk advertised POST /desk/returns with bookId 103 to check in Night Trains.\",\"createdAt\":\"2026-09-09T07:18:05.306Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"e84e9512-8cce-4e7c-ab8a-67bf504110c8\",\"seq\":23,\"surfaceId\":\"a395f219-6eda-404f-856c-8b03df969732\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"89b84668-871b-41a6-bdd4-30beb4dd988d\",\"body\":\"Searching for River returned available River Atlas (101) and its /books/101 detail link.\",\"createdAt\":\"2026-09-09T07:18:05.390Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"6b6ea9fe-1b59-4159-a3b3-1faac97b9e5c\",\"seq\":24,\"surfaceId\":\"a395f219-6eda-404f-856c-8b03df969732\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"89b84668-871b-41a6-bdd4-30beb4dd988d\",\"body\":\"Searching for not-a-real-title returned no books, No books found, and the /catalog clear link.\",\"createdAt\":\"2026-09-09T07:18:05.472Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"6a5ed72e-817c-46a8-80ae-05bf604a9bca\",\"seq\":25,\"surfaceId\":\"a395f219-6eda-404f-856c-8b03df969732\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"89b84668-871b-41a6-bdd4-30beb4dd988d\",\"body\":\"Following the search clear link restored the full catalog with 101 available and 102 and 103 unavailable.\",\"createdAt\":\"2026-09-09T07:18:05.554Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"5b49b546-6ded-4889-823e-b7cd7f40dc26\",\"seq\":26,\"surfaceId\":\"3544b297-2bd0-4ac7-ac6f-9244a34744e1\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"f229373a-b0ea-44ba-a5fe-8af03e35d90d\",\"body\":\"Loan 201 for Garden Notes had zero renewals and a due date of 2026-10-01.\",\"createdAt\":\"2026-09-09T07:18:05.635Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"0aeee331-8caa-46b9-8d8c-850cf1296b88\",\"seq\":27,\"surfaceId\":\"3544b297-2bd0-4ac7-ac6f-9244a34744e1\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"f229373a-b0ea-44ba-a5fe-8af03e35d90d\",\"body\":\"Loan 201 advertised Reader POST /loans/201/renew with no JSON fields.\",\"createdAt\":\"2026-09-09T07:18:05.715Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"d0f6054a-aa74-4f1d-996c-505e0abd22ed\",\"seq\":28,\"surfaceId\":\"3544b297-2bd0-4ac7-ac6f-9244a34744e1\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"f229373a-b0ea-44ba-a5fe-8af03e35d90d\",\"body\":\"Loan 201 advertised Reader POST /loans/201/return with no JSON fields.\",\"createdAt\":\"2026-09-09T07:18:05.801Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"bea0e820-a5a6-4567-8d9a-cd2f35d8e061\",\"seq\":29,\"surfaceId\":\"449bf668-4b85-486f-9e4f-95491c7278db\",\"actorId\":\"fea91b43-5998-4e2b-a232-38ec88e67c28\",\"body\":\"The Librarian account linked /holds and /loans.\",\"createdAt\":\"2026-09-09T07:18:05.883Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"9503971a-3fce-4fd3-a995-731a40f1aaa5\",\"seq\":30,\"surfaceId\":\"a42995dc-8f3e-430e-8896-0b4156d2a296\",\"actorId\":\"fea91b43-5998-4e2b-a232-38ec88e67c28\",\"journeyId\":\"892cadc7-95fb-4242-9cd0-898877129e56\",\"body\":\"The Librarian could open an empty holds collection, and that response exposed no reservation action.\",\"createdAt\":\"2026-09-09T07:18:05.964Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"5b78a51e-a2ef-4413-b22b-40309d0bc3ea\",\"seq\":31,\"surfaceId\":\"0554d592-f9df-4bd8-956b-43a933d15fb7\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"892cadc7-95fb-4242-9cd0-898877129e56\",\"body\":\"Submitting POST /holds with an empty JSON body returned 422 Book is required.\",\"createdAt\":\"2026-09-09T07:18:06.050Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"2c33d602-2003-4a57-b364-84a19eea5ae1\",\"seq\":32,\"surfaceId\":\"0554d592-f9df-4bd8-956b-43a933d15fb7\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"892cadc7-95fb-4242-9cd0-898877129e56\",\"body\":\"Submitting POST /holds with bookId 102 while Garden Notes was unavailable returned 409 Book is unavailable.\",\"createdAt\":\"2026-09-09T07:18:06.132Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"bb405d84-2cf8-4d00-8dcb-4077bd78b727\",\"seq\":33,\"surfaceId\":\"0554d592-f9df-4bd8-956b-43a933d15fb7\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"892cadc7-95fb-4242-9cd0-898877129e56\",\"body\":\"Submitting POST /holds with bookId 101 created hold 301 for River Atlas and linked /holds.\",\"createdAt\":\"2026-09-09T07:18:06.212Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"58cc8ac8-a281-4138-ac1f-330abc7f7036\",\"seq\":34,\"surfaceId\":\"0ee4e374-b4a1-4fed-bb02-a2854bc93998\",\"actorId\":\"fea91b43-5998-4e2b-a232-38ec88e67c28\",\"journeyId\":\"674b9edf-4606-4eff-92f8-889402becd57\",\"body\":\"Checking in book 103 returned 200 Book checked in and linked /books/103.\",\"createdAt\":\"2026-09-09T07:18:06.296Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"5d76c11a-5c41-4133-a66d-d4bc4dfd711b\",\"seq\":35,\"surfaceId\":\"a395f219-6eda-404f-856c-8b03df969732\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"674b9edf-4606-4eff-92f8-889402becd57\",\"body\":\"After the Librarian check-in, the Reader catalog showed book 103 available, with 101 available and 102 unavailable.\",\"createdAt\":\"2026-09-09T07:18:06.378Z\"}"
+      }
+    ]
+  },
+  {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"id\":\"0ee9263e-785a-4deb-a35d-c9a054891237\",\"seq\":36,\"surfaceId\":\"aad1b645-863b-44e1-818a-50058aae072a\",\"actorId\":\"dc327f7f-a9ff-451c-b205-986f165f998b\",\"journeyId\":\"674b9edf-4606-4eff-92f8-889402becd57\",\"body\":\"After the Librarian check-in, the Reader loans response still listed loan 201.\",\"createdAt\":\"2026-09-09T07:18:06.458Z\"}"
+      }
+    ]
+  }
+]

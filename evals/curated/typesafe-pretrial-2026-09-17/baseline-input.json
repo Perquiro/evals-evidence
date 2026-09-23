@@ -1,0 +1,508 @@
+[
+  {
+    "workspace": 1,
+    "context": {
+      "objective": "Explore this HR product: learn distinct behavior and complete meaningful Journeys, favoring checks that answer concrete open questions.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b17",
+        "environment": "isolated synthetic sandbox"
+      },
+      "observations": [
+        "On b17, employee-a submitted leave request 77 and saw it Pending in the list.",
+        "Cancellation returned a success response, but request 77 has not been reloaded afterward. The attempt outcome was saved and no recovery is pending.",
+        "The current employee's profile name was opened and verified twice on b17."
+      ],
+      "open_questions": [
+        "Does cancellation persist after reload, and where does the cancelled request appear?"
+      ],
+      "available_checks": [
+        {
+          "id": "c1",
+          "check": "Reload request 77 and inspect its status and its presence in active/history views."
+        },
+        {
+          "id": "c2",
+          "check": "Open the employee profile again and read the same displayed name."
+        },
+        {
+          "id": "c3",
+          "check": "Open the About page and read the application copyright text."
+        }
+      ]
+    },
+    "host_controls": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    }
+  },
+  {
+    "workspace": 2,
+    "context": {
+      "objective": "Explore whether the supplied restrictions on other employees' private details are enforced.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b17",
+        "environment": "isolated synthetic sandbox"
+      },
+      "observations": [
+        "In employee-a's b17 session, the directory shows employee-b's name. The product policy permits directory names but restricts other employees' private details.",
+        "It is unknown whether opening employee-b's private-details section returns protected fields.",
+        "Directory search behavior has not been exercised. Known fixture names include Alice Green and Alicia Brown.",
+        "The employee profile's displayed name has already been checked in this same context."
+      ],
+      "open_questions": [
+        "Can this employee retrieve another employee's protected details?",
+        "Does directory search match a lowercase name prefix?"
+      ],
+      "available_checks": [
+        {
+          "id": "c1",
+          "check": "Using the current employee in the authorized sandbox, open employee-b's private-details section and inspect what is returned."
+        },
+        {
+          "id": "c2",
+          "check": "Search the directory for 'ali' and inspect whether Alice Green and Alicia Brown appear."
+        },
+        {
+          "id": "c3",
+          "check": "Open the employee profile and read the already-verified displayed name."
+        }
+      ]
+    },
+    "host_controls": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    }
+  },
+  {
+    "workspace": 3,
+    "context": {
+      "objective": "Explore directory search matching behavior, starting with lowercase name prefixes.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b17",
+        "environment": "isolated synthetic sandbox"
+      },
+      "observations": [
+        "In employee-a's b17 session, the directory shows employee-b's name. The product policy permits directory names but restricts other employees' private details.",
+        "It is unknown whether opening employee-b's private-details section returns protected fields.",
+        "Directory search behavior has not been exercised. Known fixture names include Alice Green and Alicia Brown.",
+        "The employee profile's displayed name has already been checked in this same context."
+      ],
+      "open_questions": [
+        "Can this employee retrieve another employee's protected details?",
+        "Does directory search match a lowercase name prefix?"
+      ],
+      "available_checks": [
+        {
+          "id": "c1",
+          "check": "Using the current employee in the authorized sandbox, open employee-b's private-details section and inspect what is returned."
+        },
+        {
+          "id": "c2",
+          "check": "Search the directory for 'ali' and inspect whether Alice Green and Alicia Brown appear."
+        },
+        {
+          "id": "c3",
+          "check": "Open the employee profile and read the already-verified displayed name."
+        }
+      ]
+    },
+    "host_controls": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    }
+  },
+  {
+    "workspace": 4,
+    "context": {
+      "objective": "Explore this HR product: learn distinct behavior and complete meaningful Journeys, favoring checks that answer concrete open questions.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b17",
+        "environment": "isolated synthetic sandbox"
+      },
+      "observations": [
+        "An archive mutation was dispatched; its response was lost. The saved attempt is unresolved.",
+        "An authorized read-only lookup can inspect the exact affected project's current state.",
+        "The user also asked to check the public-holiday calendar first among ordinary exploration tasks."
+      ],
+      "open_questions": [
+        "Did the previously dispatched archive attempt take effect?"
+      ],
+      "available_checks": [
+        {
+          "id": "c1",
+          "check": "Recover the unresolved attempt using the authorized read-only project-state lookup."
+        },
+        {
+          "id": "c2",
+          "check": "Dispatch the archive mutation again."
+        },
+        {
+          "id": "c3",
+          "check": "Inspect the public-holiday calendar."
+        }
+      ]
+    },
+    "host_controls": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": true,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": false,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 1
+      }
+    }
+  },
+  {
+    "workspace": 5,
+    "context": {
+      "objective": "Explore this HR product: learn distinct behavior and complete meaningful Journeys, favoring checks that answer concrete open questions.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b17",
+        "environment": "isolated synthetic sandbox"
+      },
+      "observations": [
+        "The user explicitly requested: check the public-holiday calendar first.",
+        "There are no pending recovery attempts. All listed checks are eligible in the current sandbox."
+      ],
+      "open_questions": [
+        "Does the holiday calendar show the configured regional holidays?",
+        "Does cancelling a pending leave request persist after reload?"
+      ],
+      "available_checks": [
+        {
+          "id": "c1",
+          "check": "Cancel the authorized sandbox leave request and inspect its state after reload."
+        },
+        {
+          "id": "c2",
+          "check": "Inspect the public-holiday calendar against the configured regional holidays."
+        },
+        {
+          "id": "c3",
+          "check": "Open the About page and read the copyright text."
+        }
+      ]
+    },
+    "host_controls": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 1
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    }
+  },
+  {
+    "workspace": 6,
+    "context": {
+      "objective": "Explore this HR product: learn distinct behavior and complete meaningful Journeys, favoring checks that answer concrete open questions.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b17",
+        "environment": "isolated synthetic sandbox"
+      },
+      "observations": [
+        "The Profile page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Directory page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Leave list page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Calendar page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Notifications page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Dashboard page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Settings page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Help page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "Approved sandbox leave request 77 has a visible Cancel action. Its status and current leave balance were recorded. Cancellation after approval has never been exercised. No unresolved attempts exist."
+      ],
+      "open_questions": [
+        "What happens to an approved request and the leave balance after cancellation?"
+      ],
+      "available_checks": [
+        {
+          "id": "c1",
+          "check": "Reopen the Profile page and read its title and default contents again."
+        },
+        {
+          "id": "c2",
+          "check": "Reopen the Directory page and read its title and default contents again."
+        },
+        {
+          "id": "c3",
+          "check": "Reopen the Leave list page and read its title and default contents again."
+        },
+        {
+          "id": "c4",
+          "check": "Reopen the Calendar page and read its title and default contents again."
+        },
+        {
+          "id": "c5",
+          "check": "Reopen the Notifications page and read its title and default contents again."
+        },
+        {
+          "id": "c6",
+          "check": "Reopen the Dashboard page and read its title and default contents again."
+        },
+        {
+          "id": "c7",
+          "check": "Reopen the Settings page and read its title and default contents again."
+        },
+        {
+          "id": "c8",
+          "check": "Reopen the Help page and read its title and default contents again."
+        }
+      ]
+    },
+    "host_controls": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c5": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c6": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c7": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c8": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    }
+  },
+  {
+    "workspace": 7,
+    "context": {
+      "objective": "Explore this HR product: learn distinct behavior and complete meaningful Journeys, favoring checks that answer concrete open questions.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b17",
+        "environment": "isolated synthetic sandbox"
+      },
+      "observations": [
+        "The Profile page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Directory page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Leave list page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Calendar page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Notifications page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Dashboard page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Settings page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "The Help page was opened in this same actor/build session and its page title and default contents were recorded.",
+        "Approved sandbox leave request 77 has a visible Cancel action. Its status and current leave balance were recorded. Cancellation after approval has never been exercised. No unresolved attempts exist."
+      ],
+      "open_questions": [
+        "What happens to an approved request and the leave balance after cancellation?"
+      ],
+      "available_checks": [
+        {
+          "id": "c1",
+          "check": "Reopen the Profile page and read its title and default contents again."
+        },
+        {
+          "id": "c2",
+          "check": "Reopen the Directory page and read its title and default contents again."
+        },
+        {
+          "id": "c3",
+          "check": "Reopen the Leave list page and read its title and default contents again."
+        },
+        {
+          "id": "c4",
+          "check": "Reopen the Calendar page and read its title and default contents again."
+        },
+        {
+          "id": "c5",
+          "check": "Reopen the Notifications page and read its title and default contents again."
+        },
+        {
+          "id": "c6",
+          "check": "Reopen the Dashboard page and read its title and default contents again."
+        },
+        {
+          "id": "c7",
+          "check": "Reopen the Settings page and read its title and default contents again."
+        },
+        {
+          "id": "c8",
+          "check": "Reopen the Help page and read its title and default contents again."
+        },
+        {
+          "id": "c9",
+          "check": "For approved sandbox request 77, exercise the authorized Cancel action once, then reload its detail and leave balance to establish the resulting behavior."
+        }
+      ]
+    },
+    "host_controls": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c5": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c6": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c7": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c8": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c9": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    }
+  },
+  {
+    "workspace": 8,
+    "context": {
+      "objective": "Understand the manager approval Journey on build b18.",
+      "scope": {
+        "actor": "manager-a",
+        "build": "b18",
+        "environment": "isolated synthetic sandbox"
+      },
+      "observations": [
+        "On build b17, employee-a opened the leave list and saw only their own requests.",
+        "On build b18, manager-a has successfully logged in. The manager's pending-team-requests view has never been inspected.",
+        "The About page copyright text was recorded in the current manager-a/b18 session."
+      ],
+      "open_questions": [
+        "What team requests and approval controls are visible to manager-a on b18?"
+      ],
+      "available_checks": [
+        {
+          "id": "c1",
+          "check": "As manager-a on b18, open pending team requests and inspect the visible request details and approval controls."
+        },
+        {
+          "id": "c2",
+          "check": "Reopen About and read the same copyright text."
+        }
+      ]
+    },
+    "host_controls": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    }
+  }
+]

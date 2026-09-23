@@ -1,0 +1,198 @@
+{
+  "verifiedAt": "2026-09-10T17:35:27.906Z",
+  "complete": false,
+  "frozenFilesVerified": 288,
+  "originalProjectComparison": "separate final public MCP read required",
+  "trials": [
+    {
+      "id": "C1",
+      "status": "verified",
+      "requests": 3,
+      "observations": 13,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 0,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "D1",
+      "status": "verified",
+      "requests": 30,
+      "observations": 116,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 3,
+      "proposedScenarios": 5,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "A1",
+      "status": "verified",
+      "requests": 5,
+      "observations": 19,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 4,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "B1",
+      "status": "verified",
+      "requests": 6,
+      "observations": 18,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 1,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "B2",
+      "status": "verified",
+      "requests": 4,
+      "observations": 17,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 1,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "C2",
+      "status": "verified",
+      "requests": 15,
+      "observations": 48,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 3,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "A2",
+      "status": "verified",
+      "requests": 7,
+      "observations": 15,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 1,
+      "proposedScenarios": 0,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "D2",
+      "status": "verified",
+      "requests": 39,
+      "observations": 171,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 2,
+      "proposedScenarios": 2,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "C3",
+      "status": "pending_review_export",
+      "missing": [
+        "supplement-export.json",
+        "evidence-export.json",
+        "product-fields-export.json",
+        "tool-refusals-export.json"
+      ]
+    },
+    {
+      "id": "A3",
+      "status": "pending"
+    },
+    {
+      "id": "B3",
+      "status": "pending"
+    },
+    {
+      "id": "D3",
+      "status": "pending"
+    },
+    {
+      "id": "D4",
+      "status": "pending"
+    },
+    {
+      "id": "C4",
+      "status": "pending"
+    },
+    {
+      "id": "A4",
+      "status": "pending"
+    },
+    {
+      "id": "B4",
+      "status": "pending"
+    },
+    {
+      "id": "B5",
+      "status": "pending"
+    },
+    {
+      "id": "C5",
+      "status": "pending"
+    },
+    {
+      "id": "D5",
+      "status": "pending"
+    },
+    {
+      "id": "A5",
+      "status": "pending"
+    }
+  ]
+}

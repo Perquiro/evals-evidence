@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:54824/loans",
+    "actor": "Reader"
+  },
+  "status": 200,
+  "body": {
+    "loans": [],
+    "message": "No loans"
+  }
+}

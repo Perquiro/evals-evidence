@@ -1,0 +1,11 @@
+# Adjudication
+
+Both independent reviews agree on all inventory and Scenario flags: four complete seen checks, three saved checks, one directly Journey-linked check, zero unsupported material claims and one grounded Scenario. Root checked all five browser actions, the saved bodies, the role and locator supplements, and the proposed Scenario. Original grades are unchanged; the final grade retains the initial review's complete support sets.
+
+HR01 is seen but partially saved. The employee baseline is explicit, and Michael's record names shared navigation plus Approvals. Hannah's record says shared navigation plus Onboarding but omits her visible Approvals link. No other saved alternative supplies it. The complete raw three-Actor snapshots earn seen credit; shared Surface membership does not fill the missing Actor-specific fact. This omission is not a false claim.
+
+HR04 preserves Engineering selection, eight matching employees and one-page boundaries. HR14 preserves Michael opening the queue and George Tanaka's pending Vacation request. HR18 preserves the empty Personal fields, Next, the unchanged step and all three required-field messages. The remaining checks lack their required actions/results: there are no actual approval decisions, leave submissions, later onboarding states, timesheet work or profile changes. Only HR04 has complete directly Journey-linked support; the other saved checks retain full primary credit without it.
+
+The sole proposed Scenario faithfully uses the saved Engineering filter behavior in Observation 0a188fc1-ee1f-4753-80ae-8a835521d1ad. Other saved useful facts remain present, including onboarding validation, but their missing Journey-linked support limits this frozen Create runtime. No unsupported Product role claim arises from the anonymized trace because the original field supplement restores the actual returned values.
+
+Minute 10 has two seen and one saved check. Minutes 20 and 40, and final recording close, have four seen and three saved. Unsupported material claims are zero throughout. Final direct Journey support is one, with one distinct grounded proposed Scenario. Both independent grades pass mechanical reference and checkpoint validation.

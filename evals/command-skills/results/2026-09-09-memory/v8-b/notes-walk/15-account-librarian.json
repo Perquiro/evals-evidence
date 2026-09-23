@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:54824/account",
+    "actor": "Librarian"
+  },
+  "status": 200,
+  "body": {
+    "links": {
+      "reservations": "/holds",
+      "loans": "/loans"
+    },
+    "actor": "Librarian"
+  }
+}

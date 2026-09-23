@@ -1,0 +1,8 @@
+{
+  "itemCount": 0,
+  "normalizedDuplicateGroups": [],
+  "items": [],
+  "gaps": [],
+  "recovery": [],
+  "limits": "This enumerates final typed state and normalized duplicate candidates. Semantic aliases, false pending/reopened checks and unsupported repeats require human comparison with the actual trace. No such conclusions are inferred from a zero exact-duplicate count."
+}

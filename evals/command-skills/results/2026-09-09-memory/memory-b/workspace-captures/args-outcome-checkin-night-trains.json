@@ -1,0 +1,15 @@
+{
+  "requestToken": "947c45f4-9adf-48c3-90a8-b49aabef4b9f",
+  "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "POST /desk/returns with the offered JSON body {\"bookId\":103} returned 404 Not Found with {\"error\":\"Book not found\"}.",
+      "look": { "item": { "id": "e85d7dc6-ca5d-447f-a8cb-ff5889b74339" }, "kind": "exercised", "attemptObservationId": "b1e2bc5f-cb60-48fb-8df3-b918ad9507d5" },
+      "capture": "pending"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "requestToken": "4ffc78c3-a782-4981-bd50-16ea00e7f8d5",
+  "surfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [
+    { "key": "authentication", "name": "Actor authentication guidance", "kind": "information" },
+    { "key": "navigation", "name": "Response navigation guidance", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /docs returned 200 OK. It says to set X-Actor to Reader or Librarian without credentials, and to follow each action's advertised HTTP method and JSON fields; an empty object is valid when no fields are listed.",
+      "looks": [
+        { "item": { "key": "authentication" }, "kind": "offered" },
+        { "item": { "key": "navigation" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

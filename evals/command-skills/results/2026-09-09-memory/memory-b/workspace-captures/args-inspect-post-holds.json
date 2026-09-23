@@ -1,0 +1,21 @@
+{
+  "requestToken": "29a85719-a274-4311-840d-e7c6d7b4ec20",
+  "surfaceId": "80e00022-e2ae-4b3e-acf3-bd08c677678d",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "hold", "name": "Created reservation", "kind": "information" },
+    { "key": "holds", "name": "Reservations", "kind": "link" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "POST /holds returned created reservation 301 for River Atlas (bookId 101) and linked to /holds.",
+      "looks": [
+        { "item": { "key": "hold" }, "kind": "offered" },
+        { "item": { "key": "holds" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

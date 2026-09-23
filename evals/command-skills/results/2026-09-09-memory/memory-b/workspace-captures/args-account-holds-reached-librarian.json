@@ -1,0 +1,14 @@
+{
+  "requestToken": "3cafadbf-d83b-4fac-b10b-c76bd64741aa",
+  "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following Reservations reached GET /holds, which returned an empty holds array and the message 'No reservations'.",
+      "look": { "item": { "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12" }, "kind": "reached", "reachedSurfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99" }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "requestToken": "581f80da-d68f-471e-bc68-a14a1a318961",
+  "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "no-reservations", "name": "No reservations message", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "After cancellation, GET /holds returned no holds and the message 'No reservations'.",
+      "looks": [
+        { "item": { "key": "no-reservations" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

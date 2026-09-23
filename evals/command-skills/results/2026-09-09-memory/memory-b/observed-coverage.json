@@ -1,0 +1,704 @@
+{
+  "requestBudget": 40,
+  "productRequests": 38,
+  "unclassifiedErrors": [],
+  "excessRequests": 0,
+  "seen": 17,
+  "total": 25,
+  "supportingNavigation": [
+    {
+      "pathname": "/",
+      "events": [
+        7,
+        135
+      ]
+    },
+    {
+      "pathname": "/docs",
+      "events": [
+        8,
+        153
+      ]
+    },
+    {
+      "pathname": "/account",
+      "events": [
+        43,
+        170
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "W01",
+      "task": "Find books",
+      "title": "Browse the full catalog",
+      "priority": "core",
+      "locator": "GET /catalog",
+      "discovery": "Root catalog link",
+      "request": {
+        "method": "GET",
+        "pathname": "/catalog",
+        "query": {}
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "books": [
+            {
+              "id": "101"
+            },
+            {
+              "id": "102"
+            },
+            {
+              "id": "103"
+            }
+          ]
+        }
+      },
+      "record": "Catalog includes the three books and their available/borrowed distinction.",
+      "observedEvents": [
+        17,
+        117,
+        161,
+        196
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W02",
+      "task": "Find books",
+      "title": "Find a matching title",
+      "priority": "core",
+      "locator": "GET /catalog",
+      "discovery": "Catalog search field",
+      "request": {
+        "method": "GET",
+        "pathname": "/catalog"
+      },
+      "queryRequired": true,
+      "response": {
+        "status": 200
+      },
+      "semantic": "A nonempty query returns a proper nonempty subset of the catalog.",
+      "record": "The actual query and matching result are stated.",
+      "observedEvents": [
+        21
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W03",
+      "task": "Find books",
+      "title": "Search with no matches",
+      "priority": "core",
+      "locator": "GET /catalog",
+      "discovery": "Catalog search field",
+      "request": {
+        "method": "GET",
+        "pathname": "/catalog"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "books": [],
+          "message": "No books found"
+        }
+      },
+      "record": "A no-match query returns an empty result and the exact message.",
+      "observedEvents": [
+        69
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W04",
+      "task": "Find books",
+      "title": "Clear an empty search",
+      "priority": "secondary",
+      "locator": "GET /catalog",
+      "discovery": "Clear link in no-match response",
+      "request": {
+        "method": "GET",
+        "pathname": "/catalog",
+        "query": {}
+      },
+      "after": "W03",
+      "response": {
+        "status": 200,
+        "body": {
+          "books": [
+            {
+              "id": "101"
+            },
+            {
+              "id": "102"
+            },
+            {
+              "id": "103"
+            }
+          ]
+        }
+      },
+      "record": "Clearing the failed search restores the catalog, grounded in the actual sequence.",
+      "observedEvents": [
+        117,
+        161,
+        196
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W05",
+      "task": "Reserve a book",
+      "title": "Inspect an available book",
+      "priority": "core",
+      "locator": "GET /books/:id",
+      "discovery": "Catalog book links",
+      "request": {
+        "method": "GET",
+        "pathname": "/books/101",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "available": true
+        }
+      },
+      "record": "The book is available and offers a reservation action.",
+      "observedEvents": [
+        25,
+        201
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W06",
+      "task": "Reserve a book",
+      "title": "Inspect a borrowed book",
+      "priority": "core",
+      "locator": "GET /books/:id",
+      "discovery": "Catalog book links",
+      "request": {
+        "method": "GET",
+        "pathname": "/books/102",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "available": false
+        }
+      },
+      "record": "A borrowed book is unavailable under the same parameterized Surface.",
+      "observedEvents": [
+        72
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W07",
+      "task": "Reserve a book",
+      "title": "No reservations yet",
+      "priority": "secondary",
+      "locator": "GET /holds",
+      "discovery": "Account reservations link",
+      "request": {
+        "method": "GET",
+        "pathname": "/holds",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "holds": [],
+          "message": "No reservations"
+        }
+      },
+      "record": "An empty reservations list shows No reservations.",
+      "observedEvents": [
+        101
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W08",
+      "task": "Reserve a book",
+      "title": "Reserve an available book",
+      "priority": "core",
+      "locator": "POST /holds",
+      "discovery": "Book detail action",
+      "request": {
+        "method": "POST",
+        "pathname": "/holds",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 201
+      },
+      "record": "Submitting an available book creates a reservation with its returned identity.",
+      "observedEvents": [
+        31
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W09",
+      "task": "Reserve a book",
+      "title": "Borrowed book cannot be reserved",
+      "priority": "core",
+      "locator": "POST /holds",
+      "discovery": "Borrowed book detail action",
+      "request": {
+        "method": "POST",
+        "pathname": "/holds",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 409,
+        "body": {
+          "error": "Book is unavailable"
+        }
+      },
+      "record": "A reservation request for an unavailable book returns the conflict and exact message.",
+      "observedEvents": [],
+      "seen": false,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W10",
+      "task": "Reserve a book",
+      "title": "Reservation needs a book",
+      "priority": "secondary",
+      "locator": "POST /holds",
+      "discovery": "Reservation action's bookId field",
+      "request": {
+        "method": "POST",
+        "pathname": "/holds",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "error": "Book is required"
+        }
+      },
+      "record": "Omitting the book field produces the required-field error.",
+      "observedEvents": [],
+      "seen": false,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W11",
+      "task": "Reserve a book",
+      "title": "Duplicate reservation is rejected",
+      "priority": "secondary",
+      "locator": "POST /holds",
+      "discovery": "Repeat a completed reservation action",
+      "request": {
+        "method": "POST",
+        "pathname": "/holds",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 409,
+        "body": {
+          "error": "Already reserved"
+        }
+      },
+      "record": "Reserving an already reserved book returns Already reserved.",
+      "observedEvents": [],
+      "seen": false,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W12",
+      "task": "Reserve a book",
+      "title": "Created reservation appears in account",
+      "priority": "core",
+      "locator": "GET /holds",
+      "discovery": "Reservations link returned by create",
+      "request": {
+        "method": "GET",
+        "pathname": "/holds",
+        "actor": "Reader"
+      },
+      "after": "W08",
+      "response": {
+        "status": 200
+      },
+      "semantic": "The nonempty list includes the reservation created earlier.",
+      "record": "The created reservation can be read back from the account list.",
+      "observedEvents": [
+        38,
+        93
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W13",
+      "task": "Cancel a reservation",
+      "title": "Cancel a reservation",
+      "priority": "core",
+      "locator": "DELETE /holds/:id",
+      "discovery": "Cancellation action on a listed reservation",
+      "request": {
+        "method": "DELETE",
+        "pathnamePrefix": "/holds/",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "message": "Reservation cancelled"
+        }
+      },
+      "record": "Cancellation of the selected reservation succeeds.",
+      "observedEvents": [
+        96
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W14",
+      "task": "Cancel a reservation",
+      "title": "Cancellation removes the reservation",
+      "priority": "core",
+      "locator": "GET /holds",
+      "discovery": "Return to reservations list",
+      "request": {
+        "method": "GET",
+        "pathname": "/holds",
+        "actor": "Reader"
+      },
+      "after": "W13",
+      "response": {
+        "status": 200,
+        "body": {
+          "holds": [],
+          "message": "No reservations"
+        }
+      },
+      "record": "The cancelled reservation no longer appears; an empty list is shown.",
+      "observedEvents": [
+        101
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W15",
+      "task": "Renew a loan",
+      "title": "Inspect the current loan",
+      "priority": "core",
+      "locator": "GET /loans/:id",
+      "discovery": "Account loans link then loan detail link",
+      "request": {
+        "method": "GET",
+        "pathname": "/loans/201",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "id": "201",
+          "renewals": 0
+        }
+      },
+      "record": "The current loan has an initial due date and renewal/return actions.",
+      "observedEvents": [
+        51
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W16",
+      "task": "Renew a loan",
+      "title": "Renew the loan",
+      "priority": "core",
+      "locator": "POST /loans/:id/renew",
+      "discovery": "Loan detail renewal action",
+      "request": {
+        "method": "POST",
+        "pathname": "/loans/201/renew",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "renewals": 1,
+          "due": "2026-10-15"
+        }
+      },
+      "record": "Renewal changes the due date and renewal count.",
+      "observedEvents": [
+        64
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W17",
+      "task": "Renew a loan",
+      "title": "Renewal limit is enforced",
+      "priority": "core",
+      "locator": "POST /loans/:id/renew",
+      "discovery": "Repeat the renewal action",
+      "request": {
+        "method": "POST",
+        "pathname": "/loans/201/renew",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 409,
+        "body": {
+          "error": "Renewal limit reached"
+        }
+      },
+      "record": "A second renewal returns the conflict and exact limit message.",
+      "observedEvents": [],
+      "seen": false,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W18",
+      "task": "Return a borrowed book",
+      "title": "Return the reader's book",
+      "priority": "core",
+      "locator": "POST /loans/:id/return",
+      "discovery": "Loan detail return action",
+      "request": {
+        "method": "POST",
+        "pathname": "/loans/201/return",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "message": "Book returned",
+          "bookId": "102"
+        }
+      },
+      "record": "The Reader's return succeeds for the borrowed book.",
+      "observedEvents": [
+        106
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W19",
+      "task": "Return a borrowed book",
+      "title": "Returned loan disappears",
+      "priority": "core",
+      "locator": "GET /loans",
+      "discovery": "Loans link returned by return action",
+      "request": {
+        "method": "GET",
+        "pathname": "/loans",
+        "actor": "Reader"
+      },
+      "after": "W18",
+      "response": {
+        "status": 200,
+        "body": {
+          "loans": [],
+          "message": "No loans"
+        }
+      },
+      "record": "The returned loan no longer appears in the loans list.",
+      "observedEvents": [
+        111
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W20",
+      "task": "Check in a book",
+      "title": "Reader cannot access service desk",
+      "priority": "core",
+      "locator": "GET /desk",
+      "discovery": "Root service-desk link while Reader",
+      "request": {
+        "method": "GET",
+        "pathname": "/desk",
+        "actor": "Reader"
+      },
+      "response": {
+        "status": 403,
+        "body": {
+          "error": "Service desk requires Librarian"
+        }
+      },
+      "record": "Reader receives a permission denial at the service desk.",
+      "observedEvents": [
+        55
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W21",
+      "task": "Check in a book",
+      "title": "Librarian can access service desk",
+      "priority": "core",
+      "locator": "GET /desk",
+      "discovery": "Root service-desk link while Librarian",
+      "request": {
+        "method": "GET",
+        "pathname": "/desk",
+        "actor": "Librarian"
+      },
+      "response": {
+        "status": 200
+      },
+      "record": "Librarian sees the service desk and pending check-in work.",
+      "observedEvents": [
+        138,
+        150
+      ],
+      "seen": true,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W22",
+      "task": "Check in a book",
+      "title": "Check-in needs a book",
+      "priority": "secondary",
+      "locator": "POST /desk/returns",
+      "discovery": "Check-in action's bookId field",
+      "request": {
+        "method": "POST",
+        "pathname": "/desk/returns",
+        "actor": "Librarian"
+      },
+      "response": {
+        "status": 422,
+        "body": {
+          "error": "Book is required"
+        }
+      },
+      "record": "Check-in without a book returns the required-field error.",
+      "observedEvents": [],
+      "seen": false,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W23",
+      "task": "Check in a book",
+      "title": "Check in the pending book",
+      "priority": "core",
+      "locator": "POST /desk/returns",
+      "discovery": "Service-desk check-in action",
+      "request": {
+        "method": "POST",
+        "pathname": "/desk/returns",
+        "actor": "Librarian",
+        "body": {
+          "bookId": "103"
+        }
+      },
+      "response": {
+        "status": 200,
+        "body": {
+          "message": "Book checked in",
+          "bookId": "103"
+        }
+      },
+      "record": "Librarian successfully checks in the pending book.",
+      "observedEvents": [],
+      "seen": false,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W24",
+      "task": "Check in a book",
+      "title": "Repeated check-in is rejected",
+      "priority": "secondary",
+      "locator": "POST /desk/returns",
+      "discovery": "Repeat the completed check-in action",
+      "request": {
+        "method": "POST",
+        "pathname": "/desk/returns",
+        "actor": "Librarian",
+        "body": {
+          "bookId": "103"
+        }
+      },
+      "response": {
+        "status": 409,
+        "body": {
+          "error": "Book is already checked in"
+        }
+      },
+      "record": "Repeating check-in returns the exact conflict message.",
+      "observedEvents": [],
+      "seen": false,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    },
+    {
+      "id": "W25",
+      "task": "Check in a book",
+      "title": "Checked-in book becomes available",
+      "priority": "core",
+      "locator": "GET /books/:id",
+      "discovery": "Book link returned by check-in",
+      "request": {
+        "method": "GET",
+        "pathname": "/books/103",
+        "actor": "Reader"
+      },
+      "after": "W23",
+      "response": {
+        "status": 200,
+        "body": {
+          "available": true
+        }
+      },
+      "record": "The Reader can observe the checked-in book as available.",
+      "observedEvents": [],
+      "seen": false,
+      "durablyRecorded": "ungraded",
+      "recordEvents": []
+    }
+  ],
+  "limitation": "Observed events prove receipt of matching responses only. A reviewer must assess consideration, truthful linked Knowledge and final durable reads. Errors without request classification conservatively consume budget and require trace review; their count is not confirmed Product traffic. All frozen outcomes remain in the denominator."
+}

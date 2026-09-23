@@ -1,0 +1,62 @@
+{
+  "boundary": "Product accepted Reserve before response body was read",
+  "attemptId": "c4525266-4748-430c-b217-0d8dba9c97e0",
+  "request": {
+    "requestToken": "f907a58a-effd-4335-95e6-dd6ff950b45d",
+    "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+    "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+    "platform": "browser",
+    "productVersion": "2.5",
+    "items": [],
+    "reports": [
+      {
+        "kind": "action",
+        "body": "Reserve is offered and the current Product state has no reservation immediately before POST /reservations.",
+        "look": {
+          "kind": "attempting",
+          "item": {
+            "id": "8106671b-1f96-43be-9d59-be236ab0a54d"
+          },
+          "resourceRef": "reservation:42"
+        }
+      }
+    ]
+  },
+  "inventory": {
+    "items": [
+      {
+        "key": "reserve",
+        "id": "8106671b-1f96-43be-9d59-be236ab0a54d",
+        "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+        "name": "Reserve",
+        "kind": "action",
+        "createdAt": "2026-09-09T07:09:15.562Z"
+      }
+    ],
+    "observations": [
+      {
+        "id": "b75f769a-2bb5-4664-a0f1-b706389ebfaa",
+        "seq": 1,
+        "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+        "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+        "productVersion": "2.5",
+        "body": "The Reserve page offers a Reserve submit button. Current Product state says there is no reservation and version is 2.5.",
+        "createdAt": "2026-09-09T07:09:15.563Z"
+      }
+    ],
+    "authorizedAttemptIds": []
+  },
+  "productEvents": [
+    {
+      "kind": "state_read",
+      "state": "none",
+      "reservationCount": 0
+    },
+    {
+      "kind": "reserve",
+      "attemptId": "c4525266-4748-430c-b217-0d8dba9c97e0",
+      "reason": ""
+    }
+  ],
+  "reservationCount": 1
+}

@@ -1,0 +1,220 @@
+{
+  "revision": "51972075-8266-494c-872b-d42081403606",
+  "coverage": {
+    "actors": 2,
+    "surfaces": 11,
+    "journeys": 5,
+    "observations": 53,
+    "evidence": 0,
+    "scenarios": 0,
+    "tests": 0,
+    "surfacesWithoutObservations": 0,
+    "journeysWithoutAcceptedScenarios": 5,
+    "acceptedScenariosWithoutTests": 0
+  },
+  "entries": [
+    {
+      "kind": "actor",
+      "id": "dc327f7f-a9ff-451c-b205-986f165f998b",
+      "name": "Reader"
+    },
+    {
+      "kind": "actor",
+      "id": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+      "name": "Librarian"
+    },
+    {
+      "kind": "surface",
+      "id": "f934a261-24eb-4a35-8257-bfa9913799c9",
+      "name": "API root",
+      "locator": "GET /"
+    },
+    {
+      "kind": "surface",
+      "id": "fd0108e5-2e84-4492-99b7-df7f975544ff",
+      "name": "API documentation",
+      "locator": "GET /docs"
+    },
+    {
+      "kind": "surface",
+      "id": "a395f219-6eda-404f-856c-8b03df969732",
+      "name": "Catalog",
+      "locator": "GET /catalog"
+    },
+    {
+      "kind": "surface",
+      "id": "2b095c91-dc97-4f7a-ac2c-6f57b7956d04",
+      "name": "Book detail",
+      "locator": "GET /books/:id"
+    },
+    {
+      "kind": "surface",
+      "id": "449bf668-4b85-486f-9e4f-95491c7278db",
+      "name": "Account",
+      "locator": "GET /account"
+    },
+    {
+      "kind": "surface",
+      "id": "a42995dc-8f3e-430e-8896-0b4156d2a296",
+      "name": "Holds",
+      "locator": "GET /holds"
+    },
+    {
+      "kind": "surface",
+      "id": "aad1b645-863b-44e1-818a-50058aae072a",
+      "name": "Loans",
+      "locator": "GET /loans"
+    },
+    {
+      "kind": "surface",
+      "id": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "name": "Loan detail",
+      "locator": "GET /loans/:id"
+    },
+    {
+      "kind": "surface",
+      "id": "0e382955-d2c1-43fe-aa78-52cffe7d2d91",
+      "name": "Service desk",
+      "locator": "GET /desk"
+    },
+    {
+      "kind": "surface",
+      "id": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "name": "Reserve book",
+      "locator": "POST /holds"
+    },
+    {
+      "kind": "surface",
+      "id": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "name": "Check in book",
+      "locator": "POST /desk/returns"
+    },
+    {
+      "kind": "journey",
+      "id": "1dea851a-ac85-4ec4-b6a7-54cf0d9c4bae",
+      "name": "Browse the catalog",
+      "surfaceCount": 4,
+      "testFolder": "browse-the-catalog"
+    },
+    {
+      "kind": "journey",
+      "id": "89b84668-871b-41a6-bdd4-30beb4dd988d",
+      "name": "Search the catalog",
+      "surfaceCount": 2,
+      "testFolder": "search-the-catalog"
+    },
+    {
+      "kind": "journey",
+      "id": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+      "name": "Review a loan",
+      "surfaceCount": 2,
+      "testFolder": "review-a-loan"
+    },
+    {
+      "kind": "journey",
+      "id": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "name": "Reserve a book",
+      "surfaceCount": 3,
+      "testFolder": "reserve-a-book"
+    },
+    {
+      "kind": "journey",
+      "id": "674b9edf-4606-4eff-92f8-889402becd57",
+      "name": "Check in a book",
+      "surfaceCount": 4,
+      "testFolder": "check-in-a-book"
+    }
+  ],
+  "storedRelationships": [
+    {
+      "kind": "journey_surface",
+      "journeyId": "1dea851a-ac85-4ec4-b6a7-54cf0d9c4bae",
+      "surfaceId": "f934a261-24eb-4a35-8257-bfa9913799c9",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "1dea851a-ac85-4ec4-b6a7-54cf0d9c4bae",
+      "surfaceId": "fd0108e5-2e84-4492-99b7-df7f975544ff",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "1dea851a-ac85-4ec4-b6a7-54cf0d9c4bae",
+      "surfaceId": "a395f219-6eda-404f-856c-8b03df969732",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "1dea851a-ac85-4ec4-b6a7-54cf0d9c4bae",
+      "surfaceId": "2b095c91-dc97-4f7a-ac2c-6f57b7956d04",
+      "position": 3
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "89b84668-871b-41a6-bdd4-30beb4dd988d",
+      "surfaceId": "a395f219-6eda-404f-856c-8b03df969732",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "89b84668-871b-41a6-bdd4-30beb4dd988d",
+      "surfaceId": "a395f219-6eda-404f-856c-8b03df969732",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+      "surfaceId": "aad1b645-863b-44e1-818a-50058aae072a",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "f229373a-b0ea-44ba-a5fe-8af03e35d90d",
+      "surfaceId": "3544b297-2bd0-4ac7-ac6f-9244a34744e1",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "surfaceId": "2b095c91-dc97-4f7a-ac2c-6f57b7956d04",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "surfaceId": "0554d592-f9df-4bd8-956b-43a933d15fb7",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "892cadc7-95fb-4242-9cd0-898877129e56",
+      "surfaceId": "a42995dc-8f3e-430e-8896-0b4156d2a296",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+      "surfaceId": "0e382955-d2c1-43fe-aa78-52cffe7d2d91",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+      "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+      "surfaceId": "a395f219-6eda-404f-856c-8b03df969732",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+      "surfaceId": "aad1b645-863b-44e1-818a-50058aae072a",
+      "position": 3
+    }
+  ]
+}

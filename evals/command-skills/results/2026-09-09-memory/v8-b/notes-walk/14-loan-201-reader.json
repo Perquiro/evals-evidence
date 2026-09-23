@@ -1,0 +1,29 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:54824/loans/201",
+    "actor": "Reader"
+  },
+  "status": 200,
+  "body": {
+    "id": "201",
+    "bookId": "102",
+    "title": "Garden Notes",
+    "renewals": 0,
+    "due": "2026-10-01",
+    "actions": [
+      {
+        "label": "Renew loan",
+        "method": "POST",
+        "href": "/loans/201/renew",
+        "actor": "Reader"
+      },
+      {
+        "label": "Return book",
+        "method": "POST",
+        "href": "/loans/201/return",
+        "actor": "Reader"
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "revision": "974b0c23-8d67-4a2b-9501-a02ffa727996",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "e9abf3f8-a4f4-495d-a979-e885da721d62",
+      "actorIds": [
+        "40477a91-5970-4862-94d2-e1955c1f4610",
+        "dd4f772a-7769-4f91-be34-b3f6e63cc9d3"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "e9abf3f8-a4f4-495d-a979-e885da721d62",
+      "name": "Renew loan",
+      "locator": "POST /loans/:id/renew",
+      "createdAt": "2026-09-09T06:43:24.799Z"
+    },
+    "inventory": {
+      "items": [],
+      "complete": true
+    },
+    "history": {
+      "items": [],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

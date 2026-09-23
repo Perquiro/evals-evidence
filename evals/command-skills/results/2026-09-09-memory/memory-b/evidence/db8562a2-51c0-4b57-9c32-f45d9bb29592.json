@@ -1,0 +1,9 @@
+{
+  "id": "db8562a2-51c0-4b57-9c32-f45d9bb29592",
+  "kind": "agent_reported",
+  "containerPath": ".perquiro/evidence/db8562a2-51c0-4b57-9c32-f45d9bb29592/",
+  "createdAt": "2026-09-09T07:57:20.092Z",
+  "observationIds": [
+    "66c6f6df-46f1-4b21-bd6b-26801e4245e3"
+  ]
+}

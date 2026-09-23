@@ -1,0 +1,20 @@
+{
+  "requestToken": "d5f7c3cd-fef3-4a74-9f84-789e1849a407",
+  "surfaceId": "4ea58197-e422-40bd-92c9-b6376458bf3f",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "The HTTP client rejected the malformed JSON command before it sent a request to POST /desk/returns.",
+      "look": {
+        "item": { "id": "fe21b078-dabf-45de-b51f-c2d6fcff48ce" },
+        "kind": "blocked",
+        "reason": "curl reported an unmatched brace while parsing the request data, with no HTTP response.",
+        "attemptObservationId": "8871419f-5537-4c90-a33e-5caa8a0afa36",
+        "reconciliation": "not_executed"
+      }
+    }
+  ]
+}

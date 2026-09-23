@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"loans":[{"id":"201","title":"Garden Notes","href":"/loans/201"}]}

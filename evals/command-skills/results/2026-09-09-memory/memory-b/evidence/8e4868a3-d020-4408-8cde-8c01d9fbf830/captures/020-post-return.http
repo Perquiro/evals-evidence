@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"message":"Book returned","bookId":"102","catalog":"/catalog","loans":"/loans"}

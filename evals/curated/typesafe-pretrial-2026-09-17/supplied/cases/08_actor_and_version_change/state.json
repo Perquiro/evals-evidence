@@ -1,0 +1,26 @@
+{
+  "objective": "Understand the manager approval Journey on build b18.",
+  "scope": {
+    "actor": "manager-a",
+    "build": "b18",
+    "environment": "isolated synthetic sandbox"
+  },
+  "observations": [
+    "On build b17, employee-a opened the leave list and saw only their own requests.",
+    "On build b18, manager-a has successfully logged in. The manager's pending-team-requests view has never been inspected.",
+    "The About page copyright text was recorded in the current manager-a/b18 session."
+  ],
+  "open_questions": [
+    "What team requests and approval controls are visible to manager-a on b18?"
+  ],
+  "candidates": [
+    {
+      "id": "c1",
+      "check": "As manager-a on b18, open pending team requests and inspect the visible request details and approval controls."
+    },
+    {
+      "id": "c2",
+      "check": "Reopen About and read the same copyright text."
+    }
+  ]
+}

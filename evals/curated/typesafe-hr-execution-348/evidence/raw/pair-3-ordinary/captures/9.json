@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:49911/",
+  "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+  "actionId": "action-2",
+  "admitted": 0,
+  "remaining": 60
+}

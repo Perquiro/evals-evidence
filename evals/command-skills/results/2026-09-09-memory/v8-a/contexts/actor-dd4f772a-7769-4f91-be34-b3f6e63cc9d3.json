@@ -1,0 +1,144 @@
+[
+  {
+    "revision": "974b0c23-8d67-4a2b-9501-a02ffa727996",
+    "anchor": {
+      "kind": "actor",
+      "record": {
+        "id": "dd4f772a-7769-4f91-be34-b3f6e63cc9d3",
+        "name": "Librarian",
+        "secretNames": [],
+        "createdAt": "2026-09-09T06:01:03.380Z"
+      }
+    },
+    "selection": {
+      "productVersions": {
+        "scope": "all"
+      },
+      "observations": {
+        "detail": "records",
+        "actorIds": [
+          "dd4f772a-7769-4f91-be34-b3f6e63cc9d3"
+        ],
+        "scope": "both"
+      }
+    },
+    "storedRelationships": {
+      "items": [
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "dd4f772a-7769-4f91-be34-b3f6e63cc9d3",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "35613818-36be-4a1e-a711-0d156129abba",
+            "name": "Check in a book"
+          },
+          "observations": [
+            {
+              "id": "8b4e4e47-e071-4629-a016-2b8e0a7ace10",
+              "seq": 10,
+              "surfaceId": "3d485a8e-33af-464f-b04d-4ce73071d80f",
+              "body": "Librarian's service desk lists Night Trains 103 as pending return and offers POST /desk/returns with bookId 103.",
+              "createdAt": "2026-09-09T06:45:52.346Z"
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "dd4f772a-7769-4f91-be34-b3f6e63cc9d3",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "8de9c4c9-747d-47ab-94e8-3ca7aadb1ec6",
+            "name": "Reserve a book"
+          },
+          "observations": [
+            {
+              "id": "e8ddd9c2-9e5a-429a-8bad-9b799e4935df",
+              "seq": 12,
+              "surfaceId": "349e1e44-025d-43ba-b218-7be6ab30a04e",
+              "body": "Librarian can read River Atlas detail, whose reserve action is explicitly labelled for Reader.",
+              "createdAt": "2026-09-09T06:45:52.550Z"
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "dd4f772a-7769-4f91-be34-b3f6e63cc9d3",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "b0b71ff3-d5c1-4f24-96a2-73fc9119084f",
+            "name": "Renew a loan"
+          },
+          "observations": [
+            {
+              "id": "abb96815-b84c-4f2f-b48c-61d527c47e1e",
+              "seq": 16,
+              "surfaceId": "675e411d-697d-4a1c-807c-c35a1c3d266f",
+              "body": "Librarian loan detail exposes the same renewal and return controls, both labelled for Reader.",
+              "createdAt": "2026-09-09T06:45:52.911Z"
+            }
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "projections": {
+      "items": [
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "dd4f772a-7769-4f91-be34-b3f6e63cc9d3",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "35613818-36be-4a1e-a711-0d156129abba",
+            "name": "Check in a book"
+          },
+          "count": 1,
+          "firstSeq": 10,
+          "lastSeq": 10
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "dd4f772a-7769-4f91-be34-b3f6e63cc9d3",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "8de9c4c9-747d-47ab-94e8-3ca7aadb1ec6",
+            "name": "Reserve a book"
+          },
+          "count": 1,
+          "firstSeq": 12,
+          "lastSeq": 12
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "dd4f772a-7769-4f91-be34-b3f6e63cc9d3",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "b0b71ff3-d5c1-4f24-96a2-73fc9119084f",
+            "name": "Renew a loan"
+          },
+          "count": 1,
+          "firstSeq": 16,
+          "lastSeq": 16
+        }
+      ],
+      "complete": true
+    }
+  }
+]

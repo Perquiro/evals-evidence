@@ -1,0 +1,18 @@
+{
+  "requestToken": "68cecde8-bd3d-4e88-9287-a8a6923036ad",
+  "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "The no-result catalog response displayed 'No books found' and offered /catalog as a clear-search link.",
+      "looks": [
+        { "item": { "id": "c6311826-369b-4571-ad1d-b6094a1609cd" }, "kind": "offered" },
+        { "item": { "id": "84ed69ba-0066-4392-b392-cd3a8a6bfb4e" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

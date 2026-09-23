@@ -1,0 +1,62 @@
+[
+  {
+    "revision": "974b0c23-8d67-4a2b-9501-a02ffa727996",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "675e411d-697d-4a1c-807c-c35a1c3d266f",
+      "actorIds": [
+        "40477a91-5970-4862-94d2-e1955c1f4610",
+        "dd4f772a-7769-4f91-be34-b3f6e63cc9d3"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "675e411d-697d-4a1c-807c-c35a1c3d266f",
+      "name": "Loan detail",
+      "locator": "GET /loans/:id",
+      "createdAt": "2026-09-09T06:15:45.853Z"
+    },
+    "inventory": {
+      "items": [],
+      "complete": true
+    },
+    "history": {
+      "items": [],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

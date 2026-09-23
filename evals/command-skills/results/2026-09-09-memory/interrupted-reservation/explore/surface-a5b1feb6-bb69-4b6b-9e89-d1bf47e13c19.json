@@ -1,0 +1,162 @@
+[
+  {
+    "revision": "000fd4eb-d53b-45cf-b489-78c97e4044ea",
+    "selection": {
+      "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+      "actorIds": [
+        "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+        "c334caef-fad1-4c69-885b-c10391ad2408"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+      "name": "Reserve book",
+      "locator": "POST /holds",
+      "createdAt": "2026-09-09T06:09:08.108Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "6684b1f0-b543-43d7-ba36-df01c13a5b7f",
+          "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+          "name": "Reserve River Atlas",
+          "kind": "action",
+          "createdAt": "2026-09-09T06:09:08.157Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "08332fa1-5db9-4a25-8503-4e7b7b37783c",
+            "seq": 1,
+            "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+            "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+            "body": "River Atlas book 101 is available and offers POST /holds with bookId 101. Reader has no reservations.",
+            "createdAt": "2026-09-09T06:09:08.158Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "6684b1f0-b543-43d7-ba36-df01c13a5b7f"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "2ed79e24-2c2b-4805-95a4-31958b0a311f",
+            "seq": 2,
+            "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+            "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+            "body": "River Atlas 101 is available and Reader has no reservations immediately before the request.",
+            "createdAt": "2026-09-09T06:09:08.201Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "6684b1f0-b543-43d7-ba36-df01c13a5b7f"
+              },
+              "kind": "attempting",
+              "resourceRef": "book:101; Reader holds"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "47bde24d-5232-4601-b35d-0aeff2c8d690",
+            "seq": 3,
+            "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+            "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+            "body": "On reconciliation, GET /holds returned Reader hold 301 for River Atlas book 101; GET /books/101 returned the Reserve book action for Reader.",
+            "createdAt": "2026-09-09T06:19:30.143Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "6684b1f0-b543-43d7-ba36-df01c13a5b7f"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "2ed79e24-2c2b-4805-95a4-31958b0a311f"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "6684b1f0-b543-43d7-ba36-df01c13a5b7f",
+            "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+            "name": "Reserve River Atlas",
+            "kind": "action",
+            "createdAt": "2026-09-09T06:09:08.157Z"
+          },
+          "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "47bde24d-5232-4601-b35d-0aeff2c8d690"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 1,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 1
+    }
+  }
+]

@@ -1,0 +1,8 @@
+
+> perquiro@1.0.0 build
+> npm run clean && tsc && node scripts/copy-command-skills.mjs && node scripts/copy-ui-assets.mjs
+
+
+> perquiro@1.0.0 clean
+> node --input-type=module --eval "import { rmSync } from 'node:fs'; rmSync('dist', { recursive: true, force: true });"
+

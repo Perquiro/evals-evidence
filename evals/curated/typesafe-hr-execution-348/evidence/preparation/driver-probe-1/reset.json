@@ -1,0 +1,66 @@
+{
+  "product_sha": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+  "server_instance_id": "23108:2026-09-20T20:14:09.087Z",
+  "server_started": "2026-09-20T20:14:09.087Z",
+  "project_id": "752a4dde-d2e0-42bf-9d9e-cca9822b6e3a",
+  "project_path": "C:\\dev\\Perquiro\\.worktrees\\348\\.perquiro\\348\\driver-probe-1\\project",
+  "browser_context_id": "a6f93bb7-b2c3-4aa0-b525-b97b37bb1c07",
+  "browser_version": "151.0.7922.34",
+  "empty_storage": true,
+  "empty_knowledge": true,
+  "signed_out": true,
+  "initial_capture": {
+    "url": "http://127.0.0.1:55621/login",
+    "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: password123\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+    "admitted": 0,
+    "events": [
+      {
+        "kind": "action",
+        "id": "action-1",
+        "args": {
+          "op": "navigate",
+          "path": "/"
+        },
+        "dispatched_ms": null,
+        "executed": true,
+        "result": {
+          "url": "http://127.0.0.1:55621/",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: password123\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "completed_ms": null
+      }
+    ]
+  },
+  "emptyKnowledge": {
+    "revision": "16a83823-b570-402c-91fa-a18c47f72e39",
+    "coverage": {
+      "actors": 1,
+      "surfaces": 0,
+      "journeys": 0,
+      "observations": 0,
+      "evidence": 0,
+      "scenarios": 0,
+      "tests": 0,
+      "surfacesWithoutObservations": 0,
+      "journeysWithoutAcceptedScenarios": 0,
+      "acceptedScenariosWithoutTests": 0
+    },
+    "entries": {
+      "items": [
+        {
+          "kind": "actor",
+          "id": "a4171df9-e554-441a-8a34-bed2c6306c1d",
+          "name": "Employee"
+        }
+      ],
+      "complete": true
+    },
+    "storedRelationships": {
+      "items": [],
+      "complete": true
+    }
+  },
+  "actor_id": "a4171df9-e554-441a-8a34-bed2c6306c1d",
+  "seed_sha256": "8cde76f36bd76b055e2fee3fc2391ace595d94819a4b96d162f7b4e1eecdf83e",
+  "fixed_product_date": "2026-09-17T12:00:00.000Z"
+}

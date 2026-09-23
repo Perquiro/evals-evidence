@@ -1,0 +1,16 @@
+[
+  {
+    "endpoint": "models",
+    "status": 200,
+    "request_id": "req_01a0b0bd26147188a5abddebecdd8db8",
+    "body": "{\"models\":[{\"name\":\"jev-latest\",\"description\":\"The latest iteration of TypeSafe's System One Model: Jev\",\"release_date\":\"2026-09-10T18:38:01.391457+00:00\"},{\"name\":\"jev-preview\",\"description\":\"A preview version of `jev-latest`: should be better in most ways\",\"release_date\":\"2026-09-10T18:39:06.057655+00:00\"}]}",
+    "latency_ms": 756.1
+  },
+  {
+    "endpoint": "systemone",
+    "status": 200,
+    "request_id": "req_01a0b0bd28e27452a070cdf4970d804f",
+    "body": "{\"model\":\"jev-1.13.0\",\"answers\":{\"color\":{\"type\":\"noul\",\"noul\":0.98}},\"usage\":{\"input_tokens\":276,\"output_tokens\":20}}",
+    "latency_ms": 797.8
+  }
+]

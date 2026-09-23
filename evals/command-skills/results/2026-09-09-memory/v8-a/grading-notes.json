@@ -1,0 +1,165 @@
+{
+  "W01": {
+    "seqs": [
+      3
+    ],
+    "journeyRelated": true,
+    "reason": "Three named books with availability under Find a book."
+  },
+  "W02": {
+    "seqs": [
+      13
+    ],
+    "journeyRelated": true,
+    "reason": "Actual query and one matching book."
+  },
+  "W03": {
+    "seqs": [
+      14
+    ],
+    "journeyRelated": true,
+    "reason": "Exact query, empty result, message and Clear link."
+  },
+  "W04": {
+    "seqs": [
+      15
+    ],
+    "journeyRelated": true,
+    "reason": "Explicitly recorded following the Clear link and restoring catalog."
+  },
+  "W05": {
+    "seqs": [
+      4
+    ],
+    "journeyRelated": true,
+    "reason": "Reader's available detail and actual advertised operation."
+  },
+  "W06": {
+    "seqs": [
+      5
+    ],
+    "journeyRelated": true,
+    "reason": "Reader's borrowed detail shares the canonical book Surface."
+  },
+  "W07": {
+    "seqs": [
+      7
+    ],
+    "journeyRelated": true,
+    "reason": "Initial empty reservation collection."
+  },
+  "W08": {
+    "seqs": [
+      24
+    ],
+    "journeyRelated": true,
+    "reason": "Returned identity 301 recorded on POST endpoint."
+  },
+  "W09": {
+    "seqs": [
+      21
+    ],
+    "journeyRelated": true,
+    "reason": "Exact unavailable rejection on POST endpoint."
+  },
+  "W10": {
+    "seqs": [
+      20
+    ],
+    "journeyRelated": true,
+    "reason": "Empty request and required-book rejection."
+  },
+  "W11": {
+    "seqs": [
+      25
+    ],
+    "journeyRelated": true,
+    "reason": "Repeat reservation and exact conflict."
+  },
+  "W12": {
+    "seqs": [
+      26
+    ],
+    "journeyRelated": true,
+    "reason": "Created reservation identity and cancellation action read back."
+  },
+  "W13": {
+    "seqs": [
+      27
+    ],
+    "journeyRelated": true,
+    "reason": "Exact cancellation result on DELETE endpoint."
+  },
+  "W14": {
+    "seqs": [
+      28
+    ],
+    "journeyRelated": true,
+    "reason": "Post-cancellation empty collection."
+  },
+  "W15": {
+    "seqs": [
+      11
+    ],
+    "journeyRelated": true,
+    "reason": "View loans is a related preparatory task: initial due date, count and renewal/return actions recorded."
+  },
+  "W16": {
+    "seqs": [
+      17
+    ],
+    "journeyRelated": true,
+    "reason": "Renewal count and new due date on canonical POST endpoint."
+  },
+  "W17": {
+    "seqs": [
+      18
+    ],
+    "journeyRelated": true,
+    "reason": "Second renewal and exact limit message."
+  },
+  "W18": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Summary names return as remaining despite ten unused requests. Host review interruptions retained; no Product blocker established."
+  },
+  "W19": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Return readback deferred with the return task."
+  },
+  "W20": {
+    "seqs": [
+      9
+    ],
+    "journeyRelated": true,
+    "reason": "Reader denial under check-in Journey."
+  },
+  "W21": {
+    "seqs": [
+      10
+    ],
+    "journeyRelated": true,
+    "reason": "Librarian pending book and check-in action."
+  },
+  "W22": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Summary names check-in validation as remaining."
+  },
+  "W23": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Summary names check-in success as remaining."
+  },
+  "W24": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Summary names repeat check-in as remaining."
+  },
+  "W25": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Summary names Reader consumer readback as remaining."
+  }
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "revision": "bfbc1b96-d03e-4390-addd-dbeefdc1a404",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+      "actorIds": [
+        "ca8ba006-6f42-4f2c-873a-e7581316f920"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+      "name": "Reserve",
+      "locator": "/reserve",
+      "createdAt": "2026-09-09T07:09:15.534Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "8106671b-1f96-43be-9d59-be236ab0a54d",
+          "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+          "name": "Reserve",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:09:15.562Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "b75f769a-2bb5-4664-a0f1-b706389ebfaa",
+            "seq": 1,
+            "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+            "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "productVersion": "2.5",
+            "body": "The Reserve page offers a Reserve submit button. Current Product state says there is no reservation and version is 2.5.",
+            "createdAt": "2026-09-09T07:09:15.563Z"
+          },
+          "platform": "browser",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "8106671b-1f96-43be-9d59-be236ab0a54d"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "c4525266-4748-430c-b217-0d8dba9c97e0",
+            "seq": 2,
+            "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+            "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "productVersion": "2.5",
+            "body": "Reserve is offered and the current Product state has no reservation immediately before POST /reservations.",
+            "createdAt": "2026-09-09T07:09:15.592Z"
+          },
+          "platform": "browser",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "8106671b-1f96-43be-9d59-be236ab0a54d"
+              },
+              "kind": "attempting",
+              "resourceRef": "reservation:42"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "027786e1-6a66-4493-8260-86071e1ada26",
+            "seq": 3,
+            "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+            "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "productVersion": "2.5",
+            "body": "Reconciliation GET /api/reservations/42 returned id 42, state active, reservationCount 1, and version 2.5; the prior Reserve attempt completed.",
+            "createdAt": "2026-09-09T07:28:03.870Z"
+          },
+          "platform": "browser",
+          "support": "indexed",
+          "report": {
+            "kind": "action",
+            "capture": "pending",
+            "look": {
+              "item": {
+                "id": "8106671b-1f96-43be-9d59-be236ab0a54d"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "c4525266-4748-430c-b217-0d8dba9c97e0"
+            }
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "8106671b-1f96-43be-9d59-be236ab0a54d",
+            "surfaceId": "a03adfa1-c44c-4bcf-b3d9-5fc5f1f3ccc0",
+            "name": "Reserve",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:09:15.562Z"
+          },
+          "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+          "platform": "browser",
+          "productVersion": "2.5",
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "027786e1-6a66-4493-8260-86071e1ada26"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "027786e1-6a66-4493-8260-86071e1ada26",
+          "evidenceId": "1f8fd2c1-5076-464e-b6a1-d93ed2ce4db4"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 1,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 1
+    }
+  }
+]

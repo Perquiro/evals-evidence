@@ -1,0 +1,95 @@
+[
+  {
+    "revision": "bfbc1b96-d03e-4390-addd-dbeefdc1a404",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "f23c4636-be1e-4c66-abbe-46d434f5e30f",
+      "actorIds": [
+        "ca8ba006-6f42-4f2c-873a-e7581316f920"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "f23c4636-be1e-4c66-abbe-46d434f5e30f",
+      "name": "Cancellation confirmation",
+      "locator": "/reservations/:id/cancel",
+      "createdAt": "2026-09-09T07:32:48.470Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "354f6968-040a-4fbe-80d1-9b48d3f364d7",
+          "surfaceId": "f23c4636-be1e-4c66-abbe-46d434f5e30f",
+          "name": "Status: cancelled",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:33:02.024Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "7aea2e47-6cf1-4e39-b415-741e2964911d",
+            "seq": 12,
+            "surfaceId": "f23c4636-be1e-4c66-abbe-46d434f5e30f",
+            "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "body": "Cancellation confirmation at /reservations/42/cancel displays Status: cancelled.",
+            "createdAt": "2026-09-09T07:33:02.025Z"
+          },
+          "platform": "browser",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "354f6968-040a-4fbe-80d1-9b48d3f364d7"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

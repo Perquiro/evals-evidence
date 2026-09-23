@@ -1,0 +1,6 @@
+{
+  "requestToken": "078a9e96-4729-4c8b-8e0a-bff1df048be4",
+  "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+  "actor": "Reader",
+  "body": "GET /books/102 returned Garden Notes as unavailable and still offered Reader POST /holds with bookId 102, labelled Reserve book."
+}

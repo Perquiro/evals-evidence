@@ -1,0 +1,384 @@
+{
+  "verifiedAt": "2026-09-10T17:37:17.331Z",
+  "status": "stopped_early_at_user_request",
+  "completedAndGraded": 8,
+  "interrupted": "C3",
+  "notStarted": 11,
+  "frozenFilesVerified": 288,
+  "originalProductSourceFiles": [
+    {
+      "name": "src/api.js",
+      "match": true
+    },
+    {
+      "name": "src/App.jsx",
+      "match": true
+    },
+    {
+      "name": "src/auth.jsx",
+      "match": true
+    },
+    {
+      "name": "src/components/DatePicker.jsx",
+      "match": true
+    },
+    {
+      "name": "src/components/Layout.jsx",
+      "match": true
+    },
+    {
+      "name": "src/components/Modal.jsx",
+      "match": true
+    },
+    {
+      "name": "src/directoryCache.js",
+      "match": true
+    },
+    {
+      "name": "src/main.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Approvals.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Dashboard.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Directory.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/EmployeeDetail.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Leave.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Login.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/NewLeave.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Notifications.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Onboarding.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Profile.jsx",
+      "match": true
+    },
+    {
+      "name": "src/pages/Timesheet.jsx",
+      "match": true
+    },
+    {
+      "name": "src/styles.css",
+      "match": true
+    },
+    {
+      "name": "src/utils.js",
+      "match": true
+    },
+    {
+      "name": "server/index.js",
+      "match": true
+    },
+    {
+      "name": "server/seed.js",
+      "match": true
+    },
+    {
+      "name": "package.json",
+      "match": true
+    },
+    {
+      "name": "package-lock.json",
+      "match": true
+    },
+    {
+      "name": "index.html",
+      "match": true
+    },
+    {
+      "name": "vite.config.js",
+      "match": true
+    }
+  ],
+  "originalProjectCatalogExactlyUnchanged": true,
+  "originalProjectRevision": "8ffaf74c-f29a-4f58-9ce0-a8e8fc8a919f",
+  "completedTrials": [
+    {
+      "id": "C1",
+      "status": "verified",
+      "requests": 3,
+      "observations": 13,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 0,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "D1",
+      "status": "verified",
+      "requests": 30,
+      "observations": 116,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 3,
+      "proposedScenarios": 5,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "A1",
+      "status": "verified",
+      "requests": 5,
+      "observations": 19,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 4,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "B1",
+      "status": "verified",
+      "requests": 6,
+      "observations": 18,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 1,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "B2",
+      "status": "verified",
+      "requests": 4,
+      "observations": 17,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 1,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "C2",
+      "status": "verified",
+      "requests": 15,
+      "observations": 48,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 0,
+      "proposedScenarios": 3,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "A2",
+      "status": "verified",
+      "requests": 7,
+      "observations": 15,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 1,
+      "proposedScenarios": 0,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    },
+    {
+      "id": "D2",
+      "status": "verified",
+      "requests": 39,
+      "observations": 171,
+      "modelsVerified": true,
+      "ExploreKnowledgeUnchangedByCreate": true,
+      "supplementalPublicStateVerified": true,
+      "importedEvidenceImagesVerified": 2,
+      "proposedScenarios": 2,
+      "noAcceptedScenarios": true,
+      "noTests": true,
+      "allActionsAndRequestsWithinDeadline": true,
+      "unverifiedCompletedReleases": [],
+      "forcedReleases": [],
+      "endpoints": []
+    }
+  ],
+  "interruptedTrial": {
+    "id": "C3",
+    "elapsedMinutes": 16.039183333333334,
+    "modelsVerified": true,
+    "treeTerminationSucceeded": true,
+    "allSavedObservationsPreserved": true,
+    "createNotStarted": true,
+    "metrics": {
+      "requests": 7,
+      "mutations": 2,
+      "observations": 25,
+      "journeys": 2,
+      "scenarios": 0,
+      "tests": 0
+    }
+  },
+  "endpoints": [
+    {
+      "id": "C1",
+      "url": "http://127.0.0.1:50783",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "C1",
+      "url": "http://127.0.0.1:58736",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "D1",
+      "url": "http://127.0.0.1:50064",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "D1",
+      "url": "http://127.0.0.1:63443",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "A1",
+      "url": "http://127.0.0.1:55324",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "A1",
+      "url": "http://127.0.0.1:52048",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "B1",
+      "url": "http://127.0.0.1:50063",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "B1",
+      "url": "http://127.0.0.1:61164",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "B2",
+      "url": "http://127.0.0.1:61279",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "B2",
+      "url": "http://127.0.0.1:61527",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "C2",
+      "url": "http://127.0.0.1:60294",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "C2",
+      "url": "http://127.0.0.1:52049",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "A2",
+      "url": "http://127.0.0.1:57736",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "A2",
+      "url": "http://127.0.0.1:60502",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "D2",
+      "url": "http://127.0.0.1:65000",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "D2",
+      "url": "http://127.0.0.1:50688",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "C3",
+      "url": "http://127.0.0.1:59284",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    },
+    {
+      "id": "C3",
+      "url": "http://127.0.0.1:50828",
+      "reachable": false,
+      "errorCode": "ECONNREFUSED"
+    }
+  ]
+}

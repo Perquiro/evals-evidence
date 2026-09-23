@@ -1,0 +1,136 @@
+{
+  "W01": {
+    "seqs": [
+      3
+    ],
+    "reason": "The initial full catalog fact is accurate but Surface-only."
+  },
+  "W02": {
+    "seqs": [
+      4
+    ],
+    "reason": "The matching River Atlas search was saved before a Journey and never restated with one."
+  },
+  "W03": {
+    "seqs": [
+      21
+    ],
+    "reason": "The no-match response and Clear link are saved without a Journey."
+  },
+  "W04": {
+    "seqs": [
+      37,
+      38
+    ],
+    "reason": "Actual Clear recovery and the resulting catalog are saved without a Journey."
+  },
+  "W05": {
+    "seqs": [
+      6
+    ],
+    "journeyRelated": true,
+    "reason": "Grounded preconditions preserve the actually observed available book and offered reservation action. Find an available book's catalog-to-detail sequence relates to this inspection."
+  },
+  "W06": {
+    "seqs": [
+      23
+    ],
+    "reason": "Initial unavailable Garden Notes and its action are saved without a Journey. Later linked or refreshed details are for changed availability."
+  },
+  "W07": {
+    "seqs": [
+      29
+    ],
+    "reason": "Reader's empty holds and message are saved after cancellation, without a Journey. The frozen receipt permits this empty-list state; it does not prove an initial pre-reservation read."
+  },
+  "W08": {
+    "seqs": [
+      8
+    ],
+    "journeyRelated": true,
+    "reason": "The catalog-to-book-detail sequence and attached actual reservation result form a related path despite the weak Find an available book name. The result is on source GET /books/:id; endpoint seq 7 is Surface-only."
+  },
+  "W09": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Reader's handoff explicitly notes that the results of reserving unavailable titles are unestablished. No unavailable-book POST was sent."
+  },
+  "W10": {
+    "reason": "The required-book reservation rejection was not exercised."
+  },
+  "W11": {
+    "reason": "The duplicate-reservation branch was not exercised before cancellation."
+  },
+  "W12": {
+    "seqs": [
+      9
+    ],
+    "reason": "Created reservation 301 and its cancellation action are saved without a Journey."
+  },
+  "W13": {
+    "seqs": [
+      27
+    ],
+    "reason": "Actual cancellation is saved on its canonical DELETE endpoint without a Journey."
+  },
+  "W14": {
+    "seqs": [
+      29
+    ],
+    "reason": "Empty holds after cancellation is saved without a Journey."
+  },
+  "W15": {
+    "seqs": [
+      12
+    ],
+    "reason": "The initial due date and both actions are accurate but Surface-only. The later Renew-linked precondition gives the due date and renewal action but omits the return action; later full linked details describe renewal count1, not the initial state."
+  },
+  "W16": {
+    "seqs": [
+      19
+    ],
+    "journeyRelated": true,
+    "reason": "Actual changed renewal count and due date are saved with Renew a loan on the canonical POST endpoint."
+  },
+  "W17": {
+    "reason": "The renewal limit was not exercised before returning the loan."
+  },
+  "W18": {
+    "seqs": [
+      32
+    ],
+    "reason": "Actual returned-book outcome is saved on the canonical POST endpoint without a Journey."
+  },
+  "W19": {
+    "seqs": [
+      34
+    ],
+    "reason": "Empty loans after return is saved without a Journey."
+  },
+  "W20": {
+    "seqs": [
+      13
+    ],
+    "reason": "Reader's403 and permission boundary are accurate but Surface-only."
+  },
+  "W21": {
+    "seqs": [
+      41
+    ],
+    "reason": "Librarian's pending return and check-in action are accurate but Surface-only."
+  },
+  "W22": {
+    "reason": "The required-book check-in rejection was not exercised."
+  },
+  "W23": {
+    "considered": "yes",
+    "status": "considered, incomplete",
+    "reason": "Numeric103 replaced the advertised string 103 and returned 404. The Agent recognized the type mismatch, but its later non-execution/replacement writes were rejected because the original action already had a recorded outcome. No successful check-in occurred."
+  },
+  "W24": {
+    "reason": "No successful check-in or already-available rejection occurred."
+  },
+  "W25": {
+    "reason": "Reader's final book103 read still showed unavailable. No check-in preceded it, so it does not meet the required available readback."
+  }
+}

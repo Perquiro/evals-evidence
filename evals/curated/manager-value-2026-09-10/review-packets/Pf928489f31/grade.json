@@ -1,0 +1,724 @@
+{
+  "checks": [
+    {
+      "id": "HR01",
+      "seen": true,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          25,
+          115,
+          296
+        ]
+      ],
+      "savedSupportSets": [],
+      "rationale": "All three Actor dashboards establish complete visible navigation in the raw trace. Saved Emily and Hannah navigation are complete, including Hannah input-preparation UI copies. Michael’s saved record names Approvals without a full navigation list or explicit baseline-plus-additions, so the complete three-Actor comparison is not saved."
+    },
+    {
+      "id": "HR02",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee direct visit to an advertised higher-privilege page is in the trace."
+    },
+    {
+      "id": "HR03",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [
+        [
+          574,
+          575,
+          576
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "6402adfa-364a-4b9e-bc09-9c27404d12dc"
+          ],
+          "eventIds": [
+            574,
+            575,
+            576
+          ]
+        }
+      ],
+      "rationale": "Hannah searched EVALUATION with HR selected; the settled result displayed no rows and the empty state."
+    },
+    {
+      "id": "HR04",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [
+        [
+          567,
+          568,
+          569
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "3245f7c4-676b-498e-b452-3041699c7b27"
+          ],
+          "eventIds": [
+            567,
+            568,
+            569
+          ]
+        }
+      ],
+      "rationale": "Selecting HR produced the five displayed HR employees on settled page 1."
+    },
+    {
+      "id": "HR05",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [
+        [
+          574,
+          575,
+          576
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "6402adfa-364a-4b9e-bc09-9c27404d12dc"
+          ],
+          "eventIds": [
+            574,
+            575,
+            576
+          ]
+        }
+      ],
+      "rationale": "The deliberately unmatched EVALUATION plus HR search settled at 0 employees with No employees found."
+    },
+    {
+      "id": "HR06",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The Name header was clicked once, changing its indicator and requesting desc; no second click occurred."
+    },
+    {
+      "id": "HR07",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [
+        [
+          607,
+          608,
+          609,
+          615,
+          616,
+          617,
+          622,
+          623,
+          624
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "2d07bd7a-ce47-4302-a2f0-c1c3d1a841ae",
+            "a33db4d8-3125-4ce4-9887-505b308835f6",
+            "707918c7-72a0-48ef-bea8-dff9b59b0598"
+          ],
+          "eventIds": [
+            607,
+            608,
+            609,
+            615,
+            616,
+            617,
+            622,
+            623,
+            624
+          ]
+        }
+      ],
+      "rationale": "The settled unfiltered directory sequence reached pages 1, 2, and 3, recorded their rows and total 29, and showed Next disabled on the final page."
+    },
+    {
+      "id": "HR08",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The employee detail was opened, but its direct URL was neither loaded nor refreshed."
+    },
+    {
+      "id": "HR09",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          70,
+          71,
+          75,
+          76
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "a304d6ed-4f3b-452b-9135-81bbd9ed7c78"
+          ],
+          "eventIds": [
+            70,
+            71,
+            75,
+            76
+          ]
+        }
+      ],
+      "rationale": "Emily selected end date September 11 after start date September 14; the form displayed Duration: -2 days. The preview is a qualifying Product response."
+    },
+    {
+      "id": "HR10",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No Friday-through-Monday leave interval was entered."
+    },
+    {
+      "id": "HR11",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The only submitted request used the reversed September 14 to September 11 range, so it does not establish one valid request and its newly pending count."
+    },
+    {
+      "id": "HR12",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          30,
+          31,
+          32,
+          33
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "3f9c1e5a-da86-420c-a87e-205707dff77c"
+          ],
+          "eventIds": [
+            30,
+            31,
+            32,
+            33
+          ]
+        }
+      ],
+      "rationale": "Emily's existing approved request was visibly read in history as Aug 11–Aug 12, 2026, 3 days, Vacation, approved, with its displayed manager comment."
+    },
+    {
+      "id": "HR13",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "After successful submission the trace stayed on request history; it did not return to the new-leave form."
+    },
+    {
+      "id": "HR14",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          119,
+          120,
+          121,
+          122,
+          123
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "f156e215-d46c-438d-9301-3471df6e1ce1"
+          ],
+          "eventIds": [
+            119,
+            120,
+            121,
+            122,
+            123
+          ]
+        }
+      ],
+      "rationale": "Michael opened Approvals and the settled queue identified pending George Tanaka id 2 and Emily Dawson id 3 with their dates, types, and days."
+    },
+    {
+      "id": "HR15",
+      "seen": true,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          165,
+          166,
+          167,
+          171,
+          172,
+          173,
+          174,
+          175
+        ]
+      ],
+      "savedSupportSets": [],
+      "rationale": "Raw event 171 shows George still pending in the immediate queue after final confirmation, with the dialog closed; events 172–175 reach the approved response and settled empty queue. Saved records retain the response and settled queue but omit the immediate pending queue, so this check is seen but not completely saved."
+    },
+    {
+      "id": "HR16",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          136,
+          137,
+          138,
+          142,
+          143,
+          144,
+          145,
+          146
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "d15a6b9c-20f6-4ad1-8eef-f7a4a952d31e",
+            "9c14ed74-564d-4774-9ed7-d3536e03dafe"
+          ],
+          "eventIds": [
+            136,
+            137,
+            138,
+            142,
+            143,
+            144,
+            145,
+            146
+          ]
+        }
+      ],
+      "rationale": "Michael opened Emily's rejection dialog, submitted its blank comment, and observed HTTP 200 rejected plus disappearance from the pending queue."
+    },
+    {
+      "id": "HR17",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          86,
+          87,
+          88,
+          89,
+          90,
+          136,
+          137,
+          138,
+          142,
+          143,
+          144,
+          145,
+          146,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "551991c1-183b-4ae0-955d-1bea654fad7f",
+            "d15a6b9c-20f6-4ad1-8eef-f7a4a952d31e",
+            "efde03ff-2cdd-4411-9095-c572f0600ad9"
+          ],
+          "eventIds": [
+            86,
+            87,
+            88,
+            89,
+            90,
+            136,
+            137,
+            138,
+            142,
+            143,
+            144,
+            145,
+            146,
+            198,
+            199,
+            200,
+            201,
+            202,
+            203
+          ]
+        }
+      ],
+      "rationale": "Emily created id 3, Michael rejected it, and Emily's subsequent reload displayed the request as rejected. The material saved evidence is not all Journey-linked."
+    },
+    {
+      "id": "HR18",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          353,
+          354,
+          355
+        ],
+        [
+          358,
+          359,
+          363,
+          364,
+          368,
+          369,
+          374,
+          375,
+          376
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "3ea3f6a3-36ef-4df5-8ecc-b36e1a3be3f5"
+          ],
+          "eventIds": [
+            353,
+            354,
+            355
+          ]
+        },
+        {
+          "observationIds": [
+            "3152d36d-4bfb-4fc9-aa0e-45d94a5fec1b"
+          ],
+          "eventIds": [
+            358,
+            359,
+            363,
+            364,
+            368,
+            369,
+            374,
+            375,
+            376
+          ]
+        }
+      ],
+      "rationale": "The earliest complete alternative is Next with all personal fields blank, which stayed on step 1 and displayed required-field validation. A later malformed-email alternative also completed the check."
+    },
+    {
+      "id": "HR19",
+      "seen": true,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          385,
+          386,
+          387
+        ]
+      ],
+      "savedSupportSets": [],
+      "rationale": "The immediate step-2 snapshot showed disabled Loading departments and Loading selectors, then metadata returned and both selectors settled with options. No saved Observation records the loading state together with the settled state."
+    },
+    {
+      "id": "HR20",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          358,
+          359,
+          363,
+          364,
+          379,
+          380,
+          385,
+          386,
+          387,
+          404,
+          405,
+          409,
+          410,
+          414,
+          415,
+          419,
+          420,
+          424,
+          425,
+          426
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "c79e4b22-0834-426d-b85a-9594ee706949",
+            "42fe97dd-20ee-408a-af77-31b8c3ea8189"
+          ],
+          "eventIds": [
+            358,
+            359,
+            363,
+            364,
+            379,
+            380,
+            385,
+            386,
+            387,
+            404,
+            405,
+            409,
+            410,
+            414,
+            415,
+            419,
+            420,
+            424,
+            425,
+            426
+          ]
+        }
+      ],
+      "rationale": "After entering personal and job data, Hannah advanced to job details and navigated Back; the returned personal fields were all blank, which is the observed result."
+    },
+    {
+      "id": "HR21",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [
+        [
+          296,
+          512,
+          513,
+          514,
+          515,
+          524,
+          525,
+          526
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "295da3e0-0ec0-4340-9f7a-75e9ee5b4495",
+            "89aa737e-33fd-4d53-9bb9-50f8b35ee1e9",
+            "3d680ff7-5dfb-4200-872f-ec19c79538d0"
+          ],
+          "eventIds": [
+            296,
+            512,
+            513,
+            514,
+            515,
+            524,
+            525,
+            526
+          ]
+        }
+      ],
+      "rationale": "Hannah's review submission created id 29; the directory then displayed it and its total rose from the pre-submit dashboard count of 28 to 29."
+    },
+    {
+      "id": "HR22",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Emily entered hours only for Monday and Saturday; no all-seven-day employee input was made."
+    },
+    {
+      "id": "HR23",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          221,
+          222,
+          223,
+          227,
+          228,
+          229,
+          230,
+          236,
+          237,
+          238,
+          239,
+          240
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "f297e6f7-3e04-45c6-a470-729c0bed87ca",
+            "477093b1-35c9-4e23-9388-5ff00551f3aa"
+          ],
+          "eventIds": [
+            221,
+            222,
+            223,
+            227,
+            228,
+            229,
+            230,
+            236,
+            237,
+            238,
+            239,
+            240
+          ]
+        }
+      ],
+      "rationale": "Emily saved the existing draft with Monday -1 and reloaded; the reloaded API and UI retained -1, the other zeros, total -1, and draft status."
+    },
+    {
+      "id": "HR24",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Submission and disabled controls after reload were observed, but no actual later edit was attempted."
+    },
+    {
+      "id": "HR25",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile field was changed and saved."
+    },
+    {
+      "id": "HR26",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile name or photo save and immediate header observation occurred."
+    },
+    {
+      "id": "HR27",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile save followed by reload occurred."
+    }
+  ],
+  "unsupportedClaims": [],
+  "scenarios": [
+    {
+      "id": "2860f9e5-c6e2-4dee-a390-a3cebcbbf5f1",
+      "grounded": false,
+      "distinctBehaviorKey": "onboarding-create-employee-and-directory-readback",
+      "observationIds": [
+        "aa31d749-469e-461e-b319-61fdd1541322",
+        "295da3e0-0ec0-4340-9f7a-75e9ee5b4495",
+        "ce119d0d-b70b-4ece-a75c-e1edfa6b79c5",
+        "3d680ff7-5dfb-4200-872f-ec19c79538d0"
+      ],
+      "unsupportedOutcomes": [
+        "The browser employee directory shows the selected equipment."
+      ],
+      "rationale": "Saved POST and GET responses preserve the selected equipment, but the browser directory row and employee detail do not display it. The proposal says the directory shows the equipment and lists browser Directory and POST, without the GET readback Surface. Under the literal browser-visible reading this material outcome is unsupported. Reading directory as the API-backed record would instead ground the proposal; that alternative is reported as secondary scoring sensitivity."
+    },
+    {
+      "id": "9c10b9ac-76fa-4702-b529-940651a279cc",
+      "grounded": true,
+      "distinctBehaviorKey": "timesheet-submit-saved-draft-and-retain-lock-after-reload",
+      "observationIds": [
+        "038e7b95-0a10-4bfd-b22c-27cd3b46e382",
+        "da0aeb11-848f-45dd-9ba9-aa6eef964a25",
+        "d9a5e60d-b7e2-41a2-b3fc-8e6d882d065c"
+      ],
+      "unsupportedOutcomes": [],
+      "rationale": "Saved evidence establishes the editable saved draft, submission with retained hours, and the reloaded submitted lock on all hour inputs and both actions."
+    }
+  ],
+  "notes": [
+    "Adjudicated after two independent blind grades and their retained boundary reviews. Original grades are unchanged.",
+    "Surface-only Knowledge earns full primary credit. Direct linkage requires a complete materially relevant support set; the Onboard an employee Journey explicitly includes directory readback, so HR03/04/05/07 retain direct linkage.",
+    "HR15 immediate post-confirmation queue and HR19 initial loading state are present in raw captures but absent from saved Knowledge.",
+    "HR23 uses the earliest saved negative draft followed by draft reload. Later linked save, submit, then reload verifies submitted state and does not independently establish draft persistence.",
+    "The onboarding proposal is not fully grounded on its literal equipment-visibility assertion. The supported API-record interpretation would increase grounded proposals from one to two, without changing any primary check score.",
+    "Root compared all 39 copied API request/response records and all 17 copied input-preparation snapshots with their original trace inputs and results; all matched. Both imported Evidence PNGs were visually inspected.",
+    "Primary 40-minute coverage excludes HR07 because its final necessary Observation was written 137 milliseconds after the cutoff. Final grace-period coverage includes it.",
+    "Seen raw evidence does not establish candidate awareness of a defect. These coverage checks are not a bug count."
+  ],
+  "measured": {
+    "checkpoints": {
+      "10": {
+        "seen": 4,
+        "saved": 4,
+        "unsupportedClaims": 0,
+        "unsupportedRate": 0
+      },
+      "20": {
+        "seen": 8,
+        "saved": 6,
+        "unsupportedClaims": 0,
+        "unsupportedRate": 0
+      },
+      "40": {
+        "seen": 16,
+        "saved": 12,
+        "unsupportedClaims": 0,
+        "unsupportedRate": 0
+      }
+    },
+    "final": {
+      "seen": 16,
+      "saved": 13,
+      "directlyJourneyLinked": 5,
+      "unsupportedClaims": 0,
+      "unsupportedRate": 0
+    },
+    "create": {
+      "proposedScenarios": 2,
+      "distinctGroundedBehaviorCount": 1
+    }
+  }
+}

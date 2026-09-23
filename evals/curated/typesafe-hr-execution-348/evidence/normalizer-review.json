@@ -1,0 +1,69 @@
+{
+  "reviewer": "/root/driver_spec",
+  "review_kind": "independent_control_and_normalizer_audit",
+  "scope": "Eight completed live executions, their retained raw evidence, ungraded normalization, anonymous grader packets, and preparation-only overhead. This is not a grade, comparative conclusion, or approval of a final report.",
+  "checks": {
+    "run_set": {
+      "expected_runs": 8,
+      "normalized_traces": 8,
+      "all_receipts_completed": true,
+      "all_phase_intervals_contiguous_from_zero_to_close": true,
+      "all_calls_assigned_to_exactly_one_phase": true
+    },
+    "controls": {
+      "frozen_input_hashes_and_host_dispatch_inputs_match": true,
+      "requested_and_effective_model_effort_tier_match": true,
+      "no_model_rerouted_event_in_any_raw_host_log": true,
+      "reset_source_build_seed_product_date_and_empty_state_match": true,
+      "each_reset_project_browser_and_server_identifier_is_unique": true,
+      "instruction_isolation_and_tool_allowlist_match": true,
+      "successful_logins_are_employee_only": true,
+      "request_cap_and_deadline_admission_match": true,
+      "final_close_phase_and_capture_match": true
+    },
+    "originals_and_normalization": {
+      "manifest_entries_checked": 394,
+      "all_captured_manifest_hashes_match": true,
+      "all_raw_host_jsonl_hashes_match_their_indexes": true,
+      "normalized_action_records": 209,
+      "normalized_action_sets_match_raw_browser_and_snapshot_extraction": true,
+      "normalized_observation_records": 115,
+      "unique_public_observation_ids_match_normalized_observation_ids": true,
+      "every_normalized_observation_has_a_successful_record_save": true
+    },
+    "accounting": {
+      "host_usage_update_events": 333,
+      "successive_cumulative_usage_deltas": 331,
+      "counter_reset_or_nonmonotonic_values_seen": 0,
+      "unattributed_host_usage_records": 12,
+      "call_ledger_complete_for_each_trace": false,
+      "non_token_cost_known": false,
+      "actual_charges_known": false,
+      "phase_assignment_is_complete_but_estimated": true,
+      "host_usage_records_assigned_to_other": 315,
+      "host_usage_records_total": 331,
+      "reasoning_output_tokens_assigned_to_other": 7332,
+      "reasoning_output_tokens_total": 7711
+    },
+    "blind_packets": {
+      "anonymous_samples": 8,
+      "blind_index_and_file_hashes_match": true,
+      "scanned_for_original_execution_ids_arms_model_provider_origin_timing_cost_and_host_metadata": true,
+      "metadata_hits": []
+    },
+    "overhead": {
+      "record_scope": "Issue 348 preparation only, separate from the eight candidate executions.",
+      "records": 18,
+      "all_record_sources_are_under_preparation": true,
+      "actual_charges_usd": null,
+      "api_equivalent_usd": null,
+      "known_component_subtotal_is_not_presented_as_total_experiment_cost": true
+    }
+  },
+  "findings": [],
+  "limitations": [
+    "The app server does not expose a complete transport-attempt ledger, attributable non-token charges, or actual charges. The normalized traces correctly retain call_ledger_complete as false and unknown cost fields as null.",
+    "Phase assignment is complete and contiguous, but it assigns a host usage update to the declared phase in effect when the update arrived. 315 of 331 host usage deltas and 7332 of 7711 reasoning-output tokens therefore fall in other. Those phase totals are an attribution estimate, not a measurement of work performed wholly within that phase.",
+    "The captured evidence manifest predates this review file. A subsequent final packet build must include this file if it is intended to be part of that packet's manifest."
+  ]
+}

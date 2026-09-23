@@ -1,0 +1,46 @@
+{
+  "traces": 24,
+  "api_calls": 18,
+  "statuses": {
+    "unavailable": 18,
+    "recovery_precedence": 3,
+    "human_priority": 3
+  },
+  "http_statuses": {
+    "503": 18
+  },
+  "request_latency_ms": {
+    "min": 717.4,
+    "median": 779.0,
+    "max": 1910.3
+  },
+  "latency_interpretation": "Failed request elapsed time; no successful inference latency observed.",
+  "cost": null,
+  "usage": null,
+  "ordinary_planners": {
+    "a": {
+      "selections": [
+        "c1",
+        "c1",
+        "c2",
+        "c1",
+        "c2",
+        null,
+        "c9",
+        "c1"
+      ]
+    },
+    "b": {
+      "selections": [
+        "c1",
+        "c1",
+        "c2",
+        "c1",
+        "c2",
+        null,
+        "c9",
+        "c1"
+      ]
+    }
+  }
+}

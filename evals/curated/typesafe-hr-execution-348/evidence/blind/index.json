@@ -1,0 +1,33 @@
+{
+  "samples": [
+    "sample-01.json",
+    "sample-02.json",
+    "sample-03.json",
+    "sample-04.json",
+    "sample-05.json",
+    "sample-06.json",
+    "sample-07.json",
+    "sample-08.json"
+  ],
+  "manifest": {
+    "checklist.json": "17df907019c06077a0b24dcc7df330ae8f4750f6d21aa0b5b705a86b776f6766",
+    "GRADING.md": "50de4e7256d9d89150796e0f4bf988e49c49363259c3ce52725103363b0cb385",
+    "sample-01-evidence.json": "7104979de7eb02c6a5f4fd7af798a58b13f7651d1bcab7e874a4393fe2744772",
+    "sample-01.json": "6c62c7c5ccd0c6b9d5d413380e915655e2407142deb15d32f1a4cd9e5811ba3b",
+    "sample-02-evidence.json": "1c23c710c93750abd7ab85fff48d88e5e381d94ba7c2b3ff204b355107f9ce03",
+    "sample-02.json": "80b40c72af776a59c8b3509285341a904f396d3362b041dc4d94e0815cf5e9a3",
+    "sample-03-evidence.json": "b18e36acdcea0286a05ed0eb48bf55ed1fc4f540985aa2b557bad5a87160ae33",
+    "sample-03.json": "067c3f90af17cb16ec0cd98300dc918553128add7f96c28d9c1c2e85bab927a1",
+    "sample-04-evidence.json": "8a78b84960881262d2899d32360792883a95a546b598d45eca173c11370cdbd3",
+    "sample-04.json": "cf02767add95a3408332aea905876dfbf269ff194dd410241074e5f774f5f384",
+    "sample-05-evidence.json": "f84fa9562d1ce5141f6f8b1d066e700bb245b689441de29dd5864833564ec94d",
+    "sample-05.json": "a64d102da8a6d6bfaf2e76e4f0e415f8f47170569c33c6a7b4950b93da44c5c5",
+    "sample-06-evidence.json": "69544a8e6b4002cbd55322741740d4af62e5e58b299a9a73d6bce8d56fa8b5df",
+    "sample-06.json": "2a8e0cf2ae43329d24f0e6c731f5c1c4d9065a068ecd570b50d5602f3d52480a",
+    "sample-07-evidence.json": "85260294723e8c7a02945bcf640c3782c4585222fd040b6086e762c15b55197b",
+    "sample-07.json": "2f4c60f706b8553364a1fd54d93f78ef67ab857de4e9d6f449a7bde21e17504b",
+    "sample-08-evidence.json": "6e787cd6baf8210641055f368a9801110cf7ce856301c8edb54e268af7adb9b2",
+    "sample-08.json": "4e096f63b3864ee6e194fe3f15d27ddf1fd333dca101761b05610db7a4acd4a6"
+  },
+  "raw_evidence": "Each evidence file contains captured inputs, accessibility snapshots, network bodies and saved Observation bodies, with only the documented metadata transformations. Original labeled files and provenance remain outside this grader directory."
+}

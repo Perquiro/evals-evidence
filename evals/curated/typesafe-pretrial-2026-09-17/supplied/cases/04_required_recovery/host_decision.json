@@ -1,0 +1,7 @@
+{
+  "status": "recovery_precedence",
+  "precedence_ids": [
+    "c1"
+  ],
+  "reason": "Existing recovery rules take precedence; TypeSafe is not called."
+}

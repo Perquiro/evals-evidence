@@ -1,0 +1,547 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+      "name": "GET /",
+      "locator": "GET /",
+      "createdAt": "2026-09-09T07:26:04.361Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "366c3f32-4ce8-4eb9-9cbc-2699caee4758",
+          "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+          "name": "Willow Library product information",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:26:52.128Z"
+        },
+        {
+          "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc",
+          "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+          "name": "Documentation",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:26:52.129Z"
+        },
+        {
+          "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6",
+          "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+          "name": "Catalog",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:26:52.129Z"
+        },
+        {
+          "id": "ce417e2d-882c-4392-9331-4d89f35e3144",
+          "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+          "name": "Account",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:26:52.129Z"
+        },
+        {
+          "id": "5759e07a-93d5-4026-aec0-568240c75a7d",
+          "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+          "name": "Service desk",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:26:52.129Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "c1c874d8-5c51-4775-a778-922c6c2b7d92",
+            "seq": 1,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "GET / returned the Willow Library product name, a local disposable-development environment label, and links to documentation, catalog, account, and service desk.",
+            "createdAt": "2026-09-09T07:26:52.131Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "366c3f32-4ce8-4eb9-9cbc-2699caee4758"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "ce417e2d-882c-4392-9331-4d89f35e3144"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "5759e07a-93d5-4026-aec0-568240c75a7d"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "5bebc2ae-1586-4d4a-8a4e-fb5b2c166b9a",
+            "seq": 14,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "Following Documentation reached GET /docs and returned Reader and Librarian session guidance.",
+            "createdAt": "2026-09-09T07:36:50.226Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "4c34240a-5b08-48a1-951e-0b37d2f500af",
+            "seq": 15,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "Following Catalog reached GET /catalog and returned three listed books and search metadata.",
+            "createdAt": "2026-09-09T07:36:50.231Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "65a1d6d1-7910-424e-b369-0406173ce577",
+            "seq": 16,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "Following Account reached GET /account and returned Reader account links for reservations and loans.",
+            "createdAt": "2026-09-09T07:36:50.235Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "ce417e2d-882c-4392-9331-4d89f35e3144"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "f4e8c48f-8d58-4c3c-8290-c644726eeabc",
+            "seq": 17,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "Following Service desk as Reader reached GET /desk, which returned 403 Forbidden stating that the service desk requires Librarian.",
+            "createdAt": "2026-09-09T07:36:50.238Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "action",
+            "capture": "pending",
+            "look": {
+              "item": {
+                "id": "5759e07a-93d5-4026-aec0-568240c75a7d"
+              },
+              "kind": "blocked",
+              "reason": "GET /desk returned 403 Forbidden: Service desk requires Librarian."
+            }
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "724dbb51-1cda-4208-bd71-631e87146170",
+            "seq": 39,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "GET / returned 200 OK with the Willow Library name, a local disposable-development environment label, and documentation, catalog, account, and service-desk links.",
+            "createdAt": "2026-09-09T07:52:18.634Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "366c3f32-4ce8-4eb9-9cbc-2699caee4758"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "ce417e2d-882c-4392-9331-4d89f35e3144"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "5759e07a-93d5-4026-aec0-568240c75a7d"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "12f9219d-6482-4560-9828-8f3d1483aab8",
+            "seq": 40,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "Following Service desk reached GET /desk and returned the Librarian check-in action plus one pending return: Night Trains (book 103).",
+            "createdAt": "2026-09-09T07:53:07.647Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "5759e07a-93d5-4026-aec0-568240c75a7d"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "25d174ae-9481-4cd6-ba55-5a863fbcee3d",
+            "seq": 46,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "Following Documentation reached GET /docs, which described selecting the Reader or Librarian session with X-Actor and following the HTTP method and JSON fields advertised by response actions.",
+            "createdAt": "2026-09-09T07:57:03.435Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "856f956c-4ae9-4726-884f-50adbbd92667",
+            "seq": 48,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "Following Catalog reached GET /catalog and returned River Atlas and Garden Notes as available, Night Trains as unavailable, and a title-search query field.",
+            "createdAt": "2026-09-09T07:59:22.005Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "654bb33a-1246-44b4-aeba-3484cfd93c67",
+            "seq": 52,
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "Following Account reached GET /account and returned actor Librarian with reservations and loans links.",
+            "createdAt": "2026-09-09T08:01:34.793Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "ce417e2d-882c-4392-9331-4d89f35e3144"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc",
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "Documentation",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:26:52.129Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "25d174ae-9481-4cd6-ba55-5a863fbcee3d"
+          ]
+        },
+        {
+          "item": {
+            "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6",
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "Catalog",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:26:52.129Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "856f956c-4ae9-4726-884f-50adbbd92667"
+          ]
+        },
+        {
+          "item": {
+            "id": "ce417e2d-882c-4392-9331-4d89f35e3144",
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "Account",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:26:52.129Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "654bb33a-1246-44b4-aeba-3484cfd93c67"
+          ]
+        },
+        {
+          "item": {
+            "id": "5759e07a-93d5-4026-aec0-568240c75a7d",
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "Service desk",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:26:52.129Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "12f9219d-6482-4560-9828-8f3d1483aab8"
+          ]
+        },
+        {
+          "item": {
+            "id": "5f423c03-d5f9-41af-8e21-14904dd82fdc",
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "Documentation",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:26:52.129Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "5bebc2ae-1586-4d4a-8a4e-fb5b2c166b9a"
+          ]
+        },
+        {
+          "item": {
+            "id": "372a3b71-f5cb-4f86-b352-5bdf7ea2d4b6",
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "Catalog",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:26:52.129Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "4c34240a-5b08-48a1-951e-0b37d2f500af"
+          ]
+        },
+        {
+          "item": {
+            "id": "ce417e2d-882c-4392-9331-4d89f35e3144",
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "Account",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:26:52.129Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "65a1d6d1-7910-424e-b369-0406173ce577"
+          ]
+        },
+        {
+          "item": {
+            "id": "5759e07a-93d5-4026-aec0-568240c75a7d",
+            "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+            "name": "Service desk",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:26:52.129Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "blocked",
+          "reason": "GET /desk returned 403 Forbidden: Service desk requires Librarian.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "f4e8c48f-8d58-4c3c-8290-c644726eeabc"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "c1c874d8-5c51-4775-a778-922c6c2b7d92",
+          "evidenceId": "c20d5ed0-1ea7-4d2e-88d0-06049611ab7a"
+        },
+        {
+          "observationId": "f4e8c48f-8d58-4c3c-8290-c644726eeabc",
+          "evidenceId": "7bee473e-0213-4813-9eb5-df6a547de310"
+        },
+        {
+          "observationId": "724dbb51-1cda-4208-bd71-631e87146170",
+          "evidenceId": "b488577f-18d0-4c2a-af96-f41d7ed81c1b"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 8,
+      "pending": 0,
+      "blocked": 1,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 7
+    }
+  }
+]

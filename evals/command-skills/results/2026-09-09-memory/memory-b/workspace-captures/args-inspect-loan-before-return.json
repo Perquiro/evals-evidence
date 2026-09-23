@@ -1,0 +1,18 @@
+{
+  "requestToken": "efcce98e-b63a-498d-809a-15124651ac52",
+  "surfaceId": "f3b3143d-758b-4105-a001-03577e407fa2",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "Before return, GET /loans/201 returned Garden Notes with renewal count 1, due date 2026-10-15, and Reader return action POST /loans/201/return.",
+      "looks": [
+        { "item": { "id": "cbc47578-c28e-42a4-88e5-a7cafe2d6690" }, "kind": "offered" },
+        { "item": { "id": "7b5afc64-b330-4e1f-a6cf-6941d44ea49b" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

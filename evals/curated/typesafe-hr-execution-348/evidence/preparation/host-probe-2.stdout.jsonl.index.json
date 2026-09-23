@@ -1,0 +1,31 @@
+{
+  "original": "host-probe-2.stdout.jsonl",
+  "sha256": "efb0e16068bd38d55bd657ee70e43975352ab76d36cf193787302a69bf622363",
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a0c068-e104-7562-a101-6e4ce4cd8f46"
+    },
+    {
+      "type": "turn.started"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_0",
+        "type": "agent_message",
+        "text": "OK"
+      }
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 8297,
+        "cached_input_tokens": 1792,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ]
+}

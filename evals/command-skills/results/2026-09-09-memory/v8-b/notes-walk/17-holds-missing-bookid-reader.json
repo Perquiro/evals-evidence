@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://127.0.0.1:54824/holds",
+    "actor": "Reader",
+    "body": {}
+  },
+  "status": 422,
+  "body": {
+    "error": "Book is required"
+  }
+}

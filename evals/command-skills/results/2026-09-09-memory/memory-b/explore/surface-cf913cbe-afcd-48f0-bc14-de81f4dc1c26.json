@@ -1,0 +1,102 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "cf913cbe-afcd-48f0-bc14-de81f4dc1c26",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "cf913cbe-afcd-48f0-bc14-de81f4dc1c26",
+      "name": "POST /loans/:id/renew",
+      "locator": "POST /loans/:id/renew",
+      "createdAt": "2026-09-09T07:37:48.507Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "eceaaa83-0449-4491-a8d4-ea5e7683b710",
+          "surfaceId": "cf913cbe-afcd-48f0-bc14-de81f4dc1c26",
+          "name": "Renewed loan",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:38:21.872Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "2e493d65-66c0-4b00-abba-76707f8803e1",
+            "seq": 19,
+            "surfaceId": "cf913cbe-afcd-48f0-bc14-de81f4dc1c26",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "journeyId": "ff74dd11-5b88-40cd-8424-97db8ddc4640",
+            "body": "POST /loans/201/renew returned loan 201 with renewal count 1 and due date 2026-10-15.",
+            "createdAt": "2026-09-09T07:38:21.873Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "eceaaa83-0449-4491-a8d4-ea5e7683b710"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "2e493d65-66c0-4b00-abba-76707f8803e1",
+          "evidenceId": "fd0bbe00-a51e-49ae-83ca-90f091dd68b3"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

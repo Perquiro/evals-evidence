@@ -1,0 +1,342 @@
+{
+  "review": "independent",
+  "checks": [
+    {
+      "id": "HR01",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The trace shows full shell navigation for Emily (33) and Michael (275), but no full visible navigation for Hannah. HR01 requires all three configured Actors."
+    },
+    {
+      "id": "HR02",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No higher-privilege page was directly visited as the employee."
+    },
+    {
+      "id": "HR03",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No directory name search was performed."
+    },
+    {
+      "id": "HR04",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No directory department filter was applied."
+    },
+    {
+      "id": "HR05",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No deliberately unmatched directory search was performed."
+    },
+    {
+      "id": "HR06",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No directory sortable header was clicked twice."
+    },
+    {
+      "id": "HR07",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No directory paging sequence or boundary result was captured."
+    },
+    {
+      "id": "HR08",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee detail and direct-load or refresh sequence was captured."
+    },
+    {
+      "id": "HR09",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [[229, 230, 231]],
+      "savedSupportSets": [
+        { "observationIds": ["249a7b46-90e6-4a11-9c46-66d2564a38e8"], "eventIds": [229, 230, 231] }
+      ],
+      "rationale": "Emily selected 2026-09-18 while the retained end date was 2026-09-16; the settled form preview displayed Duration: -1 days. Submission is not required for this demonstrated Product preview response."
+    },
+    {
+      "id": "HR10",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [[239, 240, 241]],
+      "savedSupportSets": [
+        { "observationIds": ["51f2f0d8-da93-48d5-bc27-a82d374c091f"], "eventIds": [239, 240, 241] }
+      ],
+      "rationale": "Emily selected Friday 2026-09-18 and Monday 2026-09-21; the settled form displayed Duration: 4 days."
+    },
+    {
+      "id": "HR11",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [[163, 164, 167, 168]],
+      "savedSupportSets": [
+        { "observationIds": ["861b9d9d-41f1-4cbb-a634-79c8e47376c0"], "eventIds": [163, 164, 167, 168] },
+        { "observationIds": ["c1084695-11a3-484d-a195-282be624c1c5"], "eventIds": [163, 164] }
+      ],
+      "rationale": "One valid Emily submission issued POST /api/leave and received one newly created pending request, id 3; the browser then reached My leave. The saved complete evidence is not directly linked to a Journey."
+    },
+    {
+      "id": "HR12",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [[164, 166, 167, 168], [191]],
+      "savedSupportSets": [
+        { "observationIds": ["9b58238b-4d93-40ab-8642-1ee61c306b36"], "eventIds": [164, 166, 167, 168] },
+        { "observationIds": ["721dfef2-645c-416d-9f4c-bd287fd6ec14"], "eventIds": [191] }
+      ],
+      "rationale": "My leave displayed request 3 as pending and 2 days. The displayed date text was recorded as Sep 15, 2026 – Sep 15, 2026, while the submitted/API end date was Sep 16; the UI date discrepancy is preserved rather than replaced by API values."
+    },
+    {
+      "id": "HR13",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [[217, 218, 219]],
+      "savedSupportSets": [
+        { "observationIds": ["f1cfba92-b506-4e00-bf82-b379123cd71d"], "eventIds": [217, 218, 219] },
+        { "observationIds": ["4b9c0863-0fb9-4a95-b73d-14de953a4ec2"], "eventIds": [217, 218, 219] }
+      ],
+      "rationale": "After successful submission, Emily selected New request and the returned form retained Vacation, 2026-09-15 through 2026-09-16, the reason, and Duration: 2 days."
+    },
+    {
+      "id": "HR14",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [[278, 279, 280, 281, 282]],
+      "savedSupportSets": [
+        { "observationIds": ["863cb21a-508f-47e4-b565-74a439d7b901"], "eventIds": [278, 279, 280, 281, 282] },
+        { "observationIds": ["fc400f13-f74f-4139-857b-be7d2974f5b5"], "eventIds": [278, 279, 280, 281, 282] }
+      ],
+      "rationale": "Michael opened /approvals, where the rendered pending table named George Tanaka request 2 and Emily Dawson request 3. No complete directly linked saved record preserves both initial identities."
+    },
+    {
+      "id": "HR15",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": true,
+      "seenSupportSets": [[292, 293, 294, 298, 299, 300, 301, 302]],
+      "savedSupportSets": [
+        { "observationIds": ["6cd4e40a-faf9-45ed-baaa-99ba57ac274b", "9575e57a-7162-4052-ac22-b018d4f8af79"], "eventIds": [292, 293, 294, 298, 299, 300, 301, 302] },
+        { "observationIds": ["3c97d3db-fbcf-45cf-8d6f-49dbb7fa6b9d"], "eventIds": [292, 293, 294, 298, 299, 300, 301, 302] }
+      ],
+      "rationale": "Michael's first Approve opened an inline confirmation without an API request. His final Approve returned request 3 approved, closed the confirmation, and the settled queue retained only George's pending row."
+    },
+    {
+      "id": "HR16",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "A rejection without a comment was not attempted. The later unavailable Reject control followed approval and does not exercise this branch."
+    },
+    {
+      "id": "HR17",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Emily created a request and Michael approved it, but no post-decision employee readback was performed. The final Emily snapshot was a stale captured UI state and explicitly was not refreshed."
+    },
+    {
+      "id": "HR18",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No HR-administrator onboarding validation attempt was captured."
+    },
+    {
+      "id": "HR19",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding job-details loading state or settled selector state was captured."
+    },
+    {
+      "id": "HR20",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding advance-and-back value-retention sequence was captured."
+    },
+    {
+      "id": "HR21",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding review submission, directory appearance, or measured pre/post headcount was captured."
+    },
+    {
+      "id": "HR22",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee timesheet entry across seven days or weekly total was captured."
+    },
+    {
+      "id": "HR23",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee timesheet draft save and reload was captured."
+    },
+    {
+      "id": "HR24",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee timesheet submission followed by an actual post-submit edit attempt was captured."
+    },
+    {
+      "id": "HR25",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile field save and immediate changed-value readback was captured."
+    },
+    {
+      "id": "HR26",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile name or photo save and immediate header-identity readback was captured."
+    },
+    {
+      "id": "HR27",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile save followed by a reload and persisted-value readback was captured."
+    }
+  ],
+  "checkpoints": [
+    {
+      "minutes": 10,
+      "seenComplete": 2,
+      "savedComplete": 0,
+      "directlyJourneyLinkedSavedComplete": 0,
+      "seenCoverage": "2/27",
+      "savedCoverage": "0/27",
+      "unsupportedMaterialClaims": 0,
+      "unsupportedMaterialClaimRate": "undefined (no saved complete checks)"
+    },
+    {
+      "minutes": 20,
+      "seenComplete": 5,
+      "savedComplete": 5,
+      "directlyJourneyLinkedSavedComplete": 4,
+      "seenCoverage": "5/27",
+      "savedCoverage": "5/27",
+      "unsupportedMaterialClaims": 0,
+      "unsupportedMaterialClaimRate": "0/5"
+    },
+    {
+      "minutes": 40,
+      "seenComplete": 7,
+      "savedComplete": 7,
+      "directlyJourneyLinkedSavedComplete": 5,
+      "seenCoverage": "7/27",
+      "savedCoverage": "7/27",
+      "unsupportedMaterialClaims": 0,
+      "unsupportedMaterialClaimRate": "0/7"
+    },
+    {
+      "minutes": "final",
+      "seenComplete": 7,
+      "savedComplete": 7,
+      "directlyJourneyLinkedSavedComplete": 5,
+      "seenCoverage": "7/27",
+      "savedCoverage": "7/27",
+      "unsupportedMaterialClaims": 0,
+      "unsupportedMaterialClaimRate": "0/7"
+    }
+  ],
+  "unsupportedClaims": [],
+  "scenarios": [
+    {
+      "id": "d3a13c13-757a-41f0-8346-fb1c23e5a02f",
+      "grounded": true,
+      "distinctBehaviorKey": "employee-new-leave: empty-start-and-end dates block submission and show the required-fields message",
+      "observationIds": ["b42eff94-08aa-4ad9-ac56-1f20d4df916d"],
+      "unsupportedOutcomes": [],
+      "rationale": "The saved observation and browser events 77–79 establish the supplied form, an empty-date submit attempt, the retained form, and the exact required-fields message."
+    },
+    {
+      "id": "09011fa9-d989-41f4-a6ef-30ca65c1d499",
+      "grounded": true,
+      "distinctBehaviorKey": "employee-new-leave: Vacation 2026-09-15 through 2026-09-16 creates a pending two-day request displayed in My leave",
+      "observationIds": ["861b9d9d-41f1-4cbb-a634-79c8e47376c0", "9b58238b-4d93-40ab-8642-1ee61c306b36"],
+      "unsupportedOutcomes": [],
+      "rationale": "Saved knowledge available to Create, supported by events 163–168, records the dated Vacation submission, its pending two-day result, navigation to My leave, and the rendered history row."
+    },
+    {
+      "id": "f695474b-d0fb-41dc-98a2-b865bf219598",
+      "grounded": true,
+      "distinctBehaviorKey": "manager-approvals: confirming Emily request 3 approval changes it to approved and removes it from pending approvals",
+      "observationIds": ["863cb21a-508f-47e4-b565-74a439d7b901", "6cd4e40a-faf9-45ed-baaa-99ba57ac274b", "9575e57a-7162-4052-ac22-b018d4f8af79"],
+      "unsupportedOutcomes": [],
+      "rationale": "Saved knowledge available to Create, supported by events 278–302, establishes the named pending request, the first Approve confirmation, final approval, approved result, and its absence from the settled pending queue."
+    }
+  ],
+  "notes": [
+    "Surface-only saved Knowledge was accepted for primary saved coverage. Direct Journey linkage is reported separately.",
+    "The final Emily UI snapshot still displayed request 3 as pending after the manager approval. It was an existing captured state, not a post-approval employee refresh, so it cannot complete HR17 and is not treated as a Product contradiction.",
+    "The leave-history UI rendered Sep 15 as both displayed endpoints for request 3. The grade preserves that actual UI evidence; API dates are not substituted for HR12.",
+    "No Evidence images are listed in evidence-manifest.json. Tool-refusals.json was used only to interpret the absence of a final refresh, not as a Product event."
+  ]
+}

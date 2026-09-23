@@ -1,0 +1,12 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://127.0.0.1:54824/loans/201/renew",
+    "actor": "Reader",
+    "body": {}
+  },
+  "status": 404,
+  "body": {
+    "error": "Loan not found"
+  }
+}

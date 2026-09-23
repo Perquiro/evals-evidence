@@ -1,0 +1,11 @@
+{
+  "agent": "/root/library_walk",
+  "inheritedConversation": false,
+  "actor": "Reader",
+  "source": "cf66260 plus working tree",
+  "inventoryAuthority": "53deabaeeda0d9c8643eda98eb4a95b2d3f36ce8",
+  "inventorySha256": "def22bf386a557e786a69ec4f2579d416c76c0c4f39554e182b5be757ca7756d",
+  "inventoryCopyTiming": "Copied after candidate dispatch; immutable authority was selected before dispatch. No private criteria were supplied to the candidate.",
+  "modelTelemetry": "Default tool role; sampling telemetry unavailable",
+  "scope": "Original broad Library request, one Actor per execution, shared 40 Product requests"
+}

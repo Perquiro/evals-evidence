@@ -1,0 +1,79 @@
+[
+  {
+    "event": 156,
+    "proposal": {
+      "requestToken": "[redacted]",
+      "journeyGroups": [
+        {
+          "journeyId": "02ebe8a9-e2d3-44a1-a533-76710ae8083c",
+          "why": "Why now: Emily's Engineering department selection reduced the displayed directory to eight employees and changed pagination to one page, with a matching successful filtered API response. Observations: 5 and 6 (Emily.dawson).",
+          "scenarios": [
+            {
+              "name": "Filter the employee directory by department",
+              "gherkin": "Given Emily.dawson is viewing the employee directory\nWhen she selects Engineering in the department filter\nThen the directory displays 8 Engineering employees on page 1 of 1 with Previous and Next disabled\nAnd the employee directory request returns HTTP 200 with department Engineering, total 8, and pages 1",
+              "surfaces": [
+                {
+                  "surfaceId": "57bd2f0f-ac68-4db5-be6d-1ba08ec12ec1",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "46146710-ff65-452c-b1bc-841d70710963",
+                  "platform": "api"
+                }
+              ],
+              "actors": [
+                "Emily.dawson"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "result": {
+      "id": "b25afe57-cb9f-48db-8b6e-93a7eeb2876e",
+      "status": "open",
+      "createdAt": "2026-09-10T15:10:12.472Z",
+      "kind": "create",
+      "journeyGroups": [
+        {
+          "journeyId": "02ebe8a9-e2d3-44a1-a533-76710ae8083c",
+          "journeyName": "Open employee directory",
+          "why": "Why now: Emily's Engineering department selection reduced the displayed directory to eight employees and changed pagination to one page, with a matching successful filtered API response. Observations: 5 and 6 (Emily.dawson).",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "7758aed8-c721-4db8-a51e-f58030b9a6ec",
+                "journeyId": "02ebe8a9-e2d3-44a1-a533-76710ae8083c",
+                "journeyName": "Open employee directory",
+                "name": "Filter the employee directory by department",
+                "gherkin": "Given Emily.dawson is viewing the employee directory\nWhen she selects Engineering in the department filter\nThen the directory displays 8 Engineering employees on page 1 of 1 with Previous and Next disabled\nAnd the employee directory request returns HTTP 200 with department Engineering, total 8, and pages 1",
+                "surfaces": [
+                  {
+                    "surfaceId": "57bd2f0f-ac68-4db5-be6d-1ba08ec12ec1",
+                    "surfaceName": "Employee directory",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "46146710-ff65-452c-b1bc-841d70710963",
+                    "surfaceName": "Employee directory API",
+                    "platform": "api"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "2fcadc33-166c-44b8-a7f6-d13a1c4edeb2",
+                    "actorName": "Emily.dawson"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T15:10:12.472Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

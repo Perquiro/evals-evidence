@@ -1,0 +1,147 @@
+{
+  "visibility": "evaluator only; never copy into an execution Project or prompt",
+  "authority": "BugBusters README.md at 868e83d2c50f8135c5bff46db086ee4037c90ef3, sections 1, 3, 5, 6, 7. Grading concerns observed behavior, including defects, not conformance to intended behavior.",
+  "items": [
+    {
+      "id": "login",
+      "journey": "Account access",
+      "action": "Submit valid Employee credentials from signed out.",
+      "observe": "Save the actual authentication result and resulting page/identity.",
+      "source": "README.md:71"
+    },
+    {
+      "id": "invalid-login",
+      "journey": "Account access",
+      "action": "Submit invalid credentials from signed out.",
+      "observe": "Save the error or other actual result and authentication state.",
+      "source": "README.md:71"
+    },
+    {
+      "id": "logout",
+      "journey": "Account access",
+      "action": "Log out and revisit a private Employee page.",
+      "observe": "Save the resulting page and whether private content remains accessible.",
+      "source": "README.md:74"
+    },
+    {
+      "id": "directory-search",
+      "journey": "Directory lookup",
+      "action": "Enter a name search and wait for settlement.",
+      "observe": "Save current text and final displayed row identities.",
+      "source": "README.md:101-103"
+    },
+    {
+      "id": "directory-filter",
+      "journey": "Directory lookup",
+      "action": "Combine a department filter and name search.",
+      "observe": "Save both inputs and settled row identities.",
+      "source": "README.md:104"
+    },
+    {
+      "id": "directory-empty",
+      "journey": "Directory lookup",
+      "action": "Enter a deliberately unmatched search.",
+      "observe": "Save the text and settled empty or other actual result.",
+      "source": "README.md:103"
+    },
+    {
+      "id": "directory-sort",
+      "journey": "Directory lookup",
+      "action": "With at least two rows with unequal sort keys, click the same sortable header twice.",
+      "observe": "Save row order and sort indication after each click.",
+      "source": "README.md:105"
+    },
+    {
+      "id": "directory-detail",
+      "journey": "Directory lookup",
+      "action": "Open an employee detail and reload or load its direct URL.",
+      "observe": "Save the detail identity and result after reload/direct load.",
+      "source": "README.md:107"
+    },
+    {
+      "id": "leave-invalid",
+      "journey": "Request leave",
+      "action": "Attempt a leave request with end before start.",
+      "observe": "Save dates and actual validation/submission result.",
+      "source": "README.md:87"
+    },
+    {
+      "id": "leave-duration",
+      "journey": "Request leave",
+      "action": "Enter a Friday-through-Monday leave interval.",
+      "observe": "Save dates and displayed duration before submission.",
+      "source": "README.md:88"
+    },
+    {
+      "id": "leave-submit",
+      "journey": "Request leave",
+      "action": "Submit one valid leave request once.",
+      "observe": "Save submitted values and actual immediate result, including created request count if observable.",
+      "source": "README.md:89"
+    },
+    {
+      "id": "leave-readback",
+      "journey": "Request leave",
+      "action": "Read a newly submitted request in history after navigation or reload.",
+      "observe": "Save its identity, dates, duration and status; link it to the submission.",
+      "source": "README.md:89,92"
+    },
+    {
+      "id": "timesheet-total",
+      "journey": "Record hours",
+      "action": "Enter valid hours across all seven days, including nonzero Saturday and Sunday hours.",
+      "observe": "Save seven input values and displayed weekly total.",
+      "source": "README.md:109-112"
+    },
+    {
+      "id": "timesheet-draft",
+      "journey": "Record hours",
+      "action": "Save draft hours and reload.",
+      "observe": "Save entered hours and actual values after reload.",
+      "source": "README.md:113"
+    },
+    {
+      "id": "timesheet-submit",
+      "journey": "Record hours",
+      "action": "Submit a week and attempt a later edit.",
+      "observe": "Save status and actual editability after submission.",
+      "source": "README.md:113"
+    },
+    {
+      "id": "profile-save",
+      "journey": "Update profile",
+      "action": "Save a changed name, phone or emergency contact.",
+      "observe": "Save old/new field values and immediate result.",
+      "source": "README.md:117-118"
+    },
+    {
+      "id": "profile-readback",
+      "journey": "Update profile",
+      "action": "Reload after saving a changed profile field.",
+      "observe": "Save the actual persisted value and link it to the prior save.",
+      "source": "README.md:118"
+    }
+  ],
+  "journeys": {
+    "Account access": [
+      "login",
+      "logout"
+    ],
+    "Directory lookup": [
+      "directory-search",
+      "directory-detail"
+    ],
+    "Request leave": [
+      "leave-submit",
+      "leave-readback"
+    ],
+    "Record hours": [
+      "timesheet-draft",
+      "timesheet-submit"
+    ],
+    "Update profile": [
+      "profile-save",
+      "profile-readback"
+    ]
+  }
+}

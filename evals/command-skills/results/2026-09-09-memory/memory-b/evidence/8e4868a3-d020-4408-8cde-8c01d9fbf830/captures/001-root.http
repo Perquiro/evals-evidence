@@ -1,0 +1,4 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{"product":"Willow Library","environment":"Local disposable development service. All data is synthetic.","docs":"/docs","links":{"catalog":"/catalog","account":"/account","serviceDesk":"/desk"}}

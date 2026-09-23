@@ -1,0 +1,347 @@
+{
+  "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+  "coverage": {
+    "actors": 2,
+    "surfaces": 14,
+    "journeys": 3,
+    "observations": 61,
+    "evidence": 21,
+    "scenarios": 0,
+    "tests": 0,
+    "surfacesWithoutObservations": 0,
+    "journeysWithoutAcceptedScenarios": 3,
+    "acceptedScenariosWithoutTests": 0
+  },
+  "entries": [
+    {
+      "kind": "actor",
+      "id": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+      "name": "Reader"
+    },
+    {
+      "kind": "actor",
+      "id": "ab5945c6-978f-4469-8222-30c839c2b986",
+      "name": "Librarian"
+    },
+    {
+      "kind": "surface",
+      "id": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+      "name": "GET /",
+      "locator": "GET /"
+    },
+    {
+      "kind": "surface",
+      "id": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+      "name": "GET /docs",
+      "locator": "GET /docs"
+    },
+    {
+      "kind": "surface",
+      "id": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+      "name": "GET /catalog",
+      "locator": "GET /catalog"
+    },
+    {
+      "kind": "surface",
+      "id": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+      "name": "GET /books/:id",
+      "locator": "GET /books/:id"
+    },
+    {
+      "kind": "surface",
+      "id": "80e00022-e2ae-4b3e-acf3-bd08c677678d",
+      "name": "POST /holds",
+      "locator": "POST /holds"
+    },
+    {
+      "kind": "surface",
+      "id": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+      "name": "GET /holds",
+      "locator": "GET /holds"
+    },
+    {
+      "kind": "surface",
+      "id": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+      "name": "GET /account",
+      "locator": "GET /account"
+    },
+    {
+      "kind": "surface",
+      "id": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+      "name": "GET /loans",
+      "locator": "GET /loans"
+    },
+    {
+      "kind": "surface",
+      "id": "f3b3143d-758b-4105-a001-03577e407fa2",
+      "name": "GET /loans/:id",
+      "locator": "GET /loans/:id"
+    },
+    {
+      "kind": "surface",
+      "id": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+      "name": "GET /desk",
+      "locator": "GET /desk"
+    },
+    {
+      "kind": "surface",
+      "id": "cf913cbe-afcd-48f0-bc14-de81f4dc1c26",
+      "name": "POST /loans/:id/renew",
+      "locator": "POST /loans/:id/renew"
+    },
+    {
+      "kind": "surface",
+      "id": "1528e0f6-2518-47c6-96a0-7c10a268970a",
+      "name": "DELETE /holds/:id",
+      "locator": "DELETE /holds/:id"
+    },
+    {
+      "kind": "surface",
+      "id": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+      "name": "POST /loans/:id/return",
+      "locator": "POST /loans/:id/return"
+    },
+    {
+      "kind": "surface",
+      "id": "af73d4d1-4c26-407e-9f04-577a78dc495e",
+      "name": "POST /desk/returns",
+      "locator": "POST /desk/returns"
+    },
+    {
+      "kind": "journey",
+      "id": "9a5db128-aff0-4d66-ae80-1882dce02823",
+      "name": "Find an available book",
+      "surfaceCount": 3,
+      "testFolder": "find-an-available-book"
+    },
+    {
+      "kind": "journey",
+      "id": "c4e5aa43-d8da-4d7e-b9ff-4d78e36b2a94",
+      "name": "Reserve a book",
+      "surfaceCount": 5,
+      "testFolder": "reserve-a-book"
+    },
+    {
+      "kind": "journey",
+      "id": "ff74dd11-5b88-40cd-8424-97db8ddc4640",
+      "name": "Renew a loan",
+      "surfaceCount": 3,
+      "testFolder": "renew-a-loan"
+    },
+    {
+      "kind": "evidence",
+      "id": "c20d5ed0-1ea7-4d2e-88d0-06049611ab7a",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:27:04.836Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "a9c97c6c-4924-4852-b653-bfb0e78e6d9a",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:29:29.127Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "27d00762-a2b9-468a-a6fb-1f3f13594ac4",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:29:29.226Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "e23a9146-603f-4fcc-a538-03b3cee828f8",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:32:22.615Z",
+      "linkedObservationCount": 2
+    },
+    {
+      "kind": "evidence",
+      "id": "7bee473e-0213-4813-9eb5-df6a547de310",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:37:10.945Z",
+      "linkedObservationCount": 2
+    },
+    {
+      "kind": "evidence",
+      "id": "fd0bbe00-a51e-49ae-83ca-90f091dd68b3",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:40:18.118Z",
+      "linkedObservationCount": 11
+    },
+    {
+      "kind": "evidence",
+      "id": "8e4868a3-d020-4408-8cde-8c01d9fbf830",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:48:10.972Z",
+      "linkedObservationCount": 12
+    },
+    {
+      "kind": "evidence",
+      "id": "b488577f-18d0-4c2a-af96-f41d7ed81c1b",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:52:32.197Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "1bcc1c22-6fed-4537-9c67-86ec3312e963",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:53:26.919Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "038098e0-ce94-478c-8bda-56783f8e4408",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:55:10.560Z",
+      "linkedObservationCount": 2
+    },
+    {
+      "kind": "evidence",
+      "id": "43259201-0981-475c-b31b-115bf6e7fb0a",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:56:17.099Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "db8562a2-51c0-4b57-9c32-f45d9bb29592",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:57:20.092Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "1f09113a-e3e9-43fa-9179-0e3391f2e6c1",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T07:59:44.167Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "c938ab6c-91d3-4639-bb24-79d2e992a0ea",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T08:00:59.527Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "62f75f2f-e953-47bc-84d9-fe81c2c64189",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T08:01:52.685Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "9816a606-14a8-46f6-a869-ec4cb40ade22",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T08:03:04.350Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "5feaf9d4-657c-41e4-bce7-71e98869dbf7",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T08:03:51.422Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "854bb005-aa6a-43a6-a253-b1b69f03f83b",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T08:09:58.380Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "4c4bb277-060e-4ee2-9929-1dcdcc98c49e",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T08:10:02.350Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "19c8d3d3-4688-47f0-b402-5c581932878f",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T08:10:05.709Z",
+      "linkedObservationCount": 1
+    },
+    {
+      "kind": "evidence",
+      "id": "790e9e22-e492-4740-9058-f80c7da0dc38",
+      "evidenceKind": "agent_reported",
+      "createdAt": "2026-09-09T08:10:10.680Z",
+      "linkedObservationCount": 1
+    }
+  ],
+  "storedRelationships": [
+    {
+      "kind": "journey_surface",
+      "journeyId": "9a5db128-aff0-4d66-ae80-1882dce02823",
+      "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "9a5db128-aff0-4d66-ae80-1882dce02823",
+      "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "9a5db128-aff0-4d66-ae80-1882dce02823",
+      "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "c4e5aa43-d8da-4d7e-b9ff-4d78e36b2a94",
+      "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "c4e5aa43-d8da-4d7e-b9ff-4d78e36b2a94",
+      "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "c4e5aa43-d8da-4d7e-b9ff-4d78e36b2a94",
+      "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+      "position": 2
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "c4e5aa43-d8da-4d7e-b9ff-4d78e36b2a94",
+      "surfaceId": "80e00022-e2ae-4b3e-acf3-bd08c677678d",
+      "position": 3
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "c4e5aa43-d8da-4d7e-b9ff-4d78e36b2a94",
+      "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+      "position": 4
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "ff74dd11-5b88-40cd-8424-97db8ddc4640",
+      "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+      "position": 0
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "ff74dd11-5b88-40cd-8424-97db8ddc4640",
+      "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+      "position": 1
+    },
+    {
+      "kind": "journey_surface",
+      "journeyId": "ff74dd11-5b88-40cd-8424-97db8ddc4640",
+      "surfaceId": "f3b3143d-758b-4105-a001-03577e407fa2",
+      "position": 2
+    }
+  ]
+}

@@ -1,0 +1,418 @@
+[
+  {
+    "event": 487,
+    "proposal": {
+      "requestToken": "[redacted]",
+      "journeyGroups": [
+        {
+          "journeyId": "aa954bb1-968f-4566-9956-b4c588acee67",
+          "why": "Why now: completing valid onboarding creates an employee whose identity, job details, and equipment are then discoverable in the directory. Observations: 107, 111, and 114 (hannah.blake).",
+          "scenarios": [
+            {
+              "name": "Create an employee and find the saved employee",
+              "gherkin": "Given hannah.blake has completed onboarding with valid personal, job, and equipment details\nWhen hannah.blake creates the employee\nThen the onboarding completion confirms the employee was added to the directory\nAnd a directory search for the employee returns one matching employee with the saved identity, job details, and equipment",
+              "surfaces": [
+                {
+                  "surfaceId": "e846e774-fcb2-4c92-a9e7-1c169378d233",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "1ed4bdfc-6b03-4643-8f56-3a64c41ef8f2",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "ba9875fa-32ab-46ae-be33-f56e79a2bc3a",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "199d1900-1de5-41b5-84d5-a8f0e0d9d63b",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "2c53fb1b-d68d-4f07-b7fa-2093807b9809",
+                  "platform": "api"
+                },
+                {
+                  "surfaceId": "539e386a-70f9-4672-a3b1-9ac99f693dd5",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "33d99990-7e5b-4eef-bb9b-6f28c3751512",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "7e7f3d16-f506-4406-be3b-b3ab7db40d0b",
+                  "platform": "api"
+                }
+              ],
+              "actors": [
+                "hannah.blake"
+              ]
+            }
+          ]
+        },
+        {
+          "journeyId": "13f09691-04a8-41a2-baec-bb57f6eb9754",
+          "why": "Why now: manager decisions move pending leave requests to terminal states and remove them from the pending approvals list. Observations: 42-46 and 50-55 (michael.reed).",
+          "scenarios": [
+            {
+              "name": "Approve a pending leave request",
+              "gherkin": "Given michael.reed has a pending leave request in Approvals\nWhen michael.reed confirms approval of the request\nThen the request is approved\nAnd the request is absent from the pending approvals list",
+              "surfaces": [
+                {
+                  "surfaceId": "ab3f155b-83fb-4323-800e-00d3aed23c24",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "3fdb4bda-3700-4fca-bece-788a06a8702f",
+                  "platform": "api"
+                },
+                {
+                  "surfaceId": "0db94af7-ddb2-4776-a70d-44097f5da706",
+                  "platform": "api"
+                }
+              ],
+              "actors": [
+                "michael.reed"
+              ]
+            },
+            {
+              "name": "Reject a pending leave request without a reason",
+              "gherkin": "Given michael.reed has a pending leave request in Approvals\nWhen michael.reed confirms rejection with an empty rejection reason\nThen the request is rejected with an empty comment\nAnd the request is absent from the pending approvals list",
+              "surfaces": [
+                {
+                  "surfaceId": "ab3f155b-83fb-4323-800e-00d3aed23c24",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "3fdb4bda-3700-4fca-bece-788a06a8702f",
+                  "platform": "api"
+                },
+                {
+                  "surfaceId": "0db94af7-ddb2-4776-a70d-44097f5da706",
+                  "platform": "api"
+                }
+              ],
+              "actors": [
+                "michael.reed"
+              ]
+            }
+          ]
+        },
+        {
+          "journeyId": "a7cdb1d7-3ec9-49e5-b376-667d2027bf1d",
+          "why": "Why now: submitting a saved fractional-hour draft persists submitted status and prevents further editing of that week. Observations: 75 and 79-86 (Emily.dawson).",
+          "scenarios": [
+            {
+              "name": "Submit a saved fractional-hours timesheet",
+              "gherkin": "Given Emily.dawson has a saved draft timesheet with 7.5 hours on Monday and zero hours on the other days\nWhen Emily.dawson submits the week\nThen the timesheet is submitted with a total of 7.5 hours\nAnd after reload the submitted timesheet and its editing controls remain disabled",
+              "surfaces": [
+                {
+                  "surfaceId": "1ba8cf33-a417-4d3e-8442-268c807926bc",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "033ddadb-c178-4ef0-a124-ecfe6f3047d6",
+                  "platform": "api"
+                },
+                {
+                  "surfaceId": "5a2c3b98-c1ed-42ca-b526-a94569652368",
+                  "platform": "api"
+                }
+              ],
+              "actors": [
+                "Emily.dawson"
+              ]
+            }
+          ]
+        },
+        {
+          "journeyId": "ca7a44f7-d55e-451b-ac5b-b1dcaa4dc88f",
+          "why": "Why now: a weekend-only leave submission creates a pending two-day request, immediately reduces the displayed balance, and renders a shifted end date in history. Observations: 23-29 (Emily.dawson).",
+          "scenarios": [
+            {
+              "name": "Submit a weekend-only leave request",
+              "gherkin": "Given Emily.dawson has a leave balance of 18 days\nWhen Emily.dawson submits a Vacation request from 2026-09-12 through 2026-09-13\nThen a pending leave request is created with 2 days\nAnd My leave shows a balance of 16 days and renders the request as Sep 12 through Sep 12",
+              "surfaces": [
+                {
+                  "surfaceId": "7a435c8f-530a-4449-84d2-740c0b2282b8",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "eaf1aaf5-d759-4bf7-bb60-ccf210d27632",
+                  "platform": "api"
+                },
+                {
+                  "surfaceId": "2fadf2a1-9145-488a-bc3e-196d06a90d66",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "72d4880d-a775-4540-813b-375765b714ec",
+                  "platform": "api"
+                },
+                {
+                  "surfaceId": "95f4949e-1f4b-47e4-b4b9-ac245edbe45b",
+                  "platform": "api"
+                }
+              ],
+              "actors": [
+                "Emily.dawson"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "result": {
+      "id": "7ece66c8-0df6-4b0c-8020-2a4c48c95e95",
+      "status": "open",
+      "createdAt": "2026-09-10T14:40:58.554Z",
+      "kind": "create",
+      "journeyGroups": [
+        {
+          "journeyId": "aa954bb1-968f-4566-9956-b4c588acee67",
+          "journeyName": "Onboard a new employee and find them in the directory",
+          "why": "Why now: completing valid onboarding creates an employee whose identity, job details, and equipment are then discoverable in the directory. Observations: 107, 111, and 114 (hannah.blake).",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "a6c05578-6113-4386-ab59-1b331650550a",
+                "journeyId": "aa954bb1-968f-4566-9956-b4c588acee67",
+                "journeyName": "Onboard a new employee and find them in the directory",
+                "name": "Create an employee and find the saved employee",
+                "gherkin": "Given hannah.blake has completed onboarding with valid personal, job, and equipment details\nWhen hannah.blake creates the employee\nThen the onboarding completion confirms the employee was added to the directory\nAnd a directory search for the employee returns one matching employee with the saved identity, job details, and equipment",
+                "surfaces": [
+                  {
+                    "surfaceId": "e846e774-fcb2-4c92-a9e7-1c169378d233",
+                    "surfaceName": "Onboarding personal information",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "1ed4bdfc-6b03-4643-8f56-3a64c41ef8f2",
+                    "surfaceName": "Onboarding job details",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "ba9875fa-32ab-46ae-be33-f56e79a2bc3a",
+                    "surfaceName": "Onboarding equipment",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "199d1900-1de5-41b5-84d5-a8f0e0d9d63b",
+                    "surfaceName": "Onboarding review",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "2c53fb1b-d68d-4f07-b7fa-2093807b9809",
+                    "surfaceName": "POST /api/employees",
+                    "platform": "api"
+                  },
+                  {
+                    "surfaceId": "539e386a-70f9-4672-a3b1-9ac99f693dd5",
+                    "surfaceName": "Onboarding complete",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "33d99990-7e5b-4eef-bb9b-6f28c3751512",
+                    "surfaceName": "Employee directory",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "7e7f3d16-f506-4406-be3b-b3ab7db40d0b",
+                    "surfaceName": "GET /api/employees",
+                    "platform": "api"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "a9ddd28b-688d-4b97-8d25-99812d6bec0e",
+                    "actorName": "hannah.blake"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:40:58.554Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        },
+        {
+          "journeyId": "13f09691-04a8-41a2-baec-bb57f6eb9754",
+          "journeyName": "Review and decide team leave",
+          "why": "Why now: manager decisions move pending leave requests to terminal states and remove them from the pending approvals list. Observations: 42-46 and 50-55 (michael.reed).",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "9fe0c2cb-ce36-4a11-9bad-77f9d51d6c06",
+                "journeyId": "13f09691-04a8-41a2-baec-bb57f6eb9754",
+                "journeyName": "Review and decide team leave",
+                "name": "Approve a pending leave request",
+                "gherkin": "Given michael.reed has a pending leave request in Approvals\nWhen michael.reed confirms approval of the request\nThen the request is approved\nAnd the request is absent from the pending approvals list",
+                "surfaces": [
+                  {
+                    "surfaceId": "ab3f155b-83fb-4323-800e-00d3aed23c24",
+                    "surfaceName": "Approvals",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "3fdb4bda-3700-4fca-bece-788a06a8702f",
+                    "surfaceName": "POST /api/approvals/:id/decision",
+                    "platform": "api"
+                  },
+                  {
+                    "surfaceId": "0db94af7-ddb2-4776-a70d-44097f5da706",
+                    "surfaceName": "GET /api/approvals",
+                    "platform": "api"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "c127c5a7-408e-4ec3-8ab4-f5c20a31cd55",
+                    "actorName": "michael.reed"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:40:58.554Z",
+                "history": []
+              },
+              "contradictions": []
+            },
+            {
+              "scenario": {
+                "id": "f83004a5-bf26-4ab3-83bf-604ced094b57",
+                "journeyId": "13f09691-04a8-41a2-baec-bb57f6eb9754",
+                "journeyName": "Review and decide team leave",
+                "name": "Reject a pending leave request without a reason",
+                "gherkin": "Given michael.reed has a pending leave request in Approvals\nWhen michael.reed confirms rejection with an empty rejection reason\nThen the request is rejected with an empty comment\nAnd the request is absent from the pending approvals list",
+                "surfaces": [
+                  {
+                    "surfaceId": "ab3f155b-83fb-4323-800e-00d3aed23c24",
+                    "surfaceName": "Approvals",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "3fdb4bda-3700-4fca-bece-788a06a8702f",
+                    "surfaceName": "POST /api/approvals/:id/decision",
+                    "platform": "api"
+                  },
+                  {
+                    "surfaceId": "0db94af7-ddb2-4776-a70d-44097f5da706",
+                    "surfaceName": "GET /api/approvals",
+                    "platform": "api"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "c127c5a7-408e-4ec3-8ab4-f5c20a31cd55",
+                    "actorName": "michael.reed"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:40:58.554Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        },
+        {
+          "journeyId": "a7cdb1d7-3ec9-49e5-b376-667d2027bf1d",
+          "journeyName": "Save and submit weekly timesheet",
+          "why": "Why now: submitting a saved fractional-hour draft persists submitted status and prevents further editing of that week. Observations: 75 and 79-86 (Emily.dawson).",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "21e85398-9cb0-49e7-bcc2-2e7569f04a99",
+                "journeyId": "a7cdb1d7-3ec9-49e5-b376-667d2027bf1d",
+                "journeyName": "Save and submit weekly timesheet",
+                "name": "Submit a saved fractional-hours timesheet",
+                "gherkin": "Given Emily.dawson has a saved draft timesheet with 7.5 hours on Monday and zero hours on the other days\nWhen Emily.dawson submits the week\nThen the timesheet is submitted with a total of 7.5 hours\nAnd after reload the submitted timesheet and its editing controls remain disabled",
+                "surfaces": [
+                  {
+                    "surfaceId": "1ba8cf33-a417-4d3e-8442-268c807926bc",
+                    "surfaceName": "Timesheet",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "033ddadb-c178-4ef0-a124-ecfe6f3047d6",
+                    "surfaceName": "PUT /api/timesheet",
+                    "platform": "api"
+                  },
+                  {
+                    "surfaceId": "5a2c3b98-c1ed-42ca-b526-a94569652368",
+                    "surfaceName": "GET /api/timesheet",
+                    "platform": "api"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "8f173975-9dda-4915-a90e-a88103223817",
+                    "actorName": "Emily.dawson"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:40:58.554Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        },
+        {
+          "journeyId": "ca7a44f7-d55e-451b-ac5b-b1dcaa4dc88f",
+          "journeyName": "Request leave and review history",
+          "why": "Why now: a weekend-only leave submission creates a pending two-day request, immediately reduces the displayed balance, and renders a shifted end date in history. Observations: 23-29 (Emily.dawson).",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "60d3440e-1974-4d39-a7c2-751aefb5854c",
+                "journeyId": "ca7a44f7-d55e-451b-ac5b-b1dcaa4dc88f",
+                "journeyName": "Request leave and review history",
+                "name": "Submit a weekend-only leave request",
+                "gherkin": "Given Emily.dawson has a leave balance of 18 days\nWhen Emily.dawson submits a Vacation request from 2026-09-12 through 2026-09-13\nThen a pending leave request is created with 2 days\nAnd My leave shows a balance of 16 days and renders the request as Sep 12 through Sep 12",
+                "surfaces": [
+                  {
+                    "surfaceId": "7a435c8f-530a-4449-84d2-740c0b2282b8",
+                    "surfaceName": "New leave request",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "eaf1aaf5-d759-4bf7-bb60-ccf210d27632",
+                    "surfaceName": "POST /api/leave",
+                    "platform": "api"
+                  },
+                  {
+                    "surfaceId": "2fadf2a1-9145-488a-bc3e-196d06a90d66",
+                    "surfaceName": "My leave",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "72d4880d-a775-4540-813b-375765b714ec",
+                    "surfaceName": "GET /api/leave",
+                    "platform": "api"
+                  },
+                  {
+                    "surfaceId": "95f4949e-1f4b-47e4-b4b9-ac245edbe45b",
+                    "surfaceName": "GET /api/me",
+                    "platform": "api"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "8f173975-9dda-4915-a90e-a88103223817",
+                    "actorName": "Emily.dawson"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:40:58.554Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "case": "05_explicit_human_priority",
+  "mode": "live",
+  "advisory_only": true,
+  "model_requested": "jev-1.13.0",
+  "rubric_version": "explore-ranking-v1",
+  "weights": {
+    "relevance": 0.4,
+    "information": 0.6
+  },
+  "weak_set_information_threshold": 1.5,
+  "shuffle_seed": 7,
+  "input_sha256": "d871d62a6fac8d2a0a57d1c4a4f71f44ee3372cf6db0bff538630dac74339300",
+  "api_calls": 0,
+  "api_latency_ms": null,
+  "usage": null,
+  "request": null,
+  "status": "human_priority",
+  "precedence_ids": [
+    "c2"
+  ],
+  "reason": "The explicit first priority is eligible; no semantic ranking is needed.",
+  "captured_transport": {}
+}

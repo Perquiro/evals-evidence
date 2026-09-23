@@ -1,0 +1,15 @@
+{
+  "requestToken": "c32d2c76-4b3d-4db8-9070-62936c4af8f5",
+  "surfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "journeyId": "9a5db128-aff0-4d66-ae80-1882dce02823",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "River Atlas was available, and GET /books/101 offered POST /holds with bookId 101 for Reader; no reservation request has been sent yet.",
+      "look": { "item": { "id": "e8bcd246-d701-4d5b-af1d-0696aa8e1c2a" }, "kind": "attempting", "resourceRef": "book:101" }
+    }
+  ]
+}

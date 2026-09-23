@@ -1,0 +1,5 @@
+{
+  "requestToken": "4fd803b5-cc8b-4830-9638-f6e4ef7a690a",
+  "name": "GET /books/:id",
+  "locator": "GET /books/:id"
+}

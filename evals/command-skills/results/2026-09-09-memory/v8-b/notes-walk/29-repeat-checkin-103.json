@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://127.0.0.1:54824/desk/returns",
+    "actor": "Librarian",
+    "body": {
+      "bookId": "103"
+    }
+  },
+  "status": 409,
+  "body": {
+    "error": "Book is already checked in"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "f9786615-9cce-4871-9af2-efa5a8d51eff",
+  "kind": "agent_reported",
+  "containerPath": ".perquiro/evidence/f9786615-9cce-4871-9af2-efa5a8d51eff/",
+  "createdAt": "2026-09-09T05:50:38.470Z",
+  "observationIds": [
+    "71a2d5ee-7c8a-4844-bbf3-2ea72f5249b7",
+    "a38e2221-9c03-47fc-bea4-ae109beee314"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "requestToken": "b137b188-32be-4aa0-a8da-bdd4520bb09e",
+  "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [
+    { "key": "catalog-books", "name": "Catalog books", "kind": "information" },
+    { "key": "title-search", "name": "Title search", "kind": "field" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /catalog listed River Atlas (101) and Garden Notes (102) as available, and Night Trains (103) as unavailable. Each listed a /books/:id link. It offered title search through query field q at /catalog?q=<title>.",
+      "looks": [
+        { "item": { "key": "catalog-books" }, "kind": "offered" },
+        { "item": { "key": "title-search" }, "kind": "offered" }
+      ]
+    }
+  ]
+}

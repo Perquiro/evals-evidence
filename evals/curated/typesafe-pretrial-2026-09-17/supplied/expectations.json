@@ -1,0 +1,43 @@
+{
+  "01_finish_journey": {
+    "top_id": "c1",
+    "explanation": "Resolve the unfinished cancellation outcome before repeating a known fact or collecting an isolated detail."
+  },
+  "02_permissions_objective": {
+    "top_id": "c1",
+    "explanation": "The permissions investigation should outrank search for this objective."
+  },
+  "03_search_objective": {
+    "top_id": "c2",
+    "explanation": "With the same evidence and candidates, changing the objective should favor the search check."
+  },
+  "04_required_recovery": {
+    "status": "recovery_precedence",
+    "precedence_ids": [
+      "c1"
+    ],
+    "api_calls": 0,
+    "explanation": "Host recovery rules apply before ordinary ranking and human priorities among ordinary tasks. No replay is authorized."
+  },
+  "05_explicit_human_priority": {
+    "status": "human_priority",
+    "precedence_ids": [
+      "c2"
+    ],
+    "api_calls": 0,
+    "explanation": "The explicit first priority takes precedence without paying for a ranking call."
+  },
+  "06_existing_eight_only": {
+    "status": "weak_candidates",
+    "suggested_id": null,
+    "explanation": "The eight existing suggestions repeat known observations and cannot answer the open question. Do not mistake the highest of eight weak scores for a valuable recommendation."
+  },
+  "07_explore_adds_candidate": {
+    "top_id": "c9",
+    "explanation": "An Explore-proposed candidate outside the original eight should become useful. TypeSafe did not discover or authorize it."
+  },
+  "08_actor_and_version_change": {
+    "top_id": "c1",
+    "explanation": "An employee/b17 observation must not make a manager/b18 check look redundant."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "requestToken": "bb9dfabd-e725-43b0-ad8e-7b6a9294b53f",
+  "surfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "DELETE /holds/301 returned 200 OK with the message 'Reservation cancelled'.",
+      "look": { "item": { "id": "68e52679-3d64-4da0-8068-0cca8ea677f1" }, "kind": "exercised", "attemptObservationId": "e367ab3d-97ee-4b29-9b83-e2faee774aab" },
+      "capture": "pending"
+    }
+  ]
+}

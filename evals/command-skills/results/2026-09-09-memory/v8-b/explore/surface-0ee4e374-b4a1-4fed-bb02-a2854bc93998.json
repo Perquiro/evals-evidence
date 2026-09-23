@@ -1,0 +1,331 @@
+[
+  {
+    "revision": "51972075-8266-494c-872b-d42081403606",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "actorIds": [
+        "dc327f7f-a9ff-451c-b205-986f165f998b",
+        "fea91b43-5998-4e2b-a232-38ec88e67c28"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+      "name": "Check in book",
+      "locator": "POST /desk/returns",
+      "createdAt": "2026-09-09T07:05:52.978Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "fae9f6bc-9a58-4eb4-a4b7-180b5adc4890",
+          "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+          "name": "bookId",
+          "kind": "field",
+          "createdAt": "2026-09-09T07:11:46.531Z"
+        },
+        {
+          "id": "40d5b9f4-2426-41f9-b265-adf99132820f",
+          "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+          "name": "Check in a book",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:11:46.532Z"
+        },
+        {
+          "id": "5994b467-3bad-4b7f-9774-5bdf3a654b72",
+          "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+          "name": "Gap action 28-checkin-empty",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:20:29.267Z"
+        },
+        {
+          "id": "fa84040b-c991-4732-bf1b-d5e020d02966",
+          "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+          "name": "Gap action 29-repeat-checkin-103",
+          "kind": "action",
+          "createdAt": "2026-09-09T07:20:29.454Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "80aae4d4-64e3-4369-9d14-05cff0e3501c",
+            "seq": 8,
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+            "body": "POST /desk/returns was inspected for Librarian. The service desk advertised a pending return for book 103 and a bookId field.",
+            "createdAt": "2026-09-09T07:11:46.532Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "fae9f6bc-9a58-4eb4-a4b7-180b5adc4890"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "40d5b9f4-2426-41f9-b265-adf99132820f"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "30d6eb60-541c-4c94-9103-ac163444cbcb",
+            "seq": 9,
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+            "body": "Prepared the reviewed Librarian check-in request for the pending return book 103.",
+            "createdAt": "2026-09-09T07:11:46.534Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "40d5b9f4-2426-41f9-b265-adf99132820f"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /desk/returns body {bookId:103}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "46eb4697-e3c0-4fca-8fbe-9d56166bfb61",
+            "seq": 39,
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+            "body": "Prepared reviewed Librarian /desk/returns action.",
+            "createdAt": "2026-09-09T07:20:29.268Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "5994b467-3bad-4b7f-9774-5bdf3a654b72"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /desk/returns body {}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "6d8addaf-377b-4596-97c0-f469153aa5ca",
+            "seq": 40,
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+            "body": "POST /desk/returns returned 422 {\"error\":\"Book is required\"}.",
+            "createdAt": "2026-09-09T07:20:29.362Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "5994b467-3bad-4b7f-9774-5bdf3a654b72"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "46eb4697-e3c0-4fca-8fbe-9d56166bfb61"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "9909d1d5-584e-4a45-9d44-597a8d782903",
+            "seq": 41,
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+            "body": "Prepared reviewed Librarian /desk/returns action.",
+            "createdAt": "2026-09-09T07:20:29.454Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "fa84040b-c991-4732-bf1b-d5e020d02966"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /desk/returns body {\"bookId\":\"103\"}"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "e9f4ec7c-b864-4bd1-8bb5-e04c32f0ef9b",
+            "seq": 42,
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+            "body": "POST /desk/returns returned 409 {\"error\":\"Book is already checked in\"}.",
+            "createdAt": "2026-09-09T07:20:29.564Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "fa84040b-c991-4732-bf1b-d5e020d02966"
+              },
+              "kind": "exercised",
+              "attemptObservationId": "9909d1d5-584e-4a45-9d44-597a8d782903"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "40d5b9f4-2426-41f9-b265-adf99132820f",
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "name": "Check in a book",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:11:46.532Z"
+          },
+          "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+          "platform": "api",
+          "productVersion": null,
+          "state": "unresolved",
+          "reason": "An accepted attempt has no reconciled outcome. Inspect current Product state before any repeat.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "30d6eb60-541c-4c94-9103-ac163444cbcb"
+          ]
+        },
+        {
+          "item": {
+            "id": "5994b467-3bad-4b7f-9774-5bdf3a654b72",
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "name": "Gap action 28-checkin-empty",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:20:29.267Z"
+          },
+          "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "6d8addaf-377b-4596-97c0-f469153aa5ca"
+          ]
+        },
+        {
+          "item": {
+            "id": "fa84040b-c991-4732-bf1b-d5e020d02966",
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "name": "Gap action 29-repeat-checkin-103",
+            "kind": "action",
+            "createdAt": "2026-09-09T07:20:29.454Z"
+          },
+          "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+          "platform": "api",
+          "productVersion": null,
+          "state": "exercised",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "e9f4ec7c-b864-4bd1-8bb5-e04c32f0ef9b"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [
+        {
+          "observation": {
+            "id": "30d6eb60-541c-4c94-9103-ac163444cbcb",
+            "seq": 9,
+            "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+            "actorId": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "journeyId": "674b9edf-4606-4eff-92f8-889402becd57",
+            "body": "Prepared the reviewed Librarian check-in request for the pending return book 103.",
+            "createdAt": "2026-09-09T07:11:46.534Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "question": "Inspect the named resource's current Product state: did the accepted action occur? If not established, retain the uncertainty and record its concrete blocker.",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "40d5b9f4-2426-41f9-b265-adf99132820f"
+              },
+              "kind": "attempting",
+              "resourceRef": "POST /desk/returns body {bookId:103}"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 3,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 1,
+      "suggested": 0,
+      "accountedFor": 2
+    }
+  }
+]

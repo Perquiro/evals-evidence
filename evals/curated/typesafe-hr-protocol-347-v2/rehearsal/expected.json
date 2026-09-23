@@ -1,0 +1,28 @@
+{
+  "ordinary-success": {
+    "important_actions": 3,
+    "completed_employee_workflows": 1,
+    "selection_ms": 500,
+    "api_equivalent_usd": 0.00289
+  },
+  "advised-success": {
+    "important_actions": 3,
+    "completed_employee_workflows": 1,
+    "selection_ms": 1500,
+    "api_equivalent_usd": 0.005822
+  },
+  "override-fallback": {
+    "important_actions": 3,
+    "completed_employee_workflows": 1,
+    "selection_ms": 2200,
+    "api_equivalent_usd": null,
+    "known_component_subtotal_usd": 0.00867,
+    "failed_attempts": 1
+  },
+  "absent-evidence": {
+    "important_actions": 0,
+    "completed_employee_workflows": 0,
+    "selection_ms": 500,
+    "api_equivalent_usd": null
+  }
+}

@@ -1,0 +1,140 @@
+[
+  {
+    "revision": "bfbc1b96-d03e-4390-addd-dbeefdc1a404",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+      "actorIds": [
+        "ca8ba006-6f42-4f2c-873a-e7581316f920"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+      "name": "GET /api/reservations/:id",
+      "locator": "GET /api/reservations/:id",
+      "createdAt": "2026-09-09T07:34:35.080Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "3c5226ae-11a3-4380-b1f4-d3f14e92de2f",
+          "surfaceId": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+          "name": "Reservation id",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:34:58.624Z"
+        },
+        {
+          "id": "9c0f69c2-a190-4fd7-bd81-619991096e75",
+          "surfaceId": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+          "name": "State",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:34:58.624Z"
+        },
+        {
+          "id": "97ff1a93-3aa5-45c2-8b8f-d95644c149a4",
+          "surfaceId": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+          "name": "Reservation count",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:34:58.624Z"
+        },
+        {
+          "id": "6b9f3214-7baa-4330-b78c-9790b1a66b7b",
+          "surfaceId": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+          "name": "Version",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:34:58.624Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "9b30b3c2-4c23-4d0a-bedf-83cde702392c",
+            "seq": 14,
+            "surfaceId": "df1becb0-7b83-487b-9632-c9e44bcc269e",
+            "actorId": "ca8ba006-6f42-4f2c-873a-e7581316f920",
+            "productVersion": "2.5",
+            "body": "GET /api/reservations/42 returned id 42, state cancelled, reservationCount 1, and version 2.5 after cancellation.",
+            "createdAt": "2026-09-09T07:34:58.626Z"
+          },
+          "platform": "browser",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "3c5226ae-11a3-4380-b1f4-d3f14e92de2f"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "9c0f69c2-a190-4fd7-bd81-619991096e75"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "97ff1a93-3aa5-45c2-8b8f-d95644c149a4"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "6b9f3214-7baa-4330-b78c-9790b1a66b7b"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "9b30b3c2-4c23-4d0a-bedf-83cde702392c",
+          "evidenceId": "090e31d0-763c-4eab-9397-4142eeafb452"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

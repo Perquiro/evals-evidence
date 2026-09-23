@@ -1,0 +1,27 @@
+{
+  "requestToken": "c0cdbca7-2a3b-49c6-935d-9bd7da460f47",
+  "surfaceId": "94a3a732-1b4a-4248-b1f4-ac4bab061a47",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [
+    { "key": "product", "name": "Willow Library product information", "kind": "information" },
+    { "key": "docs", "name": "Documentation", "kind": "link" },
+    { "key": "catalog", "name": "Catalog", "kind": "link" },
+    { "key": "account", "name": "Account", "kind": "link" },
+    { "key": "desk", "name": "Service desk", "kind": "link" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET / returned the Willow Library product name, a local disposable-development environment label, and links to documentation, catalog, account, and service desk.",
+      "looks": [
+        { "item": { "key": "product" }, "kind": "offered" },
+        { "item": { "key": "docs" }, "kind": "offered" },
+        { "item": { "key": "catalog" }, "kind": "offered" },
+        { "item": { "key": "account" }, "kind": "offered" },
+        { "item": { "key": "desk" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

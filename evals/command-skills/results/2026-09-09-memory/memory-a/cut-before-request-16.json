@@ -1,0 +1,168 @@
+{
+  "label": "before-request-16",
+  "beforeTime": "2026-09-09T06:01:25.241Z",
+  "lastEvent": 78,
+  "productRequests": 15,
+  "outcomesSeen": [
+    "W01",
+    "W02",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W12",
+    "W13",
+    "W14",
+    "W15"
+  ],
+  "uniqueObservations": [
+    {
+      "event": 10,
+      "id": "80f7a1cb-61d6-4d78-bcf7-d323f45f4fd8",
+      "seq": 1,
+      "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "GET /catalog returned River Atlas as available, Garden Notes and Night Trains as unavailable, links for all three books, and a q title-search field.",
+      "createdAt": "2026-09-09T05:47:10.976Z"
+    },
+    {
+      "event": 14,
+      "id": "15f6b2c6-977e-4c29-b9f8-d5ccbc7666be",
+      "seq": 2,
+      "surfaceId": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "GET /books/101 returned River Atlas as available and offered Reader a POST /holds Reserve book action with bookId 101.",
+      "createdAt": "2026-09-09T05:48:17.374Z"
+    },
+    {
+      "event": 18,
+      "id": "5553da97-62f9-4d89-9831-7b5068b1b7f8",
+      "seq": 3,
+      "surfaceId": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "River Atlas was available and exposed POST /holds with bookId 101 for Reader; no request had been dispatched when this check was saved.",
+      "createdAt": "2026-09-09T05:49:08.696Z"
+    },
+    {
+      "event": 21,
+      "id": "71a2d5ee-7c8a-4844-bbf3-2ea72f5249b7",
+      "seq": 4,
+      "surfaceId": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "POST /holds with bookId 101 returned reservation 301 for River Atlas and linked to /holds.",
+      "createdAt": "2026-09-09T05:49:51.902Z"
+    },
+    {
+      "event": 23,
+      "id": "a38e2221-9c03-47fc-bea4-ae109beee314",
+      "seq": 5,
+      "surfaceId": "cf447cfd-b731-4e10-9d1d-e22ac5311fae",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "POST /holds returned created hold 301 for River Atlas and a Reservations link to /holds.",
+      "createdAt": "2026-09-09T05:50:24.505Z"
+    },
+    {
+      "event": 27,
+      "id": "4d20a5d5-30b2-4632-9d58-a1f97cbf44d9",
+      "seq": 6,
+      "surfaceId": "3cb15245-0004-42cb-9918-d157ab22ab06",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "GET /holds returned Reader's hold 301 for River Atlas and offered DELETE /holds/301 to cancel it.",
+      "createdAt": "2026-09-09T05:51:11.230Z"
+    },
+    {
+      "event": 31,
+      "id": "6aa32f4a-d87b-41e7-a4c9-ab8b2065dddc",
+      "seq": 7,
+      "surfaceId": "3cb15245-0004-42cb-9918-d157ab22ab06",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "Hold 301 for River Atlas was present and offered DELETE /holds/301; no request had been dispatched when this check was saved.",
+      "createdAt": "2026-09-09T05:52:01.972Z"
+    },
+    {
+      "event": 33,
+      "id": "d80acd2f-7d79-4c89-80f2-aae32403016f",
+      "seq": 8,
+      "surfaceId": "3cb15245-0004-42cb-9918-d157ab22ab06",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "DELETE /holds/301 returned the message 'Reservation cancelled'.",
+      "createdAt": "2026-09-09T05:52:30.810Z"
+    },
+    {
+      "event": 37,
+      "id": "0a09b1a0-a296-4e4b-a10b-7b71c59a66a0",
+      "seq": 9,
+      "surfaceId": "3cb15245-0004-42cb-9918-d157ab22ab06",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "journeyId": "306f8333-55e0-457d-813b-b8b915da8915",
+      "body": "After cancellation, GET /holds returned an empty holds array and the message 'No reservations'.",
+      "createdAt": "2026-09-09T05:53:01.687Z"
+    },
+    {
+      "event": 40,
+      "id": "bb6168f7-f277-4c78-891c-506ee1cb8d7e",
+      "seq": 10,
+      "surfaceId": "d5283162-89a7-477e-937c-404ad87e72a9",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "GET /account identified the session as Reader and linked to Reservations at /holds and Loans at /loans.",
+      "createdAt": "2026-09-09T05:53:35.006Z"
+    },
+    {
+      "event": 43,
+      "id": "71851440-1d35-4d6f-9076-f6b58673f1c6",
+      "seq": 11,
+      "surfaceId": "941fdca3-0920-45d3-97c3-6604eb68ae3c",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "GET /loans returned loan 201 for Garden Notes and a link to /loans/201.",
+      "createdAt": "2026-09-09T05:54:05.312Z"
+    },
+    {
+      "event": 46,
+      "id": "fc2f27f8-9dc1-4eb1-971e-2a345cf468ee",
+      "seq": 12,
+      "surfaceId": "0a263157-cf04-40df-8e29-58f7b001d4d6",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "GET /loans/201 returned Garden Notes with zero renewals and due date 2026-10-01, offering Reader POST actions to renew or return the loan.",
+      "createdAt": "2026-09-09T05:54:42.469Z"
+    },
+    {
+      "event": 51,
+      "id": "45c31841-e71d-40f6-a8d1-d1b5d7c5c3c7",
+      "seq": 13,
+      "surfaceId": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "GET /books/102 returned Garden Notes as unavailable while still offering Reader the POST /holds Reserve book action with bookId 102.",
+      "createdAt": "2026-09-09T05:55:34.075Z"
+    },
+    {
+      "event": 51,
+      "id": "62233628-61b6-4c47-b3c3-5ab4359ff6ea",
+      "seq": 14,
+      "surfaceId": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "Garden Notes was unavailable and exposed POST /holds with bookId 102; no request had been dispatched when this availability-specific check was saved.",
+      "createdAt": "2026-09-09T05:55:34.078Z"
+    },
+    {
+      "event": 54,
+      "id": "c39621dc-a46b-412a-91dd-128b95792d73",
+      "seq": 15,
+      "surfaceId": "3f7a7ca3-1d68-4ead-88f9-948dbae7c45f",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "body": "POST /holds with bookId 102 returned HTTP 409 with error 'Book is unavailable'.",
+      "createdAt": "2026-09-09T05:56:13.326Z"
+    },
+    {
+      "event": 57,
+      "id": "36324916-f028-44fa-9168-1b24480d97f1",
+      "seq": 16,
+      "surfaceId": "6deef385-a34b-4ca1-8351-505d746b2386",
+      "actorId": "61409925-dde8-4f75-9801-942d22518b3d",
+      "journeyId": "4dc8a337-16c9-42a1-8e60-6081803486cf",
+      "body": "GET /catalog?q=River returned only River Atlas and retained the q title-search field.",
+      "createdAt": "2026-09-09T05:56:59.340Z"
+    }
+  ],
+  "limitation": "This is a trace cut. Final public reads must still confirm the preserved immutable records; Observation count is not completed-outcome coverage."
+}

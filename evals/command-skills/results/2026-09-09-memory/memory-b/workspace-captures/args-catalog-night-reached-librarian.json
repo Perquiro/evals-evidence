@@ -1,0 +1,14 @@
+{
+  "requestToken": "dd2f6ca7-33b6-4b6f-9a3f-e5c7bc37484f",
+  "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following Night Trains reached GET /books/103, which returned the unavailable title and a Reserve book action labelled for Reader.",
+      "look": { "item": { "id": "f6956830-0bdd-4176-8a50-f19af2644417" }, "kind": "reached", "reachedSurfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324" }
+    }
+  ]
+}

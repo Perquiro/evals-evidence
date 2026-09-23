@@ -1,0 +1,22 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://127.0.0.1:54824/catalog?q=River",
+    "actor": "Reader"
+  },
+  "status": 200,
+  "body": {
+    "books": [
+      {
+        "id": "101",
+        "title": "River Atlas",
+        "available": true,
+        "href": "/books/101"
+      }
+    ],
+    "search": {
+      "href": "/catalog?q=<title>",
+      "field": "q"
+    }
+  }
+}

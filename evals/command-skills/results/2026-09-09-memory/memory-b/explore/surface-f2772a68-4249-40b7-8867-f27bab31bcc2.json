@@ -1,0 +1,164 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+      "name": "POST /loans/:id/return",
+      "locator": "POST /loans/:id/return",
+      "createdAt": "2026-09-09T07:45:42.281Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "215964bf-6cb4-4b39-97ad-b37135c49846",
+          "surfaceId": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+          "name": "Book returned message",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:46:17.231Z"
+        },
+        {
+          "id": "7dcd7d01-3638-4a68-8d66-b9ce514c7e26",
+          "surfaceId": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+          "name": "Catalog",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:46:17.231Z"
+        },
+        {
+          "id": "2ef39d32-8ae1-490a-ad54-b1e1e5ce79bd",
+          "surfaceId": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+          "name": "Loans",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:46:17.231Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "8292b7dd-7195-4fac-bc82-6b47db0dfbef",
+            "seq": 32,
+            "surfaceId": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "POST /loans/201/return returned 200 OK with 'Book returned' for bookId 102 and links to /catalog and /loans.",
+            "createdAt": "2026-09-09T07:46:17.232Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "215964bf-6cb4-4b39-97ad-b37135c49846"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "7dcd7d01-3638-4a68-8d66-b9ce514c7e26"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "2ef39d32-8ae1-490a-ad54-b1e1e5ce79bd"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "7dcd7d01-3638-4a68-8d66-b9ce514c7e26",
+            "surfaceId": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+            "name": "Catalog",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:46:17.231Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "8292b7dd-7195-4fac-bc82-6b47db0dfbef"
+          ]
+        },
+        {
+          "item": {
+            "id": "2ef39d32-8ae1-490a-ad54-b1e1e5ce79bd",
+            "surfaceId": "f2772a68-4249-40b7-8867-f27bab31bcc2",
+            "name": "Loans",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:46:17.231Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "8292b7dd-7195-4fac-bc82-6b47db0dfbef"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "8292b7dd-7195-4fac-bc82-6b47db0dfbef",
+          "evidenceId": "8e4868a3-d020-4408-8cde-8c01d9fbf830"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 2,
+      "pending": 2,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

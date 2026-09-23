@@ -1,0 +1,296 @@
+[
+  {
+    "revision": "51972075-8266-494c-872b-d42081403606",
+    "anchor": {
+      "kind": "actor",
+      "record": {
+        "id": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+        "name": "Librarian",
+        "secretNames": [],
+        "createdAt": "2026-09-09T06:26:43.169Z"
+      }
+    },
+    "selection": {
+      "productVersions": {
+        "scope": "all"
+      },
+      "observations": {
+        "detail": "records",
+        "actorIds": [
+          "fea91b43-5998-4e2b-a232-38ec88e67c28"
+        ],
+        "scope": "both"
+      }
+    },
+    "storedRelationships": {
+      "items": [
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "674b9edf-4606-4eff-92f8-889402becd57",
+            "name": "Check in a book"
+          },
+          "observations": [
+            {
+              "id": "80aae4d4-64e3-4369-9d14-05cff0e3501c",
+              "seq": 8,
+              "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+              "body": "POST /desk/returns was inspected for Librarian. The service desk advertised a pending return for book 103 and a bookId field.",
+              "createdAt": "2026-09-09T07:11:46.532Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "inventory",
+                  "capture": "none",
+                  "looks": [
+                    {
+                      "item": {
+                        "id": "fae9f6bc-9a58-4eb4-a4b7-180b5adc4890"
+                      },
+                      "kind": "offered"
+                    },
+                    {
+                      "item": {
+                        "id": "40d5b9f4-2426-41f9-b265-adf99132820f"
+                      },
+                      "kind": "offered"
+                    }
+                  ]
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "30d6eb60-541c-4c94-9103-ac163444cbcb",
+              "seq": 9,
+              "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+              "body": "Prepared the reviewed Librarian check-in request for the pending return book 103.",
+              "createdAt": "2026-09-09T07:11:46.534Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "40d5b9f4-2426-41f9-b265-adf99132820f"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "POST /desk/returns body {bookId:103}"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "631ae338-7506-4659-b71a-173143d970c7",
+              "seq": 21,
+              "surfaceId": "0e382955-d2c1-43fe-aa78-52cffe7d2d91",
+              "body": "The Librarian desk listed Night Trains (103) as a pending return.",
+              "createdAt": "2026-09-09T07:18:05.224Z"
+            },
+            {
+              "id": "8cd03020-2a2f-4c26-95be-be1db3aa3bbb",
+              "seq": 22,
+              "surfaceId": "0e382955-d2c1-43fe-aa78-52cffe7d2d91",
+              "body": "The Librarian desk advertised POST /desk/returns with bookId 103 to check in Night Trains.",
+              "createdAt": "2026-09-09T07:18:05.306Z"
+            },
+            {
+              "id": "58cc8ac8-a281-4138-ac1f-330abc7f7036",
+              "seq": 34,
+              "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+              "body": "Checking in book 103 returned 200 Book checked in and linked /books/103.",
+              "createdAt": "2026-09-09T07:18:06.296Z"
+            },
+            {
+              "id": "46eb4697-e3c0-4fca-8fbe-9d56166bfb61",
+              "seq": 39,
+              "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+              "body": "Prepared reviewed Librarian /desk/returns action.",
+              "createdAt": "2026-09-09T07:20:29.268Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "5994b467-3bad-4b7f-9774-5bdf3a654b72"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "POST /desk/returns body {}"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "6d8addaf-377b-4596-97c0-f469153aa5ca",
+              "seq": 40,
+              "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+              "body": "POST /desk/returns returned 422 {\"error\":\"Book is required\"}.",
+              "createdAt": "2026-09-09T07:20:29.362Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "5994b467-3bad-4b7f-9774-5bdf3a654b72"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "46eb4697-e3c0-4fca-8fbe-9d56166bfb61"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "9909d1d5-584e-4a45-9d44-597a8d782903",
+              "seq": 41,
+              "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+              "body": "Prepared reviewed Librarian /desk/returns action.",
+              "createdAt": "2026-09-09T07:20:29.454Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "fa84040b-c991-4732-bf1b-d5e020d02966"
+                    },
+                    "kind": "attempting",
+                    "resourceRef": "POST /desk/returns body {\"bookId\":\"103\"}"
+                  }
+                },
+                "support": "missing"
+              }
+            },
+            {
+              "id": "e9f4ec7c-b864-4bd1-8bb5-e04c32f0ef9b",
+              "seq": 42,
+              "surfaceId": "0ee4e374-b4a1-4fed-bb02-a2854bc93998",
+              "body": "POST /desk/returns returned 409 {\"error\":\"Book is already checked in\"}.",
+              "createdAt": "2026-09-09T07:20:29.564Z",
+              "inspection": {
+                "platform": "api",
+                "report": {
+                  "kind": "action",
+                  "capture": "none",
+                  "look": {
+                    "item": {
+                      "id": "fa84040b-c991-4732-bf1b-d5e020d02966"
+                    },
+                    "kind": "exercised",
+                    "attemptObservationId": "9909d1d5-584e-4a45-9d44-597a8d782903"
+                  }
+                },
+                "support": "missing"
+              }
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "449bf668-4b85-486f-9e4f-95491c7278db",
+            "name": "Account"
+          },
+          "observations": [
+            {
+              "id": "bea0e820-a5a6-4567-8d9a-cd2f35d8e061",
+              "seq": 29,
+              "body": "The Librarian account linked /holds and /loans.",
+              "createdAt": "2026-09-09T07:18:05.883Z"
+            }
+          ]
+        },
+        {
+          "kind": "observations",
+          "actor": {
+            "id": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "name": "Reserve a book"
+          },
+          "observations": [
+            {
+              "id": "9503971a-3fce-4fd3-a995-731a40f1aaa5",
+              "seq": 30,
+              "surfaceId": "a42995dc-8f3e-430e-8896-0b4156d2a296",
+              "body": "The Librarian could open an empty holds collection, and that response exposed no reservation action.",
+              "createdAt": "2026-09-09T07:18:05.964Z"
+            }
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "projections": {
+      "items": [
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "674b9edf-4606-4eff-92f8-889402becd57",
+            "name": "Check in a book"
+          },
+          "count": 9,
+          "firstSeq": 8,
+          "lastSeq": 42
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "surface",
+            "id": "449bf668-4b85-486f-9e4f-95491c7278db",
+            "name": "Account"
+          },
+          "count": 1,
+          "firstSeq": 29,
+          "lastSeq": 29
+        },
+        {
+          "kind": "observation_coverage",
+          "actor": {
+            "id": "fea91b43-5998-4e2b-a232-38ec88e67c28",
+            "name": "Librarian"
+          },
+          "context": {
+            "kind": "journey",
+            "id": "892cadc7-95fb-4242-9cd0-898877129e56",
+            "name": "Reserve a book"
+          },
+          "count": 1,
+          "firstSeq": 30,
+          "lastSeq": 30
+        }
+      ],
+      "complete": true
+    }
+  }
+]

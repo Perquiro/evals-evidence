@@ -1,0 +1,15 @@
+{
+  "requestToken": "9971d177-b725-4f22-89ea-c0ff6e22d03d",
+  "surfaceId": "723464dd-6ff4-4cb5-967e-39641907c9b0",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /desk returned 403 Forbidden with the message 'Service desk requires Librarian'; no Reader-visible contents were returned.",
+      "looks": [],
+      "capture": "pending"
+    }
+  ]
+}

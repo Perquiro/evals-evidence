@@ -1,0 +1,289 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+      "name": "GET /account",
+      "locator": "GET /account",
+      "createdAt": "2026-09-09T07:33:26.937Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "317689c1-4392-477e-a340-b80927bb684a",
+          "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+          "name": "Account actor",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:33:54.000Z"
+        },
+        {
+          "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12",
+          "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+          "name": "Reservations",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:33:54.000Z"
+        },
+        {
+          "id": "05f5649f-973c-4bff-966e-ceb0c47f403b",
+          "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+          "name": "Loans",
+          "kind": "link",
+          "createdAt": "2026-09-09T07:33:54.000Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "925a0c5a-289e-4e35-9231-b7bb0faed144",
+            "seq": 10,
+            "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "GET /account identified the current actor as Reader and linked to /holds for reservations and /loans for loans.",
+            "createdAt": "2026-09-09T07:33:54.001Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "317689c1-4392-477e-a340-b80927bb684a"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "05f5649f-973c-4bff-966e-ceb0c47f403b"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "595cb567-3754-44bc-a458-5bb5c436636f",
+            "seq": 53,
+            "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "GET /account returned 200 OK with actor Librarian and links to GET /holds for reservations and GET /loans for loans.",
+            "createdAt": "2026-09-09T08:01:38.371Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "317689c1-4392-477e-a340-b80927bb684a"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "05f5649f-973c-4bff-966e-ceb0c47f403b"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        },
+        {
+          "observation": {
+            "id": "19eb5bc1-6b1a-4888-882f-5030d71cb8b1",
+            "seq": 54,
+            "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "Following Reservations reached GET /holds, which returned an empty holds array and the message 'No reservations'.",
+            "createdAt": "2026-09-09T08:02:45.304Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "8ce14ff9-e6e2-4305-b791-37f63ffbee99"
+            }
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "cf440980-fd89-4b01-95d3-2d751223190d",
+            "seq": 56,
+            "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "Following Loans reached GET /loans, which returned an empty loans array and the message 'No loans'.",
+            "createdAt": "2026-09-09T08:03:33.952Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "action",
+            "capture": "none",
+            "look": {
+              "item": {
+                "id": "05f5649f-973c-4bff-966e-ceb0c47f403b"
+              },
+              "kind": "reached",
+              "reachedSurfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1"
+            }
+          },
+          "evidenceCount": 0
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [
+        {
+          "item": {
+            "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12",
+            "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "name": "Reservations",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:33:54.000Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "19eb5bc1-6b1a-4888-882f-5030d71cb8b1"
+          ]
+        },
+        {
+          "item": {
+            "id": "05f5649f-973c-4bff-966e-ceb0c47f403b",
+            "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "name": "Loans",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:33:54.000Z"
+          },
+          "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+          "platform": "api",
+          "productVersion": null,
+          "state": "reached",
+          "reason": "This exact check has an attributed result in this context.",
+          "accountedFor": true,
+          "supportingObservationIds": [
+            "cf440980-fd89-4b01-95d3-2d751223190d"
+          ]
+        },
+        {
+          "item": {
+            "id": "7ffd2a0f-e4ad-4ccf-b3f4-444c0c485e12",
+            "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "name": "Reservations",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:33:54.000Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "925a0c5a-289e-4e35-9231-b7bb0faed144"
+          ]
+        },
+        {
+          "item": {
+            "id": "05f5649f-973c-4bff-966e-ceb0c47f403b",
+            "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+            "name": "Loans",
+            "kind": "link",
+            "createdAt": "2026-09-09T07:33:54.000Z"
+          },
+          "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+          "platform": "api",
+          "productVersion": null,
+          "state": "pending",
+          "reason": "This named check has supporting Looks but no exercised result in this context.",
+          "accountedFor": false,
+          "supportingObservationIds": [
+            "925a0c5a-289e-4e35-9231-b7bb0faed144"
+          ]
+        }
+      ],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "925a0c5a-289e-4e35-9231-b7bb0faed144",
+          "evidenceId": "fd0bbe00-a51e-49ae-83ca-90f091dd68b3"
+        },
+        {
+          "observationId": "595cb567-3754-44bc-a458-5bb5c436636f",
+          "evidenceId": "62f75f2f-e953-47bc-84d9-fe81c2c64189"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 4,
+      "pending": 2,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 2
+    }
+  }
+]

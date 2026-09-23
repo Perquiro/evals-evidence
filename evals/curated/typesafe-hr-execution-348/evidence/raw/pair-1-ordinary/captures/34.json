@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:57645/leave/new",
+  "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox: Evaluation data\n  - button \"Submit request\"\n  - button \"Cancel\"",
+  "actionId": "action-10",
+  "admitted": 6,
+  "remaining": 54
+}

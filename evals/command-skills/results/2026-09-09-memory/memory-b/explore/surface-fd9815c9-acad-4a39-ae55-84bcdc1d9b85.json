@@ -1,0 +1,145 @@
+[
+  {
+    "revision": "599ce064-9aba-4b43-967f-b910b5c07a42",
+    "testFileRevision": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "selection": {
+      "surfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+      "actorIds": [
+        "ab5945c6-978f-4469-8222-30c839c2b986",
+        "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae"
+      ],
+      "productVersions": {
+        "scope": "all"
+      }
+    },
+    "surface": {
+      "id": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+      "name": "GET /docs",
+      "locator": "GET /docs",
+      "createdAt": "2026-09-09T07:27:19.126Z"
+    },
+    "inventory": {
+      "items": [
+        {
+          "id": "eb9b946b-59d6-440e-bc68-6c40d79e2d4f",
+          "surfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+          "name": "Actor authentication guidance",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:27:48.232Z"
+        },
+        {
+          "id": "2145522c-02d7-4f8e-b9f8-7f9a9aa97c57",
+          "surfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+          "name": "Response navigation guidance",
+          "kind": "information",
+          "createdAt": "2026-09-09T07:27:48.232Z"
+        }
+      ],
+      "complete": true
+    },
+    "history": {
+      "items": [
+        {
+          "observation": {
+            "id": "9d5f1c7e-e333-44c1-bda7-bc24234463d9",
+            "seq": 2,
+            "surfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+            "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+            "body": "GET /docs says the available local demo sessions are Reader and Librarian, selected with X-Actor and no credentials, and directs clients to follow response links and actions.",
+            "createdAt": "2026-09-09T07:27:48.233Z"
+          },
+          "platform": "api",
+          "support": "missing",
+          "report": {
+            "kind": "inventory",
+            "capture": "none",
+            "looks": [
+              {
+                "item": {
+                  "id": "eb9b946b-59d6-440e-bc68-6c40d79e2d4f"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "2145522c-02d7-4f8e-b9f8-7f9a9aa97c57"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 0
+        },
+        {
+          "observation": {
+            "id": "66c6f6df-46f1-4b21-bd6b-26801e4245e3",
+            "seq": 47,
+            "surfaceId": "fd9815c9-acad-4a39-ae55-84bcdc1d9b85",
+            "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+            "body": "GET /docs returned 200 OK. It says to set X-Actor to Reader or Librarian without credentials, and to follow each action's advertised HTTP method and JSON fields; an empty object is valid when no fields are listed.",
+            "createdAt": "2026-09-09T07:57:07.398Z"
+          },
+          "platform": "api",
+          "support": "indexed",
+          "report": {
+            "kind": "inventory",
+            "capture": "pending",
+            "looks": [
+              {
+                "item": {
+                  "id": "eb9b946b-59d6-440e-bc68-6c40d79e2d4f"
+                },
+                "kind": "offered"
+              },
+              {
+                "item": {
+                  "id": "2145522c-02d7-4f8e-b9f8-7f9a9aa97c57"
+                },
+                "kind": "offered"
+              }
+            ]
+          },
+          "evidenceCount": 1
+        }
+      ],
+      "complete": true
+    },
+    "gaps": {
+      "items": [],
+      "complete": true
+    },
+    "recovery": {
+      "items": [],
+      "complete": true
+    },
+    "accessHints": {
+      "items": [],
+      "complete": true
+    },
+    "coverageClues": {
+      "items": [],
+      "complete": true
+    },
+    "testVerification": {
+      "items": [],
+      "complete": true
+    },
+    "evidenceLinks": {
+      "items": [
+        {
+          "observationId": "66c6f6df-46f1-4b21-bd6b-26801e4245e3",
+          "evidenceId": "db8562a2-51c0-4b57-9c32-f45d9bb29592"
+        }
+      ],
+      "complete": true
+    },
+    "counts": {
+      "knownChecks": 0,
+      "pending": 0,
+      "blocked": 0,
+      "unresolved": 0,
+      "suggested": 0,
+      "accountedFor": 0
+    }
+  }
+]

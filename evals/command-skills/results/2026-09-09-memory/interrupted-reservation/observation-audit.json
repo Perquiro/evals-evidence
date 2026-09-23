@@ -1,0 +1,29 @@
+[
+  {
+    "event": 5,
+    "id": "08332fa1-5db9-4a25-8503-4e7b7b37783c",
+    "seq": 1,
+    "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+    "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+    "body": "River Atlas book 101 is available and offers POST /holds with bookId 101. Reader has no reservations.",
+    "createdAt": "2026-09-09T06:09:08.158Z"
+  },
+  {
+    "event": 6,
+    "id": "2ed79e24-2c2b-4805-95a4-31958b0a311f",
+    "seq": 2,
+    "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+    "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+    "body": "River Atlas 101 is available and Reader has no reservations immediately before the request.",
+    "createdAt": "2026-09-09T06:09:08.201Z"
+  },
+  {
+    "event": 23,
+    "id": "47bde24d-5232-4601-b35d-0aeff2c8d690",
+    "seq": 3,
+    "surfaceId": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+    "actorId": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+    "body": "On reconciliation, GET /holds returned Reader hold 301 for River Atlas book 101; GET /books/101 returned the Reserve book action for Reader.",
+    "createdAt": "2026-09-09T06:19:30.143Z"
+  }
+]

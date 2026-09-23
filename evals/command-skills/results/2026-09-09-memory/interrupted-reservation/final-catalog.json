@@ -1,0 +1,34 @@
+{
+  "revision": "000fd4eb-d53b-45cf-b489-78c97e4044ea",
+  "coverage": {
+    "actors": 2,
+    "surfaces": 1,
+    "journeys": 0,
+    "observations": 3,
+    "evidence": 0,
+    "scenarios": 0,
+    "tests": 0,
+    "surfacesWithoutObservations": 0,
+    "journeysWithoutAcceptedScenarios": 0,
+    "acceptedScenariosWithoutTests": 0
+  },
+  "entries": [
+    {
+      "kind": "actor",
+      "id": "622ed30d-ed09-4a19-ad49-d9ad31d6e604",
+      "name": "Reader"
+    },
+    {
+      "kind": "actor",
+      "id": "c334caef-fad1-4c69-885b-c10391ad2408",
+      "name": "Librarian"
+    },
+    {
+      "kind": "surface",
+      "id": "a5b1feb6-bb69-4b6b-9e89-d1bf47e13c19",
+      "name": "Reserve book",
+      "locator": "POST /holds"
+    }
+  ],
+  "storedRelationships": []
+}

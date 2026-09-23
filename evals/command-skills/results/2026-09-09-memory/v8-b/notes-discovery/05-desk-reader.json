@@ -1,0 +1,5 @@
+{
+  "request": {"method": "GET", "url": "http://127.0.0.1:54824/desk", "actor": "Reader"},
+  "status": 403,
+  "body": {"error": "Service desk requires Librarian"}
+}

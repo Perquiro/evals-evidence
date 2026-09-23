@@ -1,0 +1,19 @@
+{
+  "requestToken": "a96c6e12-64bd-41cb-a51f-7522e783625a",
+  "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /catalog returned River Atlas (id 101) and Garden Notes (id 102) as available and Night Trains (id 103) as unavailable. Each title linked to its corresponding GET /books/:id endpoint.",
+      "looks": [
+        { "item": { "id": "1d98cbbc-31d3-4b07-9aa5-54c7052b9b18" }, "kind": "offered" },
+        { "item": { "id": "28a00e0b-f59a-4baa-950a-618e382ff684" }, "kind": "offered" },
+        { "item": { "id": "f6956830-0bdd-4176-8a50-f19af2644417" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

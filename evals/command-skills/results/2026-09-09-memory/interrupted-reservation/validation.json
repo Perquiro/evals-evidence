@@ -1,0 +1,17 @@
+{
+  "evidence": "boundary-verified",
+  "claim": "Fresh Agent reads current Product state and records the original reservation outcome without another POST",
+  "acceptedAttemptId": "2ed79e24-2c2b-4805-95a4-31958b0a311f",
+  "outcomeId": "47bde24d-5232-4601-b35d-0aeff2c8d690",
+  "productPosts": 1,
+  "resumeProductRequests": 6,
+  "resumeMutations": 0,
+  "unresolvedAtInterruption": 1,
+  "unresolvedAfterRecovery": 0,
+  "inventoryItemsAtInterruption": 1,
+  "durableOutcomeObservationsAtInterruption": 0,
+  "agent": "/root/reservation_resume",
+  "freshContext": true,
+  "model": "Codex collaboration default role; backend sampling telemetry unavailable",
+  "limitations": "One synthetic Product and one interruption boundary for the fresh Agent; the executable matrix covers the other boundaries with controlled host restarts."
+}

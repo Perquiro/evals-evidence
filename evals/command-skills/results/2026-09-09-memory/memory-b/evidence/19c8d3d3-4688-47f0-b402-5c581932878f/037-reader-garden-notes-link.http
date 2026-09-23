@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Wed, 09 Sep 2026 08:08:41 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+Transfer-Encoding: chunked
+
+{"id":"102","title":"Garden Notes","available":true,"actions":[{"label":"Reserve book","method":"POST","href":"/holds","json":{"bookId":"102"},"actor":"Reader"}]}

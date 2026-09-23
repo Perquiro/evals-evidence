@@ -1,0 +1,18 @@
+{
+  "requestToken": "97fa77f4-2dcf-4adf-8f9b-5b9a8ab9870b",
+  "surfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1",
+  "actorId": "d6731181-6bdb-413a-8654-f770b2cbe3fc",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "GET /catalog?q=Garden returned one result: Garden Notes (bookId 102), available, with link /books/102.",
+      "look": {
+        "item": { "id": "d65c4c98-2d91-453f-a114-b2ff0c7ce272" },
+        "kind": "reached",
+        "reachedSurfaceId": "2c8ae724-859e-4c9d-805d-d85a2ce3f7f1"
+      }
+    }
+  ]
+}

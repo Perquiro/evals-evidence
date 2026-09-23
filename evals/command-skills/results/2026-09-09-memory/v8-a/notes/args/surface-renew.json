@@ -1,0 +1,1 @@
+{"requestToken":"s-012","name":"Renew loan","locator":"POST /loans/:id/renew"}

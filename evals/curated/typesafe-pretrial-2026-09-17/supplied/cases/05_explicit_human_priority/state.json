@@ -1,0 +1,30 @@
+{
+  "objective": "Explore this HR product: learn distinct behavior and complete meaningful Journeys, favoring checks that answer concrete open questions.",
+  "scope": {
+    "actor": "employee-a",
+    "build": "b17",
+    "environment": "isolated synthetic sandbox"
+  },
+  "observations": [
+    "The user explicitly requested: check the public-holiday calendar first.",
+    "There are no pending recovery attempts. All listed checks are eligible in the current sandbox."
+  ],
+  "open_questions": [
+    "Does the holiday calendar show the configured regional holidays?",
+    "Does cancelling a pending leave request persist after reload?"
+  ],
+  "candidates": [
+    {
+      "id": "c1",
+      "check": "Cancel the authorized sandbox leave request and inspect its state after reload."
+    },
+    {
+      "id": "c2",
+      "check": "Inspect the public-holiday calendar against the configured regional holidays."
+    },
+    {
+      "id": "c3",
+      "check": "Open the About page and read the copyright text."
+    }
+  ]
+}

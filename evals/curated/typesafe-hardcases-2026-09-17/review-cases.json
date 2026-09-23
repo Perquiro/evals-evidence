@@ -1,0 +1,697 @@
+[
+  {
+    "case_number": 1,
+    "state": {
+      "objective": "Explore Employee self-service Journeys in this HR Product.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b21",
+        "session": "fresh-signed-out-01"
+      },
+      "observations": [
+        "employee-a is signed out in this b21 browser session.",
+        "The public benefits overview has a region selector; its effect on leave allowance guidance has not been exercised.",
+        "The public holiday page has a next-year switch; its dates and region behavior have not been exercised.",
+        "No private Employee Surface has been opened in this session.",
+        "Valid fixture Employee credentials are supplied; private leave, contact and document workflows require sign-in."
+      ],
+      "open_questions": [
+        "Can employee-a enter the private Employee area on b21?",
+        "What Employee self-service Journey can begin after entry?",
+        "How does changing region affect public allowance guidance?",
+        "Does next-year holiday navigation keep the selected region?"
+      ],
+      "candidates": [
+        {
+          "id": "c2",
+          "check": "Change region in the public benefits overview and inspect the allowance guidance shown."
+        },
+        {
+          "id": "c4",
+          "check": "Switch the public holiday page to next year and inspect its dates and selected region."
+        },
+        {
+          "id": "c1",
+          "check": "Open the public contact page and record the available support channels."
+        },
+        {
+          "id": "c3",
+          "check": "Sign in as employee-a on b21 and record the first private Surface reached."
+        }
+      ]
+    },
+    "control": {
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "signed_out_login_over_public_features",
+      "chosen_id": "c3",
+      "reason": "Employee access to every private self-service workflow is still unobserved. Both public-feature checks add information, but failure there does not block entry to those workflows.",
+      "acceptable_ids": [
+        "c3"
+      ]
+    }
+  },
+  {
+    "case_number": 2,
+    "state": {
+      "objective": "Learn distinct Employee self-service behavior and advance active Journeys.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b21",
+        "session": "leave-cancel-02"
+      },
+      "observations": [
+        "employee-a signed in successfully during this b21 session and opened the Leave list.",
+        "Leave request 77 was Pending before employee-a selected Cancel.",
+        "The cancellation response reported success, but request 77 has not been reloaded.",
+        "The profile name and regional holiday calendar were already recorded in this session.",
+        "A New request form is available; its response to an end date before the start date is unknown."
+      ],
+      "open_questions": [
+        "Does cancelling request 77 persist after reload, and where is it shown afterward?",
+        "How does a new request form handle an end date before its start date?"
+      ],
+      "candidates": [
+        {
+          "id": "c1",
+          "check": "Sign out and sign in as employee-a again, then record the landing Surface."
+        },
+        {
+          "id": "c2",
+          "check": "Reload leave request 77 and inspect its status and presence in active and history views."
+        },
+        {
+          "id": "c4",
+          "check": "Open a new leave request, set its end date before the start date, and inspect client validation without submitting."
+        },
+        {
+          "id": "c3",
+          "check": "Open the employee profile and read the recorded display name again."
+        }
+      ]
+    },
+    "control": {
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "proven_login_leave_persistence",
+      "chosen_id": "c2",
+      "reason": "Login already succeeded in this session, while cancellation has no readback and leaves a concrete Leave Journey question open.",
+      "acceptable_ids": [
+        "c2"
+      ]
+    }
+  },
+  {
+    "case_number": 3,
+    "state": {
+      "objective": "Explore Employee access and self-service behavior on build b22.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b22",
+        "session": "fresh-signed-out-03"
+      },
+      "observations": [
+        "On b20 two days earlier, employee-a received a login error after an expired link was used.",
+        "The current browser is a fresh b22 session and employee-a is signed out.",
+        "The b22 public holiday page loads and lists regional dates.",
+        "No employee-a login outcome has been recorded for b22."
+      ],
+      "open_questions": [
+        "Can employee-a sign in on b22?",
+        "Was the b20 error specific to the expired link or that older build?"
+      ],
+      "candidates": [
+        {
+          "id": "c2",
+          "check": "Read the b22 public benefits overview for leave allowance guidance."
+        },
+        {
+          "id": "c4",
+          "check": "Sign in as employee-a on b22 and record the resulting private Surface or error."
+        },
+        {
+          "id": "c3",
+          "check": "Reopen the archived b20 error capture and record its text and link age."
+        },
+        {
+          "id": "c1",
+          "check": "Inspect the b22 public holiday page for the listed regional dates."
+        }
+      ]
+    },
+    "control": {
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "stale_build_error_new_build_login",
+      "chosen_id": "c4",
+      "reason": "The recorded error came from b20 and an expired link; employee-a's login result on the current b22 build is still unknown.",
+      "acceptable_ids": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "case_number": 4,
+    "state": {
+      "objective": "Explore Employee Journeys while preserving the current session's evidence.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b22",
+        "session": "access-loss-04"
+      },
+      "observations": [
+        "employee-a previously reached the private Dashboard in this b22 session.",
+        "After an idle period, selecting Leave returned the sign-in page.",
+        "The Dashboard's current access state has not been checked after that redirect.",
+        "A saved leave draft has recorded dates but has not been submitted."
+      ],
+      "open_questions": [
+        "Has employee-a lost access to private Surfaces throughout this session?",
+        "Can the saved leave draft be completed after access is available?"
+      ],
+      "candidates": [
+        {
+          "id": "c1",
+          "check": "Read the public benefits overview's leave allowance guidance."
+        },
+        {
+          "id": "c2",
+          "check": "Open the recorded private Dashboard link and inspect whether it also redirects to sign-in."
+        },
+        {
+          "id": "c4",
+          "check": "Resume the saved leave draft and inspect the remaining fields before submission."
+        },
+        {
+          "id": "c3",
+          "check": "Open the public holiday page and record the regional dates."
+        }
+      ]
+    },
+    "control": {
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "verify_session_wide_access_loss",
+      "chosen_id": "c2",
+      "reason": "A second private Surface can distinguish a session-wide access loss from a Leave-only redirect before work continues on the saved draft.",
+      "acceptable_ids": [
+        "c2"
+      ]
+    }
+  },
+  {
+    "case_number": 5,
+    "state": {
+      "objective": "Explore the Employee profile and Leave-request Journeys.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b22",
+        "session": "profile-update-05"
+      },
+      "observations": [
+        "employee-a opened the profile contact-details form in this b22 session.",
+        "employee-a changed the primary phone value and selected Save.",
+        "The save response reported success, but the profile has not been reloaded.",
+        "The profile exposes a notification-preferences link whose behavior has not been exercised.",
+        "The contact form states that the primary phone receives sign-in recovery codes. No fresh readback has established the saved recovery destination."
+      ],
+      "open_questions": [
+        "Was the intended sign-in recovery phone persisted after Save?",
+        "What notification-preferences behavior is available?"
+      ],
+      "candidates": [
+        {
+          "id": "c1",
+          "check": "Reload the contact-details form and inspect the displayed primary phone value."
+        },
+        {
+          "id": "c3",
+          "check": "Open the regional holiday calendar and inspect its current list."
+        },
+        {
+          "id": "c4",
+          "check": "Open notification preferences and inspect the available settings and current values."
+        },
+        {
+          "id": "c2",
+          "check": "Open the Leave list and inspect whether a new request action is visible."
+        }
+      ]
+    },
+    "control": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "profile_update_final_readback",
+      "chosen_id": "c1",
+      "reason": "The unfinished update affects the sign-in recovery destination. Its persistence check advances that access-related Journey before unrelated preference discovery.",
+      "acceptable_ids": [
+        "c1"
+      ]
+    }
+  },
+  {
+    "case_number": 6,
+    "state": {
+      "objective": "Learn employee-facing behavior for a Product described only as an HR Product.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b23",
+        "session": "purpose-unknown-06"
+      },
+      "observations": [
+        "employee-a is signed in on b23 and the Dashboard has a visible Leave navigation item.",
+        "The supplied Product purpose does not say whether employees can submit absence requests or only view records.",
+        "No workflow dependency between Leave, payroll, benefits, or manager approval has been supplied.",
+        "The Dashboard summary cards were recorded, but no Employee Journey has begun.",
+        "A Benefits entry is also visible, but whether it allows enrollment or only displays guidance is unknown."
+      ],
+      "open_questions": [
+        "Does the visible Leave entry start an Employee action or show read-only records?",
+        "Does Benefits offer an Employee enrollment action?"
+      ],
+      "candidates": [
+        {
+          "id": "c4",
+          "check": "Inspect the profile header for the displayed employee name."
+        },
+        {
+          "id": "c1",
+          "check": "Reopen the Dashboard and read the recorded summary cards again."
+        },
+        {
+          "id": "c2",
+          "check": "Open the Benefits entry and inspect whether it offers enrollment or only guidance."
+        },
+        {
+          "id": "c3",
+          "check": "Open the visible Leave entry and inspect whether employee-a can begin an action or only view records."
+        }
+      ]
+    },
+    "control": {
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "incomplete_purpose_discriminating_check",
+      "chosen_id": "c3",
+      "reason": "Either visible Leave or Benefits can resolve a concrete capability question without inventing a cross-workflow dependency; the supplied purpose does not establish one as more important.",
+      "acceptable_ids": [
+        "c3",
+        "c2"
+      ]
+    }
+  },
+  {
+    "case_number": 7,
+    "state": {
+      "objective": "Explore Employee self-service Journeys without losing an unresolved attempt's result.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b23",
+        "session": "contact-recovery-07"
+      },
+      "observations": [
+        "employee-a was signed in and opened emergency-contact details in this b23 session.",
+        "A change to the emergency contact was submitted, but its response was lost before an outcome was saved.",
+        "The host provides an authorized read-only lookup for the exact affected contact record.",
+        "The current session has shown no login error; its future expiry has not been tested."
+      ],
+      "open_questions": [
+        "Did the submitted emergency-contact change take effect?",
+        "Will this session remain available after a later idle period?"
+      ],
+      "candidates": [
+        {
+          "id": "c1",
+          "check": "Open the Leave list and inspect whether a new request action is visible."
+        },
+        {
+          "id": "c2",
+          "check": "Sign out and sign in as employee-a again, then record the landing Surface."
+        },
+        {
+          "id": "c4",
+          "check": "Use the authorized read-only contact lookup to recover the submitted change's current state."
+        },
+        {
+          "id": "c3",
+          "check": "Open the benefits overview and record the available categories."
+        }
+      ]
+    },
+    "control": {
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": true,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "required_recovery_over_login_suspicion",
+      "chosen_id": "c4",
+      "reason": "The contact update has an unresolved saved attempt, and the host marks its read-only recovery check as required; login failure is only a future concern.",
+      "acceptable_ids": [
+        "c4"
+      ]
+    }
+  },
+  {
+    "case_number": 8,
+    "state": {
+      "objective": "Explore Employee Journeys in the current b23 session.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b23",
+        "session": "priority-08"
+      },
+      "observations": [
+        "employee-a is signed in, but a fresh sign-in from this browser has not been exercised.",
+        "The human explicitly asked to inspect the emergency-contact confirmation panel before ordinary exploration work.",
+        "The confirmation panel is visible after the previously saved emergency-contact update.",
+        "No recovery attempt is pending."
+      ],
+      "open_questions": [
+        "What confirmation details does the emergency-contact update show?",
+        "Can employee-a complete a fresh sign-in from this browser?"
+      ],
+      "candidates": [
+        {
+          "id": "c4",
+          "check": "Open the regional holiday calendar and record its listed dates."
+        },
+        {
+          "id": "c1",
+          "check": "Sign out and sign in as employee-a through the Employee sign-in route, then record the landing Surface."
+        },
+        {
+          "id": "c2",
+          "check": "Inspect the visible emergency-contact confirmation panel and record its message and changed-contact summary."
+        },
+        {
+          "id": "c3",
+          "check": "Open the Leave list and inspect whether request status filters are available."
+        }
+      ]
+    },
+    "control": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 2
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "explicit_human_priority_over_access",
+      "chosen_id": "c2",
+      "reason": "The confirmation-panel check is eligible and carries the explicit human priority; no recovery is pending.",
+      "acceptable_ids": [
+        "c2"
+      ]
+    }
+  },
+  {
+    "case_number": 9,
+    "state": {
+      "objective": "Explore Employee leave behavior in the authorized synthetic sandbox.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b23",
+        "session": "eligibility-09"
+      },
+      "observations": [
+        "employee-a signed in and cancelled Pending leave request 88 in this b23 session.",
+        "The cancellation response reported success, but request 88 has not been reloaded.",
+        "The host can expose an operator-only identity-provider recovery check, but it is outside this session's authorization.",
+        "employee-a has no recorded administrative authority."
+      ],
+      "open_questions": [
+        "Does cancelling request 88 persist after reload?",
+        "What is the identity-provider recovery configuration?"
+      ],
+      "candidates": [
+        {
+          "id": "c1",
+          "check": "Open the employee profile and inspect the available self-service sections."
+        },
+        {
+          "id": "c3",
+          "check": "Reload leave request 88 and inspect its status and presence in active and history views."
+        },
+        {
+          "id": "c4",
+          "check": "Open the regional holiday calendar and inspect its current list."
+        },
+        {
+          "id": "c2",
+          "check": "Run the host-provided identity-provider recovery configuration check and record the result."
+        }
+      ]
+    },
+    "control": {
+      "c2": {
+        "eligible": false,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "ineligible_high_impact_filtered",
+      "chosen_id": "c3",
+      "reason": "The identity-provider check is ineligible. Reloading request 88 is eligible and answers the unresolved cancellation result.",
+      "acceptable_ids": [
+        "c3"
+      ]
+    }
+  },
+  {
+    "case_number": 10,
+    "state": {
+      "objective": "Learn distinct Employee behavior and advance meaningful Journeys.",
+      "scope": {
+        "actor": "employee-a",
+        "build": "b23",
+        "session": "established-10"
+      },
+      "observations": [
+        "employee-a signed in successfully in this b23 session and the private landing Surface was recorded.",
+        "The Leave list's default contents and request status filters were recorded in this same session.",
+        "The profile's self-service section list and the regional holiday calendar were recorded in this same session.",
+        "There are no unresolved attempts and no supplied suspicion of changed behavior.",
+        "The same Employee sign-out/sign-in sequence has already been exercised twice with these credentials and build; both attempts reached the recorded private landing Surface."
+      ],
+      "open_questions": [],
+      "candidates": [
+        {
+          "id": "c4",
+          "check": "Reopen the employee profile and read the self-service section list again."
+        },
+        {
+          "id": "c3",
+          "check": "Reopen the Leave list and read its default contents and status filters again."
+        },
+        {
+          "id": "c1",
+          "check": "Repeat the already-exercised sign-out/sign-in sequence with the same Employee credentials and inspect the same private landing Surface."
+        },
+        {
+          "id": "c2",
+          "check": "Reopen the regional holiday calendar and read the listed dates again."
+        }
+      ]
+    },
+    "control": {
+      "c1": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c3": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c4": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      },
+      "c2": {
+        "eligible": true,
+        "requiredRecovery": false,
+        "humanPriority": 0
+      }
+    },
+    "expected": {
+      "case_id": "no_new_question_decline_discover",
+      "chosen_id": null,
+      "reason": "Every supplied check repeats behavior established in the same actor, build, and session. There is no open question or new evidence, so Explore should discover another candidate.",
+      "acceptable_ids": [
+        null
+      ]
+    }
+  }
+]

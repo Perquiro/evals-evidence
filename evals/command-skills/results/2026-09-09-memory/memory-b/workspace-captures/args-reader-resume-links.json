@@ -1,0 +1,39 @@
+{
+  "requestToken": "bf408d01-f771-4423-8d43-cdc524c5fea0",
+  "surfaceId": "921dbc99-2914-4552-8e81-c52d66e59aa7",
+  "actorId": "feb7f9e7-c184-43e1-a0ff-e0b89e8b7fae",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following River Atlas reached GET /books/101. The response marked it available and advertised Reader's POST /holds action with JSON bookId \"101\".",
+      "look": {
+        "item": { "id": "1d98cbbc-31d3-4b07-9aa5-54c7052b9b18" },
+        "kind": "reached",
+        "reachedSurfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324"
+      },
+      "capture": "pending"
+    },
+    {
+      "kind": "action",
+      "body": "Following Garden Notes reached GET /books/102. The response marked it available and advertised Reader's POST /holds action with JSON bookId \"102\".",
+      "look": {
+        "item": { "id": "28a00e0b-f59a-4baa-950a-618e382ff684" },
+        "kind": "reached",
+        "reachedSurfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324"
+      },
+      "capture": "pending"
+    },
+    {
+      "kind": "action",
+      "body": "Following Night Trains reached GET /books/103. The response marked it unavailable and advertised Reader's POST /holds action with JSON bookId \"103\".",
+      "look": {
+        "item": { "id": "f6956830-0bdd-4176-8a50-f19af2644417" },
+        "kind": "reached",
+        "reachedSurfaceId": "08b77eb1-71e2-4341-80ca-812d21f3a324"
+      },
+      "capture": "pending"
+    }
+  ]
+}

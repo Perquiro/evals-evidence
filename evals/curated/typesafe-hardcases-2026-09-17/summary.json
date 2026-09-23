@@ -1,0 +1,182 @@
+{
+  "complete": true,
+  "results": 120,
+  "methods": {
+    "gpt-5.6-luna": {
+      "decisions": 30,
+      "semantic_attempted": 24,
+      "semantic_available": 24,
+      "semantic_accepted": 24,
+      "host_decisions": 6,
+      "host_accepted": 6,
+      "statuses": {
+        "ok": 24
+      },
+      "selection_wall_ms": {
+        "min": 3370.457599987276,
+        "median": 3875.242049994995,
+        "p95_nearest_rank": 6445.609699992929,
+        "max": 6687.6461999781895
+      },
+      "client_call_wall_ms": {
+        "min": 3353.8655000156723,
+        "median": 3854.0677500132006,
+        "p95_nearest_rank": 6430.804200004786,
+        "max": 6669.158000004245
+      },
+      "cli_turn_wall_ms": {
+        "min": 2300.6053999997675,
+        "median": 2735.2536499965936,
+        "p95_nearest_rank": 4831.668500002706,
+        "max": 5736.6615000064485
+      },
+      "usage": {
+        "input_tokens": 147015,
+        "cached_input_tokens": 27392,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 261,
+        "reasoning_output_tokens": 0
+      },
+      "priced_calls": 24,
+      "unknown_cost_calls": 0,
+      "estimated_usd_total": 0.02478564,
+      "estimated_usd_per_call": 0.0010327350000000001,
+      "estimated_usd_per_accepted_decision": 0.0010327350000000001,
+      "no_cache_estimated_usd_total": 0.0297162,
+      "tool_items": 0
+    },
+    "gpt-5.6-terra": {
+      "decisions": 30,
+      "semantic_attempted": 24,
+      "semantic_available": 24,
+      "semantic_accepted": 24,
+      "host_decisions": 6,
+      "host_accepted": 6,
+      "statuses": {
+        "ok": 24
+      },
+      "selection_wall_ms": {
+        "min": 3464.7624000208452,
+        "median": 4077.3424500075635,
+        "p95_nearest_rank": 6527.7207999897655,
+        "max": 25873.982499993872
+      },
+      "client_call_wall_ms": {
+        "min": 3446.45010001841,
+        "median": 4059.5477000024403,
+        "p95_nearest_rank": 6504.743299999973,
+        "max": 25858.4322000097
+      },
+      "cli_turn_wall_ms": {
+        "min": 2390.377300005639,
+        "median": 2988.732499987236,
+        "p95_nearest_rank": 5480.969299998833,
+        "max": 24960.51649999572
+      },
+      "usage": {
+        "input_tokens": 182343,
+        "cached_input_tokens": 117504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 261,
+        "reasoning_output_tokens": 0
+      },
+      "priced_calls": 24,
+      "unknown_cost_calls": 0,
+      "estimated_usd_total": 0.1563108,
+      "estimated_usd_per_call": 0.00651295,
+      "estimated_usd_per_accepted_decision": 0.00651295,
+      "no_cache_estimated_usd_total": 0.367818,
+      "tool_items": 0
+    },
+    "jev_choice": {
+      "decisions": 30,
+      "semantic_attempted": 24,
+      "semantic_available": 24,
+      "semantic_accepted": 24,
+      "host_decisions": 6,
+      "host_accepted": 6,
+      "statuses": {
+        "ok": 24
+      },
+      "selection_wall_ms": {
+        "min": 723.8884000107646,
+        "median": 798.1921500031604,
+        "p95_nearest_rank": 943.4545000258368,
+        "max": 1715.2424000087194
+      },
+      "client_call_wall_ms": {
+        "min": 723.733099992387,
+        "median": 798.0584000179078,
+        "p95_nearest_rank": 943.3218000049237,
+        "max": 1715.0201000040397
+      },
+      "cli_turn_wall_ms": null,
+      "usage": {
+        "input_tokens": 25392,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1341,
+        "reasoning_output_tokens": 0
+      },
+      "priced_calls": 24,
+      "unknown_cost_calls": 0,
+      "estimated_usd_total": 0.001066464,
+      "estimated_usd_per_call": 4.4436e-05,
+      "estimated_usd_per_accepted_decision": 4.4436e-05,
+      "no_cache_estimated_usd_total": 0.001066464,
+      "tool_items": 0
+    },
+    "jev_score": {
+      "decisions": 30,
+      "semantic_attempted": 24,
+      "semantic_available": 24,
+      "semantic_accepted": 23,
+      "host_decisions": 6,
+      "host_accepted": 6,
+      "statuses": {
+        "ok": 24
+      },
+      "selection_wall_ms": {
+        "min": 728.4232999954838,
+        "median": 852.0034000102896,
+        "p95_nearest_rank": 1134.0104000119027,
+        "max": 1342.293299996527
+      },
+      "client_call_wall_ms": {
+        "min": 728.2996000139974,
+        "median": 851.8633499916177,
+        "p95_nearest_rank": 1133.8834000052884,
+        "max": 1342.135800019605
+      },
+      "cli_turn_wall_ms": null,
+      "usage": {
+        "input_tokens": 47418,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3072,
+        "reasoning_output_tokens": 0
+      },
+      "priced_calls": 24,
+      "unknown_cost_calls": 0,
+      "estimated_usd_total": 0.0019915560000000002,
+      "estimated_usd_per_call": 8.29815e-05,
+      "estimated_usd_per_accepted_decision": 8.658939130434783e-05,
+      "no_cache_estimated_usd_total": 0.0019915560000000002,
+      "tool_items": 0
+    }
+  },
+  "prices_per_million": {
+    "gpt-5.6-terra": [
+      2.0,
+      0.2,
+      12.0
+    ],
+    "gpt-5.6-luna": [
+      0.2,
+      0.02,
+      1.2
+    ]
+  },
+  "jev_input_per_million": 0.042,
+  "interpretation": "Measured host/client wall time and reported token usage. Token-price estimates, not subscription billing. CLI context/transport differs from TypeSafe HTTP. No Product actions."
+}

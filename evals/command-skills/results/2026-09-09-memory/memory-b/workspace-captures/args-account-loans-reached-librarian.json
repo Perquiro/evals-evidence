@@ -1,0 +1,14 @@
+{
+  "requestToken": "1fc7e6b7-d345-43ac-a8a3-44df7ff1765e",
+  "surfaceId": "a52ccd4d-51f6-4541-801d-82d8612aba3c",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [],
+  "reports": [
+    {
+      "kind": "action",
+      "body": "Following Loans reached GET /loans, which returned an empty loans array and the message 'No loans'.",
+      "look": { "item": { "id": "05f5649f-973c-4bff-966e-ceb0c47f403b" }, "kind": "reached", "reachedSurfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1" }
+    }
+  ]
+}

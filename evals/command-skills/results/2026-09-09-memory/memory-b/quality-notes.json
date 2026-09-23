@@ -1,0 +1,21 @@
+{
+  "markerVerdict": "five supported dispatches",
+  "falseReopens": 0,
+  "falsePending": 4,
+  "semanticAliases": "none identified; three row-specific book links",
+  "summary": "Seventeen outcomes were observed and factually saved, but only three have sufficient related-Journey records and two are canonical durable facts. Existing Journeys were often omitted from later writes. All five Product mutations have preceding accepted attempts and outcomes. The numeric check-in returned 404; attempted non-execution and replacement writes were then rejected, and no extra POST occurred. The final Reader fixed three catalog-link gaps, then stopped at 38 requests with two unused. Four clearly observed access steps still lack reached attribution. Item names were reused across Actors, although the catalog retained three book-row links.",
+  "falsePendingBasis": [
+    "Reader followed the loan-list Garden Notes loan link to current loan detail, but the source link remains pending.",
+    "Reader followed the created-reservation response's Reservations link to GET /holds, but that source link remains pending.",
+    "Reader followed Account's Loans link to GET /loans, but the source link remains pending.",
+    "Reader followed the return response's Loans readback and recorded its empty list, but the source POST-return link remains pending."
+  ],
+  "evidence": [
+    "metrics.json",
+    "item-audit.json",
+    "assessment.json",
+    "SUMMARY-LIBRARIAN.md",
+    "SUMMARY-READER-RESUME.md"
+  ],
+  "limits": "The four false-pending cases are a lower bound for supported missing source-link attribution. Other pending links are not declared completed merely because their destination was visited through a different path. The early numeric-body outcome calls its payload offered; the retained trace and final Librarian summary correctly distinguish numeric 103 from the advertised string 103. No exact item completion was found reopened by ordinary inventory."
+}

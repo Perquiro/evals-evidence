@@ -1,0 +1,97 @@
+{
+  "reviewer": "/root",
+  "scope": "Independent evaluator notes from anonymous actions, network outcomes and saved Observations, written before reading either initial grade.",
+  "expected_credits": {
+    "sample-01": [
+      "login"
+    ],
+    "sample-02": [
+      "login"
+    ],
+    "sample-03": [
+      "login",
+      "leave-submit",
+      "leave-readback"
+    ],
+    "sample-04": [
+      "login",
+      "directory-search"
+    ],
+    "sample-05": [
+      "login"
+    ],
+    "sample-06": [
+      "login"
+    ],
+    "sample-07": [
+      "login"
+    ],
+    "sample-08": [
+      "login",
+      "directory-search"
+    ]
+  },
+  "key_adjudication_bases": [
+    {
+      "samples": [
+        "sample-03"
+      ],
+      "items": [
+        "leave-submit",
+        "leave-readback"
+      ],
+      "basis": "snapshot-52 shows Vacation Sep29–30 and the evaluation reason. action-20 sends the sole successful POST /api/leave (request-7,201,id3). Navigation changes /leave/new to /leave, triggers a separate GET /api/leave (request-9), and action-21/snapshot-58 capture the settled history. Saved Observations 377a74a8-4a00-4109-9860-3621106c97e3 and 61122907-bbf1-457a-a89e-1fad57c85017 link submitted values to the new pending two-day row. This is actual post-navigation readback, not inference from the POST response. The displayed end-date discrepancy is actual Product behavior and does not remove exercise credit."
+    },
+    {
+      "samples": [
+        "sample-04",
+        "sample-08"
+      ],
+      "items": [
+        "directory-search"
+      ],
+      "basis": "Fill initially retains old rows, but the next wait action captures current query, one Emily Dawson row and page1/1. Corresponding saved search Observations describe that settled result."
+    },
+    {
+      "samples": [
+        "sample-01",
+        "sample-04",
+        "sample-06",
+        "sample-08"
+      ],
+      "items": [
+        "timesheet-draft"
+      ],
+      "basis": "A draft save and immediate response are recorded, but there is no later reload/readback. The composite item remains zero."
+    },
+    {
+      "samples": [
+        "sample-07",
+        "sample-08"
+      ],
+      "items": [
+        "timesheet-submit"
+      ],
+      "basis": "Submission and disabled controls are captured and saved, but there is no later edit attempt. The composite item remains zero."
+    },
+    {
+      "samples": [
+        "sample-01",
+        "sample-02",
+        "sample-04",
+        "sample-05",
+        "sample-06",
+        "sample-07",
+        "sample-08"
+      ],
+      "items": [
+        "leave-invalid",
+        "leave-duration",
+        "leave-submit",
+        "leave-readback"
+      ],
+      "basis": "Failed direct fills or empty-field validation do not exercise an end-before-start interval, Friday–Monday duration, a valid successful submission, or its readback."
+    }
+  ],
+  "unsupported_claims_preliminary": "No material unsupported execution/result claim identified; planned/precondition markers are distinguished from claims that their intended action occurred."
+}

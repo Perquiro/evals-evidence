@@ -1,0 +1,209 @@
+[
+  {
+    "event": 262,
+    "proposal": {
+      "requestToken": "[redacted]",
+      "journeyGroups": [
+        {
+          "journeyId": "7f5e70cd-d604-4008-bec2-316fd166a34b",
+          "why": "Why now: HR onboarding has observed required-field validation at both Personal and Job details, plus a successful client-side advance that does not create an employee. Observations: #18 and #19 (hannah.blake).",
+          "scenarios": [
+            {
+              "name": "Validate required personal information before continuing onboarding",
+              "gherkin": "Given hannah.blake is on the new-hire Personal information step\nWhen she continues with the required personal information fields blank\nThen the Personal information step remains displayed\nAnd messages state that first name, last name, and a valid email address are required",
+              "surfaces": [
+                {
+                  "surfaceId": "80d210d4-bbca-4100-9a2b-1a0c27d3ddab",
+                  "platform": "browser"
+                }
+              ],
+              "actors": [
+                "hannah.blake"
+              ]
+            },
+            {
+              "name": "Advance from valid personal information to job details without creating an employee",
+              "gherkin": "Given hannah.blake is on the new-hire Personal information step\nWhen she enters valid values for the required personal information and continues\nThen the Job details step is displayed\nAnd no new employee is created",
+              "surfaces": [
+                {
+                  "surfaceId": "80d210d4-bbca-4100-9a2b-1a0c27d3ddab",
+                  "platform": "browser"
+                },
+                {
+                  "surfaceId": "de3d9876-0a24-4814-b4fe-00c66d3398d2",
+                  "platform": "browser"
+                }
+              ],
+              "actors": [
+                "hannah.blake"
+              ]
+            },
+            {
+              "name": "Validate required job details before continuing onboarding",
+              "gherkin": "Given hannah.blake is on the new-hire Job details step\nWhen she continues with Department, Job title, and Start date blank\nThen the Job details step remains displayed\nAnd messages state that Department, Job title, and Start date are required",
+              "surfaces": [
+                {
+                  "surfaceId": "de3d9876-0a24-4814-b4fe-00c66d3398d2",
+                  "platform": "browser"
+                }
+              ],
+              "actors": [
+                "hannah.blake"
+              ]
+            }
+          ]
+        },
+        {
+          "journeyId": "000d79fc-80fd-4b3b-ae35-6880ce578f1d",
+          "why": "Why now: applying Engineering is observed to narrow Emily's directory from 28 to 8 Engineering employees and collapse pagination to one page. Observations: #5 and #6 (Emily.dawson).",
+          "scenarios": [
+            {
+              "name": "Filter the employee directory to Engineering",
+              "gherkin": "Given Emily.dawson is viewing the employee directory\nWhen she selects Engineering in the department filter\nThen 8 Engineering employees are displayed\nAnd pagination shows Page 1 of 1 with Previous and Next disabled",
+              "surfaces": [
+                {
+                  "surfaceId": "b0793d44-f2b8-4c46-99f5-d8a9d6e55677",
+                  "platform": "browser"
+                }
+              ],
+              "actors": [
+                "Emily.dawson"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "result": {
+      "id": "9bdaaef6-b2c7-4c4e-892b-9a4295b05e0d",
+      "status": "open",
+      "createdAt": "2026-09-10T14:56:29.848Z",
+      "kind": "create",
+      "journeyGroups": [
+        {
+          "journeyId": "7f5e70cd-d604-4008-bec2-316fd166a34b",
+          "journeyName": "Start new hire onboarding",
+          "why": "Why now: HR onboarding has observed required-field validation at both Personal and Job details, plus a successful client-side advance that does not create an employee. Observations: #18 and #19 (hannah.blake).",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "03547b49-18f0-41e1-ac2f-f9125b30eda0",
+                "journeyId": "7f5e70cd-d604-4008-bec2-316fd166a34b",
+                "journeyName": "Start new hire onboarding",
+                "name": "Validate required personal information before continuing onboarding",
+                "gherkin": "Given hannah.blake is on the new-hire Personal information step\nWhen she continues with the required personal information fields blank\nThen the Personal information step remains displayed\nAnd messages state that first name, last name, and a valid email address are required",
+                "surfaces": [
+                  {
+                    "surfaceId": "80d210d4-bbca-4100-9a2b-1a0c27d3ddab",
+                    "surfaceName": "New hire onboarding personal information",
+                    "platform": "browser"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "f7b5495b-db8d-44ca-aaab-578942aae0bd",
+                    "actorName": "hannah.blake"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:56:29.848Z",
+                "history": []
+              },
+              "contradictions": []
+            },
+            {
+              "scenario": {
+                "id": "3fcf7656-9f69-4257-88cf-d9bbf1a7aeb4",
+                "journeyId": "7f5e70cd-d604-4008-bec2-316fd166a34b",
+                "journeyName": "Start new hire onboarding",
+                "name": "Advance from valid personal information to job details without creating an employee",
+                "gherkin": "Given hannah.blake is on the new-hire Personal information step\nWhen she enters valid values for the required personal information and continues\nThen the Job details step is displayed\nAnd no new employee is created",
+                "surfaces": [
+                  {
+                    "surfaceId": "80d210d4-bbca-4100-9a2b-1a0c27d3ddab",
+                    "surfaceName": "New hire onboarding personal information",
+                    "platform": "browser"
+                  },
+                  {
+                    "surfaceId": "de3d9876-0a24-4814-b4fe-00c66d3398d2",
+                    "surfaceName": "New hire onboarding job details",
+                    "platform": "browser"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "f7b5495b-db8d-44ca-aaab-578942aae0bd",
+                    "actorName": "hannah.blake"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:56:29.848Z",
+                "history": []
+              },
+              "contradictions": []
+            },
+            {
+              "scenario": {
+                "id": "0a7162f0-b048-462a-b45b-128bf397bda5",
+                "journeyId": "7f5e70cd-d604-4008-bec2-316fd166a34b",
+                "journeyName": "Start new hire onboarding",
+                "name": "Validate required job details before continuing onboarding",
+                "gherkin": "Given hannah.blake is on the new-hire Job details step\nWhen she continues with Department, Job title, and Start date blank\nThen the Job details step remains displayed\nAnd messages state that Department, Job title, and Start date are required",
+                "surfaces": [
+                  {
+                    "surfaceId": "de3d9876-0a24-4814-b4fe-00c66d3398d2",
+                    "surfaceName": "New hire onboarding job details",
+                    "platform": "browser"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "f7b5495b-db8d-44ca-aaab-578942aae0bd",
+                    "actorName": "hannah.blake"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:56:29.849Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        },
+        {
+          "journeyId": "000d79fc-80fd-4b3b-ae35-6880ce578f1d",
+          "journeyName": "Open employee directory",
+          "why": "Why now: applying Engineering is observed to narrow Emily's directory from 28 to 8 Engineering employees and collapse pagination to one page. Observations: #5 and #6 (Emily.dawson).",
+          "scenarios": [
+            {
+              "scenario": {
+                "id": "bbfb2185-52c8-46e1-ba35-79628c13afe5",
+                "journeyId": "000d79fc-80fd-4b3b-ae35-6880ce578f1d",
+                "journeyName": "Open employee directory",
+                "name": "Filter the employee directory to Engineering",
+                "gherkin": "Given Emily.dawson is viewing the employee directory\nWhen she selects Engineering in the department filter\nThen 8 Engineering employees are displayed\nAnd pagination shows Page 1 of 1 with Previous and Next disabled",
+                "surfaces": [
+                  {
+                    "surfaceId": "b0793d44-f2b8-4c46-99f5-d8a9d6e55677",
+                    "surfaceName": "Employee directory",
+                    "platform": "browser"
+                  }
+                ],
+                "actors": [
+                  {
+                    "actorId": "880ff056-954c-4667-acab-19f724cc6ac7",
+                    "actorName": "Emily.dawson"
+                  }
+                ],
+                "status": "proposed",
+                "createdAt": "2026-09-10T14:56:29.849Z",
+                "history": []
+              },
+              "contradictions": []
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

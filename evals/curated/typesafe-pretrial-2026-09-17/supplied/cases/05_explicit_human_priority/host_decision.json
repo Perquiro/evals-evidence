@@ -1,0 +1,7 @@
+{
+  "status": "human_priority",
+  "precedence_ids": [
+    "c2"
+  ],
+  "reason": "The explicit first priority is eligible; no semantic ranking is needed."
+}

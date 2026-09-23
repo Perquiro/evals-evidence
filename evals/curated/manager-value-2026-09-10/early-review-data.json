@@ -1,0 +1,336 @@
+{
+  "generatedAt": "2026-09-10T17:39:50.102Z",
+  "status": "user_requested_early_wrap_up",
+  "confirmatoryAnalysisComplete": false,
+  "completedRuns": [
+    "C1",
+    "D1",
+    "A1",
+    "B1",
+    "B2",
+    "C2",
+    "A2",
+    "D2"
+  ],
+  "completedBlocks": [
+    1,
+    2
+  ],
+  "interrupted": "C3",
+  "notStarted": [
+    "A3",
+    "B3",
+    "D3",
+    "D4",
+    "C4",
+    "A4",
+    "B4",
+    "B5",
+    "C5",
+    "D5",
+    "A5"
+  ],
+  "note": "Descriptive summaries of the eight completed runs only, produced after the user requested early termination. This does not replace or complete the frozen five-block analysis. Interrupted and unstarted runs have no coverage score.",
+  "descriptions": {
+    "A": {
+      "name": "Terra/low solo",
+      "runs": [
+        "A1",
+        "A2"
+      ],
+      "saved40": {
+        "values": [
+          3,
+          2
+        ],
+        "mean": 2.5,
+        "median": 2.5,
+        "min": 2,
+        "max": 3
+      },
+      "checkpoints": {
+        "10": {
+          "seen": 3.5,
+          "saved": 2.5
+        },
+        "20": {
+          "seen": 3.5,
+          "saved": 2.5
+        },
+        "40": {
+          "seen": 3.5,
+          "saved": 2.5
+        }
+      },
+      "finalSaved": 2.5,
+      "grounded": 4,
+      "proposed": 4,
+      "exploreMinutes": 10.719566666666665,
+      "mcpCalls": 107,
+      "requests": 6
+    },
+    "B": {
+      "name": "Terra/low solo + stop-reviewer",
+      "runs": [
+        "B1",
+        "B2"
+      ],
+      "saved40": {
+        "values": [
+          2,
+          3
+        ],
+        "mean": 2.5,
+        "median": 2.5,
+        "min": 2,
+        "max": 3
+      },
+      "checkpoints": {
+        "10": {
+          "seen": 2.5,
+          "saved": 1.5
+        },
+        "20": {
+          "seen": 3.5,
+          "saved": 2.5
+        },
+        "40": {
+          "seen": 3.5,
+          "saved": 2.5
+        }
+      },
+      "finalSaved": 2.5,
+      "grounded": 2,
+      "proposed": 2,
+      "exploreMinutes": 14.068483333333333,
+      "mcpCalls": 73,
+      "requests": 5
+    },
+    "C": {
+      "name": "Astra/high manager + Terra/low explorers",
+      "runs": [
+        "C1",
+        "C2"
+      ],
+      "saved40": {
+        "values": [
+          1,
+          7
+        ],
+        "mean": 4,
+        "median": 4,
+        "min": 1,
+        "max": 7
+      },
+      "checkpoints": {
+        "10": {
+          "seen": 2,
+          "saved": 0.5
+        },
+        "20": {
+          "seen": 3.5,
+          "saved": 3
+        },
+        "40": {
+          "seen": 5,
+          "saved": 4
+        }
+      },
+      "finalSaved": 4,
+      "grounded": 3,
+      "proposed": 3,
+      "exploreMinutes": 29.685474999999997,
+      "mcpCalls": 170.5,
+      "requests": 9
+    },
+    "D": {
+      "name": "Astra/high solo + stop-reviewer",
+      "runs": [
+        "D1",
+        "D2"
+      ],
+      "saved40": {
+        "values": [
+          11,
+          12
+        ],
+        "mean": 11.5,
+        "median": 11.5,
+        "min": 11,
+        "max": 12
+      },
+      "checkpoints": {
+        "10": {
+          "seen": 4,
+          "saved": 4
+        },
+        "20": {
+          "seen": 8,
+          "saved": 6.5
+        },
+        "40": {
+          "seen": 15,
+          "saved": 11.5
+        }
+      },
+      "finalSaved": 12.5,
+      "grounded": 6,
+      "proposed": 7,
+      "exploreMinutes": 43.315749999999994,
+      "mcpCalls": 237.5,
+      "requests": 34.5
+    }
+  },
+  "paired": {
+    "C-A": {
+      "values": [
+        -2,
+        5
+      ],
+      "mean": 1.5
+    },
+    "C-B": {
+      "values": [
+        -1,
+        4
+      ],
+      "mean": 1.5
+    },
+    "C-D": {
+      "values": [
+        -10,
+        -5
+      ],
+      "mean": -7.5
+    }
+  },
+  "usage": [
+    {
+      "arm": "A",
+      "stage": "explore",
+      "model": "gpt-5.6-terra/low",
+      "agents": 2,
+      "counters": {
+        "input_tokens": 7915656,
+        "cached_input_tokens": 7659776,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 32753,
+        "reasoning_output_tokens": 4299,
+        "total_tokens": 7948409
+      }
+    },
+    {
+      "arm": "A",
+      "stage": "create",
+      "model": "gpt-5.6-terra/low",
+      "agents": 2,
+      "counters": {
+        "input_tokens": 1584948,
+        "cached_input_tokens": 1479680,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8563,
+        "reasoning_output_tokens": 2266,
+        "total_tokens": 1593511
+      }
+    },
+    {
+      "arm": "B",
+      "stage": "explore",
+      "model": "gpt-5.6-terra/low",
+      "agents": 2,
+      "counters": {
+        "input_tokens": 10677117,
+        "cached_input_tokens": 10385152,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41393,
+        "reasoning_output_tokens": 4269,
+        "total_tokens": 10718510
+      }
+    },
+    {
+      "arm": "B",
+      "stage": "create",
+      "model": "gpt-5.6-terra/low",
+      "agents": 2,
+      "counters": {
+        "input_tokens": 1243269,
+        "cached_input_tokens": 1115136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7863,
+        "reasoning_output_tokens": 1768,
+        "total_tokens": 1251132
+      }
+    },
+    {
+      "arm": "C",
+      "stage": "explore",
+      "model": "gpt-6-astra/high",
+      "agents": 2,
+      "counters": {
+        "input_tokens": 8045469,
+        "cached_input_tokens": 7757312,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 29464,
+        "reasoning_output_tokens": 2515,
+        "total_tokens": 8074933
+      }
+    },
+    {
+      "arm": "C",
+      "stage": "explore",
+      "model": "gpt-5.6-terra/low",
+      "agents": 7,
+      "counters": {
+        "input_tokens": 11915157,
+        "cached_input_tokens": 11479552,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 62619,
+        "reasoning_output_tokens": 10415,
+        "total_tokens": 11977776
+      }
+    },
+    {
+      "arm": "C",
+      "stage": "create",
+      "model": "gpt-5.6-terra/low",
+      "agents": 2,
+      "counters": {
+        "input_tokens": 880014,
+        "cached_input_tokens": 800768,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8556,
+        "reasoning_output_tokens": 1853,
+        "total_tokens": 888570
+      }
+    },
+    {
+      "arm": "D",
+      "stage": "explore",
+      "model": "gpt-6-astra/high",
+      "agents": 2,
+      "counters": {
+        "input_tokens": 31492062,
+        "cached_input_tokens": 30960640,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 74066,
+        "reasoning_output_tokens": 7987,
+        "total_tokens": 31566128
+      }
+    },
+    {
+      "arm": "D",
+      "stage": "create",
+      "model": "gpt-5.6-terra/low",
+      "agents": 2,
+      "counters": {
+        "input_tokens": 2485980,
+        "cached_input_tokens": 2290688,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15788,
+        "reasoning_output_tokens": 3217,
+        "total_tokens": 2501768
+      }
+    }
+  ],
+  "billingCost": "unknown"
+}

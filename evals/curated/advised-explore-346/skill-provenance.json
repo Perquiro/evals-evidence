@@ -1,0 +1,14 @@
+{
+  "skillSnapshot": "exercised-SKILL.md",
+  "skillSha256": "b642a7772a9a8893ebf6e401f62c68da25eae55a1ee81a0c6b14ea1834b38abe",
+  "skillTextSha256": "dfd49648b3109a0703303e29b9d6f338c499555f5c428251cc0e5d8506627c83",
+  "normalization": "UTF-8 text with CRLF replaced by LF; no other transformation",
+  "sourceCommit": "8aeda4bda0654dad8f6c085ba13d50bb71e4baf4",
+  "sourcePath": "src/setup/command-skills/explore/SKILL.md",
+  "traces": [
+    "advised.json",
+    "advised-replay.json",
+    "ordinary.json"
+  ],
+  "note": "Exact exercised working-tree bytes recovered by matching all three retained trace hashes. Git stored identical text with LF line endings. Original trace bytes are unchanged."
+}

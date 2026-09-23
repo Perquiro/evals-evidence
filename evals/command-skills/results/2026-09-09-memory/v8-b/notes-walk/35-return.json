@@ -1,0 +1,15 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://127.0.0.1:54824/loans/201/return",
+    "actor": "Reader",
+    "body": {}
+  },
+  "status": 200,
+  "body": {
+    "message": "Book returned",
+    "bookId": "102",
+    "catalog": "/catalog",
+    "loans": "/loans"
+  }
+}

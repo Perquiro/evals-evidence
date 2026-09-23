@@ -1,0 +1,19 @@
+{
+  "requestToken": "c42ef792-4206-4775-8d86-43d4da3c1aa1",
+  "surfaceId": "70e27328-08be-42f7-9b4f-82a2cbcb47e1",
+  "actorId": "ab5945c6-978f-4469-8222-30c839c2b986",
+  "platform": "api",
+  "items": [
+    { "key": "empty", "name": "No loans message", "kind": "information" }
+  ],
+  "reports": [
+    {
+      "kind": "inventory",
+      "body": "GET /loans returned 200 OK with an empty loans array and the message 'No loans'.",
+      "looks": [
+        { "item": { "key": "empty" }, "kind": "offered" }
+      ],
+      "capture": "pending"
+    }
+  ]
+}

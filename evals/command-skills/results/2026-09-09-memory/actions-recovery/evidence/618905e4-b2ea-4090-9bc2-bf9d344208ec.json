@@ -1,0 +1,10 @@
+{
+  "id": "618905e4-b2ea-4090-9bc2-bf9d344208ec",
+  "kind": "agent_reported",
+  "containerPath": ".perquiro/evidence/618905e4-b2ea-4090-9bc2-bf9d344208ec/",
+  "productVersion": "2.5",
+  "createdAt": "2026-09-09T07:35:30.827Z",
+  "observationIds": [
+    "cb492d73-a3bd-4eb7-802e-da1a93101a9d"
+  ]
+}
