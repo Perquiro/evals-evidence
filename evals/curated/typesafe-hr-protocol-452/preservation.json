@@ -1,0 +1,6 @@
+{
+  "source": "Issue #452 reuses the #347-v3 preservation set without re-copying neighboring pre-trial trees into this freeze.",
+  "inherited_from": "typesafe-hr-protocol-347-v3/preservation.json",
+  "note": "Neighboring typesafe-hardcases-2026-09-17 and typesafe-pretrial-2026-09-17 remain byte-preserved under the revision 3 freeze and the evals-evidence checkout. This #452 freeze does not replace them.",
+  "files": {}
+}

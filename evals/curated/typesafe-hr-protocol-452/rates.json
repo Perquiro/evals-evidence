@@ -1,0 +1,32 @@
+{
+  "currency": "USD",
+  "basis": "API-equivalent standard token pricing, not actual charges",
+  "models": {
+    "gpt-5.6-terra": {
+      "input": 2,
+      "cached_input": 0.2,
+      "cache_write_input": 2.5,
+      "output": 12,
+      "per_tokens": 1000000,
+      "long_context_threshold": 272000,
+      "long_input_multiplier": 2,
+      "long_output_multiplier": 1.5,
+      "verified_date": "2026-09-17",
+      "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+      "verification": "Official page retrieved during #347 preparation. Cache write 1.25x; full request above 272K input gets 2x input and 1.5x output."
+    },
+    "jev-1.13.0": {
+      "input": 0.042,
+      "cached_input": 0.042,
+      "cache_write_input": 0.042,
+      "output": 0,
+      "per_tokens": 1000000,
+      "long_context_threshold": null,
+      "long_input_multiplier": 1,
+      "long_output_multiplier": 1,
+      "verified_date": "2026-09-17",
+      "source": "https://docs.typesafe.ai/models",
+      "verification": "Historical published rate retained from the same-day pre-trial PROTOCOL.md and REPORT.md. Fresh retrieval failed during #347; no new verification claimed. Frozen estimate assumption for this pilot."
+    }
+  }
+}

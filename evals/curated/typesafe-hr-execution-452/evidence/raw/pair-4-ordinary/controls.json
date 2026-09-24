@@ -1,0 +1,107 @@
+{
+  "control": {
+    "launch_sha256": "e0d2b90e8d3f567e4ce1b054c964bc6cae8cc0289888324fb425402d49102296",
+    "dispatch": {
+      "kind": "dispatch",
+      "id": "pair-4-ordinary",
+      "pair": 4,
+      "arm": "ordinary",
+      "executionId": "346cca62-b034-41b2-a873-adb72f2625e9",
+      "at": "2026-09-24T07:43:21.705Z",
+      "launch_sha256": "e0d2b90e8d3f567e4ce1b054c964bc6cae8cc0289888324fb425402d49102296"
+    },
+    "close": {
+      "kind": "closed",
+      "id": "pair-4-ordinary",
+      "status": "completed",
+      "receipt_sha256": "1c8e3d80292bdc8815119ed1d117179927b8e47e30d6841d895424981808a077",
+      "executionId": "346cca62-b034-41b2-a873-adb72f2625e9",
+      "at": "2026-09-24T07:48:12.378Z",
+      "launch_sha256": "e0d2b90e8d3f567e4ce1b054c964bc6cae8cc0289888324fb425402d49102296"
+    },
+    "reset": {
+      "source_sha256": "0043c990ecd58697cfe1099f3b640f9ab66eb84e7cf09ee1aba045b80f68cdb7",
+      "build_sha256": "0ce7da8b5f1853df3faa36439242db01c1d58f3fabe06d61e79a953abf9ed0f9",
+      "seed_sha256": "8cde76f36bd76b055e2fee3fc2391ace595d94819a4b96d162f7b4e1eecdf83e",
+      "fixed_product_date": "2026-09-17T12:00:00.000Z",
+      "signed_out": true,
+      "empty_storage": true,
+      "empty_knowledge": true
+    },
+    "requested": {
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "tier": "default",
+      "fallback": false
+    },
+    "effective": {
+      "model": "gpt-5.6-terra",
+      "effort": "low",
+      "tier": "default",
+      "no_model_reroute": true
+    },
+    "actor": {
+      "successful_logins": [
+        {
+          "request_id": "request-1",
+          "status": 200,
+          "username": "emily.dawson",
+          "role": "employee"
+        }
+      ],
+      "only_employee": true
+    },
+    "input_hashes": {
+      "instructions": "95282b688da8a3c7f909b57f51029330b8d419f4c008a9055c848fd00c110cdb",
+      "candidate": "04ddd3f717c8910c9e37bab6b6084f50c22aecf77d3f73222d9e712c05c50c53",
+      "prompt": "d0c71d6ba26d738171ce10dcbd0aa724367108560a17b71a847c150f650a19d7",
+      "tools": "c93ec323ca8e996d45a5a0fbfff8f8bd625c509dabfc078364f4dc2f1406e895",
+      "executionId": "346cca62-b034-41b2-a873-adb72f2625e9"
+    },
+    "isolation": {
+      "empty_instruction_sources": true,
+      "only_configured_disabled_mcp_stubs": true,
+      "only_allowlisted_tool_calls": true,
+      "base_instruction_hash": "95282b688da8a3c7f909b57f51029330b8d419f4c008a9055c848fd00c110cdb",
+      "dispatch_prompt_hash": "d0c71d6ba26d738171ce10dcbd0aa724367108560a17b71a847c150f650a19d7"
+    },
+    "budgets": {
+      "admitted": 15,
+      "request_records": 15,
+      "refused": 0,
+      "all_actions_dispatched_in_time": true,
+      "all_requests_admitted_in_time": true,
+      "elapsed_ms": 288067.1073
+    },
+    "final_close": {
+      "host_status": "completed",
+      "elapsed_ms": 288067.1073,
+      "phase_end": 288067.1073,
+      "post_close_drain_ms": 0.14120000001275912,
+      "late_tool_completions": [],
+      "final_capture_retained": true
+    },
+    "provenance": {
+      "host_jsonl_sha256": "5941c25661e22823820eed554cb9f4cf83d958b90b0aa8e000109d0401efe165",
+      "indexed_host_sha256": "5941c25661e22823820eed554cb9f4cf83d958b90b0aa8e000109d0401efe165",
+      "receipt_sha256": "1c8e3d80292bdc8815119ed1d117179927b8e47e30d6841d895424981808a077"
+    },
+    "advice_overhead": {
+      "journal_present": true,
+      "executionId": "346cca62-b034-41b2-a873-adb72f2625e9",
+      "raw": "raw/pair-4-ordinary/advice-overhead.json",
+      "note": null
+    }
+  },
+  "checks": {
+    "model": true,
+    "reset": true,
+    "inputs": true,
+    "isolation": true,
+    "actor": true,
+    "budget": true,
+    "closure": true,
+    "originals": true,
+    "unique_reset": true
+  }
+}

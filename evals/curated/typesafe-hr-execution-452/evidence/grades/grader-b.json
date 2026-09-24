@@ -1,0 +1,1471 @@
+{
+  "reviewer": "/root/blind_grader_b",
+  "samples": {
+    "sample-01": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "3c910bc9-c7bb-4495-8674-9142af9c787a"
+          ],
+          "rationale": "Valid Employee username and redacted password were entered and submitted; the saved observation records the authenticated Employee dashboard identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission was executed; the only authentication attempt used the configured Employee credentials."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Log out action or subsequent revisit of a private Employee page was captured."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "A name search was entered, but the only saved result is the immediate unchanged display and does not provide settled final displayed row identities."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Engineering was selected only after navigating back to an unsearched directory; no combined department-and-name search was executed and saved."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched directory search was entered and saved after settlement."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No sortable header was clicked twice with saved row orders and sort indications after both clicks."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail was opened and then reloaded or direct-loaded with a saved result."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "The captured leave submissions used blank date fields; no executed request had an end date before its start date."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval was entered and saved with its displayed pre-submission duration."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No valid dated leave request was submitted: date-entry attempts were unexecuted or the form was submitted blank."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No newly submitted leave request exists in the capture, so no later history/reload readback can be linked to it."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No capture enters valid hours for all seven days with nonzero Saturday and Sunday values and saves the weekly total."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "A draft was saved, but no reload occurred afterward to save the actual reloaded values."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week was submitted and no later editability attempt with saved status was captured."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field was changed and saved with old/new values and an immediate result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No changed profile field was saved and then reloaded for persisted-value readback."
+        }
+      ],
+      "observation_actions": {
+        "3c910bc9-c7bb-4495-8674-9142af9c787a": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "f0c44c06-7700-4d12-9594-f3f099b5224f": [
+          "action-12"
+        ],
+        "127d1df2-6bd0-47c9-ac56-0841c1e099c1": [
+          "action-15",
+          "action-16"
+        ],
+        "a42f6133-8c9c-49bf-8653-b63b1a71ccc4": [
+          "action-19",
+          "snapshot-51"
+        ],
+        "656c1c8b-f9b3-417c-a520-56a468006e18": [
+          "action-22",
+          "snapshot-61"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Valid Employee credentials authenticated as Emily Dawson and opened the Employee dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "3c910bc9-c7bb-4495-8674-9142af9c787a"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Submitting the leave form with blank required dates remained on the form and displayed required-field validation.",
+          "action_ids": [
+            "action-12"
+          ],
+          "observation_ids": [
+            "f0c44c06-7700-4d12-9594-f3f099b5224f"
+          ]
+        },
+        {
+          "id": "behavior-3",
+          "description": "Saving a one-Monday-hour timesheet draft retained draft status/total and displayed a draft-saved confirmation.",
+          "action_ids": [
+            "action-15",
+            "action-16"
+          ],
+          "observation_ids": [
+            "127d1df2-6bd0-47c9-ac56-0841c1e099c1"
+          ]
+        },
+        {
+          "id": "behavior-4",
+          "description": "The entered directory name search left the displayed count and unfiltered rows unchanged in the saved capture.",
+          "action_ids": [
+            "action-19",
+            "snapshot-51"
+          ],
+          "observation_ids": [
+            "a42f6133-8c9c-49bf-8653-b63b1a71ccc4"
+          ]
+        },
+        {
+          "id": "behavior-5",
+          "description": "Selecting Engineering left a mixed-department directory display in the saved capture.",
+          "action_ids": [
+            "action-22",
+            "snapshot-61"
+          ],
+          "observation_ids": [
+            "656c1c8b-f9b3-417c-a520-56a468006e18"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Whether dates can be selected through the calendar and a valid leave request can be submitted remains unresolved.",
+        "Whether a saved timesheet draft persists after a page reload remains unresolved."
+      ],
+      "unsupported_claims": []
+    },
+    "sample-02": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "1681705c-cbee-402f-82af-630071654b54"
+          ],
+          "rationale": "Valid Employee username and redacted password were entered and submitted; the saved observation records the authenticated Employee dashboard identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission was executed; the only authentication attempt used the configured Employee credentials."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Log out action or subsequent revisit of a private Employee page was captured."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No name search with a saved settled result and final displayed row identities was captured."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name-search action with a saved settled result was captured."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched directory search was entered and saved after settlement."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No sortable header was clicked twice with saved row orders and sort indications after both clicks."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail was opened and then reloaded or direct-loaded with a saved result."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "The captured leave submissions used blank date fields; no executed request had an end date before its start date."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval was entered and saved with its displayed pre-submission duration."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No valid dated leave request was submitted: date-entry attempts were unexecuted or the form was submitted blank."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No newly submitted leave request exists in the capture, so no later history/reload readback can be linked to it."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No capture enters valid hours for all seven days with nonzero Saturday and Sunday values and saves the weekly total."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save followed by a reload with saved values was captured."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week was submitted and no later editability attempt with saved status was captured."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field was changed and saved with old/new values and an immediate result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No changed profile field was saved and then reloaded for persisted-value readback."
+        }
+      ],
+      "observation_actions": {
+        "1681705c-cbee-402f-82af-630071654b54": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "4862bb66-3457-4f71-824e-3a094afbc25b": [
+          "action-11"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Valid Employee credentials authenticated as Emily Dawson and opened the Employee dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "1681705c-cbee-402f-82af-630071654b54"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Submitting the leave form with blank required dates remained on the form and displayed required-field validation.",
+          "action_ids": [
+            "action-11"
+          ],
+          "observation_ids": [
+            "4862bb66-3457-4f71-824e-3a094afbc25b"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Whether dates can be selected through the calendar and a valid leave request can be submitted remains unresolved.",
+        "Whether a saved timesheet draft persists after a page reload remains unresolved."
+      ],
+      "unsupported_claims": []
+    },
+    "sample-03": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "ee5a0d7e-3a92-4db6-a560-7a170deb8db2"
+          ],
+          "rationale": "Valid Employee username and redacted password were entered and submitted; the saved observation records the authenticated Employee dashboard identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission was executed; the only authentication attempt used the configured Employee credentials."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Log out action or subsequent revisit of a private Employee page was captured."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No name search with a saved settled result and final displayed row identities was captured."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name-search action with a saved settled result was captured."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched directory search was entered and saved after settlement."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No sortable header was clicked twice with saved row orders and sort indications after both clicks."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail was opened and then reloaded or direct-loaded with a saved result."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "The captured leave submissions used blank date fields; no executed request had an end date before its start date."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval was entered and saved with its displayed pre-submission duration."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No valid dated leave request was submitted: date-entry attempts were unexecuted or the form was submitted blank."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No newly submitted leave request exists in the capture, so no later history/reload readback can be linked to it."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No capture enters valid hours for all seven days with nonzero Saturday and Sunday values and saves the weekly total."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save followed by a reload with saved values was captured."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week was submitted and no later editability attempt with saved status was captured."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field was changed and saved with old/new values and an immediate result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No changed profile field was saved and then reloaded for persisted-value readback."
+        }
+      ],
+      "observation_actions": {
+        "ee5a0d7e-3a92-4db6-a560-7a170deb8db2": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "ee4a092e-0223-489d-a44e-712ab340b020": [
+          "action-8"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Valid Employee credentials authenticated as Emily Dawson and opened the Employee dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "ee5a0d7e-3a92-4db6-a560-7a170deb8db2"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Submitting the leave form with blank required dates remained on the form and displayed required-field validation.",
+          "action_ids": [
+            "action-8"
+          ],
+          "observation_ids": [
+            "ee4a092e-0223-489d-a44e-712ab340b020"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Whether dates can be selected through the calendar and a valid leave request can be submitted remains unresolved.",
+        "Whether a saved timesheet draft persists after a page reload remains unresolved."
+      ],
+      "unsupported_claims": []
+    },
+    "sample-04": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "44d0397c-5d99-402c-a92c-240689175bfa"
+          ],
+          "rationale": "Valid Employee username and redacted password were entered and submitted; the saved observation records the authenticated Employee dashboard identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission was executed; the only authentication attempt used the configured Employee credentials."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Log out action or subsequent revisit of a private Employee page was captured."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "A name search was entered, but the only saved result is the immediate unchanged display and does not provide settled final displayed row identities."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name-search action with a saved settled result was captured."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched directory search was entered and saved after settlement."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No sortable header was clicked twice with saved row orders and sort indications after both clicks."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail was opened and then reloaded or direct-loaded with a saved result."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "The captured leave submissions used blank date fields; no executed request had an end date before its start date."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval was entered and saved with its displayed pre-submission duration."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No valid dated leave request was submitted: date-entry attempts were unexecuted or the form was submitted blank."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No newly submitted leave request exists in the capture, so no later history/reload readback can be linked to it."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No capture enters valid hours for all seven days with nonzero Saturday and Sunday values and saves the weekly total."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "A draft was saved, but no reload occurred afterward to save the actual reloaded values."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week was submitted and no later editability attempt with saved status was captured."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field was changed and saved with old/new values and an immediate result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No changed profile field was saved and then reloaded for persisted-value readback."
+        }
+      ],
+      "observation_actions": {
+        "44d0397c-5d99-402c-a92c-240689175bfa": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "558bcf2f-98ed-4b97-b0d8-2efbd8f437e3": [
+          "action-7"
+        ],
+        "e2a76f0e-3a16-4874-8f6b-0429d7106a39": [
+          "action-18",
+          "action-19"
+        ],
+        "f3d65c40-8b63-430d-a7d4-8a7d0c1005c4": [
+          "action-15",
+          "snapshot-49"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Valid Employee credentials authenticated as Emily Dawson and opened the Employee dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "44d0397c-5d99-402c-a92c-240689175bfa"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Submitting the leave form with blank required dates remained on the form and displayed required-field validation.",
+          "action_ids": [
+            "action-7"
+          ],
+          "observation_ids": [
+            "558bcf2f-98ed-4b97-b0d8-2efbd8f437e3"
+          ]
+        },
+        {
+          "id": "behavior-3",
+          "description": "Saving a one-Monday-hour timesheet draft retained draft status/total and displayed a draft-saved confirmation.",
+          "action_ids": [
+            "action-18",
+            "action-19"
+          ],
+          "observation_ids": [
+            "e2a76f0e-3a16-4874-8f6b-0429d7106a39"
+          ]
+        },
+        {
+          "id": "behavior-4",
+          "description": "The entered directory name search left the displayed count and unfiltered rows unchanged in the saved capture.",
+          "action_ids": [
+            "action-15",
+            "snapshot-49"
+          ],
+          "observation_ids": [
+            "f3d65c40-8b63-430d-a7d4-8a7d0c1005c4"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Whether dates can be selected through the calendar and a valid leave request can be submitted remains unresolved.",
+        "Whether a saved timesheet draft persists after a page reload remains unresolved."
+      ],
+      "unsupported_claims": []
+    },
+    "sample-05": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "d5822cc3-0a87-42d1-8344-50e42dcfd2b2"
+          ],
+          "rationale": "Valid Employee username and redacted password were entered and submitted; the saved observation records the authenticated Employee dashboard identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission was executed; the only authentication attempt used the configured Employee credentials."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Log out action or subsequent revisit of a private Employee page was captured."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No name search with a saved settled result and final displayed row identities was captured."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name-search action with a saved settled result was captured."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched directory search was entered and saved after settlement."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No sortable header was clicked twice with saved row orders and sort indications after both clicks."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail was opened and then reloaded or direct-loaded with a saved result."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "The captured leave submissions used blank date fields; no executed request had an end date before its start date."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval was entered and saved with its displayed pre-submission duration."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No valid dated leave request was submitted: date-entry attempts were unexecuted or the form was submitted blank."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No newly submitted leave request exists in the capture, so no later history/reload readback can be linked to it."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No capture enters valid hours for all seven days with nonzero Saturday and Sunday values and saves the weekly total."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "A draft was saved, but no reload occurred afterward to save the actual reloaded values."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week was submitted and no later editability attempt with saved status was captured."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field was changed and saved with old/new values and an immediate result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No changed profile field was saved and then reloaded for persisted-value readback."
+        }
+      ],
+      "observation_actions": {
+        "d5822cc3-0a87-42d1-8344-50e42dcfd2b2": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "2b4c485a-bf21-4676-b733-d47f1c3cf8ca": [
+          "action-10"
+        ],
+        "b4ea5279-bca4-44cd-857e-739f290b221c": [
+          "action-17",
+          "action-18"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Valid Employee credentials authenticated as Emily Dawson and opened the Employee dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "d5822cc3-0a87-42d1-8344-50e42dcfd2b2"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Submitting the leave form with blank required dates remained on the form and displayed required-field validation.",
+          "action_ids": [
+            "action-10"
+          ],
+          "observation_ids": [
+            "2b4c485a-bf21-4676-b733-d47f1c3cf8ca"
+          ]
+        },
+        {
+          "id": "behavior-3",
+          "description": "Saving a one-Monday-hour timesheet draft retained draft status/total and displayed a draft-saved confirmation.",
+          "action_ids": [
+            "action-17",
+            "action-18"
+          ],
+          "observation_ids": [
+            "b4ea5279-bca4-44cd-857e-739f290b221c"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Whether dates can be selected through the calendar and a valid leave request can be submitted remains unresolved.",
+        "Whether a saved timesheet draft persists after a page reload remains unresolved."
+      ],
+      "unsupported_claims": []
+    },
+    "sample-06": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "500859bb-0009-49da-a9fd-11732742c19a"
+          ],
+          "rationale": "Valid Employee username and redacted password were entered and submitted; the saved observation records the authenticated Employee dashboard identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission was executed; the only authentication attempt used the configured Employee credentials."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Log out action or subsequent revisit of a private Employee page was captured."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No name search with a saved settled result and final displayed row identities was captured."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name-search action with a saved settled result was captured."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched directory search was entered and saved after settlement."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No sortable header was clicked twice with saved row orders and sort indications after both clicks."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail was opened and then reloaded or direct-loaded with a saved result."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "The captured leave submissions used blank date fields; no executed request had an end date before its start date."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval was entered and saved with its displayed pre-submission duration."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No valid dated leave request was submitted: date-entry attempts were unexecuted or the form was submitted blank."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No newly submitted leave request exists in the capture, so no later history/reload readback can be linked to it."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No capture enters valid hours for all seven days with nonzero Saturday and Sunday values and saves the weekly total."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save followed by a reload with saved values was captured."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week was submitted and no later editability attempt with saved status was captured."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field was changed and saved with old/new values and an immediate result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No changed profile field was saved and then reloaded for persisted-value readback."
+        }
+      ],
+      "observation_actions": {
+        "500859bb-0009-49da-a9fd-11732742c19a": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "7fe790f2-e70b-4558-80d7-98fbd13b8357": [
+          "action-10"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Valid Employee credentials authenticated as Emily Dawson and opened the Employee dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "500859bb-0009-49da-a9fd-11732742c19a"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Submitting the leave form with blank required dates remained on the form and displayed required-field validation.",
+          "action_ids": [
+            "action-10"
+          ],
+          "observation_ids": [
+            "7fe790f2-e70b-4558-80d7-98fbd13b8357"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Whether dates can be selected through the calendar and a valid leave request can be submitted remains unresolved.",
+        "Whether a saved timesheet draft persists after a page reload remains unresolved."
+      ],
+      "unsupported_claims": []
+    },
+    "sample-07": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "78530301-7132-4243-a8f9-2b9c66e4ec40"
+          ],
+          "rationale": "Valid Employee username and redacted password were entered and submitted; the saved observation records the authenticated Employee dashboard identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission was executed; the only authentication attempt used the configured Employee credentials."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Log out action or subsequent revisit of a private Employee page was captured."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "A name search and table re-read occurred, but the saved result identifies only unchanged unfiltered rows, not the concrete final row identities required."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name-search action with a saved settled result was captured."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched directory search was entered and saved after settlement."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No sortable header was clicked twice with saved row orders and sort indications after both clicks."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail was opened and then reloaded or direct-loaded with a saved result."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "The captured leave submissions used blank date fields; no executed request had an end date before its start date."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval was entered and saved with its displayed pre-submission duration."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No valid dated leave request was submitted: date-entry attempts were unexecuted or the form was submitted blank."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No newly submitted leave request exists in the capture, so no later history/reload readback can be linked to it."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No capture enters valid hours for all seven days with nonzero Saturday and Sunday values and saves the weekly total."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "A draft was saved, but no reload occurred afterward to save the actual reloaded values."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week was submitted and no later editability attempt with saved status was captured."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field was changed and saved with old/new values and an immediate result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No changed profile field was saved and then reloaded for persisted-value readback."
+        }
+      ],
+      "observation_actions": {
+        "78530301-7132-4243-a8f9-2b9c66e4ec40": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "8160e498-7df0-496f-aa84-4b1d43e88b69": [
+          "action-7"
+        ],
+        "c9e383b7-7d5b-420f-ac37-0b0e34642a79": [
+          "action-14",
+          "action-15"
+        ],
+        "b8d9f741-6291-41df-bbcc-3e1789778545": [
+          "action-20",
+          "action-21",
+          "snapshot-93"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Valid Employee credentials authenticated as Emily Dawson and opened the Employee dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "78530301-7132-4243-a8f9-2b9c66e4ec40"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Submitting the leave form with blank required dates remained on the form and displayed required-field validation.",
+          "action_ids": [
+            "action-7"
+          ],
+          "observation_ids": [
+            "8160e498-7df0-496f-aa84-4b1d43e88b69"
+          ]
+        },
+        {
+          "id": "behavior-3",
+          "description": "Saving a one-Monday-hour timesheet draft retained draft status/total and displayed a draft-saved confirmation.",
+          "action_ids": [
+            "action-14",
+            "action-15"
+          ],
+          "observation_ids": [
+            "c9e383b7-7d5b-420f-ac37-0b0e34642a79"
+          ]
+        },
+        {
+          "id": "behavior-4",
+          "description": "The entered directory name search left the displayed count and unfiltered rows unchanged in the saved capture.",
+          "action_ids": [
+            "action-20",
+            "action-21",
+            "snapshot-93"
+          ],
+          "observation_ids": [
+            "b8d9f741-6291-41df-bbcc-3e1789778545"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Whether dates can be selected through the calendar and a valid leave request can be submitted remains unresolved.",
+        "Whether a saved timesheet draft persists after a page reload remains unresolved."
+      ],
+      "unsupported_claims": []
+    },
+    "sample-08": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "0fa07869-6062-4be6-ae7f-fdcff47fdf91"
+          ],
+          "rationale": "Valid Employee username and redacted password were entered and submitted; the saved observation records the authenticated Employee dashboard identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission was executed; the only authentication attempt used the configured Employee credentials."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Log out action or subsequent revisit of a private Employee page was captured."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No name search with a saved settled result and final displayed row identities was captured."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name-search action with a saved settled result was captured."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched directory search was entered and saved after settlement."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No sortable header was clicked twice with saved row orders and sort indications after both clicks."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail was opened and then reloaded or direct-loaded with a saved result."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "The captured leave submissions used blank date fields; no executed request had an end date before its start date."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval was entered and saved with its displayed pre-submission duration."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No valid dated leave request was submitted: date-entry attempts were unexecuted or the form was submitted blank."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No newly submitted leave request exists in the capture, so no later history/reload readback can be linked to it."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No capture enters valid hours for all seven days with nonzero Saturday and Sunday values and saves the weekly total."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save followed by a reload with saved values was captured."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week was submitted and no later editability attempt with saved status was captured."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field was changed and saved with old/new values and an immediate result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No changed profile field was saved and then reloaded for persisted-value readback."
+        }
+      ],
+      "observation_actions": {
+        "0fa07869-6062-4be6-ae7f-fdcff47fdf91": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "3529e61f-c5d1-4979-93b2-dc181c81c0f1": [
+          "action-10"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Valid Employee credentials authenticated as Emily Dawson and opened the Employee dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "0fa07869-6062-4be6-ae7f-fdcff47fdf91"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Submitting the leave form with blank required dates remained on the form and displayed required-field validation.",
+          "action_ids": [
+            "action-10"
+          ],
+          "observation_ids": [
+            "3529e61f-c5d1-4979-93b2-dc181c81c0f1"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Whether dates can be selected through the calendar and a valid leave request can be submitted remains unresolved.",
+        "Whether a saved timesheet draft persists after a page reload remains unresolved."
+      ],
+      "unsupported_claims": []
+    }
+  }
+}

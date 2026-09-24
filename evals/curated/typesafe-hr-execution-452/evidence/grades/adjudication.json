@@ -1,0 +1,1265 @@
+{
+  "reviewer": "/root",
+  "samples": {
+    "sample-01": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "3c910bc9-c7bb-4495-8674-9142af9c787a"
+          ],
+          "rationale": "Submitted the configured Employee credentials; saved observation records Emily Dawson reaching the employee dashboard. Adjudication: A, B and H agreed."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-19"
+          ],
+          "observation_ids": [
+            "a42f6133-8c9c-49bf-8653-b63b1a71ccc4"
+          ],
+          "rationale": "Entered “Emily”; saved settled observation reports the input's actual unfiltered 28-row result. Adjudication: nonempty q= search request present; Product may have left unfiltered rows, which does not remove exercise credit when text and displayed rows were saved."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no single request combined nonempty name search with a department filter. Sequential separate searches do not satisfy the item."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        }
+      ],
+      "observation_actions": {
+        "3c910bc9-c7bb-4495-8674-9142af9c787a": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "a42f6133-8c9c-49bf-8653-b63b1a71ccc4": [
+          "action-19"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Employee authentication reached the authenticated dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "3c910bc9-c7bb-4495-8674-9142af9c787a"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-02": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "1681705c-cbee-402f-82af-630071654b54"
+          ],
+          "rationale": "Submitted configured Employee credentials and saved the resulting authenticated Employee dashboard. Adjudication: A, B and H agreed."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no nonempty name-search request. Default directory load is not a name search. H over-credited inventory Observations."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no single request combined nonempty name search with a department filter. Sequential separate searches do not satisfy the item."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        }
+      ],
+      "observation_actions": {
+        "1681705c-cbee-402f-82af-630071654b54": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Employee authentication reached the authenticated dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "1681705c-cbee-402f-82af-630071654b54"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?",
+        "Does a directory name search settle to identifiable filtered rows?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-03": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "ee5a0d7e-3a92-4db6-a560-7a170deb8db2"
+          ],
+          "rationale": "Submitted configured Employee credentials and saved the resulting authenticated Employee dashboard. Adjudication: A, B and H agreed."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no nonempty name-search request. Default directory load is not a name search. H over-credited inventory Observations."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no single request combined nonempty name search with a department filter. Sequential separate searches do not satisfy the item."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        }
+      ],
+      "observation_actions": {
+        "ee5a0d7e-3a92-4db6-a560-7a170deb8db2": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Employee authentication reached the authenticated dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "ee5a0d7e-3a92-4db6-a560-7a170deb8db2"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?",
+        "Does a directory name search settle to identifiable filtered rows?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-04": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "44d0397c-5d99-402c-a92c-240689175bfa"
+          ],
+          "rationale": "Submitted configured Employee credentials and saved the resulting authenticated Employee dashboard. Adjudication: A, B and H agreed."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-15"
+          ],
+          "observation_ids": [
+            "f3d65c40-8b63-430d-a7d4-8a7d0c1005c4"
+          ],
+          "rationale": "Entered “Emily Dawson”; saved observation records the settled actual unchanged 28-row result. Adjudication: nonempty q= search request present; Product may have left unfiltered rows, which does not remove exercise credit when text and displayed rows were saved."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no single request combined nonempty name search with a department filter. Sequential separate searches do not satisfy the item."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        }
+      ],
+      "observation_actions": {
+        "44d0397c-5d99-402c-a92c-240689175bfa": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "f3d65c40-8b63-430d-a7d4-8a7d0c1005c4": [
+          "action-15"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Employee authentication reached the authenticated dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "44d0397c-5d99-402c-a92c-240689175bfa"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-05": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "d5822cc3-0a87-42d1-8344-50e42dcfd2b2"
+          ],
+          "rationale": "Submitted configured Employee credentials and saved the resulting authenticated Employee dashboard. Adjudication: A, B and H agreed."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no nonempty name-search request. Default directory load is not a name search. H over-credited inventory Observations."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no single request combined nonempty name search with a department filter. Sequential separate searches do not satisfy the item."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        }
+      ],
+      "observation_actions": {
+        "d5822cc3-0a87-42d1-8344-50e42dcfd2b2": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Employee authentication reached the authenticated dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "d5822cc3-0a87-42d1-8344-50e42dcfd2b2"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?",
+        "Does a directory name search settle to identifiable filtered rows?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-06": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "500859bb-0009-49da-a9fd-11732742c19a"
+          ],
+          "rationale": "Submitted configured Employee credentials and saved the resulting authenticated Employee dashboard. Adjudication: A, B and H agreed."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no nonempty name-search request. Default directory load is not a name search. H over-credited inventory Observations."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no single request combined nonempty name search with a department filter. Sequential separate searches do not satisfy the item."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        }
+      ],
+      "observation_actions": {
+        "500859bb-0009-49da-a9fd-11732742c19a": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Employee authentication reached the authenticated dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "500859bb-0009-49da-a9fd-11732742c19a"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?",
+        "Does a directory name search settle to identifiable filtered rows?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-07": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "78530301-7132-4243-a8f9-2b9c66e4ec40"
+          ],
+          "rationale": "Submitted configured Employee credentials and saved the resulting authenticated Employee dashboard. Adjudication: A, B and H agreed."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-20",
+            "action-21"
+          ],
+          "observation_ids": [
+            "b8d9f741-6291-41df-bbcc-3e1789778545"
+          ],
+          "rationale": "Entered “Emily Dawson” and re-read after settlement; saved observation records the actual unchanged 28-row result. Adjudication: nonempty q= search request present; Product may have left unfiltered rows, which does not remove exercise credit when text and displayed rows were saved."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no single request combined nonempty name search with a department filter. Sequential separate searches do not satisfy the item."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        }
+      ],
+      "observation_actions": {
+        "78530301-7132-4243-a8f9-2b9c66e4ec40": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "b8d9f741-6291-41df-bbcc-3e1789778545": [
+          "action-20",
+          "action-21"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Employee authentication reached the authenticated dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "78530301-7132-4243-a8f9-2b9c66e4ec40"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-08": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "0fa07869-6062-4be6-ae7f-fdcff47fdf91"
+          ],
+          "rationale": "Submitted configured Employee credentials and saved the resulting authenticated Employee dashboard. Adjudication: A, B and H agreed."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no nonempty name-search request. Default directory load is not a name search. H over-credited inventory Observations."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: no single request combined nonempty name search with a department filter. Sequential separate searches do not satisfy the item."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "Adjudication: A, B and H all zero; no complete executed support."
+        }
+      ],
+      "observation_actions": {
+        "0fa07869-6062-4be6-ae7f-fdcff47fdf91": [
+          "action-3",
+          "action-4",
+          "action-5"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Employee authentication reached the authenticated dashboard.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "0fa07869-6062-4be6-ae7f-fdcff47fdf91"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?",
+        "Does a directory name search settle to identifiable filtered rows?"
+      ],
+      "unsupported_claims": []
+    }
+  }
+}

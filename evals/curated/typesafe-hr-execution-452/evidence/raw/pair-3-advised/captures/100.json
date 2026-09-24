@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:65100/notifications",
+  "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Notifications\" [level=1]\n  - text: \"Your vacation request was approved by Michael Reed. Aug 20, 2026 Reminder: submit your timesheet for this week. Sep 14, 2026 New company policy: remote work guidelines updated. Sep 16, 2026\"",
+  "admitted": 12,
+  "remaining": 48,
+  "stop": null
+}

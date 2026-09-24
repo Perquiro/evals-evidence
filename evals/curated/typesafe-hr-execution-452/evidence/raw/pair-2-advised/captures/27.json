@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:58861/leave",
+  "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"My leave\" [level=1]\n  - link \"New request\":\n    - /url: /leave/new\n    - button \"New request\"\n  - text: Available balance 18 days Days are deducted when a request is approved.\n  - heading \"Request history\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Dates Days Type Status Manager comment\":\n        - columnheader \"Dates\"\n        - columnheader \"Days\"\n        - columnheader \"Type\"\n        - columnheader \"Status\"\n        - columnheader \"Manager comment\"\n    - rowgroup:\n      - row \"Aug 18, 2026 – Aug 19, 2026 3 Vacation approved Approved – enjoy!\":\n        - cell \"Aug 18, 2026 – Aug 19, 2026\"\n        - cell \"3\"\n        - cell \"Vacation\"\n        - cell \"approved\"\n        - cell \"Approved – enjoy!\"",
+  "actionId": "action-6",
+  "admitted": 6,
+  "remaining": 54
+}

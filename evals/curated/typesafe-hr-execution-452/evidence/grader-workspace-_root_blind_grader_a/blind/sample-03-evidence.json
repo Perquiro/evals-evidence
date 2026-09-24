@@ -1,0 +1,510 @@
+{
+  "browser": {
+    "actions": [
+      {
+        "id": "action-2",
+        "ordinal": 1,
+        "args": {
+          "op": "navigate",
+          "path": "[Product origin]"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "requests": []
+      },
+      {
+        "id": "snapshot-9",
+        "ordinal": 2,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/login",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "requests": []
+      },
+      {
+        "id": "action-3",
+        "ordinal": 3,
+        "args": {
+          "op": "fill",
+          "role": "textbox",
+          "name": "Username",
+          "value": "emily.dawson"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/login",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\": emily.dawson\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "requests": []
+      },
+      {
+        "id": "action-4",
+        "ordinal": 4,
+        "args": {
+          "op": "fill",
+          "role": "textbox",
+          "name": "Password",
+          "value": "[REDACTED]"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/login",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\": emily.dawson\n- text: Password\n- textbox \"Password\": [REDACTED]\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "requests": []
+      },
+      {
+        "id": "action-5",
+        "ordinal": 5,
+        "args": {
+          "op": "click",
+          "role": "button",
+          "name": "Sign in"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/login",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Emily\" [level=1]\n  - text: Leave balance … Pending leave requests 0\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\""
+        },
+        "requests": [
+          {
+            "method": "POST",
+            "url": "[Product origin]/api/login",
+            "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"token\":\"[REDACTED]\",\"user\":{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}}"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/me",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/leave",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/notifications",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"items\":[{\"id\":1,\"text\":\"Your vacation request was approved by Michael Reed.\",\"date\":\"2026-08-20\"},{\"id\":2,\"text\":\"Reminder: submit your timesheet for this week.\",\"date\":\"2026-09-14\"},{\"id\":3,\"text\":\"New company policy: remote work guidelines updated.\",\"date\":\"2026-09-16\"}],\"count\":3}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "snapshot-19",
+        "ordinal": 6,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/dashboard",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Emily\" [level=1]\n  - text: Leave balance … Pending leave requests 0\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-6",
+        "ordinal": 7,
+        "args": {
+          "op": "click",
+          "role": "link",
+          "name": "My Leave"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"My leave\" [level=1]\n  - link \"New request\":\n    - /url: /leave/new\n    - button \"New request\"\n  - text: Available balance 18 days Days are deducted when a request is approved.\n  - heading \"Request history\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Dates Days Type Status Manager comment\":\n        - columnheader \"Dates\"\n        - columnheader \"Days\"\n        - columnheader \"Type\"\n        - columnheader \"Status\"\n        - columnheader \"Manager comment\"\n    - rowgroup:\n      - row \"Aug 18, 2026 – Aug 19, 2026 3 Vacation approved Approved – enjoy!\":\n        - cell \"Aug 18, 2026 – Aug 19, 2026\"\n        - cell \"3\"\n        - cell \"Vacation\"\n        - cell \"approved\"\n        - cell \"Approved – enjoy!\""
+        },
+        "requests": [
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/me",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/leave",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "snapshot-27",
+        "ordinal": 8,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"My leave\" [level=1]\n  - link \"New request\":\n    - /url: /leave/new\n    - button \"New request\"\n  - text: Available balance 18 days Days are deducted when a request is approved.\n  - heading \"Request history\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Dates Days Type Status Manager comment\":\n        - columnheader \"Dates\"\n        - columnheader \"Days\"\n        - columnheader \"Type\"\n        - columnheader \"Status\"\n        - columnheader \"Manager comment\"\n    - rowgroup:\n      - row \"Aug 18, 2026 – Aug 19, 2026 3 Vacation approved Approved – enjoy!\":\n        - cell \"Aug 18, 2026 – Aug 19, 2026\"\n        - cell \"3\"\n        - cell \"Vacation\"\n        - cell \"approved\"\n        - cell \"Approved – enjoy!\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-7",
+        "ordinal": 9,
+        "args": {
+          "op": "click",
+          "role": "link",
+          "name": "New request"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave/new",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox\n  - button \"Submit request\"\n  - button \"Cancel\""
+        },
+        "requests": []
+      },
+      {
+        "id": "snapshot-31",
+        "ordinal": 10,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave/new",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox\n  - button \"Submit request\"\n  - button \"Cancel\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-8",
+        "ordinal": 11,
+        "args": {
+          "op": "click",
+          "role": "button",
+          "name": "Submit request"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave/new",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox\n  - text: Please fill in all required fields.\n  - button \"Submit request\"\n  - button \"Cancel\""
+        },
+        "requests": []
+      },
+      {
+        "id": "snapshot-39",
+        "ordinal": 12,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave/new",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox\n  - text: Please fill in all required fields.\n  - button \"Submit request\"\n  - button \"Cancel\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-9",
+        "ordinal": 13,
+        "args": {
+          "op": "click",
+          "role": "link",
+          "name": "Timesheet"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/timesheet",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Timesheet\" [level=1]\n  - heading \"Week of Sep 14, 2026\" [level=2]\n  - text: draft Mon\n  - spinbutton: \"0\"\n  - text: Tue\n  - spinbutton: \"0\"\n  - text: Wed\n  - spinbutton: \"0\"\n  - text: Thu\n  - spinbutton: \"0\"\n  - text: Fri\n  - spinbutton: \"0\"\n  - text: Sat\n  - spinbutton: \"0\"\n  - text: Sun\n  - spinbutton: \"0\"\n  - text: \"Total: 0 h\"\n  - button \"Save draft\"\n  - button \"Submit week\""
+        },
+        "requests": [
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/timesheet",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"weekStart\":\"2026-09-14\",\"days\":{\"mon\":0,\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":0,\"status\":\"draft\"}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "snapshot-45",
+        "ordinal": 14,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/timesheet",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Timesheet\" [level=1]\n  - heading \"Week of Sep 14, 2026\" [level=2]\n  - text: draft Mon\n  - spinbutton: \"0\"\n  - text: Tue\n  - spinbutton: \"0\"\n  - text: Wed\n  - spinbutton: \"0\"\n  - text: Thu\n  - spinbutton: \"0\"\n  - text: Fri\n  - spinbutton: \"0\"\n  - text: Sat\n  - spinbutton: \"0\"\n  - text: Sun\n  - spinbutton: \"0\"\n  - text: \"Total: 0 h\"\n  - button \"Save draft\"\n  - button \"Submit week\""
+        },
+        "requests": []
+      }
+    ],
+    "network": [
+      {
+        "id": "request-1",
+        "method": "POST",
+        "url": "[Product origin]/api/login",
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after_action": 5,
+        "before_action": 6,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"token\":\"[REDACTED]\",\"user\":{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-2",
+        "method": "GET",
+        "url": "[Product origin]/api/me",
+        "body": "null",
+        "after_action": 5,
+        "before_action": 6,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-3",
+        "method": "GET",
+        "url": "[Product origin]/api/leave",
+        "body": "null",
+        "after_action": 5,
+        "before_action": 6,
+        "response": [
+          {
+            "status": 200,
+            "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-4",
+        "method": "GET",
+        "url": "[Product origin]/api/notifications",
+        "body": "null",
+        "after_action": 5,
+        "before_action": 6,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"items\":[{\"id\":1,\"text\":\"Your vacation request was approved by Michael Reed.\",\"date\":\"2026-08-20\"},{\"id\":2,\"text\":\"Reminder: submit your timesheet for this week.\",\"date\":\"2026-09-14\"},{\"id\":3,\"text\":\"New company policy: remote work guidelines updated.\",\"date\":\"2026-09-16\"}],\"count\":3}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-5",
+        "method": "GET",
+        "url": "[Product origin]/api/me",
+        "body": "null",
+        "after_action": 7,
+        "before_action": 8,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-6",
+        "method": "GET",
+        "url": "[Product origin]/api/leave",
+        "body": "null",
+        "after_action": 7,
+        "before_action": 8,
+        "response": [
+          {
+            "status": 200,
+            "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-7",
+        "method": "GET",
+        "url": "[Product origin]/api/timesheet",
+        "body": "null",
+        "after_action": 13,
+        "before_action": 14,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"weekStart\":\"2026-09-14\",\"days\":{\"mon\":0,\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":0,\"status\":\"draft\"}",
+            "before_close": true
+          }
+        ]
+      }
+    ],
+    "evaluatorRefusals": []
+  },
+  "knowledge": {
+    "observations": [
+      {
+        "id": "df0e1b70-3263-42d4-8df1-262426f363b5",
+        "body": "Signed-out Login displays Username and Password fields, a Sign in button, and demo Employee, Manager, and HR Admin usernames.",
+        "context": {
+          "kind": "surface",
+          "id": "aa395efc-5e09-4a71-80fc-9647d4939696",
+          "name": "Login"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 2
+      },
+      {
+        "id": "71262e96-643f-4b12-a64a-69ab70b99863",
+        "body": "Credentials fields ready.",
+        "context": {
+          "kind": "surface",
+          "id": "aa395efc-5e09-4a71-80fc-9647d4939696",
+          "name": "Login"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 2
+      },
+      {
+        "id": "ee5a0d7e-3a92-4db6-a560-7a170deb8db2",
+        "body": "Signing in as the configured Employee opened the Employee dashboard.",
+        "context": {
+          "kind": "surface",
+          "id": "aa395efc-5e09-4a71-80fc-9647d4939696",
+          "name": "Login"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 6
+      },
+      {
+        "id": "57c78c84-4743-4dae-b505-d4c0e6f0389b",
+        "body": "Employee Dashboard shows navigation to Directory, My Leave, Timesheet, and My Profile; quick actions Request leave and Fill timesheet; a Log out button; pending leave requests count 0; and a leave balance still loading as an ellipsis.",
+        "context": {
+          "kind": "surface",
+          "id": "865c556e-e65c-43d4-b4d8-ca7c44397f1d",
+          "name": "Dashboard"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 6
+      },
+      {
+        "id": "73fd7e93-05da-4e06-843e-63744ec71795",
+        "body": "My Leave offers New request, reports Available balance 18 days with deduction on approval, and shows one approved Vacation history entry for Aug 18–19, 2026 with 3 days and manager comment “Approved – enjoy!”.",
+        "context": {
+          "kind": "surface",
+          "id": "b3713f19-b264-4584-9f34-9797c039ed15",
+          "name": "My Leave"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 8
+      },
+      {
+        "id": "22f0bb1b-75fd-4d3c-81bd-e70f4791de11",
+        "body": "New Leave Request defaults Leave type to Vacation and offers Vacation, Sick, and Personal choices; requires Start date and End date; has optional Reason; states weekends are not counted; and provides Submit request and Cancel.",
+        "context": {
+          "kind": "surface",
+          "id": "1f4a9fa0-206f-46da-a374-bdd9e17cc175",
+          "name": "New Leave Request"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 10
+      },
+      {
+        "id": "0dc068f1-a08c-4da0-96cc-d245c633c2a7",
+        "body": "Blank required date fields are visible; a blank submission is being checked for validation and should not create evaluation data.",
+        "context": {
+          "kind": "surface",
+          "id": "1f4a9fa0-206f-46da-a374-bdd9e17cc175",
+          "name": "New Leave Request"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 10
+      },
+      {
+        "id": "ee4a092e-0223-489d-a44e-712ab340b020",
+        "body": "Submitting the blank leave form kept the Employee on New Leave Request and displayed “Please fill in all required fields.”",
+        "context": {
+          "kind": "surface",
+          "id": "1f4a9fa0-206f-46da-a374-bdd9e17cc175",
+          "name": "New Leave Request"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 12
+      },
+      {
+        "id": "4fb1dec6-a596-4d16-a287-e1efab66afd8",
+        "body": "Timesheet shows a draft for week of Sep 14, 2026 with seven daily hour inputs all at 0, total 0 h, and Save draft and Submit week actions.",
+        "context": {
+          "kind": "surface",
+          "id": "2eb4b49f-7598-4984-9bdf-c2eb64e11273",
+          "name": "Timesheet"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 14
+      }
+    ]
+  }
+}

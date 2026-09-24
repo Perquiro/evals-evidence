@@ -1,0 +1,61 @@
+{
+  "disagreements": [
+    {
+      "sample": "sample-01",
+      "item": "directory-search",
+      "A": true,
+      "B": false,
+      "H": true,
+      "final": true
+    },
+    {
+      "sample": "sample-01",
+      "item": "directory-filter",
+      "A": true,
+      "B": false,
+      "H": false,
+      "final": false
+    },
+    {
+      "sample": "sample-02",
+      "item": "directory-search",
+      "A": false,
+      "B": false,
+      "H": true,
+      "final": false
+    },
+    {
+      "sample": "sample-04",
+      "item": "directory-search",
+      "A": true,
+      "B": false,
+      "H": true,
+      "final": true
+    },
+    {
+      "sample": "sample-05",
+      "item": "directory-search",
+      "A": false,
+      "B": false,
+      "H": true,
+      "final": false
+    },
+    {
+      "sample": "sample-07",
+      "item": "directory-search",
+      "A": true,
+      "B": false,
+      "H": true,
+      "final": true
+    },
+    {
+      "sample": "sample-08",
+      "item": "directory-search",
+      "A": false,
+      "B": false,
+      "H": true,
+      "final": false
+    }
+  ],
+  "note": "Evaluator adjudication against blind captures and saved Observations. Directory-search credited only with nonempty q= request plus saved result. Directory-filter requires combined q and department in one settled request."
+}

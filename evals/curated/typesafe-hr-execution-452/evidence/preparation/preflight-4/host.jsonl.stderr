@@ -1,0 +1,4 @@
+2026-09-24T07:05:53.172929Z ERROR codex_app_server: Project-local config, hooks, and exec policies are disabled in the following folders until the project is trusted, but skills still load.
+    1. C:\dev\Perquiro-452\.perquiro\452\preflight-4\project\.codex
+       To load project-local config, hooks, and exec policies, add c:\dev\perquiro-452\.perquiro\452\preflight-4\project as a trusted project in C:\Users\mathi\.codex\config.toml.
+

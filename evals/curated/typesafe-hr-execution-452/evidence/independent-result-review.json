@@ -1,0 +1,24 @@
+{
+  "reviewer": "/root/driver_spec",
+  "gate": "APPROVED",
+  "packet_sha256": "0dd9d3c1da67baa931e7747c62c9f615cc65f17b7bed6dc09e27a4e2f8d3a01e",
+  "report_sha256": "205f720e3ac102c2f74a1ea098bf7e54aca2da2a85ff9eae50353448ef4d6cda",
+  "reviewed_at": "2026-09-24T08:03:01.449Z",
+  "checks": {
+    "independent_review_request_hashes_match_current_packet_and_report": true,
+    "frozen_evaluator_replay_matches_report_json": true,
+    "all_eight_live_traces_remain_comparability_verified": true,
+    "raw_controls_and_citations_remain_present_and_manifested": true,
+    "initial_grader_identities_match_the_frozen_launch": true,
+    "human_grader_present_alongside_model_graders": true,
+    "comparison_decision_is_inconclusive": true,
+    "complete_api_equivalent_cost_remains_unknown": true,
+    "advice_overhead_journals_retained_when_written": true
+  },
+  "findings": [],
+  "limitations": [
+    "Graders A and B share the gpt-5.6-terra model family; grader H is human.",
+    "Scored runs did not POST leave requests; date selection failed as in #348 despite a successful ordinary rehearsal before freeze.",
+    "Host-visible counters support successive-delta estimates only. Complete API-equivalent cost and actual charges remain unknown."
+  ]
+}

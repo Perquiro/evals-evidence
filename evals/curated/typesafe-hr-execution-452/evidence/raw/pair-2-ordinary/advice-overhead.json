@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "executionId": "5494e146-e342-4ddf-8ab8-0517ef6da47e",
+  "outcomes": [],
+  "overrides": [],
+  "fallbacks": [],
+  "selectionPhases": {
+    "candidate_generation": 450,
+    "ordinary_planning": 500,
+    "advice": null,
+    "advice_handling": null,
+    "override": null,
+    "fallback": null
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "catalogPages": [
+    {
+      "args": {},
+      "raw": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"bc75b1b4-bce8-4e19-93c2-11766f9611e1\",\"coverage\":{\"actors\":1,\"surfaces\":0,\"journeys\":0,\"observations\":0,\"evidence\":0,\"scenarios\":0,\"tests\":0,\"surfacesWithoutObservations\":0,\"journeysWithoutAcceptedScenarios\":0,\"acceptedScenariosWithoutTests\":0},\"entries\":{\"items\":[{\"kind\":\"actor\",\"id\":\"f863629d-d01f-4847-bab3-22a5eb2f7bca\",\"name\":\"Employee\"}],\"complete\":true},\"storedRelationships\":{\"items\":[],\"complete\":true}}"
+          }
+        ]
+      },
+      "value": {
+        "revision": "bc75b1b4-bce8-4e19-93c2-11766f9611e1",
+        "coverage": {
+          "actors": 1,
+          "surfaces": 0,
+          "journeys": 0,
+          "observations": 0,
+          "evidence": 0,
+          "scenarios": 0,
+          "tests": 0,
+          "surfacesWithoutObservations": 0,
+          "journeysWithoutAcceptedScenarios": 0,
+          "acceptedScenariosWithoutTests": 0
+        },
+        "entries": {
+          "items": [
+            {
+              "kind": "actor",
+              "id": "f863629d-d01f-4847-bab3-22a5eb2f7bca",
+              "name": "Employee"
+            }
+          ],
+          "complete": true
+        },
+        "storedRelationships": {
+          "items": [],
+          "complete": true
+        }
+      }
+    }
+  ],
+  "contexts": []
+}
