@@ -1,0 +1,9 @@
+{
+  "decision": "workflow_floor_met",
+  "rationale": "Unscored ordinary Explore rehearsal-ordinary-1 completed and verified an Employee Request leave workflow: POST /api/leave created a pending Vacation request for 2026-10-05 to 2026-10-06, and a later My leave history readback saved Observations for the submission and the history row. Login as emily.dawson was also exercised. Retained despite the known history date-display discrepancy (Oct 5-Oct 5 shown for a two-day request), which #348 also observed and does not remove exercise credit.",
+  "rehearsal_receipts": [
+    ".perquiro/452/rehearsal-ordinary-1/receipt.json"
+  ],
+  "workflow": "Request leave with save and later history readback",
+  "decided_at": "2026-09-24T07:16:41.985Z"
+}

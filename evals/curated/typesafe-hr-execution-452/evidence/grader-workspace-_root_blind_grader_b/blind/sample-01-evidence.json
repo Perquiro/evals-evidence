@@ -1,0 +1,943 @@
+{
+  "browser": {
+    "actions": [
+      {
+        "id": "action-2",
+        "ordinal": 1,
+        "args": {
+          "op": "navigate",
+          "path": "[Product origin]"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "requests": []
+      },
+      {
+        "id": "action-3",
+        "ordinal": 2,
+        "args": {
+          "op": "fill",
+          "role": "textbox",
+          "name": "Username",
+          "value": "emily.dawson"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/login",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\": emily.dawson\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "requests": []
+      },
+      {
+        "id": "action-4",
+        "ordinal": 3,
+        "args": {
+          "op": "fill",
+          "role": "textbox",
+          "name": "Password",
+          "value": "[REDACTED]"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/login",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\": emily.dawson\n- text: Password\n- textbox \"Password\": [REDACTED]\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "requests": []
+      },
+      {
+        "id": "action-5",
+        "ordinal": 4,
+        "args": {
+          "op": "click",
+          "role": "button",
+          "name": "Sign in"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/login",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Emily\" [level=1]\n  - text: Leave balance … Pending leave requests 0\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\""
+        },
+        "requests": [
+          {
+            "method": "POST",
+            "url": "[Product origin]/api/login",
+            "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"token\":\"[REDACTED]\",\"user\":{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}}"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/me",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/leave",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/notifications",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"items\":[{\"id\":1,\"text\":\"Your vacation request was approved by Michael Reed.\",\"date\":\"2026-08-20\"},{\"id\":2,\"text\":\"Reminder: submit your timesheet for this week.\",\"date\":\"2026-09-14\"},{\"id\":3,\"text\":\"New company policy: remote work guidelines updated.\",\"date\":\"2026-09-16\"}],\"count\":3}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "action-6",
+        "ordinal": 5,
+        "args": {
+          "op": "click",
+          "role": "link",
+          "name": "My Profile"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/profile",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"My profile\" [level=1]\n  - text: ED\n  - button \"Upload photo\"\n  - text: Full name\n  - textbox: Emily Dawson\n  - text: Email (read-only)\n  - textbox [disabled]: emily.dawson@bugbusters.io\n  - text: Phone\n  - textbox: 555-0107\n  - text: Emergency contact\n  - textbox \"Name, phone number\": Robert Dawson, 555-0207\n  - button \"Save changes\""
+        },
+        "requests": [
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/me",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "action-7",
+        "ordinal": 6,
+        "args": {
+          "op": "click",
+          "role": "link",
+          "name": "My Leave"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"My leave\" [level=1]\n  - link \"New request\":\n    - /url: /leave/new\n    - button \"New request\"\n  - text: Available balance 18 days Days are deducted when a request is approved.\n  - heading \"Request history\" [level=2]\n  - table:\n    - rowgroup:\n      - row \"Dates Days Type Status Manager comment\":\n        - columnheader \"Dates\"\n        - columnheader \"Days\"\n        - columnheader \"Type\"\n        - columnheader \"Status\"\n        - columnheader \"Manager comment\"\n    - rowgroup:\n      - row \"Aug 18, 2026 – Aug 19, 2026 3 Vacation approved Approved – enjoy!\":\n        - cell \"Aug 18, 2026 – Aug 19, 2026\"\n        - cell \"3\"\n        - cell \"Vacation\"\n        - cell \"approved\"\n        - cell \"Approved – enjoy!\""
+        },
+        "requests": [
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/me",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/leave",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "action-8",
+        "ordinal": 7,
+        "args": {
+          "op": "click",
+          "role": "link",
+          "name": "New request"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave/new",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox\n  - button \"Submit request\"\n  - button \"Cancel\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-9",
+        "ordinal": 8,
+        "args": {
+          "op": "fill",
+          "role": "textbox",
+          "name": "Start date",
+          "value": "2026-10-05"
+        },
+        "executed": false,
+        "within_budget": true,
+        "error": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'Start date', exact: true })\n    - locator resolved to <input readonly value=\"\" class=\"dtfin-301xbf\" placeholder=\"Start date\"/>\n    - fill(\"2026-10-05\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not editable\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not editable\n    - retrying fill action\n      - waiting 100ms\n    10 × waiting for element to be visible, enabled and editable\n       - element is not editable\n     - retrying fill action\n       - waiting 500ms\n",
+        "requests": []
+      },
+      {
+        "id": "action-10",
+        "ordinal": 9,
+        "args": {
+          "op": "fill",
+          "role": "textbox",
+          "name": "End date",
+          "value": "2026-10-05"
+        },
+        "executed": false,
+        "within_budget": true,
+        "error": "TimeoutError: locator.fill: Timeout 5000ms exceeded.\nCall log:\n  - waiting for getByRole('textbox', { name: 'End date', exact: true })\n    - locator resolved to <input readonly value=\"\" class=\"dtfin-rjot37\" placeholder=\"End date\"/>\n    - fill(\"2026-10-05\")\n  - attempting fill action\n    2 × waiting for element to be visible, enabled and editable\n      - element is not editable\n    - retrying fill action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and editable\n      - element is not editable\n    - retrying fill action\n      - waiting 100ms\n    10 × waiting for element to be visible, enabled and editable\n       - element is not editable\n     - retrying fill action\n       - waiting 500ms\n",
+        "requests": []
+      },
+      {
+        "id": "action-11",
+        "ordinal": 10,
+        "args": {
+          "op": "fill",
+          "role": "textbox",
+          "index": 2,
+          "value": "EVALUATION DATA - Explore leave workflow"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave/new",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox: EVALUATION DATA - Explore leave workflow\n  - button \"Submit request\"\n  - button \"Cancel\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-12",
+        "ordinal": 11,
+        "args": {
+          "op": "click",
+          "role": "button",
+          "name": "Submit request"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave/new",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox: EVALUATION DATA - Explore leave workflow\n  - text: Please fill in all required fields.\n  - button \"Submit request\"\n  - button \"Cancel\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-13",
+        "ordinal": 12,
+        "args": {
+          "op": "click",
+          "role": "textbox",
+          "name": "Start date"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/leave/new",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"New leave request\" [level=1]\n  - text: Leave type *\n  - combobox:\n    - option \"Vacation\" [selected]\n    - option \"Sick\"\n    - option \"Personal\"\n  - text: Start date *\n  - textbox \"Start date\"\n  - text: ‹ September 2026 › Mo Tu We Th Fr Sa Su 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 End date *\n  - textbox \"End date\"\n  - paragraph: Weekends are not counted toward your leave.\n  - text: Reason\n  - textbox: EVALUATION DATA - Explore leave workflow\n  - text: Please fill in all required fields.\n  - button \"Submit request\"\n  - button \"Cancel\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-14",
+        "ordinal": 13,
+        "args": {
+          "op": "click",
+          "role": "link",
+          "name": "Timesheet"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/timesheet",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Timesheet\" [level=1]\n  - heading \"Week of Sep 14, 2026\" [level=2]\n  - text: draft Mon\n  - spinbutton: \"0\"\n  - text: Tue\n  - spinbutton: \"0\"\n  - text: Wed\n  - spinbutton: \"0\"\n  - text: Thu\n  - spinbutton: \"0\"\n  - text: Fri\n  - spinbutton: \"0\"\n  - text: Sat\n  - spinbutton: \"0\"\n  - text: Sun\n  - spinbutton: \"0\"\n  - text: \"Total: 0 h\"\n  - button \"Save draft\"\n  - button \"Submit week\""
+        },
+        "requests": [
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/timesheet",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"weekStart\":\"2026-09-14\",\"days\":{\"mon\":0,\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":0,\"status\":\"draft\"}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "action-15",
+        "ordinal": 14,
+        "args": {
+          "op": "fill",
+          "role": "spinbutton",
+          "index": 0,
+          "value": "1"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/timesheet",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Timesheet\" [level=1]\n  - heading \"Week of Sep 14, 2026\" [level=2]\n  - text: draft Mon\n  - spinbutton: \"1\"\n  - text: Tue\n  - spinbutton: \"0\"\n  - text: Wed\n  - spinbutton: \"0\"\n  - text: Thu\n  - spinbutton: \"0\"\n  - text: Fri\n  - spinbutton: \"0\"\n  - text: Sat\n  - spinbutton: \"0\"\n  - text: Sun\n  - spinbutton: \"0\"\n  - text: \"Total: 1 h\"\n  - button \"Save draft\"\n  - button \"Submit week\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-16",
+        "ordinal": 15,
+        "args": {
+          "op": "click",
+          "role": "button",
+          "name": "Save draft"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/timesheet",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Timesheet\" [level=1]\n  - heading \"Week of Sep 14, 2026\" [level=2]\n  - text: draft Mon\n  - spinbutton: \"1\"\n  - text: Tue\n  - spinbutton: \"0\"\n  - text: Wed\n  - spinbutton: \"0\"\n  - text: Thu\n  - spinbutton: \"0\"\n  - text: Fri\n  - spinbutton: \"0\"\n  - text: Sat\n  - spinbutton: \"0\"\n  - text: Sun\n  - spinbutton: \"0\"\n  - text: \"Total: 1 h Draft saved.\"\n  - button \"Save draft\"\n  - button \"Submit week\""
+        },
+        "requests": [
+          {
+            "method": "PUT",
+            "url": "[Product origin]/api/timesheet",
+            "body": "{\"days\":{\"mon\":\"1\",\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":1,\"status\":\"draft\"}",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"weekStart\":\"2026-09-14\",\"days\":{\"mon\":\"1\",\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":1,\"status\":\"draft\"}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "action-17",
+        "ordinal": 16,
+        "args": {
+          "op": "click",
+          "role": "link",
+          "name": "Directory"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/directory",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Employee directory\" [level=1]\n  - textbox \"Search by name…\"\n  - combobox:\n    - option \"All departments\" [selected]\n    - option \"Engineering\"\n    - option \"Sales\"\n    - option \"Marketing\"\n    - option \"Finance\"\n    - option \"HR\"\n  - text: Loading…\n  - table:\n    - rowgroup:\n      - row \"Name ▲ Department Title Email\":\n        - columnheader \"Name ▲\"\n        - columnheader \"Department\"\n        - columnheader \"Title\"\n        - columnheader \"Email\"\n    - rowgroup"
+        },
+        "requests": []
+      },
+      {
+        "id": "action-18",
+        "ordinal": 17,
+        "args": {
+          "op": "wait_for",
+          "role": "textbox",
+          "name": "Search by name…"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/directory",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Employee directory\" [level=1]\n  - textbox \"Search by name…\"\n  - combobox:\n    - option \"All departments\" [selected]\n    - option \"Engineering\"\n    - option \"Sales\"\n    - option \"Marketing\"\n    - option \"Finance\"\n    - option \"HR\"\n  - text: 28 employees\n  - table:\n    - rowgroup:\n      - row \"Name ▲ Department Title Email\":\n        - columnheader \"Name ▲\"\n        - columnheader \"Department\"\n        - columnheader \"Title\"\n        - columnheader \"Email\"\n    - rowgroup:\n      - row \"Abigail Stone HR HR Coordinator abigail.stone@bugbusters.io\":\n        - cell \"Abigail Stone\"\n        - cell \"HR\"\n        - cell \"HR Coordinator\"\n        - cell \"abigail.stone@bugbusters.io\"\n      - row \"Alice Nguyen Engineering Frontend Developer alice.nguyen@bugbusters.io\":\n        - cell \"Alice Nguyen\"\n        - cell \"Engineering\"\n        - cell \"Frontend Developer\"\n        - cell \"alice.nguyen@bugbusters.io\"\n      - row \"Ben Carter Sales Account Executive ben.carter@bugbusters.io\":\n        - cell \"Ben Carter\"\n        - cell \"Sales\"\n        - cell \"Account Executive\"\n        - cell \"ben.carter@bugbusters.io\"\n      - row \"Bianca Ferrari Marketing Content Strategist bianca.ferrari@bugbusters.io\":\n        - cell \"Bianca Ferrari\"\n        - cell \"Marketing\"\n        - cell \"Content Strategist\"\n        - cell \"bianca.ferrari@bugbusters.io\"\n      - row \"Carla Mendes Marketing Graphic Designer carla.mendes@bugbusters.io\":\n        - cell \"Carla Mendes\"\n        - cell \"Marketing\"\n        - cell \"Graphic Designer\"\n        - cell \"carla.mendes@bugbusters.io\"\n      - row \"Daniel Osei Finance Financial Analyst daniel.osei@bugbusters.io\":\n        - cell \"Daniel Osei\"\n        - cell \"Finance\"\n        - cell \"Financial Analyst\"\n        - cell \"daniel.osei@bugbusters.io\"\n      - row \"Emily Dawson Engineering Software Engineer emily.dawson@bugbusters.io\":\n        - cell \"Emily Dawson\"\n        - cell \"Engineering\"\n        - cell \"Software Engineer\"\n        - cell \"emily.dawson@bugbusters.io\"\n      - row \"Fiona Gallagher HR Recruiter fiona.gallagher@bugbusters.io\":\n        - cell \"Fiona Gallagher\"\n        - cell \"HR\"\n        - cell \"Recruiter\"\n        - cell \"fiona.gallagher@bugbusters.io\"\n      - row \"George Tanaka Engineering Backend Developer george.tanaka@bugbusters.io\":\n        - cell \"George Tanaka\"\n        - cell \"Engineering\"\n        - cell \"Backend Developer\"\n        - cell \"george.tanaka@bugbusters.io\"\n      - row \"Hannah Blake HR Head of People hannah.blake@bugbusters.io\":\n        - cell \"Hannah Blake\"\n        - cell \"HR\"\n        - cell \"Head of People\"\n        - cell \"hannah.blake@bugbusters.io\"\n  - button \"Previous\" [disabled]\n  - text: Page 1 of 3\n  - button \"Next\""
+        },
+        "requests": []
+      },
+      {
+        "id": "snapshot-47",
+        "ordinal": 18,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/directory",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Employee directory\" [level=1]\n  - textbox \"Search by name…\"\n  - combobox:\n    - option \"All departments\" [selected]\n    - option \"Engineering\"\n    - option \"Sales\"\n    - option \"Marketing\"\n    - option \"Finance\"\n    - option \"HR\"\n  - text: 28 employees\n  - table:\n    - rowgroup:\n      - row \"Name ▲ Department Title Email\":\n        - columnheader \"Name ▲\"\n        - columnheader \"Department\"\n        - columnheader \"Title\"\n        - columnheader \"Email\"\n    - rowgroup:\n      - row \"Abigail Stone HR HR Coordinator abigail.stone@bugbusters.io\":\n        - cell \"Abigail Stone\"\n        - cell \"HR\"\n        - cell \"HR Coordinator\"\n        - cell \"abigail.stone@bugbusters.io\"\n      - row \"Alice Nguyen Engineering Frontend Developer alice.nguyen@bugbusters.io\":\n        - cell \"Alice Nguyen\"\n        - cell \"Engineering\"\n        - cell \"Frontend Developer\"\n        - cell \"alice.nguyen@bugbusters.io\"\n      - row \"Ben Carter Sales Account Executive ben.carter@bugbusters.io\":\n        - cell \"Ben Carter\"\n        - cell \"Sales\"\n        - cell \"Account Executive\"\n        - cell \"ben.carter@bugbusters.io\"\n      - row \"Bianca Ferrari Marketing Content Strategist bianca.ferrari@bugbusters.io\":\n        - cell \"Bianca Ferrari\"\n        - cell \"Marketing\"\n        - cell \"Content Strategist\"\n        - cell \"bianca.ferrari@bugbusters.io\"\n      - row \"Carla Mendes Marketing Graphic Designer carla.mendes@bugbusters.io\":\n        - cell \"Carla Mendes\"\n        - cell \"Marketing\"\n        - cell \"Graphic Designer\"\n        - cell \"carla.mendes@bugbusters.io\"\n      - row \"Daniel Osei Finance Financial Analyst daniel.osei@bugbusters.io\":\n        - cell \"Daniel Osei\"\n        - cell \"Finance\"\n        - cell \"Financial Analyst\"\n        - cell \"daniel.osei@bugbusters.io\"\n      - row \"Emily Dawson Engineering Software Engineer emily.dawson@bugbusters.io\":\n        - cell \"Emily Dawson\"\n        - cell \"Engineering\"\n        - cell \"Software Engineer\"\n        - cell \"emily.dawson@bugbusters.io\"\n      - row \"Fiona Gallagher HR Recruiter fiona.gallagher@bugbusters.io\":\n        - cell \"Fiona Gallagher\"\n        - cell \"HR\"\n        - cell \"Recruiter\"\n        - cell \"fiona.gallagher@bugbusters.io\"\n      - row \"George Tanaka Engineering Backend Developer george.tanaka@bugbusters.io\":\n        - cell \"George Tanaka\"\n        - cell \"Engineering\"\n        - cell \"Backend Developer\"\n        - cell \"george.tanaka@bugbusters.io\"\n      - row \"Hannah Blake HR Head of People hannah.blake@bugbusters.io\":\n        - cell \"Hannah Blake\"\n        - cell \"HR\"\n        - cell \"Head of People\"\n        - cell \"hannah.blake@bugbusters.io\"\n  - button \"Previous\" [disabled]\n  - text: Page 1 of 3\n  - button \"Next\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-19",
+        "ordinal": 19,
+        "args": {
+          "op": "fill",
+          "role": "textbox",
+          "name": "Search by name…",
+          "value": "Emily"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/directory",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Employee directory\" [level=1]\n  - textbox \"Search by name…\": Emily\n  - combobox:\n    - option \"All departments\" [selected]\n    - option \"Engineering\"\n    - option \"Sales\"\n    - option \"Marketing\"\n    - option \"Finance\"\n    - option \"HR\"\n  - text: 28 employees\n  - table:\n    - rowgroup:\n      - row \"Name ▲ Department Title Email\":\n        - columnheader \"Name ▲\"\n        - columnheader \"Department\"\n        - columnheader \"Title\"\n        - columnheader \"Email\"\n    - rowgroup:\n      - row \"Abigail Stone HR HR Coordinator abigail.stone@bugbusters.io\":\n        - cell \"Abigail Stone\"\n        - cell \"HR\"\n        - cell \"HR Coordinator\"\n        - cell \"abigail.stone@bugbusters.io\"\n      - row \"Alice Nguyen Engineering Frontend Developer alice.nguyen@bugbusters.io\":\n        - cell \"Alice Nguyen\"\n        - cell \"Engineering\"\n        - cell \"Frontend Developer\"\n        - cell \"alice.nguyen@bugbusters.io\"\n      - row \"Ben Carter Sales Account Executive ben.carter@bugbusters.io\":\n        - cell \"Ben Carter\"\n        - cell \"Sales\"\n        - cell \"Account Executive\"\n        - cell \"ben.carter@bugbusters.io\"\n      - row \"Bianca Ferrari Marketing Content Strategist bianca.ferrari@bugbusters.io\":\n        - cell \"Bianca Ferrari\"\n        - cell \"Marketing\"\n        - cell \"Content Strategist\"\n        - cell \"bianca.ferrari@bugbusters.io\"\n      - row \"Carla Mendes Marketing Graphic Designer carla.mendes@bugbusters.io\":\n        - cell \"Carla Mendes\"\n        - cell \"Marketing\"\n        - cell \"Graphic Designer\"\n        - cell \"carla.mendes@bugbusters.io\"\n      - row \"Daniel Osei Finance Financial Analyst daniel.osei@bugbusters.io\":\n        - cell \"Daniel Osei\"\n        - cell \"Finance\"\n        - cell \"Financial Analyst\"\n        - cell \"daniel.osei@bugbusters.io\"\n      - row \"Emily Dawson Engineering Software Engineer emily.dawson@bugbusters.io\":\n        - cell \"Emily Dawson\"\n        - cell \"Engineering\"\n        - cell \"Software Engineer\"\n        - cell \"emily.dawson@bugbusters.io\"\n      - row \"Fiona Gallagher HR Recruiter fiona.gallagher@bugbusters.io\":\n        - cell \"Fiona Gallagher\"\n        - cell \"HR\"\n        - cell \"Recruiter\"\n        - cell \"fiona.gallagher@bugbusters.io\"\n      - row \"George Tanaka Engineering Backend Developer george.tanaka@bugbusters.io\":\n        - cell \"George Tanaka\"\n        - cell \"Engineering\"\n        - cell \"Backend Developer\"\n        - cell \"george.tanaka@bugbusters.io\"\n      - row \"Hannah Blake HR Head of People hannah.blake@bugbusters.io\":\n        - cell \"Hannah Blake\"\n        - cell \"HR\"\n        - cell \"Head of People\"\n        - cell \"hannah.blake@bugbusters.io\"\n  - button \"Previous\" [disabled]\n  - text: Page 1 of 3\n  - button \"Next\""
+        },
+        "requests": []
+      },
+      {
+        "id": "snapshot-51",
+        "ordinal": 20,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/directory",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Employee directory\" [level=1]\n  - textbox \"Search by name…\": Emily\n  - combobox:\n    - option \"All departments\" [selected]\n    - option \"Engineering\"\n    - option \"Sales\"\n    - option \"Marketing\"\n    - option \"Finance\"\n    - option \"HR\"\n  - text: 28 employees\n  - table:\n    - rowgroup:\n      - row \"Name ▲ Department Title Email\":\n        - columnheader \"Name ▲\"\n        - columnheader \"Department\"\n        - columnheader \"Title\"\n        - columnheader \"Email\"\n    - rowgroup:\n      - row \"Abigail Stone HR HR Coordinator abigail.stone@bugbusters.io\":\n        - cell \"Abigail Stone\"\n        - cell \"HR\"\n        - cell \"HR Coordinator\"\n        - cell \"abigail.stone@bugbusters.io\"\n      - row \"Alice Nguyen Engineering Frontend Developer alice.nguyen@bugbusters.io\":\n        - cell \"Alice Nguyen\"\n        - cell \"Engineering\"\n        - cell \"Frontend Developer\"\n        - cell \"alice.nguyen@bugbusters.io\"\n      - row \"Ben Carter Sales Account Executive ben.carter@bugbusters.io\":\n        - cell \"Ben Carter\"\n        - cell \"Sales\"\n        - cell \"Account Executive\"\n        - cell \"ben.carter@bugbusters.io\"\n      - row \"Bianca Ferrari Marketing Content Strategist bianca.ferrari@bugbusters.io\":\n        - cell \"Bianca Ferrari\"\n        - cell \"Marketing\"\n        - cell \"Content Strategist\"\n        - cell \"bianca.ferrari@bugbusters.io\"\n      - row \"Carla Mendes Marketing Graphic Designer carla.mendes@bugbusters.io\":\n        - cell \"Carla Mendes\"\n        - cell \"Marketing\"\n        - cell \"Graphic Designer\"\n        - cell \"carla.mendes@bugbusters.io\"\n      - row \"Daniel Osei Finance Financial Analyst daniel.osei@bugbusters.io\":\n        - cell \"Daniel Osei\"\n        - cell \"Finance\"\n        - cell \"Financial Analyst\"\n        - cell \"daniel.osei@bugbusters.io\"\n      - row \"Emily Dawson Engineering Software Engineer emily.dawson@bugbusters.io\":\n        - cell \"Emily Dawson\"\n        - cell \"Engineering\"\n        - cell \"Software Engineer\"\n        - cell \"emily.dawson@bugbusters.io\"\n      - row \"Fiona Gallagher HR Recruiter fiona.gallagher@bugbusters.io\":\n        - cell \"Fiona Gallagher\"\n        - cell \"HR\"\n        - cell \"Recruiter\"\n        - cell \"fiona.gallagher@bugbusters.io\"\n      - row \"George Tanaka Engineering Backend Developer george.tanaka@bugbusters.io\":\n        - cell \"George Tanaka\"\n        - cell \"Engineering\"\n        - cell \"Backend Developer\"\n        - cell \"george.tanaka@bugbusters.io\"\n      - row \"Hannah Blake HR Head of People hannah.blake@bugbusters.io\":\n        - cell \"Hannah Blake\"\n        - cell \"HR\"\n        - cell \"Head of People\"\n        - cell \"hannah.blake@bugbusters.io\"\n  - button \"Previous\" [disabled]\n  - text: Page 1 of 3\n  - button \"Next\""
+        },
+        "requests": []
+      },
+      {
+        "id": "action-20",
+        "ordinal": 21,
+        "args": {
+          "op": "click",
+          "role": "button",
+          "name": "Notifications"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/notifications",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Notifications\" [level=1]\n  - text: \"Your vacation request was approved by Michael Reed. Aug 20, 2026 Reminder: submit your timesheet for this week. Sep 14, 2026 New company policy: remote work guidelines updated. Sep 16, 2026\""
+        },
+        "requests": [
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/notifications",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"items\":[{\"id\":1,\"text\":\"Your vacation request was approved by Michael Reed.\",\"date\":\"2026-08-20\"},{\"id\":2,\"text\":\"Reminder: submit your timesheet for this week.\",\"date\":\"2026-09-14\"},{\"id\":3,\"text\":\"New company policy: remote work guidelines updated.\",\"date\":\"2026-09-16\"}],\"count\":3}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "action-21",
+        "ordinal": 22,
+        "args": {
+          "op": "navigate",
+          "path": "[Product origin]/directory"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/directory",
+          "snapshot": "- text: Loading…"
+        },
+        "requests": [
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/me",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "action-22",
+        "ordinal": 23,
+        "args": {
+          "op": "select",
+          "role": "combobox",
+          "index": 0,
+          "value": "Engineering"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/directory",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Employee directory\" [level=1]\n  - textbox \"Search by name…\"\n  - combobox:\n    - option \"All departments\"\n    - option \"Engineering\" [selected]\n    - option \"Sales\"\n    - option \"Marketing\"\n    - option \"Finance\"\n    - option \"HR\"\n  - text: 28 employees\n  - table:\n    - rowgroup:\n      - row \"Name ▲ Department Title Email\":\n        - columnheader \"Name ▲\"\n        - columnheader \"Department\"\n        - columnheader \"Title\"\n        - columnheader \"Email\"\n    - rowgroup:\n      - row \"Abigail Stone HR HR Coordinator abigail.stone@bugbusters.io\":\n        - cell \"Abigail Stone\"\n        - cell \"HR\"\n        - cell \"HR Coordinator\"\n        - cell \"abigail.stone@bugbusters.io\"\n      - row \"Alice Nguyen Engineering Frontend Developer alice.nguyen@bugbusters.io\":\n        - cell \"Alice Nguyen\"\n        - cell \"Engineering\"\n        - cell \"Frontend Developer\"\n        - cell \"alice.nguyen@bugbusters.io\"\n      - row \"Ben Carter Sales Account Executive ben.carter@bugbusters.io\":\n        - cell \"Ben Carter\"\n        - cell \"Sales\"\n        - cell \"Account Executive\"\n        - cell \"ben.carter@bugbusters.io\"\n      - row \"Bianca Ferrari Marketing Content Strategist bianca.ferrari@bugbusters.io\":\n        - cell \"Bianca Ferrari\"\n        - cell \"Marketing\"\n        - cell \"Content Strategist\"\n        - cell \"bianca.ferrari@bugbusters.io\"\n      - row \"Carla Mendes Marketing Graphic Designer carla.mendes@bugbusters.io\":\n        - cell \"Carla Mendes\"\n        - cell \"Marketing\"\n        - cell \"Graphic Designer\"\n        - cell \"carla.mendes@bugbusters.io\"\n      - row \"Daniel Osei Finance Financial Analyst daniel.osei@bugbusters.io\":\n        - cell \"Daniel Osei\"\n        - cell \"Finance\"\n        - cell \"Financial Analyst\"\n        - cell \"daniel.osei@bugbusters.io\"\n      - row \"Emily Dawson Engineering Software Engineer emily.dawson@bugbusters.io\":\n        - cell \"Emily Dawson\"\n        - cell \"Engineering\"\n        - cell \"Software Engineer\"\n        - cell \"emily.dawson@bugbusters.io\"\n      - row \"Fiona Gallagher HR Recruiter fiona.gallagher@bugbusters.io\":\n        - cell \"Fiona Gallagher\"\n        - cell \"HR\"\n        - cell \"Recruiter\"\n        - cell \"fiona.gallagher@bugbusters.io\"\n      - row \"George Tanaka Engineering Backend Developer george.tanaka@bugbusters.io\":\n        - cell \"George Tanaka\"\n        - cell \"Engineering\"\n        - cell \"Backend Developer\"\n        - cell \"george.tanaka@bugbusters.io\"\n      - row \"Hannah Blake HR Head of People hannah.blake@bugbusters.io\":\n        - cell \"Hannah Blake\"\n        - cell \"HR\"\n        - cell \"Head of People\"\n        - cell \"hannah.blake@bugbusters.io\"\n  - button \"Previous\" [disabled]\n  - text: Page 1 of 3\n  - button \"Next\""
+        },
+        "requests": [
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"items\":[{\"id\":1,\"name\":\"Abigail Stone\",\"role\":\"employee\",\"department\":\"HR\",\"title\":\"HR Coordinator\",\"managerId\":10,\"email\":\"abigail.stone@bugbusters.io\",\"phone\":\"555-0101\",\"startDate\":\"2021-03-15\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Hannah Blake\"},{\"id\":2,\"name\":\"Alice Nguyen\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Frontend Developer\",\"managerId\":15,\"email\":\"alice.nguyen@bugbusters.io\",\"phone\":\"555-0102\",\"startDate\":\"2022-01-10\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":3,\"name\":\"Ben Carter\",\"role\":\"employee\",\"department\":\"Sales\",\"title\":\"Account Executive\",\"managerId\":12,\"email\":\"ben.carter@bugbusters.io\",\"phone\":\"555-0103\",\"startDate\":\"2020-06-01\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Julia Romero\"},{\"id\":4,\"name\":\"Bianca Ferrari\",\"role\":\"employee\",\"department\":\"Marketing\",\"title\":\"Content Strategist\",\"managerId\":14,\"email\":\"bianca.ferrari@bugbusters.io\",\"phone\":\"555-0104\",\"startDate\":\"2023-02-20\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Laura Kim\"},{\"id\":5,\"name\":\"Carla Mendes\",\"role\":\"employee\",\"department\":\"Marketing\",\"title\":\"Graphic Designer\",\"managerId\":14,\"email\":\"carla.mendes@bugbusters.io\",\"phone\":\"555-0105\",\"startDate\":\"2021-09-05\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Laura Kim\"},{\"id\":6,\"name\":\"Daniel Osei\",\"role\":\"employee\",\"department\":\"Finance\",\"title\":\"Financial Analyst\",\"managerId\":21,\"email\":\"daniel.osei@bugbusters.io\",\"phone\":\"555-0106\",\"startDate\":\"2022-04-11\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Samuel Turner\"},{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":8,\"name\":\"Fiona Gallagher\",\"role\":\"employee\",\"department\":\"HR\",\"title\":\"Recruiter\",\"managerId\":10,\"email\":\"fiona.gallagher@bugbusters.io\",\"phone\":\"555-0108\",\"startDate\":\"2020-08-17\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Hannah Blake\"},{\"id\":9,\"name\":\"George Tanaka\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Backend Developer\",\"managerId\":15,\"email\":\"george.tanaka@bugbusters.io\",\"phone\":\"555-0109\",\"startDate\":\"2019-05-23\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":10,\"name\":\"Hannah Blake\",\"username\":\"hannah.blake\",\"role\":\"hr\",\"department\":\"HR\",\"title\":\"Head of People\",\"managerId\":null,\"email\":\"hannah.blake@bugbusters.io\",\"phone\":\"555-0110\",\"startDate\":\"2018-01-08\",\"leaveBalance\":25,\"emergencyContact\":\"Sarah Blake, 555-0210\",\"avatar\":null,\"managerName\":null}],\"total\":28,\"page\":1,\"pages\":3}"
+              }
+            ]
+          },
+          {
+            "method": "GET",
+            "url": "[Product origin]/api/employees?q=&department=Engineering&sort=name&dir=asc&page=1",
+            "body": "null",
+            "response": [
+              {
+                "status": 200,
+                "body": "{\"items\":[{\"id\":2,\"name\":\"Alice Nguyen\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Frontend Developer\",\"managerId\":15,\"email\":\"alice.nguyen@bugbusters.io\",\"phone\":\"555-0102\",\"startDate\":\"2022-01-10\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":9,\"name\":\"George Tanaka\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Backend Developer\",\"managerId\":15,\"email\":\"george.tanaka@bugbusters.io\",\"phone\":\"555-0109\",\"startDate\":\"2019-05-23\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":13,\"name\":\"Kevin Zhang\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"DevOps Engineer\",\"managerId\":15,\"email\":\"kevin.zhang@bugbusters.io\",\"phone\":\"555-0113\",\"startDate\":\"2023-01-30\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":15,\"name\":\"Michael Reed\",\"username\":\"michael.reed\",\"role\":\"manager\",\"department\":\"Engineering\",\"title\":\"Engineering Manager\",\"managerId\":10,\"email\":\"michael.reed@bugbusters.io\",\"phone\":\"555-0115\",\"startDate\":\"2018-06-25\",\"leaveBalance\":22,\"emergencyContact\":\"Karen Reed, 555-0215\",\"avatar\":null,\"managerName\":\"Hannah Blake\"},{\"id\":18,\"name\":\"Priya Sharma\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"QA Engineer\",\"managerId\":15,\"email\":\"priya.sharma@bugbusters.io\",\"phone\":\"555-0118\",\"startDate\":\"2020-12-07\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":22,\"name\":\"Tara Lindqvist\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Data Engineer\",\"managerId\":15,\"email\":\"tara.lindqvist@bugbusters.io\",\"phone\":\"555-0122\",\"startDate\":\"2021-08-16\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":27,\"name\":\"Yara Aziz\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Mobile Developer\",\"managerId\":15,\"email\":\"yara.aziz@bugbusters.io\",\"phone\":\"555-0127\",\"startDate\":\"2023-03-13\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"}],\"total\":8,\"page\":1,\"pages\":1}"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "snapshot-61",
+        "ordinal": 24,
+        "args": {
+          "op": "snapshot"
+        },
+        "executed": true,
+        "within_budget": true,
+        "result": {
+          "url": "[Product origin]/directory",
+          "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Employee directory\" [level=1]\n  - textbox \"Search by name…\"\n  - combobox:\n    - option \"All departments\"\n    - option \"Engineering\" [selected]\n    - option \"Sales\"\n    - option \"Marketing\"\n    - option \"Finance\"\n    - option \"HR\"\n  - text: 28 employees\n  - table:\n    - rowgroup:\n      - row \"Name ▲ Department Title Email\":\n        - columnheader \"Name ▲\"\n        - columnheader \"Department\"\n        - columnheader \"Title\"\n        - columnheader \"Email\"\n    - rowgroup:\n      - row \"Abigail Stone HR HR Coordinator abigail.stone@bugbusters.io\":\n        - cell \"Abigail Stone\"\n        - cell \"HR\"\n        - cell \"HR Coordinator\"\n        - cell \"abigail.stone@bugbusters.io\"\n      - row \"Alice Nguyen Engineering Frontend Developer alice.nguyen@bugbusters.io\":\n        - cell \"Alice Nguyen\"\n        - cell \"Engineering\"\n        - cell \"Frontend Developer\"\n        - cell \"alice.nguyen@bugbusters.io\"\n      - row \"Ben Carter Sales Account Executive ben.carter@bugbusters.io\":\n        - cell \"Ben Carter\"\n        - cell \"Sales\"\n        - cell \"Account Executive\"\n        - cell \"ben.carter@bugbusters.io\"\n      - row \"Bianca Ferrari Marketing Content Strategist bianca.ferrari@bugbusters.io\":\n        - cell \"Bianca Ferrari\"\n        - cell \"Marketing\"\n        - cell \"Content Strategist\"\n        - cell \"bianca.ferrari@bugbusters.io\"\n      - row \"Carla Mendes Marketing Graphic Designer carla.mendes@bugbusters.io\":\n        - cell \"Carla Mendes\"\n        - cell \"Marketing\"\n        - cell \"Graphic Designer\"\n        - cell \"carla.mendes@bugbusters.io\"\n      - row \"Daniel Osei Finance Financial Analyst daniel.osei@bugbusters.io\":\n        - cell \"Daniel Osei\"\n        - cell \"Finance\"\n        - cell \"Financial Analyst\"\n        - cell \"daniel.osei@bugbusters.io\"\n      - row \"Emily Dawson Engineering Software Engineer emily.dawson@bugbusters.io\":\n        - cell \"Emily Dawson\"\n        - cell \"Engineering\"\n        - cell \"Software Engineer\"\n        - cell \"emily.dawson@bugbusters.io\"\n      - row \"Fiona Gallagher HR Recruiter fiona.gallagher@bugbusters.io\":\n        - cell \"Fiona Gallagher\"\n        - cell \"HR\"\n        - cell \"Recruiter\"\n        - cell \"fiona.gallagher@bugbusters.io\"\n      - row \"George Tanaka Engineering Backend Developer george.tanaka@bugbusters.io\":\n        - cell \"George Tanaka\"\n        - cell \"Engineering\"\n        - cell \"Backend Developer\"\n        - cell \"george.tanaka@bugbusters.io\"\n      - row \"Hannah Blake HR Head of People hannah.blake@bugbusters.io\":\n        - cell \"Hannah Blake\"\n        - cell \"HR\"\n        - cell \"Head of People\"\n        - cell \"hannah.blake@bugbusters.io\"\n  - button \"Previous\" [disabled]\n  - text: Page 1 of 3\n  - button \"Next\""
+        },
+        "requests": []
+      }
+    ],
+    "network": [
+      {
+        "id": "request-1",
+        "method": "POST",
+        "url": "[Product origin]/api/login",
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after_action": 4,
+        "before_action": 5,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"token\":\"[REDACTED]\",\"user\":{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-2",
+        "method": "GET",
+        "url": "[Product origin]/api/me",
+        "body": "null",
+        "after_action": 4,
+        "before_action": 5,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-3",
+        "method": "GET",
+        "url": "[Product origin]/api/leave",
+        "body": "null",
+        "after_action": 4,
+        "before_action": 5,
+        "response": [
+          {
+            "status": 200,
+            "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-4",
+        "method": "GET",
+        "url": "[Product origin]/api/notifications",
+        "body": "null",
+        "after_action": 4,
+        "before_action": 5,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"items\":[{\"id\":1,\"text\":\"Your vacation request was approved by Michael Reed.\",\"date\":\"2026-08-20\"},{\"id\":2,\"text\":\"Reminder: submit your timesheet for this week.\",\"date\":\"2026-09-14\"},{\"id\":3,\"text\":\"New company policy: remote work guidelines updated.\",\"date\":\"2026-09-16\"}],\"count\":3}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-5",
+        "method": "GET",
+        "url": "[Product origin]/api/me",
+        "body": "null",
+        "after_action": 5,
+        "before_action": 6,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-6",
+        "method": "GET",
+        "url": "[Product origin]/api/me",
+        "body": "null",
+        "after_action": 6,
+        "before_action": 7,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-7",
+        "method": "GET",
+        "url": "[Product origin]/api/leave",
+        "body": "null",
+        "after_action": 6,
+        "before_action": 7,
+        "response": [
+          {
+            "status": 200,
+            "body": "[{\"id\":1,\"userId\":7,\"employeeName\":\"Emily Dawson\",\"startDate\":\"2026-08-18\",\"endDate\":\"2026-08-20\",\"type\":\"Vacation\",\"reason\":\"Long weekend away\",\"days\":3,\"status\":\"approved\",\"comment\":\"Approved – enjoy!\",\"createdAt\":1786622400000}]",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-8",
+        "method": "GET",
+        "url": "[Product origin]/api/timesheet",
+        "body": "null",
+        "after_action": 13,
+        "before_action": 14,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"weekStart\":\"2026-09-14\",\"days\":{\"mon\":0,\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":0,\"status\":\"draft\"}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-9",
+        "method": "PUT",
+        "url": "[Product origin]/api/timesheet",
+        "body": "{\"days\":{\"mon\":\"1\",\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":1,\"status\":\"draft\"}",
+        "after_action": 15,
+        "before_action": 16,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"weekStart\":\"2026-09-14\",\"days\":{\"mon\":\"1\",\"tue\":0,\"wed\":0,\"thu\":0,\"fri\":0,\"sat\":0,\"sun\":0},\"total\":1,\"status\":\"draft\"}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-10",
+        "method": "GET",
+        "url": "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1",
+        "body": "null",
+        "after_action": 16,
+        "before_action": 17,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"items\":[{\"id\":1,\"name\":\"Abigail Stone\",\"role\":\"employee\",\"department\":\"HR\",\"title\":\"HR Coordinator\",\"managerId\":10,\"email\":\"abigail.stone@bugbusters.io\",\"phone\":\"555-0101\",\"startDate\":\"2021-03-15\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Hannah Blake\"},{\"id\":2,\"name\":\"Alice Nguyen\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Frontend Developer\",\"managerId\":15,\"email\":\"alice.nguyen@bugbusters.io\",\"phone\":\"555-0102\",\"startDate\":\"2022-01-10\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":3,\"name\":\"Ben Carter\",\"role\":\"employee\",\"department\":\"Sales\",\"title\":\"Account Executive\",\"managerId\":12,\"email\":\"ben.carter@bugbusters.io\",\"phone\":\"555-0103\",\"startDate\":\"2020-06-01\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Julia Romero\"},{\"id\":4,\"name\":\"Bianca Ferrari\",\"role\":\"employee\",\"department\":\"Marketing\",\"title\":\"Content Strategist\",\"managerId\":14,\"email\":\"bianca.ferrari@bugbusters.io\",\"phone\":\"555-0104\",\"startDate\":\"2023-02-20\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Laura Kim\"},{\"id\":5,\"name\":\"Carla Mendes\",\"role\":\"employee\",\"department\":\"Marketing\",\"title\":\"Graphic Designer\",\"managerId\":14,\"email\":\"carla.mendes@bugbusters.io\",\"phone\":\"555-0105\",\"startDate\":\"2021-09-05\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Laura Kim\"},{\"id\":6,\"name\":\"Daniel Osei\",\"role\":\"employee\",\"department\":\"Finance\",\"title\":\"Financial Analyst\",\"managerId\":21,\"email\":\"daniel.osei@bugbusters.io\",\"phone\":\"555-0106\",\"startDate\":\"2022-04-11\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Samuel Turner\"},{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":8,\"name\":\"Fiona Gallagher\",\"role\":\"employee\",\"department\":\"HR\",\"title\":\"Recruiter\",\"managerId\":10,\"email\":\"fiona.gallagher@bugbusters.io\",\"phone\":\"555-0108\",\"startDate\":\"2020-08-17\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Hannah Blake\"},{\"id\":9,\"name\":\"George Tanaka\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Backend Developer\",\"managerId\":15,\"email\":\"george.tanaka@bugbusters.io\",\"phone\":\"555-0109\",\"startDate\":\"2019-05-23\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":10,\"name\":\"Hannah Blake\",\"username\":\"hannah.blake\",\"role\":\"hr\",\"department\":\"HR\",\"title\":\"Head of People\",\"managerId\":null,\"email\":\"hannah.blake@bugbusters.io\",\"phone\":\"555-0110\",\"startDate\":\"2018-01-08\",\"leaveBalance\":25,\"emergencyContact\":\"Sarah Blake, 555-0210\",\"avatar\":null,\"managerName\":null}],\"total\":28,\"page\":1,\"pages\":3}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-11",
+        "method": "GET",
+        "url": "[Product origin]/api/employees?q=Emily&department=&sort=name&dir=asc&page=1",
+        "body": "null",
+        "after_action": 20,
+        "before_action": 21,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"items\":[{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}],\"total\":1,\"page\":1,\"pages\":1}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-12",
+        "method": "GET",
+        "url": "[Product origin]/api/notifications",
+        "body": "null",
+        "after_action": 21,
+        "before_action": 22,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"items\":[{\"id\":1,\"text\":\"Your vacation request was approved by Michael Reed.\",\"date\":\"2026-08-20\"},{\"id\":2,\"text\":\"Reminder: submit your timesheet for this week.\",\"date\":\"2026-09-14\"},{\"id\":3,\"text\":\"New company policy: remote work guidelines updated.\",\"date\":\"2026-09-16\"}],\"count\":3}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-13",
+        "method": "GET",
+        "url": "[Product origin]/api/me",
+        "body": "null",
+        "after_action": 22,
+        "before_action": 23,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-14",
+        "method": "GET",
+        "url": "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1",
+        "body": "null",
+        "after_action": 23,
+        "before_action": 24,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"items\":[{\"id\":1,\"name\":\"Abigail Stone\",\"role\":\"employee\",\"department\":\"HR\",\"title\":\"HR Coordinator\",\"managerId\":10,\"email\":\"abigail.stone@bugbusters.io\",\"phone\":\"555-0101\",\"startDate\":\"2021-03-15\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Hannah Blake\"},{\"id\":2,\"name\":\"Alice Nguyen\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Frontend Developer\",\"managerId\":15,\"email\":\"alice.nguyen@bugbusters.io\",\"phone\":\"555-0102\",\"startDate\":\"2022-01-10\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":3,\"name\":\"Ben Carter\",\"role\":\"employee\",\"department\":\"Sales\",\"title\":\"Account Executive\",\"managerId\":12,\"email\":\"ben.carter@bugbusters.io\",\"phone\":\"555-0103\",\"startDate\":\"2020-06-01\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Julia Romero\"},{\"id\":4,\"name\":\"Bianca Ferrari\",\"role\":\"employee\",\"department\":\"Marketing\",\"title\":\"Content Strategist\",\"managerId\":14,\"email\":\"bianca.ferrari@bugbusters.io\",\"phone\":\"555-0104\",\"startDate\":\"2023-02-20\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Laura Kim\"},{\"id\":5,\"name\":\"Carla Mendes\",\"role\":\"employee\",\"department\":\"Marketing\",\"title\":\"Graphic Designer\",\"managerId\":14,\"email\":\"carla.mendes@bugbusters.io\",\"phone\":\"555-0105\",\"startDate\":\"2021-09-05\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Laura Kim\"},{\"id\":6,\"name\":\"Daniel Osei\",\"role\":\"employee\",\"department\":\"Finance\",\"title\":\"Financial Analyst\",\"managerId\":21,\"email\":\"daniel.osei@bugbusters.io\",\"phone\":\"555-0106\",\"startDate\":\"2022-04-11\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Samuel Turner\"},{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":8,\"name\":\"Fiona Gallagher\",\"role\":\"employee\",\"department\":\"HR\",\"title\":\"Recruiter\",\"managerId\":10,\"email\":\"fiona.gallagher@bugbusters.io\",\"phone\":\"555-0108\",\"startDate\":\"2020-08-17\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Hannah Blake\"},{\"id\":9,\"name\":\"George Tanaka\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Backend Developer\",\"managerId\":15,\"email\":\"george.tanaka@bugbusters.io\",\"phone\":\"555-0109\",\"startDate\":\"2019-05-23\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":10,\"name\":\"Hannah Blake\",\"username\":\"hannah.blake\",\"role\":\"hr\",\"department\":\"HR\",\"title\":\"Head of People\",\"managerId\":null,\"email\":\"hannah.blake@bugbusters.io\",\"phone\":\"555-0110\",\"startDate\":\"2018-01-08\",\"leaveBalance\":25,\"emergencyContact\":\"Sarah Blake, 555-0210\",\"avatar\":null,\"managerName\":null}],\"total\":28,\"page\":1,\"pages\":3}",
+            "before_close": true
+          }
+        ]
+      },
+      {
+        "id": "request-15",
+        "method": "GET",
+        "url": "[Product origin]/api/employees?q=&department=Engineering&sort=name&dir=asc&page=1",
+        "body": "null",
+        "after_action": 23,
+        "before_action": 24,
+        "response": [
+          {
+            "status": 200,
+            "body": "{\"items\":[{\"id\":2,\"name\":\"Alice Nguyen\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Frontend Developer\",\"managerId\":15,\"email\":\"alice.nguyen@bugbusters.io\",\"phone\":\"555-0102\",\"startDate\":\"2022-01-10\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":7,\"name\":\"Emily Dawson\",\"username\":\"emily.dawson\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Software Engineer\",\"managerId\":15,\"email\":\"emily.dawson@bugbusters.io\",\"phone\":\"555-0107\",\"startDate\":\"2021-11-01\",\"leaveBalance\":18,\"emergencyContact\":\"Robert Dawson, 555-0207\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":9,\"name\":\"George Tanaka\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Backend Developer\",\"managerId\":15,\"email\":\"george.tanaka@bugbusters.io\",\"phone\":\"555-0109\",\"startDate\":\"2019-05-23\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":13,\"name\":\"Kevin Zhang\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"DevOps Engineer\",\"managerId\":15,\"email\":\"kevin.zhang@bugbusters.io\",\"phone\":\"555-0113\",\"startDate\":\"2023-01-30\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":15,\"name\":\"Michael Reed\",\"username\":\"michael.reed\",\"role\":\"manager\",\"department\":\"Engineering\",\"title\":\"Engineering Manager\",\"managerId\":10,\"email\":\"michael.reed@bugbusters.io\",\"phone\":\"555-0115\",\"startDate\":\"2018-06-25\",\"leaveBalance\":22,\"emergencyContact\":\"Karen Reed, 555-0215\",\"avatar\":null,\"managerName\":\"Hannah Blake\"},{\"id\":18,\"name\":\"Priya Sharma\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"QA Engineer\",\"managerId\":15,\"email\":\"priya.sharma@bugbusters.io\",\"phone\":\"555-0118\",\"startDate\":\"2020-12-07\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":22,\"name\":\"Tara Lindqvist\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Data Engineer\",\"managerId\":15,\"email\":\"tara.lindqvist@bugbusters.io\",\"phone\":\"555-0122\",\"startDate\":\"2021-08-16\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"},{\"id\":27,\"name\":\"Yara Aziz\",\"role\":\"employee\",\"department\":\"Engineering\",\"title\":\"Mobile Developer\",\"managerId\":15,\"email\":\"yara.aziz@bugbusters.io\",\"phone\":\"555-0127\",\"startDate\":\"2023-03-13\",\"leaveBalance\":20,\"emergencyContact\":\"\",\"avatar\":null,\"managerName\":\"Michael Reed\"}],\"total\":8,\"page\":1,\"pages\":1}",
+            "before_close": true
+          }
+        ]
+      }
+    ],
+    "evaluatorRefusals": []
+  },
+  "knowledge": {
+    "observations": [
+      {
+        "id": "b7ffdfb1-d016-4f9f-a2d6-255b694716c1",
+        "body": "Signed-out portal shows Username and Password fields and a Sign in button.",
+        "context": {
+          "kind": "surface",
+          "id": "b6e78bf9-fb00-4185-b047-11175b742854",
+          "name": "Sign in"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 1
+      },
+      {
+        "id": "488d04d0-f69e-4b00-8918-92fcd10fe38a",
+        "body": "Username and password fields are visible and ready for Employee sign-in.",
+        "context": {
+          "kind": "surface",
+          "id": "b6e78bf9-fb00-4185-b047-11175b742854",
+          "name": "Sign in"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 1
+      },
+      {
+        "id": "3c910bc9-c7bb-4495-8674-9142af9c787a",
+        "body": "Signing in as Emily Dawson opened the employee dashboard.",
+        "context": {
+          "kind": "surface",
+          "id": "b6e78bf9-fb00-4185-b047-11175b742854",
+          "name": "Sign in"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 4
+      },
+      {
+        "id": "4fbbb259-2567-49ea-a7c5-05ad3b5efac6",
+        "body": "Employee dashboard welcomes Emily and offers Directory, My Leave, Timesheet, My Profile, Request leave, Fill timesheet, and Log out. Leave balance was still loading and pending leave requests showed 0.",
+        "context": {
+          "kind": "surface",
+          "id": "e1110b3b-c19a-448e-918f-bb2a193a75a0",
+          "name": "Dashboard"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 4
+      },
+      {
+        "id": "7025ad9e-f23c-4f17-af86-65ba6cd9e40d",
+        "body": "My profile displays editable full name, phone, and emergency contact; email is disabled. It also offers Upload photo and Save changes.",
+        "context": {
+          "kind": "surface",
+          "id": "895c7fbb-58bf-499e-bda5-725dbb24ac84",
+          "name": "My profile"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 5
+      },
+      {
+        "id": "dc5e52d8-809c-4a6a-a43c-f761c9c948c7",
+        "body": "My leave offers New request, shows an available balance of 18 days, and lists an approved Vacation request for Aug 18–19, 2026 with 3 days and manager comment “Approved – enjoy!”.",
+        "context": {
+          "kind": "surface",
+          "id": "817d7a1c-93cd-48f3-852c-7f4efb59d802",
+          "name": "My leave"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 6
+      },
+      {
+        "id": "44d42c59-f411-42ca-8694-b045585b2579",
+        "body": "New leave request offers Vacation, Sick, and Personal types; required start and end date fields; an optional reason; Submit request; and Cancel. It states that weekends are not counted toward leave.",
+        "context": {
+          "kind": "surface",
+          "id": "44a3abc6-082c-4c19-8276-a65e4477d2ec",
+          "name": "New leave request"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 7
+      },
+      {
+        "id": "ce225e28-2bce-4555-8e44-5300dd105770",
+        "body": "Vacation is selected and the leave request form is ready to submit one future weekday of clearly marked evaluation data.",
+        "context": {
+          "kind": "surface",
+          "id": "44a3abc6-082c-4c19-8276-a65e4477d2ec",
+          "name": "New leave request"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 7
+      },
+      {
+        "id": "f0c44c06-7700-4d12-9594-f3f099b5224f",
+        "body": "Submitting with blank start and end dates stayed on New leave request and displayed “Please fill in all required fields.” The evaluation reason remained entered; no leave request was created.",
+        "context": {
+          "kind": "surface",
+          "id": "44a3abc6-082c-4c19-8276-a65e4477d2ec",
+          "name": "New leave request"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 11
+      },
+      {
+        "id": "40e54b06-fbe4-4981-9e0f-533d31edd701",
+        "body": "Timesheet shows a draft for week of Sep 14, 2026 with Monday–Sunday hour inputs at 0, total 0 h, Save draft, and Submit week.",
+        "context": {
+          "kind": "surface",
+          "id": "5e3bdbed-542f-4569-8c11-9d9cf097eaee",
+          "name": "Timesheet"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 13
+      },
+      {
+        "id": "3ac5f945-5eba-4ff7-a1ce-068d622f2090",
+        "body": "The Sep 14 draft is empty and Save draft is available; a one-hour evaluation-data draft will be saved.",
+        "context": {
+          "kind": "surface",
+          "id": "5e3bdbed-542f-4569-8c11-9d9cf097eaee",
+          "name": "Timesheet"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 13
+      },
+      {
+        "id": "127d1df2-6bd0-47c9-ac56-0841c1e099c1",
+        "body": "Saving one Monday hour as evaluation data kept the week in draft status, showed total 1 h, and displayed “Draft saved.”",
+        "context": {
+          "kind": "surface",
+          "id": "5e3bdbed-542f-4569-8c11-9d9cf097eaee",
+          "name": "Timesheet"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 15
+      },
+      {
+        "id": "d51469a0-2796-4a45-8816-df78e94651a8",
+        "body": "Employee directory offers name search, an All departments selector with Engineering, Sales, Marketing, Finance, and HR options, and pagination. It loaded 28 employees on page 1 of 3; Previous was disabled and Next was offered.",
+        "context": {
+          "kind": "surface",
+          "id": "38fb5e50-c7e8-4f75-94e6-e59e5b1bb34b",
+          "name": "Employee directory"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 18
+      },
+      {
+        "id": "a42f6133-8c9c-49bf-8653-b63b1a71ccc4",
+        "body": "Entering “Emily” in the directory’s search field did not change the displayed count of 28 or page-1 rows, which still included employees with other names.",
+        "context": {
+          "kind": "surface",
+          "id": "38fb5e50-c7e8-4f75-94e6-e59e5b1bb34b",
+          "name": "Employee directory"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 20
+      },
+      {
+        "id": "656c1c8b-f9b3-417c-a520-56a468006e18",
+        "body": "Selecting Engineering in the directory department selector also left the count at 28 and retained rows from HR, Sales, Marketing, and Finance as well as Engineering.",
+        "context": {
+          "kind": "surface",
+          "id": "38fb5e50-c7e8-4f75-94e6-e59e5b1bb34b",
+          "name": "Employee directory"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 24
+      },
+      {
+        "id": "a76b29f9-2307-4a35-990d-73ddc95cea7b",
+        "body": "Notifications shows three messages: vacation approval by Michael Reed dated Aug 20, 2026; a timesheet reminder dated Sep 14, 2026; and an updated remote-work-policy notice dated Sep 16, 2026.",
+        "context": {
+          "kind": "surface",
+          "id": "de98409a-8607-4822-9137-c241da1a067c",
+          "name": "Notifications"
+        },
+        "saved_before_close": true,
+        "saved_after_action": 21
+      }
+    ]
+  }
+}

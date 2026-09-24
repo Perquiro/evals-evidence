@@ -1,0 +1,11 @@
+[
+  {
+    "kind": "tool",
+    "name": "hang_until_timeout",
+    "args": {
+      "reason": "timeout-control"
+    },
+    "callId": "exec-9eeb535f-8cdc-45ce-a540-851bceff8a1e",
+    "started_ms": 3979.3496000000014
+  }
+]

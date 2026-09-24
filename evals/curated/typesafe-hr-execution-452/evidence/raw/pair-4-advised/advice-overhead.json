@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "executionId": "fb6b7259-1745-4c36-aa3d-b4933ffe69fe",
+  "outcomes": [
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 807.6837999999989,
+      "usage": {
+        "inputTokens": 830,
+        "outputTokens": 33,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:48:33.584Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 717.2236000000048,
+      "usage": {
+        "inputTokens": 1815,
+        "outputTokens": 33,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:48:59.925Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 806.0567999999912,
+      "usage": {
+        "inputTokens": 2844,
+        "outputTokens": 58,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:49:52.255Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 758.9597999999824,
+      "usage": {
+        "inputTokens": 1991,
+        "outputTokens": 35,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:50:29.640Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 724.1252999999851,
+      "usage": {
+        "inputTokens": 2884,
+        "outputTokens": 35,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:51:25.201Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 713.5315999999875,
+      "usage": {
+        "inputTokens": 2649,
+        "outputTokens": 51,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:51:58.461Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 725.7386999999871,
+      "usage": {
+        "inputTokens": 2202,
+        "outputTokens": 41,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:52:41.926Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 830.3534999999683,
+      "usage": {
+        "inputTokens": 2892,
+        "outputTokens": 33,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:53:36.870Z"
+    }
+  ],
+  "overrides": [],
+  "fallbacks": [],
+  "selectionPhases": {
+    "candidate_generation": null,
+    "ordinary_planning": null,
+    "advice": 830,
+    "advice_handling": null,
+    "override": null,
+    "fallback": null
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "executionId": "ad9884c6-571d-4cc2-bd96-4b804578d25f",
+  "outcomes": [
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 710.2750999999989,
+      "usage": {
+        "inputTokens": 1465,
+        "outputTokens": 33,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:24:48.487Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 720.6241999999911,
+      "usage": {
+        "inputTokens": 2725,
+        "outputTokens": 46,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:26:49.472Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 741.1347999999998,
+      "usage": {
+        "inputTokens": 2047,
+        "outputTokens": 35,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:27:26.868Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 749.6024000000034,
+      "usage": {
+        "inputTokens": 2378,
+        "outputTokens": 33,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:27:52.376Z"
+    }
+  ],
+  "overrides": [],
+  "fallbacks": [],
+  "selectionPhases": {
+    "candidate_generation": null,
+    "advice": 750,
+    "advice_handling": null
+  }
+}

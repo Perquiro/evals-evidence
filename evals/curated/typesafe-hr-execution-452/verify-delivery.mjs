@@ -7,7 +7,7 @@ import { sha } from './execute.mjs';
 export function verifyResultReview({launch,required,review,packetHash,reportHash}) {
   assert.equal(required.reviewer,launch.result_reviewer);
   assert.equal(review.reviewer,launch.result_reviewer,'Independent result reviewer differs from launch');
-  assert.ok(!['/root',launch.grader_1,launch.grader_2].includes(review.reviewer),'Result review must remain independent of grading and adjudication');
+  assert.ok(!['/root',launch.grader_1,launch.grader_2,launch.grader_3].includes(review.reviewer),'Result review must remain independent of grading and adjudication');
   for(const [key,value] of [['packet_sha256',packetHash],['report_sha256',reportHash]]){assert.equal(required[key],value,'Generated report changed before review');assert.equal(review[key],value,'Independent review covers different report bytes');}
   assert.equal(review.gate,'APPROVED','Independent result review has not approved this packet');
   return {verified:true,reviewer:review.reviewer,packet_sha256:packetHash,report_sha256:reportHash};

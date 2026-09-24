@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:51076/timesheet",
+  "snapshot": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Timesheet\" [level=1]\n  - heading \"Week of Sep 14, 2026\" [level=2]\n  - text: draft Mon\n  - spinbutton: \"8\"\n  - text: Tue\n  - spinbutton: \"0\"\n  - text: Wed\n  - spinbutton: \"0\"\n  - text: Thu\n  - spinbutton: \"0\"\n  - text: Fri\n  - spinbutton: \"0\"\n  - text: Sat\n  - spinbutton: \"0\"\n  - text: Sun\n  - spinbutton: \"0\"\n  - text: \"Total: 8 h Draft saved.\"\n  - button \"Save draft\"\n  - button \"Submit week\"",
+  "actionId": "action-19",
+  "admitted": 9,
+  "remaining": 51
+}
