@@ -71,7 +71,10 @@ export async function runHost({cwd,instructions,prompt,tools,callTool,output,tim
     settings.mcpInventories=inventories;
     await rpc('turn/start',{threadId:settings.thread.id,input:[{type:'text',text:prompt,text_elements:[]}],model:'gpt-5.6-terra',effort:'low'});
     const result=await done;closed=true;const elapsed_ms=performance.now()-started;onClose();
-    let drainTimer;try{await Promise.race([toolQueue,new Promise((_,reject)=>{drainTimer=setTimeout(()=>reject(new Error('Post-close capture drain failed')),20000);})]);}finally{clearTimeout(drainTimer);}
-    return {settings,result,elapsed_ms,post_close_drain_ms:performance.now()-started-elapsed_ms};
+    let drainTimer;let post_close_drain_ms=null;let post_close_drain_error=null;
+    try{await Promise.race([toolQueue,new Promise((_,reject)=>{drainTimer=setTimeout(()=>reject(new Error('Post-close capture drain failed')),20000);})]);post_close_drain_ms=performance.now()-started-elapsed_ms;}
+    catch(error){post_close_drain_error=String(error);post_close_drain_ms=performance.now()-started-elapsed_ms;if(result.status!=='timeout')throw error;}
+    finally{clearTimeout(drainTimer);}
+    return {settings,result,elapsed_ms,post_close_drain_ms,post_close_drain_error};
   } finally {closed=true;clearTimeout(timer);signal?.removeEventListener('abort',abort);child.stdin.end();child.kill();}
 }
