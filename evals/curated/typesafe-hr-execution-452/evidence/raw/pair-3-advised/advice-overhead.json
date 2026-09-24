@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "executionId": "ade4f37d-c58a-451e-b5ab-7b9d3c11fc95",
+  "outcomes": [
+    {
+      "status": "no_selection",
+      "source": "typesafe",
+      "elapsedMs": 794.5721999999951,
+      "usage": {
+        "inputTokens": 1373,
+        "outputTokens": 31,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:33:21.123Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 736.760300000009,
+      "usage": {
+        "inputTokens": 2376,
+        "outputTokens": 53,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:33:52.513Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 817.1194000000105,
+      "usage": {
+        "inputTokens": 2340,
+        "outputTokens": 41,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:34:26.194Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 830.7631999999867,
+      "usage": {
+        "inputTokens": 4327,
+        "outputTokens": 48,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:34:54.802Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 837.4906999999948,
+      "usage": {
+        "inputTokens": 2653,
+        "outputTokens": 47,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:35:38.720Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 802.8084999999846,
+      "usage": {
+        "inputTokens": 3657,
+        "outputTokens": 49,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:36:09.031Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 834.5603000000119,
+      "usage": {
+        "inputTokens": 2636,
+        "outputTokens": 47,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:36:48.569Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 790.4120000000112,
+      "usage": {
+        "inputTokens": 2679,
+        "outputTokens": 45,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:37:17.292Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 810.1109999999753,
+      "usage": {
+        "inputTokens": 2524,
+        "outputTokens": 38,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:37:43.992Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 883.0963999999803,
+      "usage": {
+        "inputTokens": 3309,
+        "outputTokens": 40,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:38:14.728Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 683.5443000000087,
+      "usage": {
+        "inputTokens": 2405,
+        "outputTokens": 31,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:38:33.342Z"
+    }
+  ],
+  "overrides": [],
+  "fallbacks": [
+    {
+      "reason": "TypeSafe returned no_selection; Employee login remains the necessary prerequisite to discover useful workflows.",
+      "observedAt": "2026-09-24T07:33:27.907Z"
+    }
+  ],
+  "selectionPhases": {
+    "candidate_generation": null,
+    "ordinary_planning": null,
+    "advice": 684,
+    "advice_handling": null,
+    "fallback": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "kind": "pinned_product_source_proof",
+  "passed": true,
+  "pinned_commit": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+  "archive_entries": 31,
+  "export_source_entries": 31,
+  "comparison": {
+    "missing_from_export": [],
+    "unexpected_in_export": [],
+    "all_match": true
+  },
+  "preflight_product_source_sha256": "0043c990ecd58697cfe1099f3b640f9ab66eb84e7cf09ee1aba045b80f68cdb7",
+  "preflight_product_build_sha256": "0ce7da8b5f1853df3faa36439242db01c1d58f3fabe06d61e79a953abf9ed0f9"
+}

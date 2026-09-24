@@ -1,0 +1,20 @@
+{
+  "grader_a": {
+    "identity": "/root/blind_grader_a",
+    "model": "gpt-5.6-terra",
+    "effort": "low",
+    "note": "Model grader; same family as B."
+  },
+  "grader_b": {
+    "identity": "/root/blind_grader_b",
+    "model": "gpt-5.6-terra",
+    "effort": "high",
+    "note": "Model grader; same family as A."
+  },
+  "grader_human": {
+    "identity": "/root/blind_grader_human",
+    "kind": "human",
+    "note": "Delivery operator applying GRADING.md to blind packets only."
+  },
+  "adjudication": "/root"
+}

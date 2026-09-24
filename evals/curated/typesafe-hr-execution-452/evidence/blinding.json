@@ -1,0 +1,19 @@
+{
+  "aliases": {
+    "pair-4-ordinary": "sample-01",
+    "pair-1-ordinary": "sample-02",
+    "pair-2-advised": "sample-03",
+    "pair-3-ordinary": "sample-04",
+    "pair-2-ordinary": "sample-05",
+    "pair-1-advised": "sample-06",
+    "pair-3-advised": "sample-07",
+    "pair-4-advised": "sample-08"
+  },
+  "transformations": [
+    "Random order/opaque sample IDs",
+    "No planning, model, advice, cost, elapsed time, launch or host material in anonymous packets",
+    "Loopback origins replaced; planning-label strings masked consistently",
+    "Actions retain order, inputs, actual captures and network outcomes; Observations retain original IDs and bodies apart from masking",
+    "saved_after_action is only a temporal bound, never causal support"
+  ]
+}

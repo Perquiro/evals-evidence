@@ -1,0 +1,438 @@
+{
+  "scope": "issue 452 preparation only, separate from the eight candidate executions.",
+  "records": [
+    {
+      "source": "preparation/preflight-4/host.jsonl",
+      "sha256": "a5fbf28830537e472f047e83db89ecb303ffa5636ed7ce2d04760dbeaae07629",
+      "index": {
+        "path": "preparation/preflight-4/host.jsonl.index.json",
+        "sha256": "9ab12d0b7c508fbf0f1ad16d6588d25e778653631cb9722e1040aea895b35af2"
+      },
+      "calls": [
+        {
+          "id": "preflight-4/host.jsonl:host-1",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 7285,
+            "cached_input": 0,
+            "cache_write_input": 0,
+            "output": 156,
+            "reasoning_output": 126
+          },
+          "actual_charge_usd": null,
+          "event_index": 22,
+          "usable_output_event_indices": [
+            19
+          ],
+          "at_ms": 7610.268500000002,
+          "raw": "preparation/preflight-4/host.jsonl.index.json#/events/22"
+        },
+        {
+          "id": "preflight-4/host.jsonl:host-2",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 7471,
+            "cached_input": 6912,
+            "cache_write_input": 0,
+            "output": 36,
+            "reasoning_output": 0
+          },
+          "actual_charge_usd": null,
+          "event_index": 58,
+          "usable_output_event_indices": [
+            57
+          ],
+          "at_ms": 9035.5442,
+          "raw": "preparation/preflight-4/host.jsonl.index.json#/events/58"
+        }
+      ],
+      "note": "Only host-visible usage is priced. Missing transport attempts and actual charges remain unknown."
+    },
+    {
+      "source": "preparation/driver-probe-2/host.jsonl",
+      "sha256": "1c52a4d79de9b67cf18c17335f627fdad27968abe4c00763e68e7a9f9380fc09",
+      "index": {
+        "path": "preparation/driver-probe-2/host.jsonl.index.json",
+        "sha256": "8bc090da035eb04f36c612c3fc7a5999b06e94e8e0a4ad2a945ac2a872c222a4"
+      },
+      "calls": [
+        {
+          "id": "driver-probe-2/host.jsonl:host-1",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 21413,
+            "cached_input": 0,
+            "cache_write_input": 0,
+            "output": 216,
+            "reasoning_output": 124
+          },
+          "actual_charge_usd": null,
+          "event_index": 42,
+          "usable_output_event_indices": [
+            19,
+            23,
+            27,
+            31,
+            35,
+            39
+          ],
+          "at_ms": 9653.0507,
+          "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/42"
+        },
+        {
+          "id": "driver-probe-2/host.jsonl:host-2",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 23043,
+            "cached_input": 21248,
+            "cache_write_input": 0,
+            "output": 172,
+            "reasoning_output": 31
+          },
+          "actual_charge_usd": null,
+          "event_index": 62,
+          "usable_output_event_indices": [
+            47,
+            51,
+            55,
+            59
+          ],
+          "at_ms": 14538.8357,
+          "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/62"
+        },
+        {
+          "id": "driver-probe-2/host.jsonl:host-3",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 23648,
+            "cached_input": 22272,
+            "cache_write_input": 0,
+            "output": 286,
+            "reasoning_output": 121
+          },
+          "actual_charge_usd": null,
+          "event_index": 74,
+          "usable_output_event_indices": [
+            67,
+            71
+          ],
+          "at_ms": 21964.2769,
+          "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/74"
+        },
+        {
+          "id": "driver-probe-2/host.jsonl:host-4",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 24094,
+            "cached_input": 23296,
+            "cache_write_input": 0,
+            "output": 389,
+            "reasoning_output": 25
+          },
+          "actual_charge_usd": null,
+          "event_index": 86,
+          "usable_output_event_indices": [
+            79,
+            83
+          ],
+          "at_ms": 31069.934599999997,
+          "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/86"
+        },
+        {
+          "id": "driver-probe-2/host.jsonl:host-5",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 25943,
+            "cached_input": 23296,
+            "cache_write_input": 0,
+            "output": 271,
+            "reasoning_output": 117
+          },
+          "actual_charge_usd": null,
+          "event_index": 98,
+          "usable_output_event_indices": [
+            91,
+            95
+          ],
+          "at_ms": 39674.3447,
+          "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/98"
+        },
+        {
+          "id": "driver-probe-2/host.jsonl:host-6",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 26397,
+            "cached_input": 25344,
+            "cache_write_input": 0,
+            "output": 88,
+            "reasoning_output": 0
+          },
+          "actual_charge_usd": null,
+          "event_index": 186,
+          "usable_output_event_indices": [
+            185
+          ],
+          "at_ms": 42824.921700000006,
+          "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/186"
+        }
+      ],
+      "note": "Only host-visible usage is priced. Missing transport attempts and actual charges remain unknown."
+    },
+    {
+      "source": "preparation/timeout-probe-1/host.jsonl",
+      "sha256": "b0c48491293067c64cea72e6d50420904354140a2e14fd3f94769d1d22a76f8d",
+      "index": {
+        "path": "preparation/timeout-probe-1/host.jsonl.index.json",
+        "sha256": "4d12cebc85e1e6442cb7b381fcb39f93febf876e0eca807af3592650a15d4203"
+      },
+      "calls": [
+        {
+          "id": "timeout-probe-1/host.jsonl:host-1",
+          "model": "gpt-5.6-terra",
+          "status": "ok",
+          "usage": {
+            "input": 21323,
+            "cached_input": 0,
+            "cache_write_input": 0,
+            "output": 36,
+            "reasoning_output": 11
+          },
+          "actual_charge_usd": null,
+          "event_index": 20,
+          "usable_output_event_indices": [
+            19
+          ],
+          "at_ms": 34841.5443,
+          "raw": "preparation/timeout-probe-1/host.jsonl.index.json#/events/20"
+        },
+        {
+          "id": "timeout-probe-1/host.jsonl:host-2",
+          "model": "gpt-5.6-terra",
+          "status": "unattributed_usage",
+          "usage": {
+            "input": 21387,
+            "cached_input": 20224,
+            "cache_write_input": 0,
+            "output": 40,
+            "reasoning_output": 7
+          },
+          "actual_charge_usd": null,
+          "event_index": 24,
+          "usable_output_event_indices": [],
+          "at_ms": 47009.3855,
+          "raw": "preparation/timeout-probe-1/host.jsonl.index.json#/events/24"
+        },
+        {
+          "id": "timeout-probe-1/host.jsonl:host-3",
+          "model": "gpt-5.6-terra",
+          "status": "unattributed_usage",
+          "usage": {
+            "input": 21455,
+            "cached_input": 21248,
+            "cache_write_input": 0,
+            "output": 39,
+            "reasoning_output": 6
+          },
+          "actual_charge_usd": null,
+          "event_index": 28,
+          "usable_output_event_indices": [],
+          "at_ms": 59574.758299999994,
+          "raw": "preparation/timeout-probe-1/host.jsonl.index.json#/events/28"
+        }
+      ],
+      "note": "Only host-visible usage is priced. Missing transport attempts and actual charges remain unknown."
+    },
+    {
+      "source": "preparation/preflight-4/receipt.json",
+      "sha256": "da597059846451bca2fe81b91d50523928cb26a779ccd25f5931a94168388c69",
+      "calls": [
+        {
+          "id": "preflight-4:typesafe-0",
+          "model": "jev-1.13.0",
+          "status": "ok",
+          "usage": {
+            "input": 788,
+            "cached_input": null,
+            "cache_write_input": null,
+            "output": 33,
+            "reasoning_output": null
+          },
+          "actual_charge_usd": null,
+          "raw": "preparation/preflight-4/receipt.json#/provider/0"
+        }
+      ],
+      "note": "Unscored live TypeSafe preflight usage."
+    }
+  ],
+  "known_usage": {
+    "api_equivalent_usd": null,
+    "known_component_subtotal_usd": 0.172787096,
+    "unknown": [
+      "call ledger incomplete",
+      "non-token cost unknown"
+    ],
+    "actual_charges_usd": null,
+    "known_actual_call_charges_usd": 0,
+    "failed_attempts": 2,
+    "tokens_by_model": {
+      "gpt-5.6-terra": {
+        "input": {
+          "known": 223459,
+          "unknown_calls": 0
+        },
+        "cached_input": {
+          "known": 163840,
+          "unknown_calls": 0
+        },
+        "cache_write_input": {
+          "known": 0,
+          "unknown_calls": 0
+        },
+        "output": {
+          "known": 1729,
+          "unknown_calls": 0
+        },
+        "reasoning_output": {
+          "known": 568,
+          "unknown_calls": 0
+        }
+      },
+      "jev-1.13.0": {
+        "input": {
+          "known": 788,
+          "unknown_calls": 0
+        },
+        "cached_input": {
+          "known": 0,
+          "unknown_calls": 1
+        },
+        "cache_write_input": {
+          "known": 0,
+          "unknown_calls": 1
+        },
+        "output": {
+          "known": 33,
+          "unknown_calls": 0
+        },
+        "reasoning_output": {
+          "known": 0,
+          "unknown_calls": 1
+        }
+      }
+    },
+    "attempts": [
+      {
+        "id": "preflight-4/host.jsonl:host-1",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.016442,
+        "unknown": [],
+        "raw": "preparation/preflight-4/host.jsonl.index.json#/events/22"
+      },
+      {
+        "id": "preflight-4/host.jsonl:host-2",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.0029324,
+        "unknown": [],
+        "raw": "preparation/preflight-4/host.jsonl.index.json#/events/58"
+      },
+      {
+        "id": "driver-probe-2/host.jsonl:host-1",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.045418,
+        "unknown": [],
+        "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/42"
+      },
+      {
+        "id": "driver-probe-2/host.jsonl:host-2",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.0099036,
+        "unknown": [],
+        "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/62"
+      },
+      {
+        "id": "driver-probe-2/host.jsonl:host-3",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.0106384,
+        "unknown": [],
+        "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/74"
+      },
+      {
+        "id": "driver-probe-2/host.jsonl:host-4",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.0109232,
+        "unknown": [],
+        "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/86"
+      },
+      {
+        "id": "driver-probe-2/host.jsonl:host-5",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.0132052,
+        "unknown": [],
+        "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/98"
+      },
+      {
+        "id": "driver-probe-2/host.jsonl:host-6",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.0082308,
+        "unknown": [],
+        "raw": "preparation/driver-probe-2/host.jsonl.index.json#/events/186"
+      },
+      {
+        "id": "timeout-probe-1/host.jsonl:host-1",
+        "model": "gpt-5.6-terra",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.043078,
+        "unknown": [],
+        "raw": "preparation/timeout-probe-1/host.jsonl.index.json#/events/20"
+      },
+      {
+        "id": "timeout-probe-1/host.jsonl:host-2",
+        "model": "gpt-5.6-terra",
+        "status": "unattributed_usage",
+        "known_component_subtotal_usd": 0.0068508,
+        "unknown": [],
+        "raw": "preparation/timeout-probe-1/host.jsonl.index.json#/events/24"
+      },
+      {
+        "id": "timeout-probe-1/host.jsonl:host-3",
+        "model": "gpt-5.6-terra",
+        "status": "unattributed_usage",
+        "known_component_subtotal_usd": 0.0051316,
+        "unknown": [],
+        "raw": "preparation/timeout-probe-1/host.jsonl.index.json#/events/28"
+      },
+      {
+        "id": "preflight-4:typesafe-0",
+        "model": "jev-1.13.0",
+        "status": "ok",
+        "known_component_subtotal_usd": 0.000033096,
+        "unknown": [],
+        "raw": "preparation/preflight-4/receipt.json#/provider/0"
+      }
+    ],
+    "price_basis": "API-equivalent standard token pricing, not actual charges",
+    "currency": "USD"
+  },
+  "unknowns": [
+    "Authoring and review/grader usage are not exposed to this evaluator.",
+    "Underlying host transport attempts, unfinished-request usage, attributable non-token charges, and actual charges are unavailable.",
+    "Earlier #347 preparation and synthetic experiments are preserved separately and are not recomputed here."
+  ],
+  "interpretation": "The known component subtotal is not total experiment cost. Preflight stages with no captured counters are not assumed free."
+}

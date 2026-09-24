@@ -1,0 +1,1968 @@
+{
+  "sample-01": {
+    "actionCount": 24,
+    "obsCount": 16,
+    "loginPosts": [
+      {
+        "status": 200,
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after": 4
+      }
+    ],
+    "leavePosts": [],
+    "leaveGets": 2,
+    "searches": [
+      "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1",
+      "[Product origin]/api/employees?q=Emily&department=&sort=name&dir=asc&page=1",
+      "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1",
+      "[Product origin]/api/employees?q=&department=Engineering&sort=name&dir=asc&page=1"
+    ],
+    "obsBodies": [
+      {
+        "id": "b7ffdfb1-d016-4f9f-a2d6-255b694716c1",
+        "saved": true,
+        "after": 1,
+        "body": "Signed-out portal shows Username and Password fields and a Sign in button."
+      },
+      {
+        "id": "488d04d0-f69e-4b00-8918-92fcd10fe38a",
+        "saved": true,
+        "after": 1,
+        "body": "Username and password fields are visible and ready for Employee sign-in."
+      },
+      {
+        "id": "3c910bc9-c7bb-4495-8674-9142af9c787a",
+        "saved": true,
+        "after": 4,
+        "body": "Signing in as Emily Dawson opened the employee dashboard."
+      },
+      {
+        "id": "4fbbb259-2567-49ea-a7c5-05ad3b5efac6",
+        "saved": true,
+        "after": 4,
+        "body": "Employee dashboard welcomes Emily and offers Directory, My Leave, Timesheet, My Profile, Request leave, Fill timesheet, and Log out. Leave balance was still loading and pending leave requests showed 0."
+      },
+      {
+        "id": "7025ad9e-f23c-4f17-af86-65ba6cd9e40d",
+        "saved": true,
+        "after": 5,
+        "body": "My profile displays editable full name, phone, and emergency contact; email is disabled. It also offers Upload photo and Save changes."
+      },
+      {
+        "id": "dc5e52d8-809c-4a6a-a43c-f761c9c948c7",
+        "saved": true,
+        "after": 6,
+        "body": "My leave offers New request, shows an available balance of 18 days, and lists an approved Vacation request for Aug 18–19, 2026 with 3 days and manager comment “Approved – enjoy!”."
+      },
+      {
+        "id": "44d42c59-f411-42ca-8694-b045585b2579",
+        "saved": true,
+        "after": 7,
+        "body": "New leave request offers Vacation, Sick, and Personal types; required start and end date fields; an optional reason; Submit request; and Cancel. It states that weekends are not counted toward leave."
+      },
+      {
+        "id": "ce225e28-2bce-4555-8e44-5300dd105770",
+        "saved": true,
+        "after": 7,
+        "body": "Vacation is selected and the leave request form is ready to submit one future weekday of clearly marked evaluation data."
+      },
+      {
+        "id": "f0c44c06-7700-4d12-9594-f3f099b5224f",
+        "saved": true,
+        "after": 11,
+        "body": "Submitting with blank start and end dates stayed on New leave request and displayed “Please fill in all required fields.” The evaluation reason remained entered; no leave request was created."
+      },
+      {
+        "id": "40e54b06-fbe4-4981-9e0f-533d31edd701",
+        "saved": true,
+        "after": 13,
+        "body": "Timesheet shows a draft for week of Sep 14, 2026 with Monday–Sunday hour inputs at 0, total 0 h, Save draft, and Submit week."
+      },
+      {
+        "id": "3ac5f945-5eba-4ff7-a1ce-068d622f2090",
+        "saved": true,
+        "after": 13,
+        "body": "The Sep 14 draft is empty and Save draft is available; a one-hour evaluation-data draft will be saved."
+      },
+      {
+        "id": "127d1df2-6bd0-47c9-ac56-0841c1e099c1",
+        "saved": true,
+        "after": 15,
+        "body": "Saving one Monday hour as evaluation data kept the week in draft status, showed total 1 h, and displayed “Draft saved.”"
+      },
+      {
+        "id": "d51469a0-2796-4a45-8816-df78e94651a8",
+        "saved": true,
+        "after": 18,
+        "body": "Employee directory offers name search, an All departments selector with Engineering, Sales, Marketing, Finance, and HR options, and pagination. It loaded 28 employees on page 1 of 3; Previous was disabled and Next was of"
+      },
+      {
+        "id": "a42f6133-8c9c-49bf-8653-b63b1a71ccc4",
+        "saved": true,
+        "after": 20,
+        "body": "Entering “Emily” in the directory’s search field did not change the displayed count of 28 or page-1 rows, which still included employees with other names."
+      },
+      {
+        "id": "656c1c8b-f9b3-417c-a520-56a468006e18",
+        "saved": true,
+        "after": 24,
+        "body": "Selecting Engineering in the directory department selector also left the count at 28 and retained rows from HR, Sales, Marketing, and Finance as well as Engineering."
+      },
+      {
+        "id": "a76b29f9-2307-4a35-990d-73ddc95cea7b",
+        "saved": true,
+        "after": 21,
+        "body": "Notifications shows three messages: vacation approval by Michael Reed dated Aug 20, 2026; a timesheet reminder dated Sep 14, 2026; and an updated remote-work-policy notice dated Sep 16, 2026."
+      }
+    ],
+    "actionOps": [
+      {
+        "id": "action-2",
+        "op": "navigate",
+        "path": "[Product origin]",
+        "executed": true
+      },
+      {
+        "id": "action-3",
+        "op": "fill",
+        "name": "Username",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-4",
+        "op": "fill",
+        "name": "Password",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-5",
+        "op": "click",
+        "name": "Sign in",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "action-6",
+        "op": "click",
+        "name": "My Profile",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-7",
+        "op": "click",
+        "name": "My Leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-8",
+        "op": "click",
+        "name": "New request",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-9",
+        "op": "fill",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-10",
+        "op": "fill",
+        "name": "End date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-11",
+        "op": "fill",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-12",
+        "op": "click",
+        "name": "Submit request",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "action-13",
+        "op": "click",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-14",
+        "op": "click",
+        "name": "Timesheet",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-15",
+        "op": "fill",
+        "role": "spinbutton",
+        "executed": true
+      },
+      {
+        "id": "action-16",
+        "op": "click",
+        "name": "Save draft",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "action-17",
+        "op": "click",
+        "name": "Directory",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-18",
+        "op": "wait_for",
+        "name": "Search by name…",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-47",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-19",
+        "op": "fill",
+        "name": "Search by name…",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-51",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-20",
+        "op": "click",
+        "name": "Notifications",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "action-21",
+        "op": "navigate",
+        "path": "[Product origin]/directory",
+        "executed": true
+      },
+      {
+        "id": "action-22",
+        "op": "select",
+        "role": "combobox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-61",
+        "op": "snapshot",
+        "executed": true
+      }
+    ]
+  },
+  "sample-02": {
+    "actionCount": 16,
+    "obsCount": 11,
+    "loginPosts": [
+      {
+        "status": 200,
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after": 4
+      }
+    ],
+    "leavePosts": [],
+    "leaveGets": 2,
+    "searches": [
+      "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1"
+    ],
+    "obsBodies": [
+      {
+        "id": "faaeff7f-5356-4b03-a7cb-af23da76b4ce",
+        "saved": true,
+        "after": 1,
+        "body": "The signed-out employee portal shows Username and Password fields, a Sign in button, and demo account names."
+      },
+      {
+        "id": "4ba85817-a7c2-4613-9cfd-94283236f655",
+        "saved": true,
+        "after": 1,
+        "body": "The sign-in form is visible and ready for Employee credentials."
+      },
+      {
+        "id": "1681705c-cbee-402f-82af-630071654b54",
+        "saved": true,
+        "after": 4,
+        "body": "Signing in as Employee reached the authenticated dashboard, which displays navigation to Dashboard, Directory, My Leave, Timesheet, and My Profile."
+      },
+      {
+        "id": "db721b15-4abb-4986-a216-3567b1b4dcb7",
+        "saved": true,
+        "after": 4,
+        "body": "The dashboard welcomes Emily, shows leave balance loading and zero pending leave requests, and offers links for Directory, My Leave, Timesheet, My Profile, Request leave, and Fill timesheet plus Log out."
+      },
+      {
+        "id": "ef9ecaba-a652-4a83-95b7-d5a6143de364",
+        "saved": true,
+        "after": 5,
+        "body": "My leave shows an available balance of 18 days, a New request link, and one approved Vacation request from Aug 18–19, 2026 for 3 days with manager comment “Approved – enjoy!”."
+      },
+      {
+        "id": "0f8d0bea-e7b6-4177-95f7-5175a5eeeea5",
+        "saved": true,
+        "after": 6,
+        "body": "The new leave request form defaults Leave type to Vacation and provides required Start date and End date fields, an optional Reason field, Submit request, and Cancel; it notes that weekends are not counted."
+      },
+      {
+        "id": "14f36460-c33e-4b7c-ab59-dfb820fac541",
+        "saved": true,
+        "after": 6,
+        "body": "Vacation is selected; the leave form is ready to submit evaluation data for Oct 20–21, 2026 with reason “Evaluation data”."
+      },
+      {
+        "id": "4862bb66-3457-4f71-824e-3a094afbc25b",
+        "saved": true,
+        "after": 11,
+        "body": "Submitting after the date fields remained empty showed Please fill in all required fields and stayed on New leave request; no evaluation leave request was created."
+      },
+      {
+        "id": "10928640-0000-4f54-8aea-30642e602a0e",
+        "saved": true,
+        "after": 12,
+        "body": "My profile displays editable Full name, Phone, and Emergency contact fields, a disabled Email field, Upload photo, and Save changes."
+      },
+      {
+        "id": "56aed83f-fefe-4659-8aa6-75ef522b4aae",
+        "saved": true,
+        "after": 13,
+        "body": "Timesheet shows a draft for the week of Sep 14, 2026 with daily hour inputs Monday through Sunday all at 0, total 0 h, and Save draft and Submit week actions."
+      },
+      {
+        "id": "1ff8a66d-0289-42a2-8809-1afbbb3be456",
+        "saved": true,
+        "after": 16,
+        "body": "Employee directory loads 28 employees, shows name, department, title, and email columns, a name search field, an all-departments filter with five department choices, and pagination on page 1 of 3."
+      }
+    ],
+    "actionOps": [
+      {
+        "id": "action-2",
+        "op": "navigate",
+        "path": "[Product origin]",
+        "executed": true
+      },
+      {
+        "id": "action-3",
+        "op": "fill",
+        "name": "Username",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-4",
+        "op": "fill",
+        "name": "Password",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-5",
+        "op": "click",
+        "name": "Sign in",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "action-6",
+        "op": "click",
+        "name": "My Leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-7",
+        "op": "click",
+        "name": "New request",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-8",
+        "op": "fill",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-9",
+        "op": "fill",
+        "name": "End date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "snapshot-29",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-10",
+        "op": "fill",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-11",
+        "op": "click",
+        "name": "Submit request",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "action-12",
+        "op": "click",
+        "name": "My Profile",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-13",
+        "op": "click",
+        "name": "Timesheet",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-14",
+        "op": "click",
+        "name": "Directory",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-15",
+        "op": "wait_for",
+        "name": "Search by name…",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-42",
+        "op": "snapshot",
+        "executed": true
+      }
+    ]
+  },
+  "sample-03": {
+    "actionCount": 14,
+    "obsCount": 9,
+    "loginPosts": [
+      {
+        "status": 200,
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after": 5
+      }
+    ],
+    "leavePosts": [],
+    "leaveGets": 2,
+    "searches": [],
+    "obsBodies": [
+      {
+        "id": "df0e1b70-3263-42d4-8df1-262426f363b5",
+        "saved": true,
+        "after": 2,
+        "body": "Signed-out Login displays Username and Password fields, a Sign in button, and demo Employee, Manager, and HR Admin usernames."
+      },
+      {
+        "id": "71262e96-643f-4b12-a64a-69ab70b99863",
+        "saved": true,
+        "after": 2,
+        "body": "Credentials fields ready."
+      },
+      {
+        "id": "ee5a0d7e-3a92-4db6-a560-7a170deb8db2",
+        "saved": true,
+        "after": 6,
+        "body": "Signing in as the configured Employee opened the Employee dashboard."
+      },
+      {
+        "id": "57c78c84-4743-4dae-b505-d4c0e6f0389b",
+        "saved": true,
+        "after": 6,
+        "body": "Employee Dashboard shows navigation to Directory, My Leave, Timesheet, and My Profile; quick actions Request leave and Fill timesheet; a Log out button; pending leave requests count 0; and a leave balance still loading a"
+      },
+      {
+        "id": "73fd7e93-05da-4e06-843e-63744ec71795",
+        "saved": true,
+        "after": 8,
+        "body": "My Leave offers New request, reports Available balance 18 days with deduction on approval, and shows one approved Vacation history entry for Aug 18–19, 2026 with 3 days and manager comment “Approved – enjoy!”."
+      },
+      {
+        "id": "22f0bb1b-75fd-4d3c-81bd-e70f4791de11",
+        "saved": true,
+        "after": 10,
+        "body": "New Leave Request defaults Leave type to Vacation and offers Vacation, Sick, and Personal choices; requires Start date and End date; has optional Reason; states weekends are not counted; and provides Submit request and C"
+      },
+      {
+        "id": "0dc068f1-a08c-4da0-96cc-d245c633c2a7",
+        "saved": true,
+        "after": 10,
+        "body": "Blank required date fields are visible; a blank submission is being checked for validation and should not create evaluation data."
+      },
+      {
+        "id": "ee4a092e-0223-489d-a44e-712ab340b020",
+        "saved": true,
+        "after": 12,
+        "body": "Submitting the blank leave form kept the Employee on New Leave Request and displayed “Please fill in all required fields.”"
+      },
+      {
+        "id": "4fb1dec6-a596-4d16-a287-e1efab66afd8",
+        "saved": true,
+        "after": 14,
+        "body": "Timesheet shows a draft for week of Sep 14, 2026 with seven daily hour inputs all at 0, total 0 h, and Save draft and Submit week actions."
+      }
+    ],
+    "actionOps": [
+      {
+        "id": "action-2",
+        "op": "navigate",
+        "path": "[Product origin]",
+        "executed": true
+      },
+      {
+        "id": "snapshot-9",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-3",
+        "op": "fill",
+        "name": "Username",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-4",
+        "op": "fill",
+        "name": "Password",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-5",
+        "op": "click",
+        "name": "Sign in",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-19",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-6",
+        "op": "click",
+        "name": "My Leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-27",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-7",
+        "op": "click",
+        "name": "New request",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-31",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-8",
+        "op": "click",
+        "name": "Submit request",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-39",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-9",
+        "op": "click",
+        "name": "Timesheet",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-45",
+        "op": "snapshot",
+        "executed": true
+      }
+    ]
+  },
+  "sample-04": {
+    "actionCount": 33,
+    "obsCount": 15,
+    "loginPosts": [
+      {
+        "status": 200,
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after": 5
+      }
+    ],
+    "leavePosts": [],
+    "leaveGets": 2,
+    "searches": [
+      "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1",
+      "[Product origin]/api/employees?q=Emily+Dawson&department=&sort=name&dir=asc&page=1"
+    ],
+    "obsBodies": [
+      {
+        "id": "eb7d453c-7824-4c40-bdf4-77d3bd9f5f99",
+        "saved": true,
+        "after": 2,
+        "body": "The signed-out employee portal shows Username and Password fields, a Sign in button, and a Demo accounts section that lists emily.dawson as Employee."
+      },
+      {
+        "id": "0c02e76e-c3cf-4024-a83c-0066d06d61a2",
+        "saved": true,
+        "after": 2,
+        "body": "The sign-in form is displayed with the Employee username available and no session is active."
+      },
+      {
+        "id": "44d0397c-5d99-402c-a92c-240689175bfa",
+        "saved": true,
+        "after": 6,
+        "body": "Signing in as emily.dawson opened the employee dashboard."
+      },
+      {
+        "id": "87473396-7496-4028-b274-c43cf4ed0982",
+        "saved": true,
+        "after": 6,
+        "body": "Sign in reached Dashboard."
+      },
+      {
+        "id": "8cd6e7ec-8e8d-47e2-abf5-39fd876b2d93",
+        "saved": true,
+        "after": 6,
+        "body": "The employee dashboard displays leave balance and 0 pending leave requests, quick links to Request leave and Fill timesheet, navigation to Directory, My Leave, Timesheet and My Profile, plus Notifications and Log out con"
+      },
+      {
+        "id": "0a00cd81-2065-4497-985c-bcad370204b3",
+        "saved": true,
+        "after": 8,
+        "body": "New leave request defaults Leave type to Vacation, offers Vacation, Sick and Personal choices, requires Start date and End date, offers optional Reason, states weekends are not counted, and provides Submit request and Ca"
+      },
+      {
+        "id": "3742aa05-b2b6-4fa0-ac22-e9952858efb6",
+        "saved": true,
+        "after": 8,
+        "body": "The leave form has no dates entered and Submit request is available for the required-date validation check."
+      },
+      {
+        "id": "558bcf2f-98ed-4b97-b0d8-2efbd8f437e3",
+        "saved": true,
+        "after": 10,
+        "body": "Submitting the leave form with no dates displayed “Please fill in all required fields.” and remained on New leave request."
+      },
+      {
+        "id": "cba29c91-b989-448c-b437-6a8074cf888e",
+        "saved": true,
+        "after": 21,
+        "body": "Employee directory loads 28 employees in a table with Name, Department, Title and Email columns; it offers name search, an All departments filter with Engineering, Sales, Marketing, Finance and HR options, Name sorting, "
+      },
+      {
+        "id": "f3d65c40-8b63-430d-a7d4-8a7d0c1005c4",
+        "saved": true,
+        "after": 23,
+        "body": "Entering “Emily Dawson” in Search by name left the directory count at 28 and the same first-page rows visible, including employees other than Emily."
+      },
+      {
+        "id": "f96f1a2d-e66c-4150-8fd5-023408ab0ddc",
+        "saved": true,
+        "after": 25,
+        "body": "My profile shows an Upload photo control; editable Full name, Phone and Emergency contact fields; a read-only Email field; and Save changes."
+      },
+      {
+        "id": "3f6a7816-8cf8-4014-b603-1897adc7ece6",
+        "saved": true,
+        "after": 27,
+        "body": "Timesheet shows a draft for the week of Sep 14, 2026 with Monday through Sunday hour inputs all at 0, a total of 0 h, and Save draft and Submit week buttons."
+      },
+      {
+        "id": "8c543d18-60ad-4228-bbb2-b35afe7b7c23",
+        "saved": true,
+        "after": 29,
+        "body": "The timesheet draft has 8 hours on Monday, 0 on the remaining days, and an 8-hour total; saving it will create evaluation data."
+      },
+      {
+        "id": "e2a76f0e-3a16-4874-8f6b-0429d7106a39",
+        "saved": true,
+        "after": 31,
+        "body": "Saving the 8-hour Monday timesheet draft displayed “Draft saved.” and retained the 8-hour total."
+      },
+      {
+        "id": "d343c36d-48ea-4541-afbc-7908544777c9",
+        "saved": true,
+        "after": 33,
+        "body": "My leave offers New request, shows 18 available days with the note that days are deducted when approved, and lists an approved Vacation request for Aug 18–19, 2026 with a 3-day count and manager comment “Approved – enjoy"
+      }
+    ],
+    "actionOps": [
+      {
+        "id": "action-2",
+        "op": "navigate",
+        "path": "[Product origin]",
+        "executed": true
+      },
+      {
+        "id": "snapshot-10",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-3",
+        "op": "fill",
+        "name": "Username",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-4",
+        "op": "fill",
+        "name": "Password",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-5",
+        "op": "click",
+        "name": "Sign in",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-19",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-6",
+        "op": "click",
+        "name": "Request leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-27",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-7",
+        "op": "click",
+        "name": "Submit request",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-32",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-8",
+        "op": "fill",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-9",
+        "op": "fill",
+        "name": "End date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-10",
+        "op": "fill",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-11",
+        "op": "click",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-38",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-12",
+        "op": "click",
+        "name": "›",
+        "role": "button",
+        "executed": false
+      },
+      {
+        "id": "snapshot-40",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-13",
+        "op": "click",
+        "name": "Directory",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-43",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-14",
+        "op": "wait_for",
+        "executed": true
+      },
+      {
+        "id": "snapshot-45",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-15",
+        "op": "fill",
+        "name": "Search by name…",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-49",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-16",
+        "op": "click",
+        "name": "My Profile",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-52",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-17",
+        "op": "click",
+        "name": "Timesheet",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-57",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-18",
+        "op": "fill",
+        "role": "spinbutton",
+        "executed": true
+      },
+      {
+        "id": "snapshot-62",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-19",
+        "op": "click",
+        "name": "Save draft",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-65",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-20",
+        "op": "click",
+        "name": "My Leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-70",
+        "op": "snapshot",
+        "executed": true
+      }
+    ]
+  },
+  "sample-05": {
+    "actionCount": 22,
+    "obsCount": 16,
+    "loginPosts": [
+      {
+        "status": 200,
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after": 4
+      }
+    ],
+    "leavePosts": [],
+    "leaveGets": 2,
+    "searches": [
+      "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1"
+    ],
+    "obsBodies": [
+      {
+        "id": "465aab38-1997-4664-8b82-b914b1f74afd",
+        "saved": true,
+        "after": 1,
+        "body": "The signed-out employee portal shows Username and Password fields, a Sign in button, and a Demo accounts section that lists emily.dawson as Employee."
+      },
+      {
+        "id": "5bbcd202-7f19-4184-83f8-ea81f3cc1196",
+        "saved": true,
+        "after": 1,
+        "body": "The signed-out Sign in form is visible and ready for the Employee credentials."
+      },
+      {
+        "id": "d5822cc3-0a87-42d1-8344-50e42dcfd2b2",
+        "saved": true,
+        "after": 5,
+        "body": "Submitting the Employee credentials opened the authenticated dashboard for Emily Dawson."
+      },
+      {
+        "id": "79495efa-188b-424c-ad58-dc4d52316d65",
+        "saved": true,
+        "after": 5,
+        "body": "Sign in reached Dashboard."
+      },
+      {
+        "id": "872acf97-a10e-4fb3-8c17-68856b0a01dd",
+        "saved": true,
+        "after": 5,
+        "body": "The Employee dashboard welcomes Emily Dawson, shows pending leave requests as 0, and offers navigation to Directory, My Leave, Timesheet, My Profile, Notifications, Log out, Request leave, and Fill timesheet."
+      },
+      {
+        "id": "789b6f66-688c-4ef2-a773-25252c836578",
+        "saved": true,
+        "after": 6,
+        "body": "Request leave opened New leave request."
+      },
+      {
+        "id": "42ccba2f-cb2c-40cd-a90d-2b2e4734cb7c",
+        "saved": true,
+        "after": 6,
+        "body": "New leave request offers Vacation, Sick, and Personal leave types; required Start date and End date fields; an optional Reason field; Submit request and Cancel. It states weekends are not counted toward leave."
+      },
+      {
+        "id": "511de21e-e210-41d4-aa2a-7609a865a685",
+        "saved": true,
+        "after": 6,
+        "body": "The leave request form is ready; an evaluation-data Vacation request will use 2030-01-14 through 2030-01-15 and an explicit evaluation reason."
+      },
+      {
+        "id": "2b4c485a-bf21-4676-b733-d47f1c3cf8ca",
+        "saved": true,
+        "after": 11,
+        "body": "Submitting with the date fields empty displayed 'Please fill in all required fields.' and did not leave the request form."
+      },
+      {
+        "id": "b20a717a-4e79-4a13-8d8e-7ce16e3f4f1b",
+        "saved": true,
+        "after": 16,
+        "body": "Cancel opened My leave without submitting a leave request."
+      },
+      {
+        "id": "305e51e9-888f-495a-803c-d97006087837",
+        "saved": true,
+        "after": 16,
+        "body": "My leave offers New request, shows an available balance of 18 days, and lists an approved Vacation request dated Aug 18–19, 2026 with a displayed duration of 3 days and manager comment 'Approved – enjoy!'."
+      },
+      {
+        "id": "fabe162d-ce42-4307-8789-1db6796e55fb",
+        "saved": true,
+        "after": 16,
+        "body": "Employee directory shows 28 employees, supports name search and department filtering, displays name, department, title, and email columns, and has three pages with Previous disabled on page 1 and Next offered."
+      },
+      {
+        "id": "7672a061-7a49-4165-a938-9d2711f166a6",
+        "saved": true,
+        "after": 18,
+        "body": "My profile shows editable Full name, Phone, and Emergency contact fields, a disabled read-only Email field, Upload photo, and Save changes. The displayed profile belongs to Emily Dawson."
+      },
+      {
+        "id": "b0b25eaf-3f8c-4709-8815-4e29f9f0e321",
+        "saved": true,
+        "after": 19,
+        "body": "Timesheet shows a draft for the week of Sep 14, 2026 with seven daily hour inputs all at 0, a total of 0 h, and Save draft and Submit week controls."
+      },
+      {
+        "id": "1c37dda1-2219-4230-8a1f-6338a692304e",
+        "saved": true,
+        "after": 19,
+        "body": "The draft timesheet is editable; an evaluation-data draft will set Monday to 1 hour for the displayed Sep 14, 2026 week."
+      },
+      {
+        "id": "b4ea5279-bca4-44cd-857e-739f290b221c",
+        "saved": true,
+        "after": 22,
+        "body": "Saving the evaluation-data draft with Monday set to 1 hour displayed 'Draft saved.' and kept the week in draft state with a 1 h total."
+      }
+    ],
+    "actionOps": [
+      {
+        "id": "action-2",
+        "op": "navigate",
+        "path": "[Product origin]",
+        "executed": true
+      },
+      {
+        "id": "action-3",
+        "op": "fill",
+        "name": "Username",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-4",
+        "op": "fill",
+        "name": "Password",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-5",
+        "op": "click",
+        "name": "Sign in",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-17",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-6",
+        "op": "click",
+        "name": "Request leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-7",
+        "op": "fill",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-8",
+        "op": "fill",
+        "name": "End date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-9",
+        "op": "fill",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-10",
+        "op": "click",
+        "name": "Submit request",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-33",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-11",
+        "op": "click",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-12",
+        "op": "click",
+        "name": "Cancel",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "action-13",
+        "op": "click",
+        "name": "Directory",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-14",
+        "op": "wait_for",
+        "name": "Search by name…",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-39",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-15",
+        "op": "click",
+        "name": "My Profile",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-46",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-16",
+        "op": "click",
+        "name": "Timesheet",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "action-17",
+        "op": "fill",
+        "role": "spinbutton",
+        "executed": true
+      },
+      {
+        "id": "action-18",
+        "op": "click",
+        "name": "Save draft",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-56",
+        "op": "snapshot",
+        "executed": true
+      }
+    ]
+  },
+  "sample-06": {
+    "actionCount": 19,
+    "obsCount": 11,
+    "loginPosts": [
+      {
+        "status": 200,
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after": 5
+      }
+    ],
+    "leavePosts": [],
+    "leaveGets": 1,
+    "searches": [],
+    "obsBodies": [
+      {
+        "id": "3b203a0c-c948-4afe-8041-b0658c910d79",
+        "saved": true,
+        "after": 2,
+        "body": "Signed-out Login displays Username and Password fields, a Sign in button, and demo account names including emily.dawson."
+      },
+      {
+        "id": "78ad1497-851a-49ec-b982-753b13b45d00",
+        "saved": true,
+        "after": 2,
+        "body": "Login fields are available for the configured Employee account."
+      },
+      {
+        "id": "500859bb-0009-49da-a9fd-11732742c19a",
+        "saved": true,
+        "after": 6,
+        "body": "Signing in as the configured Employee reached the employee dashboard."
+      },
+      {
+        "id": "9a96b728-f5b6-4060-942f-c440b8005022",
+        "saved": true,
+        "after": 6,
+        "body": "Employee Dashboard offers navigation to Directory, My Leave, Timesheet, and My Profile; it also offers Notifications, Log out, Request leave, and Fill timesheet. It displays pending leave requests as 0 while the leave ba"
+      },
+      {
+        "id": "c3a83f6a-2c8a-4943-9577-d567d50228c5",
+        "saved": true,
+        "after": 8,
+        "body": "Request leave reached New leave request."
+      },
+      {
+        "id": "dc8f4482-d39d-46d3-a33d-c9a535b62377",
+        "saved": true,
+        "after": 8,
+        "body": "New leave request offers a leave-type selector with Vacation selected plus Sick and Personal options, required Start date and End date fields, an optional Reason field, Submit request, and Cancel; it states weekends are "
+      },
+      {
+        "id": "32bcd24a-624f-4938-9ae3-5e755ac3f3c8",
+        "saved": true,
+        "after": 8,
+        "body": "Vacation is selected and the empty leave form is ready for one future-weekday evaluation request."
+      },
+      {
+        "id": "7fe790f2-e70b-4558-80d7-98fbd13b8357",
+        "saved": true,
+        "after": 13,
+        "body": "Submitting with both required date fields empty displayed “Please fill in all required fields.” and remained on New leave request; the evaluation reason stayed entered."
+      },
+      {
+        "id": "ed257513-8701-478c-aec2-d6ab1b7d37b0",
+        "saved": true,
+        "after": 15,
+        "body": "Opening Start date displayed a September 2026 calendar with previous and next month controls and dates 1 through 30; the date textbox remained read-only."
+      },
+      {
+        "id": "2a2c219d-62b9-4978-82f7-1cb81f3063f1",
+        "saved": true,
+        "after": 17,
+        "body": "Timesheet shows Week of Sep 14, 2026 in draft state with seven day-hour inputs all at 0, Total 0 h, Save draft, and Submit week."
+      },
+      {
+        "id": "4fac835d-c142-45eb-b29c-70f8e594de89",
+        "saved": true,
+        "after": 19,
+        "body": "My profile offers photo upload, editable Full name, Phone, and Emergency contact fields, a disabled Email field, and Save changes."
+      }
+    ],
+    "actionOps": [
+      {
+        "id": "action-2",
+        "op": "navigate",
+        "path": "[Product origin]",
+        "executed": true
+      },
+      {
+        "id": "snapshot-9",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-3",
+        "op": "fill",
+        "name": "Username",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-4",
+        "op": "fill",
+        "name": "Password",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-5",
+        "op": "click",
+        "name": "Sign in",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-19",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-6",
+        "op": "click",
+        "name": "Request leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-27",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-7",
+        "op": "fill",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-8",
+        "op": "fill",
+        "name": "End date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-9",
+        "op": "fill",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-10",
+        "op": "click",
+        "name": "Submit request",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-41",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-11",
+        "op": "click",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-47",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-12",
+        "op": "click",
+        "name": "Timesheet",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-53",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-13",
+        "op": "click",
+        "name": "My Profile",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-63",
+        "op": "snapshot",
+        "executed": true
+      }
+    ]
+  },
+  "sample-07": {
+    "actionCount": 37,
+    "obsCount": 17,
+    "loginPosts": [
+      {
+        "status": 200,
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after": 5
+      }
+    ],
+    "leavePosts": [],
+    "leaveGets": 2,
+    "searches": [
+      "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1",
+      "[Product origin]/api/employees?q=Emily+Dawson&department=&sort=name&dir=asc&page=1"
+    ],
+    "obsBodies": [
+      {
+        "id": "9d82b4ad-e81d-4075-9b5c-9617780e498c",
+        "saved": true,
+        "after": 2,
+        "body": "The Login page shows Username and Password fields, a Sign in button, and demo account names including emily.dawson."
+      },
+      {
+        "id": "78530301-7132-4243-a8f9-2b9c66e4ec40",
+        "saved": true,
+        "after": 6,
+        "body": "Signing in with the configured Employee credentials opened the Dashboard for Emily Dawson."
+      },
+      {
+        "id": "8c4d5f86-58a0-4288-a04b-16fd1d37b38f",
+        "saved": true,
+        "after": 6,
+        "body": "The Employee Dashboard identifies Emily Dawson, shows leave balance and zero pending leave requests, and offers Directory, My Leave, Timesheet, My Profile, Request leave, Fill timesheet, Notifications, and Log out."
+      },
+      {
+        "id": "b4ba810f-ba69-4e1c-afaa-293b51c8236a",
+        "saved": true,
+        "after": 8,
+        "body": "Request leave opened New leave request."
+      },
+      {
+        "id": "c15655e5-2c78-4e39-9c04-9239e657425e",
+        "saved": true,
+        "after": 35,
+        "body": "The signed-in navigation shows Notifications with a badge of 3; opening it may inspect or update notification state."
+      },
+      {
+        "id": "d70a303e-4f85-43d3-8cbb-6f2bc5b6fccd",
+        "saved": true,
+        "after": 37,
+        "body": "Opening Notifications reached the Notifications page, which listed three messages; the navigation badge remained 3."
+      },
+      {
+        "id": "ef0afd08-6973-479e-a5df-b5166ea70695",
+        "saved": true,
+        "after": 8,
+        "body": "New leave request offers Vacation, Sick, and Personal types; required Start date and End date; optional Reason; Submit request and Cancel. It states weekends are not counted toward leave."
+      },
+      {
+        "id": "ffb27be6-74b9-4ae4-829f-e80347d50390",
+        "saved": true,
+        "after": 8,
+        "body": "Start date and End date are blank; Submit request is available for a required-date validation check."
+      },
+      {
+        "id": "8160e498-7df0-496f-aa84-4b1d43e88b69",
+        "saved": true,
+        "after": 10,
+        "body": "Submitting the blank form kept the Employee on New leave request and displayed “Please fill in all required fields.”"
+      },
+      {
+        "id": "e5d2b15f-9b54-403e-a22a-2215fa6b631a",
+        "saved": true,
+        "after": 20,
+        "body": "Timesheet displays a draft for the week of Sep 14, 2026 with seven day-hour inputs at 0, Total 0 h, Save draft, and Submit week."
+      },
+      {
+        "id": "be875cbd-87d6-4773-9754-7d38b77d05bd",
+        "saved": true,
+        "after": 22,
+        "body": "The Sep 14, 2026 draft has Monday set to 1 hour and all other displayed days at 0, for a total of 1 h; this is evaluation data."
+      },
+      {
+        "id": "c9e383b7-7d5b-420f-ac37-0b0e34642a79",
+        "saved": true,
+        "after": 24,
+        "body": "Saving the evaluation-data draft preserved Monday at 1 hour and displayed “Draft saved.”"
+      },
+      {
+        "id": "a6f75840-3b39-4471-8406-0289b348d559",
+        "saved": true,
+        "after": 26,
+        "body": "My leave offers New request, shows an available balance of 18 days and states that days are deducted when a request is approved. Its history contains an approved Vacation request for Aug 18–19, 2026, listed as 3 days wit"
+      },
+      {
+        "id": "2b622061-0c16-4855-9325-4a9b2bded2a5",
+        "saved": true,
+        "after": 28,
+        "body": "My profile shows editable Full name, Phone, and Emergency contact fields; a disabled read-only Email field; Upload photo; and Save changes."
+      },
+      {
+        "id": "346c0158-6c40-4eae-808b-e3057a309efe",
+        "saved": true,
+        "after": 32,
+        "body": "Employee directory provides a name search, department filter with six listed choices, Name sort, and a paginated results table showing 28 employees across three pages; Previous is disabled on page 1 and Next is offered."
+      },
+      {
+        "id": "b8d9f741-6291-41df-bbcc-3e1789778545",
+        "saved": true,
+        "after": 35,
+        "body": "Entering “Emily Dawson” in Directory search left the displayed count at 28 and the first page’s unfiltered rows unchanged after the page was re-read."
+      },
+      {
+        "id": "c8ec9ee8-8460-44f1-a5c4-2d29fe2a8871",
+        "saved": true,
+        "after": 37,
+        "body": "Notifications displays three informational messages: approved vacation, a timesheet-submission reminder, and a remote-work-policy update."
+      }
+    ],
+    "actionOps": [
+      {
+        "id": "action-2",
+        "op": "navigate",
+        "path": "[Product origin]",
+        "executed": true
+      },
+      {
+        "id": "snapshot-10",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-3",
+        "op": "fill",
+        "name": "Username",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-4",
+        "op": "fill",
+        "name": "Password",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-5",
+        "op": "click",
+        "name": "Sign in",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-20",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-6",
+        "op": "click",
+        "name": "Request leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-27",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-7",
+        "op": "click",
+        "name": "Submit request",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-36",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-8",
+        "op": "fill",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-9",
+        "op": "fill",
+        "name": "End date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-10",
+        "op": "fill",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-43",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-11",
+        "op": "click",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-45",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-12",
+        "op": "click",
+        "name": "28",
+        "role": "button",
+        "executed": false
+      },
+      {
+        "id": "snapshot-47",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-13",
+        "op": "click",
+        "name": "Timesheet",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-52",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-14",
+        "op": "fill",
+        "role": "spinbutton",
+        "executed": true
+      },
+      {
+        "id": "snapshot-59",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-15",
+        "op": "click",
+        "name": "Save draft",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-62",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-16",
+        "op": "click",
+        "name": "My Leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-69",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-17",
+        "op": "click",
+        "name": "My Profile",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-76",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-18",
+        "op": "click",
+        "name": "Directory",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-83",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-19",
+        "op": "wait_for",
+        "executed": true
+      },
+      {
+        "id": "snapshot-85",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-20",
+        "op": "fill",
+        "name": "Search by name…",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-21",
+        "op": "wait_for",
+        "executed": true
+      },
+      {
+        "id": "snapshot-93",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-22",
+        "op": "click",
+        "name": "Notifications",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-99",
+        "op": "snapshot",
+        "executed": true
+      }
+    ]
+  },
+  "sample-08": {
+    "actionCount": 23,
+    "obsCount": 12,
+    "loginPosts": [
+      {
+        "status": 200,
+        "body": "{\"username\":\"emily.dawson\",\"password\":\"[REDACTED]\"}",
+        "after": 5
+      }
+    ],
+    "leavePosts": [],
+    "leaveGets": 1,
+    "searches": [
+      "[Product origin]/api/employees?q=&department=&sort=name&dir=asc&page=1"
+    ],
+    "obsBodies": [
+      {
+        "id": "74de5ba8-a0e5-4501-bb51-1467c9155cbb",
+        "saved": true,
+        "after": 2,
+        "body": "The signed-out Login page shows Username and Password fields, a Sign in button, and demo account labels including emily.dawson as Employee."
+      },
+      {
+        "id": "865fc90d-c0ef-4f91-b930-b201ebd80d3f",
+        "saved": true,
+        "after": 2,
+        "body": "The Login form is displayed with the configured Employee username available and empty credentials ready for entry."
+      },
+      {
+        "id": "0fa07869-6062-4be6-ae7f-fdcff47fdf91",
+        "saved": true,
+        "after": 6,
+        "body": "Signing in as emily.dawson reached the authenticated Dashboard showing Emily Dawson and Employee navigation."
+      },
+      {
+        "id": "a126c974-f317-45ce-aa8a-0ca6250c2a5e",
+        "saved": true,
+        "after": 6,
+        "body": "Sign in reached Dashboard."
+      },
+      {
+        "id": "682770dd-58d1-4cd6-bee3-47d64cb701fc",
+        "saved": true,
+        "after": 6,
+        "body": "Dashboard shows Employee navigation to Directory, My Leave, Timesheet, and My Profile; quick links to Request leave and Fill timesheet; plus Notifications and Log out."
+      },
+      {
+        "id": "4d2864c6-4c92-47b7-831a-07671f9b0c65",
+        "saved": true,
+        "after": 8,
+        "body": "New leave request offers Vacation, Sick, and Personal leave types; required Start date and End date fields; an optional Reason field; Submit request and Cancel. It states weekends are not counted toward leave."
+      },
+      {
+        "id": "79dba2bb-4748-49c8-812e-c1433353042b",
+        "saved": true,
+        "after": 8,
+        "body": "The New leave request form is open with Vacation selected and no dates entered; a single evaluation-data request will use 2026-10-05 through 2026-10-06."
+      },
+      {
+        "id": "3529e61f-c5d1-4979-93b2-dc181c81c0f1",
+        "saved": true,
+        "after": 13,
+        "body": "The visible date textboxes were readonly; submitting with only the evaluation-data Reason displayed \"Please fill in all required fields.\" and stayed on New leave request."
+      },
+      {
+        "id": "e7e98678-116d-4dc5-9f10-793913d8619d",
+        "saved": true,
+        "after": 15,
+        "body": "Clicking Start date opens an inline September 2026 calendar with previous and next month controls and day numbers."
+      },
+      {
+        "id": "b9bec90d-e47e-4a7d-8d50-3851d5d9b475",
+        "saved": true,
+        "after": 17,
+        "body": "Timesheet shows a draft for the week of Sep 14, 2026 with seven daily hour inputs at 0, total 0 h, and Save draft and Submit week actions."
+      },
+      {
+        "id": "4eabacca-32c2-439e-83c9-67d040b8482e",
+        "saved": true,
+        "after": 19,
+        "body": "My profile offers Upload photo, editable Full name, Phone, and Emergency contact fields, a disabled Email field, and Save changes. Personal values were not recorded."
+      },
+      {
+        "id": "a913da49-b569-420a-9d97-53e85aa7b3a0",
+        "saved": true,
+        "after": 23,
+        "body": "Employee directory loaded 28 employees in a paginated table with Name, Department, Title, and Email columns; it offers name search, department filter, name sorting, and Next/Previous pagination. Personal row values were "
+      }
+    ],
+    "actionOps": [
+      {
+        "id": "action-2",
+        "op": "navigate",
+        "path": "[Product origin]",
+        "executed": true
+      },
+      {
+        "id": "snapshot-11",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-3",
+        "op": "fill",
+        "name": "Username",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-4",
+        "op": "fill",
+        "name": "Password",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-5",
+        "op": "click",
+        "name": "Sign in",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-22",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-6",
+        "op": "click",
+        "name": "Request leave",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-30",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-7",
+        "op": "fill",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-8",
+        "op": "fill",
+        "name": "End date",
+        "role": "textbox",
+        "executed": false
+      },
+      {
+        "id": "action-9",
+        "op": "fill",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "action-10",
+        "op": "click",
+        "name": "Submit request",
+        "role": "button",
+        "executed": true
+      },
+      {
+        "id": "snapshot-43",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-11",
+        "op": "click",
+        "name": "Start date",
+        "role": "textbox",
+        "executed": true
+      },
+      {
+        "id": "snapshot-48",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-12",
+        "op": "click",
+        "name": "Timesheet",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-55",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-13",
+        "op": "click",
+        "name": "My Profile",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-63",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-14",
+        "op": "click",
+        "name": "Directory",
+        "role": "link",
+        "executed": true
+      },
+      {
+        "id": "snapshot-74",
+        "op": "snapshot",
+        "executed": true
+      },
+      {
+        "id": "action-15",
+        "op": "wait_for",
+        "executed": true
+      },
+      {
+        "id": "snapshot-77",
+        "op": "snapshot",
+        "executed": true
+      }
+    ]
+  }
+}

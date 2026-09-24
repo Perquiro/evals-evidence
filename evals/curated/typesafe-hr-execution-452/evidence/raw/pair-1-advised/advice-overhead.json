@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "executionId": "adc8689a-609a-4245-a21f-b43489ee7596",
+  "outcomes": [
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 706.8649000000005,
+      "usage": {
+        "inputTokens": 1499,
+        "outputTokens": 31,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:21:00.800Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 751.7357000000047,
+      "usage": {
+        "inputTokens": 2561,
+        "outputTokens": 53,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:21:38.887Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 699.3329000000085,
+      "usage": {
+        "inputTokens": 2267,
+        "outputTokens": 39,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:22:15.613Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 823.5051000000094,
+      "usage": {
+        "inputTokens": 4478,
+        "outputTokens": 48,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:22:56.338Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 813.2480000000214,
+      "usage": {
+        "inputTokens": 2355,
+        "outputTokens": 40,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:23:13.106Z"
+    },
+    {
+      "status": "selected",
+      "source": "typesafe",
+      "elapsedMs": 719.8190999999933,
+      "usage": {
+        "inputTokens": 2360,
+        "outputTokens": 38,
+        "cachedInputTokens": null,
+        "cacheCreationInputTokens": null
+      },
+      "observedAt": "2026-09-24T07:23:52.481Z"
+    }
+  ],
+  "overrides": [],
+  "fallbacks": [],
+  "selectionPhases": {
+    "candidate_generation": null,
+    "advice": 720,
+    "advice_handling": null
+  }
+}

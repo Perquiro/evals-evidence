@@ -1,0 +1,1423 @@
+{
+  "reviewer": "/root/blind_grader_human",
+  "samples": {
+    "sample-01": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-2",
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "3c910bc9-c7bb-4495-8674-9142af9c787a"
+          ],
+          "rationale": "Valid Employee login succeeded; saved Observation records authenticated Employee dashboard/identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission with saved error Observation."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No logout followed by private-page revisit with saved Observation."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-11"
+          ],
+          "observation_ids": [
+            "d51469a0-2796-4a45-8816-df78e94651a8"
+          ],
+          "rationale": "Name search settled with saved directory row identities."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name search with saved settled rows."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched search with saved empty result."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No double header-click sort with unequal keys and saved orders."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail open plus reload/direct load with saved identity."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No end-before-start leave attempt with saved validation result."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval with saved displayed duration before submit."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No successful leave submission; blank-date validation or missing date selection prevented POST."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later history readback of a newly submitted leave request with linked save and readback Observations."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No supporting executed action and saved Observation."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save with later reload verifying retained hours."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week submit with later edit attempt Observation."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field save with saved result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later profile readback of a saved change."
+        }
+      ],
+      "observation_actions": {
+        "3c910bc9-c7bb-4495-8674-9142af9c787a": [
+          "action-2",
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "d51469a0-2796-4a45-8816-df78e94651a8": [
+          "action-3",
+          "action-4",
+          "action-11",
+          "action-5"
+        ],
+        "f0c44c06-7700-4d12-9594-f3f099b5224f": [
+          "action-17",
+          "action-20"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Submitting leave with empty required dates showed required-fields validation and stayed on the form.",
+          "action_ids": [
+            "action-17",
+            "action-20"
+          ],
+          "observation_ids": [
+            "f0c44c06-7700-4d12-9594-f3f099b5224f"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Directory search/browse produced a settled employee listing Observation.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "d51469a0-2796-4a45-8816-df78e94651a8"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-02": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-2",
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "1681705c-cbee-402f-82af-630071654b54"
+          ],
+          "rationale": "Valid Employee login succeeded; saved Observation records authenticated Employee dashboard/identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission with saved error Observation."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No logout followed by private-page revisit with saved Observation."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-10"
+          ],
+          "observation_ids": [
+            "1ff8a66d-0289-42a2-8809-1afbbb3be456"
+          ],
+          "rationale": "Name search settled with saved directory row identities."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name search with saved settled rows."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched search with saved empty result."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No double header-click sort with unequal keys and saved orders."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail open plus reload/direct load with saved identity."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No end-before-start leave attempt with saved validation result."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval with saved displayed duration before submit."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No successful leave submission; blank-date validation or missing date selection prevented POST."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later history readback of a newly submitted leave request with linked save and readback Observations."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No supporting executed action and saved Observation."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save with later reload verifying retained hours."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week submit with later edit attempt Observation."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field save with saved result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later profile readback of a saved change."
+        }
+      ],
+      "observation_actions": {
+        "1681705c-cbee-402f-82af-630071654b54": [
+          "action-2",
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "1ff8a66d-0289-42a2-8809-1afbbb3be456": [
+          "action-3",
+          "action-4",
+          "action-10",
+          "action-5"
+        ],
+        "4862bb66-3457-4f71-824e-3a094afbc25b": [
+          "action-13",
+          "action-14"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Submitting leave with empty required dates showed required-fields validation and stayed on the form.",
+          "action_ids": [
+            "action-13",
+            "action-14"
+          ],
+          "observation_ids": [
+            "4862bb66-3457-4f71-824e-3a094afbc25b"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Directory search/browse produced a settled employee listing Observation.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "1ff8a66d-0289-42a2-8809-1afbbb3be456"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-03": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-2",
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "ee5a0d7e-3a92-4db6-a560-7a170deb8db2"
+          ],
+          "rationale": "Valid Employee login succeeded; saved Observation records authenticated Employee dashboard/identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission with saved error Observation."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No logout followed by private-page revisit with saved Observation."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No settled name search with saved Observation."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name search with saved settled rows."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched search with saved empty result."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No double header-click sort with unequal keys and saved orders."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail open plus reload/direct load with saved identity."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No end-before-start leave attempt with saved validation result."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval with saved displayed duration before submit."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No successful leave submission; blank-date validation or missing date selection prevented POST."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later history readback of a newly submitted leave request with linked save and readback Observations."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No supporting executed action and saved Observation."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save with later reload verifying retained hours."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week submit with later edit attempt Observation."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field save with saved result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later profile readback of a saved change."
+        }
+      ],
+      "observation_actions": {
+        "ee5a0d7e-3a92-4db6-a560-7a170deb8db2": [
+          "action-2",
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "ee4a092e-0223-489d-a44e-712ab340b020": [
+          "action-8",
+          "action-9"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Submitting leave with empty required dates showed required-fields validation and stayed on the form.",
+          "action_ids": [
+            "action-8",
+            "action-9"
+          ],
+          "observation_ids": [
+            "ee4a092e-0223-489d-a44e-712ab340b020"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?",
+        "Does a directory name search settle to the expected employee row?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-04": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-2",
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "44d0397c-5d99-402c-a92c-240689175bfa"
+          ],
+          "rationale": "Valid Employee login succeeded; saved Observation records authenticated Employee dashboard/identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission with saved error Observation."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No logout followed by private-page revisit with saved Observation."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-10"
+          ],
+          "observation_ids": [
+            "cba29c91-b989-448c-b437-6a8074cf888e"
+          ],
+          "rationale": "Name search settled with saved directory row identities."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name search with saved settled rows."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched search with saved empty result."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No double header-click sort with unequal keys and saved orders."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail open plus reload/direct load with saved identity."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No end-before-start leave attempt with saved validation result."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval with saved displayed duration before submit."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No successful leave submission; blank-date validation or missing date selection prevented POST."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later history readback of a newly submitted leave request with linked save and readback Observations."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No supporting executed action and saved Observation."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save with later reload verifying retained hours."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week submit with later edit attempt Observation."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field save with saved result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later profile readback of a saved change."
+        }
+      ],
+      "observation_actions": {
+        "44d0397c-5d99-402c-a92c-240689175bfa": [
+          "action-2",
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "cba29c91-b989-448c-b437-6a8074cf888e": [
+          "action-3",
+          "action-4",
+          "action-10",
+          "action-5"
+        ],
+        "558bcf2f-98ed-4b97-b0d8-2efbd8f437e3": [
+          "action-19",
+          "action-20"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Submitting leave with empty required dates showed required-fields validation and stayed on the form.",
+          "action_ids": [
+            "action-19",
+            "action-20"
+          ],
+          "observation_ids": [
+            "558bcf2f-98ed-4b97-b0d8-2efbd8f437e3"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Directory search/browse produced a settled employee listing Observation.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "cba29c91-b989-448c-b437-6a8074cf888e"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-05": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-2",
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "d5822cc3-0a87-42d1-8344-50e42dcfd2b2"
+          ],
+          "rationale": "Valid Employee login succeeded; saved Observation records authenticated Employee dashboard/identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission with saved error Observation."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No logout followed by private-page revisit with saved Observation."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-9"
+          ],
+          "observation_ids": [
+            "fabe162d-ce42-4307-8789-1db6796e55fb"
+          ],
+          "rationale": "Name search settled with saved directory row identities."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name search with saved settled rows."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched search with saved empty result."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No double header-click sort with unequal keys and saved orders."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail open plus reload/direct load with saved identity."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No end-before-start leave attempt with saved validation result."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval with saved displayed duration before submit."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No successful leave submission; blank-date validation or missing date selection prevented POST."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later history readback of a newly submitted leave request with linked save and readback Observations."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No supporting executed action and saved Observation."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save with later reload verifying retained hours."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week submit with later edit attempt Observation."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field save with saved result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later profile readback of a saved change."
+        }
+      ],
+      "observation_actions": {
+        "d5822cc3-0a87-42d1-8344-50e42dcfd2b2": [
+          "action-2",
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "fabe162d-ce42-4307-8789-1db6796e55fb": [
+          "action-3",
+          "action-4",
+          "action-9",
+          "action-5"
+        ],
+        "2b4c485a-bf21-4676-b733-d47f1c3cf8ca": [
+          "action-16",
+          "action-18"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Submitting leave with empty required dates showed required-fields validation and stayed on the form.",
+          "action_ids": [
+            "action-16",
+            "action-18"
+          ],
+          "observation_ids": [
+            "2b4c485a-bf21-4676-b733-d47f1c3cf8ca"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Directory search/browse produced a settled employee listing Observation.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "fabe162d-ce42-4307-8789-1db6796e55fb"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-06": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-2",
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "500859bb-0009-49da-a9fd-11732742c19a"
+          ],
+          "rationale": "Valid Employee login succeeded; saved Observation records authenticated Employee dashboard/identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission with saved error Observation."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No logout followed by private-page revisit with saved Observation."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No settled name search with saved Observation."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name search with saved settled rows."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched search with saved empty result."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No double header-click sort with unequal keys and saved orders."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail open plus reload/direct load with saved identity."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No end-before-start leave attempt with saved validation result."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval with saved displayed duration before submit."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No successful leave submission; blank-date validation or missing date selection prevented POST."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later history readback of a newly submitted leave request with linked save and readback Observations."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No supporting executed action and saved Observation."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save with later reload verifying retained hours."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week submit with later edit attempt Observation."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field save with saved result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later profile readback of a saved change."
+        }
+      ],
+      "observation_actions": {
+        "500859bb-0009-49da-a9fd-11732742c19a": [
+          "action-2",
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "7fe790f2-e70b-4558-80d7-98fbd13b8357": [
+          "action-12",
+          "action-13"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Submitting leave with empty required dates showed required-fields validation and stayed on the form.",
+          "action_ids": [
+            "action-12",
+            "action-13"
+          ],
+          "observation_ids": [
+            "7fe790f2-e70b-4558-80d7-98fbd13b8357"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?",
+        "Does a directory name search settle to the expected employee row?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-07": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-2",
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "8c4d5f86-58a0-4288-a04b-16fd1d37b38f"
+          ],
+          "rationale": "Valid Employee login succeeded; saved Observation records authenticated Employee dashboard/identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission with saved error Observation."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No logout followed by private-page revisit with saved Observation."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-10"
+          ],
+          "observation_ids": [
+            "346c0158-6c40-4eae-808b-e3057a309efe"
+          ],
+          "rationale": "Name search settled with saved directory row identities."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name search with saved settled rows."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched search with saved empty result."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No double header-click sort with unequal keys and saved orders."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail open plus reload/direct load with saved identity."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No end-before-start leave attempt with saved validation result."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval with saved displayed duration before submit."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No successful leave submission; blank-date validation or missing date selection prevented POST."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later history readback of a newly submitted leave request with linked save and readback Observations."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No supporting executed action and saved Observation."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save with later reload verifying retained hours."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week submit with later edit attempt Observation."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field save with saved result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later profile readback of a saved change."
+        }
+      ],
+      "observation_actions": {
+        "8c4d5f86-58a0-4288-a04b-16fd1d37b38f": [
+          "action-2",
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "346c0158-6c40-4eae-808b-e3057a309efe": [
+          "action-3",
+          "action-4",
+          "action-10",
+          "action-5"
+        ],
+        "8160e498-7df0-496f-aa84-4b1d43e88b69": [
+          "action-18",
+          "action-22"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Submitting leave with empty required dates showed required-fields validation and stayed on the form.",
+          "action_ids": [
+            "action-18",
+            "action-22"
+          ],
+          "observation_ids": [
+            "8160e498-7df0-496f-aa84-4b1d43e88b69"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Directory search/browse produced a settled employee listing Observation.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "346c0158-6c40-4eae-808b-e3057a309efe"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    },
+    "sample-08": {
+      "items": [
+        {
+          "item_id": "login",
+          "credit": true,
+          "action_ids": [
+            "action-2",
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "0fa07869-6062-4be6-ae7f-fdcff47fdf91"
+          ],
+          "rationale": "Valid Employee login succeeded; saved Observation records authenticated Employee dashboard/identity."
+        },
+        {
+          "item_id": "invalid-login",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No invalid-credential submission with saved error Observation."
+        },
+        {
+          "item_id": "logout",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No logout followed by private-page revisit with saved Observation."
+        },
+        {
+          "item_id": "directory-search",
+          "credit": true,
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-9"
+          ],
+          "observation_ids": [
+            "a913da49-b569-420a-9d97-53e85aa7b3a0"
+          ],
+          "rationale": "Name search settled with saved directory row identities."
+        },
+        {
+          "item_id": "directory-filter",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No combined department filter and name search with saved settled rows."
+        },
+        {
+          "item_id": "directory-empty",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No deliberately unmatched search with saved empty result."
+        },
+        {
+          "item_id": "directory-sort",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No double header-click sort with unequal keys and saved orders."
+        },
+        {
+          "item_id": "directory-detail",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No employee detail open plus reload/direct load with saved identity."
+        },
+        {
+          "item_id": "leave-invalid",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No end-before-start leave attempt with saved validation result."
+        },
+        {
+          "item_id": "leave-duration",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No Friday-through-Monday interval with saved displayed duration before submit."
+        },
+        {
+          "item_id": "leave-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No successful leave submission; blank-date validation or missing date selection prevented POST."
+        },
+        {
+          "item_id": "leave-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later history readback of a newly submitted leave request with linked save and readback Observations."
+        },
+        {
+          "item_id": "timesheet-total",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No supporting executed action and saved Observation."
+        },
+        {
+          "item_id": "timesheet-draft",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No draft save with later reload verifying retained hours."
+        },
+        {
+          "item_id": "timesheet-submit",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No week submit with later edit attempt Observation."
+        },
+        {
+          "item_id": "profile-save",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No profile field save with saved result."
+        },
+        {
+          "item_id": "profile-readback",
+          "credit": false,
+          "action_ids": [],
+          "observation_ids": [],
+          "rationale": "No later profile readback of a saved change."
+        }
+      ],
+      "observation_actions": {
+        "0fa07869-6062-4be6-ae7f-fdcff47fdf91": [
+          "action-2",
+          "action-3",
+          "action-4",
+          "action-5"
+        ],
+        "a913da49-b569-420a-9d97-53e85aa7b3a0": [
+          "action-3",
+          "action-4",
+          "action-9",
+          "action-5"
+        ],
+        "3529e61f-c5d1-4979-93b2-dc181c81c0f1": [
+          "action-13",
+          "action-14"
+        ]
+      },
+      "behaviors": [
+        {
+          "id": "behavior-1",
+          "description": "Submitting leave with empty required dates showed required-fields validation and stayed on the form.",
+          "action_ids": [
+            "action-13",
+            "action-14"
+          ],
+          "observation_ids": [
+            "3529e61f-c5d1-4979-93b2-dc181c81c0f1"
+          ]
+        },
+        {
+          "id": "behavior-2",
+          "description": "Directory search/browse produced a settled employee listing Observation.",
+          "action_ids": [
+            "action-3",
+            "action-4",
+            "action-5"
+          ],
+          "observation_ids": [
+            "a913da49-b569-420a-9d97-53e85aa7b3a0"
+          ]
+        }
+      ],
+      "open_questions": [
+        "Can dates selected through the in-page calendar produce a valid leave request and history readback?"
+      ],
+      "unsupported_claims": []
+    }
+  }
+}

@@ -28,7 +28,8 @@ function disabledSkills(cwd) {
   return found;
 }
 
-export async function runHost({cwd,instructions,prompt,tools,callTool,output,timeoutMs=1_920_000,onEvent=()=>{},onClose=()=>{},signal}) {
+export async function runHost({cwd,instructions,prompt,tools,callTool,output,timeoutMs=1_920_000,onEvent=()=>{},onClose=()=>{},signal,effort='low'}) {
+  if(!['low','medium','high','xhigh'].includes(effort))throw new Error('Unsupported reasoning effort');
   const exe=process.env.CODEX_EXECUTABLE ?? join(process.env.APPDATA,'npm/node_modules/@openai/codex/node_modules/@openai/codex-win32-x64/vendor/x86_64-pc-windows-msvc/bin/codex.exe');
   const args=['app-server','--stdio','-c','mcp_servers={}','-c','project_doc_max_bytes=0','-c','web_search="disabled"'];
   const mcpServers=disabledMcpServers(cwd);
@@ -64,12 +65,12 @@ export async function runHost({cwd,instructions,prompt,tools,callTool,output,tim
   signal?.addEventListener('abort',abort,{once:true});
   try {
     await rpc('initialize',{clientInfo:{name:'perquiro_hr_evaluation',version:'1'},capabilities:{experimentalApi:true}});send({method:'initialized',params:{}});
-    const settings=await rpc('thread/start',{model:'gpt-5.6-terra',allowProviderModelFallback:false,serviceTier:'default',cwd,ephemeral:true,approvalPolicy:'never',sandbox:'read-only',baseInstructions:instructions,config:{model_reasoning_effort:'low',project_doc_max_bytes:0,mcp_servers:mcpServers,web_search:'disabled',skills:{config:disabledSkills(cwd)}},environments:[],dynamicTools:tools.map(t=>({type:'function',name:t.name,description:t.description,inputSchema:t.inputSchema}))});
-    if(settings.model!=='gpt-5.6-terra'||settings.reasoningEffort!=='low'||settings.serviceTier!=='default'||settings.instructionSources.length)throw new Error('Host setting or instruction mismatch');
+    const settings=await rpc('thread/start',{model:'gpt-5.6-terra',allowProviderModelFallback:false,serviceTier:'default',cwd,ephemeral:true,approvalPolicy:'never',sandbox:'read-only',baseInstructions:instructions,config:{model_reasoning_effort:effort,project_doc_max_bytes:0,mcp_servers:mcpServers,web_search:'disabled',skills:{config:disabledSkills(cwd)}},environments:[],dynamicTools:tools.map(t=>({type:'function',name:t.name,description:t.description,inputSchema:t.inputSchema}))});
+    if(settings.model!=='gpt-5.6-terra'||settings.reasoningEffort!==effort||settings.serviceTier!=='default'||settings.instructionSources.length)throw new Error('Host setting or instruction mismatch');
     let cursor=null;const inventories=[];
     do {const inventory=await rpc('mcpServerStatus/list',{threadId:settings.thread.id,cursor,detail:'toolsAndAuthOnly'});inventories.push(inventory);if(inventory.data.some(s=>mcpServers[s.name]?.enabled!==false||s.serverInfo!==null||Object.keys(s.tools).length||s.resources.length||s.resourceTemplates.length))throw new Error('Unexpected inherited MCP exposure');cursor=inventory.nextCursor;}while(cursor);
     settings.mcpInventories=inventories;
-    await rpc('turn/start',{threadId:settings.thread.id,input:[{type:'text',text:prompt,text_elements:[]}],model:'gpt-5.6-terra',effort:'low'});
+    await rpc('turn/start',{threadId:settings.thread.id,input:[{type:'text',text:prompt,text_elements:[]}],model:'gpt-5.6-terra',effort});
     const result=await done;closed=true;const elapsed_ms=performance.now()-started;onClose();
     let drainTimer;let post_close_drain_ms=null;let post_close_drain_error=null;
     try{await Promise.race([toolQueue,new Promise((_,reject)=>{drainTimer=setTimeout(()=>reject(new Error('Post-close capture drain failed')),20000);})]);post_close_drain_ms=performance.now()-started-elapsed_ms;}

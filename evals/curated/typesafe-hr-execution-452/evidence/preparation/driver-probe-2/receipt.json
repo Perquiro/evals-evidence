@@ -1,0 +1,950 @@
+{
+  "id": "driver-probe-2",
+  "arm": "ordinary",
+  "kind": "unscored_preflight",
+  "status": "completed",
+  "events": [
+    {
+      "kind": "tool",
+      "name": "read_setup",
+      "args": {},
+      "callId": "exec-c1dda66e-b468-44ac-b54b-5bc2293714e7",
+      "started_ms": 9662.495,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"projectRoot\":\"C:\\\\dev\\\\Perquiro-452\\\\.perquiro\\\\452\\\\driver-probe-2\\\\project\",\"product\":\"BugBusters HR\",\"url\":\"http://127.0.0.1:54352\",\"agent\":\"openai\",\"evidenceMib\":64,\"actors\":[{\"id\":\"5183c1ad-9860-48a5-9b59-8a523273815a\",\"name\":\"Employee\",\"secretNames\":[\"EMPLOYEE_PASSWORD\"],\"createdAt\":\"2026-09-24T07:06:15.269Z\"}]}"
+          }
+        ]
+      },
+      "completed_ms": 9685.4409
+    },
+    {
+      "kind": "tool",
+      "name": "read_knowledge_catalog",
+      "args": {},
+      "callId": "exec-ad0f9507-06fe-40ec-a647-61df8f5a4fea",
+      "started_ms": 9687.6036,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"8853e7ea-60c9-44b1-b233-606206986dc9\",\"coverage\":{\"actors\":1,\"surfaces\":0,\"journeys\":0,\"observations\":0,\"evidence\":0,\"scenarios\":0,\"tests\":0,\"surfacesWithoutObservations\":0,\"journeysWithoutAcceptedScenarios\":0,\"acceptedScenariosWithoutTests\":0},\"entries\":{\"items\":[{\"kind\":\"actor\",\"id\":\"5183c1ad-9860-48a5-9b59-8a523273815a\",\"name\":\"Employee\"}],\"complete\":true},\"storedRelationships\":{\"items\":[],\"complete\":true}}"
+          }
+        ]
+      },
+      "completed_ms": 9709.4402
+    },
+    {
+      "kind": "tool",
+      "name": "list_open_reviews",
+      "args": {},
+      "callId": "exec-0eab485a-d8ef-42ed-b53d-cf0532cae1fe",
+      "started_ms": 9711.036999999998,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "[]"
+          }
+        ]
+      },
+      "completed_ms": 9732.0875
+    },
+    {
+      "kind": "tool",
+      "name": "read_follow_on_work",
+      "args": {},
+      "callId": "exec-8d0f4bb0-5c2b-4f70-bff8-50b9d061d44c",
+      "started_ms": 9733.839699999999,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "[]"
+          }
+        ]
+      },
+      "completed_ms": 9758.1611
+    },
+    {
+      "kind": "tool",
+      "name": "read_project_file",
+      "args": {
+        "path": "AGENTS.md"
+      },
+      "callId": "exec-d84b7869-6351-4e26-b42f-13df4b249228",
+      "started_ms": 9760.341600000002,
+      "result": {
+        "text": "<!-- perquiro:agent-contract:start -->\n## Perquiro\n\nThis is a Perquiro Test repository. It contains Tests and Project state, not Product source.\n\nWork on Perquiro when the human asks you to Explore, Learn, Create, Generate, Run, or Investigate.\n\nAn authorized Investigate or replacement-continuation request includes carrying durable `create_replacement` Follow-on work through Create, waiting when a human Create Decision is required, and after acceptance continuing through Generate and its recorded check Runs. Do not wait for a separate routine instruction to Create or Generate for that authorized work. Explicit instructions to stop, perform only one command, or avoid execution retain their scope. Unrelated requests do not inherit that continuation. Perquiro does not start the Agent; pending work stays durable until an Agent resumes an authorized workflow.\n\nBefore each command:\n\n1. Read Setup, relevant Knowledge, pending Follow-on work, and open Reviews through Perquiro MCP.\n2. Treat Perquiro's stored state as truth. Do not query SQLite, enumerate `.perquiro/`, inspect internal files other than an exact Evidence path returned by MCP, or infer Project state from chat.\n3. If Setup is missing or invalid, stop and tell the human to run `perquiro setup`.\n\nCommands:\n\n- Before starting Explore, read `.agents/skills/perquiro-explore/SKILL.md`. Explore records Surfaces, Surface items, typed Looks, Journeys, Observations, and Evidence as one Actor per execution, never Findings or Expected Behavior.\n- Before starting Learn, read `.agents/skills/perquiro-learn/SKILL.md`. Learn records versioned teaching specs and documentation as source-backed Knowledge, with associations to known Surfaces, Journeys, or Scenarios, without accepting Expected Behavior or starting Create by itself.\n- Before starting Create, read `.agents/skills/perquiro-create/SKILL.md`. Create chooses Journeys to cover next or claims pending Create work, writes proposed Scenarios, and leaves acceptance to Perquiro automatic policy or a human Decision. Under an authorized Investigate or replacement-continuation request, Create claims pending replacement work without another routine Create instruction and, after acceptance, continues to Generate.\n- Before starting Generate, read `.agents/skills/perquiro-generate/SKILL.md`. Generate writes ordinary Tests only from accepted Scenarios, records each Test after its file exists, and checks every delivered Test through recorded Runs with purpose `check`. The Generate request authorizes these checks without another routine confirmation. An authorized replacement-continuation that accepted replacements also authorizes Generate for those accepted Scenarios without another routine Generate instruction. Honor explicit execution restrictions and report affected Tests as unverified.\n- Before starting Run, read `.agents/skills/perquiro-run/SKILL.md`. Run executes an explicit, non-empty selection of recorded Tests with purpose `check`, `verify`, or `investigate`.\n- Before starting Investigate, read `.agents/skills/perquiro-investigate/SKILL.md`. Investigate starts from a recorded Run, gathers Evidence, and writes Findings without guessing the human's Decision. An authorized Investigate request continues through pending replacement Create work and, after human acceptance, Generate with its check Runs, without another routine Create or Generate instruction.\n\nOnly a human runs `perquiro setup`, adds an Actor with `perquiro actor add`, or makes a human Review Decision. Perquiro may automatically accept eligible coverage proposals; the Agent cannot resolve Reviews. If a command needs an Actor that does not exist, tell the human to run `perquiro actor add`; do not run it yourself. You may read Reviews and tell the human to run `perquiro review`.\n\nOnly a human grants or revokes Investigate sharing through `perquiro investigate-sharing`. Never run that command yourself or submit its confirmation. A configured TypeSafe key does not grant consent.\n\nOnly Perquiro writes `.perquiro/evidence/`. Keep secrets out of git and SQLite. Work only against trusted test environments.\n<!-- perquiro:agent-contract:end -->\n"
+      },
+      "completed_ms": 9760.4272
+    },
+    {
+      "kind": "tool",
+      "name": "read_explore_continuation",
+      "args": {},
+      "callId": "exec-4e7b8977-ff33-4e69-8f4e-6f34af81729b",
+      "started_ms": 9762.5346,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "null"
+          }
+        ]
+      },
+      "completed_ms": 9784.726
+    },
+    {
+      "kind": "tool",
+      "name": "trial_note",
+      "args": {
+        "phase": "candidate_generation",
+        "note": "Preflight scope is limited to the signed-out login form; candidate is a non-mutating browser snapshot of the setup URL."
+      },
+      "callId": "exec-4887725f-e66d-40cb-9074-8b24b4f1b8a3",
+      "started_ms": 14621.341999999999,
+      "result": {
+        "recorded": true
+      },
+      "completed_ms": 14621.3643
+    },
+    {
+      "kind": "tool",
+      "name": "trial_note",
+      "args": {
+        "phase": "ordinary_planning",
+        "note": "Selected the sole authorized non-mutating check: inspect the signed-out login form, then record its visible contents without logging in or navigating elsewhere."
+      },
+      "callId": "exec-bcd567a6-cb98-472d-be62-6538245769c6",
+      "started_ms": 14626.5869,
+      "result": {
+        "recorded": true
+      },
+      "completed_ms": 14626.5927
+    },
+    {
+      "kind": "tool",
+      "name": "browser_action",
+      "args": {
+        "op": "navigate",
+        "path": "http://127.0.0.1:54352"
+      },
+      "callId": "exec-0ac8ee3e-ce60-4085-8a40-d2f669bc1dab",
+      "started_ms": 14628.063100000001,
+      "result": {
+        "url": "http://127.0.0.1:54352/",
+        "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+        "actionId": "action-2",
+        "admitted": 0,
+        "remaining": 60,
+        "capturePath": "C:\\dev\\Perquiro-452\\.perquiro\\452\\driver-probe-2\\project\\captures\\9.json"
+      },
+      "completed_ms": 14664.0964
+    },
+    {
+      "kind": "tool",
+      "name": "browser_action",
+      "args": {
+        "op": "snapshot"
+      },
+      "callId": "exec-317bb64f-d8a9-4ef3-83f5-1736c28f08b1",
+      "started_ms": 14666.0611,
+      "result": {
+        "url": "http://127.0.0.1:54352/login",
+        "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+        "admitted": 0,
+        "remaining": 60,
+        "stop": null,
+        "capturePath": "C:\\dev\\Perquiro-452\\.perquiro\\452\\driver-probe-2\\project\\captures\\10.json"
+      },
+      "completed_ms": 14670.448300000002
+    },
+    {
+      "kind": "tool",
+      "name": "record_surface",
+      "args": {
+        "requestToken": "204474de-0727-4d49-8f69-10cb311b507a",
+        "name": "Login",
+        "locator": "/login"
+      },
+      "callId": "exec-1b853982-7d5d-41fc-aa93-5ad5c83278c4",
+      "started_ms": 22019.7083,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"id\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Login\",\"locator\":\"/login\",\"testFolder\":\"login\",\"createdAt\":\"2026-09-24T07:06:43.088Z\"}"
+          }
+        ]
+      },
+      "completed_ms": 22064.1103
+    },
+    {
+      "kind": "tool",
+      "name": "read_explore",
+      "args": {
+        "surfaceId": "13bb449b-6920-46a1-9f61-81fd41192c8f",
+        "actorIds": [
+          "5183c1ad-9860-48a5-9b59-8a523273815a"
+        ],
+        "productVersions": {
+          "scope": "exact",
+          "values": [
+            "868e83d2c50f8135c5bff46db086ee4037c90ef3"
+          ]
+        },
+        "platform": "browser"
+      },
+      "callId": "exec-3988228c-2f88-461d-9b6a-ecdb2c3fd39b",
+      "started_ms": 22066.2368,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "Project database contains an invalid Surface row"
+          }
+        ],
+        "isError": true
+      },
+      "completed_ms": 22095.9171
+    },
+    {
+      "kind": "tool",
+      "name": "read_explore",
+      "args": {
+        "surfaceId": "b2ef5120-1f00-4d75-8096-b776513abfe3",
+        "actorIds": [
+          "5183c1ad-9860-48a5-9b59-8a523273815a"
+        ],
+        "productVersions": {
+          "scope": "exact",
+          "values": [
+            "868e83d2c50f8135c5bff46db086ee4037c90ef3"
+          ]
+        },
+        "platform": "browser"
+      },
+      "callId": "exec-00e3f6dc-488c-40ce-9610-ca903bdbf153",
+      "started_ms": 31063.315200000005,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"revision\":\"a3862a9f-5a75-4ed0-956d-95bf8e1f773c\",\"testFileRevision\":\"4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945\",\"selection\":{\"surfaceId\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"actorIds\":[\"5183c1ad-9860-48a5-9b59-8a523273815a\"],\"platform\":\"browser\",\"productVersions\":{\"scope\":\"exact\",\"values\":[\"868e83d2c50f8135c5bff46db086ee4037c90ef3\"]}},\"surface\":{\"id\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Login\",\"locator\":\"/login\",\"testFolder\":\"login\",\"createdAt\":\"2026-09-24T07:06:43.088Z\"},\"inventoryCoverage\":{\"totalContexts\":1,\"establishedContexts\":0,\"missingContexts\":1,\"missingActorIds\":[\"5183c1ad-9860-48a5-9b59-8a523273815a\"]},\"contexts\":{\"items\":[{\"actorId\":\"5183c1ad-9860-48a5-9b59-8a523273815a\",\"actorName\":\"Employee\",\"retired\":false,\"platform\":\"browser\",\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"inventory\":{\"established\":false,\"latestObservationId\":null,\"latestReportEmpty\":null},\"counts\":{\"knownChecks\":0,\"pending\":0,\"blocked\":0,\"unresolved\":0,\"suggested\":0,\"accountedFor\":0}}],\"complete\":true},\"inventory\":{\"items\":[],\"complete\":true},\"history\":{\"items\":[],\"complete\":true},\"gaps\":{\"items\":[],\"complete\":true},\"recovery\":{\"items\":[],\"complete\":true},\"accessHints\":{\"items\":[],\"complete\":true},\"coverageClues\":{\"items\":[],\"complete\":true},\"testVerification\":{\"items\":[],\"complete\":true},\"evidenceLinks\":{\"items\":[],\"complete\":true},\"comparisonAssessments\":{\"items\":[],\"complete\":true},\"counts\":{\"knownChecks\":0,\"pending\":0,\"blocked\":0,\"unresolved\":0,\"suggested\":0,\"accountedFor\":0}}"
+          }
+        ]
+      },
+      "completed_ms": 31102.6601
+    },
+    {
+      "kind": "tool",
+      "name": "record_inspection",
+      "args": {
+        "requestToken": "e06da21a-2c3f-4574-8275-f4d4ea9c007c",
+        "surfaceId": "b2ef5120-1f00-4d75-8096-b776513abfe3",
+        "actorId": "5183c1ad-9860-48a5-9b59-8a523273815a",
+        "platform": "browser",
+        "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+        "items": [
+          {
+            "key": "username",
+            "name": "Username",
+            "kind": "field"
+          },
+          {
+            "key": "password",
+            "name": "Password",
+            "kind": "field"
+          },
+          {
+            "key": "sign-in",
+            "name": "Sign in",
+            "kind": "action"
+          }
+        ],
+        "reports": [
+          {
+            "kind": "inventory",
+            "body": "The signed-out Login page visibly shows Username and Password fields and a Sign in button.",
+            "looks": [
+              {
+                "kind": "offered",
+                "item": {
+                  "key": "username"
+                }
+              },
+              {
+                "kind": "offered",
+                "item": {
+                  "key": "password"
+                }
+              },
+              {
+                "kind": "offered",
+                "item": {
+                  "key": "sign-in"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "callId": "exec-42120a7a-ee34-4a00-8939-7463d30f1d8f",
+      "started_ms": 31156.543400000002,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"items\":[{\"key\":\"username\",\"id\":\"ac0fafa1-4785-4d4e-b47d-ea4ada282489\",\"surfaceId\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Username\",\"kind\":\"field\",\"createdAt\":\"2026-09-24T07:06:52.226Z\"},{\"key\":\"password\",\"id\":\"d1af5786-5bc3-4fd0-93e7-1dba896e0e10\",\"surfaceId\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Password\",\"kind\":\"field\",\"createdAt\":\"2026-09-24T07:06:52.226Z\"},{\"key\":\"sign-in\",\"id\":\"84e6b5a0-ba79-4d67-abaf-6a80af75f43f\",\"surfaceId\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Sign in\",\"kind\":\"action\",\"createdAt\":\"2026-09-24T07:06:52.226Z\"}],\"observations\":[{\"id\":\"b48f92e1-bc2c-411c-a0c2-5ccb3842add2\",\"seq\":1,\"surfaceId\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"actorId\":\"5183c1ad-9860-48a5-9b59-8a523273815a\",\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"The signed-out Login page visibly shows Username and Password fields and a Sign in button.\",\"createdAt\":\"2026-09-24T07:06:52.229Z\"}],\"authorizedAttemptIds\":[]}"
+          }
+        ]
+      },
+      "completed_ms": 31201.1671
+    },
+    {
+      "kind": "tool",
+      "name": "trial_note",
+      "args": {
+        "phase": "recording",
+        "note": "Recorded the Login surface and its initial signed-out inventory observation. No login, mutation, additional navigation, or further exploration was performed."
+      },
+      "callId": "exec-0f37f06c-3a60-46e3-a847-fe2ce3e7633a",
+      "started_ms": 39742.962,
+      "result": {
+        "recorded": true
+      },
+      "completed_ms": 39742.98
+    },
+    {
+      "kind": "tool",
+      "name": "report_explore_advice_use",
+      "args": {
+        "executionId": "e0b2aef4-f4eb-455a-8063-ace4e22339c9",
+        "requestToken": "1a65e173-3aae-4df7-9802-732b02238e6a",
+        "selectionPhases": {
+          "candidate_generation": null,
+          "ordinary_planning": null,
+          "advice": null,
+          "advice_handling": null,
+          "override": null,
+          "fallback": null
+        }
+      },
+      "callId": "exec-59fd6811-6754-45e6-8c63-fb90669b0b42",
+      "started_ms": 39747.8105,
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"version\":1,\"requests\":{\"total\":0,\"selected\":0,\"noSelection\":0,\"unavailable\":0},\"overrides\":[],\"fallbacks\":[],\"typesafe\":{\"elapsedMs\":null,\"usage\":null},\"selectionPhases\":{\"candidate_generation\":null,\"ordinary_planning\":null,\"advice\":null,\"advice_handling\":null,\"override\":null,\"fallback\":null},\"selectionElapsedMs\":null}"
+          }
+        ]
+      },
+      "completed_ms": 39794.9551
+    }
+  ],
+  "phases": [
+    {
+      "phase": "startup",
+      "start_ms": 0,
+      "end_ms": 9662.516399999999
+    },
+    {
+      "phase": "recording",
+      "start_ms": 9662.516399999999,
+      "end_ms": 9685.4436
+    },
+    {
+      "phase": "other",
+      "start_ms": 9685.4436,
+      "end_ms": 9687.6056
+    },
+    {
+      "phase": "recording",
+      "start_ms": 9687.6056,
+      "end_ms": 9709.4422
+    },
+    {
+      "phase": "other",
+      "start_ms": 9709.4422,
+      "end_ms": 9711.0469
+    },
+    {
+      "phase": "recording",
+      "start_ms": 9711.0469,
+      "end_ms": 9732.0892
+    },
+    {
+      "phase": "other",
+      "start_ms": 9732.0892,
+      "end_ms": 9733.841299999998
+    },
+    {
+      "phase": "recording",
+      "start_ms": 9733.841299999998,
+      "end_ms": 9758.1631
+    },
+    {
+      "phase": "other",
+      "start_ms": 9758.1631,
+      "end_ms": 9760.428300000001
+    },
+    {
+      "phase": "other",
+      "start_ms": 9760.428300000001,
+      "end_ms": 9762.5382
+    },
+    {
+      "phase": "recording",
+      "start_ms": 9762.5382,
+      "end_ms": 9784.7283
+    },
+    {
+      "phase": "other",
+      "start_ms": 9784.7283,
+      "end_ms": 14621.3484
+    },
+    {
+      "phase": "candidate_generation",
+      "start_ms": 14621.3484,
+      "end_ms": 14626.590600000001
+    },
+    {
+      "phase": "ordinary_planning",
+      "start_ms": 14626.590600000001,
+      "end_ms": 14628.065400000001
+    },
+    {
+      "phase": "product_interaction",
+      "start_ms": 14628.065400000001,
+      "end_ms": 14664.098199999999
+    },
+    {
+      "phase": "other",
+      "start_ms": 14664.098199999999,
+      "end_ms": 14666.0643
+    },
+    {
+      "phase": "product_interaction",
+      "start_ms": 14666.0643,
+      "end_ms": 14670.4501
+    },
+    {
+      "phase": "other",
+      "start_ms": 14670.4501,
+      "end_ms": 22019.710700000003
+    },
+    {
+      "phase": "recording",
+      "start_ms": 22019.710700000003,
+      "end_ms": 22064.1121
+    },
+    {
+      "phase": "other",
+      "start_ms": 22064.1121,
+      "end_ms": 22066.2385
+    },
+    {
+      "phase": "recording",
+      "start_ms": 22066.2385,
+      "end_ms": 22095.918400000002
+    },
+    {
+      "phase": "other",
+      "start_ms": 22095.918400000002,
+      "end_ms": 31063.319300000003
+    },
+    {
+      "phase": "recording",
+      "start_ms": 31063.319300000003,
+      "end_ms": 31102.666000000005
+    },
+    {
+      "phase": "other",
+      "start_ms": 31102.666000000005,
+      "end_ms": 31156.5458
+    },
+    {
+      "phase": "recording",
+      "start_ms": 31156.5458,
+      "end_ms": 31201.169
+    },
+    {
+      "phase": "other",
+      "start_ms": 31201.169,
+      "end_ms": 39742.9749
+    },
+    {
+      "phase": "recording",
+      "start_ms": 39742.9749,
+      "end_ms": 39747.8133
+    },
+    {
+      "phase": "recording",
+      "start_ms": 39747.8133,
+      "end_ms": 39794.9567
+    },
+    {
+      "phase": "other",
+      "start_ms": 39794.9567,
+      "end_ms": 42976.5614
+    }
+  ],
+  "provider": [],
+  "reset": {
+    "product_date": "2026-09-17T12:00:00.000Z",
+    "seed_sha256": "8cde76f36bd76b055e2fee3fc2391ace595d94819a4b96d162f7b4e1eecdf83e",
+    "source_manifest": {
+      ".gitignore": "13075c61f119e0b4d2f2448359415bbbf8dea3448dd00ca62b857f3a02041a12",
+      "ANSWER_KEY.md": "7eb908b5596ecf26b93734c3d31ab7cbeba02bc69c9b9eff77574f7ea0c14233",
+      "docs/superpowers/specs/2026-07-28-era2-api-platform-design.md": "4ad0b9d4d2faea6eb24b609dadada918f7ddcf46537110036271f81da38ff3f8",
+      "index.html": "df0748570ea1d6c01c45acebc982055ebbffd5d83abb556fbab3ccf5edb397d5",
+      "package-lock.json": "b698001d0b8325bacad477e2983034552db22e209967d9c7e9330ab85dc216a2",
+      "package.json": "b2051a23fb8ab14ba9ec707b3bbdc38cc97e0030aafa78e5aadc4cf5c8cfc589",
+      "README.md": "3544934c3f4f169e9be59b0779cdbd10abdb5fbac1e0def06387506be3ce9340",
+      "server/index.js": "bbf2d72a1b75b226e732af32212a7c7f3153c4e034901220c20c79d0c67ec6bb",
+      "server/seed.js": "6f284449573cb5d320e2ae8a9ff42d11bcfa27a9b07bf650008de9f3dd754a35",
+      "src/api.js": "5ec6e3ae37db8e895bdeadf758eb0e5bc8b33fde2c0a6699bdfafaf033df0ceb",
+      "src/App.jsx": "3e5efebf74590787542307bd2753cc2d724795c0527c88c7496a561830e56dc2",
+      "src/auth.jsx": "82d3cdef6dbed0235eb656eb04ccff682ee9cfcd4690e78eeeb48ac3badd0fe0",
+      "src/components/DatePicker.jsx": "fc96c3758816ebf4e4e823ac20285162c892a0acc19779426de657c6f57af6ef",
+      "src/components/Layout.jsx": "0e476379bd87669fd04ad8945504df5d4525b2ae958f3d8a25a0f2dd3a5626cc",
+      "src/components/Modal.jsx": "d3068658e147559c833202dc91d6ad75354fbb33e641e9d28ee7bffab14c45e5",
+      "src/directoryCache.js": "7b3cf3d30184e6dee01107866ddd53904a1b7f6dc14c21df3dbcbb5240035ecf",
+      "src/main.jsx": "d65350464d72c4c96e6fee13a783d8700df0df362e6b40af58aed16f216af3b5",
+      "src/pages/Approvals.jsx": "b58b48de711d0f5e0724e6d146b65c82b3d0d74b9cc92bf40604cf93c3b685a1",
+      "src/pages/Dashboard.jsx": "d9fdd1c7eb36266533f8f5ab3795e8843a00791e94f2fa2210c80781e7c16864",
+      "src/pages/Directory.jsx": "c62ba890c8c43c0b41f33906766a6a95b94023f5d905ff148dbde199a739730c",
+      "src/pages/EmployeeDetail.jsx": "216fd59175ebe505475b5015e8c0768e61bc4bd0bac5b6be31b80b6ceca34587",
+      "src/pages/Leave.jsx": "5e5ed3a3dedf4db27d20e0d107aa9b9c1a86971b4bb2bc2f753923876a003324",
+      "src/pages/Login.jsx": "5ee75c7470fddc5bb9fcdeee3da16006daafcbbda32d33135d60dad63e721ccf",
+      "src/pages/NewLeave.jsx": "42348f75297206b863c6cdb0857579c4b25e560be2ee074d5a361116b9227d77",
+      "src/pages/Notifications.jsx": "c8c4ffc1b1b2b3b467d1c494b35b36fa3c22239f399d427bd8e3b63b33801865",
+      "src/pages/Onboarding.jsx": "35354bcc64c2bde52ff360441c5829e32a3e23f83611aee1343d4383def4b49e",
+      "src/pages/Profile.jsx": "ba367df81e908f106e5a6edd4a6c27247f548737bdd123e1984e263b35b71306",
+      "src/pages/Timesheet.jsx": "442d9130893d75c7f599ac47155c42ee03e6cdf0c892f019817eb3f9ed51e268",
+      "src/styles.css": "3d8107160ad8facc3e3bf7f26f46544d28bd75af5f88746e4ea5b6ef60a3f4c8",
+      "src/utils.js": "8490648cf5554713de218d7d2f82c7aad4fee50de2fff0fad2865ae97159adac",
+      "vite.config.js": "da343b0e8c1f119896de94daefdf3feb20b085f6cd0e7045423f1dbea628f5dd"
+    },
+    "build_manifest": {
+      "dist/assets/index-CiOd5S5f.js": "5004bbabe116abe1e092ff8694c75adcc35aabaef3d66b6527c24dd24ff723c6",
+      "dist/assets/index-D-g6-4_f.css": "3842a75d8a6c401024182a594757c0a9736f7cd1063934ea4bc2fa1024a6c8b3",
+      "dist/index.html": "a4bbb6e2130bf256c30ca708afbcb0968a3a47bf9281c88f3baef41c4e3c9547"
+    },
+    "product_source_sha256": "0043c990ecd58697cfe1099f3b640f9ab66eb84e7cf09ee1aba045b80f68cdb7",
+    "product_build_sha256": "0ce7da8b5f1853df3faa36439242db01c1d58f3fabe06d61e79a953abf9ed0f9",
+    "product_sha": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+    "server_instance_id": "13420:2026-09-24T07:06:10.967Z",
+    "server_started": "2026-09-24T07:06:10.967Z",
+    "project_id": "b4e6e181-1fd4-4bc2-9733-28b9e0cf0dac",
+    "project_path": "C:\\dev\\Perquiro-452\\.perquiro\\452\\driver-probe-2\\project",
+    "browser_context_id": "07d6b86d-a44d-4ed5-ad34-96a43beb803d",
+    "browser_version": "151.0.7922.34",
+    "empty_storage": true,
+    "empty_knowledge": true,
+    "signed_out": true,
+    "initial_capture": {
+      "url": "http://127.0.0.1:54352/login",
+      "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+      "admitted": 0,
+      "events": [
+        {
+          "kind": "action",
+          "id": "action-1",
+          "args": {
+            "op": "navigate",
+            "path": "/"
+          },
+          "dispatched_ms": null,
+          "executed": true,
+          "result": {
+            "url": "http://127.0.0.1:54352/",
+            "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+          },
+          "completed_ms": null
+        },
+        {
+          "kind": "action",
+          "id": "action-2",
+          "args": {
+            "op": "navigate",
+            "path": "http://127.0.0.1:54352"
+          },
+          "dispatched_ms": 14628.1925,
+          "executed": true,
+          "result": {
+            "url": "http://127.0.0.1:54352/",
+            "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+          },
+          "completed_ms": 14663.5463
+        }
+      ]
+    },
+    "emptyKnowledge": {
+      "revision": "8853e7ea-60c9-44b1-b233-606206986dc9",
+      "coverage": {
+        "actors": 1,
+        "surfaces": 0,
+        "journeys": 0,
+        "observations": 0,
+        "evidence": 0,
+        "scenarios": 0,
+        "tests": 0,
+        "surfacesWithoutObservations": 0,
+        "journeysWithoutAcceptedScenarios": 0,
+        "acceptedScenariosWithoutTests": 0
+      },
+      "entries": {
+        "items": [
+          {
+            "kind": "actor",
+            "id": "5183c1ad-9860-48a5-9b59-8a523273815a",
+            "name": "Employee"
+          }
+        ],
+        "complete": true
+      },
+      "storedRelationships": {
+        "items": [],
+        "complete": true
+      }
+    },
+    "actor_id": "5183c1ad-9860-48a5-9b59-8a523273815a",
+    "fixed_product_date": "2026-09-17T12:00:00.000Z"
+  },
+  "executionId": "e0b2aef4-f4eb-455a-8063-ace4e22339c9",
+  "elapsed_ms": 42976.5614,
+  "host": {
+    "settings": {
+      "thread": {
+        "id": "01a0d23c-978d-7842-b9c8-f3622e0df330",
+        "extra": null,
+        "sessionId": "01a0d23c-978d-7842-b9c8-f3622e0df330",
+        "forkedFromId": null,
+        "parentThreadId": null,
+        "preview": "",
+        "ephemeral": true,
+        "section": null,
+        "sectionEnteredAt": null,
+        "projectId": null,
+        "historyMode": "legacy",
+        "modelProvider": "openai",
+        "createdAt": 1790233581,
+        "updatedAt": 1790233581,
+        "recencyAt": 1790233581,
+        "status": {
+          "type": "idle"
+        },
+        "path": null,
+        "cwd": "C:\\dev\\Perquiro-452\\.perquiro\\452\\driver-probe-2\\project",
+        "cliVersion": "0.149.0",
+        "source": "vscode",
+        "canAcceptDirectInput": true,
+        "threadSource": null,
+        "agentNickname": null,
+        "agentRole": null,
+        "gitInfo": null,
+        "name": null,
+        "turns": []
+      },
+      "model": "gpt-5.6-terra",
+      "modelProvider": "openai",
+      "serviceTier": "default",
+      "cwd": "C:\\dev\\Perquiro-452\\.perquiro\\452\\driver-probe-2\\project",
+      "runtimeWorkspaceRoots": [],
+      "instructionSources": [],
+      "approvalPolicy": "never",
+      "approvalsReviewer": "user",
+      "sandbox": {
+        "type": "readOnly",
+        "networkAccess": false
+      },
+      "activePermissionProfile": null,
+      "reasoningEffort": "low",
+      "multiAgentMode": "explicitRequestOnly",
+      "mcpInventories": [
+        {
+          "data": [
+            {
+              "name": "node_repl",
+              "pluginId": null,
+              "serverInfo": null,
+              "tools": {},
+              "resources": [],
+              "resourceTemplates": [],
+              "authStatus": "unsupported"
+            },
+            {
+              "name": "perquiro",
+              "pluginId": null,
+              "serverInfo": null,
+              "tools": {},
+              "resources": [],
+              "resourceTemplates": [],
+              "authStatus": "unsupported"
+            }
+          ],
+          "nextCursor": null
+        }
+      ]
+    },
+    "result": {
+      "status": "completed",
+      "turn": {
+        "id": "01a0d23c-9835-7c73-bd0b-db59853d1209",
+        "items": [
+          {
+            "type": "agentMessage",
+            "id": "msg_0f86ee1364ea2076016ab4cc16c80487d28fd67dd3df883517",
+            "text": "Preflight complete.\n\n- Actor: Employee; version: `868e83d2c50f8135c5bff46db086ee4037c90ef3`\n- Recorded Surface: Login (`/login`)\n- Recorded one signed-out inventory Observation: Username and Password fields plus Sign in button.\n- Did not log in or explore other functionality.\n- Advice accounting reported; no advice call was made.",
+            "phase": "final_answer",
+            "memoryCitation": null,
+            "delivery": null
+          }
+        ],
+        "itemsView": "summary",
+        "status": "completed",
+        "error": null,
+        "startedAt": 1790233581,
+        "completedAt": 1790233624,
+        "durationMs": 42391
+      }
+    },
+    "elapsed_ms": 42842.9402,
+    "post_close_drain_ms": 0.1628000000055181
+  },
+  "finalCapture": {
+    "url": "http://127.0.0.1:54352/login",
+    "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin",
+    "admitted": 0,
+    "events": [
+      {
+        "kind": "action",
+        "id": "action-1",
+        "args": {
+          "op": "navigate",
+          "path": "/"
+        },
+        "dispatched_ms": null,
+        "executed": true,
+        "result": {
+          "url": "http://127.0.0.1:54352/",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "completed_ms": null
+      },
+      {
+        "kind": "action",
+        "id": "action-2",
+        "args": {
+          "op": "navigate",
+          "path": "http://127.0.0.1:54352"
+        },
+        "dispatched_ms": 14628.1925,
+        "executed": true,
+        "result": {
+          "url": "http://127.0.0.1:54352/",
+          "snapshot": "- text: BB BugBusters HR Sign in to your employee portal Username\n- textbox \"Username\"\n- text: Password\n- textbox \"Password\"\n- button \"Sign in\"\n- strong: Demo accounts\n- text: \"(password:\"\n- code: [REDACTED]\n- text: )\n- code: emily.dawson\n- text: — Employee\n- code: michael.reed\n- text: — Manager\n- code: hannah.blake\n- text: — HR Admin"
+        },
+        "completed_ms": 14663.5463
+      }
+    ]
+  },
+  "knowledge": {
+    "catalogPages": [
+      {
+        "args": {},
+        "raw": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"revision\":\"c455057d-2737-481b-a103-61b9a3eba24b\",\"coverage\":{\"actors\":1,\"surfaces\":1,\"journeys\":0,\"observations\":1,\"evidence\":0,\"scenarios\":0,\"tests\":0,\"surfacesWithoutObservations\":0,\"journeysWithoutAcceptedScenarios\":0,\"acceptedScenariosWithoutTests\":0},\"entries\":{\"items\":[{\"kind\":\"actor\",\"id\":\"5183c1ad-9860-48a5-9b59-8a523273815a\",\"name\":\"Employee\"},{\"kind\":\"surface\",\"id\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Login\",\"locator\":\"/login\",\"testFolder\":\"login\"}],\"complete\":true},\"storedRelationships\":{\"items\":[],\"complete\":true}}"
+            }
+          ]
+        },
+        "value": {
+          "revision": "c455057d-2737-481b-a103-61b9a3eba24b",
+          "coverage": {
+            "actors": 1,
+            "surfaces": 1,
+            "journeys": 0,
+            "observations": 1,
+            "evidence": 0,
+            "scenarios": 0,
+            "tests": 0,
+            "surfacesWithoutObservations": 0,
+            "journeysWithoutAcceptedScenarios": 0,
+            "acceptedScenariosWithoutTests": 0
+          },
+          "entries": {
+            "items": [
+              {
+                "kind": "actor",
+                "id": "5183c1ad-9860-48a5-9b59-8a523273815a",
+                "name": "Employee"
+              },
+              {
+                "kind": "surface",
+                "id": "b2ef5120-1f00-4d75-8096-b776513abfe3",
+                "name": "Login",
+                "locator": "/login",
+                "testFolder": "login"
+              }
+            ],
+            "complete": true
+          },
+          "storedRelationships": {
+            "items": [],
+            "complete": true
+          }
+        }
+      }
+    ],
+    "contexts": [
+      {
+        "args": {
+          "anchor": {
+            "kind": "surface",
+            "id": "b2ef5120-1f00-4d75-8096-b776513abfe3"
+          },
+          "productVersions": {
+            "scope": "all"
+          },
+          "observations": {
+            "detail": "records",
+            "actorIds": [
+              "5183c1ad-9860-48a5-9b59-8a523273815a"
+            ],
+            "scope": "both"
+          }
+        },
+        "raw": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"revision\":\"c455057d-2737-481b-a103-61b9a3eba24b\",\"anchor\":{\"kind\":\"surface\",\"record\":{\"id\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Login\",\"locator\":\"/login\",\"testFolder\":\"login\",\"createdAt\":\"2026-09-24T07:06:43.088Z\"}},\"selection\":{\"productVersions\":{\"scope\":\"all\"},\"observations\":{\"detail\":\"records\",\"actorIds\":[\"5183c1ad-9860-48a5-9b59-8a523273815a\"],\"scope\":\"both\"}},\"storedRelationships\":{\"items\":[{\"kind\":\"observations\",\"actor\":{\"id\":\"5183c1ad-9860-48a5-9b59-8a523273815a\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Login\"},\"observations\":[{\"id\":\"b48f92e1-bc2c-411c-a0c2-5ccb3842add2\",\"seq\":1,\"productVersion\":\"868e83d2c50f8135c5bff46db086ee4037c90ef3\",\"body\":\"The signed-out Login page visibly shows Username and Password fields and a Sign in button.\",\"createdAt\":\"2026-09-24T07:06:52.229Z\",\"inspection\":{\"platform\":\"browser\",\"report\":{\"kind\":\"inventory\",\"capture\":\"none\",\"looks\":[{\"item\":{\"id\":\"ac0fafa1-4785-4d4e-b47d-ea4ada282489\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"d1af5786-5bc3-4fd0-93e7-1dba896e0e10\"},\"kind\":\"offered\"},{\"item\":{\"id\":\"84e6b5a0-ba79-4d67-abaf-6a80af75f43f\"},\"kind\":\"offered\"}]},\"support\":\"missing\"}}]}],\"complete\":true},\"projections\":{\"items\":[{\"kind\":\"observation_coverage\",\"actor\":{\"id\":\"5183c1ad-9860-48a5-9b59-8a523273815a\",\"name\":\"Employee\"},\"context\":{\"kind\":\"surface\",\"id\":\"b2ef5120-1f00-4d75-8096-b776513abfe3\",\"name\":\"Login\"},\"count\":1,\"firstSeq\":1,\"lastSeq\":1}],\"complete\":true}}"
+            }
+          ]
+        },
+        "value": {
+          "revision": "c455057d-2737-481b-a103-61b9a3eba24b",
+          "anchor": {
+            "kind": "surface",
+            "record": {
+              "id": "b2ef5120-1f00-4d75-8096-b776513abfe3",
+              "name": "Login",
+              "locator": "/login",
+              "testFolder": "login",
+              "createdAt": "2026-09-24T07:06:43.088Z"
+            }
+          },
+          "selection": {
+            "productVersions": {
+              "scope": "all"
+            },
+            "observations": {
+              "detail": "records",
+              "actorIds": [
+                "5183c1ad-9860-48a5-9b59-8a523273815a"
+              ],
+              "scope": "both"
+            }
+          },
+          "storedRelationships": {
+            "items": [
+              {
+                "kind": "observations",
+                "actor": {
+                  "id": "5183c1ad-9860-48a5-9b59-8a523273815a",
+                  "name": "Employee"
+                },
+                "context": {
+                  "kind": "surface",
+                  "id": "b2ef5120-1f00-4d75-8096-b776513abfe3",
+                  "name": "Login"
+                },
+                "observations": [
+                  {
+                    "id": "b48f92e1-bc2c-411c-a0c2-5ccb3842add2",
+                    "seq": 1,
+                    "productVersion": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+                    "body": "The signed-out Login page visibly shows Username and Password fields and a Sign in button.",
+                    "createdAt": "2026-09-24T07:06:52.229Z",
+                    "inspection": {
+                      "platform": "browser",
+                      "report": {
+                        "kind": "inventory",
+                        "capture": "none",
+                        "looks": [
+                          {
+                            "item": {
+                              "id": "ac0fafa1-4785-4d4e-b47d-ea4ada282489"
+                            },
+                            "kind": "offered"
+                          },
+                          {
+                            "item": {
+                              "id": "d1af5786-5bc3-4fd0-93e7-1dba896e0e10"
+                            },
+                            "kind": "offered"
+                          },
+                          {
+                            "item": {
+                              "id": "84e6b5a0-ba79-4d67-abaf-6a80af75f43f"
+                            },
+                            "kind": "offered"
+                          }
+                        ]
+                      },
+                      "support": "missing"
+                    }
+                  }
+                ]
+              }
+            ],
+            "complete": true
+          },
+          "projections": {
+            "items": [
+              {
+                "kind": "observation_coverage",
+                "actor": {
+                  "id": "5183c1ad-9860-48a5-9b59-8a523273815a",
+                  "name": "Employee"
+                },
+                "context": {
+                  "kind": "surface",
+                  "id": "b2ef5120-1f00-4d75-8096-b776513abfe3",
+                  "name": "Login"
+                },
+                "count": 1,
+                "firstSeq": 1,
+                "lastSeq": 1
+              }
+            ],
+            "complete": true
+          }
+        }
+      }
+    ]
+  },
+  "advice_overhead": {
+    "version": 1,
+    "executionId": "e0b2aef4-f4eb-455a-8063-ace4e22339c9",
+    "outcomes": [],
+    "overrides": [],
+    "fallbacks": [],
+    "selectionPhases": {
+      "candidate_generation": null,
+      "ordinary_planning": null,
+      "advice": null,
+      "advice_handling": null,
+      "override": null,
+      "fallback": null
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "sample": "sample-03",
+  "actions": [
+    {
+      "id": "action-2",
+      "ordinal": 1,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/0"
+    },
+    {
+      "id": "snapshot-9",
+      "ordinal": 2,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/1"
+    },
+    {
+      "id": "action-3",
+      "ordinal": 3,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/2"
+    },
+    {
+      "id": "action-4",
+      "ordinal": 4,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/3"
+    },
+    {
+      "id": "action-5",
+      "ordinal": 5,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/4"
+    },
+    {
+      "id": "snapshot-19",
+      "ordinal": 6,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/5"
+    },
+    {
+      "id": "action-6",
+      "ordinal": 7,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/6"
+    },
+    {
+      "id": "snapshot-27",
+      "ordinal": 8,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/7"
+    },
+    {
+      "id": "action-7",
+      "ordinal": 9,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/8"
+    },
+    {
+      "id": "snapshot-31",
+      "ordinal": 10,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/9"
+    },
+    {
+      "id": "action-8",
+      "ordinal": 11,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/10"
+    },
+    {
+      "id": "snapshot-39",
+      "ordinal": 12,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/11"
+    },
+    {
+      "id": "action-9",
+      "ordinal": 13,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/12"
+    },
+    {
+      "id": "snapshot-45",
+      "ordinal": 14,
+      "executed": true,
+      "within_budget": true,
+      "raw": "sample-03-evidence.json#/browser/actions/13"
+    }
+  ],
+  "observations": [
+    {
+      "id": "df0e1b70-3263-42d4-8df1-262426f363b5",
+      "body": "Signed-out Login displays Username and Password fields, a Sign in button, and demo Employee, Manager, and HR Admin usernames.",
+      "context": {
+        "kind": "surface",
+        "id": "aa395efc-5e09-4a71-80fc-9647d4939696",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 2,
+      "raw": "sample-03-evidence.json#/knowledge/observations/0"
+    },
+    {
+      "id": "71262e96-643f-4b12-a64a-69ab70b99863",
+      "body": "Credentials fields ready.",
+      "context": {
+        "kind": "surface",
+        "id": "aa395efc-5e09-4a71-80fc-9647d4939696",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 2,
+      "raw": "sample-03-evidence.json#/knowledge/observations/1"
+    },
+    {
+      "id": "ee5a0d7e-3a92-4db6-a560-7a170deb8db2",
+      "body": "Signing in as the configured Employee opened the Employee dashboard.",
+      "context": {
+        "kind": "surface",
+        "id": "aa395efc-5e09-4a71-80fc-9647d4939696",
+        "name": "Login"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 6,
+      "raw": "sample-03-evidence.json#/knowledge/observations/2"
+    },
+    {
+      "id": "57c78c84-4743-4dae-b505-d4c0e6f0389b",
+      "body": "Employee Dashboard shows navigation to Directory, My Leave, Timesheet, and My Profile; quick actions Request leave and Fill timesheet; a Log out button; pending leave requests count 0; and a leave balance still loading as an ellipsis.",
+      "context": {
+        "kind": "surface",
+        "id": "865c556e-e65c-43d4-b4d8-ca7c44397f1d",
+        "name": "Dashboard"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 6,
+      "raw": "sample-03-evidence.json#/knowledge/observations/3"
+    },
+    {
+      "id": "73fd7e93-05da-4e06-843e-63744ec71795",
+      "body": "My Leave offers New request, reports Available balance 18 days with deduction on approval, and shows one approved Vacation history entry for Aug 18–19, 2026 with 3 days and manager comment “Approved – enjoy!”.",
+      "context": {
+        "kind": "surface",
+        "id": "b3713f19-b264-4584-9f34-9797c039ed15",
+        "name": "My Leave"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 8,
+      "raw": "sample-03-evidence.json#/knowledge/observations/4"
+    },
+    {
+      "id": "22f0bb1b-75fd-4d3c-81bd-e70f4791de11",
+      "body": "New Leave Request defaults Leave type to Vacation and offers Vacation, Sick, and Personal choices; requires Start date and End date; has optional Reason; states weekends are not counted; and provides Submit request and Cancel.",
+      "context": {
+        "kind": "surface",
+        "id": "1f4a9fa0-206f-46da-a374-bdd9e17cc175",
+        "name": "New Leave Request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 10,
+      "raw": "sample-03-evidence.json#/knowledge/observations/5"
+    },
+    {
+      "id": "0dc068f1-a08c-4da0-96cc-d245c633c2a7",
+      "body": "Blank required date fields are visible; a blank submission is being checked for validation and should not create evaluation data.",
+      "context": {
+        "kind": "surface",
+        "id": "1f4a9fa0-206f-46da-a374-bdd9e17cc175",
+        "name": "New Leave Request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 10,
+      "raw": "sample-03-evidence.json#/knowledge/observations/6"
+    },
+    {
+      "id": "ee4a092e-0223-489d-a44e-712ab340b020",
+      "body": "Submitting the blank leave form kept the Employee on New Leave Request and displayed “Please fill in all required fields.”",
+      "context": {
+        "kind": "surface",
+        "id": "1f4a9fa0-206f-46da-a374-bdd9e17cc175",
+        "name": "New Leave Request"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 12,
+      "raw": "sample-03-evidence.json#/knowledge/observations/7"
+    },
+    {
+      "id": "4fb1dec6-a596-4d16-a287-e1efab66afd8",
+      "body": "Timesheet shows a draft for week of Sep 14, 2026 with seven daily hour inputs all at 0, total 0 h, and Save draft and Submit week actions.",
+      "context": {
+        "kind": "surface",
+        "id": "2eb4b49f-7598-4984-9bdf-c2eb64e11273",
+        "name": "Timesheet"
+      },
+      "saved_before_close": true,
+      "saved_after_action": 14,
+      "raw": "sample-03-evidence.json#/knowledge/observations/8"
+    }
+  ],
+  "evidence": "sample-03-evidence.json"
+}
