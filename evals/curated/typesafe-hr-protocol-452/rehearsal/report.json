@@ -1,0 +1,932 @@
+{
+  "kind": "controlled rehearsal",
+  "runs": [
+    {
+      "id": "ordinary-success",
+      "pair": 1,
+      "arm": "ordinary",
+      "kind": "controlled",
+      "status": "completed",
+      "elapsed_ms": 5000,
+      "selection_ms": 500,
+      "phase_ms": {
+        "startup": 0,
+        "candidate_generation": 0,
+        "ordinary_planning": 500,
+        "advice": 0,
+        "advice_handling": 0,
+        "override": 0,
+        "fallback": 0,
+        "product_interaction": 4100,
+        "recording": 400,
+        "other": 0
+      },
+      "product_requests": 5,
+      "recommendations": [],
+      "overrides": [],
+      "quality": {
+        "important_actions": 3,
+        "accepted": [
+          {
+            "item_id": "login",
+            "action_ids": [
+              "a0"
+            ],
+            "observation_ids": [
+              "o0"
+            ],
+            "rationale": "Valid Employee credentials opened the Employee dashboard."
+          },
+          {
+            "item_id": "leave-submit",
+            "action_ids": [
+              "a1"
+            ],
+            "observation_ids": [
+              "o1"
+            ],
+            "rationale": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending."
+          },
+          {
+            "item_id": "leave-readback",
+            "action_ids": [
+              "a1",
+              "a2"
+            ],
+            "observation_ids": [
+              "o1",
+              "o2"
+            ],
+            "rationale": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending."
+          }
+        ],
+        "rejected": [],
+        "uncredited_items": [
+          "invalid-login",
+          "logout",
+          "directory-search",
+          "directory-filter",
+          "directory-empty",
+          "directory-sort",
+          "directory-detail",
+          "leave-invalid",
+          "leave-duration",
+          "timesheet-total",
+          "timesheet-draft",
+          "timesheet-submit",
+          "profile-save",
+          "profile-readback"
+        ],
+        "distinct_behavior_learned": [
+          {
+            "id": "login",
+            "description": "Valid Employee credentials opened the Employee dashboard.",
+            "observation_ids": [
+              "o0"
+            ]
+          },
+          {
+            "id": "leave-submit",
+            "description": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+            "observation_ids": [
+              "o1"
+            ]
+          },
+          {
+            "id": "leave-readback",
+            "description": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+            "observation_ids": [
+              "o2"
+            ]
+          }
+        ],
+        "journey_progress": {
+          "Account access": {
+            "exercised": [
+              "login"
+            ],
+            "missing": [
+              "logout"
+            ],
+            "complete": false
+          },
+          "Directory lookup": {
+            "exercised": [],
+            "missing": [
+              "directory-search",
+              "directory-detail"
+            ],
+            "complete": false
+          },
+          "Request leave": {
+            "exercised": [
+              "leave-submit",
+              "leave-readback"
+            ],
+            "missing": [],
+            "complete": true
+          },
+          "Record hours": {
+            "exercised": [],
+            "missing": [
+              "timesheet-draft",
+              "timesheet-submit"
+            ],
+            "complete": false
+          },
+          "Update profile": {
+            "exercised": [],
+            "missing": [
+              "profile-save",
+              "profile-readback"
+            ],
+            "complete": false
+          }
+        },
+        "completed_employee_workflows": 1,
+        "unsupported_claims": [],
+        "open_questions": [
+          "Does saving profile data persist after reload?"
+        ]
+      },
+      "cost": {
+        "api_equivalent_usd": 0.00289,
+        "known_component_subtotal_usd": 0.00289,
+        "unknown": [],
+        "actual_charges_usd": null,
+        "known_actual_call_charges_usd": 0,
+        "failed_attempts": 0,
+        "tokens_by_model": {
+          "gpt-5.6-terra": {
+            "input": {
+              "known": 1000,
+              "unknown_calls": 0
+            },
+            "cached_input": {
+              "known": 200,
+              "unknown_calls": 0
+            },
+            "cache_write_input": {
+              "known": 100,
+              "unknown_calls": 0
+            },
+            "output": {
+              "known": 100,
+              "unknown_calls": 0
+            },
+            "reasoning_output": {
+              "known": 40,
+              "unknown_calls": 0
+            }
+          }
+        },
+        "attempts": [
+          {
+            "id": "planning",
+            "model": "gpt-5.6-terra",
+            "status": "ok",
+            "known_component_subtotal_usd": 0.00289,
+            "unknown": [],
+            "raw": "ordinary-success.json#/calls/0"
+          }
+        ],
+        "price_basis": "API-equivalent standard token pricing, not actual charges",
+        "currency": "USD"
+      },
+      "accounting_note": "All counters and elapsed times are authored fixtures. No calls or Product actions ran."
+    },
+    {
+      "id": "advised-success",
+      "pair": 1,
+      "arm": "advised",
+      "kind": "controlled",
+      "status": "completed",
+      "elapsed_ms": 4500,
+      "selection_ms": 1500,
+      "phase_ms": {
+        "startup": 0,
+        "candidate_generation": 500,
+        "ordinary_planning": 0,
+        "advice": 500,
+        "advice_handling": 500,
+        "override": 0,
+        "fallback": 0,
+        "product_interaction": 2600,
+        "recording": 400,
+        "other": 0
+      },
+      "product_requests": 5,
+      "recommendations": [
+        {
+          "selected_id": "leave-submit",
+          "action_ids": [
+            "a1"
+          ],
+          "status": "available"
+        }
+      ],
+      "overrides": [],
+      "quality": {
+        "important_actions": 3,
+        "accepted": [
+          {
+            "item_id": "login",
+            "action_ids": [
+              "a0"
+            ],
+            "observation_ids": [
+              "o0"
+            ],
+            "rationale": "Valid Employee credentials opened the Employee dashboard."
+          },
+          {
+            "item_id": "leave-submit",
+            "action_ids": [
+              "a1"
+            ],
+            "observation_ids": [
+              "o1"
+            ],
+            "rationale": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending."
+          },
+          {
+            "item_id": "leave-readback",
+            "action_ids": [
+              "a1",
+              "a2"
+            ],
+            "observation_ids": [
+              "o1",
+              "o2"
+            ],
+            "rationale": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending."
+          }
+        ],
+        "rejected": [],
+        "uncredited_items": [
+          "invalid-login",
+          "logout",
+          "directory-search",
+          "directory-filter",
+          "directory-empty",
+          "directory-sort",
+          "directory-detail",
+          "leave-invalid",
+          "leave-duration",
+          "timesheet-total",
+          "timesheet-draft",
+          "timesheet-submit",
+          "profile-save",
+          "profile-readback"
+        ],
+        "distinct_behavior_learned": [
+          {
+            "id": "login",
+            "description": "Valid Employee credentials opened the Employee dashboard.",
+            "observation_ids": [
+              "o0"
+            ]
+          },
+          {
+            "id": "leave-submit",
+            "description": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+            "observation_ids": [
+              "o1"
+            ]
+          },
+          {
+            "id": "leave-readback",
+            "description": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+            "observation_ids": [
+              "o2"
+            ]
+          }
+        ],
+        "journey_progress": {
+          "Account access": {
+            "exercised": [
+              "login"
+            ],
+            "missing": [
+              "logout"
+            ],
+            "complete": false
+          },
+          "Directory lookup": {
+            "exercised": [],
+            "missing": [
+              "directory-search",
+              "directory-detail"
+            ],
+            "complete": false
+          },
+          "Request leave": {
+            "exercised": [
+              "leave-submit",
+              "leave-readback"
+            ],
+            "missing": [],
+            "complete": true
+          },
+          "Record hours": {
+            "exercised": [],
+            "missing": [
+              "timesheet-draft",
+              "timesheet-submit"
+            ],
+            "complete": false
+          },
+          "Update profile": {
+            "exercised": [],
+            "missing": [
+              "profile-save",
+              "profile-readback"
+            ],
+            "complete": false
+          }
+        },
+        "completed_employee_workflows": 1,
+        "unsupported_claims": [],
+        "open_questions": [
+          "Does saving profile data persist after reload?"
+        ]
+      },
+      "cost": {
+        "api_equivalent_usd": 0.005822,
+        "known_component_subtotal_usd": 0.005822,
+        "unknown": [],
+        "actual_charges_usd": null,
+        "known_actual_call_charges_usd": 0,
+        "failed_attempts": 0,
+        "tokens_by_model": {
+          "gpt-5.6-terra": {
+            "input": {
+              "known": 2000,
+              "unknown_calls": 0
+            },
+            "cached_input": {
+              "known": 400,
+              "unknown_calls": 0
+            },
+            "cache_write_input": {
+              "known": 200,
+              "unknown_calls": 0
+            },
+            "output": {
+              "known": 200,
+              "unknown_calls": 0
+            },
+            "reasoning_output": {
+              "known": 80,
+              "unknown_calls": 0
+            }
+          },
+          "jev-1.13.0": {
+            "input": {
+              "known": 1000,
+              "unknown_calls": 0
+            },
+            "cached_input": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "cache_write_input": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "output": {
+              "known": 50,
+              "unknown_calls": 0
+            },
+            "reasoning_output": {
+              "known": 0,
+              "unknown_calls": 1
+            }
+          }
+        },
+        "attempts": [
+          {
+            "id": "candidates",
+            "model": "gpt-5.6-terra",
+            "status": "ok",
+            "known_component_subtotal_usd": 0.00289,
+            "unknown": [],
+            "raw": "advised-success.json#/calls/0"
+          },
+          {
+            "id": "choice",
+            "model": "jev-1.13.0",
+            "status": "ok",
+            "known_component_subtotal_usd": 0.000042,
+            "unknown": [],
+            "raw": "advised-success.json#/calls/1"
+          },
+          {
+            "id": "handle",
+            "model": "gpt-5.6-terra",
+            "status": "ok",
+            "known_component_subtotal_usd": 0.00289,
+            "unknown": [],
+            "raw": "advised-success.json#/calls/2"
+          }
+        ],
+        "price_basis": "API-equivalent standard token pricing, not actual charges",
+        "currency": "USD"
+      },
+      "accounting_note": "All counters and elapsed times are authored fixtures. No calls or Product actions ran."
+    },
+    {
+      "id": "override-fallback",
+      "pair": 2,
+      "arm": "advised",
+      "kind": "controlled",
+      "status": "completed",
+      "elapsed_ms": 6500,
+      "selection_ms": 2200,
+      "phase_ms": {
+        "startup": 0,
+        "candidate_generation": 500,
+        "ordinary_planning": 0,
+        "advice": 500,
+        "advice_handling": 500,
+        "override": 200,
+        "fallback": 500,
+        "product_interaction": 3900,
+        "recording": 400,
+        "other": 0
+      },
+      "product_requests": 5,
+      "recommendations": [
+        {
+          "selected_id": "directory-search",
+          "action_ids": [],
+          "status": "available",
+          "note": "Authored host recommendation; no provider usage for this event."
+        },
+        {
+          "selected_id": null,
+          "status": "unavailable",
+          "call_id": "choice"
+        }
+      ],
+      "overrides": [
+        {
+          "selected_id": "directory-search",
+          "chosen_action_ids": [
+            "a1",
+            "a2"
+          ],
+          "reason": "Finish the unresolved leave submission and readback."
+        }
+      ],
+      "quality": {
+        "important_actions": 3,
+        "accepted": [
+          {
+            "item_id": "login",
+            "action_ids": [
+              "a0"
+            ],
+            "observation_ids": [
+              "o0"
+            ],
+            "rationale": "Valid Employee credentials opened the Employee dashboard."
+          },
+          {
+            "item_id": "leave-submit",
+            "action_ids": [
+              "a1"
+            ],
+            "observation_ids": [
+              "o1"
+            ],
+            "rationale": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending."
+          },
+          {
+            "item_id": "leave-readback",
+            "action_ids": [
+              "a1",
+              "a2"
+            ],
+            "observation_ids": [
+              "o1",
+              "o2"
+            ],
+            "rationale": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending."
+          }
+        ],
+        "rejected": [],
+        "uncredited_items": [
+          "invalid-login",
+          "logout",
+          "directory-search",
+          "directory-filter",
+          "directory-empty",
+          "directory-sort",
+          "directory-detail",
+          "leave-invalid",
+          "leave-duration",
+          "timesheet-total",
+          "timesheet-draft",
+          "timesheet-submit",
+          "profile-save",
+          "profile-readback"
+        ],
+        "distinct_behavior_learned": [
+          {
+            "id": "login",
+            "description": "Valid Employee credentials opened the Employee dashboard.",
+            "observation_ids": [
+              "o0"
+            ]
+          },
+          {
+            "id": "leave-submit",
+            "description": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+            "observation_ids": [
+              "o1"
+            ]
+          },
+          {
+            "id": "leave-readback",
+            "description": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+            "observation_ids": [
+              "o2"
+            ]
+          }
+        ],
+        "journey_progress": {
+          "Account access": {
+            "exercised": [
+              "login"
+            ],
+            "missing": [
+              "logout"
+            ],
+            "complete": false
+          },
+          "Directory lookup": {
+            "exercised": [],
+            "missing": [
+              "directory-search",
+              "directory-detail"
+            ],
+            "complete": false
+          },
+          "Request leave": {
+            "exercised": [
+              "leave-submit",
+              "leave-readback"
+            ],
+            "missing": [],
+            "complete": true
+          },
+          "Record hours": {
+            "exercised": [],
+            "missing": [
+              "timesheet-draft",
+              "timesheet-submit"
+            ],
+            "complete": false
+          },
+          "Update profile": {
+            "exercised": [],
+            "missing": [
+              "profile-save",
+              "profile-readback"
+            ],
+            "complete": false
+          }
+        },
+        "completed_employee_workflows": 1,
+        "unsupported_claims": [],
+        "open_questions": [
+          "Does saving profile data persist after reload?"
+        ]
+      },
+      "cost": {
+        "api_equivalent_usd": null,
+        "known_component_subtotal_usd": 0.00867,
+        "unknown": [
+          "choice:usage"
+        ],
+        "actual_charges_usd": null,
+        "known_actual_call_charges_usd": 0,
+        "failed_attempts": 1,
+        "tokens_by_model": {
+          "gpt-5.6-terra": {
+            "input": {
+              "known": 3000,
+              "unknown_calls": 0
+            },
+            "cached_input": {
+              "known": 600,
+              "unknown_calls": 0
+            },
+            "cache_write_input": {
+              "known": 300,
+              "unknown_calls": 0
+            },
+            "output": {
+              "known": 300,
+              "unknown_calls": 0
+            },
+            "reasoning_output": {
+              "known": 120,
+              "unknown_calls": 0
+            }
+          },
+          "jev-1.13.0": {
+            "input": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "cached_input": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "cache_write_input": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "output": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "reasoning_output": {
+              "known": 0,
+              "unknown_calls": 1
+            }
+          }
+        },
+        "attempts": [
+          {
+            "id": "candidates",
+            "model": "gpt-5.6-terra",
+            "status": "ok",
+            "known_component_subtotal_usd": 0.00289,
+            "unknown": [],
+            "raw": "override-fallback.json#/calls/0"
+          },
+          {
+            "id": "choice",
+            "model": "jev-1.13.0",
+            "status": "HTTP 503",
+            "known_component_subtotal_usd": 0,
+            "unknown": [
+              "usage"
+            ],
+            "raw": "override-fallback.json#/calls/1"
+          },
+          {
+            "id": "handle",
+            "model": "gpt-5.6-terra",
+            "status": "ok",
+            "known_component_subtotal_usd": 0.00289,
+            "unknown": [],
+            "raw": "override-fallback.json#/calls/2"
+          },
+          {
+            "id": "fallback",
+            "model": "gpt-5.6-terra",
+            "status": "ok",
+            "known_component_subtotal_usd": 0.00289,
+            "unknown": [],
+            "raw": "override-fallback.json#/calls/3"
+          }
+        ],
+        "price_basis": "API-equivalent standard token pricing, not actual charges",
+        "currency": "USD"
+      },
+      "accounting_note": "All counters and elapsed times are authored fixtures. No calls or Product actions ran."
+    },
+    {
+      "id": "absent-evidence",
+      "pair": 2,
+      "arm": "ordinary",
+      "kind": "controlled",
+      "status": "completed",
+      "elapsed_ms": 2000,
+      "selection_ms": 500,
+      "phase_ms": {
+        "startup": 0,
+        "candidate_generation": 0,
+        "ordinary_planning": 500,
+        "advice": 0,
+        "advice_handling": 0,
+        "override": 0,
+        "fallback": 0,
+        "product_interaction": 1100,
+        "recording": 400,
+        "other": 0
+      },
+      "product_requests": 0,
+      "recommendations": [
+        {
+          "selected_id": "login",
+          "status": "proposal only"
+        }
+      ],
+      "overrides": [],
+      "quality": {
+        "important_actions": 0,
+        "accepted": [],
+        "rejected": [
+          {
+            "item_id": "login",
+            "action_ids": [
+              "a0"
+            ],
+            "observation_ids": [
+              "o0"
+            ],
+            "rationale": "Valid Employee credentials opened the Employee dashboard.",
+            "reason": "Missing executed action, saved Observation, attribution, timing or raw support."
+          },
+          {
+            "item_id": "leave-submit",
+            "action_ids": [
+              "a1"
+            ],
+            "observation_ids": [
+              "o1"
+            ],
+            "rationale": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+            "reason": "Missing executed action, saved Observation, attribution, timing or raw support."
+          },
+          {
+            "item_id": "leave-readback",
+            "action_ids": [
+              "a1",
+              "a2"
+            ],
+            "observation_ids": [
+              "o1",
+              "o2"
+            ],
+            "rationale": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+            "reason": "Missing executed action, saved Observation, attribution, timing or raw support."
+          }
+        ],
+        "uncredited_items": [
+          "login",
+          "invalid-login",
+          "logout",
+          "directory-search",
+          "directory-filter",
+          "directory-empty",
+          "directory-sort",
+          "directory-detail",
+          "leave-invalid",
+          "leave-duration",
+          "leave-submit",
+          "leave-readback",
+          "timesheet-total",
+          "timesheet-draft",
+          "timesheet-submit",
+          "profile-save",
+          "profile-readback"
+        ],
+        "distinct_behavior_learned": [],
+        "journey_progress": {
+          "Account access": {
+            "exercised": [],
+            "missing": [
+              "login",
+              "logout"
+            ],
+            "complete": false
+          },
+          "Directory lookup": {
+            "exercised": [],
+            "missing": [
+              "directory-search",
+              "directory-detail"
+            ],
+            "complete": false
+          },
+          "Request leave": {
+            "exercised": [],
+            "missing": [
+              "leave-submit",
+              "leave-readback"
+            ],
+            "complete": false
+          },
+          "Record hours": {
+            "exercised": [],
+            "missing": [
+              "timesheet-draft",
+              "timesheet-submit"
+            ],
+            "complete": false
+          },
+          "Update profile": {
+            "exercised": [],
+            "missing": [
+              "profile-save",
+              "profile-readback"
+            ],
+            "complete": false
+          }
+        },
+        "completed_employee_workflows": 0,
+        "unsupported_claims": [],
+        "open_questions": [
+          "Does saving profile data persist after reload?"
+        ]
+      },
+      "cost": {
+        "api_equivalent_usd": null,
+        "known_component_subtotal_usd": 0,
+        "unknown": [
+          "planning:usage"
+        ],
+        "actual_charges_usd": null,
+        "known_actual_call_charges_usd": 0,
+        "failed_attempts": 0,
+        "tokens_by_model": {
+          "gpt-5.6-terra": {
+            "input": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "cached_input": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "cache_write_input": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "output": {
+              "known": 0,
+              "unknown_calls": 1
+            },
+            "reasoning_output": {
+              "known": 0,
+              "unknown_calls": 1
+            }
+          }
+        },
+        "attempts": [
+          {
+            "id": "planning",
+            "model": "gpt-5.6-terra",
+            "status": "ok",
+            "known_component_subtotal_usd": 0,
+            "unknown": [
+              "usage"
+            ],
+            "raw": "absent-evidence.json#/calls/0"
+          }
+        ],
+        "price_basis": "API-equivalent standard token pricing, not actual charges",
+        "currency": "USD"
+      },
+      "accounting_note": "All counters and elapsed times are authored fixtures. No calls or Product actions ran."
+    }
+  ],
+  "comparison": {
+    "decision": "inconclusive",
+    "quality_met": false,
+    "reasons": [
+      "Controlled rehearsal; no live comparison claim.",
+      "Incomplete frozen execution schedule.",
+      "Pair 2: ordinary execution lacks a completed Employee workflow.",
+      "Pair 2: total API-equivalent cost is unknown.",
+      "Missing complete pairs."
+    ],
+    "pairs": [
+      {
+        "pair": 1,
+        "quality_met": true,
+        "action_difference": 0,
+        "elapsed_difference_ms": -500,
+        "cost_difference_usd": 0.002932
+      },
+      {
+        "pair": 2,
+        "quality_met": false,
+        "action_difference": 3,
+        "elapsed_difference_ms": 4500,
+        "cost_difference_usd": null
+      }
+    ],
+    "paired_action_difference": {
+      "mean": 1.5,
+      "median": 1.5,
+      "min": 0,
+      "max": 3
+    },
+    "paired_elapsed_difference_ms": {
+      "mean": 2000,
+      "median": 2000,
+      "min": -500,
+      "max": 4500
+    },
+    "paired_cost_difference_usd": null
+  },
+  "overhead_note": "No model or Product calls were made by this rehearsal. Authoring and independent review usage is not exposed by the current host and is unknown; it is outside these candidate fixtures.",
+  "limitation": "Structural validation checks citations and accounting. Independent graders must verify semantic support against raw evidence. Controlled outcomes do not prove Product behavior."
+}

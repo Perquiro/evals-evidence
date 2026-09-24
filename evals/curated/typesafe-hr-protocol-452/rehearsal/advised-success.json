@@ -1,0 +1,106 @@
+{
+  "notice": "Authored controlled trace, not live evidence.",
+  "actions": [
+    {
+      "id": "a0",
+      "actor": "Employee:emily.dawson",
+      "dispatched_ms": 3500,
+      "executed": true,
+      "outcome": "Valid Employee credentials opened the Employee dashboard.",
+      "raw": "advised-success.json#/actions/0"
+    },
+    {
+      "id": "a1",
+      "actor": "Employee:emily.dawson",
+      "dispatched_ms": 3600,
+      "executed": true,
+      "outcome": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+      "raw": "advised-success.json#/actions/1"
+    },
+    {
+      "id": "a2",
+      "actor": "Employee:emily.dawson",
+      "dispatched_ms": 3700,
+      "executed": true,
+      "outcome": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+      "raw": "advised-success.json#/actions/2"
+    }
+  ],
+  "observations": [
+    {
+      "id": "o0",
+      "actor": "Employee:emily.dawson",
+      "action_ids": [
+        "a0"
+      ],
+      "saved_ms": 4200,
+      "result": "Valid Employee credentials opened the Employee dashboard.",
+      "raw": "advised-success.json#/observations/0"
+    },
+    {
+      "id": "o1",
+      "actor": "Employee:emily.dawson",
+      "action_ids": [
+        "a1"
+      ],
+      "saved_ms": 4300,
+      "result": "Submitted 2026-09-21 through 2026-09-22 once; request 3 appeared pending.",
+      "raw": "advised-success.json#/observations/1"
+    },
+    {
+      "id": "o2",
+      "actor": "Employee:emily.dawson",
+      "action_ids": [
+        "a1",
+        "a2"
+      ],
+      "saved_ms": 4400,
+      "result": "Reloaded My Leave; request 3 retained dates 2026-09-21 through 2026-09-22, duration 2, pending.",
+      "raw": "advised-success.json#/observations/2"
+    }
+  ],
+  "calls": [
+    {
+      "id": "candidates",
+      "model": "gpt-5.6-terra",
+      "status": "ok",
+      "usage": {
+        "input": 1000,
+        "cached_input": 200,
+        "cache_write_input": 100,
+        "output": 100,
+        "reasoning_output": 40
+      },
+      "actual_charge_usd": null,
+      "raw": "advised-success.json#/calls/0"
+    },
+    {
+      "id": "choice",
+      "model": "jev-1.13.0",
+      "status": "ok",
+      "usage": {
+        "input": 1000,
+        "cached_input": null,
+        "cache_write_input": null,
+        "output": 50,
+        "reasoning_output": null
+      },
+      "actual_charge_usd": null,
+      "raw": "advised-success.json#/calls/1"
+    },
+    {
+      "id": "handle",
+      "model": "gpt-5.6-terra",
+      "status": "ok",
+      "usage": {
+        "input": 1000,
+        "cached_input": 200,
+        "cache_write_input": 100,
+        "output": 100,
+        "reasoning_output": 40
+      },
+      "actual_charge_usd": null,
+      "raw": "advised-success.json#/calls/2"
+    }
+  ]
+}

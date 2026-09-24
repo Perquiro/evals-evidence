@@ -1,0 +1,2 @@
+# Raw captures and logs retain original bytes, including diagnostic whitespace.
+evidence/** -text -whitespace
