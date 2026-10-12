@@ -1,0 +1,537 @@
+{
+  "runs": [
+    {
+      "id": "luna-2",
+      "misses": [
+        {
+          "id": "HR01",
+          "category": "tried_but_missed_required_moment",
+          "reason": "Seen: the trace shows the shell navigation for all three Actors. Emily.dawson (event 26) has Dashboard, Directory, My Leave, Timesheet, My Profile. hannah.blake (event 64) has Dashboard, Directory, My Leave, Timesheet, Approvals, Onboarding, My Profile. michael.reed (event 123) has Dashboard, Directory, My Leave, Timesheet, Approvals, My Profile. Not saved: HR01 needs the navigation for all three Actors. Hannah's navigation is saved correctly in Observation 33d1f76c (seq 6). Michael's Observation 6347b74b (seq 17) leaves Approvals out of his navigation and says Approvals navigation is not present, which event 123 contradicts. Emily's dashboard Observation 399990fc (seq 1) records no navigation items. Observations 59de74e7 and 7cbf13f2 only imply her Directory and My Leave links.",
+          "eventIds": [
+            26,
+            64,
+            123
+          ],
+          "summaryCitations": [
+            {
+              "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+              "anchor": "Recorded evidence",
+              "excerpt": "Five sequential, fixed-Actor executions were released"
+            }
+          ]
+        },
+        {
+          "id": "HR02",
+          "category": "never_tried",
+          "reason": "Not seen. The employee Emily.dawson never visited a higher-privilege URL such as /approvals or /onboarding directly. Her URLs were only /dashboard, /directory, /leave and /leave/new (events 26-51, 209-243). The only Approvals and Onboarding visits were by hannah.blake and michael.reed, through in-app links (events 69-73, 84-86, 131-135). No Observation records an employee access result.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR04",
+          "category": "never_tried",
+          "reason": "Not seen. The department selector was never changed. Every employee request has department='' (events 32, 49, 97, 108, 144, 155). Its options are recorded in the directory inventory Observations (53ff8acd, 87787731, ac700f3c), but no filter was applied and no filtered rows were recorded.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR05",
+          "category": "never_tried",
+          "reason": "Not seen. All three searches matched an employee ('Hannah Blake', then 'Emily Dawson' twice, each returning total 1). No deliberately unmatched search was run and no empty state was observed.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR06",
+          "category": "never_tried",
+          "reason": "Not seen. No column header was clicked. The Observations note the default 'Name ▲' ascending sort, which the UI and the API query sort=name&dir=asc support, but no header was clicked even once, let alone twice.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR07",
+          "category": "unknown",
+          "reason": "Not seen. No pagination action happened. Every /api/employees request asked for page=1 (events 32, 49, 97, 108, 144, 155), and no browser action targeted Next or Previous. The trace shows only page 1 (10 rows, Abigail Stone to Hannah Blake), '28 employees' and 'Page 1 of 3', with Next enabled (event 34). Observations 53ff8acd, 87787731, ac700f3c, 4c5b3044 and b1a8bf20 save the total and the page count but no page sequence or row identities. This is a partial useful fact. HR07 strictly needs the paging sequence, the row identities reached and whether the last page was reached.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+              "anchor": "Recorded evidence",
+              "excerpt": "Directory showed 28 employees across three pages"
+            }
+          ]
+        },
+        {
+          "id": "HR08",
+          "category": "unknown",
+          "reason": "Not seen. michael.reed (events 164-166) and hannah.blake (events 190-192) opened Emily Dawson's detail at /employees/7 by clicking a directory row. Observations 31d0100b, e121ca34, 7d5d87ba and d4ad2d67 save that. Nobody then loaded or refreshed the direct URL, so the required result after a direct load is missing.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR09",
+          "category": "never_tried",
+          "reason": "Not seen. Emily.dawson opened /leave/new and clicked the Start date textbox (events 228-243). No dates were entered, so no end-before-start date range was tried.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR10",
+          "category": "unknown",
+          "reason": "Not seen. No leave interval was entered, and the Friday-to-Monday case this check requires never happened. The only date-picker evidence is a September 2026 calendar opened with Start date still blank (events 240-243, Observation 7dd1f76e).",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+              "anchor": "Recorded evidence",
+              "excerpt": "The Start date picker opened on September 2026"
+            }
+          ]
+        },
+        {
+          "id": "HR11",
+          "category": "never_tried",
+          "reason": "Not seen. No leave request was submitted, and no POST to a leave endpoint appears in the trace. All 12 API requests are GETs.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+              "anchor": "Result",
+              "excerpt": "The employee leave form was reached but no request was submitted"
+            }
+          ]
+        },
+        {
+          "id": "HR13",
+          "category": "never_tried",
+          "reason": "Not seen. No leave request was submitted, so there was no return to the form after a successful submission.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR15",
+          "category": "never_tried",
+          "reason": "Not seen. michael.reed never clicked Approve or Reject, so there is no decision and no immediate or settled queue result.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+              "anchor": "Recorded evidence",
+              "excerpt": "It was left unchanged"
+            }
+          ]
+        },
+        {
+          "id": "HR16",
+          "category": "never_tried",
+          "reason": "Not seen. No rejection was attempted, with or without a comment.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR17",
+          "category": "never_tried",
+          "reason": "Not seen. No employee request was created and no manager decision was made. The employee did read an already-approved request with its comment (event 217), but that is not the employee-then-manager-then-employee sequence this check requires.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR18",
+          "category": "unknown",
+          "reason": "Not seen. hannah.blake opened onboarding step 1 (events 84-86, Observations cc947f69 and bffde41c) but entered nothing and never clicked Next. No validation or step change was observed.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+              "anchor": "Recorded evidence",
+              "excerpt": "onboarding step 1 form, directory and search. No hire data was entered"
+            }
+          ]
+        },
+        {
+          "id": "HR19",
+          "category": "never_tried",
+          "reason": "Not seen. The job-details step (step 2) was never opened, so no loading or settled select state was captured.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR20",
+          "category": "never_tried",
+          "reason": "Not seen. No onboarding step data was entered and no forward or back navigation happened.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR21",
+          "category": "never_tried",
+          "reason": "Not seen. The onboarding review was not submitted. The directory total stayed at 28 throughout, and no headcount change was tested.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR22",
+          "category": "never_tried",
+          "reason": "Not seen. No Actor visited /timesheet.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR23",
+          "category": "never_tried",
+          "reason": "Not seen. No timesheet was saved or reloaded.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR24",
+          "category": "never_tried",
+          "reason": "Not seen. No timesheet was submitted and no edit after submission was attempted.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR25",
+          "category": "never_tried",
+          "reason": "Not seen. No Actor visited /profile or saved a profile change. The Employee profile views at /employees/7 were read-only views opened by other Actors.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR26",
+          "category": "never_tried",
+          "reason": "Not seen. No profile name or photo was saved, so no header identity after a save was observed.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR27",
+          "category": "never_tried",
+          "reason": "Not seen. No profile was saved and no reload followed a save.",
+          "eventIds": [],
+          "summaryCitations": []
+        }
+      ],
+      "rejectedWrites": [
+        {
+          "event": 88,
+          "time": "2026-10-12T20:53:58.498Z",
+          "source": ".perquiro/hr-693-luna-2/events.jsonl",
+          "message": "MCP error -32602: Input validation error: Invalid arguments for tool record_inspection: Invalid input at reports[1].look.reachedSurfaceId",
+          "causalMissedCheck": null
+        },
+        {
+          "event": 220,
+          "time": "2026-10-12T21:03:12.760Z",
+          "source": ".perquiro/hr-693-luna-2/events.jsonl",
+          "message": "MCP error -32602: Input validation error: Invalid arguments for tool record_inspection: Invalid input at reports[1].look.reachedSurfaceId",
+          "causalMissedCheck": null
+        },
+        {
+          "event": 232,
+          "time": "2026-10-12T21:03:48.579Z",
+          "source": ".perquiro/hr-693-luna-2/events.jsonl",
+          "message": "MCP error -32602: Input validation error: Invalid arguments for tool record_inspection: Invalid input at reports[1].look.reachedSurfaceId",
+          "causalMissedCheck": null
+        },
+        {
+          "event": 245,
+          "time": "2026-10-12T21:05:35.629Z",
+          "source": ".perquiro/hr-693-luna-2/events.jsonl",
+          "message": "MCP error -32602: Input validation error: Invalid arguments for tool record_inspection: Report.kind must be inventory (with looks) or action (with one look); each Look also needs its own kind at reports[0].kind",
+          "causalMissedCheck": null
+        }
+      ],
+      "stop": {
+        "observedStopCause": "Normal closure after five released executions. Candidate reported trial complete with no Product mutations; Start date picker check left open when capture paths could not be recovered (events 245, SUMMARY Open checks). Not a time or request cap (12/40 used, 0 refused). No host approval denial observed.",
+        "outcome": {
+          "kind": "closed",
+          "exitCode": 0,
+          "timedOut": false,
+          "finishedAt": "2026-10-12T21:06:47.442Z"
+        },
+        "allowance": {
+          "apiRequestsUsed": 12,
+          "apiRequestsLimit": 40,
+          "apiRequestsRefused": 0,
+          "elapsedMinutesAbout": 18,
+          "candidateStart": "2026-10-12T20:48:25.628Z",
+          "packetTraceLastEvent": 243
+        },
+        "approvalDenialsObserved": false,
+        "evaluationRecordsLaunchHypothesis": "Manager dispatch questions (executions.json E001–E004) asked for creating/changing evaluation records broadly, while scored inventory checks center on HR01–HR27 Product flows and WORKER.md emphasized performance-evaluation controls on Emily's profile (absent in UI). Candidate pivoted to directory, approvals, and leave. Possible scope narrowing from launch wording; hypothesis only, not causal proof.",
+        "summaryCitations": [
+          {
+            "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+            "anchor": "Result",
+            "excerpt": "No performance evaluation create/edit controls surfaced"
+          },
+          {
+            "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+            "anchor": "Allowance and approval record",
+            "excerpt": "12 of 40 application requests used, 28 remaining, 0 refused requests"
+          },
+          {
+            "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e005/HANDOFF.md",
+            "anchor": "Stop reason",
+            "excerpt": "date-picker action response exceeded available output context"
+          }
+        ]
+      },
+      "counts": {
+        "never_tried": 19,
+        "tried_but_missed_required_moment": 1,
+        "save_rejected": 0,
+        "quit_before_reaching_it": 0,
+        "unknown": 4,
+        "seenComplete": 4,
+        "savedComplete": 3,
+        "missedChecks": 24
+      }
+    },
+    {
+      "id": "luna-1",
+      "misses": [
+        {
+          "id": "HR01",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".perquiro/hr-693-luna-1/project-Oso6vm/explore-final.md",
+              "excerpt": "No Product actions were taken"
+            }
+          ]
+        },
+        {
+          "id": "HR02",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR03",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR04",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR05",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR06",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR07",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR08",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR09",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR10",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR11",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR12",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR13",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR14",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR15",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR16",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR17",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR18",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR19",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR20",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR21",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR22",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR23",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR24",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR25",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR26",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        },
+        {
+          "id": "HR27",
+          "category": "never_tried",
+          "reason": "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+          "eventIds": [],
+          "summaryCitations": []
+        }
+      ],
+      "rejectedWrites": [],
+      "stop": {
+        "observedStopCause": "Normal closure (~51s). Zero candidate-phase Product API dispatch (events.jsonl), zero Observations, no execution opened. Candidate-stated read-only workspace in explore-final.md is recorded as self-reported stop narrative only; not relabeled as a verified permission refusal for sorting.",
+        "outcome": {
+          "kind": "closed",
+          "exitCode": 0,
+          "timedOut": false,
+          "finishedAt": "2026-10-12T20:34:51.502Z"
+        },
+        "allowance": {
+          "apiRequestsUsed": 0,
+          "apiRequestsLimit": 40,
+          "apiRequestsRefused": 0,
+          "elapsedSecondsAbout": 51,
+          "candidateStart": "2026-10-12T20:34:00.643Z"
+        },
+        "approvalDenialsObserved": false,
+        "observationsWritten": 0,
+        "inferredReadOnlyBlocker": {
+          "candidateClaim": "explore-final.md read-only mount prevented SUMMARY.md and Knowledge writes",
+          "verifiedPermissionRefusal": false,
+          "sortingNote": "All 27 misses are never_tried from absent Product actions, not quit_before_reaching_it on that claim."
+        },
+        "summaryCitations": [
+          {
+            "source": ".perquiro/hr-693-luna-1/project-Oso6vm/explore-final.md",
+            "excerpt": "no execution was opened, and the 40-request allowance remains unused"
+          },
+          {
+            "source": ".perquiro/hr-693-luna-1/grade.json",
+            "anchor": "notes[0]",
+            "excerpt": "The reported permission blocker is unverified"
+          }
+        ]
+      },
+      "counts": {
+        "never_tried": 27,
+        "tried_but_missed_required_moment": 0,
+        "save_rejected": 0,
+        "quit_before_reaching_it": 0,
+        "unknown": 0,
+        "seenComplete": 0,
+        "savedComplete": 0,
+        "missedChecks": 27
+      }
+    }
+  ]
+}

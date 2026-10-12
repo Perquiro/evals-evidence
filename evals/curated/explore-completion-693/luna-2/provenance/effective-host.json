@@ -1,0 +1,67 @@
+{
+  "capturedAt": "2026-10-12T21:06:47.439Z",
+  "rootId": "01a131df-b3d5-7ea3-a9f5-8351252b13c6",
+  "pending": false,
+  "agents": [
+    {
+      "sessionId": "01a131df-b3d5-7ea3-a9f5-8351252b13c6",
+      "role": "root",
+      "agentPath": "/root",
+      "parentThreadId": null,
+      "sourceFile": "C:\\Users\\mathi\\.codex\\sessions\\2026\\10\\12\\rollout-2026-10-12T22-48-27-01a131df-b3d5-7ea3-a9f5-8351252b13c6.jsonl",
+      "turns": [
+        {
+          "timestamp": "2026-10-12T20:48:28.832Z",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "sandboxPolicy": {
+            "type": "read-only"
+          },
+          "approvalPolicy": "on-request"
+        },
+        {
+          "timestamp": "2026-10-12T21:04:50.015Z",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "sandboxPolicy": {
+            "type": "read-only"
+          },
+          "approvalPolicy": "on-request"
+        }
+      ],
+      "lastTaskEvent": {
+        "timestamp": "2026-10-12T21:06:46.771Z",
+        "ordinal": 1051,
+        "type": "event_msg",
+        "payload": {
+          "type": "task_complete",
+          "root_turn_id": "01a131df-b6d0-7bf0-96b8-b0ccaac2b48e",
+          "turn_id": "01a131df-b6d0-7bf0-96b8-b0ccaac2b48e",
+          "last_agent_message": "The isolated Explore trial is complete. **No Product records were changed**, and no evaluation controls appeared on Emily’s profile in the Manager or HR Admin views. The leave request form was inspected but not submitted.\n\nThe five fixed-Actor executions were released. Status shows 12 of 40 application requests used, 28 remaining, no refused requests, and no active execution. No actual approval denial occurred.\n\nThe open checks and saved references are in [SUMMARY.md](/C:/dev/Perquiro-693/.perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md). The Start date picker check remains pending because its action capture path could not be recovered; I stopped before another UI action because that check has no linked Evidence.",
+          "started_at": 1791838107,
+          "completed_at": 1791839206,
+          "duration_ms": 1099418,
+          "time_to_first_token_ms": 2966
+        }
+      },
+      "tokenUsage": {
+        "input_tokens": 15334316,
+        "cached_input_tokens": 14990848,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 78377,
+        "reasoning_output_tokens": 31550,
+        "total_tokens": 15412693
+      }
+    }
+  ],
+  "mismatches": [],
+  "rootFinished": true,
+  "cliUsage": {
+    "input_tokens": 15334316,
+    "cached_input_tokens": 14990848,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 78377,
+    "reasoning_output_tokens": 31550
+  },
+  "billingCost": "unknown"
+}

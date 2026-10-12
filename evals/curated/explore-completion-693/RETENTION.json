@@ -1,0 +1,277 @@
+{
+  "sourceRepository": "Perquiro/Perquiro",
+  "issue": 693,
+  "includesPrivateRollouts": false,
+  "files": [
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/packet.json",
+      "path": "luna-1/packet.json",
+      "bytes": 2154,
+      "sha256": "7b17e8147150ac6b09e388e149afb6fd86211809279f26bdb010fc2f4a61e58f"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/inventory.json",
+      "path": "luna-1/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/SCORING.md",
+      "path": "luna-1/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/hashes.json",
+      "path": "luna-1/hashes.json",
+      "bytes": 260,
+      "sha256": "0df307f18f6b631d9bf0c85eaede86f2c4c2e72e5dde8fdefb78938bbc4e3650"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/measurement.json",
+      "path": "luna-1/measurement.json",
+      "bytes": 591,
+      "sha256": "eff959d7fdb83c698295a5fca44d5ac8dbee8b1582dd66059d212c47663d5b51"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/freeze.json",
+      "path": "luna-1/provenance/freeze.json",
+      "bytes": 4507,
+      "sha256": "92fbac6dbb20aabd4607f8aa41ddc4579bd63baed04ed21e55ea0231a55fec6a"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/candidate-start.json",
+      "path": "luna-1/provenance/candidate-start.json",
+      "bytes": 209,
+      "sha256": "3e780b44feeeadd2cccde1b58e0683efbcd1a37fdc528add56ccedb156fb1a68"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/effective-host.json",
+      "path": "luna-1/provenance/effective-host.json",
+      "bytes": 2321,
+      "sha256": "430a0497c17ea715013a5ca4c02199be46a704aa1b4441c407bc4df3b0672cd5"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/outcome.json",
+      "path": "luna-1/provenance/outcome.json",
+      "bytes": 154,
+      "sha256": "e5b4e92c144e285aa97ff1f98e6dc0a4c422c5f6514a76c13b56ba74cd96df5f"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/access.md",
+      "path": "luna-1/provenance/access.md",
+      "bytes": 3789,
+      "sha256": "c089dcfe683276e0468767e01ba51506d09cbc2d9788db21fa9c4d356f01220e"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/request.md",
+      "path": "luna-1/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-supervision/agent-exit.json",
+      "path": "luna-1/provenance/agent-exit.json",
+      "bytes": 76,
+      "sha256": "0d000784bf021ab4c8fc1abe64f3fc797f77410e03a8295aa320606caad303cb"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-supervision/server-closure.json",
+      "path": "luna-1/provenance/server-closure.json",
+      "bytes": 30,
+      "sha256": "27e90f3b1d3a1f9666f2094e027d9baff2aa66be60cb32a4813c9f47b9106d82"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-supervision/agent.json",
+      "path": "luna-1/provenance/agent.json",
+      "bytes": 2098,
+      "sha256": "a8f2f4ab8147a4614cc04e7864cf4a1494e249f5bcbb5606409ea5205b36e187"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/packet.json",
+      "path": "luna-2/packet.json",
+      "bytes": 266608,
+      "sha256": "7b007c4b7efd053fa4bba630acfc01dac5b1be15b0700f32c76ef2afd2919709"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/inventory.json",
+      "path": "luna-2/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/SCORING.md",
+      "path": "luna-2/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/hashes.json",
+      "path": "luna-2/hashes.json",
+      "bytes": 260,
+      "sha256": "6929532e61a345d2cfd675953e4e23b3bd348b15a692c1a8d6ae113c350c85ac"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/measurement.json",
+      "path": "luna-2/measurement.json",
+      "bytes": 632,
+      "sha256": "d7c8b9d04f991a7066fd62fa35cb415c461151382df3dc134e44604dfa87c0bc"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/freeze.json",
+      "path": "luna-2/provenance/freeze.json",
+      "bytes": 4458,
+      "sha256": "d7d46fb239a6f557c4d174b7d1c2b3d6aef50e8ca3c52762da2b20e3ade552a8"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/candidate-start.json",
+      "path": "luna-2/provenance/candidate-start.json",
+      "bytes": 221,
+      "sha256": "46122bd4d0ab3311db8a796a702cbba3005194889efa0b91c5529f5e8bc5fdd5"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/effective-host.json",
+      "path": "luna-2/provenance/effective-host.json",
+      "bytes": 2712,
+      "sha256": "a86aeda494c75b588454c840ac6f6448d8eaa46f54936f7b5d18173ee4d7a757"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/outcome.json",
+      "path": "luna-2/provenance/outcome.json",
+      "bytes": 154,
+      "sha256": "02bda075c592cfd8e1e2075788b43bb421bf679648666b5579ea97eaef92c6d2"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/access.md",
+      "path": "luna-2/provenance/access.md",
+      "bytes": 3789,
+      "sha256": "c089dcfe683276e0468767e01ba51506d09cbc2d9788db21fa9c4d356f01220e"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/request.md",
+      "path": "luna-2/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2-supervision/agent-exit.json",
+      "path": "luna-2/provenance/agent-exit.json",
+      "bytes": 77,
+      "sha256": "0338048ae9be3d0b8d89775e00b4a439c62b6cf6cfe3c2d50917eea36e027869"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2-supervision/server-closure.json",
+      "path": "luna-2/provenance/server-closure.json",
+      "bytes": 30,
+      "sha256": "27e90f3b1d3a1f9666f2094e027d9baff2aa66be60cb32a4813c9f47b9106d82"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2-supervision/agent.json",
+      "path": "luna-2/provenance/agent.json",
+      "bytes": 2564,
+      "sha256": "51cd8e893583712abbf0bfc4ceb21fd01bca74048956205c147cd0d96c6c6970"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/grade.json",
+      "path": "luna-1/grade-final.json",
+      "bytes": 15600,
+      "sha256": "a800582e1af61c905ae0e1bb62b92fbedc77e4ed3681465543e7bf4b95064f28"
+    },
+    {
+      "source": ".audit/693-blind-grade/grader.stdout.log",
+      "path": "luna-2/grade-initial-stdout.txt",
+      "bytes": 15192,
+      "sha256": "8796e60f061227ad48d2a08a46e7f67ca598eee8bd570d6d2bf5172d7babbbfd"
+    },
+    {
+      "source": ".audit/693-luna2-grade-schema.json",
+      "path": "luna-2/grade-initial.json",
+      "bytes": 17816,
+      "sha256": "d45102464907cf1fe0e1b2bd7dfdc12a97f7d3d2168774b8d87925f5c1da6214"
+    },
+    {
+      "source": ".audit/693-grade-review/grader2.stdout.log",
+      "path": "luna-2/grade-review-stdout.txt",
+      "bytes": 25288,
+      "sha256": "dff7f4d587897d2ddd86d511af8be20a79c39bbf9f90fe04db8f4e090ddd7be5"
+    },
+    {
+      "source": ".audit/693-luna2-grade-final.json",
+      "path": "luna-2/grade-final.json",
+      "bytes": 18776,
+      "sha256": "c4563da863d7e248d3cbc1a4f1cfdff405a58432f7e3065ca76173912abd9c6c"
+    },
+    {
+      "source": ".audit/693-luna2-adjudication.json",
+      "path": "luna-2/adjudication.json",
+      "bytes": 11635,
+      "sha256": "fe660f5b1bf426f69e819ac533aa7843d6227c8349986ec07421c28331dd6cf6"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+      "path": "luna-2/provenance/SUMMARY.md",
+      "bytes": 3909,
+      "sha256": "bc69b52cb0c9d31aa99b3a989d0cd030218dc12df10e69ec54bd6e72ba093c2a"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e001/HANDOFF.md",
+      "path": "luna-2/provenance/e001-HANDOFF.md",
+      "bytes": 2240,
+      "sha256": "9f51581aecac8a572c7d235cf4b15fc19210a18539dd249177778611255cb0bc"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e002/HANDOFF.md",
+      "path": "luna-2/provenance/e002-HANDOFF.md",
+      "bytes": 3699,
+      "sha256": "635e9b06c5648bbbfe2a2369020c1eb652f16d393735d8cb63ddba8d1770d706"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e003/HANDOFF.md",
+      "path": "luna-2/provenance/e003-HANDOFF.md",
+      "bytes": 3822,
+      "sha256": "2a84dd10a7ef629a7833da512fd534850620842f32a47494d14f212bcd661f65"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e004/HANDOFF.md",
+      "path": "luna-2/provenance/e004-HANDOFF.md",
+      "bytes": 2106,
+      "sha256": "4226e9aca59682568e07948ec959bc6d6809bfc7406a9af53d7cc1bf73e278b8"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e005/HANDOFF.md",
+      "path": "luna-2/provenance/e005-HANDOFF.md",
+      "bytes": 1789,
+      "sha256": "4cca1461a23b397b0d9baaa4e29c7a1e43055f2d34316f0c1e1b2fbb6e50fc9e"
+    },
+    {
+      "source": "C:/dev/Perquiro/evals/manager-value-2026-09-10/analysis.mjs",
+      "path": "analysis.mjs",
+      "bytes": 20508,
+      "sha256": "ebfc027d569901e9f18b9e846342700c7aa8e902b29bf32a8ab27e0d062068d3"
+    },
+    {
+      "source": ".audit/693-rerun-failure-sorting-initial.json",
+      "path": "failure-sorting-initial.json",
+      "bytes": 23619,
+      "sha256": "14d3f66293a1afb6ce1f714c8f8762351f6c491fbc24748ae4660345d41b017d"
+    },
+    {
+      "source": ".audit/693-rerun-failure-sorting-final.json",
+      "path": "failure-sorting-final.json",
+      "bytes": 24597,
+      "sha256": "0de19ee9ff3ed1da0aff9a34b258948d4a9d171b6d53e1b86a6eb0bbbbd15740"
+    },
+    {
+      "source": ".audit/693-rerun-sorting-adjudication.json",
+      "path": "failure-sorting-adjudication.json",
+      "bytes": 9664,
+      "sha256": "205906f472cdad9257b68e8e7d0a4a30b84a56e42d8c2b246b2574f9745595f5"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/project-Oso6vm/explore-final.md",
+      "path": "luna-1/provenance/explore-final.md",
+      "bytes": 720,
+      "sha256": "f7fe269c6ea6d62d4ec064661fc881c2e5f0ba5232027f69705fdccb47224e9f"
+    }
+  ]
+}

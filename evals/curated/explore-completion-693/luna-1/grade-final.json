@@ -1,0 +1,364 @@
+{
+    "scenarios":  [
+
+                  ],
+    "unsupportedClaims":  [
+
+                          ],
+    "checks":  [
+                   {
+                       "id":  "HR01",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR02",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR03",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR04",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR05",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR06",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR07",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR08",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR09",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR10",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR11",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR12",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR13",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR14",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR15",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR16",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR17",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR18",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR19",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR20",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR21",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR22",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR23",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR24",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR25",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR26",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   },
+                   {
+                       "id":  "HR27",
+                       "directlyJourneyLinked":  false,
+                       "saved":  false,
+                       "seenSupportSets":  [
+
+                                           ],
+                       "rationale":  "The completed candidate took no Product action and saved no Knowledge. No raw or saved check support exists.",
+                       "savedSupportSets":  [
+
+                                            ],
+                       "seen":  false
+                   }
+               ],
+    "notes":  [
+                  "Luna medium completed after 51 seconds without any Product action or attempted write. The reported permission blocker is unverified. This zero is retained separately from the supplementary trial."
+              ]
+}
