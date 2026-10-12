@@ -1,0 +1,5 @@
+The Explore work is incomplete. The trial still has an active execution, so I can’t provide the requested released handoff or `SUMMARY.md`.
+
+I could read the trial status: execution `e001` remains active as Emily, with 10 of 40 application requests used and no refusals. But the recorded execution state points to bridge files that aren’t in the Project root, and I couldn’t recover their paths from the provided host commands. Running `browser.mjs` from the root failed because that file isn’t there. I stopped without repeating a Product action or claiming the latest directory result was saved.
+
+**Known open work:** the latest HR directory result still needs its exact saved outcome and Evidence links checked. The remaining checks and scope also need a final read. The prior saved observations and attempt/outcome IDs are listed in the carried-forward execution notes, but I couldn’t verify the latest result against them or release `e001`. No approval denial occurred; this was a bridge-path blocker.
