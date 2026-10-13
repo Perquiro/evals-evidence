@@ -1,0 +1,5 @@
+The trial is documented in [SUMMARY.md](/C:/dev/Perquiro-693/.perquiro/hr-693-luna-4/project-3VYqTy/SUMMARY.md) and the detailed Hannah execution handoff is [e002/HANDOFF.md](/C:/dev/Perquiro-693/.perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md).
+
+Hannah created the synthetic employee once. The record was verified on directory page 3 and in its detail view. The detail page had no Edit control, so an edit was not available through the visible UI. A name-search attempt and retry were both reconciled as not executed after browser-host issues; the employee was verified independently. No Product mutation was repeated.
+
+Final readbacks list pending checks in the directory, dashboard, onboarding, confirmation, and detail-page navigation; their IDs and saved references are in the handoff. Both executions were released. Usage was 16/40 application requests, with no cap refusal or approval denial.

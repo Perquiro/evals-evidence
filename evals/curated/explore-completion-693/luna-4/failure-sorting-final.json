@@ -1,0 +1,670 @@
+{
+  "runs": [
+    {
+      "id": "luna-4",
+      "misses": [
+        {
+          "id": "HR01",
+          "category": "unknown",
+          "reason": "Partial Actor coverage. Emily.dawson's shell navigation was captured at event 27 but not saved. hannah.blake's dashboard navigation was captured at 158 and saved in eeb87e3d. michael.reed never had a candidate-phase session. HR01 needs navigation for each configured Actor. The trace does not show why Michael was never opened, and no summary or handoff defers him.",
+          "eventIds": [
+            27,
+            158
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR01].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/explore-end.json",
+              "anchor": "executions[].actor (e001 Emily.dawson, e002 hannah.blake only)"
+            }
+          ],
+          "writeEventIds": [
+            160
+          ]
+        },
+        {
+          "id": "HR02",
+          "category": "never_tried",
+          "reason": "Emily.dawson never loaded a higher-privilege route directly. Her captured URLs are /dashboard, /directory and /employees/7 only. No summary or handoff defers an access-boundary check.",
+          "eventIds": [
+            27,
+            95
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR02].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR05",
+          "category": "unknown",
+          "reason": "Related partial sequence. The final grade marks this false: the only unmatched query was the new hire's email, typed as a lookup for the created record (302-306, repeated at 316-319). It was not a deliberately unmatched name search. The empty state was saved in 8a03d450. The later name search for 'Synthetic Trial' was expected to match and never dispatched: the wrong action file was supplied at 316, then a locator timeout hit on the detail page at 402-404. The rejected inspection writes 314 and 329 belong to that name-search branch, not to an HR05 complete check.",
+          "eventIds": [
+            303,
+            304,
+            305,
+            306,
+            317,
+            318,
+            319,
+            403
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR05].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Search recovery record (lines 21-22)"
+            }
+          ],
+          "writeEventIds": [
+            307,
+            315,
+            321,
+            396,
+            400,
+            405
+          ],
+          "hostEventIds": [
+            302,
+            316,
+            402
+          ]
+        },
+        {
+          "id": "HR06",
+          "category": "unknown",
+          "reason": "Single sort click. Emily's first Name-header click failed on its locator (79-81). The second click succeeded once (82-86): the indicator changed and dir=desc was sent, but the rows stayed ascending. HR06 needs two clicks on the same header. The SUMMARY and e002 handoff list Hannah's 'Name sort header' as pending. That is an offered pending check, not an explicit deferral of a second click.",
+          "eventIds": [
+            80,
+            83,
+            84,
+            85,
+            86
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR06].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/SUMMARY.md",
+              "anchor": "## Remaining checks, line 16"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Remaining known checks at stop, line 26"
+            }
+          ],
+          "writeEventIds": [
+            87
+          ],
+          "hostEventIds": [
+            79,
+            81,
+            82
+          ]
+        },
+        {
+          "id": "HR07",
+          "category": "tried_but_missed_required_moment",
+          "reason": "The complete raw check is present but the saved body is missing. hannah.blake paged 1→2→3, reaching the last page with Next disabled (338-366). The saved bodies leave out row identities. 5ae17f11, 1f4aa5d9, b13530ba and 3a0bc4b1 name no rows. f9e17b09 and cc6f5a1c name only the first row on page 3. 153ea840 is vague. Emily's 8fad03b6 covers page 2 under a different total and never reached page 3. The row identities were returned to the candidate in untruncated browser act output. explore-cli.jsonl items 189 (Abigail Stone), 195 (Julia Romero and Samuel Turner) and 201 (Zach Miller) carry them. The fact was delivered and not saved.",
+          "returnedToCandidate": true,
+          "eventIds": [
+            338,
+            339,
+            340,
+            341,
+            351,
+            352,
+            353,
+            354,
+            363,
+            364,
+            365,
+            366
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR07].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/explore-cli.jsonl",
+              "anchor": "item_189, item_195, item_201 aggregated_output (truncated=false)"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Completed exploration, lines 10-12"
+            }
+          ],
+          "writeEventIds": [
+            45,
+            296,
+            342,
+            348,
+            355,
+            360,
+            367,
+            373
+          ]
+        },
+        {
+          "id": "HR08",
+          "category": "unknown",
+          "reason": "Detail opened without a reload. Details were reached by clicks only: /employees/7 at 92-95 and /employees/29 at 375-378. No direct URL load or refresh followed. The detail results were saved. The required reload never happened, and no summary or handoff defers it.",
+          "eventIds": [
+            93,
+            94,
+            95,
+            376,
+            377,
+            378
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR08].rationale"
+            }
+          ],
+          "writeEventIds": [
+            97,
+            101,
+            380,
+            384
+          ],
+          "hostEventIds": [
+            92,
+            375
+          ]
+        },
+        {
+          "id": "HR09",
+          "category": "never_tried",
+          "reason": "The leave form was never opened. The SUMMARY lists 'Request leave' only among nine pending Dashboard links. That is offered navigation, not a specific deferral.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR09].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Remaining known checks at stop, line 27"
+            }
+          ]
+        },
+        {
+          "id": "HR10",
+          "category": "never_tried",
+          "reason": "The Friday-to-Monday interval was never entered, and the leave form was never opened.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR10].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR11",
+          "category": "never_tried",
+          "reason": "No leave request was submitted. All 31 Product events contain no POST /api/leave. The only POST 201 was /api/employees at 273.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR11].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR12",
+          "category": "never_tried",
+          "reason": "/leave request history was never visited. 'My Leave' appears only as a pending Dashboard link.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR12].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Remaining known checks at stop, line 27"
+            }
+          ]
+        },
+        {
+          "id": "HR13",
+          "category": "never_tried",
+          "reason": "There was no successful leave submission and no return to the form.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR13].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR14",
+          "category": "never_tried",
+          "reason": "No manager session was used and /approvals was never opened. 'Approvals' and 'Review approvals' appear only as pending links on Hannah's Dashboard.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR14].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Remaining known checks at stop, line 27"
+            }
+          ]
+        },
+        {
+          "id": "HR15",
+          "category": "never_tried",
+          "reason": "No approval or rejection was confirmed.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR15].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR16",
+          "category": "never_tried",
+          "reason": "No rejection was attempted.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR16].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR17",
+          "category": "never_tried",
+          "reason": "The employee-then-manager leave lifecycle was not exercised.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR17].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR19",
+          "category": "tried_but_missed_required_moment",
+          "reason": "The complete raw check is present but the saved body is missing. The immediate capture at 212 shows both Step 2 selects disabled ('Loading departments…' and 'Loading…'). GET /api/meta followed at 213, and the settled capture at 215 shows the selects enabled. The full immediate capture reached the candidate in the act tool output: explore-cli.jsonl item_106 is 11983 chars long, with the loading text at offset 5769 and no truncation. Only settled facts were saved, in 0b968223 and c700c758 at write event 216. This is not a trace-only moment.",
+          "returnedToCandidate": true,
+          "eventIds": [
+            212,
+            213,
+            214,
+            215
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR19].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/explore-cli.jsonl",
+              "anchor": "item_106 aggregated_output (length 11983, 'Loading departments' offset 5769, truncated=false)"
+            },
+            {
+              "source": ".audit/693-loading-offset.mjs",
+              "anchor": "offset measurement for capture-18-immediate.json"
+            }
+          ],
+          "writeEventIds": [
+            216
+          ],
+          "hostEventIds": [
+            211
+          ]
+        },
+        {
+          "id": "HR20",
+          "category": "unknown",
+          "reason": "Partial sequence with an equipment choice. hannah.blake entered step data, advanced through each step and picked the ThinkPad on Equipment (178-262), then clicked Create (271). Back was never clicked. The SUMMARY and e002 handoff list three Back-navigation checks as pending. Those are offered checks inside a whole-pass stop. The e002 stop reason excludes all open checks as outside the create/edit objective, which does not defer Back specifically.",
+          "eventIds": [
+            179,
+            180,
+            181,
+            212,
+            213,
+            214,
+            215,
+            246,
+            247,
+            248,
+            254,
+            255,
+            256,
+            263,
+            264,
+            265,
+            272,
+            273,
+            274,
+            275
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR20].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/SUMMARY.md",
+              "anchor": "## Remaining checks, line 18"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Completed exploration, line 17; Stop reason, line 30"
+            }
+          ],
+          "writeEventIds": [
+            249,
+            266
+          ],
+          "hostEventIds": [
+            178,
+            211,
+            245,
+            253,
+            262,
+            271
+          ]
+        },
+        {
+          "id": "HR22",
+          "category": "never_tried",
+          "reason": "The timesheet was never opened. 'Timesheet' and 'Fill timesheet' appear only as pending Dashboard links.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR22].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Remaining known checks at stop, line 27"
+            }
+          ]
+        },
+        {
+          "id": "HR23",
+          "category": "never_tried",
+          "reason": "The timesheet was never opened, so no draft was saved or reloaded.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR23].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR24",
+          "category": "never_tried",
+          "reason": "There was no timesheet submission and no attempted edit.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR24].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR25",
+          "category": "never_tried",
+          "reason": "/profile was never visited. 'My Profile' appears only as a pending Dashboard link.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR25].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "## Remaining known checks at stop, line 27"
+            }
+          ]
+        },
+        {
+          "id": "HR26",
+          "category": "never_tried",
+          "reason": "No profile save took place.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR26].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR27",
+          "category": "never_tried",
+          "reason": "There was no profile save and no reload.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna4-grade-final.json",
+              "anchor": "checks[HR27].rationale"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "never_tried": 16,
+        "tried_but_missed_required_moment": 2,
+        "save_rejected": 0,
+        "quit_before_reaching_it": 0,
+        "unknown": 5,
+        "seenComplete": 6,
+        "savedComplete": 4,
+        "missedChecks": 23,
+        "rawCompleteWithoutSavedResult": 2,
+        "rawCompleteReturnedToCandidate": 2,
+        "inspectionWriteRejections": 2,
+        "otherWriteSchemaRejections": 1,
+        "readErrors": 2,
+        "browserControlRejections": 3,
+        "apiPermissionDenials": 0,
+        "approvalDenials": 0
+      },
+      "rejectedWrites": [
+        {
+          "event": 314,
+          "time": "2026-10-12T23:38:51.647Z",
+          "tool": "record_inspection",
+          "source": ".perquiro/hr-693-luna-4/events.jsonl",
+          "message": "A repeat must serve an unfinished check or independently named branch",
+          "context": "Attempting report for the 'Synthetic Trial' name search. The repeat.serves field pointed at the already-exercised email-search item 30373ee2.",
+          "recoveredBy": {
+            "event": 315,
+            "detail": "Accepted with a new item key searchSyntheticName (check 3804cb03), saving attempt 4cc6cb01"
+          },
+          "causalMissedCheck": null
+        },
+        {
+          "event": 329,
+          "time": "2026-10-12T23:40:03.725Z",
+          "tool": "record_inspection",
+          "source": ".perquiro/hr-693-luna-4/events.jsonl",
+          "message": "A repeat must serve an unfinished check or independently named branch",
+          "context": "A second name-search attempt report with repeat.serves=3804cb03. A later accepted attempt was saved as 6466a135 at write event 400.",
+          "causalMissedCheck": null
+        }
+      ],
+      "otherErrorsNotCountedAsInspectionRejections": [
+        {
+          "event": 313,
+          "time": "2026-10-12T23:38:40.076Z",
+          "tool": "record_observation",
+          "class": "write_schema_error",
+          "message": "MCP error -32602: Input validation error: Invalid arguments for tool record_observation: Invalid input: expected string, received undefined at actor\nInvalid input: expected string, received undefined at body",
+          "causalMissedCheck": null
+        },
+        {
+          "event": 331,
+          "time": "2026-10-12T23:40:31.916Z",
+          "tool": "read_reviews",
+          "class": "read_role_rejection",
+          "message": "Tool is outside this role or phase",
+          "causalMissedCheck": null
+        },
+        {
+          "event": 335,
+          "time": "2026-10-12T23:40:42.458Z",
+          "tool": "read_explore",
+          "class": "read_schema_error",
+          "message": "MCP error -32602: Input validation error: Invalid arguments for tool read_explore: Invalid UUID at actorIds[0]",
+          "causalMissedCheck": null
+        },
+        {
+          "events": [
+            50,
+            51,
+            80,
+            81,
+            403,
+            404
+          ],
+          "class": "browser_locator_timeout",
+          "detail": "Three /browser act rejections. 51 was a mis-encoded 'Search by name…' label, 81 a mis-encoded 'Name ▲' header, and 404 targeted directory-search while on /employees/29. None reached the Product. The 81 timeout came before the single successful sort click.",
+          "causalMissedCheck": null
+        }
+      ],
+      "stop": {
+        "observedStopCause": "Natural candidate exit after about 23.6 minutes (elapsedSeconds 1414.254) with 16 of 40 application API requests used and 0 refused. The Agent released both Actor executions with release.completed=true and workerAgent solo-session: e001 at event 148 and e002 at event 409. Exploration was closed through finish-explore with about 985.7 explore-seconds remaining. There was no time cap, request cap, approval denial or forced release.",
+        "outcome": {
+          "kind": "closed",
+          "exitCode": 0,
+          "timedOut": false,
+          "mismatch": false,
+          "hostModelVerified": true,
+          "finishedAt": "2026-10-12T23:45:33.599Z"
+        },
+        "allowance": {
+          "apiRequestsUsed": 16,
+          "apiRequestsLimit": 40,
+          "apiRequestsRefused": 0,
+          "elapsedSeconds": 1414.254,
+          "exploreSecondsRemaining": 985.746,
+          "candidateStart": "2026-10-12T23:22:00.368Z",
+          "actorsUsed": [
+            "Emily.dawson",
+            "hannah.blake"
+          ],
+          "actorsUnused": [
+            "michael.reed"
+          ],
+          "executionsCompletedByAgent": 2,
+          "forcedReleases": 0,
+          "productMutations": [
+            {
+              "event": 273,
+              "detail": "POST /api/employees 201, id 29 (synthetic employee)"
+            }
+          ]
+        },
+        "approvalDenialsObserved": false,
+        "stopNarrativeVsEvidence": {
+          "candidateClaim": "The SUMMARY Result section says the authorized Explore checks are complete within the visible UI and the shared limits. The e002 stop reason says other open checks are outside the create/edit objective.",
+          "scopeNarrowing": "e002's self-written assignment limited scope to the directory and the employee create/edit lifecycle as Hannah.blake, with no other Actors. The root REQUEST authorized exploring BugBusters HR with any of the three Actors in sequential executions and finishing only when no meaningful feasible continuation remained. Releasing e002 ended local ownership. It did not end root authorization.",
+          "recordedBlocks": [
+            {
+              "check": "Edit employee",
+              "kind": "absent_control",
+              "recoverable": false,
+              "detail": "No Edit control on Employee details for either Actor (Observations ed05d334 and 033951a3). This legitimately ends the edit path only."
+            },
+            {
+              "check": "Search by synthetic employee name (3804cb03)",
+              "kind": "tool_misuse_blocked",
+              "recoverable": true,
+              "detail": "The first try dispatched the stale email action file (316-319). The retry targeted directory-search on /employees/29 (402-404). Back to directory was still offered on that page. Both were reconciled as not_executed."
+            }
+          ],
+          "proofAllWorkInfeasible": false,
+          "evidence": [
+            {
+              "source": ".perquiro/hr-693-luna-4/request.md",
+              "anchor": "line 1"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+              "anchor": "Stop reason, line 30"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/project-3VYqTy/SUMMARY.md",
+              "anchor": "## Result, line 5; ## Remaining checks, lines 14-20"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-4/explore-end.json",
+              "anchor": "executions[1].assignment.scope; explorationClosed; exploreSecondsRemaining"
+            },
+            {
+              "source": ".audit/693-luna4-stop-how/explainer.stdout.log",
+              "anchor": "'The scope narrowed at the wrong boundary'; 'Neither budget ended'; 'The obstacles were local'"
+            }
+          ]
+        },
+        "mechanismHypothesis": [
+          "Known mechanism: the Agent treated completion of e002's self-chosen create/edit objective as completion of the root request. It released and finished with 24 requests and about 16 minutes left. Pending Dashboard links to Leave, Timesheet, Approvals and Profile were listed but never tried, and michael.reed was never used.",
+          "Known mechanism: HR19's immediate loading state was returned to the Agent in full and not truncated. The immediate-return change delivered the fact, and the miss is at the save step. That leaves HR19 in tried_but_missed_required_moment with returnedToCandidate=true. It is not a delivery gap like the six baseline trace-only moments.",
+          "Known mechanism: HR07 row identities were also returned in untruncated act output, and the saved bodies kept page numbers and totals but no rows.",
+          "Hypothesis, not established: a null read_explore_continuation plus empty Follow-on work was read as 'no further work'. The explainer cites null meaning 'no saved UI scope', and the Explore skill already says to keep the human's scope in that case.",
+          "No quit_before_reaching_it assignments. Under the baseline rule, generic out-of-objective exclusion and listings of pending offered checks do not explicitly defer any named inventory workflow.",
+          "No save_rejected assignments. Both rejected inspection writes concern the non-inventory synthetic-name search branch, and accepted writes followed at 315 and 400. Neither is linked to a missed complete check."
+        ],
+        "summaryCitations": [
+          {
+            "source": ".perquiro/hr-693-luna-4/outcome.json",
+            "anchor": "kind, exitCode, timedOut"
+          },
+          {
+            "source": ".perquiro/hr-693-luna-4/explore-end.json",
+            "anchor": "apiRequests, executions[].release"
+          },
+          {
+            "source": ".perquiro/hr-693-luna-4/project-3VYqTy/SUMMARY.md",
+            "anchor": "## Limits and execution state, line 26"
+          },
+          {
+            "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e001/HANDOFF.md",
+            "anchor": "bullet on employee creation/edit not attempted (no Add/Edit control for Emily)"
+          },
+          {
+            "source": ".audit/693-luna4-grade-final.json",
+            "anchor": "notes (seen 6, saved 4: HR03, HR04, HR18, HR21)"
+          }
+        ]
+      }
+    }
+  ],
+  "parentValidation": {
+    "semanticCategoriesUnchanged": true,
+    "hostStartAndRejectionIdsSeparated": true,
+    "traceReferencesExpandedFromSameOwnedAction": true,
+    "acceptedWriteAndRejectedErrorReferencesValidated": true,
+    "notes": "The initial stdout includes Markdown fences. Extraction removed only the fence. Final eventIds cite published browser/Product events; hostEventIds preserve private start/control diagnostics separately. No category or grade was changed."
+  }
+}
