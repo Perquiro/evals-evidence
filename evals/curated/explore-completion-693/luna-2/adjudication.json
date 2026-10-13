@@ -1,0 +1,367 @@
+[
+  {
+    "subject": "HR01",
+    "initialDecision": "seen, not saved",
+    "finalDecision": "seen, not saved",
+    "reason": "Events 26, 64 and 123 each show the full nav for Emily.dawson, hannah.blake and michael.reed, so seen holds at the 10-minute checkpoint. Saved fails. Only Hannah's nav body (33d1f76c) is correct. Michael's body (6347b74b) omits Approvals and calls it absent, and Emily's dashboard body (399990fc) lists no nav items. Bodies 59de74e7 and 7cbf13f2 give only partial links, and raw Evidence cannot fill the gap.",
+    "eventIds": [
+      26,
+      64,
+      123
+    ],
+    "observationIds": [
+      "33d1f76c-d04d-4958-bdd3-47448898e9fa",
+      "6347b74b-b04a-43d5-9aa6-07f20dd84e59",
+      "399990fc-89e4-4094-8683-0e9c6fbafead",
+      "59de74e7-eb78-48ac-b8d6-f154e573c2f9",
+      "7cbf13f2-6398-4d7c-9f9c-9392122d095d"
+    ]
+  },
+  {
+    "subject": "HR02",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "Emily.dawson's URLs were only /dashboard, /directory, /leave and /leave/new. No employee direct visit to a higher-privilege page occurred.",
+    "eventIds": [
+      26,
+      31,
+      34,
+      51,
+      209,
+      214,
+      218,
+      230,
+      243
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR03",
+    "initialDecision": "seen and saved; earliest set 48,49,50 with 30e47a26; alternatives 107-109 with 0dad0e2a and 154-156 with b50c871d",
+    "finalDecision": "seen and saved; support sets unchanged",
+    "reason": "Event 48 shows the fill with the stale list. Event 49 returns total 1 for q=Hannah Blake. Event 50 shows the settled '1 employees', the single Hannah Blake row and Page 1 of 1. Body 30e47a26 (write event 52, before the 10-minute cutoff) states the search text and the settled row. Both later alternatives check out the same way (108 and 155 return total 1, and 109 and 156 show the settled single Emily Dawson row).",
+    "eventIds": [
+      48,
+      49,
+      50,
+      107,
+      108,
+      109,
+      154,
+      155,
+      156
+    ],
+    "observationIds": [
+      "30e47a26-19d4-4c32-8eb9-ef7851710dfa",
+      "0dad0e2a-e1fb-42bd-bafb-b4f88a86ded3",
+      "b50c871d-67d9-4545-837e-02a539a62d09"
+    ]
+  },
+  {
+    "subject": "HR04",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "All employee queries use department=''. The selector stayed on All departments.",
+    "eventIds": [
+      32,
+      49,
+      97,
+      108,
+      144,
+      155
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR05",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "All three searches matched (total 1). No unmatched search was run and no empty state appeared.",
+    "eventIds": [
+      49,
+      108,
+      155
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR06",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No browser action targets a column header. The sort stayed name asc in every request.",
+    "eventIds": [
+      32,
+      97,
+      144
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR07",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "Every /api/employees request is page=1, and no Next or Previous action exists in the trace. Only page 1 rows (Abigail Stone to Hannah Blake), the 28 total and 'Page 1 of 3' with Next enabled are seen (events 32 and 34). No page sequence, no row identities beyond page 1 and no last-page determination are present, so the strict paging-sequence interpretation is not met. The saved totals are partial facts only.",
+    "eventIds": [
+      32,
+      34,
+      97,
+      144
+    ],
+    "observationIds": [
+      "53ff8acd-f92d-4609-8fbe-8f1ce6420c79",
+      "87787731-427d-4285-badb-074d1eb4e70a",
+      "ac700f3c-5638-490e-b325-90b9a6af1cbc",
+      "4c5b3044-853e-4e62-9c55-0811d8c0a0a6",
+      "b1a8bf20-f9a1-4d5d-9ba3-3d9fb762bd66"
+    ]
+  },
+  {
+    "subject": "HR08",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "Detail opened only by row click (164-166, 190-192). No direct load or refresh of /employees/7 followed.",
+    "eventIds": [
+      164,
+      165,
+      166,
+      190,
+      191,
+      192
+    ],
+    "observationIds": [
+      "31d0100b-80f6-4eab-b046-1b34615beca4",
+      "7d5d87ba-cf2f-4092-86d0-fa69d58130f4"
+    ]
+  },
+  {
+    "subject": "HR09",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "Start and End date stay blank (event 243 field values are empty). No range was entered.",
+    "eventIds": [
+      240,
+      241,
+      242,
+      243
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR10",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No interval was entered, so the required Friday-to-Monday case is absent.",
+    "eventIds": [
+      240,
+      243
+    ],
+    "observationIds": [
+      "7dd1f76e-9b37-43ad-adbb-f3b21717fd8c"
+    ]
+  },
+  {
+    "subject": "HR11",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "All 12 Product requests are GETs. No leave submission occurred.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR12",
+    "initialDecision": "seen and saved, with stricter-reading caveat",
+    "finalDecision": "seen and saved; caveat resolved in favour of credit",
+    "reason": "The requirement is that the employee reads back a submitted request in request history and records the displayed details. Event 216 returns request id 1 (status approved, so submitted). Event 217 shows the settled history row. Bodies ed0d29c5 (write event 221, 21:03:22Z, before the 20-minute cutoff) and 9d02ad29 record the displayed dates Aug 11-12 2026, 3 days, Vacation, approved, and the comment. In-run creation is HR11's and HR17's requirement and is not added here. Event 214 is the click with balance still loading. Event 217 is the earliest settled read.",
+    "eventIds": [
+      214,
+      216,
+      217
+    ],
+    "observationIds": [
+      "ed0d29c5-bac8-4781-813d-d83b3fbebaf6",
+      "9d02ad29-11fc-40f3-a143-2fb37c0650f4"
+    ]
+  },
+  {
+    "subject": "HR13",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No successful submission preceded the /leave/new visit.",
+    "eventIds": [
+      228,
+      229,
+      230
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR14",
+    "initialDecision": "seen and saved; set 131,132,134 with 0dcaff21 + b6f50cbd",
+    "finalDecision": "seen and saved; unchanged",
+    "reason": "michael.reed is the manager Actor. Event 132 returns one pending request (George Tanaka, Vacation, 2026-09-24 to 26, 3 days, Family visit). Event 134 shows the settled row with Approve and Reject. Body 0dcaff21 (write 136) gives the action and the one-request result. Body b6f50cbd (write 137) gives the requester and the request identity. Both were written before the 10-minute cutoff. Hannah's empty queue is not the manager Actor.",
+    "eventIds": [
+      131,
+      132,
+      134
+    ],
+    "observationIds": [
+      "0dcaff21-819e-41cb-879f-9b5e2f4f2796",
+      "b6f50cbd-cf85-4166-8105-64b803e3f9e7"
+    ]
+  },
+  {
+    "subject": "HR15",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No Approve or Reject action exists in the trace.",
+    "eventIds": [
+      134,
+      135
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR16",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No rejection attempt occurred.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR17",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No create-decide-reread sequence. Event 217 shows only a pre-existing approved request.",
+    "eventIds": [
+      217
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR18",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "Step 1 was opened with empty fields. Next was never clicked.",
+    "eventIds": [
+      84,
+      85,
+      86
+    ],
+    "observationIds": [
+      "cc947f69-7a63-447c-890d-0a7542e3c404",
+      "bffde41c-64be-479f-a3b0-a55f95891e05"
+    ]
+  },
+  {
+    "subject": "HR19",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "The job-details step was never opened.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR20",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No step data was entered and no forward or back navigation happened.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR21",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No review submission. The total stayed at 28.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR22",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No /timesheet URL appears in the trace.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR23",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No timesheet save or reload.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR24",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No timesheet submission or later edit attempt.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR25",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No /profile visit or profile save. /employees/7 is a read-only view.",
+    "eventIds": [
+      166,
+      192
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "HR26",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No profile name or photo save.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR27",
+    "initialDecision": "not seen",
+    "finalDecision": "not seen",
+    "reason": "No profile save, so no reload after save.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "Unsupported claim: Approvals absent from michael.reed navigation",
+    "initialDecision": "unsupported, material",
+    "finalDecision": "unsupported, material",
+    "reason": "Event 123's navigation lists link 'Approvals' (/approvals) for michael.reed. Body 6347b74b lists his nav without it and says Approvals navigation is not present. This contradicts the role boundary fact. It was written at event 128, before the 10-minute cutoff, and counts in every checkpoint numerator.",
+    "eventIds": [
+      123,
+      131,
+      134
+    ],
+    "observationIds": [
+      "6347b74b-b04a-43d5-9aa6-07f20dd84e59"
+    ]
+  },
+  {
+    "subject": "Unsupported claim: profile 'role Software Engineer'",
+    "initialDecision": "unsupported, non-material",
+    "finalDecision": "unsupported, non-material",
+    "reason": "Events 166 and 192 show 'Software Engineer' unlabelled under the name. It is the title field, while the Product role is 'employee'. The displayed text is faithful and only the field label is wrong, so no behavioral fact changes.",
+    "eventIds": [
+      166,
+      192
+    ],
+    "observationIds": [
+      "e121ca34-a87c-4f6d-aebc-424d0db77557",
+      "d4ad2d67-c78b-4e3c-bff6-cb44cc30f868"
+    ]
+  },
+  {
+    "subject": "Scenarios",
+    "initialDecision": "none proposed",
+    "finalDecision": "none proposed",
+    "reason": "The packet's proposals array is empty, and the catalog reports 0 scenarios.",
+    "eventIds": [],
+    "observationIds": []
+  }
+]

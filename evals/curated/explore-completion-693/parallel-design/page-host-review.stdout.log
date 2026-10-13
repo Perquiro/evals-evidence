@@ -1,0 +1,30 @@
+**BLOCKED** for `624731a3..9fa15bfa`, scoped to `scripts/explore-completion-693`. Three Major correctness findings violate the lease and allowance obligations.
+
+1. **Release can retire a lease before its Page exists, then begin reopens it.** [execution-host.mjs:40](C:/dev/Perquiro-693/scripts/explore-completion-693/execution-host.mjs:40) registers ownership before awaiting Page creation. [Release:73](C:/dev/Perquiro-693/scripts/explore-completion-693/execution-host.mjs:73) does not join that creation.
+
+   Read-only repro: defer `createPage`; begin A/e1; release e1; resolve creation. Release returns `retired`, but begin subsequently returns `open` with an unclosed Page and no Actor reservation. An exclusive Product lease for B then starts while A’s Page still admits reads. Concurrent `/force-release` or `/finish-explore` can reach this interleaving. Release must join creation and close the resulting Page before retiring ownership.
+
+2. **Fresh browser reads ignore the local lease deadline.** [serve.mjs:99](C:/dev/Perquiro-693/scripts/explore-completion-693/serve.mjs:99) checks only whole-arm exhaustion. The local deadline check at [execution-host.mjs:54](C:/dev/Perquiro-693/scripts/explore-completion-693/execution-host.mjs:54) occurs before work starts.
+
+   An in-memory repro using the committed snapshot function advanced time from `0` to `300001` during `ariaSnapshot`. The subsequent fields read still executed and the snapshot succeeded, despite the lease deadline being `300000`. Actions and quiet waits can likewise cross the deadline before immediate, settled, or failure captures. Every fresh read needs a lease-aware permit.
+
+3. **Normal release fails in page-task mode.** [serve.mjs:387](C:/dev/Perquiro-693/scripts/explore-completion-693/serve.mjs:387) validates page-task ownership, then uses legacy `activeExecution`, which remains `null`.
+
+   Executing the committed release block with real `PageExecutions` produced `Cannot convert undefined or null to object`; the lease stayed open, its Actor reserved, and its Page unclosed. The generated `solo.mjs release EXECUTION_ID` reaches this path. Add normal lease-specific release through `pageHost.release`, preserving the legacy branch.
+
+The committed overlap claim **is falsifiable**: A’s response gate remains held while B’s browser, status, and MCP wrappers must finish. The existing proof records separate A/e001/epoch1 and B/e002/epoch2 captures and seven shared requests. It uses synthetic capability identity with actual Product/generated wrappers/Windows Jobs. It does not exercise cap exhaustion; the 39→40 admission check is covered by the synthetic unit test.
+
+No additional concrete defect was validated in immutable delayed-response attribution, unproven automatic-request causality, ordinary actor-local queues, API mutation exclusion, configured popup/service-worker/WebSocket containment, or serialized control MCP operations. The reserved-Page race remains an exception to safe fresh-Page retirement.
+
+Checks completed:
+
+- `node --test scripts/explore-completion-693/*.test.mjs`: **24 passed, 0 failed**.
+- `git diff --check`: passed.
+- Scoped comparison whitespace check: passed.
+- Exact HEAD and empty tracked/untracked porcelain status verified before and after.
+- No repository files changed, new proof outputs created, native model seats launched, or forbidden material inspected.
+
+Browser/Product lifecycle proofs were not rerun. This review excludes the future scheduler and cannot certify actual multi-seat Luna identity, semantic saved completion, or a score result.
+
+Review applies only to HEAD 9fa15bfab9a6571c865cdd256f0b5caa6aee2ecd.
+Any material code change requires a new review.

@@ -1,0 +1,820 @@
+{
+  "id": "candidate-693",
+  "trial": {
+    "id": "candidate-693",
+    "arm": "D-candidate",
+    "manager": false,
+    "checklist": false,
+    "model": "gpt-6-luna",
+    "effort": "medium"
+  },
+  "workspace": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y",
+  "productUrl": "http://127.0.0.1:61537",
+  "controlUrl": "http://127.0.0.1:50882",
+  "pid": 21200,
+  "productPid": 54864,
+  "productDate": "2026-09-10T12:00:00.000Z",
+  "startedAt": "2026-10-13T09:35:54.446Z",
+  "skillSha256": "e2903a5bc864518db27b3eb7ac4056d9ececaabc9e40f9c578cdf9fcd6bd5250",
+  "productHashes": {
+    "product/dist/assets/index-CiOd5S5f.js": "5004bbabe116abe1e092ff8694c75adcc35aabaef3d66b6527c24dd24ff723c6",
+    "product/dist/assets/index-D-g6-4_f.css": "3842a75d8a6c401024182a594757c0a9736f7cd1063934ea4bc2fa1024a6c8b3",
+    "product/dist/index.html": "a4bbb6e2130bf256c30ca708afbcb0968a3a47bf9281c88f3baef41c4e3c9547",
+    "product/package-lock.json": "b698001d0b8325bacad477e2983034552db22e209967d9c7e9330ab85dc216a2",
+    "product/package.json": "b2051a23fb8ab14ba9ec707b3bbdc38cc97e0030aafa78e5aadc4cf5c8cfc589",
+    "product/server/index.js": "bbf2d72a1b75b226e732af32212a7c7f3153c4e034901220c20c79d0c67ec6bb",
+    "product/server/seed.js": "6f284449573cb5d320e2ae8a9ff42d11bcfa27a9b07bf650008de9f3dd754a35",
+    "product/src/api.js": "5ec6e3ae37db8e895bdeadf758eb0e5bc8b33fde2c0a6699bdfafaf033df0ceb",
+    "product/src/App.jsx": "3e5efebf74590787542307bd2753cc2d724795c0527c88c7496a561830e56dc2",
+    "product/src/auth.jsx": "82d3cdef6dbed0235eb656eb04ccff682ee9cfcd4690e78eeeb48ac3badd0fe0",
+    "product/src/components/DatePicker.jsx": "fc96c3758816ebf4e4e823ac20285162c892a0acc19779426de657c6f57af6ef",
+    "product/src/components/Layout.jsx": "0e476379bd87669fd04ad8945504df5d4525b2ae958f3d8a25a0f2dd3a5626cc",
+    "product/src/components/Modal.jsx": "d3068658e147559c833202dc91d6ad75354fbb33e641e9d28ee7bffab14c45e5",
+    "product/src/directoryCache.js": "7b3cf3d30184e6dee01107866ddd53904a1b7f6dc14c21df3dbcbb5240035ecf",
+    "product/src/main.jsx": "d65350464d72c4c96e6fee13a783d8700df0df362e6b40af58aed16f216af3b5",
+    "product/src/pages/Approvals.jsx": "b58b48de711d0f5e0724e6d146b65c82b3d0d74b9cc92bf40604cf93c3b685a1",
+    "product/src/pages/Dashboard.jsx": "d9fdd1c7eb36266533f8f5ab3795e8843a00791e94f2fa2210c80781e7c16864",
+    "product/src/pages/Directory.jsx": "c62ba890c8c43c0b41f33906766a6a95b94023f5d905ff148dbde199a739730c",
+    "product/src/pages/EmployeeDetail.jsx": "216fd59175ebe505475b5015e8c0768e61bc4bd0bac5b6be31b80b6ceca34587",
+    "product/src/pages/Leave.jsx": "5e5ed3a3dedf4db27d20e0d107aa9b9c1a86971b4bb2bc2f753923876a003324",
+    "product/src/pages/Login.jsx": "5ee75c7470fddc5bb9fcdeee3da16006daafcbbda32d33135d60dad63e721ccf",
+    "product/src/pages/NewLeave.jsx": "42348f75297206b863c6cdb0857579c4b25e560be2ee074d5a361116b9227d77",
+    "product/src/pages/Notifications.jsx": "c8c4ffc1b1b2b3b467d1c494b35b36fa3c22239f399d427bd8e3b63b33801865",
+    "product/src/pages/Onboarding.jsx": "35354bcc64c2bde52ff360441c5829e32a3e23f83611aee1343d4383def4b49e",
+    "product/src/pages/Profile.jsx": "ba367df81e908f106e5a6edd4a6c27247f548737bdd123e1984e263b35b71306",
+    "product/src/pages/Timesheet.jsx": "442d9130893d75c7f599ac47155c42ee03e6cdf0c892f019817eb3f9ed51e268",
+    "product/src/styles.css": "3d8107160ad8facc3e3bf7f26f46544d28bd75af5f88746e4ea5b6ef60a3f4c8",
+    "product/src/utils.js": "8490648cf5554713de218d7d2f82c7aad4fee50de2fff0fad2865ae97159adac"
+  },
+  "originalProductSourceHashCount": 27,
+  "actors": [
+    "Emily.dawson",
+    "michael.reed",
+    "hannah.blake"
+  ],
+  "productHead": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+  "preparation": "Three fresh browser contexts authenticated through real UI; only auth/read requests before candidate start; seed Product data untouched.",
+  "productVersion": {
+    "kind": "unknown"
+  },
+  "productVersionBasis": "Prepared Setup has no Product-version source; no exact version has been observed.",
+  "apiRequests": 11,
+  "refusedRequests": 0,
+  "browserActions": 11,
+  "executions": [
+    {
+      "id": "e001",
+      "actor": "Emily.dawson",
+      "startedAt": "2026-10-13T09:35:55.671Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "token": "pass-1",
+        "mode": "explore",
+        "actor": "Emily.dawson",
+        "question": "Continue the original request in saved scope 8d2c71e1-fed0-48ce-937b-93960992dd70. Its current status is No known actions remain to try; scoped inventory still needs inspection.. Read all paged checks, recovery and discovery through read_explore_continuation as Knowledge remainder data. This execution is hosted privately, without a registered UI Explore process. The public process-control status may therefore report interrupted while this host-owned native seat is active. Do not resume or alter UI process control. Native identity, ownership and transfer remain with the host; an actual unknown host closure remains a blocker. Select useful feasible tasks, preserve full attributed results and report concrete limits.",
+        "references": [],
+        "sources": []
+      },
+      "releasedAt": "2026-10-13T09:51:45.703Z",
+      "endingApiRequests": 11,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    },
+    {
+      "id": "e002",
+      "actor": "Emily.dawson",
+      "startedAt": "2026-10-13T09:51:46.650Z",
+      "startingApiRequests": 11,
+      "assignment": {
+        "token": "pass-2",
+        "mode": "explore",
+        "actor": "Emily.dawson",
+        "question": "Continue the original request in saved scope 8d2c71e1-fed0-48ce-937b-93960992dd70. Its current status is 17 actions still to try; 1 not present in the inspected state.. Read all paged checks, recovery and discovery through read_explore_continuation as Knowledge remainder data. This execution is hosted privately, without a registered UI Explore process. The public process-control status may therefore report interrupted while this host-owned native seat is active. Do not resume or alter UI process control. Native identity, ownership and transfer remain with the host; an actual unknown host closure remains a blocker. Select useful feasible tasks, preserve full attributed results and report concrete limits.",
+        "references": [
+          "e001"
+        ],
+        "sources": [
+          {
+            "executionId": "e001",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\HANDOFF.md",
+            "captures": [
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-2-immediate.json",
+                "eventId": 38,
+                "actionId": 2,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:38:07.179Z",
+                "settled": false,
+                "sha256": "d6a4dbac9c7ea4427cdbbfa5b45f94488889682d1a4152d3dcc2b632408e95b5"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-2-after.json",
+                "eventId": 40,
+                "actionId": 2,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:38:08.263Z",
+                "settled": true,
+                "sha256": "1dc2e7b11d2963ec2812f48237d9d84fc859439e5a1322c46b8f74d5f1116bb1"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-3-immediate.json",
+                "eventId": 51,
+                "actionId": 3,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:39:23.752Z",
+                "settled": false,
+                "sha256": "74794512cf9725140547287a7f94d30a6d0b30a6f7b454ee2a43371c6fe10e71"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-3-after.json",
+                "eventId": 53,
+                "actionId": 3,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:39:24.847Z",
+                "settled": true,
+                "sha256": "51b78f17f6017aee728695df8f59b9e984439187df835c55a5931cd346cc7a33"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-5-immediate.json",
+                "eventId": 68,
+                "actionId": 5,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:41:25.527Z",
+                "settled": false,
+                "sha256": "e9ce826d56ea28f58e19077dcb7dde52d20b787e8f626a23741eafb3a61614ac"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-5-after.json",
+                "eventId": 70,
+                "actionId": 5,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:41:26.754Z",
+                "settled": true,
+                "sha256": "a6e809d3bdfa3bfdeb1ea9c76d6509653f58cac5c5db9d4e41c2235fdf40b05e"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-6-immediate.json",
+                "eventId": 78,
+                "actionId": 6,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:42:15.849Z",
+                "settled": false,
+                "sha256": "8031f396108312f346182bd5438cc24a73ffa7c5921d39a30404b355c2f0488d"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-6-after.json",
+                "eventId": 82,
+                "actionId": 6,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:42:17.209Z",
+                "settled": true,
+                "sha256": "8a4b8e672e1cc0ed3e828d1d993abb46781f6c166191d6e8c4576f3593626975"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-7-immediate.json",
+                "eventId": 91,
+                "actionId": 7,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:43:33.228Z",
+                "settled": false,
+                "sha256": "e2ea64ee27a5ce5267792fce7a6b3c4bce2b5f01b729ba9d87490d8c44a03fd8"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-7-after.json",
+                "eventId": 92,
+                "actionId": 7,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:43:33.998Z",
+                "settled": true,
+                "sha256": "811c24b01d9720258c3194996ad72166b256c5c161a3118931634da953d95906"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-8-immediate.json",
+                "eventId": 105,
+                "actionId": 8,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:45:42.471Z",
+                "settled": false,
+                "sha256": "6c37d146439f308efe5ddc092479e97c8092363966e424a1bf3e427c7b347b48"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-8-after.json",
+                "eventId": 106,
+                "actionId": 8,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:45:43.230Z",
+                "settled": true,
+                "sha256": "91937f2da4a57b0a7831630cf5ef37c9c93bf4a8241e89061f913e816c9ec761"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-9-immediate.json",
+                "eventId": 118,
+                "actionId": 9,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:47:19.251Z",
+                "settled": false,
+                "sha256": "2004d8564b2e0d74d1889ff7dae918d1e555bea0ee124ddbca1890741c009318"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-9-after.json",
+                "eventId": 121,
+                "actionId": 9,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:47:20.627Z",
+                "settled": true,
+                "sha256": "ff0f80c4cf9de7064a6fb6d30f74a614d30ba001edbde4f57b3e608a1c7f86f7"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-10-immediate.json",
+                "eventId": 129,
+                "actionId": 10,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:48:20.404Z",
+                "settled": false,
+                "sha256": "efc649d3e0d9c30e86699a2609036247258b08fa6f659b1ab7cf21996c0ffa5e"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-10-after.json",
+                "eventId": 132,
+                "actionId": 10,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:48:21.781Z",
+                "settled": true,
+                "sha256": "5a67e2c0d36e7262e0e9c41bf436694a1d93fa731f23e9fdc7a05867da3cbc9f"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-11-immediate.json",
+                "eventId": 138,
+                "actionId": 11,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:49:07.530Z",
+                "settled": false,
+                "sha256": "c41979e25f5d05e24d4d5a2bac31862adf7549626d1d32f9cec5749db76a57b7"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-11-after.json",
+                "eventId": 140,
+                "actionId": 11,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:49:08.600Z",
+                "settled": true,
+                "sha256": "a5f0dcba8786b2e9a31c3c8e7b4410109461289eb7ea23f63735e4acd2e7faef"
+              }
+            ],
+            "savedIds": [
+              "2cecc9ac-c2fb-4b4c-a608-881534ae432b",
+              "629163cf-c9d7-4eff-b083-32c554c8cf89",
+              "39bfd70f-0282-4582-a619-540054c03685",
+              "490fbcf4-e0c0-47d2-b55b-3db94aea69df",
+              "92eec52f-288a-4fc0-8198-2975263389ca",
+              "4792e5f1-194c-4006-8902-ce258745062b",
+              "6965eec0-dc43-464a-8b33-cf6706756cde",
+              "3fbf62ba-b9f2-490f-8526-48f605326642",
+              "f1bee07a-5dcb-4d8a-b743-b877d8056568",
+              "fa8725df-f2ed-4a65-ba3c-46c5652f7d92",
+              "c219cb00-aab8-49b9-aacf-d8d35b794504",
+              "0c89989a-f94d-4a42-b5b8-5ca162188d83",
+              "822626a5-6740-4b87-839a-3ff548af4f2b",
+              "7d851b3b-2cd6-49c4-9029-d2b116ed21b2",
+              "905cd735-1ea7-4903-91e6-04b4dc1bb786",
+              "0a994a24-6a97-43e6-9d37-31dd3023eea5",
+              "3e493289-a361-4614-bdf5-3ea5de548a56",
+              "82347f60-e41d-4c52-b561-f17a4bce48fd",
+              "8b23197a-a1a0-4bc1-b561-e4eef1505f91",
+              "ef03b349-43ba-4238-bfec-7736b0d4cbf5",
+              "4112d7a1-0aa7-47f4-9df9-3d1c79e89720",
+              "d4856a44-554c-48fb-ba2c-7ff3c4895424",
+              "bbfb7f54-ec74-4ce0-8ff6-649c856690dc"
+            ]
+          }
+        ]
+      },
+      "releasedAt": "2026-10-13T09:52:53.201Z",
+      "endingApiRequests": 11,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    },
+    {
+      "id": "e003",
+      "actor": "michael.reed",
+      "startedAt": "2026-10-13T09:52:54.202Z",
+      "startingApiRequests": 11,
+      "assignment": {
+        "token": "pass-3",
+        "mode": "explore",
+        "actor": "michael.reed",
+        "question": "Continue the original request in saved scope 7793c09f-85c6-4a37-a4ab-76179c542873. Its current status is 24 actions still to try; scoped inventory still needs inspection.. Read all paged checks, recovery and discovery through read_explore_continuation as Knowledge remainder data. This execution is hosted privately, without a registered UI Explore process. The public process-control status may therefore report interrupted while this host-owned native seat is active. Do not resume or alter UI process control. Native identity, ownership and transfer remain with the host; an actual unknown host closure remains a blocker. Select useful feasible tasks, preserve full attributed results and report concrete limits.",
+        "references": [
+          "e001",
+          "e002"
+        ],
+        "sources": [
+          {
+            "executionId": "e001",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\HANDOFF.md",
+            "captures": [
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-2-immediate.json",
+                "eventId": 38,
+                "actionId": 2,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:38:07.179Z",
+                "settled": false,
+                "sha256": "d6a4dbac9c7ea4427cdbbfa5b45f94488889682d1a4152d3dcc2b632408e95b5"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-2-after.json",
+                "eventId": 40,
+                "actionId": 2,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:38:08.263Z",
+                "settled": true,
+                "sha256": "1dc2e7b11d2963ec2812f48237d9d84fc859439e5a1322c46b8f74d5f1116bb1"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-3-immediate.json",
+                "eventId": 51,
+                "actionId": 3,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:39:23.752Z",
+                "settled": false,
+                "sha256": "74794512cf9725140547287a7f94d30a6d0b30a6f7b454ee2a43371c6fe10e71"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-3-after.json",
+                "eventId": 53,
+                "actionId": 3,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:39:24.847Z",
+                "settled": true,
+                "sha256": "51b78f17f6017aee728695df8f59b9e984439187df835c55a5931cd346cc7a33"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-5-immediate.json",
+                "eventId": 68,
+                "actionId": 5,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:41:25.527Z",
+                "settled": false,
+                "sha256": "e9ce826d56ea28f58e19077dcb7dde52d20b787e8f626a23741eafb3a61614ac"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-5-after.json",
+                "eventId": 70,
+                "actionId": 5,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:41:26.754Z",
+                "settled": true,
+                "sha256": "a6e809d3bdfa3bfdeb1ea9c76d6509653f58cac5c5db9d4e41c2235fdf40b05e"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-6-immediate.json",
+                "eventId": 78,
+                "actionId": 6,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:42:15.849Z",
+                "settled": false,
+                "sha256": "8031f396108312f346182bd5438cc24a73ffa7c5921d39a30404b355c2f0488d"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-6-after.json",
+                "eventId": 82,
+                "actionId": 6,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:42:17.209Z",
+                "settled": true,
+                "sha256": "8a4b8e672e1cc0ed3e828d1d993abb46781f6c166191d6e8c4576f3593626975"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-7-immediate.json",
+                "eventId": 91,
+                "actionId": 7,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:43:33.228Z",
+                "settled": false,
+                "sha256": "e2ea64ee27a5ce5267792fce7a6b3c4bce2b5f01b729ba9d87490d8c44a03fd8"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-7-after.json",
+                "eventId": 92,
+                "actionId": 7,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:43:33.998Z",
+                "settled": true,
+                "sha256": "811c24b01d9720258c3194996ad72166b256c5c161a3118931634da953d95906"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-8-immediate.json",
+                "eventId": 105,
+                "actionId": 8,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:45:42.471Z",
+                "settled": false,
+                "sha256": "6c37d146439f308efe5ddc092479e97c8092363966e424a1bf3e427c7b347b48"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-8-after.json",
+                "eventId": 106,
+                "actionId": 8,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:45:43.230Z",
+                "settled": true,
+                "sha256": "91937f2da4a57b0a7831630cf5ef37c9c93bf4a8241e89061f913e816c9ec761"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-9-immediate.json",
+                "eventId": 118,
+                "actionId": 9,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:47:19.251Z",
+                "settled": false,
+                "sha256": "2004d8564b2e0d74d1889ff7dae918d1e555bea0ee124ddbca1890741c009318"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-9-after.json",
+                "eventId": 121,
+                "actionId": 9,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:47:20.627Z",
+                "settled": true,
+                "sha256": "ff0f80c4cf9de7064a6fb6d30f74a614d30ba001edbde4f57b3e608a1c7f86f7"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-10-immediate.json",
+                "eventId": 129,
+                "actionId": 10,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:48:20.404Z",
+                "settled": false,
+                "sha256": "efc649d3e0d9c30e86699a2609036247258b08fa6f659b1ab7cf21996c0ffa5e"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-10-after.json",
+                "eventId": 132,
+                "actionId": 10,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:48:21.781Z",
+                "settled": true,
+                "sha256": "5a67e2c0d36e7262e0e9c41bf436694a1d93fa731f23e9fdc7a05867da3cbc9f"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-11-immediate.json",
+                "eventId": 138,
+                "actionId": 11,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:49:07.530Z",
+                "settled": false,
+                "sha256": "c41979e25f5d05e24d4d5a2bac31862adf7549626d1d32f9cec5749db76a57b7"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-11-after.json",
+                "eventId": 140,
+                "actionId": 11,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:49:08.600Z",
+                "settled": true,
+                "sha256": "a5f0dcba8786b2e9a31c3c8e7b4410109461289eb7ea23f63735e4acd2e7faef"
+              }
+            ],
+            "savedIds": [
+              "2cecc9ac-c2fb-4b4c-a608-881534ae432b",
+              "629163cf-c9d7-4eff-b083-32c554c8cf89",
+              "39bfd70f-0282-4582-a619-540054c03685",
+              "490fbcf4-e0c0-47d2-b55b-3db94aea69df",
+              "92eec52f-288a-4fc0-8198-2975263389ca",
+              "4792e5f1-194c-4006-8902-ce258745062b",
+              "6965eec0-dc43-464a-8b33-cf6706756cde",
+              "3fbf62ba-b9f2-490f-8526-48f605326642",
+              "f1bee07a-5dcb-4d8a-b743-b877d8056568",
+              "fa8725df-f2ed-4a65-ba3c-46c5652f7d92",
+              "c219cb00-aab8-49b9-aacf-d8d35b794504",
+              "0c89989a-f94d-4a42-b5b8-5ca162188d83",
+              "822626a5-6740-4b87-839a-3ff548af4f2b",
+              "7d851b3b-2cd6-49c4-9029-d2b116ed21b2",
+              "905cd735-1ea7-4903-91e6-04b4dc1bb786",
+              "0a994a24-6a97-43e6-9d37-31dd3023eea5",
+              "3e493289-a361-4614-bdf5-3ea5de548a56",
+              "82347f60-e41d-4c52-b561-f17a4bce48fd",
+              "8b23197a-a1a0-4bc1-b561-e4eef1505f91",
+              "ef03b349-43ba-4238-bfec-7736b0d4cbf5",
+              "4112d7a1-0aa7-47f4-9df9-3d1c79e89720",
+              "d4856a44-554c-48fb-ba2c-7ff3c4895424",
+              "bbfb7f54-ec74-4ce0-8ff6-649c856690dc"
+            ]
+          },
+          {
+            "executionId": "e002",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e002\\HANDOFF.md",
+            "captures": [],
+            "savedIds": []
+          }
+        ]
+      },
+      "releasedAt": "2026-10-13T09:54:04.351Z",
+      "endingApiRequests": 11,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    },
+    {
+      "id": "e004",
+      "actor": "hannah.blake",
+      "startedAt": "2026-10-13T09:54:05.302Z",
+      "startingApiRequests": 11,
+      "assignment": {
+        "token": "pass-4",
+        "mode": "explore",
+        "actor": "hannah.blake",
+        "question": "Continue the original request in saved scope 16cbf9e0-6e7e-4ffe-93c5-3329053fe7c7. Its current status is 24 actions still to try; scoped inventory still needs inspection.. Read all paged checks, recovery and discovery through read_explore_continuation as Knowledge remainder data. This execution is hosted privately, without a registered UI Explore process. The public process-control status may therefore report interrupted while this host-owned native seat is active. Do not resume or alter UI process control. Native identity, ownership and transfer remain with the host; an actual unknown host closure remains a blocker. Select useful feasible tasks, preserve full attributed results and report concrete limits.",
+        "references": [
+          "e001",
+          "e002",
+          "e003"
+        ],
+        "sources": [
+          {
+            "executionId": "e001",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\HANDOFF.md",
+            "captures": [
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-2-immediate.json",
+                "eventId": 38,
+                "actionId": 2,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:38:07.179Z",
+                "settled": false,
+                "sha256": "d6a4dbac9c7ea4427cdbbfa5b45f94488889682d1a4152d3dcc2b632408e95b5"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-2-after.json",
+                "eventId": 40,
+                "actionId": 2,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:38:08.263Z",
+                "settled": true,
+                "sha256": "1dc2e7b11d2963ec2812f48237d9d84fc859439e5a1322c46b8f74d5f1116bb1"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-3-immediate.json",
+                "eventId": 51,
+                "actionId": 3,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:39:23.752Z",
+                "settled": false,
+                "sha256": "74794512cf9725140547287a7f94d30a6d0b30a6f7b454ee2a43371c6fe10e71"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-3-after.json",
+                "eventId": 53,
+                "actionId": 3,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:39:24.847Z",
+                "settled": true,
+                "sha256": "51b78f17f6017aee728695df8f59b9e984439187df835c55a5931cd346cc7a33"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-5-immediate.json",
+                "eventId": 68,
+                "actionId": 5,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:41:25.527Z",
+                "settled": false,
+                "sha256": "e9ce826d56ea28f58e19077dcb7dde52d20b787e8f626a23741eafb3a61614ac"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-5-after.json",
+                "eventId": 70,
+                "actionId": 5,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:41:26.754Z",
+                "settled": true,
+                "sha256": "a6e809d3bdfa3bfdeb1ea9c76d6509653f58cac5c5db9d4e41c2235fdf40b05e"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-6-immediate.json",
+                "eventId": 78,
+                "actionId": 6,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:42:15.849Z",
+                "settled": false,
+                "sha256": "8031f396108312f346182bd5438cc24a73ffa7c5921d39a30404b355c2f0488d"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-6-after.json",
+                "eventId": 82,
+                "actionId": 6,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:42:17.209Z",
+                "settled": true,
+                "sha256": "8a4b8e672e1cc0ed3e828d1d993abb46781f6c166191d6e8c4576f3593626975"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-7-immediate.json",
+                "eventId": 91,
+                "actionId": 7,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:43:33.228Z",
+                "settled": false,
+                "sha256": "e2ea64ee27a5ce5267792fce7a6b3c4bce2b5f01b729ba9d87490d8c44a03fd8"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-7-after.json",
+                "eventId": 92,
+                "actionId": 7,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:43:33.998Z",
+                "settled": true,
+                "sha256": "811c24b01d9720258c3194996ad72166b256c5c161a3118931634da953d95906"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-8-immediate.json",
+                "eventId": 105,
+                "actionId": 8,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:45:42.471Z",
+                "settled": false,
+                "sha256": "6c37d146439f308efe5ddc092479e97c8092363966e424a1bf3e427c7b347b48"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-8-after.json",
+                "eventId": 106,
+                "actionId": 8,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:45:43.230Z",
+                "settled": true,
+                "sha256": "91937f2da4a57b0a7831630cf5ef37c9c93bf4a8241e89061f913e816c9ec761"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-9-immediate.json",
+                "eventId": 118,
+                "actionId": 9,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:47:19.251Z",
+                "settled": false,
+                "sha256": "2004d8564b2e0d74d1889ff7dae918d1e555bea0ee124ddbca1890741c009318"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-9-after.json",
+                "eventId": 121,
+                "actionId": 9,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:47:20.627Z",
+                "settled": true,
+                "sha256": "ff0f80c4cf9de7064a6fb6d30f74a614d30ba001edbde4f57b3e608a1c7f86f7"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-10-immediate.json",
+                "eventId": 129,
+                "actionId": 10,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:48:20.404Z",
+                "settled": false,
+                "sha256": "efc649d3e0d9c30e86699a2609036247258b08fa6f659b1ab7cf21996c0ffa5e"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-10-after.json",
+                "eventId": 132,
+                "actionId": 10,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:48:21.781Z",
+                "settled": true,
+                "sha256": "5a67e2c0d36e7262e0e9c41bf436694a1d93fa731f23e9fdc7a05867da3cbc9f"
+              },
+              {
+                "stage": "immediate",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-11-immediate.json",
+                "eventId": 138,
+                "actionId": 11,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:49:07.530Z",
+                "settled": false,
+                "sha256": "c41979e25f5d05e24d4d5a2bac31862adf7549626d1d32f9cec5749db76a57b7"
+              },
+              {
+                "stage": "after",
+                "sourcePath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e001\\capture-11-after.json",
+                "eventId": 140,
+                "actionId": 11,
+                "actor": "Emily.dawson",
+                "capturedAt": "2026-10-13T09:49:08.600Z",
+                "settled": true,
+                "sha256": "a5f0dcba8786b2e9a31c3c8e7b4410109461289eb7ea23f63735e4acd2e7faef"
+              }
+            ],
+            "savedIds": [
+              "2cecc9ac-c2fb-4b4c-a608-881534ae432b",
+              "629163cf-c9d7-4eff-b083-32c554c8cf89",
+              "39bfd70f-0282-4582-a619-540054c03685",
+              "490fbcf4-e0c0-47d2-b55b-3db94aea69df",
+              "92eec52f-288a-4fc0-8198-2975263389ca",
+              "4792e5f1-194c-4006-8902-ce258745062b",
+              "6965eec0-dc43-464a-8b33-cf6706756cde",
+              "3fbf62ba-b9f2-490f-8526-48f605326642",
+              "f1bee07a-5dcb-4d8a-b743-b877d8056568",
+              "fa8725df-f2ed-4a65-ba3c-46c5652f7d92",
+              "c219cb00-aab8-49b9-aacf-d8d35b794504",
+              "0c89989a-f94d-4a42-b5b8-5ca162188d83",
+              "822626a5-6740-4b87-839a-3ff548af4f2b",
+              "7d851b3b-2cd6-49c4-9029-d2b116ed21b2",
+              "905cd735-1ea7-4903-91e6-04b4dc1bb786",
+              "0a994a24-6a97-43e6-9d37-31dd3023eea5",
+              "3e493289-a361-4614-bdf5-3ea5de548a56",
+              "82347f60-e41d-4c52-b561-f17a4bce48fd",
+              "8b23197a-a1a0-4bc1-b561-e4eef1505f91",
+              "ef03b349-43ba-4238-bfec-7736b0d4cbf5",
+              "4112d7a1-0aa7-47f4-9df9-3d1c79e89720",
+              "d4856a44-554c-48fb-ba2c-7ff3c4895424",
+              "bbfb7f54-ec74-4ce0-8ff6-649c856690dc"
+            ]
+          },
+          {
+            "executionId": "e002",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e002\\HANDOFF.md",
+            "captures": [],
+            "savedIds": []
+          },
+          {
+            "executionId": "e003",
+            "actor": "michael.reed",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-a942c\\project-YR4b3y\\executions\\e003\\HANDOFF.md",
+            "captures": [],
+            "savedIds": []
+          }
+        ]
+      },
+      "releasedAt": "2026-10-13T09:56:07.313Z",
+      "endingApiRequests": 11,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    }
+  ],
+  "finishedAt": "2026-10-13T09:56:09.320Z"
+}

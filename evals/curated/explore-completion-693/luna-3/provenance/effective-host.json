@@ -1,0 +1,67 @@
+{
+  "capturedAt": "2026-10-12T22:52:16.189Z",
+  "rootId": "01a13242-6736-7b30-967a-e2a060a969fb",
+  "pending": false,
+  "agents": [
+    {
+      "sessionId": "01a13242-6736-7b30-967a-e2a060a969fb",
+      "role": "root",
+      "agentPath": "/root",
+      "parentThreadId": null,
+      "sourceFile": "C:\\Users\\mathi\\.codex\\sessions\\2026\\10\\13\\rollout-2026-10-13T00-36-15-01a13242-6736-7b30-967a-e2a060a969fb.jsonl",
+      "turns": [
+        {
+          "timestamp": "2026-10-12T22:36:16.495Z",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "sandboxPolicy": {
+            "type": "read-only"
+          },
+          "approvalPolicy": "on-request"
+        },
+        {
+          "timestamp": "2026-10-12T22:51:38.609Z",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "sandboxPolicy": {
+            "type": "read-only"
+          },
+          "approvalPolicy": "on-request"
+        }
+      ],
+      "lastTaskEvent": {
+        "timestamp": "2026-10-12T22:52:13.635Z",
+        "ordinal": 854,
+        "type": "event_msg",
+        "payload": {
+          "type": "task_complete",
+          "root_turn_id": "01a13242-67e4-73b3-9dca-120c9ee15e59",
+          "turn_id": "01a13242-67e4-73b3-9dca-120c9ee15e59",
+          "last_agent_message": "The Explore work is incomplete. The trial still has an active execution, so I can’t provide the requested released handoff or `SUMMARY.md`.\n\nI could read the trial status: execution `e001` remains active as Emily, with 10 of 40 application requests used and no refusals. But the recorded execution state points to bridge files that aren’t in the Project root, and I couldn’t recover their paths from the provided host commands. Running `browser.mjs` from the root failed because that file isn’t there. I stopped without repeating a Product action or claiming the latest directory result was saved.\n\n**Known open work:** the latest HR directory result still needs its exact saved outcome and Evidence links checked. The remaining checks and scope also need a final read. The prior saved observations and attempt/outcome IDs are listed in the carried-forward execution notes, but I couldn’t verify the latest result against them or release `e001`. No approval denial occurred; this was a bridge-path blocker.",
+          "started_at": 1791844575,
+          "completed_at": 1791845533,
+          "duration_ms": 958426,
+          "time_to_first_token_ms": 2177
+        }
+      },
+      "tokenUsage": {
+        "input_tokens": 14200588,
+        "cached_input_tokens": 13886720,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63831,
+        "reasoning_output_tokens": 25768,
+        "total_tokens": 14264419
+      }
+    }
+  ],
+  "mismatches": [],
+  "rootFinished": true,
+  "cliUsage": {
+    "input_tokens": 14200588,
+    "cached_input_tokens": 13886720,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 63831,
+    "reasoning_output_tokens": 25768
+  },
+  "billingCost": "unknown"
+}

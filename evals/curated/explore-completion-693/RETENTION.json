@@ -1,0 +1,1267 @@
+{
+  "sourceRepository": "Perquiro/Perquiro",
+  "issue": 693,
+  "includesPrivateRollouts": false,
+  "files": [
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/packet.json",
+      "path": "luna-1/packet.json",
+      "bytes": 2154,
+      "sha256": "7b17e8147150ac6b09e388e149afb6fd86211809279f26bdb010fc2f4a61e58f"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/inventory.json",
+      "path": "luna-1/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/SCORING.md",
+      "path": "luna-1/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/hashes.json",
+      "path": "luna-1/hashes.json",
+      "bytes": 260,
+      "sha256": "0df307f18f6b631d9bf0c85eaede86f2c4c2e72e5dde8fdefb78938bbc4e3650"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-blind-measure/measurement.json",
+      "path": "luna-1/measurement.json",
+      "bytes": 591,
+      "sha256": "eff959d7fdb83c698295a5fca44d5ac8dbee8b1582dd66059d212c47663d5b51"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/freeze.json",
+      "path": "luna-1/provenance/freeze.json",
+      "bytes": 4507,
+      "sha256": "92fbac6dbb20aabd4607f8aa41ddc4579bd63baed04ed21e55ea0231a55fec6a"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/candidate-start.json",
+      "path": "luna-1/provenance/candidate-start.json",
+      "bytes": 209,
+      "sha256": "3e780b44feeeadd2cccde1b58e0683efbcd1a37fdc528add56ccedb156fb1a68"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/effective-host.json",
+      "path": "luna-1/provenance/effective-host.json",
+      "bytes": 2321,
+      "sha256": "430a0497c17ea715013a5ca4c02199be46a704aa1b4441c407bc4df3b0672cd5"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/outcome.json",
+      "path": "luna-1/provenance/outcome.json",
+      "bytes": 154,
+      "sha256": "e5b4e92c144e285aa97ff1f98e6dc0a4c422c5f6514a76c13b56ba74cd96df5f"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/access.md",
+      "path": "luna-1/provenance/access.md",
+      "bytes": 3789,
+      "sha256": "c089dcfe683276e0468767e01ba51506d09cbc2d9788db21fa9c4d356f01220e"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/request.md",
+      "path": "luna-1/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-supervision/agent-exit.json",
+      "path": "luna-1/provenance/agent-exit.json",
+      "bytes": 76,
+      "sha256": "0d000784bf021ab4c8fc1abe64f3fc797f77410e03a8295aa320606caad303cb"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-supervision/server-closure.json",
+      "path": "luna-1/provenance/server-closure.json",
+      "bytes": 30,
+      "sha256": "27e90f3b1d3a1f9666f2094e027d9baff2aa66be60cb32a4813c9f47b9106d82"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1-supervision/agent.json",
+      "path": "luna-1/provenance/agent.json",
+      "bytes": 2098,
+      "sha256": "a8f2f4ab8147a4614cc04e7864cf4a1494e249f5bcbb5606409ea5205b36e187"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/packet.json",
+      "path": "luna-2/packet.json",
+      "bytes": 266608,
+      "sha256": "7b007c4b7efd053fa4bba630acfc01dac5b1be15b0700f32c76ef2afd2919709"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/inventory.json",
+      "path": "luna-2/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/SCORING.md",
+      "path": "luna-2/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/hashes.json",
+      "path": "luna-2/hashes.json",
+      "bytes": 260,
+      "sha256": "6929532e61a345d2cfd675953e4e23b3bd348b15a692c1a8d6ae113c350c85ac"
+    },
+    {
+      "source": ".perquiro/P693-measured-final-2/measurement.json",
+      "path": "luna-2/measurement.json",
+      "bytes": 632,
+      "sha256": "d7c8b9d04f991a7066fd62fa35cb415c461151382df3dc134e44604dfa87c0bc"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/freeze.json",
+      "path": "luna-2/provenance/freeze.json",
+      "bytes": 4458,
+      "sha256": "d7d46fb239a6f557c4d174b7d1c2b3d6aef50e8ca3c52762da2b20e3ade552a8"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/candidate-start.json",
+      "path": "luna-2/provenance/candidate-start.json",
+      "bytes": 221,
+      "sha256": "46122bd4d0ab3311db8a796a702cbba3005194889efa0b91c5529f5e8bc5fdd5"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/effective-host.json",
+      "path": "luna-2/provenance/effective-host.json",
+      "bytes": 2712,
+      "sha256": "a86aeda494c75b588454c840ac6f6448d8eaa46f54936f7b5d18173ee4d7a757"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/outcome.json",
+      "path": "luna-2/provenance/outcome.json",
+      "bytes": 154,
+      "sha256": "02bda075c592cfd8e1e2075788b43bb421bf679648666b5579ea97eaef92c6d2"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/access.md",
+      "path": "luna-2/provenance/access.md",
+      "bytes": 3789,
+      "sha256": "c089dcfe683276e0468767e01ba51506d09cbc2d9788db21fa9c4d356f01220e"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/request.md",
+      "path": "luna-2/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2-supervision/agent-exit.json",
+      "path": "luna-2/provenance/agent-exit.json",
+      "bytes": 77,
+      "sha256": "0338048ae9be3d0b8d89775e00b4a439c62b6cf6cfe3c2d50917eea36e027869"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2-supervision/server-closure.json",
+      "path": "luna-2/provenance/server-closure.json",
+      "bytes": 30,
+      "sha256": "27e90f3b1d3a1f9666f2094e027d9baff2aa66be60cb32a4813c9f47b9106d82"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2-supervision/agent.json",
+      "path": "luna-2/provenance/agent.json",
+      "bytes": 2564,
+      "sha256": "51cd8e893583712abbf0bfc4ceb21fd01bca74048956205c147cd0d96c6c6970"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/grade.json",
+      "path": "luna-1/grade-final.json",
+      "bytes": 15600,
+      "sha256": "a800582e1af61c905ae0e1bb62b92fbedc77e4ed3681465543e7bf4b95064f28"
+    },
+    {
+      "source": ".audit/693-blind-grade/grader.stdout.log",
+      "path": "luna-2/grade-initial-stdout.txt",
+      "bytes": 15192,
+      "sha256": "8796e60f061227ad48d2a08a46e7f67ca598eee8bd570d6d2bf5172d7babbbfd"
+    },
+    {
+      "source": ".audit/693-luna2-grade-schema.json",
+      "path": "luna-2/grade-initial.json",
+      "bytes": 17816,
+      "sha256": "d45102464907cf1fe0e1b2bd7dfdc12a97f7d3d2168774b8d87925f5c1da6214"
+    },
+    {
+      "source": ".audit/693-grade-review/grader2.stdout.log",
+      "path": "luna-2/grade-review-stdout.txt",
+      "bytes": 25288,
+      "sha256": "dff7f4d587897d2ddd86d511af8be20a79c39bbf9f90fe04db8f4e090ddd7be5"
+    },
+    {
+      "source": ".audit/693-luna2-grade-final.json",
+      "path": "luna-2/grade-final.json",
+      "bytes": 18776,
+      "sha256": "c4563da863d7e248d3cbc1a4f1cfdff405a58432f7e3065ca76173912abd9c6c"
+    },
+    {
+      "source": ".audit/693-luna2-adjudication.json",
+      "path": "luna-2/adjudication.json",
+      "bytes": 11635,
+      "sha256": "fe660f5b1bf426f69e819ac533aa7843d6227c8349986ec07421c28331dd6cf6"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+      "path": "luna-2/provenance/SUMMARY.md",
+      "bytes": 3909,
+      "sha256": "bc69b52cb0c9d31aa99b3a989d0cd030218dc12df10e69ec54bd6e72ba093c2a"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e001/HANDOFF.md",
+      "path": "luna-2/provenance/e001-HANDOFF.md",
+      "bytes": 2240,
+      "sha256": "9f51581aecac8a572c7d235cf4b15fc19210a18539dd249177778611255cb0bc"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e002/HANDOFF.md",
+      "path": "luna-2/provenance/e002-HANDOFF.md",
+      "bytes": 3699,
+      "sha256": "635e9b06c5648bbbfe2a2369020c1eb652f16d393735d8cb63ddba8d1770d706"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e003/HANDOFF.md",
+      "path": "luna-2/provenance/e003-HANDOFF.md",
+      "bytes": 3822,
+      "sha256": "2a84dd10a7ef629a7833da512fd534850620842f32a47494d14f212bcd661f65"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e004/HANDOFF.md",
+      "path": "luna-2/provenance/e004-HANDOFF.md",
+      "bytes": 2106,
+      "sha256": "4226e9aca59682568e07948ec959bc6d6809bfc7406a9af53d7cc1bf73e278b8"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e005/HANDOFF.md",
+      "path": "luna-2/provenance/e005-HANDOFF.md",
+      "bytes": 1789,
+      "sha256": "4cca1461a23b397b0d9baaa4e29c7a1e43055f2d34316f0c1e1b2fbb6e50fc9e"
+    },
+    {
+      "source": "C:/dev/Perquiro/evals/manager-value-2026-09-10/analysis.mjs",
+      "path": "analysis.mjs",
+      "bytes": 20508,
+      "sha256": "ebfc027d569901e9f18b9e846342700c7aa8e902b29bf32a8ab27e0d062068d3"
+    },
+    {
+      "source": ".audit/693-rerun-failure-sorting-initial.json",
+      "path": "failure-sorting-initial.json",
+      "bytes": 23619,
+      "sha256": "14d3f66293a1afb6ce1f714c8f8762351f6c491fbc24748ae4660345d41b017d"
+    },
+    {
+      "source": ".audit/693-rerun-failure-sorting-final.json",
+      "path": "failure-sorting-final.json",
+      "bytes": 24597,
+      "sha256": "0de19ee9ff3ed1da0aff9a34b258948d4a9d171b6d53e1b86a6eb0bbbbd15740"
+    },
+    {
+      "source": ".audit/693-rerun-sorting-adjudication.json",
+      "path": "failure-sorting-adjudication.json",
+      "bytes": 9664,
+      "sha256": "205906f472cdad9257b68e8e7d0a4a30b84a56e42d8c2b246b2574f9745595f5"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-1/project-Oso6vm/explore-final.md",
+      "path": "luna-1/provenance/explore-final.md",
+      "bytes": 720,
+      "sha256": "f7fe269c6ea6d62d4ec064661fc881c2e5f0ba5232027f69705fdccb47224e9f"
+    },
+    {
+      "source": ".perquiro/P693-luna3-measured-final/packet.json",
+      "path": "luna-3/packet.json",
+      "bytes": 251513,
+      "sha256": "654eecb51ef8c58f4fb9b0ff1a665d78c6d96eeaa57a563d62381f0ec4e75e70"
+    },
+    {
+      "source": ".perquiro/P693-luna3-measured-final/inventory.json",
+      "path": "luna-3/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/P693-luna3-measured-final/SCORING.md",
+      "path": "luna-3/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/P693-luna3-measured-final/hashes.json",
+      "path": "luna-3/hashes.json",
+      "bytes": 260,
+      "sha256": "66d09adf7d3befc3ae2370e01bb09f34d2ccf533e03601b7b01d04c6cd818e88"
+    },
+    {
+      "source": ".perquiro/P693-luna3-measured-final/measurement.json",
+      "path": "luna-3/measurement.json",
+      "bytes": 588,
+      "sha256": "fb854b58172ebce625e46265637c8641de2ece6476942aa37f9a5beef5e372cf"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3/freeze.json",
+      "path": "luna-3/provenance/freeze.json",
+      "bytes": 4458,
+      "sha256": "188db1a029f9e0d3af952a2f66033ba9580b4c6d086663a71a13745e0f78d3fc"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3/candidate-start.json",
+      "path": "luna-3/provenance/candidate-start.json",
+      "bytes": 209,
+      "sha256": "14bcef224c97418ef209207f8eb12883de87b83ea310907a84e5bffa1df7d242"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3/effective-host.json",
+      "path": "luna-3/provenance/effective-host.json",
+      "bytes": 3001,
+      "sha256": "2d3f9da3afcbd90cba088f32c120c0d1ef83cd34940dc08f673f9796f61cf6ce"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3/outcome.json",
+      "path": "luna-3/provenance/outcome.json",
+      "bytes": 154,
+      "sha256": "f320c4e375edfa965578b13e64fd6858ae11d9d288c872771aaafeeb18141f81"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3/access.md",
+      "path": "luna-3/provenance/access.md",
+      "bytes": 3787,
+      "sha256": "77b2a2357dcffbfd08049dab9b4aaa7d3bc2fe15952b9a612f27700f5d7ef231"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3/request.md",
+      "path": "luna-3/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3-supervision/agent-exit.json",
+      "path": "luna-3/provenance/agent-exit.json",
+      "bytes": 77,
+      "sha256": "ed87d8e3e7c1cadf4392e2c833c11ae4dcf06da089945b66e8cbf50022dc3ca0"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3-supervision/server-closure.json",
+      "path": "luna-3/provenance/server-closure.json",
+      "bytes": 30,
+      "sha256": "27e90f3b1d3a1f9666f2094e027d9baff2aa66be60cb32a4813c9f47b9106d82"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3-supervision/agent.json",
+      "path": "luna-3/provenance/agent.json",
+      "bytes": 2664,
+      "sha256": "863cd5055f167f34a71a67086c1395670443a15781db75bce46fbea1390892e1"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-3/project-YjOf5u/explore-final.md",
+      "path": "luna-3/provenance/explore-final.md",
+      "bytes": 1016,
+      "sha256": "0e536ae156453a264a9942fda74b77b3ca8e121ec5747c5f6f8fd542e4d4d713"
+    },
+    {
+      "source": ".audit/693-luna3-blind-grade/grader.stdout.log",
+      "path": "luna-3/grade-initial-stdout.txt",
+      "bytes": 13114,
+      "sha256": "cec0cdcc8a44800528cb8703620525ec78cf02b33de2e263dadf3d2f9b35f384"
+    },
+    {
+      "source": ".audit/693-luna3-grade-initial.json",
+      "path": "luna-3/grade-initial.json",
+      "bytes": 16143,
+      "sha256": "d40e73406ab9ecb1c54be0bbad67ae8bfa6c31cc11b8e79bbae25506f2369bf7"
+    },
+    {
+      "source": ".audit/693-luna3-grade-review/grader2.stdout.log",
+      "path": "luna-3/grade-review-stdout.txt",
+      "bytes": 19939,
+      "sha256": "c4d0b97fb59a2f730d4e9a24d915e1f473780be81d188d83992ce8a8cd7e8c48"
+    },
+    {
+      "source": ".audit/693-luna3-grade-final.json",
+      "path": "luna-3/grade-final.json",
+      "bytes": 17470,
+      "sha256": "ba5b8f60db83756a348007ef783711a13d6380bb12750567ca1e035784de08ba"
+    },
+    {
+      "source": ".audit/693-luna3-adjudication.json",
+      "path": "luna-3/adjudication.json",
+      "bytes": 6684,
+      "sha256": "4a2b26185d428fb9c08d3e18fb96ac303e988c7bb7eb9a9b30121784472e37da"
+    },
+    {
+      "source": ".audit/693-luna3-failure-sorting-initial.json",
+      "path": "luna-3/failure-sorting-initial.json",
+      "bytes": 14616,
+      "sha256": "9e9e13b34616e13382480d20e1cfdcfabb4b9cc939c554252ce2c997561c68b3"
+    },
+    {
+      "source": ".audit/693-luna3-failure-sorting-final.json",
+      "path": "luna-3/failure-sorting-final.json",
+      "bytes": 14742,
+      "sha256": "2edd5414efdee0408d8946da721755bbc43e2a915944b822a94f813469f92db6"
+    },
+    {
+      "source": ".perquiro/P693-luna4-measured-final/packet.json",
+      "path": "luna-4/packet.json",
+      "bytes": 574393,
+      "sha256": "08597774e61ef5ccc2b83341dcff227076ddedb506b29d43710b7bd09bc686a2"
+    },
+    {
+      "source": ".perquiro/P693-luna4-measured-final/inventory.json",
+      "path": "luna-4/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/P693-luna4-measured-final/SCORING.md",
+      "path": "luna-4/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/P693-luna4-measured-final/hashes.json",
+      "path": "luna-4/hashes.json",
+      "bytes": 260,
+      "sha256": "58ad2a8690c50a8baec70789d577347ed082f78f25a066d3abf9aa04a3b709b1"
+    },
+    {
+      "source": ".perquiro/P693-luna4-measured-final/measurement.json",
+      "path": "luna-4/measurement.json",
+      "bytes": 579,
+      "sha256": "610258776e518560565e923d226714f1bb52e1f17df40bb126b5588a20f03114"
+    },
+    {
+      "source": ".perquiro/P693-luna4-measured-initial/measurement.json",
+      "path": "luna-4/measurement-initial.json",
+      "bytes": 579,
+      "sha256": "c4d7929013c80286c0819aa24fd7e5ec45004aca667fb8e74afc051d450b1669"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/freeze.json",
+      "path": "luna-4/provenance/freeze.json",
+      "bytes": 4458,
+      "sha256": "61f12881456f660205eeb4728e006f8298b038ca68ebe0357a9b18b07c1e6e89"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/candidate-start.json",
+      "path": "luna-4/provenance/candidate-start.json",
+      "bytes": 209,
+      "sha256": "3034d0e3b726d3915555d64d9ffefaaccc5950fe181cba7ce191dd0bd4d873cc"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/effective-host.json",
+      "path": "luna-4/provenance/effective-host.json",
+      "bytes": 2906,
+      "sha256": "05ec2e39671deebfeb3dd657241fd80320f886679aa4b05a6bf5d4a19b471355"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/outcome.json",
+      "path": "luna-4/provenance/outcome.json",
+      "bytes": 154,
+      "sha256": "db73b3e551ae2db56d1d362fdfbbccaf0e22a1f81683f69fdb4258d8f80e043e"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/access.md",
+      "path": "luna-4/provenance/access.md",
+      "bytes": 5211,
+      "sha256": "bbc64620a8b76b3ffa472aa59b83f0426b93fdd8591aa28a5e60b1d89857f503"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/request.md",
+      "path": "luna-4/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/explore-end.json",
+      "path": "luna-4/provenance/explore-end.json",
+      "bytes": 2829,
+      "sha256": "727fd0c7a2e70d428efb7f54aa26e2f009de6207aa5ae3474f582695bd8a06dc"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4-supervision/agent-exit.json",
+      "path": "luna-4/provenance/agent-exit.json",
+      "bytes": 77,
+      "sha256": "5dfe32b4704554619a2ef159478924d6f4b820cef82e35ae1a42eab2beee9f19"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4-supervision/server-closure.json",
+      "path": "luna-4/provenance/server-closure.json",
+      "bytes": 30,
+      "sha256": "27e90f3b1d3a1f9666f2094e027d9baff2aa66be60cb32a4813c9f47b9106d82"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4-supervision/agent.json",
+      "path": "luna-4/provenance/agent.json",
+      "bytes": 2664,
+      "sha256": "6503b0e3fa7a0932bfbd523e7469ae06e5b1f4c63585c03dfc8702349ed8f5c6"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/project-3VYqTy/explore-final.md",
+      "path": "luna-4/provenance/explore-final.md",
+      "bytes": 917,
+      "sha256": "8328332269b835fbf920c658bc728651ccd763e30ef16ae7d7c8c1e6b33ac8a8"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/project-3VYqTy/SUMMARY.md",
+      "path": "luna-4/provenance/SUMMARY.md",
+      "bytes": 2149,
+      "sha256": "756f99829343fb401c143a7d70ce73e7fd10855e687ac1cbb78835c3f28e6876"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e001/HANDOFF.md",
+      "path": "luna-4/provenance/executions/e001/HANDOFF.md",
+      "bytes": 2154,
+      "sha256": "56657cf191a480bc9f1956bd4c6be57d206d05c9ab47984b7bf2b008e577742a"
+    },
+    {
+      "source": ".perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md",
+      "path": "luna-4/provenance/executions/e002/HANDOFF.md",
+      "bytes": 7049,
+      "sha256": "0d86bdf4d10264e6fb47ae7cc85a65bba35bbe0f00b1459cab4029d617982140"
+    },
+    {
+      "source": ".audit/693-luna4-blind-grade/grader.stdout.log",
+      "path": "luna-4/grade-initial-stdout.txt",
+      "bytes": 16673,
+      "sha256": "69bf052b1dcbcc91f96a1441085ec73810ff6d419b1f9dc4a77a06e1125ff264"
+    },
+    {
+      "source": ".audit/693-luna4-grade-review/grader2.stdout.log",
+      "path": "luna-4/grade-review-stdout.txt",
+      "bytes": 25027,
+      "sha256": "a27843fbc06e23ab02247e579c6ba7e05276e19bba7ae870fb431207d380e72f"
+    },
+    {
+      "source": ".audit/693-luna4-grade-initial.json",
+      "path": "luna-4/grade-initial.json",
+      "bytes": 16675,
+      "sha256": "24af3010b93981ba560672413be98ecf6836c293b627f80208959ca1ba6617d1"
+    },
+    {
+      "source": ".audit/693-luna4-grade-final.json",
+      "path": "luna-4/grade-final.json",
+      "bytes": 18749,
+      "sha256": "3bd7153f59fe8be8c8a1043d9c27cac4ae99e1f51969c90d0e8238a0bb4a1551"
+    },
+    {
+      "source": ".audit/693-luna4-adjudication.json",
+      "path": "luna-4/adjudication.json",
+      "bytes": 11898,
+      "sha256": "5b9d9aa51082f0673ea55a847c8d7ce0600ad358daeee504832455d021fc58fb"
+    },
+    {
+      "source": ".audit/693-luna4-sorting/sorter.stdout.log",
+      "path": "luna-4/failure-sorting-stdout.txt",
+      "bytes": 22933,
+      "sha256": "6cbb3854e43320298c52fbd818ccaa2926d54201e2509aaba88132a2415221b6"
+    },
+    {
+      "source": ".audit/693-luna4-failure-sorting-initial.json",
+      "path": "luna-4/failure-sorting-initial.json",
+      "bytes": 26157,
+      "sha256": "861a7dc4006e5e899ca65edcf79a6a05972f8013707590045159e1b817f225d0"
+    },
+    {
+      "source": ".audit/693-luna4-failure-sorting-final.json",
+      "path": "luna-4/failure-sorting-final.json",
+      "bytes": 27183,
+      "sha256": "8f9d789f8b3190b32413426d990ac565c3a59365eb6dc729acf8ddfb1c9ffb5c"
+    },
+    {
+      "source": ".perquiro/P693n31/packet.json",
+      "path": "coordination-pilot/solo/packet.json",
+      "bytes": 446014,
+      "sha256": "2059298cb31228c9bceee67afc2cfa808e39773442da49266d6bf909f6074a89"
+    },
+    {
+      "source": ".perquiro/P693n31/inventory.json",
+      "path": "coordination-pilot/solo/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/P693n31/SCORING.md",
+      "path": "coordination-pilot/solo/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/P693n31/hashes.json",
+      "path": "coordination-pilot/solo/hashes.json",
+      "bytes": 260,
+      "sha256": "df3cb75eacdb7263760eaa112064d66b6050815d0f0d0d78549052f03ed4f3ae"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-initial.json#North",
+      "path": "coordination-pilot/solo/grade-initial.json",
+      "bytes": 10825,
+      "sha256": "a5dd2fd1da229ad3d96ebb0994a646ca9ecd76ae5e8bad29f51d2ba5a5c565f7"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-final.json#North",
+      "path": "coordination-pilot/solo/grade-final.json",
+      "bytes": 9917,
+      "sha256": "c97ba5305ad9014d3eee576ebf11ad4a159a4632021cb5870c2a59467f62c199"
+    },
+    {
+      "source": ".audit/693-measurement-initial-North.json",
+      "path": "coordination-pilot/solo/measurement-initial.json",
+      "bytes": 613,
+      "sha256": "a766c067e3317e2474df3c74034a5c5a6265fc0c6106560af4f2578ca8fd6d5a"
+    },
+    {
+      "source": ".audit/693-measurement-final-North.json",
+      "path": "coordination-pilot/solo/measurement-final.json",
+      "bytes": 613,
+      "sha256": "a766c067e3317e2474df3c74034a5c5a6265fc0c6106560af4f2578ca8fd6d5a"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/candidate-start.json",
+      "path": "coordination-pilot/solo/provenance/candidate-start.json",
+      "bytes": 221,
+      "sha256": "753a6d3bb77cecf44948435caa9d2b95e982d3ff732cc3fc9c6e0ac1288d379b"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/freeze.json",
+      "path": "coordination-pilot/solo/provenance/freeze.json",
+      "bytes": 5423,
+      "sha256": "8c1c9849ac3e4585966377f9290830a630b4c9367723bd785c6bb877ce77b515"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/manifest.json",
+      "path": "coordination-pilot/solo/provenance/manifest.json",
+      "bytes": 4779,
+      "sha256": "60b02a8eb184d131fad9118f7d884ad7f623d71b1502f7cb2cdc07a589205330"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/outcome.json",
+      "path": "coordination-pilot/solo/provenance/outcome.json",
+      "bytes": 4874,
+      "sha256": "447179998ed4cdcfc7c2edce4d5d7ea60cc5de53985e4d4f8930985c6c46d073"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/request.md",
+      "path": "coordination-pilot/solo/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/agent-contract.md",
+      "path": "coordination-pilot/solo/provenance/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/explore-end.json",
+      "path": "coordination-pilot/solo/provenance/explore-end.json",
+      "bytes": 897,
+      "sha256": "f8a27ee37a1172e651110127c5e99b8ee23586d165a12e6b32a415865d66b058"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/project-2Lnrdl/SUMMARY.md",
+      "path": "coordination-pilot/solo/provenance/SUMMARY.md",
+      "bytes": 1431,
+      "sha256": "fde1563f90e9dc789a2fb06867e19a944dc76a2473cbc9e81642c475028ff740"
+    },
+    {
+      "source": ".perquiro/hr-c8f41/project-2Lnrdl/executions/e001/HANDOFF.md",
+      "path": "coordination-pilot/solo/provenance/e001-HANDOFF.md",
+      "bytes": 7487,
+      "sha256": "1f3882cb1e09c873046b405e245ed78e4257395ae59d83d449da8b6407226cf8"
+    },
+    {
+      "source": ".perquiro/P693w72/packet.json",
+      "path": "coordination-pilot/continuation-approx/packet.json",
+      "bytes": 181456,
+      "sha256": "441ad0577e66f83399f3e8942e0da52bd4f0a32e9bbd5c72ee5ceb11fb161d35"
+    },
+    {
+      "source": ".perquiro/P693w72/inventory.json",
+      "path": "coordination-pilot/continuation-approx/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/P693w72/SCORING.md",
+      "path": "coordination-pilot/continuation-approx/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/P693w72/hashes.json",
+      "path": "coordination-pilot/continuation-approx/hashes.json",
+      "bytes": 260,
+      "sha256": "a7b1d9ffbf058013533aa8fcaa3e2e3abc4ca078510a4a82d54f711049935e37"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-initial.json#West",
+      "path": "coordination-pilot/continuation-approx/grade-initial.json",
+      "bytes": 9356,
+      "sha256": "0e78299ffb7a14f4306664f8acb92c18c52ddb9b1ffdad4d3c68b9178fa69e23"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-final.json#West",
+      "path": "coordination-pilot/continuation-approx/grade-final.json",
+      "bytes": 8823,
+      "sha256": "40f97409681b095ba1e0d669153df7e63064800754450f967de70326d335641e"
+    },
+    {
+      "source": ".audit/693-measurement-initial-West.json",
+      "path": "coordination-pilot/continuation-approx/measurement-initial.json",
+      "bytes": 579,
+      "sha256": "613f55de82d4c210f8acd0048ff29f03e810d64a3e7bdd6c8657f08391b5fedb"
+    },
+    {
+      "source": ".audit/693-measurement-final-West.json",
+      "path": "coordination-pilot/continuation-approx/measurement-final.json",
+      "bytes": 579,
+      "sha256": "613f55de82d4c210f8acd0048ff29f03e810d64a3e7bdd6c8657f08391b5fedb"
+    },
+    {
+      "source": ".perquiro/hr-a942c/candidate-start.json",
+      "path": "coordination-pilot/continuation-approx/provenance/candidate-start.json",
+      "bytes": 209,
+      "sha256": "71d05e41a70fc2fd4cf493e7021199d37834ecb83922435c94034466035c2812"
+    },
+    {
+      "source": ".perquiro/hr-a942c/freeze.json",
+      "path": "coordination-pilot/continuation-approx/provenance/freeze.json",
+      "bytes": 5423,
+      "sha256": "8c1c9849ac3e4585966377f9290830a630b4c9367723bd785c6bb877ce77b515"
+    },
+    {
+      "source": ".perquiro/hr-a942c/manifest.json",
+      "path": "coordination-pilot/continuation-approx/provenance/manifest.json",
+      "bytes": 41370,
+      "sha256": "a41425ba5711488cf70f3614114da6570e6374a04cef0d5982ec2baee0292414"
+    },
+    {
+      "source": ".perquiro/hr-a942c/outcome.json",
+      "path": "coordination-pilot/continuation-approx/provenance/outcome.json",
+      "bytes": 12841,
+      "sha256": "b1542832fb6dc8af96cf7cbfb4f029d7f414451c328211721b238879c5db5ab2"
+    },
+    {
+      "source": ".perquiro/hr-a942c/request.md",
+      "path": "coordination-pilot/continuation-approx/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-a942c/agent-contract.md",
+      "path": "coordination-pilot/continuation-approx/provenance/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-a942c/explore-end.json",
+      "path": "coordination-pilot/continuation-approx/provenance/explore-end.json",
+      "bytes": 37470,
+      "sha256": "b349c89c8d55fabaee9e6b1010641409f923e5dc9e379e35719797b8e86a6dcc"
+    },
+    {
+      "source": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+      "path": "coordination-pilot/continuation-approx/provenance/e001-HANDOFF.md",
+      "bytes": 10194,
+      "sha256": "bcccf5d58b5fd2dd939db54aacd9eb97899c0848539923114660d0c78dc456aa"
+    },
+    {
+      "source": ".perquiro/hr-a942c/project-YR4b3y/executions/e002/HANDOFF.md",
+      "path": "coordination-pilot/continuation-approx/provenance/e002-HANDOFF.md",
+      "bytes": 2464,
+      "sha256": "d053cd20686413cef31719da4652dfd41cd66f117dcf8daa4bcf5a25b6cc9ea9"
+    },
+    {
+      "source": ".perquiro/hr-a942c/project-YR4b3y/executions/e003/HANDOFF.md",
+      "path": "coordination-pilot/continuation-approx/provenance/e003-HANDOFF.md",
+      "bytes": 2095,
+      "sha256": "01e2893ccc7b763908e2d77d53f055e05f9f67f28c55a741b911a471c13a3415"
+    },
+    {
+      "source": ".perquiro/hr-a942c/project-YR4b3y/executions/e004/HANDOFF.md",
+      "path": "coordination-pilot/continuation-approx/provenance/e004-HANDOFF.md",
+      "bytes": 2890,
+      "sha256": "105ccf94c93fb538c85da3fe6316cf0d25858d46ede3e340396d0163bbe0124d"
+    },
+    {
+      "source": ".perquiro/P693s49/packet.json",
+      "path": "coordination-pilot/director-review/packet.json",
+      "bytes": 27032,
+      "sha256": "19372d8fae7fe5e0d5c4205bf4755e5256f8b64c8e561b950277d2d416411b69"
+    },
+    {
+      "source": ".perquiro/P693s49/inventory.json",
+      "path": "coordination-pilot/director-review/inventory.json",
+      "bytes": 8470,
+      "sha256": "caadc39a2af5b2b40168d7aea8ef46e8bff7e4e229a23a4ab9981e20307b2230"
+    },
+    {
+      "source": ".perquiro/P693s49/SCORING.md",
+      "path": "coordination-pilot/director-review/SCORING.md",
+      "bytes": 5566,
+      "sha256": "638e85722cfd581ca0b750b855778dca972f8edfdcd7d585306e9383667151b0"
+    },
+    {
+      "source": ".perquiro/P693s49/hashes.json",
+      "path": "coordination-pilot/director-review/hashes.json",
+      "bytes": 260,
+      "sha256": "ce04ffacfb6d75c67a25bd4210d2120c69e7e8ed70dbc528b78c6a0bfb7f698a"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-initial.json#South",
+      "path": "coordination-pilot/director-review/grade-initial.json",
+      "bytes": 8904,
+      "sha256": "75756f36ed8df8b3d62cc6f571ba23d107a7837fe4538c35964e00167a9fa174"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-final.json#South",
+      "path": "coordination-pilot/director-review/grade-final.json",
+      "bytes": 8466,
+      "sha256": "eae728e6fb5fbd15e3e0f38f2dc4828540f1bd78ee4610e1faa555945867473c"
+    },
+    {
+      "source": ".audit/693-measurement-initial-South.json",
+      "path": "coordination-pilot/director-review/measurement-initial.json",
+      "bytes": 582,
+      "sha256": "505101ebffaca2b8e4a0820b8e9b2252a12311f4323c4721fbbaa101ebe2b02a"
+    },
+    {
+      "source": ".audit/693-measurement-final-South.json",
+      "path": "coordination-pilot/director-review/measurement-final.json",
+      "bytes": 582,
+      "sha256": "505101ebffaca2b8e4a0820b8e9b2252a12311f4323c4721fbbaa101ebe2b02a"
+    },
+    {
+      "source": ".perquiro/hr-b573e/candidate-start.json",
+      "path": "coordination-pilot/director-review/provenance/candidate-start.json",
+      "bytes": 209,
+      "sha256": "e4c4500d0f48988435fa3896c82f4eb56e59c655feb37b585a1f603854fdd124"
+    },
+    {
+      "source": ".perquiro/hr-b573e/freeze.json",
+      "path": "coordination-pilot/director-review/provenance/freeze.json",
+      "bytes": 5423,
+      "sha256": "8c1c9849ac3e4585966377f9290830a630b4c9367723bd785c6bb877ce77b515"
+    },
+    {
+      "source": ".perquiro/hr-b573e/manifest.json",
+      "path": "coordination-pilot/director-review/provenance/manifest.json",
+      "bytes": 9148,
+      "sha256": "ca7b44f905b455483ce4ae583fe2f5b8f2700be0c344dee343bdfd5a41bfb895"
+    },
+    {
+      "source": ".perquiro/hr-b573e/outcome.json",
+      "path": "coordination-pilot/director-review/provenance/outcome.json",
+      "bytes": 14301,
+      "sha256": "5de8c17a9f141e1f7a5cc21d9e54675b158281925dad52940463327b13331675"
+    },
+    {
+      "source": ".perquiro/hr-b573e/request.md",
+      "path": "coordination-pilot/director-review/provenance/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-b573e/agent-contract.md",
+      "path": "coordination-pilot/director-review/provenance/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-b573e/explore-end.json",
+      "path": "coordination-pilot/director-review/provenance/explore-end.json",
+      "bytes": 5268,
+      "sha256": "9aad726f8e83ec251016f36dacb9d745cc9dc72e6b08be20001e33d8bdf4f25b"
+    },
+    {
+      "source": ".perquiro/hr-b573e/project-o1jNvr/SUMMARY.md",
+      "path": "coordination-pilot/director-review/provenance/SUMMARY.md",
+      "bytes": 3526,
+      "sha256": "b103b1569ec16249348333e482dd1588bb1c99d4a3f042267a2c5a99571e4f8d"
+    },
+    {
+      "source": ".perquiro/hr-b573e/project-o1jNvr/executions/e001/HANDOFF.md",
+      "path": "coordination-pilot/director-review/provenance/e001-HANDOFF.md",
+      "bytes": 2428,
+      "sha256": "276d6b63c26fc387bb849198b4f0cebaf21b55f77cf9093744619b217b32d00e"
+    },
+    {
+      "source": ".perquiro/hr-b573e/project-o1jNvr/executions/e002/HANDOFF.md",
+      "path": "coordination-pilot/director-review/provenance/e002-HANDOFF.md",
+      "bytes": 2948,
+      "sha256": "98fb667fab00b4fb01bd25816880d18b7d94d9926dcb71c1d8c8be5d6fa2bf5d"
+    },
+    {
+      "source": ".perquiro/hr-b573e/project-o1jNvr/executions/e003/HANDOFF.md",
+      "path": "coordination-pilot/director-review/provenance/e003-HANDOFF.md",
+      "bytes": 3301,
+      "sha256": "8bb1f84ecef8d013baff47af56afbd78c534fc925d0d1c5a99f677611bfb101f"
+    },
+    {
+      "source": ".audit/693-coordination-pilot-starts.jsonl",
+      "path": "coordination-pilot/provenance/starts.jsonl",
+      "bytes": 2105,
+      "sha256": "d94acd6f4b25df78f1b9e0c0e757a8d70bbed459e22664ed9af2cc4e1a0d57b1"
+    },
+    {
+      "source": ".audit/693-coordination-pilot-declaration.md",
+      "path": "coordination-pilot/provenance/declaration.md",
+      "bytes": 1686,
+      "sha256": "f07655947882a345dd03752daa903e522ad264ec1c4a32ac3c6ba564070ce57b"
+    },
+    {
+      "source": ".audit/693-coordination-grading-protocol.md",
+      "path": "coordination-pilot/provenance/grading-protocol.md",
+      "bytes": 3202,
+      "sha256": "b2556ccd74c21a0875750ecd4f87fcff10a0c058f52c8308ed5d8bc230e281b5"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-sol/grader.stdout.log",
+      "path": "coordination-pilot/provenance/grade-initial.stdout.log",
+      "bytes": 31736,
+      "sha256": "bbab035f570f759868272340dc9f47b5d2b19c2a789755a8821eb99096d50217"
+    },
+    {
+      "source": ".audit/693-coordination-joint-review-sol/reviewer.stdout.log",
+      "path": "coordination-pilot/provenance/grade-final.stdout.log",
+      "bytes": 28913,
+      "sha256": "3d2b804f22481d6a1c8b8a720c8557f49e0c754f1efbe391c73dee5f866b5bc8"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-initial.json",
+      "path": "coordination-pilot/provenance/grade-initial.json",
+      "bytes": 32782,
+      "sha256": "7e3345c3f3013e5856c130bcab076908594ab817e431c7d40600e3be683cc1cb"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-final.json",
+      "path": "coordination-pilot/provenance/grade-final.json",
+      "bytes": 39542,
+      "sha256": "f027670d49460ddc357dfd3b4f72d046cb32da1b5679167eb0f9baa3adf4b9ce"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade-sol/status.json",
+      "path": "coordination-pilot/provenance/grade-initial-status.json",
+      "bytes": 1159,
+      "sha256": "f16ee7d04e70a1a50305947f61f0e95c69bc6303f43b38a797804ef1b63068e5"
+    },
+    {
+      "source": ".audit/693-coordination-joint-review-sol/status.json",
+      "path": "coordination-pilot/provenance/grade-final-status.json",
+      "bytes": 1168,
+      "sha256": "246660ba3f5e7f1804e8cd3e992d56078fcaaed3bd24e7924cd3f16183f5efd3"
+    },
+    {
+      "source": ".audit/693-coordination-joint-grade.prompt.md",
+      "path": "coordination-pilot/provenance/grade-initial.prompt.md",
+      "bytes": 1821,
+      "sha256": "a1876e56ec13b015d94de04b9a42905cd412fae6c856dd0a1353a830d495e7ec"
+    },
+    {
+      "source": ".audit/693-coordination-joint-review.prompt.md",
+      "path": "coordination-pilot/provenance/grade-final.prompt.md",
+      "bytes": 1535,
+      "sha256": "ed56b7f5dc7189fb9c821448a8dbd2b33d4ecc12b9fa359535e9f769fbdd584b"
+    },
+    {
+      "source": ".audit/693-coordination-failure-sort-initial.json",
+      "path": "coordination-pilot/provenance/failure-sort-initial.json",
+      "bytes": 45409,
+      "sha256": "46c850569df8fc8adba08eb4e1ee2ab595bb4c65d4b84976f400e98f63dce451"
+    },
+    {
+      "source": ".audit/693-coordination-failure-sort-final.json",
+      "path": "coordination-pilot/provenance/failure-sort-final.json",
+      "bytes": 66507,
+      "sha256": "c6b7b3c0e038a4dfa96f709c6fb19da50c7546c8bff2a426366b90c3746ee9af"
+    },
+    {
+      "source": ".audit/693-coordination-failure-sort-sol/analyst.stdout.log",
+      "path": "coordination-pilot/provenance/failure-sort-initial.stdout.log",
+      "bytes": 43153,
+      "sha256": "8e0a9e8566d77b153e39b6a72a88e29492e1e429e75a2c3c2853170400a66f6d"
+    },
+    {
+      "source": ".audit/693-coordination-failure-review-sol/reviewer.stdout.log",
+      "path": "coordination-pilot/provenance/failure-sort-final.stdout.log",
+      "bytes": 64155,
+      "sha256": "6a8a7a73271e8055f2689bee95278fcf217b8e6de8237659fb8017b630e9647d"
+    },
+    {
+      "source": ".audit/693-coordination-failure-sort-sol/status.json",
+      "path": "coordination-pilot/provenance/failure-sort-initial-status.json",
+      "bytes": 1165,
+      "sha256": "37051791edca8bcd98a7b96ab94b10836da71358952082ce6b6d7461bc04baf0"
+    },
+    {
+      "source": ".audit/693-coordination-failure-review-sol/status.json",
+      "path": "coordination-pilot/provenance/failure-sort-final-status.json",
+      "bytes": 1174,
+      "sha256": "90026820691b11afae9fb9166f67cde0d39c67eb0b5f9ee086e48629d4054b54"
+    },
+    {
+      "source": ".audit/693-coordination-failure-review.prompt.md",
+      "path": "coordination-pilot/provenance/failure-sort-final.prompt.md",
+      "bytes": 3375,
+      "sha256": "6ac141e8d8a154c9bcc94e974954e06cf8e725f89a6437c5a4243a73f5c5a114"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/candidate-start.json",
+      "path": "coordination-preflight/hr-d01ac/candidate-start.json",
+      "bytes": 209,
+      "sha256": "f444cc7273becf0ac2795b50a26aa49781bd768c449dd7a35a0df813b4ed1222"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/freeze.json",
+      "path": "coordination-preflight/hr-d01ac/freeze.json",
+      "bytes": 4946,
+      "sha256": "5003a6b4a757b4601debfb9c10e9aa932209503ae77f0f436b50435c0d91417b"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/manifest.json",
+      "path": "coordination-preflight/hr-d01ac/manifest.json",
+      "bytes": 7147,
+      "sha256": "98630b8974bc444ab8fc31d195508c6c28efba54953f1619295469ca6ed42d4c"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/outcome.json",
+      "path": "coordination-preflight/hr-d01ac/outcome.json",
+      "bytes": 11796,
+      "sha256": "d47b29ff35dd7991e26ec5dc178368f080a036d737fde651ccbf6042329d3f6c"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/request.md",
+      "path": "coordination-preflight/hr-d01ac/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/agent-contract.md",
+      "path": "coordination-preflight/hr-d01ac/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/access.md",
+      "path": "coordination-preflight/hr-d01ac/access.md",
+      "bytes": 5206,
+      "sha256": "a5c188d88cefde93f6de66e6e485a1f8ed7833537507b75fe6a16cf339ccfec4"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/candidate-start.json",
+      "path": "coordination-preflight/hr-e26bd/candidate-start.json",
+      "bytes": 209,
+      "sha256": "e8440c616770d96ac2a5e7ea101ad4ddeb5a7f432a9d24009a58a5d28e0a2921"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/freeze.json",
+      "path": "coordination-preflight/hr-e26bd/freeze.json",
+      "bytes": 5326,
+      "sha256": "2cb392db44587050cbb6c975312b2a2df8ce71f8c8af42fcd89d4dc4b894dbb9"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/manifest.json",
+      "path": "coordination-preflight/hr-e26bd/manifest.json",
+      "bytes": 9523,
+      "sha256": "ea38b7043ac1324fb26db23cd5abd5af804aa71633d90ea720cccab67526b205"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/outcome.json",
+      "path": "coordination-preflight/hr-e26bd/outcome.json",
+      "bytes": 10857,
+      "sha256": "ddc39638d789090e1c2aa9a5ea251c4ab7ed35f5d4ea0d57769fd0a1a77c3e25"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/request.md",
+      "path": "coordination-preflight/hr-e26bd/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/agent-contract.md",
+      "path": "coordination-preflight/hr-e26bd/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/access.md",
+      "path": "coordination-preflight/hr-e26bd/access.md",
+      "bytes": 5206,
+      "sha256": "54894d1c7f3a58c2afaab2749fa1ad8463a48b0d2d1fc777f3d93ee45a7a960b"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/access-proof.json",
+      "path": "coordination-preflight/hr-e26bd/access-proof.json",
+      "bytes": 76,
+      "sha256": "2c11e0989d01841516edbe4c250fb89ae67cba77d47ad20fe2ad47a016b09bc2"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/candidate-start.json",
+      "path": "coordination-preflight/hr-f37ca/candidate-start.json",
+      "bytes": 221,
+      "sha256": "eff671ba91a6796cbe32ccd5ce28dbf503a096208046a5553d7eabc5f230f220"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/freeze.json",
+      "path": "coordination-preflight/hr-f37ca/freeze.json",
+      "bytes": 5326,
+      "sha256": "c20b0aca26c1a571f2e8e95c6d34d39f71f65b63198eaea958d362828a269bff"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/manifest.json",
+      "path": "coordination-preflight/hr-f37ca/manifest.json",
+      "bytes": 10197,
+      "sha256": "7d7f63857ca99f013a14287943b21ff6be84d3b925821c89c6edca704c6c3427"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/outcome.json",
+      "path": "coordination-preflight/hr-f37ca/outcome.json",
+      "bytes": 9720,
+      "sha256": "8d42f9aad6908281389685195882d21998f370b91256ddd91e9da6e7f6e7b525"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/request.md",
+      "path": "coordination-preflight/hr-f37ca/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/agent-contract.md",
+      "path": "coordination-preflight/hr-f37ca/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/access.md",
+      "path": "coordination-preflight/hr-f37ca/access.md",
+      "bytes": 5206,
+      "sha256": "c2d6fcf63cac0f3a6a621cb01966d894cd5a4545586c046db62fedc011add138"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/access-proof.json",
+      "path": "coordination-preflight/hr-f37ca/access-proof.json",
+      "bytes": 49,
+      "sha256": "b96100e0213932bd67657f5cd4ef68d7ff9c40c7b34578d055a0e86d78eb11b7"
+    },
+    {
+      "source": ".audit/693-access-reassessment-f37ca.json",
+      "path": "coordination-preflight/reassessment-f37ca.json",
+      "bytes": 1115,
+      "sha256": "a20461e664280e6188a70673b4fb641762e9d18f45e4422ff4539b66a4a945c1"
+    },
+    {
+      "source": ".audit/693-coordination-code-review-sol3/status.json",
+      "path": "coordination-preflight/reviews/693-coordination-code-review-sol3-status.json",
+      "bytes": 1362,
+      "sha256": "7b2a404411dd1d9f5fab1f85e6f14ef8c4389aeb1bf48200128e6dc6e920e4fd"
+    },
+    {
+      "source": ".audit/693-coordination-code-review-grok3/status.json",
+      "path": "coordination-preflight/reviews/693-coordination-code-review-grok3-status.json",
+      "bytes": 1264,
+      "sha256": "aecd4a0ff01c9671f1e08108df8dd1afc72fe514de28ab5bf198df44a5e6bdc5"
+    },
+    {
+      "source": ".audit/693-correction-review-sol4/status.json",
+      "path": "coordination-preflight/reviews/693-correction-review-sol4-status.json",
+      "bytes": 1154,
+      "sha256": "8eed6083850585c177c81f318809a518d4860c106f82b93a8947ca1565df3ae5"
+    },
+    {
+      "source": ".audit/693-correction-review-sol4/reviewer.stdout.log",
+      "path": "coordination-preflight/reviews/correction-review.stdout.log",
+      "bytes": 1456,
+      "sha256": "bd237d3134af049c7d66e61db19108269752d82b9b433862a8ca6f8f335fe2f4"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Cedar/CANDIDATE.md",
+      "path": "parallel-design/Cedar/CANDIDATE.md",
+      "bytes": 20885,
+      "sha256": "35fcdb496129b4085faac1f74cc775463abfff1606edc78a4aa0318bb1224169"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Cedar/RATIONALE.md",
+      "path": "parallel-design/Cedar/RATIONALE.md",
+      "bytes": 7187,
+      "sha256": "45bc4bc580a37e239872e468c694eea5baa09449e0f2a042eda1d6c67aacbb67"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Birch/CANDIDATE.md",
+      "path": "parallel-design/Birch/CANDIDATE.md",
+      "bytes": 33587,
+      "sha256": "ffa6f3b05ff06d0983b0f1bdd5571159eb162529bae3a65a9c7c7328a886219d"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Birch/RATIONALE.md",
+      "path": "parallel-design/Birch/RATIONALE.md",
+      "bytes": 4481,
+      "sha256": "9b2a6185932cf02d318f35284194abaa5d83a7ff7e15a78afe1fbae880e6d515"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Maple/CANDIDATE.md",
+      "path": "parallel-design/Maple/CANDIDATE.md",
+      "bytes": 27898,
+      "sha256": "c93339b3b3678d353ba1d04b6bd9e1614c5bf5712add4472e250641add86e4ae"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Maple/RATIONALE.md",
+      "path": "parallel-design/Maple/RATIONALE.md",
+      "bytes": 7469,
+      "sha256": "0be21963b1472049b9255d70ff805d119d13bbe47764958398dec28229addbfa"
+    },
+    {
+      "source": ".audit/693-parallel-grounding.md",
+      "path": "parallel-design/grounding.md",
+      "bytes": 12297,
+      "sha256": "11303d65e9a6fd047806f047b634f649bc7da946828ec675cd764103d290fc79"
+    },
+    {
+      "source": ".audit/693-parallel-synthesis.md",
+      "path": "parallel-design/synthesis.md",
+      "bytes": 3065,
+      "sha256": "ac311400058ac33f6333a5f9d376ab74d1df3add7332e15f37b0f77c88c32056"
+    },
+    {
+      "source": ".audit/693-parallel-design-arena/status.json",
+      "path": "parallel-design/arena-status.json",
+      "bytes": 3316,
+      "sha256": "fc6b74b71faee03589902d76186d5c2758a7460e182c024d10c30205acf5d603"
+    },
+    {
+      "source": ".audit/693-parallel-judge-sol/status.json",
+      "path": "parallel-design/judge-status.json",
+      "bytes": 1126,
+      "sha256": "eead309cba811541029d0235f6b44c427a8e72508fa32f05805a2e61db2b5e15"
+    },
+    {
+      "source": ".audit/693-parallel-judge-sol/judge.stdout.log",
+      "path": "parallel-design/judge.stdout.log",
+      "bytes": 4294,
+      "sha256": "535c998722b36f95da839421298c42aafba0b30a11677eb7a2e23c8d87cc1149"
+    },
+    {
+      "source": ".audit/693-page-host-review-sol/status.json",
+      "path": "parallel-design/page-host-review-status.json",
+      "bytes": 1141,
+      "sha256": "6d830da0af3dfc705ae4ccbdad9b69689c8b5953d8c451c09bf5f0de4bd7719f"
+    },
+    {
+      "source": ".audit/693-page-host-review-sol/reviewer.stdout.log",
+      "path": "parallel-design/page-host-review.stdout.log",
+      "bytes": 3702,
+      "sha256": "ff4ef010ee3eaf216b062996719c41c1ac7ea8517aa0a63d761476723971182a"
+    },
+    {
+      "source": ".audit/693-page-host-review.prompt.md",
+      "path": "parallel-design/page-host-review.prompt.md",
+      "bytes": 2002,
+      "sha256": "9ea4c63f332cb0b4a5243a27164078dc5d1e19b1f004a0ab122992e6ffb6dd82"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "actors": {
+    "8d982eaa-6e47-42c3-a6b4-debb5cb73d41": "Emily.dawson",
+    "8e276562-3750-40a3-bf3c-40b90fd4d766": "michael.reed",
+    "5c0a63b9-8092-4bfd-a605-4737516b4468": "hannah.blake"
+  },
+  "catalog": {
+    "revision": "catalog-v1:2cb47b553ad39aa5622db6f8194c7d1e5f2c82e2aeeed5f8f0e35f62478314a2",
+    "coverage": {
+      "actors": 3,
+      "surfaces": 0,
+      "journeys": 0,
+      "observations": 0,
+      "evidence": 0,
+      "scenarios": 0,
+      "tests": 0,
+      "surfacesWithoutObservations": 0,
+      "journeysWithoutAcceptedScenarios": 0,
+      "acceptedScenariosWithoutTests": 0
+    },
+    "entries": [
+      {
+        "kind": "actor",
+        "id": "8d982eaa-6e47-42c3-a6b4-debb5cb73d41",
+        "name": "Emily.dawson"
+      },
+      {
+        "kind": "actor",
+        "id": "8e276562-3750-40a3-bf3c-40b90fd4d766",
+        "name": "michael.reed"
+      },
+      {
+        "kind": "actor",
+        "id": "5c0a63b9-8092-4bfd-a605-4737516b4468",
+        "name": "hannah.blake"
+      }
+    ],
+    "storedRelationships": []
+  },
+  "observations": [],
+  "evidenceLinks": [],
+  "trace": [],
+  "checkpoints": {
+    "candidateStartedAt": "2026-10-12T20:34:00.643Z",
+    "checkpoints": [
+      {
+        "minutes": 10,
+        "cutoff": "2026-10-12T20:44:00.643Z",
+        "eligibleObservationIds": [],
+        "productEventIds": [],
+        "browserEventIds": []
+      },
+      {
+        "minutes": 20,
+        "cutoff": "2026-10-12T20:54:00.643Z",
+        "eligibleObservationIds": [],
+        "productEventIds": [],
+        "browserEventIds": []
+      },
+      {
+        "minutes": 40,
+        "cutoff": "2026-10-12T21:14:00.643Z",
+        "eligibleObservationIds": [],
+        "productEventIds": [],
+        "browserEventIds": []
+      }
+    ]
+  },
+  "proposals": [],
+  "blinding": {
+    "modelAndArmWithheld": true,
+    "productAndLocatorRolesPreserved": true
+  },
+  "scoringContract": "The frozen SCORING rubric applies. Attributed public Observation bodies must collectively retain the material action and result facts. Linked Evidence corroborates them; evaluator-only capture or Evidence alone cannot supply omitted saved facts."
+}

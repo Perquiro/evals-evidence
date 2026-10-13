@@ -1,0 +1,35 @@
+Recommend **Birch as the base**. Its ownership and proof plan is the most coherent. I read both `CANDIDATE.md` and `RATIONALE.md` for every package. These scores assess written proposals, not implementation or measured coverage.
+
+Scores range from 0 for absent to 3 for a coherent, concrete plan.
+
+| Rubric criterion | Cedar | Birch | Maple |
+|---|---:|---:|---:|
+| Exact browser/action/capture/request ownership | 1 | 3 | 1 |
+| Shared 40 requests, 40 minutes +5, honest completion | 2 | 3 | 2 |
+| Canonical tools, bounded tasks, leases and mutation dependencies | 1 | 3 | 2 |
+| Idempotence, fencing, closure and old-capture recording | 1 | 3 | 2 |
+| Small runner-only change, existing Knowledge/Core boundaries | 2 | 2 | 3 |
+| Red/green proof, native overlap, matched treatments | 1 | 3 | 2 |
+| **Total /18** | **8** | **17** | **12** |
+
+- **Cedar** separates Actor queues and quiet tracking, preserves shared accounting, and includes failed-action capture registration. But its interceptor selects the current operation when a request begins. Freezing that value cannot distinguish an old timer firing during a later action. Quiet-based release retains the same Page. Task limits and Product dependencies remain partly instructional. MCP read concurrency is unresolved, and the overlap gate permits fixture CLI substitution. Its recording grace also leaves “snapshot/screenshot on existing captures” insufficiently defined.
+- **Birch** binds requests to immutable Page leases, retires Pages before reuse, and explicitly leaves automatic-request action causality unproven. Atomic reservations, closed capture grants, serialized MCP result registration, deadline rechecks and conservative exclusive Product access form a consistent lifecycle. Its native gate requires B to perform browser work while A remains blocked. The cost is additional host state and a legacy adapter. Browser-channel containment and read-only access classification remain implementation obligations.
+- **Maple** offers the smallest module change, concrete canonical command/error preservation, full saved-body paging and explicit Windows closure requirements. Its central attribution rule still reads `ActorNet.operation`. An old callback beginning during a successor operation can inherit the successor identity. Between operations, admitted requests become unowned. Quiet alone cannot retire timers. Visible path conflict keys do not protect shared rows across paths. Its retained global start/end request-count assertion for recording is invalid while explorers run. Native wall-clock overlap plus broker calls does not prove browser overlap.
+
+Use Birch’s structure with these limited grafts:
+
+- Adopt Maple’s explicit canonical command, help and error compatibility checks.
+- Adopt Maple’s exact `windows_job_zero_active` receipt assertions and unchanged legacy proof expectations.
+- Preserve the existing failed-action response payload shape where it satisfies Birch’s validated capture envelope.
+
+Reject Cedar’s concurrent MCP reads, advisory task/dependency enforcement and fixture substitute for native proof. Reject Maple’s reusable-Page attribution, path-key mutation safety and global-delta recording assertion. None belongs inside Birch’s ownership model.
+
+Remaining blockers are concrete:
+
+1. Implement and review the wrapper-to-broker-to-host path. Prove Page retirement, delayed request initiation, failure capture registration and targeted release against real artifacts.
+2. Contain service workers, popups and context-level traffic. Define enforceable read-page authority; HTTP method checks alone do not establish absence of Product mutation.
+3. Execute cap/deadline races, accepted-ID registration, recording restrictions and complete native/server tree closure proofs.
+4. Run the real native gate with verified Luna/medium scout, director, explorers and recording seat. Require actual browser overlap.
+5. Freeze matched serial-1 and parallel-up-to-3 arms with the same scout, page-task rules, canonical tool/help contract and whole-arm allowance. Only concurrency changes.
+
+Separate Before Serializing Shared State favored Birch’s independent leases. Prove It Works ruled out accepting process overlap as browser proof. Saved-record counts do not establish saved complete checks.

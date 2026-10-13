@@ -1,0 +1,14 @@
+PASS for starting the bounded pilot at `96fa5fd82cd3062dfc0176cb9d29385081b4388b`.
+
+No concrete blockers remain in the correction scope. Required-worker failures propagate to failed arms. Shared shutdown rejects unexpected required-seat and server failures while preserving expected budget cancellation and original receipts.
+
+The assertion correction preserves the declared operation contract. Separate returned inspection Observations may receive appropriate immediate/settled Evidence. Both stages, every returned body, and every relevant link still require readback. Generated root tool listing passes the capability boundary.
+
+All 18 focused tests, additional cancellation-admission probes, and `git diff --check` passed. HEAD remained pinned and the worktree clean.
+
+Remaining limitations:
+
+- The actual director read captures and handoff summaries but did not freshly fetch public saved bodies. The scored pilot must measure actual saved content. Links establish provenance, not semantic completeness.
+- Continuation remains `continuation-approx`. Public `interrupted` status and local scope completion do not establish Actual Auto or whole-request completion.
+- This correction review did not exercise live Windows Job or Product behavior. Native preflight facts are supplied evidence.
+- No score improvement has been measured. Retain all failed seats and preflights. Start each scored policy exactly once under the frozen shared budget and model.

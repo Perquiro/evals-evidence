@@ -1,0 +1,67 @@
+{
+  "capturedAt": "2026-10-12T23:45:33.597Z",
+  "rootId": "01a1326c-4ec7-7d31-804c-ebe34cd8859c",
+  "pending": false,
+  "agents": [
+    {
+      "sessionId": "01a1326c-4ec7-7d31-804c-ebe34cd8859c",
+      "role": "root",
+      "agentPath": "/root",
+      "parentThreadId": null,
+      "sourceFile": "C:\\Users\\mathi\\.codex\\sessions\\2026\\10\\13\\rollout-2026-10-13T01-22-01-01a1326c-4ec7-7d31-804c-ebe34cd8859c.jsonl",
+      "turns": [
+        {
+          "timestamp": "2026-10-12T23:22:03.214Z",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "sandboxPolicy": {
+            "type": "read-only"
+          },
+          "approvalPolicy": "on-request"
+        },
+        {
+          "timestamp": "2026-10-12T23:38:09.014Z",
+          "model": "gpt-6-luna",
+          "effort": "medium",
+          "sandboxPolicy": {
+            "type": "read-only"
+          },
+          "approvalPolicy": "on-request"
+        }
+      ],
+      "lastTaskEvent": {
+        "timestamp": "2026-10-12T23:45:33.050Z",
+        "ordinal": 1649,
+        "type": "event_msg",
+        "payload": {
+          "type": "task_complete",
+          "root_turn_id": "01a1326c-5102-79c3-a25e-ab8c1a213fba",
+          "turn_id": "01a1326c-5102-79c3-a25e-ab8c1a213fba",
+          "last_agent_message": "The trial is documented in [SUMMARY.md](/C:/dev/Perquiro-693/.perquiro/hr-693-luna-4/project-3VYqTy/SUMMARY.md) and the detailed Hannah execution handoff is [e002/HANDOFF.md](/C:/dev/Perquiro-693/.perquiro/hr-693-luna-4/project-3VYqTy/executions/e002/HANDOFF.md).\n\nHannah created the synthetic employee once. The record was verified on directory page 3 and in its detail view. The detail page had no Edit control, so an edit was not available through the visible UI. A name-search attempt and retry were both reconciled as not executed after browser-host issues; the employee was verified independently. No Product mutation was repeated.\n\nFinal readbacks list pending checks in the directory, dashboard, onboarding, confirmation, and detail-page navigation; their IDs and saved references are in the handoff. Both executions were released. Usage was 16/40 application requests, with no cap refusal or approval denial.",
+          "started_at": 1791847321,
+          "completed_at": 1791848733,
+          "duration_ms": 1411188,
+          "time_to_first_token_ms": 2648
+        }
+      },
+      "tokenUsage": {
+        "input_tokens": 25585600,
+        "cached_input_tokens": 25082368,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 100444,
+        "reasoning_output_tokens": 39297,
+        "total_tokens": 25686044
+      }
+    }
+  ],
+  "mismatches": [],
+  "rootFinished": true,
+  "cliUsage": {
+    "input_tokens": 25585600,
+    "cached_input_tokens": 25082368,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 100444,
+    "reasoning_output_tokens": 39297
+  },
+  "billingCost": "unknown"
+}

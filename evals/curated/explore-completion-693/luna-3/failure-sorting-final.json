@@ -1,0 +1,409 @@
+{
+  "runs": [
+    {
+      "id": "luna-3",
+      "misses": [
+        {
+          "id": "HR01",
+          "category": "unknown",
+          "reason": "Partial Actor coverage. Event 34 captures Emily.dawson shell navigation on /dashboard; michael.reed and hannah.blake never had a candidate-phase session (grade .audit/693-luna3-grade-final.json). HR01 requires navigation for each configured Actor; the trace does not establish why the other Actors were never opened.",
+          "eventIds": [
+            34
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR01].rationale"
+            }
+          ],
+          "writeEventIds": [
+            48
+          ]
+        },
+        {
+          "id": "HR02",
+          "category": "never_tried",
+          "reason": "Not seen. Emily.dawson never directly visited a higher-privilege page; candidate-phase URLs stayed on /dashboard, /directory, /leave, and /leave/new only.",
+          "eventIds": [
+            34,
+            51,
+            127,
+            182
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR02].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR05",
+          "category": "unknown",
+          "reason": "Related partial sequence only. Events 675–677 show an empty directory after HR department filter intersected with the matching name query Emily Dawson, not a deliberately unmatched name search required by HR05.",
+          "eventIds": [
+            675,
+            676,
+            677
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR05].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR06",
+          "category": "never_tried",
+          "reason": "Not seen. No sortable column header was clicked twice; only the default Name ascending indicator appears in captures and Observations.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR06].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR07",
+          "category": "never_tried",
+          "reason": "Not seen. Directory paging stopped at page 1 of 3; Next and Previous were never clicked and 30 of 40 API requests remained unused at stop.",
+          "eventIds": [
+            52
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR07].rationale"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-3/explore-end.json",
+              "anchor": "apiRequests"
+            }
+          ],
+          "writeEventIds": [
+            68
+          ]
+        },
+        {
+          "id": "HR08",
+          "category": "never_tried",
+          "reason": "Not seen. No employee detail was opened and no /employees detail URL was loaded or refreshed.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR08].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR09",
+          "category": "never_tried",
+          "reason": "Not seen. The only leave range entered was valid start 2026-10-20 through end 2026-10-21; no end-before-start attempt occurred.",
+          "eventIds": [
+            454
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR09].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR10",
+          "category": "unknown",
+          "reason": "Wrong-case partial interval. Events 384 and 454 show Tuesday 2026-10-20 through Wednesday 2026-10-21 with Duration 2 days; HR10 requires a Friday-through-Monday interval.",
+          "eventIds": [
+            384,
+            454
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR10].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR13",
+          "category": "never_tried",
+          "reason": "Not seen. After successful submission the candidate did not return to /leave/new; later work stayed on /directory.",
+          "eventIds": [
+            458,
+            620
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR13].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR14",
+          "category": "never_tried",
+          "reason": "Not seen. Only Emily.dawson acted in the candidate phase; the manager approvals queue was never opened.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR14].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR15",
+          "category": "never_tried",
+          "reason": "Not seen. No manager approval or rejection with comment was confirmed.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR15].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR16",
+          "category": "never_tried",
+          "reason": "Not seen. No rejection-without-comment dialog was attempted.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR16].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR17",
+          "category": "never_tried",
+          "reason": "Not seen. Request id 3 was created pending but no manager decision and no employee re-read after a decision.",
+          "eventIds": [
+            454
+          ],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR17].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR18",
+          "category": "never_tried",
+          "reason": "Not seen. The HR administrator Actor and onboarding flow were never exercised in the candidate phase.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR18].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR19",
+          "category": "never_tried",
+          "reason": "Not seen. The onboarding job-details step before metadata load was never opened.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR19].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR20",
+          "category": "never_tried",
+          "reason": "Not seen. Onboarding step advance and back navigation were not exercised.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR20].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR21",
+          "category": "never_tried",
+          "reason": "Not seen. No onboarding review submission was made.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR21].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR22",
+          "category": "never_tried",
+          "reason": "Not seen. /timesheet was never loaded as a working page; Timesheet appeared only in nav chrome.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR22].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR23",
+          "category": "never_tried",
+          "reason": "Not seen. No timesheet draft save or reload occurred.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR23].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR24",
+          "category": "never_tried",
+          "reason": "Not seen. No timesheet submission or post-submit edit attempt.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR24].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR25",
+          "category": "never_tried",
+          "reason": "Not seen. No profile field save was made.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR25].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR26",
+          "category": "never_tried",
+          "reason": "Not seen. No profile name or photo save was made.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR26].rationale"
+            }
+          ]
+        },
+        {
+          "id": "HR27",
+          "category": "never_tried",
+          "reason": "Not seen. No profile save and reload cycle occurred.",
+          "eventIds": [],
+          "summaryCitations": [
+            {
+              "source": ".audit/693-luna3-grade-final.json",
+              "anchor": "checks[HR27].rationale"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "never_tried": 20,
+        "tried_but_missed_required_moment": 0,
+        "save_rejected": 0,
+        "quit_before_reaching_it": 0,
+        "unknown": 3,
+        "seenComplete": 4,
+        "savedComplete": 4,
+        "missedChecks": 23,
+        "inspectionWriteRejections": 2,
+        "apiPermissionDenials": 0
+      },
+      "rejectedWrites": [
+        {
+          "event": 423,
+          "time": "2026-10-12T22:44:31.030Z",
+          "source": ".perquiro/hr-693-luna-3/events.jsonl",
+          "message": "An action Look or Test mapping requires a meaningful check; use a rule item for field behavior",
+          "causalMissedCheck": null
+        },
+        {
+          "event": 684,
+          "time": "2026-10-12T22:49:43.543Z",
+          "source": ".perquiro/hr-693-luna-3/events.jsonl",
+          "message": "ruleFor must target a field or action",
+          "causalMissedCheck": null
+        }
+      ],
+      "stop": {
+        "observedStopCause": "Natural candidate exit after about 16 minutes with 10 of 40 application API requests used (POST /api/leave 201 at event 454). Host event 768 forced release of execution e001 with release.reason candidate_finished while release.completed false. Not a time cap, request cap, or API refusal (refusedRequests 0 throughout).",
+        "outcome": {
+          "kind": "closed",
+          "exitCode": 0,
+          "timedOut": false,
+          "finishedAt": "2026-10-12T22:52:16.191Z"
+        },
+        "allowance": {
+          "apiRequestsUsed": 10,
+          "apiRequestsLimit": 40,
+          "apiRequestsRefused": 0,
+          "elapsedMinutesAbout": 16,
+          "candidateStart": "2026-10-12T22:36:14.131Z",
+          "singleActor": "Emily.dawson",
+          "executionsCompletedByAgent": 0,
+          "forcedReleases": 1
+        },
+        "approvalDenialsObserved": false,
+        "stopNarrativeVsEvidence": {
+          "candidateClaim": "explore-final.md cites active execution e001, bridge path recovery failure, and browser.mjs missing from Project root.",
+          "verifiedProductBlock": false,
+          "evidence": [
+            {
+              "source": ".perquiro/hr-693-luna-3/explore-cli.jsonl",
+              "anchor": "item_112",
+              "detail": "node browser.mjs network 765 failed MODULE_NOT_FOUND under project-YjOf5u; working bridge lives under project-YjOf5u/executions/e001/"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-3/explore-cli.jsonl",
+              "anchor": "item_110",
+              "detail": "Get-Content used project-YjOf5u/.perquiro/executions/e001/capture-15-after.json instead of project-YjOf5u/executions/e001/"
+            },
+            {
+              "source": ".perquiro/hr-693-luna-3/events.jsonl",
+              "anchor": "event 768",
+              "detail": "host_forced_release after candidate_finished despite explore-final still treating e001 as unreleased"
+            }
+          ],
+          "verifiedFailedPathLookup": true
+        },
+        "mechanismHypothesis": [
+          "WORKER.md confines bridge CLI to executions/e001; late-turn shell commands ran from project-YjOf5u without the executions/e001 prefix, producing ENOENT/MODULE_NOT_FOUND while Product actions and record_inspection writes had already succeeded.",
+          "explore-final.md stop narrative describes bridge-path loss, not a verified read-only or approval denial; ACCESS.md authorizes ordinary UI mutations and event 454 shows POST 201 pending leave creation.",
+          "Generic open-work language in explore-final.md does not explicitly defer named inventory workflows, so misses are not bulk-labeled quit_before_reaching_it per baseline FAILURE-SORTING.md."
+        ],
+        "summaryCitations": [
+          {
+            "source": ".perquiro/hr-693-luna-3/project-YjOf5u/explore-final.md",
+            "excerpt": "No approval denial occurred; this was a bridge-path blocker."
+          },
+          {
+            "source": ".perquiro/hr-693-luna-3/executions.json",
+            "anchor": "e001.release",
+            "detail": "candidate_finished interrupted release with endingApiRequests 10"
+          },
+          {
+            "source": ".audit/693-luna3-grade-final.json",
+            "anchor": "notes",
+            "detail": "4 seen and 4 saved (HR03, HR04, HR11, HR12); all four complete raw checks have complete saved results"
+          }
+        ]
+      }
+    }
+  ]
+}

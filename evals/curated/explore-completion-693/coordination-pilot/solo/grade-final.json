@@ -1,0 +1,317 @@
+{
+  "checks": [
+    {
+      "id": "HR01",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Only Emily's shell navigation is observed and saved. Michael's and Hannah's navigation is absent. All three Actors are required."
+    },
+    {
+      "id": "HR02",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Emily never directly visits a higher-privilege page."
+    },
+    {
+      "id": "HR03",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          332
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "d80ca172-14fb-4fa1-8aed-ca9ad755147d"
+          ],
+          "eventIds": [
+            332
+          ]
+        }
+      ],
+      "rationale": "Emily enters Emily. The settled search retains that text and displays only Emily Dawson of Engineering. The attributed Observation preserves the action, query and result. Event 330 still displays the previous rows."
+    },
+    {
+      "id": "HR04",
+      "seen": true,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          133
+        ]
+      ],
+      "savedSupportSets": [],
+      "rationale": "Selecting Engineering displays Alice Nguyen, Emily Dawson, George Tanaka, Kevin Zhang, Michael Reed, Priya Sharma, Tara Lindqvist and Yara Aziz. Public bodies retain the department, count and pagination but omit complete displayed row membership. Evidence cannot fill that omission."
+    },
+    {
+      "id": "HR05",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The only executed name search is Emily, which matches a row. No deliberately unmatched search occurs."
+    },
+    {
+      "id": "HR06",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "An initial upward Name marker is visible. No sortable column header is clicked twice."
+    },
+    {
+      "id": "HR07",
+      "seen": true,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          45,
+          167,
+          210
+        ]
+      ],
+      "savedSupportSets": [],
+      "rationale": "The trace establishes all three pages, their displayed row identities, total 28 and the final disabled Next button. Public bodies retain page numbers, counts and endpoint names but omit most reached row identities."
+    },
+    {
+      "id": "HR08",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee detail is opened and subsequently loaded or refreshed through its direct URL."
+    },
+    {
+      "id": "HR09",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Leave dates remain empty. Empty-date validation does not establish an end-before-start response."
+    },
+    {
+      "id": "HR10",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No Friday-to-Monday interval is entered. The displayed weekend notice does not establish duration for the required case."
+    },
+    {
+      "id": "HR11",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No valid leave request is submitted. The empty-date submission remains on the form with required-field validation."
+    },
+    {
+      "id": "HR12",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          54
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "6f4fe5a3-d884-403f-a30a-33692e5e637c"
+          ],
+          "eventIds": [
+            54
+          ]
+        }
+      ],
+      "rationale": "Emily reads an existing submitted request in history. The Observation retains the displayed Aug 11 to 12, 2026 dates, 3 days, Vacation type, approved status and manager comment. Creation during this trace is not established."
+    },
+    {
+      "id": "HR13",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Reopening the form shows empty fields, but no successful leave submission precedes the return."
+    },
+    {
+      "id": "HR14",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Michael never opens the approvals queue."
+    },
+    {
+      "id": "HR15",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No manager decision is confirmed. Its immediate aftermath and settled queue result are absent."
+    },
+    {
+      "id": "HR16",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No manager rejection without a comment is attempted."
+    },
+    {
+      "id": "HR17",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Existing approved history and a notification do not establish employee creation, manager decision and subsequent employee readback in this trace."
+    },
+    {
+      "id": "HR18",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Hannah never attempts onboarding personal-step advancement."
+    },
+    {
+      "id": "HR19",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No job-details step or initial and settled selector states are observed."
+    },
+    {
+      "id": "HR20",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding data entry, advancement and backward navigation occur."
+    },
+    {
+      "id": "HR21",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding submission or resulting employee appearance and headcount change are observed."
+    },
+    {
+      "id": "HR22",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Emily enters only Monday's 8 hours. The other six days remain untouched at zero. Entry across all seven days is absent."
+    },
+    {
+      "id": "HR23",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          153,
+          295
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "a2c959e5-fb6b-4c6a-ac0e-72679be76b21",
+            "4e621fd5-93f6-4cb0-bcad-4370dc4fee2c"
+          ],
+          "eventIds": [
+            153,
+            295
+          ]
+        }
+      ],
+      "rationale": "Emily saves the Sep 7 draft and reloads its route. Monday remains 8, the other six days remain zero, total remains 8 hours and status remains draft. The two attributed bodies collectively retain the save, reload, values and week context."
+    },
+    {
+      "id": "HR24",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Submission changes the week to submitted and disables its fields and actions. No later edit is actually attempted."
+    },
+    {
+      "id": "HR25",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "The temporary phone change is restored before Save changes. The executed save sends the unchanged original profile."
+    },
+    {
+      "id": "HR26",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No changed name or photo is saved. Header identity after such a save is not established."
+    },
+    {
+      "id": "HR27",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile reload occurs after the executed profile save."
+    }
+  ],
+  "unsupportedClaims": [
+    {
+      "claim": "After the empty-date submission, no new request appears in request history.",
+      "observationIds": [
+        "b3f96cd5-ef67-4b3d-9c15-b706e2f6f4d6"
+      ],
+      "eventIds": [
+        425,
+        434,
+        435,
+        436
+      ],
+      "reason": "Event 425 reads history before submission. Events 434 through 436 establish validation, empty fields and remaining on the form. No subsequent history read supports the claimed displayed history result. Absence of a creation request does not establish that display.",
+      "material": true
+    }
+  ],
+  "scenarios": [],
+  "notes": []
+}

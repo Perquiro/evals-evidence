@@ -1,0 +1,26 @@
+﻿{
+    "runners":  [
+                    {
+                        "id":  "reviewer",
+                        "model":  "grok-4.7-high",
+                        "effort":  "",
+                        "harness":  "cursor",
+                        "sandboxErrorObserved":  false,
+                        "stderrLog":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-code-review-grok3\\reviewer.stderr.log",
+                        "workDir":  "C:\\dev\\Perquiro-693",
+                        "rationale":  null,
+                        "exitCode":  -1,
+                        "branch":  null,
+                        "kind":  "in-place",
+                        "status":  "timeout",
+                        "stdoutLog":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-code-review-grok3\\reviewer.stdout.log"
+                    }
+                ],
+    "finishedAt":  "2026-10-13T10:59:42.7698901+02:00",
+    "startedAt":  "2026-10-13T10:44:42.4617090+02:00",
+    "outcome":  "stopped_all_failed",
+    "config":  "(single seat)",
+    "stopReason":  "No workers succeeded. Do not run the judge; stop.",
+    "prompt":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-code-review.prompt.md",
+    "repoRoot":  "C:\\dev\\Perquiro-693"
+}

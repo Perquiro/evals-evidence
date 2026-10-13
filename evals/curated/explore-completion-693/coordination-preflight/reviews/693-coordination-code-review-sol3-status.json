@@ -1,0 +1,29 @@
+﻿{
+    "runners":  [
+                    {
+                        "id":  "reviewer",
+                        "model":  "gpt-6.1-sol",
+                        "effort":  "high",
+                        "harness":  "codex",
+                        "sandboxErrorObserved":  true,
+                        "stderrLog":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-code-review-sol3\\reviewer.stderr.log",
+                        "workDir":  "C:\\dev\\Perquiro-693",
+                        "rationale":  null,
+                        "exitCode":  1,
+                        "branch":  null,
+                        "kind":  "in-place",
+                        "status":  "quota",
+                        "stdoutLog":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-code-review-sol3\\reviewer.stdout.log"
+                    }
+                ],
+    "finishedAt":  "2026-10-13T10:41:19.3525273+02:00",
+    "quotaRunners":  [
+                         "reviewer"
+                     ],
+    "startedAt":  "2026-10-13T10:35:39.5500446+02:00",
+    "outcome":  "stopped_quota",
+    "config":  "(single seat)",
+    "stopReason":  "One or more workers hit usage/token limits. Do not run the judge; stop.",
+    "prompt":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-code-review.prompt.md",
+    "repoRoot":  "C:\\dev\\Perquiro-693"
+}

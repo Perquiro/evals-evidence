@@ -1,0 +1,28 @@
+{
+  "at": "2026-10-13T08:50:39.985Z",
+  "checkerCommit": "7cd31807",
+  "input": "C:/dev/Perquiro-693/.perquiro/hr-f37ca",
+  "originalFailure": {
+    "passed": false,
+    "error": "false == true"
+  },
+  "rationale": "The predeclared requirement is capture Evidence linked to the actual inspection. record_inspection returns multiple Observations. Events 42,44,45,46,47,48 show separate appropriate immediate and settled links and exact bodies/links read back. No first-Observation co-linking requirement was declared.",
+  "result": {
+    "passed": true,
+    "fixtureOnly": false,
+    "roles": [
+      "director",
+      "worker",
+      "record"
+    ],
+    "exploreExecution": "e001",
+    "recordExecution": "e002",
+    "recordedObservationId": "a0260ec2-6b3e-49cc-ad85-ab4b1cc403e4",
+    "requests": 3
+  },
+  "manualAudit": {
+    "directorReadBothCaptures": true,
+    "directorFetchedFreshPublicBodiesAfterHandoff": false,
+    "limitations": "Director saw body summaries in the worker handoff. This operational capability reassessment does not certify independent saved-content review or semantic completeness."
+  }
+}

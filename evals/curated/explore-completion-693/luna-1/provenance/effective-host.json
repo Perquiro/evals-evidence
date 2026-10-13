@@ -1,0 +1,54 @@
+{
+  "capturedAt": "2026-10-12T20:34:51.500Z",
+  "rootId": "01a131d2-81ce-78b3-ae92-8c1ffcdceb09",
+  "pending": false,
+  "agents": [
+    {
+      "sessionId": "01a131d2-81ce-78b3-ae92-8c1ffcdceb09",
+      "role": "root",
+      "agentPath": "/root",
+      "parentThreadId": null,
+      "sourceFile": "C:\\Users\\mathi\\.codex\\sessions\\2026\\10\\12\\rollout-2026-10-12T22-34-01-01a131d2-81ce-78b3-ae92-8c1ffcdceb09.jsonl",
+      "turns": [
+        {
+          "timestamp": "2026-10-12T20:34:03.356Z",
+          "model": "gpt-6-luna",
+          "effort": "medium"
+        }
+      ],
+      "lastTaskEvent": {
+        "timestamp": "2026-10-12T20:34:50.504Z",
+        "ordinal": 66,
+        "type": "event_msg",
+        "payload": {
+          "type": "task_complete",
+          "root_turn_id": "01a131d2-828f-7213-a043-2873583448f3",
+          "turn_id": "01a131d2-828f-7213-a043-2873583448f3",
+          "last_agent_message": "I could not start the Explore trial because the workspace is mounted read-only in this session. The trial requires saving Perquiro Knowledge, captures, and `SUMMARY.md`; none can be written under the active filesystem permission.\n\nI read the requested files and confirmed via MCP that Setup is valid for Bugbusters HR, all three prepared Actors exist, and the Project currently has no Surfaces, Journeys, Observations, Evidence, Reviews, or Follow-on work. No Product actions were taken, no execution was opened, and the 40-request allowance remains unused.\n\nThere are no saved Explore checks to list. The concrete blocker is the read-only workspace permission, so I could not release an execution or write `SUMMARY.md`.",
+          "started_at": 1791837242,
+          "completed_at": 1791837290,
+          "duration_ms": 48499,
+          "time_to_first_token_ms": 2395
+        }
+      },
+      "tokenUsage": {
+        "input_tokens": 255782,
+        "cached_input_tokens": 225280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1378,
+        "reasoning_output_tokens": 477,
+        "total_tokens": 257160
+      }
+    }
+  ],
+  "mismatches": [],
+  "rootFinished": true,
+  "cliUsage": {
+    "input_tokens": 255782,
+    "cached_input_tokens": 225280,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1378,
+    "reasoning_output_tokens": 477
+  },
+  "billingCost": "unknown"
+}

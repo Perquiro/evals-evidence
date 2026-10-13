@@ -1,0 +1,263 @@
+[
+  {
+    "id": "HR04",
+    "initialCategory": "never_tried",
+    "finalCategory": "quit_before_reaching_it",
+    "reason": "Department filter item 8376343f-52d9-445b-bba1-d7090f923c60 stays open from E001 and E004 handoffs and SUMMARY states Directory Department/Next/Previous were not resumed after scope moved to profile and leave. Every /api/employees call kept department empty (events 32, 49, 97, 108, 144, 155). Explicit deferral of the filter workflow, not mere absence.",
+    "citations": [
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+        "anchor": "Open checks",
+        "excerpt": "They were not resumed after the profile/leave workflow scope moved on."
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e004/HANDOFF.md",
+        "anchor": "Open checks",
+        "excerpt": "Department filter"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          32,
+          34
+        ]
+      },
+      {
+        "source": "evals/curated/manager-value-2026-09-10/FAILURE-SORTING.md",
+        "anchor": "Classification",
+        "excerpt": "quit_before_reaching_it only when the candidate stop summary explicitly defers the relevant workflow"
+      }
+    ]
+  },
+  {
+    "id": "HR07",
+    "initialCategory": "unknown",
+    "finalCategory": "quit_before_reaching_it",
+    "reason": "Next and Previous directory page items stay open in E001, E002, E003, and E004 handoffs; SUMMARY lists them among checks not resumed. All employee list requests used page=1 (events 32, 49, 97, 108, 144, 155). Partial page-count facts in Observations do not satisfy HR07 and do not outweigh explicit pending deferral.",
+    "citations": [
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+        "anchor": "Open checks",
+        "excerpt": "They were not resumed after the profile/leave workflow scope moved on."
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e004/HANDOFF.md",
+        "anchor": "Open checks",
+        "excerpt": "Department filter"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          32,
+          34
+        ]
+      },
+      {
+        "source": "evals/curated/manager-value-2026-09-10/FAILURE-SORTING.md",
+        "anchor": "Classification",
+        "excerpt": "quit_before_reaching_it only when the candidate stop summary explicitly defers the relevant workflow"
+      }
+    ]
+  },
+  {
+    "id": "HR10",
+    "initialCategory": "unknown",
+    "finalCategory": "never_tried",
+    "reason": "No leave interval was entered; the Friday-through-Monday case never occurred. Only the Start date picker opened with the field still blank (events 240-243). Unlike baseline partial-interval unknowns, there is no wrong interval to classify as unknown.",
+    "citations": [
+      {
+        "source": ".audit/693-luna2-grade-final.json",
+        "field": "checks[id=HR10].rationale",
+        "excerpt": "No leave interval was entered"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          240,
+          243
+        ]
+      },
+      {
+        "source": "scripts/explore-completion-analysis/verify-failure-sorting.mjs",
+        "anchor": "partial D1",
+        "note": "D1 HR10 is never_tried when no Friday-Monday interval entered"
+      }
+    ]
+  },
+  {
+    "id": "HR15",
+    "initialCategory": "never_tried",
+    "finalCategory": "quit_before_reaching_it",
+    "reason": "E003 handoff lists Approve and Reject as pending because they would alter an unrelated leave request; SUMMARY says the George Tanaka queue was left unchanged. Queue was opened (events 131-134) but no decision action ran.",
+    "citations": [
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e003/HANDOFF.md",
+        "anchor": "Open checks",
+        "excerpt": "remain pending because they would alter an unrelated leave request"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+        "anchor": "Recorded evidence",
+        "excerpt": "It was left unchanged"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          131,
+          132,
+          134
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HR16",
+    "initialCategory": "never_tried",
+    "finalCategory": "quit_before_reaching_it",
+    "reason": "Same explicit deferral as HR15: E003 leaves Reject pending to avoid mutating George Tanaka request; no rejection-without-comment attempt occurred. Baseline B2 kept HR16 never_tried when only HR15 was summary-deferred; Luna documents both buttons withheld together.",
+    "citations": [
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e003/HANDOFF.md",
+        "anchor": "Open checks",
+        "excerpt": "remain pending because they would alter an unrelated leave request"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/SUMMARY.md",
+        "anchor": "Recorded evidence",
+        "excerpt": "It was left unchanged"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          134
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HR18",
+    "initialCategory": "unknown",
+    "finalCategory": "quit_before_reaching_it",
+    "reason": "E002 handoff leaves Next step 60b034f8-31fe-464b-b6c9-4925fc16729a pending because the assignment targets evaluation records and no hire data was authorized. Opening step 1 (events 84-86) is not an advance-with-invalid-input attempt; quit reflects explicit deferral of the advance action, not unknown partial validation.",
+    "citations": [
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e002/HANDOFF.md",
+        "anchor": "Open checks",
+        "excerpt": "no hire data was authorized or entered"
+      },
+      {
+        "source": ".perquiro/P693a7f2/inventory.json",
+        "field": "items[id=HR18].action",
+        "excerpt": "Attempt to advance the personal step with missing or malformed required input"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          84,
+          86
+        ]
+      },
+      {
+        "source": "scripts/explore-completion-analysis/failure-sorting.json",
+        "note": "Baseline B1 HR18 never_tried despite onboarding visit; HR19-21 quit via deferred map"
+      }
+    ]
+  },
+  {
+    "id": "HR19",
+    "initialCategory": "never_tried",
+    "finalCategory": "quit_before_reaching_it",
+    "reason": "Job-details step never opened; E002 defers onboarding hire workflow outside evaluation assignment and SUMMARY records no hire data entered. Matches baseline B1/B2 quit pattern for later onboarding steps deferred at stop.",
+    "citations": [
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e002/HANDOFF.md",
+        "anchor": "Open checks",
+        "excerpt": "no hire data was authorized or entered"
+      },
+      {
+        "source": ".perquiro/P693a7f2/inventory.json",
+        "field": "items[id=HR19].action",
+        "excerpt": "Open the job-details step"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          84,
+          86
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HR20",
+    "initialCategory": "never_tried",
+    "finalCategory": "quit_before_reaching_it",
+    "reason": "No onboarding data entry or forward/back navigation; E002 states no hire data authorized and Next remains pending outside evaluation scope.",
+    "citations": [
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e002/HANDOFF.md",
+        "anchor": "Open checks",
+        "excerpt": "no hire data was authorized or entered"
+      },
+      {
+        "source": ".perquiro/P693a7f2/inventory.json",
+        "field": "items[id=HR20].action",
+        "excerpt": "Enter step data, advance, and navigate back"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          84,
+          86
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HR21",
+    "initialCategory": "never_tried",
+    "finalCategory": "quit_before_reaching_it",
+    "reason": "No review submission or headcount test; directory total stayed 28. E002 and SUMMARY defer new-hire completion outside authorized scope.",
+    "citations": [
+      {
+        "source": ".perquiro/hr-693-luna-2/project-H61HcC/executions/e002/HANDOFF.md",
+        "anchor": "Open checks",
+        "excerpt": "no hire data was authorized or entered"
+      },
+      {
+        "source": ".perquiro/P693a7f2/inventory.json",
+        "field": "items[id=HR21].action",
+        "excerpt": "Complete the review submission"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          84,
+          86
+        ]
+      }
+    ]
+  },
+  {
+    "id": "HR08",
+    "initialCategory": "unknown",
+    "finalCategory": "unknown",
+    "reason": "Row-click detail at /employees/7 completed for manager and HR (events 164-166, 190-192) but no direct URL load or refresh. Partial useful fact under grade; unknown matches verify-failure-sorting partial D2 HR08.",
+    "citations": [
+      {
+        "source": ".audit/693-luna2-grade-final.json",
+        "field": "checks[id=HR08].rationale",
+        "excerpt": "Nobody then loaded or refreshed the direct URL"
+      },
+      {
+        "source": ".perquiro/hr-693-luna-2/events.jsonl",
+        "eventIds": [
+          164,
+          166,
+          190,
+          192
+        ]
+      }
+    ]
+  }
+]

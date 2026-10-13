@@ -1,0 +1,233 @@
+{
+  "version": 1,
+  "visibility": "evaluator-only",
+  "scoring": {
+    "axes": [
+      "seen",
+      "saved",
+      "directlyJourneyLinked"
+    ],
+    "seen": "A raw browser or API trace proves the stated action, actual result, and Actor. Stored Perquiro Evidence is optional when that trace is available.",
+    "saved": "Final public Knowledge has an Observation with the actual Actor, action, and result, supported by the raw trace. An explicit trace reference or imported Evidence is optional.",
+    "directlyJourneyLinked": "The saved Observation is directly linked to a Journey that represents the relevant user task. Journey names need not match inventory group names.",
+    "rule": "Actual observed behavior receives credit whether or not it agrees with the published intended behavior."
+  },
+  "items": [
+    {
+      "id": "HR01",
+      "journey": "Account boundary",
+      "actor": "each configured Actor",
+      "action": "Open the normal application shell.",
+      "observe": "Record the navigation items visible for that Actor.",
+      "source": "README.md:69-74"
+    },
+    {
+      "id": "HR02",
+      "journey": "Account boundary",
+      "actor": "employee",
+      "action": "Directly visit a page advertised for a higher-privilege Actor.",
+      "observe": "Record the actual access result.",
+      "source": "README.md:71-74"
+    },
+    {
+      "id": "HR03",
+      "journey": "Employee directory",
+      "actor": "any configured Actor",
+      "action": "Enter a name search and wait for the page to settle.",
+      "observe": "Record the final search text and displayed rows.",
+      "source": "README.md:101-107"
+    },
+    {
+      "id": "HR04",
+      "journey": "Employee directory",
+      "actor": "any configured Actor",
+      "action": "Apply a department filter.",
+      "observe": "Record the selected department and displayed rows.",
+      "source": "README.md:103-104"
+    },
+    {
+      "id": "HR05",
+      "journey": "Employee directory",
+      "actor": "any configured Actor",
+      "action": "Use a deliberately unmatched name search.",
+      "observe": "Record the settled displayed result, including any empty-state behavior.",
+      "source": "README.md:103-104"
+    },
+    {
+      "id": "HR06",
+      "journey": "Employee directory",
+      "actor": "any configured Actor",
+      "action": "Click the same sortable column header twice.",
+      "observe": "Record the rows and any visible sort indication after each click.",
+      "source": "README.md:105"
+    },
+    {
+      "id": "HR07",
+      "journey": "Employee directory",
+      "actor": "any configured Actor",
+      "action": "Page through the directory until the last page or the API budget prevents another page request.",
+      "observe": "Record the pages and row identities reached, displayed total, and whether the last page was reached.",
+      "source": "README.md:106"
+    },
+    {
+      "id": "HR08",
+      "journey": "Employee directory",
+      "actor": "any configured Actor",
+      "action": "Open an employee detail, then load or refresh its direct URL.",
+      "observe": "Record the detail result after the direct load or refresh.",
+      "source": "README.md:107"
+    },
+    {
+      "id": "HR09",
+      "journey": "Leave and approval lifecycle",
+      "actor": "employee",
+      "action": "Enter an end date before the start date on a leave request.",
+      "observe": "Record the Product response to that date range.",
+      "source": "README.md:84-92"
+    },
+    {
+      "id": "HR10",
+      "journey": "Leave and approval lifecycle",
+      "actor": "employee",
+      "action": "Enter a leave interval from Friday through Monday.",
+      "observe": "Record the displayed duration before submission.",
+      "source": "README.md:86-89"
+    },
+    {
+      "id": "HR11",
+      "journey": "Leave and approval lifecycle",
+      "actor": "employee",
+      "action": "Submit one valid leave request once.",
+      "observe": "Record the number of newly created pending requests.",
+      "source": "README.md:89"
+    },
+    {
+      "id": "HR12",
+      "journey": "Leave and approval lifecycle",
+      "actor": "employee",
+      "action": "Read back a submitted leave request in request history.",
+      "observe": "Record the displayed request details.",
+      "source": "README.md:89-92"
+    },
+    {
+      "id": "HR13",
+      "journey": "Leave and approval lifecycle",
+      "actor": "employee",
+      "action": "Return to the new-leave form after a successful submission.",
+      "observe": "Record the field values present on return.",
+      "source": "README.md:90"
+    },
+    {
+      "id": "HR14",
+      "journey": "Leave and approval lifecycle",
+      "actor": "manager",
+      "action": "Open the approvals queue.",
+      "observe": "Record the requesters and pending-request identities that appear.",
+      "source": "README.md:94-99"
+    },
+    {
+      "id": "HR15",
+      "journey": "Leave and approval lifecycle",
+      "actor": "manager",
+      "action": "Confirm an available approval, or confirm a rejection with a comment.",
+      "observe": "Name the decision and record its immediate and settled queue result.",
+      "source": "README.md:96-99"
+    },
+    {
+      "id": "HR16",
+      "journey": "Leave and approval lifecycle",
+      "actor": "manager",
+      "action": "Attempt a rejection with no comment.",
+      "observe": "Record the dialog and request result.",
+      "source": "README.md:97-99"
+    },
+    {
+      "id": "HR17",
+      "journey": "Leave and approval lifecycle",
+      "actor": "employee then manager",
+      "action": "Create an employee leave request, decide it as the manager, then read it again as the employee.",
+      "observe": "Record the employee-visible result after the manager decision.",
+      "source": "README.md:89-99"
+    },
+    {
+      "id": "HR18",
+      "journey": "Onboarding",
+      "actor": "HR administrator",
+      "action": "Attempt to advance the personal step with missing or malformed required input.",
+      "observe": "Record validation and step-transition behavior.",
+      "source": "README.md:76-82"
+    },
+    {
+      "id": "HR19",
+      "journey": "Onboarding",
+      "actor": "HR administrator",
+      "action": "Open the job-details step before its metadata finishes loading.",
+      "observe": "Record select availability before and after the load.",
+      "source": "README.md:78-80"
+    },
+    {
+      "id": "HR20",
+      "journey": "Onboarding",
+      "actor": "HR administrator",
+      "action": "Enter step data, advance, and navigate back.",
+      "observe": "Record the field values after returning.",
+      "source": "README.md:81"
+    },
+    {
+      "id": "HR21",
+      "journey": "Onboarding",
+      "actor": "HR administrator",
+      "action": "Complete the review submission.",
+      "observe": "Record whether the employee appears in the directory and the observed headcount change.",
+      "source": "README.md:82"
+    },
+    {
+      "id": "HR22",
+      "journey": "Timesheet",
+      "actor": "employee",
+      "action": "Enter hours across all seven days.",
+      "observe": "Record the displayed weekly total.",
+      "source": "README.md:109-113"
+    },
+    {
+      "id": "HR23",
+      "journey": "Timesheet",
+      "actor": "employee",
+      "action": "Save a timesheet draft and reload the page.",
+      "observe": "Record the saved values after reload.",
+      "source": "README.md:111-113"
+    },
+    {
+      "id": "HR24",
+      "journey": "Timesheet",
+      "actor": "employee",
+      "action": "Submit the current week and attempt a later edit.",
+      "observe": "Record the status and editability after submission.",
+      "source": "README.md:113"
+    },
+    {
+      "id": "HR25",
+      "journey": "Profile",
+      "actor": "any configured Actor",
+      "action": "Save a changed profile name, phone, or emergency contact.",
+      "observe": "Record the changed field values shown immediately after save.",
+      "source": "README.md:115-119"
+    },
+    {
+      "id": "HR26",
+      "journey": "Profile",
+      "actor": "any configured Actor",
+      "action": "Save a changed profile name or photo.",
+      "observe": "Record the header identity immediately after save.",
+      "source": "README.md:115-119"
+    },
+    {
+      "id": "HR27",
+      "journey": "Profile",
+      "actor": "any configured Actor",
+      "action": "Reload after a profile save.",
+      "observe": "Record the persisted profile value or photo.",
+      "source": "README.md:115-119"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "finishedAt": "2026-10-12T23:45:34.622Z",
+  "elapsedSeconds": 1414.254,
+  "exploreSecondsRemaining": 985.7460000000001,
+  "recordingSecondsRemaining": 1285.746,
+  "explorationClosed": true,
+  "apiRequests": 16,
+  "executions": [
+    {
+      "id": "e001",
+      "actor": "Emily.dawson",
+      "startedAt": "2026-10-12T23:22:43.707Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "objective": "Explore the BugBusters HR employee directory and a useful employee-record task as Emily.dawson. Map accessible surfaces and behavior, including one clearly synthetic disposable record lifecycle if supported. No broad inventory requirement; preserve all immediate and after captures, save and verify every attempted check before another action. Stay within the combined 40-request/40-minute limits.",
+        "scope": "Employee directory and employee record creation/view/edit lifecycle; record exact observed facts and surface names; explore another meaningful HR task only if feasible after required checks.",
+        "productPurpose": "Synthetic HR training app exploration",
+        "productVersion": {
+          "kind": "unknown",
+          "value": "unknown"
+        }
+      },
+      "releasedAt": "2026-10-12T23:28:52.640Z",
+      "endingApiRequests": 9,
+      "release": {
+        "completed": true,
+        "workerAgent": "solo-session",
+        "handoff": {
+          "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-693-luna-4\\project-3VYqTy\\executions\\e001\\HANDOFF.md",
+          "summary": "Emily directory and employee detail pass complete; exact-context checks read back and evidence linked. See HANDOFF.md."
+        }
+      }
+    },
+    {
+      "id": "e002",
+      "actor": "hannah.blake",
+      "startedAt": "2026-10-12T23:29:01.799Z",
+      "startingApiRequests": 9,
+      "assignment": {
+        "objective": "As Hannah.blake, explore employee maintenance access in BugBusters HR. Check whether the Head of People can create and edit a clearly labeled synthetic trial employee record using the UI. If supported, exercise one safe create and one edit with exact attempting/outcome Knowledge, immediate and settled Evidence, and readback verification before further actions. Do not delete. Also note accessible employee-directory behavior relevant to this role.",
+        "scope": "Employee directory and employee create/edit lifecycle as Hannah.blake; no deletion; no other Actors.",
+        "productPurpose": "Synthetic HR training app exploration",
+        "productVersion": {
+          "kind": "unknown",
+          "value": "unknown"
+        }
+      },
+      "releasedAt": "2026-10-12T23:45:13.699Z",
+      "endingApiRequests": 16,
+      "release": {
+        "completed": true,
+        "workerAgent": "solo-session",
+        "handoff": "Fixed-Actor execution complete"
+      }
+    }
+  ]
+}

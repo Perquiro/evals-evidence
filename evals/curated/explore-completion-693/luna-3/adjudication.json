@@ -1,0 +1,200 @@
+[
+  {
+    "subject": "HR03",
+    "initialDecision": "seen and saved; seen [620,621,622,623]; saved 202a496f at minute 20",
+    "finalDecision": "upheld: seen and saved, same support, minute 20",
+    "reason": "The Observation body records the final search text 'Emily Dawson' and the identity of the single displayed row, Emily Dawson in Engineering. Both match the settled capture 622/623 and API 621.",
+    "eventIds": [
+      620,
+      621,
+      622,
+      623
+    ],
+    "observationIds": [
+      "202a496f-5cda-465b-af10-6ba23179733a"
+    ]
+  },
+  {
+    "subject": "HR04",
+    "initialDecision": "seen and saved via HR filter with active name query, 0 rows; minute 20",
+    "finalDecision": "upheld: seen and saved, same support, minute 20",
+    "reason": "Under the fixed wording, a department filter was applied and the selected department and displayed rows were recorded. The inventory names no filter-only case, and SCORING allows different inputs unless a case is specified. Requiring a filter-only state would tighten the rubric after results.",
+    "eventIds": [
+      674,
+      675,
+      676,
+      677
+    ],
+    "observationIds": [
+      "0a9f5d53-b421-4f2d-9143-e4a85263cca1"
+    ]
+  },
+  {
+    "subject": "HR11",
+    "initialDecision": "seen at minute 10; saved via ba35bfc9 plus af607029 at minute 20",
+    "finalDecision": "upheld: seen minute 10, saved minute 20 with both Observations",
+    "reason": "ba35bfc9 alone says 'a pending 2-day row'. That does not rule out duplicates, so it does not record the count. af607029 records the exact post-submission list, one pending request (id 3) and one approved request (id 1). That completes the count at its write, event 550.",
+    "eventIds": [
+      129,
+      453,
+      454,
+      456,
+      457,
+      458
+    ],
+    "observationIds": [
+      "ba35bfc9-e357-4888-a98f-10dfe1c957a9",
+      "af607029-a72a-4497-b3f2-5b89d97621e7"
+    ]
+  },
+  {
+    "subject": "HR12",
+    "initialDecision": "seen and saved via ba35bfc9 post-submission read-back; minute 10; blank manager comment treated as a judgment call",
+    "finalDecision": "upheld: seen and saved, saved support ba35bfc9 only, minute 10",
+    "reason": "The fixed wording asks for the displayed request details and names no columns. ba35bfc9 records the rendered range (including the one-day defect), the days, the pending status and the Vacation request identity. The omitted '—' comment placeholder is immaterial for a pending request. The earlier existing-request read is seen but has no creditable saved form, because 99ef469f misstates the displayed dates.",
+    "eventIds": [
+      127,
+      129,
+      130,
+      131,
+      453,
+      454,
+      456,
+      457,
+      458
+    ],
+    "observationIds": [
+      "ba35bfc9-e357-4888-a98f-10dfe1c957a9",
+      "99ef469f-5999-4e62-928b-7c0615f5bdd2"
+    ]
+  },
+  {
+    "subject": "HR01",
+    "initialDecision": "not seen, not saved",
+    "finalDecision": "upheld: not seen, not saved",
+    "reason": "Navigation was captured and saved only for Emily.dawson. The other two Actors never had a session, and the strict rule needs all three.",
+    "eventIds": [
+      34
+    ],
+    "observationIds": [
+      "ee8aa1ee-7278-47e8-b23e-7a1630e9d7af"
+    ]
+  },
+  {
+    "subject": "HR05",
+    "initialDecision": "not seen, not saved",
+    "finalDecision": "upheld: not seen, not saved",
+    "reason": "The only name search matched one employee. The empty state came from a name and department intersection, not an unmatched name search.",
+    "eventIds": [
+      620,
+      621,
+      622,
+      623,
+      674,
+      675,
+      676,
+      677
+    ],
+    "observationIds": [
+      "202a496f-5cda-465b-af10-6ba23179733a",
+      "0a9f5d53-b421-4f2d-9143-e4a85263cca1"
+    ]
+  },
+  {
+    "subject": "HR10",
+    "initialDecision": "not seen, not saved",
+    "finalDecision": "upheld: not seen, not saved",
+    "reason": "The only interval was Tuesday 2026-10-20 to Wednesday 2026-10-21. HR10 strictly requires Friday through Monday.",
+    "eventIds": [
+      382,
+      383,
+      384
+    ],
+    "observationIds": [
+      "6a7cfda7-dfe8-4da0-85fa-5a00fc2fae06"
+    ]
+  },
+  {
+    "subject": "HR13",
+    "initialDecision": "not seen, not saved",
+    "finalDecision": "upheld: not seen, not saved",
+    "reason": "After submission (457/458) the next navigation went to /directory. The new-leave form was never reopened.",
+    "eventIds": [
+      457,
+      458,
+      580
+    ],
+    "observationIds": []
+  },
+  {
+    "subject": "Other inventory items (HR02, HR06-HR09, HR14-HR27)",
+    "initialDecision": "not seen, not saved",
+    "finalDecision": "upheld: not seen, not saved",
+    "reason": "No trace event performs the specified action for any of these items. The trace contains only Emily's dashboard, directory, My leave and new-leave events.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "Unsupported claim: existing request displayed as Aug 11–13, 2026",
+    "initialDecision": "unsupported, material",
+    "finalDecision": "upheld: unsupported, material",
+    "reason": "Captures 130/131 and 457/458 display 'Aug 11, 2026 – Aug 12, 2026'. Only API 129 has endDate 2026-08-13. The Observation presents the API date as the displayed value and masks a real display defect.",
+    "eventIds": [
+      129,
+      130,
+      131,
+      457,
+      458
+    ],
+    "observationIds": [
+      "99ef469f-5999-4e62-928b-7c0615f5bdd2"
+    ]
+  },
+  {
+    "subject": "Unsupported claim: My leave first showed the balance while requests loaded",
+    "initialDecision": "unsupported, not material",
+    "finalDecision": "upheld: unsupported, not material",
+    "reason": "Immediate capture 127 shows a placeholder 'Available balance …', not a balance value. The misdescription is minor and supports no check.",
+    "eventIds": [
+      127,
+      130,
+      131
+    ],
+    "observationIds": [
+      "99ef469f-5999-4e62-928b-7c0615f5bdd2"
+    ]
+  },
+  {
+    "subject": "Remaining Observations",
+    "initialDecision": "no further unsupported claims",
+    "finalDecision": "upheld: no further unsupported claims",
+    "reason": "The other 36 Observation bodies match their captures and Product responses. The pre-action capability statements claim no exercised result, and the later trace is consistent with them.",
+    "eventIds": [
+      34,
+      52,
+      54,
+      184,
+      223,
+      256,
+      288,
+      320,
+      352,
+      384,
+      416,
+      454,
+      455,
+      456,
+      458,
+      583,
+      621,
+      675,
+      677,
+      764,
+      766
+    ],
+    "observationIds": [
+      "af7f23ef-06b0-4a49-b67d-2963a47a7ae2",
+      "39a948a5-05d3-41b2-be8f-a818fe7da334"
+    ]
+  }
+]

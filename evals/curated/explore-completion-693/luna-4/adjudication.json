@@ -1,0 +1,390 @@
+[
+  {
+    "subject": "HR01",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "The strict all-three-Actors reading holds. No michael.reed session exists.",
+    "eventIds": [
+      27,
+      158
+    ],
+    "observationIds": [
+      "eeb87e3d-d244-4f22-8b0e-abd2d714ce9a"
+    ]
+  },
+  {
+    "subject": "HR02",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No direct visit to a higher-privilege route.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR03",
+    "initialDecision": "seen=true, saved=true (10 min)",
+    "finalDecision": "seen=true, saved=true (10 min)",
+    "reason": "Confirmed. The Actor, fill action, settled search text and single displayed row are all in the trace and in the body of 38054df5.",
+    "eventIds": [
+      53,
+      54,
+      55,
+      56
+    ],
+    "observationIds": [
+      "38054df5-d716-4919-b6d5-d48b5322edc8"
+    ]
+  },
+  {
+    "subject": "HR04",
+    "initialDecision": "seen=true, saved=true (10 min)",
+    "finalDecision": "seen=true, saved=true (10 min)",
+    "reason": "Confirmed. The selected department, count and all eight rows match events 72 and 74 and are saved in the body.",
+    "eventIds": [
+      71,
+      72,
+      73,
+      74
+    ],
+    "observationIds": [
+      "647eeef0-7971-49bc-80a7-e0fad89fd245"
+    ]
+  },
+  {
+    "subject": "HR05",
+    "initialDecision": "seen=true, saved=true (20 min), with caveat",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "The frozen action requires a deliberately unmatched name search. The only unmatched query was the new hire's email, entered to find the just-created record. The surrounding Observations show that intent. The query was neither a name nor chosen to miss. Preserving the inventory's action requirement denies credit. The HR03/HR05 sharing rule and the allowance for different input values do not override the 'deliberately unmatched' qualifier, so this preserves the rubric rather than tightening it. The empty-state result itself was faithfully saved and is recorded as a partial fact.",
+    "eventIds": [
+      303,
+      304,
+      305,
+      306,
+      317,
+      318,
+      319
+    ],
+    "observationIds": [
+      "8a03d450-d03d-4eee-a065-39520d818d4c",
+      "153ea840-0d1b-41b7-b162-a1c7fb2622d8",
+      "4cc6cb01-14a9-430f-b8f9-fa4547a0aa90"
+    ]
+  },
+  {
+    "subject": "HR06",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. Only one successful header click.",
+    "eventIds": [
+      80,
+      83,
+      84,
+      85,
+      86
+    ],
+    "observationIds": [
+      "d4a70736-e7fb-4141-9490-03221f05b5ab"
+    ]
+  },
+  {
+    "subject": "HR07",
+    "initialDecision": "seen=true, saved=false",
+    "finalDecision": "seen=true, saved=false",
+    "reason": "Confirmed raw-only. The trace has every page's row identities, the total and the last-page boundary. The bodies omit page-1 identities entirely and name only boundary or first rows elsewhere. Row identities must appear in bodies, and Evidence-only content earns no credit.",
+    "eventIds": [
+      338,
+      339,
+      340,
+      341,
+      351,
+      352,
+      353,
+      354,
+      363,
+      364,
+      365,
+      366
+    ],
+    "observationIds": [
+      "5ae17f11-5691-4173-847f-d82fe7f331c1",
+      "153ea840-0d1b-41b7-b162-a1c7fb2622d8",
+      "1f4aa5d9-c7ff-494b-a3c3-a0cc6e455db8",
+      "b13530ba-6155-4922-8a9b-e97be24a413b",
+      "3a0bc4b1-d194-40e1-9630-1478304763f5",
+      "f9e17b09-3b9a-4a93-8d20-a73430d94331",
+      "cc6f5a1c-769d-4041-addf-d76f7a0978b8",
+      "8fad03b6-7b02-4b1d-91b5-697aa0a8f4cc",
+      "2dfa0f25-dffe-4ecf-8a06-e61f3fc67d2d"
+    ]
+  },
+  {
+    "subject": "HR08",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. Details were opened by click with no direct load or refresh.",
+    "eventIds": [
+      93,
+      94,
+      95,
+      376,
+      377,
+      378
+    ],
+    "observationIds": [
+      "f44c20bb-8d87-4b9e-8575-c2eab6c184e9",
+      "033951a3-df18-4f10-a6bf-dd8242fd2a53"
+    ]
+  },
+  {
+    "subject": "HR09",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. The leave form was never opened.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR10",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. The specified case was never entered.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR11",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No leave submission.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR12",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No request-history read.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR13",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No successful submission and no return to the form.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR14",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No manager session and no approvals queue.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR15",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No decision was confirmed.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR16",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No rejection was attempted.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR17",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. The lifecycle was not exercised.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR18",
+    "initialDecision": "seen=true, saved=true (10 min)",
+    "finalDecision": "seen=true, saved=true (10 min)",
+    "reason": "Confirmed. The empty-input Next attempt, the stay on Step 1 and all three messages appear in 179-181 and in the bodies, all written at event 182.",
+    "eventIds": [
+      179,
+      180,
+      181
+    ],
+    "observationIds": [
+      "b21e79c9-5ff8-461f-a549-81756853c1cf",
+      "0534a507-73c2-4b9f-affa-77bd72b0438a",
+      "75b60cdc-cfea-4bff-9135-8dd512789eb5",
+      "e5055b69-b0bf-429b-8535-ec09dce7be0e"
+    ]
+  },
+  {
+    "subject": "HR19",
+    "initialDecision": "seen=true, saved=false",
+    "finalDecision": "seen=true, saved=false",
+    "reason": "Confirmed raw-only. The transient disabled loading selects at 212 are not stated in any body. Saved bodies describe only the settled enabled selects.",
+    "eventIds": [
+      212,
+      213,
+      214,
+      215
+    ],
+    "observationIds": [
+      "0b968223-f26f-4759-ad86-e5ce980e3649",
+      "c700c758-2083-4bea-a702-e5d0feaa90e7"
+    ]
+  },
+  {
+    "subject": "HR20",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No Back navigation.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR21",
+    "initialDecision": "seen=true (20 min), saved=true (40 min)",
+    "finalDecision": "seen=true (20 min), saved=true (40 min)",
+    "reason": "Confirmed. After the review submission, the employee appears in the directory through paging (364, 366; saved in f9e17b09), and the headcount went from 28 (158; eeb87e3d) to 29 (292, 294; 6dba0aab). The failed email search does not negate the directory appearance. The earliest saved row write, event 367, falls after the 20-minute cutoff.",
+    "eventIds": [
+      158,
+      272,
+      273,
+      274,
+      275,
+      291,
+      292,
+      293,
+      294,
+      363,
+      364,
+      365,
+      366
+    ],
+    "observationIds": [
+      "eeb87e3d-d244-4f22-8b0e-abd2d714ce9a",
+      "d0d1ba7a-a6d6-4521-aaeb-8a93a21623ff",
+      "6dba0aab-8efe-4504-bbb7-8d276fc651df",
+      "f9e17b09-3b9a-4a93-8d20-a73430d94331",
+      "8a03d450-d03d-4eee-a065-39520d818d4c"
+    ]
+  },
+  {
+    "subject": "HR22",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. The timesheet was never opened.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR23",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. The timesheet was never opened.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR24",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No submission and no edit attempt.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR25",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. The profile was never visited.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR26",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No profile save.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "HR27",
+    "initialDecision": "seen=false, saved=false",
+    "finalDecision": "seen=false, saved=false",
+    "reason": "Confirmed. No profile save and no reload.",
+    "eventIds": [],
+    "observationIds": []
+  },
+  {
+    "subject": "Claim: browser bridge dispatched the prior email query instead of the requested name",
+    "initialDecision": "unsupported, non-material",
+    "finalDecision": "unsupported, non-material",
+    "reason": "The trace shows action 28 as a fill with the email value. The requested-name substitution cannot be verified. The Product facts in the bodies are supported.",
+    "eventIds": [
+      317,
+      318,
+      319
+    ],
+    "observationIds": [
+      "a39e2a70-c377-4ace-90c7-9b05324b58e4",
+      "47f39d93-9c09-4d3d-b940-0d6591088c94"
+    ]
+  },
+  {
+    "subject": "Claim: directory is on page 3 with an empty search field (written at event 400)",
+    "initialDecision": "unsupported, non-material",
+    "finalDecision": "unsupported, non-material",
+    "reason": "A stale present-tense orientation note. The browser was on /employees/29 at 378 and 403. The described state matches the earlier event 366.",
+    "eventIds": [
+      366,
+      378,
+      403
+    ],
+    "observationIds": [
+      "6466a135-8803-46a8-92d3-e46730ba422c"
+    ]
+  },
+  {
+    "subject": "All other saved Observation claims",
+    "initialDecision": "supported",
+    "finalDecision": "supported",
+    "reason": "Each remaining body was checked against its nearest preceding capture or response. The onboarding validation persistence (189, 197, 205), Step 2-4 contents (215, 248, 265), the creation flow (272-275), directory states (32, 44, 65, 74, 86, 110, 116, 125, 134, 294, 319, 341, 354, 366) and detail pages (95, 378) all match. The bodies with encoding loss are not contradictions.",
+    "eventIds": [
+      32,
+      44,
+      65,
+      74,
+      86,
+      95,
+      110,
+      116,
+      125,
+      134,
+      189,
+      197,
+      205,
+      215,
+      248,
+      265,
+      272,
+      275,
+      294,
+      319,
+      341,
+      354,
+      366,
+      378,
+      403
+    ],
+    "observationIds": []
+  }
+]
