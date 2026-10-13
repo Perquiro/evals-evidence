@@ -1178,6 +1178,72 @@
       "path": "coordination-preflight/reviews/correction-review.stdout.log",
       "bytes": 1456,
       "sha256": "bd237d3134af049c7d66e61db19108269752d82b9b433862a8ca6f8f335fe2f4"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Cedar/CANDIDATE.md",
+      "path": "parallel-design/Cedar/CANDIDATE.md",
+      "bytes": 20885,
+      "sha256": "35fcdb496129b4085faac1f74cc775463abfff1606edc78a4aa0318bb1224169"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Cedar/RATIONALE.md",
+      "path": "parallel-design/Cedar/RATIONALE.md",
+      "bytes": 7187,
+      "sha256": "45bc4bc580a37e239872e468c694eea5baa09449e0f2a042eda1d6c67aacbb67"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Birch/CANDIDATE.md",
+      "path": "parallel-design/Birch/CANDIDATE.md",
+      "bytes": 33587,
+      "sha256": "ffa6f3b05ff06d0983b0f1bdd5571159eb162529bae3a65a9c7c7328a886219d"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Birch/RATIONALE.md",
+      "path": "parallel-design/Birch/RATIONALE.md",
+      "bytes": 4481,
+      "sha256": "9b2a6185932cf02d318f35284194abaa5d83a7ff7e15a78afe1fbae880e6d515"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Maple/CANDIDATE.md",
+      "path": "parallel-design/Maple/CANDIDATE.md",
+      "bytes": 27898,
+      "sha256": "c93339b3b3678d353ba1d04b6bd9e1614c5bf5712add4472e250641add86e4ae"
+    },
+    {
+      "source": ".audit/693-parallel-packages/Maple/RATIONALE.md",
+      "path": "parallel-design/Maple/RATIONALE.md",
+      "bytes": 7469,
+      "sha256": "0be21963b1472049b9255d70ff805d119d13bbe47764958398dec28229addbfa"
+    },
+    {
+      "source": ".audit/693-parallel-grounding.md",
+      "path": "parallel-design/grounding.md",
+      "bytes": 12297,
+      "sha256": "11303d65e9a6fd047806f047b634f649bc7da946828ec675cd764103d290fc79"
+    },
+    {
+      "source": ".audit/693-parallel-synthesis.md",
+      "path": "parallel-design/synthesis.md",
+      "bytes": 3065,
+      "sha256": "ac311400058ac33f6333a5f9d376ab74d1df3add7332e15f37b0f77c88c32056"
+    },
+    {
+      "source": ".audit/693-parallel-design-arena/status.json",
+      "path": "parallel-design/arena-status.json",
+      "bytes": 3316,
+      "sha256": "fc6b74b71faee03589902d76186d5c2758a7460e182c024d10c30205acf5d603"
+    },
+    {
+      "source": ".audit/693-parallel-judge-sol/status.json",
+      "path": "parallel-design/judge-status.json",
+      "bytes": 1126,
+      "sha256": "eead309cba811541029d0235f6b44c427a8e72508fa32f05805a2e61db2b5e15"
+    },
+    {
+      "source": ".audit/693-parallel-judge-sol/judge.stdout.log",
+      "path": "parallel-design/judge.stdout.log",
+      "bytes": 4294,
+      "sha256": "535c998722b36f95da839421298c42aafba0b30a11677eb7a2e23c8d87cc1149"
     }
   ]
 }

@@ -1,0 +1,55 @@
+﻿{
+    "runners":  [
+                    {
+                        "id":  "composer",
+                        "model":  "composer-2.5",
+                        "effort":  "",
+                        "harness":  "cursor",
+                        "sandboxErrorObserved":  false,
+                        "stderrLog":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\composer.stderr.log",
+                        "workDir":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\wt-composer",
+                        "rationale":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\wt-composer\\RATIONALE.md",
+                        "exitCode":  0,
+                        "branch":  "arena/cross-harness/composer-20261013123457",
+                        "kind":  "worktree",
+                        "status":  "ok",
+                        "stdoutLog":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\composer.stdout.log"
+                    },
+                    {
+                        "id":  "sol",
+                        "model":  "gpt-6.1-sol",
+                        "effort":  "xhigh",
+                        "harness":  "codex",
+                        "sandboxErrorObserved":  true,
+                        "stderrLog":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\sol.stderr.log",
+                        "workDir":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\wt-sol",
+                        "rationale":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\wt-sol\\RATIONALE.md",
+                        "exitCode":  -1,
+                        "branch":  "arena/cross-harness/sol-20261013123458",
+                        "kind":  "worktree",
+                        "status":  "timeout",
+                        "stdoutLog":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\sol.stdout.log"
+                    },
+                    {
+                        "id":  "opus-fallback",
+                        "model":  "grok-4.7-high",
+                        "effort":  "",
+                        "harness":  "cursor",
+                        "sandboxErrorObserved":  false,
+                        "stderrLog":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\opus-fallback.stderr.log",
+                        "workDir":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\wt-opus-fallback",
+                        "rationale":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\wt-opus-fallback\\RATIONALE.md",
+                        "exitCode":  -1,
+                        "branch":  "arena/cross-harness/opus-fallback-20261013123500",
+                        "kind":  "worktree",
+                        "status":  "timeout",
+                        "stdoutLog":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design-arena\\opus-fallback.stdout.log"
+                    }
+                ],
+    "finishedAt":  "2026-10-13T12:50:03.3974332+02:00",
+    "startedAt":  "2026-10-13T12:34:57.0399496+02:00",
+    "outcome":  "ok",
+    "config":  "C:/dev/Perquiro-693/.audit/693-parallel-arena-config.json",
+    "prompt":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-design.prompt.md",
+    "repoRoot":  "C:\\dev\\Perquiro-693"
+}

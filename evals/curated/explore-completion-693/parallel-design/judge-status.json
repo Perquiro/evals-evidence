@@ -1,0 +1,25 @@
+﻿{
+    "runners":  [
+                    {
+                        "id":  "judge",
+                        "model":  "gpt-6.1-sol",
+                        "effort":  "high",
+                        "harness":  "codex",
+                        "sandboxErrorObserved":  true,
+                        "stderrLog":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-judge-sol\\judge.stderr.log",
+                        "workDir":  "C:\\dev\\Perquiro-693",
+                        "rationale":  null,
+                        "exitCode":  0,
+                        "branch":  null,
+                        "kind":  "in-place",
+                        "status":  "ok",
+                        "stdoutLog":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-judge-sol\\judge.stdout.log"
+                    }
+                ],
+    "finishedAt":  "2026-10-13T13:02:10.6191970+02:00",
+    "startedAt":  "2026-10-13T12:59:01.9028612+02:00",
+    "outcome":  "ok",
+    "config":  "(single seat)",
+    "prompt":  "C:\\dev\\Perquiro-693\\.audit\\693-parallel-judge.prompt.md",
+    "repoRoot":  "C:\\dev\\Perquiro-693"
+}
