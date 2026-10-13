@@ -1010,6 +1010,174 @@
       "path": "coordination-pilot/provenance/failure-sort-final.prompt.md",
       "bytes": 3375,
       "sha256": "6ac141e8d8a154c9bcc94e974954e06cf8e725f89a6437c5a4243a73f5c5a114"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/candidate-start.json",
+      "path": "coordination-preflight/hr-d01ac/candidate-start.json",
+      "bytes": 209,
+      "sha256": "f444cc7273becf0ac2795b50a26aa49781bd768c449dd7a35a0df813b4ed1222"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/freeze.json",
+      "path": "coordination-preflight/hr-d01ac/freeze.json",
+      "bytes": 4946,
+      "sha256": "5003a6b4a757b4601debfb9c10e9aa932209503ae77f0f436b50435c0d91417b"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/manifest.json",
+      "path": "coordination-preflight/hr-d01ac/manifest.json",
+      "bytes": 7147,
+      "sha256": "98630b8974bc444ab8fc31d195508c6c28efba54953f1619295469ca6ed42d4c"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/outcome.json",
+      "path": "coordination-preflight/hr-d01ac/outcome.json",
+      "bytes": 11796,
+      "sha256": "d47b29ff35dd7991e26ec5dc178368f080a036d737fde651ccbf6042329d3f6c"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/request.md",
+      "path": "coordination-preflight/hr-d01ac/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/agent-contract.md",
+      "path": "coordination-preflight/hr-d01ac/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-d01ac/access.md",
+      "path": "coordination-preflight/hr-d01ac/access.md",
+      "bytes": 5206,
+      "sha256": "a5c188d88cefde93f6de66e6e485a1f8ed7833537507b75fe6a16cf339ccfec4"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/candidate-start.json",
+      "path": "coordination-preflight/hr-e26bd/candidate-start.json",
+      "bytes": 209,
+      "sha256": "e8440c616770d96ac2a5e7ea101ad4ddeb5a7f432a9d24009a58a5d28e0a2921"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/freeze.json",
+      "path": "coordination-preflight/hr-e26bd/freeze.json",
+      "bytes": 5326,
+      "sha256": "2cb392db44587050cbb6c975312b2a2df8ce71f8c8af42fcd89d4dc4b894dbb9"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/manifest.json",
+      "path": "coordination-preflight/hr-e26bd/manifest.json",
+      "bytes": 9523,
+      "sha256": "ea38b7043ac1324fb26db23cd5abd5af804aa71633d90ea720cccab67526b205"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/outcome.json",
+      "path": "coordination-preflight/hr-e26bd/outcome.json",
+      "bytes": 10857,
+      "sha256": "ddc39638d789090e1c2aa9a5ea251c4ab7ed35f5d4ea0d57769fd0a1a77c3e25"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/request.md",
+      "path": "coordination-preflight/hr-e26bd/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/agent-contract.md",
+      "path": "coordination-preflight/hr-e26bd/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/access.md",
+      "path": "coordination-preflight/hr-e26bd/access.md",
+      "bytes": 5206,
+      "sha256": "54894d1c7f3a58c2afaab2749fa1ad8463a48b0d2d1fc777f3d93ee45a7a960b"
+    },
+    {
+      "source": ".perquiro/hr-e26bd/access-proof.json",
+      "path": "coordination-preflight/hr-e26bd/access-proof.json",
+      "bytes": 76,
+      "sha256": "2c11e0989d01841516edbe4c250fb89ae67cba77d47ad20fe2ad47a016b09bc2"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/candidate-start.json",
+      "path": "coordination-preflight/hr-f37ca/candidate-start.json",
+      "bytes": 221,
+      "sha256": "eff671ba91a6796cbe32ccd5ce28dbf503a096208046a5553d7eabc5f230f220"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/freeze.json",
+      "path": "coordination-preflight/hr-f37ca/freeze.json",
+      "bytes": 5326,
+      "sha256": "c20b0aca26c1a571f2e8e95c6d34d39f71f65b63198eaea958d362828a269bff"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/manifest.json",
+      "path": "coordination-preflight/hr-f37ca/manifest.json",
+      "bytes": 10197,
+      "sha256": "7d7f63857ca99f013a14287943b21ff6be84d3b925821c89c6edca704c6c3427"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/outcome.json",
+      "path": "coordination-preflight/hr-f37ca/outcome.json",
+      "bytes": 9720,
+      "sha256": "8d42f9aad6908281389685195882d21998f370b91256ddd91e9da6e7f6e7b525"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/request.md",
+      "path": "coordination-preflight/hr-f37ca/request.md",
+      "bytes": 859,
+      "sha256": "01c9383fa7233d3d6d3c16255329c26c169837608d93e035af379e167e48b33b"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/agent-contract.md",
+      "path": "coordination-preflight/hr-f37ca/agent-contract.md",
+      "bytes": 4492,
+      "sha256": "2c0ade613f5b369988ab2ec42e4587c39e6386e354030ee6c12ef2187cbe3bea"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/access.md",
+      "path": "coordination-preflight/hr-f37ca/access.md",
+      "bytes": 5206,
+      "sha256": "c2d6fcf63cac0f3a6a621cb01966d894cd5a4545586c046db62fedc011add138"
+    },
+    {
+      "source": ".perquiro/hr-f37ca/access-proof.json",
+      "path": "coordination-preflight/hr-f37ca/access-proof.json",
+      "bytes": 49,
+      "sha256": "b96100e0213932bd67657f5cd4ef68d7ff9c40c7b34578d055a0e86d78eb11b7"
+    },
+    {
+      "source": ".audit/693-access-reassessment-f37ca.json",
+      "path": "coordination-preflight/reassessment-f37ca.json",
+      "bytes": 1115,
+      "sha256": "a20461e664280e6188a70673b4fb641762e9d18f45e4422ff4539b66a4a945c1"
+    },
+    {
+      "source": ".audit/693-coordination-code-review-sol3/status.json",
+      "path": "coordination-preflight/reviews/693-coordination-code-review-sol3-status.json",
+      "bytes": 1362,
+      "sha256": "7b2a404411dd1d9f5fab1f85e6f14ef8c4389aeb1bf48200128e6dc6e920e4fd"
+    },
+    {
+      "source": ".audit/693-coordination-code-review-grok3/status.json",
+      "path": "coordination-preflight/reviews/693-coordination-code-review-grok3-status.json",
+      "bytes": 1264,
+      "sha256": "aecd4a0ff01c9671f1e08108df8dd1afc72fe514de28ab5bf198df44a5e6bdc5"
+    },
+    {
+      "source": ".audit/693-correction-review-sol4/status.json",
+      "path": "coordination-preflight/reviews/693-correction-review-sol4-status.json",
+      "bytes": 1154,
+      "sha256": "8eed6083850585c177c81f318809a518d4860c106f82b93a8947ca1565df3ae5"
+    },
+    {
+      "source": ".audit/693-correction-review-sol4/reviewer.stdout.log",
+      "path": "coordination-preflight/reviews/correction-review.stdout.log",
+      "bytes": 1456,
+      "sha256": "bd237d3134af049c7d66e61db19108269752d82b9b433862a8ca6f8f335fe2f4"
     }
   ]
 }
