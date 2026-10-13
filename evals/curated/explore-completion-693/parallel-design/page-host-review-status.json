@@ -1,0 +1,25 @@
+﻿{
+    "runners":  [
+                    {
+                        "id":  "reviewer",
+                        "model":  "gpt-6.1-sol",
+                        "effort":  "high",
+                        "harness":  "codex",
+                        "sandboxErrorObserved":  true,
+                        "stderrLog":  "C:\\dev\\Perquiro-693\\.audit\\693-page-host-review-sol\\reviewer.stderr.log",
+                        "workDir":  "C:\\dev\\Perquiro-693",
+                        "rationale":  null,
+                        "exitCode":  0,
+                        "branch":  null,
+                        "kind":  "in-place",
+                        "status":  "ok",
+                        "stdoutLog":  "C:\\dev\\Perquiro-693\\.audit\\693-page-host-review-sol\\reviewer.stdout.log"
+                    }
+                ],
+    "finishedAt":  "2026-10-13T13:48:42.6402173+02:00",
+    "startedAt":  "2026-10-13T13:42:17.0242712+02:00",
+    "outcome":  "ok",
+    "config":  "(single seat)",
+    "prompt":  "C:\\dev\\Perquiro-693\\.audit\\693-page-host-review.prompt.md",
+    "repoRoot":  "C:\\dev\\Perquiro-693"
+}

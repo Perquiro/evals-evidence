@@ -1244,6 +1244,24 @@
       "path": "parallel-design/judge.stdout.log",
       "bytes": 4294,
       "sha256": "535c998722b36f95da839421298c42aafba0b30a11677eb7a2e23c8d87cc1149"
+    },
+    {
+      "source": ".audit/693-page-host-review-sol/status.json",
+      "path": "parallel-design/page-host-review-status.json",
+      "bytes": 1141,
+      "sha256": "6d830da0af3dfc705ae4ccbdad9b69689c8b5953d8c451c09bf5f0de4bd7719f"
+    },
+    {
+      "source": ".audit/693-page-host-review-sol/reviewer.stdout.log",
+      "path": "parallel-design/page-host-review.stdout.log",
+      "bytes": 3702,
+      "sha256": "ff4ef010ee3eaf216b062996719c41c1ac7ea8517aa0a63d761476723971182a"
+    },
+    {
+      "source": ".audit/693-page-host-review.prompt.md",
+      "path": "parallel-design/page-host-review.prompt.md",
+      "bytes": 2002,
+      "sha256": "9ea4c63f332cb0b4a5243a27164078dc5d1e19b1f004a0ab122992e6ffb6dd82"
     }
   ]
 }
