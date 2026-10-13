@@ -1,0 +1,653 @@
+{
+  "actors": {
+    "b92efa78-d0c3-4821-9ba5-cd253994b8b4": "Emily.dawson",
+    "7b162d1c-3e07-4b27-858f-634e0e26978d": "michael.reed",
+    "722f9f22-9da7-4608-9d3d-3004d3be627d": "hannah.blake"
+  },
+  "catalog": {
+    "revision": "catalog-v1:88b3accb662173bdcd746b3601bc2c8937adca34382992aff76442b9e783fe86",
+    "coverage": {
+      "actors": 3,
+      "surfaces": 1,
+      "journeys": 0,
+      "observations": 10,
+      "evidence": 0,
+      "scenarios": 0,
+      "tests": 0,
+      "surfacesWithoutObservations": 0,
+      "journeysWithoutAcceptedScenarios": 0,
+      "acceptedScenariosWithoutTests": 0
+    },
+    "entries": [
+      {
+        "kind": "actor",
+        "id": "b92efa78-d0c3-4821-9ba5-cd253994b8b4",
+        "name": "Emily.dawson"
+      },
+      {
+        "kind": "actor",
+        "id": "7b162d1c-3e07-4b27-858f-634e0e26978d",
+        "name": "michael.reed"
+      },
+      {
+        "kind": "actor",
+        "id": "722f9f22-9da7-4608-9d3d-3004d3be627d",
+        "name": "hannah.blake"
+      },
+      {
+        "kind": "surface",
+        "id": "22b52203-a364-4104-b649-206a1d770b37",
+        "name": "Dashboard",
+        "locator": "/dashboard",
+        "testFolder": "dashboard"
+      }
+    ],
+    "storedRelationships": []
+  },
+  "observations": [
+    {
+      "id": "47be90d4-e167-42e6-9bb3-d01c62ad67b0",
+      "seq": 8,
+      "body": "Hannah Dashboard shows a 25 day leave balance, 0 pending leave requests, 0 approvals waiting and 28 employees. Quick actions offer Request leave, Fill timesheet, Review approvals and Add new hire. Navigation offers Dashboard, Directory, My Leave, Timesheet, Approvals, Onboarding and My Profile.",
+      "createdAt": "2026-10-13T10:11:56.361Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "inventory",
+          "capture": "none",
+          "looks": [
+            {
+              "item": {
+                "id": "664191e8-f73b-45d0-874c-eceeeefa913e"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "659954f4-0a9b-4bf1-927d-c51c3ee63131"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "2747681a-4c94-4cad-8244-e360141aca0a"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "df9d88b6-6a38-49d1-b386-466990cf7d2c"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "f2ffcec7-33e5-469b-9902-a513e292e31e"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "c57e9c90-40d3-49e3-848a-60481412e6a1"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "370c5e76-c863-4ae3-9911-10777fd4c77b"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "606c4358-38df-48d4-920f-97dd5aada62f"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "3f24c332-5431-438e-badc-75c3781a75f3"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "ae5b42ab-21df-4fa5-b954-dc676ac81d13"
+              },
+              "kind": "offered"
+            }
+          ]
+        },
+        "support": "missing"
+      },
+      "actorId": "722f9f22-9da7-4608-9d3d-3004d3be627d",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 88,
+      "writeTime": "2026-10-13T10:11:56.371Z"
+    },
+    {
+      "id": "6042619e-d71c-47d9-8b73-16976d895d29",
+      "seq": 9,
+      "body": "Dashboard is open and the Directory navigation link is visible, targeting /directory.",
+      "createdAt": "2026-10-13T10:12:07.495Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "action",
+          "capture": "none",
+          "look": {
+            "item": {
+              "id": "664191e8-f73b-45d0-874c-eceeeefa913e"
+            },
+            "kind": "attempting",
+            "resourceRef": "/directory"
+          }
+        },
+        "support": "missing"
+      },
+      "actorId": "722f9f22-9da7-4608-9d3d-3004d3be627d",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 89,
+      "writeTime": "2026-10-13T10:12:07.504Z"
+    },
+    {
+      "id": "874b2a00-3976-464b-88f4-fdd996220142",
+      "seq": 10,
+      "body": "The Directory click was refused before dispatch with Save after one intentional action. A following snapshot still showed /dashboard, browserActions 0, no API requests and no captures; Directory was not executed.",
+      "createdAt": "2026-10-13T10:12:34.144Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "action",
+          "capture": "none",
+          "look": {
+            "item": {
+              "id": "664191e8-f73b-45d0-874c-eceeeefa913e"
+            },
+            "kind": "blocked",
+            "reason": "The provided browser wrapper refused the one intentional action before dispatch; snapshot confirms no navigation or browser action occurred.",
+            "attemptObservationId": "6042619e-d71c-47d9-8b73-16976d895d29",
+            "reconciliation": "not_executed"
+          }
+        },
+        "support": "missing"
+      },
+      "actorId": "722f9f22-9da7-4608-9d3d-3004d3be627d",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 91,
+      "writeTime": "2026-10-13T10:12:34.153Z"
+    },
+    {
+      "id": "5234cc51-2816-4886-8832-bf48173a8273",
+      "seq": 5,
+      "body": "Dashboard welcomes Michael Reed and shows a leave balance of 22 days, 0 pending leave requests, and 1 approval waiting. Quick actions link to Request leave (/leave/new), Fill timesheet (/timesheet), and Review approvals (/approvals). Primary navigation offers Dashboard, Directory, My Leave, Timesheet, Approvals, and My Profile. The header shows a Notifications button with count 5 and a Log out button.",
+      "createdAt": "2026-10-13T10:07:58.620Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "inventory",
+          "capture": "none",
+          "looks": [
+            {
+              "item": {
+                "id": "e41d82d6-5570-4a5c-b120-e9090e4da0d0"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "3f8f7e7b-dd23-41af-8f7f-cad59e21d830"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "9849ac02-cce6-4867-8a9f-d44e4a7dc061"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "73afd740-4e1e-40b1-a1ae-02e21936eabd"
+              },
+              "kind": "offered"
+            }
+          ]
+        },
+        "support": "missing"
+      },
+      "actorId": "7b162d1c-3e07-4b27-858f-634e0e26978d",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 60,
+      "writeTime": "2026-10-13T10:07:58.630Z"
+    },
+    {
+      "id": "d254c6cb-ec68-4564-9328-2e3362206b1d",
+      "seq": 6,
+      "body": "Dashboard is open and Review approvals is a visible quick action linking to /approvals.",
+      "createdAt": "2026-10-13T10:08:09.322Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "action",
+          "capture": "none",
+          "look": {
+            "item": {
+              "id": "9849ac02-cce6-4867-8a9f-d44e4a7dc061"
+            },
+            "kind": "attempting",
+            "resourceRef": "/approvals"
+          }
+        },
+        "support": "missing"
+      },
+      "actorId": "7b162d1c-3e07-4b27-858f-634e0e26978d",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 61,
+      "writeTime": "2026-10-13T10:08:09.332Z"
+    },
+    {
+      "id": "62dfd37e-e8b8-46b9-8cca-4b9f80c7f006",
+      "seq": 7,
+      "body": "The provided browser act wrapper returned `Save after one intentional action` before dispatch. A subsequent snapshot still shows /dashboard and no browser action or capture was recorded, so the approvals link was not executed.",
+      "createdAt": "2026-10-13T10:08:27.587Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "action",
+          "capture": "none",
+          "look": {
+            "item": {
+              "id": "9849ac02-cce6-4867-8a9f-d44e4a7dc061"
+            },
+            "kind": "blocked",
+            "reason": "Browser wrapper refused dispatch with `Save after one intentional action`; snapshot confirms the page remains at /dashboard with browserActions 0 and no capture references.",
+            "attemptObservationId": "d254c6cb-ec68-4564-9328-2e3362206b1d",
+            "reconciliation": "not_executed"
+          }
+        },
+        "support": "missing"
+      },
+      "actorId": "7b162d1c-3e07-4b27-858f-634e0e26978d",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 63,
+      "writeTime": "2026-10-13T10:08:27.596Z"
+    },
+    {
+      "id": "cce1c4cd-91f3-40a1-aece-264e16822851",
+      "seq": 1,
+      "body": "Dashboard displays a leave balance of 18 days and 0 pending leave requests. Quick actions link to Request leave and Fill timesheet. Primary navigation offers Dashboard, Directory, My Leave, Timesheet and My Profile.",
+      "createdAt": "2026-10-13T10:01:40.187Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "inventory",
+          "capture": "none",
+          "looks": [
+            {
+              "item": {
+                "id": "27dd8ff1-3395-40af-8ad8-ffedf4ddab32"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "0ec548f1-0537-4698-805d-cc327757e009"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "e41d82d6-5570-4a5c-b120-e9090e4da0d0"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "3f8f7e7b-dd23-41af-8f7f-cad59e21d830"
+              },
+              "kind": "offered"
+            },
+            {
+              "item": {
+                "id": "bb23e0ee-0551-41e1-913e-f7c2a1dfba74"
+              },
+              "kind": "offered"
+            }
+          ]
+        },
+        "support": "missing"
+      },
+      "actorId": "b92efa78-d0c3-4821-9ba5-cd253994b8b4",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 35,
+      "writeTime": "2026-10-13T10:01:40.198Z"
+    },
+    {
+      "id": "bdfb924f-74a8-4730-a414-83d7265833ff",
+      "seq": 2,
+      "body": "Primary navigation includes a Directory link to /directory.",
+      "createdAt": "2026-10-13T10:03:10.835Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "inventory",
+          "capture": "none",
+          "looks": [
+            {
+              "item": {
+                "id": "c73b057a-1af4-411e-8de3-078ecd0f78ea"
+              },
+              "kind": "offered"
+            }
+          ]
+        },
+        "support": "missing"
+      },
+      "actorId": "b92efa78-d0c3-4821-9ba5-cd253994b8b4",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 38,
+      "writeTime": "2026-10-13T10:03:10.844Z"
+    },
+    {
+      "id": "62bdbf36-58da-4875-8702-56fd658a8f58",
+      "seq": 3,
+      "body": "Dashboard is open and the Directory navigation link is visible.",
+      "createdAt": "2026-10-13T10:03:51.845Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "action",
+          "capture": "none",
+          "look": {
+            "item": {
+              "id": "c73b057a-1af4-411e-8de3-078ecd0f78ea"
+            },
+            "kind": "attempting",
+            "resourceRef": "/directory"
+          }
+        },
+        "support": "missing"
+      },
+      "actorId": "b92efa78-d0c3-4821-9ba5-cd253994b8b4",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 41,
+      "writeTime": "2026-10-13T10:03:51.854Z"
+    },
+    {
+      "id": "5061fb54-661e-4777-9907-7981e517f550",
+      "seq": 4,
+      "body": "The browser remains at /dashboard and Directory was not dispatched: each act invocation returned Save after one intentional action, with browserActions 0 and no capture references.",
+      "createdAt": "2026-10-13T10:05:00.072Z",
+      "inspection": {
+        "platform": "browser",
+        "report": {
+          "kind": "action",
+          "capture": "none",
+          "look": {
+            "item": {
+              "id": "c73b057a-1af4-411e-8de3-078ecd0f78ea"
+            },
+            "kind": "blocked",
+            "reason": "The provided browser wrapper refused act before dispatch, and snapshot confirms the browser remains on /dashboard with browserActions 0.",
+            "attemptObservationId": "62bdbf36-58da-4875-8702-56fd658a8f58",
+            "reconciliation": "not_executed"
+          }
+        },
+        "support": "missing"
+      },
+      "actorId": "b92efa78-d0c3-4821-9ba5-cd253994b8b4",
+      "surfaceIds": [
+        "22b52203-a364-4104-b649-206a1d770b37"
+      ],
+      "journeyIds": [],
+      "writeEvent": 44,
+      "writeTime": "2026-10-13T10:05:00.082Z"
+    }
+  ],
+  "evidenceLinks": [],
+  "trace": [
+    {
+      "event": 33,
+      "time": "2026-10-13T10:00:46.571Z",
+      "phase": "candidate",
+      "browserActionId": null,
+      "kind": "browser_snapshot",
+      "session": "Emily.dawson",
+      "url": "http://127.0.0.1:58104/dashboard",
+      "apiRequests": 0,
+      "apiBudget": 40,
+      "refusedRequests": 0,
+      "browserActions": 0,
+      "elapsedSeconds": 141.977,
+      "exploreSecondsRemaining": 2258.023,
+      "recordingSecondsRemaining": 2558.023,
+      "explorationClosed": false,
+      "ui": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Emily\" [level=1]\n  - text: Leave balance 18 days Pending leave requests 0\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\"",
+      "fields": []
+    },
+    {
+      "event": 37,
+      "time": "2026-10-13T10:02:34.232Z",
+      "phase": "candidate",
+      "browserActionId": null,
+      "kind": "browser_snapshot",
+      "session": "Emily.dawson",
+      "url": "http://127.0.0.1:58104/dashboard",
+      "apiRequests": 0,
+      "apiBudget": 40,
+      "refusedRequests": 0,
+      "browserActions": 0,
+      "elapsedSeconds": 249.638,
+      "exploreSecondsRemaining": 2150.362,
+      "recordingSecondsRemaining": 2450.362,
+      "explorationClosed": false,
+      "ui": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Emily\" [level=1]\n  - text: Leave balance 18 days Pending leave requests 0\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\"",
+      "fields": []
+    },
+    {
+      "event": 42,
+      "time": "2026-10-13T10:04:21.222Z",
+      "phase": "candidate",
+      "browserActionId": null,
+      "kind": "browser_snapshot",
+      "session": "Emily.dawson",
+      "url": "http://127.0.0.1:58104/dashboard",
+      "apiRequests": 0,
+      "apiBudget": 40,
+      "refusedRequests": 0,
+      "browserActions": 0,
+      "elapsedSeconds": 356.628,
+      "exploreSecondsRemaining": 2043.372,
+      "recordingSecondsRemaining": 2343.372,
+      "explorationClosed": false,
+      "ui": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Employee v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"3\"\n  - text: ED Emily Dawson\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Emily\" [level=1]\n  - text: Leave balance 18 days Pending leave requests 0\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\"",
+      "fields": []
+    },
+    {
+      "event": 56,
+      "time": "2026-10-13T10:07:29.826Z",
+      "phase": "candidate",
+      "browserActionId": null,
+      "kind": "browser_snapshot",
+      "session": "michael.reed",
+      "url": "http://127.0.0.1:58104/dashboard",
+      "apiRequests": 0,
+      "apiBudget": 40,
+      "refusedRequests": 0,
+      "browserActions": 0,
+      "elapsedSeconds": 545.232,
+      "exploreSecondsRemaining": 1854.768,
+      "recordingSecondsRemaining": 2154.768,
+      "explorationClosed": false,
+      "ui": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"Approvals\":\n      - /url: /approvals\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Manager v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"5\"\n  - text: MR Michael Reed\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Michael\" [level=1]\n  - text: Leave balance 22 days Pending leave requests 0 Approvals waiting 1\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\"\n  - link \"Review approvals\":\n    - /url: /approvals\n    - button \"Review approvals\"",
+      "fields": []
+    },
+    {
+      "event": 62,
+      "time": "2026-10-13T10:08:27.376Z",
+      "phase": "candidate",
+      "browserActionId": null,
+      "kind": "browser_snapshot",
+      "session": "michael.reed",
+      "url": "http://127.0.0.1:58104/dashboard",
+      "apiRequests": 0,
+      "apiBudget": 40,
+      "refusedRequests": 0,
+      "browserActions": 0,
+      "elapsedSeconds": 602.782,
+      "exploreSecondsRemaining": 1797.2179999999998,
+      "recordingSecondsRemaining": 2097.218,
+      "explorationClosed": false,
+      "ui": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"Approvals\":\n      - /url: /approvals\n    - link \"My Profile\":\n      - /url: /profile\n  - text: Manager v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"5\"\n  - text: MR Michael Reed\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Michael\" [level=1]\n  - text: Leave balance 22 days Pending leave requests 0 Approvals waiting 1\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\"\n  - link \"Review approvals\":\n    - /url: /approvals\n    - button \"Review approvals\"",
+      "fields": []
+    },
+    {
+      "event": 87,
+      "time": "2026-10-13T10:11:13.648Z",
+      "phase": "candidate",
+      "browserActionId": null,
+      "kind": "browser_snapshot",
+      "session": "hannah.blake",
+      "url": "http://127.0.0.1:58104/dashboard",
+      "apiRequests": 0,
+      "apiBudget": 40,
+      "refusedRequests": 0,
+      "browserActions": 0,
+      "elapsedSeconds": 769.054,
+      "exploreSecondsRemaining": 1630.946,
+      "recordingSecondsRemaining": 1930.946,
+      "explorationClosed": false,
+      "ui": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"Approvals\":\n      - /url: /approvals\n    - link \"Onboarding\":\n      - /url: /onboarding\n    - link \"My Profile\":\n      - /url: /profile\n  - text: HR Admin v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"2\"\n  - text: HB Hannah Blake\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Hannah\" [level=1]\n  - text: Leave balance 25 days Pending leave requests 0 Approvals waiting 0 Employees 28\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\"\n  - link \"Review approvals\":\n    - /url: /approvals\n    - button \"Review approvals\"\n  - link \"Add new hire\":\n    - /url: /onboarding\n    - button \"Add new hire\"",
+      "fields": []
+    },
+    {
+      "event": 90,
+      "time": "2026-10-13T10:12:20.140Z",
+      "phase": "candidate",
+      "browserActionId": null,
+      "kind": "browser_snapshot",
+      "session": "hannah.blake",
+      "url": "http://127.0.0.1:58104/dashboard",
+      "apiRequests": 0,
+      "apiBudget": 40,
+      "refusedRequests": 0,
+      "browserActions": 0,
+      "elapsedSeconds": 835.546,
+      "exploreSecondsRemaining": 1564.454,
+      "recordingSecondsRemaining": 1864.454,
+      "explorationClosed": false,
+      "ui": "- complementary:\n  - text: BB BugBusters HR\n  - navigation:\n    - link \"Dashboard\":\n      - /url: /dashboard\n    - link \"Directory\":\n      - /url: /directory\n    - link \"My Leave\":\n      - /url: /leave\n    - link \"Timesheet\":\n      - /url: /timesheet\n    - link \"Approvals\":\n      - /url: /approvals\n    - link \"Onboarding\":\n      - /url: /onboarding\n    - link \"My Profile\":\n      - /url: /profile\n  - text: HR Admin v0.1.0\n- banner:\n  - button \"Notifications\":\n    - img\n    - text: \"2\"\n  - text: HB Hannah Blake\n  - button \"Log out\"\n- main:\n  - heading \"Welcome back, Hannah\" [level=1]\n  - text: Leave balance 25 days Pending leave requests 0 Approvals waiting 0 Employees 28\n  - heading \"Quick actions\" [level=2]\n  - link \"Request leave\":\n    - /url: /leave/new\n    - button \"Request leave\"\n  - link \"Fill timesheet\":\n    - /url: /timesheet\n    - button \"Fill timesheet\"\n  - link \"Review approvals\":\n    - /url: /approvals\n    - button \"Review approvals\"\n  - link \"Add new hire\":\n    - /url: /onboarding\n    - button \"Add new hire\"",
+      "fields": []
+    }
+  ],
+  "checkpoints": {
+    "candidateStartedAt": "2026-10-13T09:58:24.594Z",
+    "checkpoints": [
+      {
+        "minutes": 10,
+        "cutoff": "2026-10-13T10:08:24.594Z",
+        "eligibleObservationIds": [
+          "5234cc51-2816-4886-8832-bf48173a8273",
+          "d254c6cb-ec68-4564-9328-2e3362206b1d",
+          "cce1c4cd-91f3-40a1-aece-264e16822851",
+          "bdfb924f-74a8-4730-a414-83d7265833ff",
+          "62bdbf36-58da-4875-8702-56fd658a8f58",
+          "5061fb54-661e-4777-9907-7981e517f550"
+        ],
+        "productEventIds": [],
+        "browserEventIds": [
+          33,
+          37,
+          42,
+          56
+        ]
+      },
+      {
+        "minutes": 20,
+        "cutoff": "2026-10-13T10:18:24.594Z",
+        "eligibleObservationIds": [
+          "47be90d4-e167-42e6-9bb3-d01c62ad67b0",
+          "6042619e-d71c-47d9-8b73-16976d895d29",
+          "874b2a00-3976-464b-88f4-fdd996220142",
+          "5234cc51-2816-4886-8832-bf48173a8273",
+          "d254c6cb-ec68-4564-9328-2e3362206b1d",
+          "62dfd37e-e8b8-46b9-8cca-4b9f80c7f006",
+          "cce1c4cd-91f3-40a1-aece-264e16822851",
+          "bdfb924f-74a8-4730-a414-83d7265833ff",
+          "62bdbf36-58da-4875-8702-56fd658a8f58",
+          "5061fb54-661e-4777-9907-7981e517f550"
+        ],
+        "productEventIds": [],
+        "browserEventIds": [
+          33,
+          37,
+          42,
+          56,
+          62,
+          87,
+          90
+        ]
+      },
+      {
+        "minutes": 40,
+        "cutoff": "2026-10-13T10:38:24.594Z",
+        "eligibleObservationIds": [
+          "47be90d4-e167-42e6-9bb3-d01c62ad67b0",
+          "6042619e-d71c-47d9-8b73-16976d895d29",
+          "874b2a00-3976-464b-88f4-fdd996220142",
+          "5234cc51-2816-4886-8832-bf48173a8273",
+          "d254c6cb-ec68-4564-9328-2e3362206b1d",
+          "62dfd37e-e8b8-46b9-8cca-4b9f80c7f006",
+          "cce1c4cd-91f3-40a1-aece-264e16822851",
+          "bdfb924f-74a8-4730-a414-83d7265833ff",
+          "62bdbf36-58da-4875-8702-56fd658a8f58",
+          "5061fb54-661e-4777-9907-7981e517f550"
+        ],
+        "productEventIds": [],
+        "browserEventIds": [
+          33,
+          37,
+          42,
+          56,
+          62,
+          87,
+          90
+        ]
+      }
+    ]
+  },
+  "proposals": [],
+  "blinding": {
+    "modelAndArmWithheld": true,
+    "productAndLocatorRolesPreserved": true
+  },
+  "scoringContract": "The frozen SCORING rubric applies. Attributed public Observation bodies must collectively retain the material action and result facts. Linked Evidence corroborates them; evaluator-only capture or Evidence alone cannot supply omitted saved facts."
+}

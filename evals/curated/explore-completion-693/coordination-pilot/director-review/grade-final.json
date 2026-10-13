@@ -1,0 +1,285 @@
+{
+  "checks": [
+    {
+      "id": "HR01",
+      "seen": true,
+      "saved": true,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [
+        [
+          33,
+          56,
+          87
+        ]
+      ],
+      "savedSupportSets": [
+        {
+          "observationIds": [
+            "cce1c4cd-91f3-40a1-aece-264e16822851",
+            "5234cc51-2816-4886-8832-bf48173a8273",
+            "47be90d4-e167-42e6-9bb3-d01c62ad67b0"
+          ],
+          "eventIds": [
+            33,
+            56,
+            87
+          ]
+        }
+      ],
+      "rationale": "The three attributed Dashboard bodies preserve complete navigation sets. Emily has Dashboard, Directory, My Leave, Timesheet and My Profile. Michael additionally has Approvals. Hannah additionally has Approvals and Onboarding. The earliest Actor snapshots corroborate these sets."
+    },
+    {
+      "id": "HR02",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Emily never directly visits a higher-privilege page."
+    },
+    {
+      "id": "HR03",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No name search is entered. Every raw snapshot remains on Dashboard."
+    },
+    {
+      "id": "HR04",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No department filter is applied."
+    },
+    {
+      "id": "HR05",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No deliberately unmatched search or settled search result is observed."
+    },
+    {
+      "id": "HR06",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No sortable column header is clicked."
+    },
+    {
+      "id": "HR07",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No directory page is reached or paged through. Dashboard headcount does not establish directory paging."
+    },
+    {
+      "id": "HR08",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee detail or direct detail load is observed."
+    },
+    {
+      "id": "HR09",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No leave dates are entered."
+    },
+    {
+      "id": "HR10",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No Friday-to-Monday interval or its displayed duration is observed."
+    },
+    {
+      "id": "HR11",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No valid leave request is submitted. Initial pending counts do not establish newly created requests."
+    },
+    {
+      "id": "HR12",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No request history is opened or read."
+    },
+    {
+      "id": "HR13",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No successful leave submission or return to its form occurs."
+    },
+    {
+      "id": "HR14",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Michael's Dashboard advertises one approval waiting. The queue is never opened, and no requester or pending-request identity is established."
+    },
+    {
+      "id": "HR15",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No manager decision is confirmed or inspected immediately and after settling."
+    },
+    {
+      "id": "HR16",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No rejection without a comment is attempted."
+    },
+    {
+      "id": "HR17",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee creation, manager decision and subsequent employee readback lifecycle occurs."
+    },
+    {
+      "id": "HR18",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Hannah's Add new hire link is visible. Onboarding validation is never attempted."
+    },
+    {
+      "id": "HR19",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No job-details step or initial and settled metadata selector states are observed."
+    },
+    {
+      "id": "HR20",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No onboarding data entry, advancement or backward navigation occurs."
+    },
+    {
+      "id": "HR21",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Hannah's initial headcount of 28 is recorded. No onboarding submission, employee appearance or headcount change is observed."
+    },
+    {
+      "id": "HR22",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "Emily's timesheet is never opened, and no seven-day hours are entered."
+    },
+    {
+      "id": "HR23",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee timesheet draft save and reload occur."
+    },
+    {
+      "id": "HR24",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No employee timesheet submission or later edit attempt occurs."
+    },
+    {
+      "id": "HR25",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No changed profile field is saved."
+    },
+    {
+      "id": "HR26",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No changed profile name or photo is saved or resulting header identity observed."
+    },
+    {
+      "id": "HR27",
+      "seen": false,
+      "saved": false,
+      "directlyJourneyLinked": false,
+      "seenSupportSets": [],
+      "savedSupportSets": [],
+      "rationale": "No profile save and subsequent reload occur."
+    }
+  ],
+  "unsupportedClaims": [
+    {
+      "claim": "Browser action invocations were refused before dispatch with the exact message Save after one intentional action.",
+      "observationIds": [
+        "5061fb54-661e-4777-9907-7981e517f550",
+        "62dfd37e-e8b8-46b9-8cca-4b9f80c7f006",
+        "874b2a00-3976-464b-88f4-fdd996220142"
+      ],
+      "eventIds": [
+        42,
+        62,
+        90
+      ],
+      "reason": "The snapshots corroborate remaining on Dashboard with zero browser actions and API requests. They contain no invocation or rejection event establishing the exact refusal message or asserted cause. This is a nonmaterial claim about harness behavior, not a claimed Product action result.",
+      "material": false
+    }
+  ],
+  "scenarios": [],
+  "notes": []
+}

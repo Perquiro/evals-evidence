@@ -1,0 +1,32 @@
+{
+  "finishedAt": "2026-10-13T09:35:16.669Z",
+  "elapsedSeconds": 1831.456,
+  "exploreSecondsRemaining": 568.5440000000001,
+  "recordingSecondsRemaining": 868.5440000000001,
+  "explorationClosed": true,
+  "apiRequests": 38,
+  "executions": [
+    {
+      "id": "e001",
+      "actor": "Emily.dawson",
+      "startedAt": "2026-10-13T09:06:24.613Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "objective": "Explore BugBusters HR for useful Knowledge about what people can do and what happens.",
+        "actorId": "176a99f7-1b58-4890-986d-221411913e9d",
+        "platform": "browser",
+        "productVersion": {
+          "kind": "unknown",
+          "value": ""
+        }
+      },
+      "releasedAt": "2026-10-13T09:35:01.296Z",
+      "endingApiRequests": 38,
+      "release": {
+        "completed": true,
+        "workerAgent": "solo",
+        "handoff": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "id": "candidate-693",
+  "trial": {
+    "id": "candidate-693",
+    "arm": "D-candidate",
+    "manager": false,
+    "checklist": false,
+    "model": "gpt-6-luna",
+    "effort": "medium"
+  },
+  "workspace": "C:\\dev\\Perquiro-693\\.perquiro\\hr-b573e\\project-o1jNvr",
+  "productUrl": "http://127.0.0.1:58104",
+  "controlUrl": "http://127.0.0.1:57277",
+  "pid": 68032,
+  "productPid": 63168,
+  "productDate": "2026-09-10T12:00:00.000Z",
+  "startedAt": "2026-10-13T09:58:24.351Z",
+  "skillSha256": "e2903a5bc864518db27b3eb7ac4056d9ececaabc9e40f9c578cdf9fcd6bd5250",
+  "productHashes": {
+    "product/dist/assets/index-CiOd5S5f.js": "5004bbabe116abe1e092ff8694c75adcc35aabaef3d66b6527c24dd24ff723c6",
+    "product/dist/assets/index-D-g6-4_f.css": "3842a75d8a6c401024182a594757c0a9736f7cd1063934ea4bc2fa1024a6c8b3",
+    "product/dist/index.html": "a4bbb6e2130bf256c30ca708afbcb0968a3a47bf9281c88f3baef41c4e3c9547",
+    "product/package-lock.json": "b698001d0b8325bacad477e2983034552db22e209967d9c7e9330ab85dc216a2",
+    "product/package.json": "b2051a23fb8ab14ba9ec707b3bbdc38cc97e0030aafa78e5aadc4cf5c8cfc589",
+    "product/server/index.js": "bbf2d72a1b75b226e732af32212a7c7f3153c4e034901220c20c79d0c67ec6bb",
+    "product/server/seed.js": "6f284449573cb5d320e2ae8a9ff42d11bcfa27a9b07bf650008de9f3dd754a35",
+    "product/src/api.js": "5ec6e3ae37db8e895bdeadf758eb0e5bc8b33fde2c0a6699bdfafaf033df0ceb",
+    "product/src/App.jsx": "3e5efebf74590787542307bd2753cc2d724795c0527c88c7496a561830e56dc2",
+    "product/src/auth.jsx": "82d3cdef6dbed0235eb656eb04ccff682ee9cfcd4690e78eeeb48ac3badd0fe0",
+    "product/src/components/DatePicker.jsx": "fc96c3758816ebf4e4e823ac20285162c892a0acc19779426de657c6f57af6ef",
+    "product/src/components/Layout.jsx": "0e476379bd87669fd04ad8945504df5d4525b2ae958f3d8a25a0f2dd3a5626cc",
+    "product/src/components/Modal.jsx": "d3068658e147559c833202dc91d6ad75354fbb33e641e9d28ee7bffab14c45e5",
+    "product/src/directoryCache.js": "7b3cf3d30184e6dee01107866ddd53904a1b7f6dc14c21df3dbcbb5240035ecf",
+    "product/src/main.jsx": "d65350464d72c4c96e6fee13a783d8700df0df362e6b40af58aed16f216af3b5",
+    "product/src/pages/Approvals.jsx": "b58b48de711d0f5e0724e6d146b65c82b3d0d74b9cc92bf40604cf93c3b685a1",
+    "product/src/pages/Dashboard.jsx": "d9fdd1c7eb36266533f8f5ab3795e8843a00791e94f2fa2210c80781e7c16864",
+    "product/src/pages/Directory.jsx": "c62ba890c8c43c0b41f33906766a6a95b94023f5d905ff148dbde199a739730c",
+    "product/src/pages/EmployeeDetail.jsx": "216fd59175ebe505475b5015e8c0768e61bc4bd0bac5b6be31b80b6ceca34587",
+    "product/src/pages/Leave.jsx": "5e5ed3a3dedf4db27d20e0d107aa9b9c1a86971b4bb2bc2f753923876a003324",
+    "product/src/pages/Login.jsx": "5ee75c7470fddc5bb9fcdeee3da16006daafcbbda32d33135d60dad63e721ccf",
+    "product/src/pages/NewLeave.jsx": "42348f75297206b863c6cdb0857579c4b25e560be2ee074d5a361116b9227d77",
+    "product/src/pages/Notifications.jsx": "c8c4ffc1b1b2b3b467d1c494b35b36fa3c22239f399d427bd8e3b63b33801865",
+    "product/src/pages/Onboarding.jsx": "35354bcc64c2bde52ff360441c5829e32a3e23f83611aee1343d4383def4b49e",
+    "product/src/pages/Profile.jsx": "ba367df81e908f106e5a6edd4a6c27247f548737bdd123e1984e263b35b71306",
+    "product/src/pages/Timesheet.jsx": "442d9130893d75c7f599ac47155c42ee03e6cdf0c892f019817eb3f9ed51e268",
+    "product/src/styles.css": "3d8107160ad8facc3e3bf7f26f46544d28bd75af5f88746e4ea5b6ef60a3f4c8",
+    "product/src/utils.js": "8490648cf5554713de218d7d2f82c7aad4fee50de2fff0fad2865ae97159adac"
+  },
+  "originalProductSourceHashCount": 27,
+  "actors": [
+    "Emily.dawson",
+    "michael.reed",
+    "hannah.blake"
+  ],
+  "productHead": "868e83d2c50f8135c5bff46db086ee4037c90ef3",
+  "preparation": "Three fresh browser contexts authenticated through real UI; only auth/read requests before candidate start; seed Product data untouched.",
+  "productVersion": {
+    "kind": "unknown"
+  },
+  "productVersionBasis": "Prepared Setup has no Product-version source; no exact version has been observed.",
+  "apiRequests": 0,
+  "refusedRequests": 0,
+  "browserActions": 0,
+  "executions": [
+    {
+      "id": "e001",
+      "actor": "Emily.dawson",
+      "startedAt": "2026-10-13T09:59:19.029Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "token": "explore-emily-inventory-1",
+        "mode": "explore",
+        "actor": "Emily.dawson",
+        "question": "Explore Bugbusters HR using Emily.dawson. Map accessible rendered UI surfaces and useful tasks about what people can do and what happens. No prior inventory exists; begin with navigation and choose meaningful task flows. Preserve immediate and settled facts, captures, and complete public Knowledge. Respect the shared 40 API request and 40 minute limits; perform one intentional Product action then save its full attributed result before another. Use provided browser and Knowledge wrappers only.",
+        "references": [],
+        "sources": []
+      },
+      "releasedAt": "2026-10-13T10:05:24.483Z",
+      "endingApiRequests": 0,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    },
+    {
+      "id": "e002",
+      "actor": "michael.reed",
+      "startedAt": "2026-10-13T10:06:54.960Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "token": "explore-michael-dashboard-1",
+        "mode": "explore",
+        "actor": "michael.reed",
+        "question": "Continue the original Bugbusters HR Explore request using fixed Actor michael.reed. Read and use public Knowledge including Emily Dashboard observations as context but do not repeat claims without new Actor context. Explore accessible rendered UI and useful tasks about what people can do and what happens. Preserve immediate and settled facts and save full attributed results after each intentional Product action. Use provided wrappers only and respect shared 40 requests/40 minutes. If action dispatch remains blocked by wrapper protocol, ground and record the blocker and state requirements precisely.",
+        "references": [
+          "e001"
+        ],
+        "sources": [
+          {
+            "executionId": "e001",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-b573e\\project-o1jNvr\\executions\\e001\\HANDOFF.md",
+            "captures": [],
+            "savedIds": [
+              "cce1c4cd-91f3-40a1-aece-264e16822851",
+              "bdfb924f-74a8-4730-a414-83d7265833ff",
+              "62bdbf36-58da-4875-8702-56fd658a8f58",
+              "5061fb54-661e-4777-9907-7981e517f550"
+            ]
+          }
+        ]
+      },
+      "releasedAt": "2026-10-13T10:08:55.315Z",
+      "endingApiRequests": 0,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    },
+    {
+      "id": "e003",
+      "actor": "hannah.blake",
+      "startedAt": "2026-10-13T10:09:34.190Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "token": "explore-hannah-dashboard-1",
+        "mode": "explore",
+        "actor": "hannah.blake",
+        "question": "Continue the original Bugbusters HR Explore request using fixed Actor hannah.blake. Read public Knowledge from Emily and Michael first. Explore accessible rendered UI and useful tasks about what people can do and what happens. Do not repeat Product actions unless a fresh attempt is recorded and authorized after checking current state. Preserve immediate and settled facts and save full attributed results after each action. Use provided browser and Knowledge wrappers only, respect shared limits. If browser dispatch is still refused with Save after one intentional action, record grounded blocker, do not replay already blocked actions.",
+        "references": [
+          "e001",
+          "e002"
+        ],
+        "sources": [
+          {
+            "executionId": "e001",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-b573e\\project-o1jNvr\\executions\\e001\\HANDOFF.md",
+            "captures": [],
+            "savedIds": [
+              "cce1c4cd-91f3-40a1-aece-264e16822851",
+              "bdfb924f-74a8-4730-a414-83d7265833ff",
+              "62bdbf36-58da-4875-8702-56fd658a8f58",
+              "5061fb54-661e-4777-9907-7981e517f550"
+            ]
+          },
+          {
+            "executionId": "e002",
+            "actor": "michael.reed",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-b573e\\project-o1jNvr\\executions\\e002\\HANDOFF.md",
+            "captures": [],
+            "savedIds": [
+              "5234cc51-2816-4886-8832-bf48173a8273",
+              "d254c6cb-ec68-4564-9328-2e3362206b1d",
+              "62dfd37e-e8b8-46b9-8cca-4b9f80c7f006"
+            ]
+          }
+        ]
+      },
+      "releasedAt": "2026-10-13T10:13:26.256Z",
+      "endingApiRequests": 0,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    }
+  ],
+  "finishedAt": "2026-10-13T10:14:31.133Z"
+}

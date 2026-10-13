@@ -1,0 +1,33 @@
+{
+  "checkpoints": {
+    "10": {
+      "seen": 2,
+      "saved": 1,
+      "unsupportedClaims": 0,
+      "unsupportedRate": 0
+    },
+    "20": {
+      "seen": 5,
+      "saved": 3,
+      "unsupportedClaims": 0,
+      "unsupportedRate": 0
+    },
+    "40": {
+      "seen": 5,
+      "saved": 3,
+      "unsupportedClaims": 1,
+      "unsupportedRate": 0.3333333333333333
+    }
+  },
+  "final": {
+    "seen": 5,
+    "saved": 3,
+    "directlyJourneyLinked": 0,
+    "unsupportedClaims": 1,
+    "unsupportedRate": 0.3333333333333333
+  },
+  "create": {
+    "proposedScenarios": 0,
+    "distinctGroundedBehaviorCount": 0
+  }
+}

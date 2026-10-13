@@ -1,0 +1,1603 @@
+{
+  "runs": [
+    {
+      "id": "coordination-solo",
+      "label": "North",
+      "counts": {
+        "never_tried": 11,
+        "tried_but_missed_required_moment": 2,
+        "save_rejected": 0,
+        "quit_before_reaching_it": 1,
+        "unknown": 10
+      },
+      "misses": [
+        {
+          "id": "HR01",
+          "category": "unknown",
+          "reason": "Emily's shell was observed and saved. Michael's and Hannah's shells were absent. Actor coverage was partial.",
+          "eventIds": [
+            28
+          ],
+          "writeEventIds": [
+            30
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR02",
+          "category": "never_tried",
+          "reason": "Emily made no direct higher-privilege page visit. No specific access-check deferral is documented.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR04",
+          "category": "tried_but_missed_required_moment",
+          "reason": "The Engineering filter completed and the trace contains all eight displayed employees. Public bodies omit complete row membership.",
+          "eventIds": [
+            133
+          ],
+          "writeEventIds": [
+            135,
+            202
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR05",
+          "category": "unknown",
+          "reason": "The exercised Emily search matched a row. The deliberately unmatched case was not exercised.",
+          "eventIds": [
+            332
+          ],
+          "writeEventIds": [
+            334
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR06",
+          "category": "never_tried",
+          "reason": "No sortable header was clicked twice. The initial sort marker is not an exercised sorting workflow.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR07",
+          "category": "tried_but_missed_required_moment",
+          "reason": "The trace contains all three reached pages, their row identities, total 28 and the final disabled Next button. Public bodies omit most reached row identities.",
+          "eventIds": [
+            45,
+            167,
+            210
+          ],
+          "writeEventIds": [
+            48,
+            169,
+            203,
+            212
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR08",
+          "category": "never_tried",
+          "reason": "No employee detail was opened and then directly loaded or refreshed.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR09",
+          "category": "unknown",
+          "reason": "Empty-date required-field validation was exercised. The end-before-start case was not.",
+          "eventIds": [
+            434,
+            435,
+            436
+          ],
+          "writeEventIds": [
+            432,
+            437
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR10",
+          "category": "never_tried",
+          "reason": "No Friday-to-Monday interval was entered. The blocked generic date-selection check does not specifically defer this interval case.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR11",
+          "category": "unknown",
+          "reason": "The leave workflow reached the calendar and an empty-date submission. No valid submission or newly created pending-request count was established.",
+          "eventIds": [
+            67,
+            82,
+            434,
+            435,
+            436
+          ],
+          "writeEventIds": [
+            69,
+            74,
+            81,
+            432,
+            437
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR13",
+          "category": "unknown",
+          "reason": "The form was reopened with empty fields, but no successful submission preceded the return. The workflow was incomplete.",
+          "eventIds": [
+            338,
+            345,
+            429,
+            430
+          ],
+          "writeEventIds": [
+            340,
+            347,
+            431
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR14",
+          "category": "never_tried",
+          "reason": "Michael never opened the approvals queue. No specific queue-workflow deferral is documented.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR15",
+          "category": "never_tried",
+          "reason": "No manager approval or commented rejection was confirmed.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR16",
+          "category": "never_tried",
+          "reason": "No rejection without a comment was attempted.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR17",
+          "category": "unknown",
+          "reason": "The employee creation workflow reached an invalid submission. No request was created, decided by Michael or subsequently read back. The lifecycle was partial.",
+          "eventIds": [
+            434,
+            435,
+            436
+          ],
+          "writeEventIds": [
+            432,
+            437
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR18",
+          "category": "never_tried",
+          "reason": "Hannah never attempted personal-step advancement with missing or malformed input.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR19",
+          "category": "never_tried",
+          "reason": "No onboarding job-details step or metadata-loading selector workflow was entered.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR20",
+          "category": "never_tried",
+          "reason": "No onboarding data entry, advancement and backward navigation occurred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR21",
+          "category": "never_tried",
+          "reason": "No onboarding review submission was attempted.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR22",
+          "category": "unknown",
+          "reason": "Only Monday's 8 hours were entered. The other six days remained untouched at zero. Seven-day entry was partial.",
+          "eventIds": [
+            146,
+            147
+          ],
+          "writeEventIds": [
+            143,
+            148
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR24",
+          "category": "unknown",
+          "reason": "Submission succeeded and disabled the fields and actions. No later edit was attempted.",
+          "eventIds": [
+            302,
+            303
+          ],
+          "writeEventIds": [
+            298,
+            304
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR25",
+          "category": "unknown",
+          "reason": "The temporary phone change was restored before Save changes. The executed save used the original values. The changed-field workflow was incomplete.",
+          "eventIds": [
+            366,
+            373,
+            380,
+            381
+          ],
+          "writeEventIds": [
+            368,
+            375,
+            376,
+            382
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR26",
+          "category": "quit_before_reaching_it",
+          "reason": "The photo-upload branch was explicitly left pending for continuation. No changed name or photo was saved and no resulting header identity was observed.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-c8f41/project-2Lnrdl/executions/e001/HANDOFF.md",
+              "statement": "Upload photo remained pending and required continuation with Emily."
+            }
+          ]
+        },
+        {
+          "id": "HR27",
+          "category": "unknown",
+          "reason": "An unchanged profile save completed, but no subsequent profile reload occurred. Persistence verification was partial.",
+          "eventIds": [
+            380,
+            381,
+            424
+          ],
+          "writeEventIds": [
+            382
+          ],
+          "provenanceReferences": []
+        }
+      ],
+      "diagnostics": [
+        {
+          "kind": "wrapper_format_errors_recovered",
+          "reason": "Initial Directory commands lacked a nested target or used action/type instead of kind. They returned interface errors. A later goto reached Directory. The failed-command counters do not establish dispatched Product actions.",
+          "eventIds": [
+            32,
+            36,
+            39,
+            45
+          ],
+          "writeEventIds": [
+            48
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-c8f41-supervision/seat-001-stdout.jsonl",
+              "statement": "Completed command items at lines 35, 39 and 41 returned missing-target or Unknown browser action errors. Line 43 used a bare array containing kind goto and succeeded."
+            }
+          ]
+        },
+        {
+          "kind": "locator_failure_unrecovered",
+          "reason": "Calendar month advancement first lacked a nested target, then timed out looking for a replacement character. No date was selected. The format error and subsequent locator failure are separate from a Product refusal.",
+          "eventIds": [
+            67,
+            76,
+            79,
+            82
+          ],
+          "writeEventIds": [
+            74,
+            81
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-c8f41-supervision/seat-001-stdout.jsonl",
+              "statement": "Completed act commands at lines 79 and 81 returned a missing-target error and a timeout for getByText of the replacement character."
+            },
+            {
+              "file": ".perquiro/hr-c8f41/project-2Lnrdl/executions/e001/HANDOFF.md",
+              "statement": "The date-selection check remained blocked because the next-month glyph could not be targeted."
+            }
+          ]
+        },
+        {
+          "kind": "knowledge_rejections_not_causal_to_completed_check",
+          "reason": "The handoff reports rejected exact-version attribution and a rejected phone-fill inspection preflight. Neither caused rejection of saving a completed frozen check. The phone change was restored before the Product save.",
+          "eventIds": [
+            366,
+            373,
+            380
+          ],
+          "writeEventIds": [
+            368,
+            375,
+            382
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-c8f41/project-2Lnrdl/executions/e001/HANDOFF.md",
+              "statement": "Setup lacked an exact Product version. The field-fill preflight was rejected, but an unsaved phone fill occurred and the original value was later restored and saved."
+            }
+          ]
+        },
+        {
+          "kind": "native_closure",
+          "reason": "The solo seat closed with exitCode 0 and task_returned. Native closure does not establish completion of the original Explore request.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-c8f41/outcome.json",
+              "statement": "stop.kind is solo_exited, closure is closed with exitCode 0, taskStop is task_returned and finalized is true."
+            },
+            {
+              "file": ".perquiro/hr-c8f41/manifest.json",
+              "statement": "workspace resolves the exact Project path to C:/dev/Perquiro-693/.perquiro/hr-c8f41/project-2Lnrdl."
+            }
+          ]
+        },
+        {
+          "kind": "parent_limits",
+          "reason": "The last published snapshot used 38/40 requests, recorded zero refused requests and retained 962.711 exploration seconds. The handoff reports stopping at 30m16s with two requests remaining. Headroom was small, but hard request or time exhaustion is not established.",
+          "eventIds": [
+            436
+          ],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-c8f41/project-2Lnrdl/executions/e001/HANDOFF.md",
+              "statement": "The original scope remained incomplete. Usage at stop was 38/40 requests and 30m16s of the shared 40-minute allowance."
+            }
+          ]
+        },
+        {
+          "kind": "denials",
+          "reason": "No higher-privilege Product access denial or actual Model permission denial is established. Empty-date Product validation and interface errors remain separate.",
+          "eventIds": [
+            435,
+            436
+          ],
+          "writeEventIds": [
+            437
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "kind": "unchanged_grade_claim_defect",
+          "reason": "The saved empty-date submission body claims no request appeared in history. The nearby history read preceded submission. No later history read supports that displayed-result claim.",
+          "eventIds": [
+            425,
+            434,
+            435,
+            436
+          ],
+          "writeEventIds": [
+            437
+          ],
+          "provenanceReferences": []
+        }
+      ]
+    },
+    {
+      "id": "coordination-continuation",
+      "label": "West",
+      "counts": {
+        "never_tried": 15,
+        "tried_but_missed_required_moment": 0,
+        "save_rejected": 0,
+        "quit_before_reaching_it": 6,
+        "unknown": 4
+      },
+      "misses": [
+        {
+          "id": "HR01",
+          "category": "unknown",
+          "reason": "Emily's shell was observed and saved. Michael's and Hannah's shells were absent. Actor coverage was partial.",
+          "eventIds": [
+            29
+          ],
+          "writeEventIds": [
+            31
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR02",
+          "category": "never_tried",
+          "reason": "Emily made no direct higher-privilege page visit. Generic continuation stopping does not defer this access case.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR04",
+          "category": "quit_before_reaching_it",
+          "reason": "The department-selector workflow was explicitly left pending for continuation. No filter was applied.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+              "statement": "Employee directory Department selector was listed among pending checks to continue."
+            }
+          ]
+        },
+        {
+          "id": "HR05",
+          "category": "unknown",
+          "reason": "The exercised Emily Dawson search matched a row. The deliberately unmatched case was not exercised.",
+          "eventIds": [
+            70
+          ],
+          "writeEventIds": [
+            72
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR06",
+          "category": "quit_before_reaching_it",
+          "reason": "The Name-column sort workflow was explicitly left pending. No repeated header clicks occurred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+              "statement": "Employee directory Name column sort was listed among pending checks to continue."
+            }
+          ]
+        },
+        {
+          "id": "HR07",
+          "category": "unknown",
+          "reason": "Paging reached page 2 of 3 with Next available. Neither the final page nor a budget-prevented next request was established.",
+          "eventIds": [
+            40,
+            53,
+            54
+          ],
+          "writeEventIds": [
+            42,
+            48,
+            55
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR08",
+          "category": "never_tried",
+          "reason": "No employee detail was opened and directly loaded or refreshed.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR09",
+          "category": "never_tried",
+          "reason": "Opening a calendar did not enter a reversed interval. No specific reversed-range deferral is documented.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR10",
+          "category": "never_tried",
+          "reason": "No Friday-to-Monday interval was entered or specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR11",
+          "category": "quit_before_reaching_it",
+          "reason": "Leave submission was explicitly left pending for continuation. No request was submitted.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+              "statement": "New leave request Submit request button remained pending. No leave request was submitted."
+            }
+          ]
+        },
+        {
+          "id": "HR13",
+          "category": "never_tried",
+          "reason": "The form was initially opened, but no successful-submission-and-return workflow was attempted or specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR14",
+          "category": "never_tried",
+          "reason": "Michael never opened the approvals queue. His generic interrupted-scope stop does not specifically defer queue entry.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR15",
+          "category": "never_tried",
+          "reason": "No manager decision confirmation was attempted.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR16",
+          "category": "never_tried",
+          "reason": "No rejection without a comment was attempted.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR17",
+          "category": "never_tried",
+          "reason": "No current-trace employee creation and manager-decision lifecycle was attempted. Reading existing history does not start that lifecycle.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR18",
+          "category": "never_tried",
+          "reason": "Hannah never attempted onboarding personal-step validation. Her generic scope stop does not establish a specific deferral.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR19",
+          "category": "never_tried",
+          "reason": "No job-details metadata-loading selector workflow was entered.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR20",
+          "category": "never_tried",
+          "reason": "No onboarding entry, advancement and backward-navigation workflow occurred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR21",
+          "category": "never_tried",
+          "reason": "No onboarding review submission was attempted.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR22",
+          "category": "never_tried",
+          "reason": "No hours were entered. Initial zero fields and a pending generic weekly-form check do not specifically defer seven-day entry.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR23",
+          "category": "unknown",
+          "reason": "A zero-hour draft save completed, but no subsequent reload occurred. The workflow was partial.",
+          "eventIds": [
+            138,
+            140,
+            141
+          ],
+          "writeEventIds": [
+            136,
+            142
+          ],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR24",
+          "category": "quit_before_reaching_it",
+          "reason": "Submit week was explicitly left pending for continuation. Neither submission nor a later edit attempt occurred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+              "statement": "Timesheet Submit week button remained pending and was not selected."
+            }
+          ]
+        },
+        {
+          "id": "HR25",
+          "category": "quit_before_reaching_it",
+          "reason": "The profile form and Save changes workflow were explicitly left pending. No changed profile field was saved.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+              "statement": "My profile form and Save changes button remained pending. No profile values were changed."
+            }
+          ]
+        },
+        {
+          "id": "HR26",
+          "category": "quit_before_reaching_it",
+          "reason": "The photo-upload branch was explicitly left pending. No changed name or photo was saved and no resulting header identity was observed.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+              "statement": "My profile Upload photo control remained pending for continuation."
+            }
+          ]
+        },
+        {
+          "id": "HR27",
+          "category": "never_tried",
+          "reason": "No profile save-and-reload workflow was started. Pending profile controls do not specifically defer reload verification.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        }
+      ],
+      "diagnostics": [
+        {
+          "kind": "wrapper_format_error_recovered",
+          "reason": "The initial Directory click placed role/name outside target and failed before the click. A corrected bare array with nested target reached Directory.",
+          "eventIds": [
+            35,
+            40
+          ],
+          "writeEventIds": [
+            42
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c-supervision/seat-001-stdout.jsonl",
+              "statement": "Completed command line 29 returned a missing-target error. Line 33 used a bare array with nested target and succeeded."
+            }
+          ]
+        },
+        {
+          "kind": "locator_mistake_recovered",
+          "reason": "The search locator reached execution with a replacement character and timed out without filling. A fresh snapshot confirmed non-execution. The directory-search testId retry succeeded.",
+          "eventIds": [
+            62,
+            64,
+            70
+          ],
+          "writeEventIds": [
+            65,
+            72
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c-supervision/seat-001-stdout.jsonl",
+              "statement": "Completed act command at line 62 supplied Search by name with an ellipsis, but the returned timeout searched for a replacement character."
+            },
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+              "statement": "The failed fill was reconciled as not_executed before the testId retry succeeded."
+            }
+          ]
+        },
+        {
+          "kind": "later_pass_wrapper_invocation_failures",
+          "reason": "The e002 and e004 handoffs report tools.mjs calls that returned role/phase or missing-argument errors. These passes produced no Product actions or new Knowledge. The permitted native help command returned a missing-argument error.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e002/HANDOFF.md",
+              "statement": "tools.mjs browser snapshot and tools.mjs call snapshot returned Tool is outside this role or phase or startsWith errors. No Product action occurred."
+            },
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e004/HANDOFF.md",
+              "statement": "tools.mjs snapshot and tools.mjs browser snapshot failed. No Product action, Observation or Evidence was produced."
+            },
+            {
+              "file": ".perquiro/hr-a942c-supervision/seat-003-stdout.jsonl",
+              "statement": "Completed command item at line 21 included tools.mjs --help and returned Cannot read properties of undefined reading startsWith."
+            }
+          ]
+        },
+        {
+          "kind": "approximation_interrupted_status",
+          "reason": "The private continuation approximation lacked a registered UI Explore process. Assignments warned that public interrupted status could appear while the native seat was active. The e003 and e004 workers stopped on interrupted, canStart false and reported unconfirmed closure. Those reports do not establish actual unknown native closure or a Model permission denial.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/manifest.json",
+              "statement": "All four assignments describe private hosting without a registered UI Explore process and warn that public process-control status may report interrupted."
+            },
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e003/HANDOFF.md",
+              "statement": "Michael stopped before Product interaction because continuation reported interrupted, canStart false and unconfirmed prior closure."
+            },
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e004/HANDOFF.md",
+              "statement": "Hannah treated the continuation status and closure requirement as a blocker."
+            }
+          ]
+        },
+        {
+          "kind": "native_closure",
+          "reason": "All four worker seats closed with exitCode 0 and finished native roots. The final stop was scope_held with stalled status. Interrupted execution-release labels remain separate from confirmed native closure.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/outcome.json",
+              "statement": "Every worker closure is closed with exitCode 0, rootFinished true and pending false. Final stop.kind is scope_held and status is stalled."
+            },
+            {
+              "file": ".perquiro/hr-a942c/manifest.json",
+              "statement": "workspace resolves the Project to C:/dev/Perquiro-693/.perquiro/hr-a942c/project-YR4b3y. Execution releases cite confirmed tree closure."
+            }
+          ]
+        },
+        {
+          "kind": "parent_limits",
+          "reason": "The last published snapshot used 11/40 requests, recorded zero refused requests and retained 1605.986 exploration seconds. The four-seat run ended about 20 minutes after start. Parent request or time exhaustion is not established.",
+          "eventIds": [
+            141
+          ],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-a942c/manifest.json",
+              "statement": "startedAt is 2026-10-13T09:35:54.446Z, finishedAt is 2026-10-13T09:56:09.320Z and apiRequests is 11."
+            },
+            {
+              "file": ".perquiro/hr-a942c/project-YR4b3y/executions/e001/HANDOFF.md",
+              "statement": "Local work stopped at the assignment boundary with known checks pending. The human budget was not exhausted."
+            }
+          ]
+        },
+        {
+          "kind": "denials_and_save_rejections",
+          "reason": "No Product access denial, actual Model permission denial or causal rejected Knowledge save of a completed frozen check is established. Interface errors and continuation metadata do not supply that evidence.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "kind": "unchanged_grade_claim_defect",
+          "reason": "The profile inventory body's respectively ordering swaps email and emergency-contact assignments. The frozen blind adjudication treats this as nonmaterial and grants no profile-update outcome.",
+          "eventIds": [
+            121,
+            122
+          ],
+          "writeEventIds": [
+            124
+          ],
+          "provenanceReferences": []
+        }
+      ]
+    },
+    {
+      "id": "coordination-director",
+      "label": "South",
+      "counts": {
+        "never_tried": 25,
+        "tried_but_missed_required_moment": 0,
+        "save_rejected": 0,
+        "quit_before_reaching_it": 1,
+        "unknown": 0
+      },
+      "misses": [
+        {
+          "id": "HR02",
+          "category": "never_tried",
+          "reason": "Emily made no direct higher-privilege page visit. No specific access-check deferral is documented.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR03",
+          "category": "never_tried",
+          "reason": "No name search was entered. Rejected Directory navigation is not a Product search action or a specific search deferral.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR04",
+          "category": "never_tried",
+          "reason": "No department filter was applied or specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR05",
+          "category": "never_tried",
+          "reason": "No deliberately unmatched search was entered or specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR06",
+          "category": "never_tried",
+          "reason": "No sortable header was clicked or specific sorting workflow deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR07",
+          "category": "never_tried",
+          "reason": "No directory paging occurred. Generic remaining Directory work does not specifically defer paging.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR08",
+          "category": "never_tried",
+          "reason": "No employee-detail and direct-reload workflow occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR09",
+          "category": "never_tried",
+          "reason": "No reversed leave-date interval was entered or specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR10",
+          "category": "never_tried",
+          "reason": "No Friday-to-Monday interval was entered or specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR11",
+          "category": "never_tried",
+          "reason": "No valid leave submission occurred. Pending Request leave navigation does not specifically defer valid submission.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR12",
+          "category": "never_tried",
+          "reason": "No submitted request was read in history or specific history-read workflow deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR13",
+          "category": "never_tried",
+          "reason": "No successful leave submission and subsequent form return occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR14",
+          "category": "quit_before_reaching_it",
+          "reason": "Michael explicitly left the approvals destination for later continuation after interface dispatch failed. Published events show Dashboard context, not an opened queue.",
+          "eventIds": [
+            56,
+            62
+          ],
+          "writeEventIds": [
+            61,
+            63
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-b573e/project-o1jNvr/executions/e002/HANDOFF.md",
+              "statement": "The approvals destination remained unexplored. Later continuation required usable dispatch, and the failed action was not to be repeated until then."
+            },
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-003-stdout.jsonl",
+              "statement": "Completed act command at line 31 used an actions object for Review approvals and returned Save after one intentional action."
+            }
+          ]
+        },
+        {
+          "id": "HR15",
+          "category": "never_tried",
+          "reason": "No manager decision was confirmed. Deferring queue entry does not specifically defer this decision-and-readback case.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR16",
+          "category": "never_tried",
+          "reason": "No rejection without a comment was attempted or specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR17",
+          "category": "never_tried",
+          "reason": "No employee creation, manager decision and employee readback lifecycle occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR18",
+          "category": "never_tried",
+          "reason": "No personal-step validation was attempted. Listing onboarding as unvisited does not specifically defer this validation case.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR19",
+          "category": "never_tried",
+          "reason": "No job-details metadata-loading selector workflow occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR20",
+          "category": "never_tried",
+          "reason": "No onboarding entry, advancement and backward-navigation workflow occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR21",
+          "category": "never_tried",
+          "reason": "No onboarding review submission occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR22",
+          "category": "never_tried",
+          "reason": "No hours were entered. Pending Fill timesheet navigation does not specifically defer seven-day entry.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR23",
+          "category": "never_tried",
+          "reason": "No timesheet draft save-and-reload workflow occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR24",
+          "category": "never_tried",
+          "reason": "No timesheet submission and later edit attempt occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR25",
+          "category": "never_tried",
+          "reason": "No changed profile field was saved. Generic unvisited Profile work does not specifically defer this save workflow.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR26",
+          "category": "never_tried",
+          "reason": "No changed name or photo was saved and no specific identity-update workflow was deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "id": "HR27",
+          "category": "never_tried",
+          "reason": "No profile save-and-reload workflow occurred or was specifically deferred.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        }
+      ],
+      "diagnostics": [
+        {
+          "kind": "causal_wrapper_format_failure",
+          "reason": "Completed native commands submitted object-shaped action arguments and returned Save after one intentional action before Product dispatch. Successful North and West commands used bare arrays. This supports the format-failure diagnosis, but no corrected South retry isolates the exact format rule. Published snapshots establish unchanged locations and zero actions; they contain no invocation or rejection event.",
+          "eventIds": [
+            42,
+            62,
+            90
+          ],
+          "writeEventIds": [
+            44,
+            63,
+            91
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-002-stdout.jsonl",
+              "statement": "Completed command lines 47, 53, 58, 60, 78 and 80 used actions, action or single-action objects and returned Save after one intentional action."
+            },
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-003-stdout.jsonl",
+              "statement": "Completed command line 31 used an actions object for Review approvals and returned the same error."
+            },
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-004-stdout.jsonl",
+              "statement": "Completed command line 35 used an actions object with nested target for Directory and returned the same error."
+            },
+            {
+              "file": ".perquiro/hr-a942c-supervision/seat-001-stdout.jsonl",
+              "statement": "Completed command line 33 used a bare action array with nested target and successfully opened Directory."
+            }
+          ]
+        },
+        {
+          "kind": "help_and_argument_file_failures",
+          "reason": "Help discovery treated --help as an argument filename. Michael's earlier invocation referenced a missing actions.json file. Both failures preceded Product interaction.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-002-stdout.jsonl",
+              "statement": "Completed command line 84 ran browser.mjs act --help and returned ENOENT for executions/e001/--help. The accompanying help command returned Unknown browser command."
+            },
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-003-stdout.jsonl",
+              "statement": "Completed command line 27 saved the pre-action Observation, then browser.mjs act actions.json failed with ENOENT for that argument file."
+            }
+          ]
+        },
+        {
+          "kind": "knowledge_rejection_not_causal_to_completed_check",
+          "reason": "The handoff reports rejected exact-version attribution because Setup lacked an exact version. Dashboard navigation was subsequently saved with unknown version and HR01 remains saved. No completed missed check had a causal rejected Knowledge save.",
+          "eventIds": [
+            33,
+            56,
+            87
+          ],
+          "writeEventIds": [
+            35,
+            60,
+            88
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-b573e/project-o1jNvr/executions/e001/HANDOFF.md",
+              "statement": "The versioned Knowledge write was rejected because Setup lacked an exact observed Product version. Dashboard inventory was saved and read back with unknown version."
+            }
+          ]
+        },
+        {
+          "kind": "native_closure",
+          "reason": "The director and all three worker seats closed with exitCode 0 and finished native roots. The director finished with the original Explore request incomplete. Reported begin/release uncertainty does not establish unknown native closure.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-b573e/outcome.json",
+              "statement": "stop.kind is director_finished. All four seats have closed exitCode 0, rootFinished true and pending false. The judgment retains unfinished work."
+            },
+            {
+              "file": ".perquiro/hr-b573e/manifest.json",
+              "statement": "workspace resolves the Project to C:/dev/Perquiro-693/.perquiro/hr-b573e/project-o1jNvr. Worker releases cite confirmed tree closure."
+            }
+          ]
+        },
+        {
+          "kind": "parent_limits",
+          "reason": "The final published snapshot used 0/40 requests, recorded zero browser actions and refused requests, and retained 1564.454 exploration seconds. The run closed about 16 minutes after start. Parent request and time limits were not exhausted.",
+          "eventIds": [
+            90
+          ],
+          "writeEventIds": [],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-b573e/manifest.json",
+              "statement": "startedAt is 2026-10-13T09:58:24.351Z, finishedAt is 2026-10-13T10:14:31.133Z, apiRequests is 0 and refusedRequests is 0."
+            }
+          ]
+        },
+        {
+          "kind": "denials",
+          "reason": "No Product access denial or actual Model permission denial is established. Native interface errors explain failed dispatch separately. Read-only sandbox metadata supplies no denial evidence.",
+          "eventIds": [],
+          "writeEventIds": [],
+          "provenanceReferences": []
+        },
+        {
+          "kind": "private_corroboration_preserves_blind_grade",
+          "reason": "The frozen blind adjudication calls the exact wrapper-refusal claim unsupported by the anonymous packet. Permitted native command outputs now corroborate that diagnostic claim. They do not change semantic grades or turn failed dispatch into Product action.",
+          "eventIds": [
+            42,
+            62,
+            90
+          ],
+          "writeEventIds": [
+            44,
+            63,
+            91
+          ],
+          "provenanceReferences": [
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-002-stdout.jsonl",
+              "statement": "Completed act command items at lines 47, 53, 58, 60, 78 and 80 return the exact wrapper error."
+            },
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-003-stdout.jsonl",
+              "statement": "Completed act command item at line 31 returns the exact wrapper error."
+            },
+            {
+              "file": ".perquiro/hr-b573e-supervision/seat-004-stdout.jsonl",
+              "statement": "Completed act command item at line 35 returns the exact wrapper error."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "All 75 initial miss categories are upheld. Counts remain unchanged.",
+    "The frozen semantic grades in .audit/693-coordination-joint-grade-final.json remain unchanged. Misses contain exactly every saved:false check, with 24 for North, 25 for West and 26 for South.",
+    "Exact Project paths were resolved from manifest.workspace. West has no SUMMARY.md at its resolved Project root; its four execution handoffs supplied stopping evidence.",
+    "Generic pass stops and unvisited-domain lists were not converted into per-check deferrals. Specific pending controls support only the workflows identified in their miss reasons.",
+    "eventIds reference only numeric published packet.trace events. writeEventIds reference only packet.observations.writeEvent. Private references remain in provenanceReferences. No host start or control ID is browser support.",
+    "Native stdout inspection was restricted to completed command_execution items containing browser.mjs act or --help. No full private rollout, Product implementation or historical answer was read. No files were written and no model or Product process was launched.",
+    "Diagnostic adjudication entries use null category fields because diagnostics are not missed-check categories.",
+    "These classifications diagnose the completed pilot arms. They do not establish causal strategy superiority."
+  ],
+  "adjudication": [
+    {
+      "runId": "coordination-solo",
+      "subject": "HR01",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "Emily's recorded shell is qualifying partial Actor coverage. Missing Michael and Hannah coverage does not make the whole check never_tried."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR04",
+      "initialCategory": "tried_but_missed_required_moment",
+      "finalCategory": "tried_but_missed_required_moment",
+      "reason": "The complete filter result exists in event 133. Public bodies at writes 135 and 202 omit row membership. This is a documentation omission, not a rejected save."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR05",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "A matching search was exercised and saved. The baseline policy assigns another exercised search case to unknown."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR07",
+      "initialCategory": "tried_but_missed_required_moment",
+      "finalCategory": "tried_but_missed_required_moment",
+      "reason": "All directory pages and their actual rows are present in the trace. Public endpoint names and counts omit most row identities. Raw coverage is complete."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR09",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "The empty-date submission exercises another validation case. It does not establish reversed-range validation."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR10",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "The blocked generic calendar check names no Friday-to-Monday interval. Neither the required action nor a specific deferral exists."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR11",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "A submission actually reached Product validation with empty dates. This partial or alternative submission case supports unknown."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR13",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "Form return was exercised without the required successful submission. The observed alternative return case is incomplete coverage."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR14-HR16",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "No manager queue or decision action occurred. Generic incomplete Explore scope and Dashboard pending destinations do not specifically defer these manager workflows."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR17",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "The creation leg reached an invalid Product submission. The subsequent manager and employee legs are absent, so the lifecycle is partial."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR18-HR21",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "No onboarding workflow was entered. The general unfinished-scope statement supplies no specific deferral for any onboarding check."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR22",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "Monday entry is a qualifying partial hours-entry workflow. Untouched zero values are not entry across the other six days."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR24",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "Submission completed, but the required later edit attempt did not occur. Disabled controls alone do not complete the check."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR25",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "The changed phone was restored before Product save. The rejected inspection preflight did not reject Knowledge for a completed changed-field save."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR26",
+      "initialCategory": "quit_before_reaching_it",
+      "finalCategory": "quit_before_reaching_it",
+      "reason": "The handoff explicitly leaves Upload photo pending for continuation. This names a required identity-update branch rather than an unvisited Profile domain."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "HR27",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "A profile save occurred. The trace then leaves Profile without reloading it. The save-and-reload workflow is partial."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR01",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "Emily's shell supplies partial Actor coverage. Later workers' generic scope stops do not erase that qualifying coverage."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR04",
+      "initialCategory": "quit_before_reaching_it",
+      "finalCategory": "quit_before_reaching_it",
+      "reason": "The handoff explicitly names Department selector among pending checks to continue. This is specific filter-workflow deferral."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR05",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "The successful matching search is another exercised case. The recovered locator failure did not exercise an unmatched search."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR06",
+      "initialCategory": "quit_before_reaching_it",
+      "finalCategory": "quit_before_reaching_it",
+      "reason": "The handoff specifically names Name column sort as pending. The initial sort marker supplies no executed sorting action."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR07",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "Next reached page 2, so paging was attempted. The final page and a budget-prevented request are absent. This is partial raw coverage."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR09-HR10",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Opening an empty date picker does not exercise either specified interval. Pending generic leave-form work does not specifically defer those date cases."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR11",
+      "initialCategory": "quit_before_reaching_it",
+      "finalCategory": "quit_before_reaching_it",
+      "reason": "Submit request is explicitly pending for continuation. Calendar opening did not become a submission attempt."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR13",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Initial form opening is not a return after submission. Deferring submission does not specifically defer the distinct post-success return check."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR14-HR16",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Michael performed no Product action. His interrupted-scope dependency and generic unanswered-check totals do not specifically defer queue entry or decision cases."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR17",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Existing history and calendar opening do not establish an attempted creation-and-manager-decision lifecycle. No submission occurred and that cross-Actor lifecycle was not specifically deferred."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR18-HR21",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Hannah performed no onboarding action. Her generic interrupted-scope stop supplies no specific onboarding-workflow deferral."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR22",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "No hour field was filled. Saving an initial zero-hour draft is a different workflow, and Weekly timesheet form does not specifically defer seven-day entry."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR23",
+      "initialCategory": "unknown",
+      "finalCategory": "unknown",
+      "reason": "Save draft completed with zero values. No reload followed. This is a partial workflow, not complete raw coverage with omitted public facts."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR24",
+      "initialCategory": "quit_before_reaching_it",
+      "finalCategory": "quit_before_reaching_it",
+      "reason": "The handoff specifically leaves Submit week pending. That required workflow step was deferred before any submission."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR25",
+      "initialCategory": "quit_before_reaching_it",
+      "finalCategory": "quit_before_reaching_it",
+      "reason": "The handoff names both the profile form and Save changes as pending and confirms no values were changed. This supports profile-edit/save deferral."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR26",
+      "initialCategory": "quit_before_reaching_it",
+      "finalCategory": "quit_before_reaching_it",
+      "reason": "Upload photo is explicitly pending for continuation. This supports deferral of the photo identity-update branch."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "HR27",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "No profile save occurred. Pending edit, photo and save controls do not specifically defer the distinct reload-verification workflow."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "HR03-HR08",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Directory commands failed before Product dispatch. No search, filter, sort, paging or detail workflow occurred. Generic blocked Directory navigation does not specifically defer each directory case."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "HR09-HR13",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "No leave workflow occurred. Pending Request leave navigation and generic unvisited leave tasks do not specifically defer date, submission, history or post-submission-return cases."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "HR14",
+      "initialCategory": "quit_before_reaching_it",
+      "finalCategory": "quit_before_reaching_it",
+      "reason": "Michael's handoff specifically leaves the approvals destination for later continuation after dispatch repair. The rejected command itself is not a Product action; the explicit deferral supports this category."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "HR15-HR17",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Specific queue-entry deferral does not propagate to approval, commentless rejection or the cross-Actor lifecycle. None was exercised or specifically deferred."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "HR18-HR21",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Visible Onboarding and Add new hire links are offered metadata. Generic unvisited onboarding work does not specifically defer validation, loading, backward navigation or submission."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "HR22-HR24",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Pending Fill timesheet navigation does not specifically defer seven-day entry, draft reload or submission-and-edit workflows. No Product timesheet action occurred."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "HR25-HR27",
+      "initialCategory": "never_tried",
+      "finalCategory": "never_tried",
+      "reason": "Generic unvisited Profile work does not specifically defer changed-field save, header identity update or persistence reload. No profile action occurred."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "wrapper and locator diagnostics",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Native completed items corroborate recovered Directory format errors and an unrecovered calendar locator failure. Failed-action counters are not proof of Product dispatch or denial."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "save_rejected boundary",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Version attribution and inspection-preflight rejections did not causally reject saving any completed missed check. The zero save_rejected count is upheld."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "native closure and parent limits",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Closed native task state coexists with unfinished Explore scope. The final snapshot and handoff retain request and time headroom, so hard exhaustion is not established."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "empty-date history claim",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "The history read preceded the empty-date submission. Product validation does not support the later claimed displayed history result. The frozen claim defect remains unchanged."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "wrapper and recovered locator diagnostics",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Completed native commands corroborate the initial missing-target error and corrupted search locator. Public snapshots and bodies corroborate non-execution followed by a successful testId retry."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "later-pass invocation failures",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "The e002 and e004 handoffs report wrong tools.mjs invocation errors. The permitted completed --help item corroborates a missing-argument failure. These are interface failures, not Product or Model denials."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "approximation status versus native closure",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Assignments warn about interrupted public status under private hosting. Handoffs report stopping on that status, while outcomes confirm every native seat closed. Reported unconfirmed closure is not actual unknown native closure."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "parent limits and save_rejected boundary",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Usage remained 11/40 with substantial time remaining. No causal rejected Knowledge save of a completed missed check exists. Hard parent exhaustion and save_rejected are unsupported."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "profile respectively claim",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "The body swaps email and emergency-contact assignments under literal respectively ordering. The frozen adjudication calls this nonmaterial and grants no profile-update result."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "causal_wrapper_format_failure",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Native completed object-shaped invocations returned the exact pre-dispatch error. Bare arrays succeeded in other arms. Format failure is supported as a diagnostic inference; no corrected South retry independently isolates the format rule."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "help and missing argument file",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Completed permitted commands establish ENOENT for --help and for Michael's missing actions.json. These failures are distinct from the object-shaped dispatch rejection and occurred before Product interaction."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "save_rejected boundary",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "The versioned write rejection was followed by saved unknown-version Dashboard inventory. HR01 remains saved and no completed missed check had a rejected Knowledge save."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "native closure and parent limits",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "All native seats closed despite reported begin/release uncertainty. Zero requests and remaining exploration time exclude parent exhaustion as the observed stopping condition."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "blind wrapper claim versus private corroboration",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "The anonymous packet alone does not establish the exact invocation error. Permitted native outputs corroborate it for diagnosis. The frozen semantic unsupported-claim finding remains unchanged."
+    },
+    {
+      "runId": "coordination-solo",
+      "subject": "Product and Model denial boundary",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "No higher-privilege access attempt or actual Model permission denial is present. Empty-date validation is a different Product response."
+    },
+    {
+      "runId": "coordination-continuation",
+      "subject": "Product and Model denial boundary",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "Continuation status and wrong-wrapper role/phase errors are not actual Model permission denials or Product access denials."
+    },
+    {
+      "runId": "coordination-director",
+      "subject": "Product and Model denial boundary",
+      "initialCategory": null,
+      "finalCategory": null,
+      "reason": "The recorded errors preceded Product dispatch. Read-only sandbox metadata does not establish an actual Model permission denial."
+    }
+  ]
+}

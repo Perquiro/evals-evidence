@@ -1,0 +1,115 @@
+{
+  "finishedAt": "2026-10-13T10:14:29.745Z",
+  "elapsedSeconds": 965.151,
+  "exploreSecondsRemaining": 1434.8490000000002,
+  "recordingSecondsRemaining": 1734.8490000000002,
+  "explorationClosed": true,
+  "apiRequests": 0,
+  "executions": [
+    {
+      "id": "e001",
+      "actor": "Emily.dawson",
+      "startedAt": "2026-10-13T09:59:19.029Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "token": "explore-emily-inventory-1",
+        "mode": "explore",
+        "actor": "Emily.dawson",
+        "question": "Explore Bugbusters HR using Emily.dawson. Map accessible rendered UI surfaces and useful tasks about what people can do and what happens. No prior inventory exists; begin with navigation and choose meaningful task flows. Preserve immediate and settled facts, captures, and complete public Knowledge. Respect the shared 40 API request and 40 minute limits; perform one intentional Product action then save its full attributed result before another. Use provided browser and Knowledge wrappers only.",
+        "references": [],
+        "sources": []
+      },
+      "releasedAt": "2026-10-13T10:05:24.483Z",
+      "endingApiRequests": 0,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    },
+    {
+      "id": "e002",
+      "actor": "michael.reed",
+      "startedAt": "2026-10-13T10:06:54.960Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "token": "explore-michael-dashboard-1",
+        "mode": "explore",
+        "actor": "michael.reed",
+        "question": "Continue the original Bugbusters HR Explore request using fixed Actor michael.reed. Read and use public Knowledge including Emily Dashboard observations as context but do not repeat claims without new Actor context. Explore accessible rendered UI and useful tasks about what people can do and what happens. Preserve immediate and settled facts and save full attributed results after each intentional Product action. Use provided wrappers only and respect shared 40 requests/40 minutes. If action dispatch remains blocked by wrapper protocol, ground and record the blocker and state requirements precisely.",
+        "references": [
+          "e001"
+        ],
+        "sources": [
+          {
+            "executionId": "e001",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-b573e\\project-o1jNvr\\executions\\e001\\HANDOFF.md",
+            "captures": [],
+            "savedIds": [
+              "cce1c4cd-91f3-40a1-aece-264e16822851",
+              "bdfb924f-74a8-4730-a414-83d7265833ff",
+              "62bdbf36-58da-4875-8702-56fd658a8f58",
+              "5061fb54-661e-4777-9907-7981e517f550"
+            ]
+          }
+        ]
+      },
+      "releasedAt": "2026-10-13T10:08:55.315Z",
+      "endingApiRequests": 0,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    },
+    {
+      "id": "e003",
+      "actor": "hannah.blake",
+      "startedAt": "2026-10-13T10:09:34.190Z",
+      "startingApiRequests": 0,
+      "assignment": {
+        "token": "explore-hannah-dashboard-1",
+        "mode": "explore",
+        "actor": "hannah.blake",
+        "question": "Continue the original Bugbusters HR Explore request using fixed Actor hannah.blake. Read public Knowledge from Emily and Michael first. Explore accessible rendered UI and useful tasks about what people can do and what happens. Do not repeat Product actions unless a fresh attempt is recorded and authorized after checking current state. Preserve immediate and settled facts and save full attributed results after each action. Use provided browser and Knowledge wrappers only, respect shared limits. If browser dispatch is still refused with Save after one intentional action, record grounded blocker, do not replay already blocked actions.",
+        "references": [
+          "e001",
+          "e002"
+        ],
+        "sources": [
+          {
+            "executionId": "e001",
+            "actor": "Emily.dawson",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-b573e\\project-o1jNvr\\executions\\e001\\HANDOFF.md",
+            "captures": [],
+            "savedIds": [
+              "cce1c4cd-91f3-40a1-aece-264e16822851",
+              "bdfb924f-74a8-4730-a414-83d7265833ff",
+              "62bdbf36-58da-4875-8702-56fd658a8f58",
+              "5061fb54-661e-4777-9907-7981e517f550"
+            ]
+          },
+          {
+            "executionId": "e002",
+            "actor": "michael.reed",
+            "handoffPath": "C:\\dev\\Perquiro-693\\.perquiro\\hr-b573e\\project-o1jNvr\\executions\\e002\\HANDOFF.md",
+            "captures": [],
+            "savedIds": [
+              "5234cc51-2816-4886-8832-bf48173a8273",
+              "d254c6cb-ec68-4564-9328-2e3362206b1d",
+              "62dfd37e-e8b8-46b9-8cca-4b9f80c7f006"
+            ]
+          }
+        ]
+      },
+      "releasedAt": "2026-10-13T10:13:26.256Z",
+      "endingApiRequests": 0,
+      "release": {
+        "completed": false,
+        "interrupted": true,
+        "reason": "Local worker exited after confirmed tree closure"
+      }
+    }
+  ]
+}

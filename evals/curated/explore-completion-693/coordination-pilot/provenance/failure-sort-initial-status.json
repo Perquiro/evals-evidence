@@ -1,0 +1,25 @@
+﻿{
+    "runners":  [
+                    {
+                        "id":  "analyst",
+                        "model":  "gpt-6.1-sol",
+                        "effort":  "high",
+                        "harness":  "codex",
+                        "sandboxErrorObserved":  true,
+                        "stderrLog":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-failure-sort-sol\\analyst.stderr.log",
+                        "workDir":  "C:\\dev\\Perquiro-693",
+                        "rationale":  null,
+                        "exitCode":  0,
+                        "branch":  null,
+                        "kind":  "in-place",
+                        "status":  "ok",
+                        "stdoutLog":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-failure-sort-sol\\analyst.stdout.log"
+                    }
+                ],
+    "finishedAt":  "2026-10-13T12:56:49.6301287+02:00",
+    "startedAt":  "2026-10-13T12:46:06.0887360+02:00",
+    "outcome":  "ok",
+    "config":  "(single seat)",
+    "prompt":  "C:\\dev\\Perquiro-693\\.audit\\693-coordination-failure-sort.prompt.md",
+    "repoRoot":  "C:\\dev\\Perquiro-693"
+}
